@@ -2327,7 +2327,6 @@ function renderMissionBrowser() {
     <div class="search-summary">${formatCount(results.length)} missions</div>
     <div class="timeline">
       ${results
-        .slice(0, 40)
         .map(
           (mission) => `
             <button class="log-card search-result" type="button" data-mission="${mission.type}::${mission.faction}::${missionTitle(mission)}">
