@@ -153,7 +153,8 @@ const SHIP_LOADOUT_OVERRIDES = {
       ...Array(12).fill("Ignite II Missile"),
       ...Array(7).fill('M2C "Swarm"'),
       ...Array(16).fill("Arrester III Missile"),
-      ...Array(7).fill('VT-T10 "Veritas" Torpedo'),
+      // Polaris has four torpedo carriers, each holding seven VT-T10 torps.
+      ...Array(28).fill('VT-T10 "Veritas" Torpedo'),
     ],
     components: [
       "SureGrip S2 Tractor Beam",
@@ -1362,7 +1363,7 @@ function missionSearchItems() {
   const query = norm(state.missionSearch);
   const items = missionCatalog();
   const filtered = !query
-    ? items.slice(0, 40)
+    ? items
     : items.filter((mission) => {
     const rewardText = (mission.rewards || []).map((item) => item.name).join(" ");
     const text = [
@@ -1923,7 +1924,7 @@ function renderSelectedOld() {
       <div class="detail-kv">
         <span>Mission links</span>
         <div class="mission-list">
-          ${missions.slice(0, 16).map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> Â· ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+          ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> Â· ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
         </div>
       </div>
     </div>
@@ -2147,7 +2148,7 @@ function renderSelected() {
         <div class="detail-kv">
           <span>Mission links</span>
           <div class="mission-list">
-            ${missions.slice(0, 16).map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> Â· ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+            ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> Â· ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
           </div>
         </div>
       </div>
