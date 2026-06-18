@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SC Items</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./blueprint_explorer_data.js?v=20260614i"></script>
+    <script defer src="./buy_items_items_1.js?v=20260614i"></script>
+    <script defer src="./buy_items_items_2.js?v=20260614i"></script>
+    <script defer src="./buy_items_items_3.js?v=20260614i"></script>
+    <script defer src="./buy_items_items_4.js?v=20260614i"></script>
+    <script defer src="./buy_items_items_5.js?v=20260614i"></script>
+    <script defer src="./buy_items_ships_data.js?v=20260614i"></script>
+    <script defer src="./buy_items_rentals_data.js?v=20260614i"></script>
+    <script defer src="./buy_items_data.js?v=20260614i"></script>
+    <script defer src="./app.js?v=20260614i"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="nav-rail" aria-label="Primary">
+        <div class="sc-badge">SC</div>
+        <button class="rail-item active" type="button" aria-label="Dashboard">
+          <span>▣</span>
+          <small>Dashboard</small>
+        </button>
+        <button class="rail-item" type="button" aria-label="Missions">
+          <span>☰</span>
+          <small>Missions</small>
+        </button>
+        <button class="rail-item" type="button" aria-label="Blueprints">
+          <span>◫</span>
+          <small>Blueprints</small>
+        </button>
+        <button class="rail-item" type="button" aria-label="Buy Items">
+          <span>☰</span>
+          <small>Buy Items</small>
+        </button>
+        <button class="rail-item" type="button" aria-label="Progress">
+          <span>↗</span>
+          <small>Progress</small>
+        </button>
+        <button class="rail-item" type="button" aria-label="Statistics">
+          <span>▤</span>
+          <small>Stats</small>
+        </button>
+        <button class="rail-item" type="button" aria-label="Settings">
+          <span>⚙</span>
+          <small>Settings</small>
+        </button>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div class="brand-row">
+            <svg class="brand-mark" viewBox="0 0 72 72" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="brandMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f3f5f8" />
+                  <stop offset="18%" stop-color="#8a97a8" />
+                  <stop offset="50%" stop-color="#2a313b" />
+                  <stop offset="82%" stop-color="#c7d0da" />
+                  <stop offset="100%" stop-color="#6c7684" />
+                </linearGradient>
+                <linearGradient id="brandInset" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#11161d" />
+                  <stop offset="100%" stop-color="#0a0e13" />
+                </linearGradient>
+                <linearGradient id="brandAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#ffc15a" />
+                  <stop offset="100%" stop-color="#2fc3f2" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M18 4h36l14 14v36L54 68H18L4 54V18L18 4z"
+                fill="url(#brandInset)"
+                stroke="url(#brandMetal)"
+                stroke-width="2.5"
+                stroke-linejoin="round"
+              />
+              <path d="M22 12h28l10 10v28l-10 10H22L12 50V22L22 12z" fill="none" stroke="url(#brandAccent)" stroke-opacity=".45" stroke-width="1.5"/>
+              <path d="M19 20h34M19 52h22" stroke="#eef3f9" stroke-opacity=".18" stroke-width="2" stroke-linecap="round" />
+              <circle cx="17" cy="17" r="2.2" fill="#f6bc62" opacity=".85" />
+              <circle cx="55" cy="17" r="2.2" fill="#2fc3f2" opacity=".8" />
+              <circle cx="17" cy="55" r="2.2" fill="#2fc3f2" opacity=".65" />
+              <circle cx="55" cy="55" r="2.2" fill="#f6bc62" opacity=".8" />
+              <text x="36" y="39" text-anchor="middle" fill="#f2f6fb" font-size="18" font-weight="800" letter-spacing="-1.1" font-family="Inter, Segoe UI, Arial, sans-serif">SC</text>
+              <text x="36" y="52" text-anchor="middle" fill="#9fb0c4" font-size="7" font-weight="700" letter-spacing="1.6" font-family="Inter, Segoe UI, Arial, sans-serif">ITEMS</text>
+            </svg>
+            <div>
+              <h1>SC Items</h1>
+              <p>What you have, what you still need, and what reward you just pulled.</p>
+            </div>
+          </div>
+          <div class="topbar-actions">
+            <div class="user-box">
+              <div class="user-head">
+                <span>Users</span>
+                <span id="userCount">1</span>
+              </div>
+              <div class="user-controls">
+                <select id="userSelect" aria-label="Select user"></select>
+                <button id="addUser" class="ghost-button">New</button>
+                <button id="deleteUser" class="ghost-button danger">Delete</button>
+              </div>
+            </div>
+            <button id="exportState" class="ghost-button">Export</button>
+            <button id="resetState" class="ghost-button danger">Reset</button>
+          </div>
+        </header>
+
+        <main class="main-grid">
+          <aside class="left-column">
+            <section class="stack-card user-panel">
+              <div class="summary-head">
+                <div>
+                  <h2>Current User</h2>
+                  <p id="currentUserName">Default</p>
+                </div>
+                <div class="count-badge cyan" id="currentUserIndex">1</div>
+              </div>
+              <div class="user-controls stacked">
+                <select id="userSelectSide" aria-label="Select user from sidebar"></select>
+                <div class="watch-row">
+                  <button id="addUserSide" class="ghost-button">Add user</button>
+                  <button id="deleteUserSide" class="ghost-button danger">Delete user</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="stack-card" id="summaryPanel">
+              <div class="summary-head">
+                <div>
+                  <h2>Owned</h2>
+                  <p>Blueprints you have unlocked</p>
+                </div>
+                <div class="count-badge" id="ownedTotal">0</div>
+              </div>
+              <div class="summary-list" id="ownedBreakdown"></div>
+            </section>
+
+            <section class="stack-card missing">
+              <div class="summary-head">
+                <div>
+                  <h2>Missing</h2>
+                  <p>Blueprints remaining to unlock</p>
+                </div>
+                <div class="count-badge orange" id="missingTotal">0</div>
+              </div>
+              <div class="summary-list" id="missingBreakdown"></div>
+            </section>
+
+          </aside>
+
+          <section class="center-column">
+            <section class="step-shell">
+              <div class="section-head">
+                <div>
+                  <h2>Add Mission Reward</h2>
+                  <p>Step-by-step mission reward intake</p>
+                </div>
+                <div class="step-dots" aria-hidden="true">
+                  <span class="dot">1</span>
+                  <span class="dot">2</span>
+                  <span class="dot">3</span>
+                  <span class="dot">4</span>
+                </div>
+              </div>
+
+              <div class="mission-context" id="missionStatus">Ready</div>
+
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-copy">
+                  <h3>Select Mission Type</h3>
+                  <p>What type of mission are you doing?</p>
+                  <div class="field-row">
+                    <label class="field">
+                      <select id="missionTypeSelect"></select>
+                    </label>
+                    <div class="step-icon">◎</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-copy">
+                  <h3>Select Company</h3>
+                  <p>Which company is offering the mission?</p>
+                  <div class="field-row">
+                    <label class="field">
+                      <select id="companySelect"></select>
+                    </label>
+                    <div class="step-icon cyan">⬡</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-copy">
+                  <h3>Select Mission</h3>
+                  <p>Which mission did you complete?</p>
+                  <div class="field-row">
+                    <label class="field">
+                      <select id="missionSelect"></select>
+                    </label>
+                    <div class="step-icon cyan">▤</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">4</div>
+                <div class="step-copy">
+                  <h3>What Reward Did You Receive?</h3>
+                  <p>Select the blueprint or reward you obtained.</p>
+                  <div class="field-row">
+                    <label class="field">
+                      <select id="rewardSelect"></select>
+                    </label>
+                    <div class="step-icon cyan">▢</div>
+                  </div>
+                  <label class="field note-field">
+                    <span>Custom reward note</span>
+                    <input id="customReward" type="text" placeholder="Optional reward name or note" />
+                  </label>
+                  <div class="wizard-actions">
+                    <button id="logReward" class="primary-button">Log reward and mark owned</button>
+                    <button id="clearSelection" class="ghost-button">Clear</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="mission-browser-shell" hidden>
+              <div class="section-head">
+                <div>
+                  <h2>Mission Browser</h2>
+                  <p>Search every mission by title, company, faction, type, location, or reward</p>
+                </div>
+              </div>
+              <label class="search">
+                <span>Search missions</span>
+                <input id="missionSearchInput" type="search" placeholder="Search by name, company, type, faction..." />
+              </label>
+              <div class="search-results" id="missionSearchResults"></div>
+            </section>
+
+            <section class="buy-shell" hidden>
+              <div class="section-head compact">
+                <div>
+                  <h2>Buy Items</h2>
+                  <p>Search purchasable items, ships, and rentals by name, type, subtype, or location</p>
+                </div>
+                <div class="segmented buy-tabs" id="buyTabs">
+                  <button class="seg active" type="button" data-buy-tab="items">Items</button>
+                  <button class="seg" type="button" data-buy-tab="ships">Ships</button>
+                  <button class="seg" type="button" data-buy-tab="rentals">Rentals</button>
+                </div>
+              </div>
+              <div class="buy-layout">
+                <section class="buy-filters stack-card">
+                  <div class="summary-head">
+                    <div>
+                      <h3>Filters</h3>
+                      <p>Use source, system, and location to narrow the catalog</p>
+                    </div>
+                  </div>
+                  <label class="search compact-search">
+                    <span>Search catalog</span>
+                    <input id="buySearchInput" type="search" placeholder="Search by name, type, subtype, or location..." />
+                  </label>
+                  <div class="buy-select-grid">
+                    <label class="field">
+                      <span>System</span>
+                      <select id="buySystemSelect"></select>
+                    </label>
+                    <label class="field">
+                      <span>Orbit</span>
+                      <select id="buyOrbitSelect"></select>
+                    </label>
+                    <label class="field">
+                      <span>Area</span>
+                      <select id="buyAreaSelect"></select>
+                    </label>
+                    <label class="field">
+                      <span>Location</span>
+                      <select id="buyLocationSelect"></select>
+                    </label>
+                  </div>
+                  <div class="buy-select-grid" id="buyShipFilters" hidden>
+                    <label class="field">
+                      <span>Career</span>
+                      <select id="buyShipCareerSelect"></select>
+                    </label>
+                    <label class="field">
+                      <span>Role</span>
+                      <select id="buyShipRoleSelect"></select>
+                    </label>
+                    <label class="field">
+                      <span>Size</span>
+                      <select id="buyShipSizeSelect"></select>
+                    </label>
+                  </div>
+                  <div class="buy-select-grid" id="buyShipSupportFilters" hidden>
+                    <label class="field">
+                      <span>Weapons</span>
+                      <select id="buyShipWeaponSelect"></select>
+                    </label>
+                    <label class="field">
+                      <span>Components</span>
+                      <select id="buyShipComponentSelect"></select>
+                    </label>
+                  </div>
+                  <div class="chip-row" id="buyTypeChips"></div>
+                  <div class="chip-row" id="buySubtypeChips"></div>
+                </section>
+
+                <section class="buy-results stack-card">
+                  <div class="summary-head">
+                    <div>
+                      <h3>Catalog</h3>
+                      <p id="buyResultsSummary">Loading catalog...</p>
+                    </div>
+                  </div>
+                  <div class="list buy-results-list" id="buyResults"></div>
+                </section>
+
+                <aside class="buy-detail stack-card">
+                  <div class="selected-meta" id="buySelectedMeta">Nothing selected</div>
+                  <div id="buySelectedDetails" class="detail-card empty">
+                    Pick an item, ship, or rental to see its price and location details here.
+                  </div>
+                </aside>
+              </div>
+            </section>
+
+            <div class="blueprint-workspace">
+              <section class="collection-card" hidden>
+                <div class="section-head">
+                  <h2>Collection</h2>
+                  <div class="segmented">
+                    <button class="seg active" data-view="owned">Owned</button>
+                    <button class="seg" data-view="missing">Missing</button>
+                  </div>
+                </div>
+
+                <label class="search">
+                  <span>Search blueprints</span>
+                  <input id="searchInput" type="search" placeholder="Search by name, type, company, mission..." />
+                </label>
+
+                <div class="chip-row" id="typeChips"></div>
+                <div class="list" id="collectionList"></div>
+              </section>
+            </div>
+
+            <section class="progress-shell" hidden>
+              <div class="section-head compact">
+                <div>
+                  <h2>Progress</h2>
+                  <p>Blueprint ownership and rank progress</p>
+                </div>
+                <button id="toggleUnrankedCompanies" class="ghost-button tiny-switch" type="button" title="Hide unranked factions/companies" aria-pressed="false">Hide unranked</button>
+              </div>
+              <div class="progress-grid">
+                <article class="progress-card">
+                  <h3>By type</h3>
+                  <div class="timeline" id="progressByType"></div>
+                </article>
+                <article class="progress-card">
+                  <h3>By company</h3>
+                  <div class="timeline" id="progressByRank"></div>
+                </article>
+                <article class="progress-card">
+                  <h3>Still needed</h3>
+                  <div class="timeline" id="progressMissing"></div>
+                </article>
+              </div>
+            </section>
+
+            <section class="stats-shell" hidden>
+              <div class="section-head compact">
+                <div>
+                  <h2>Stats</h2>
+                  <p>Owned rewards, missing rewards, and tries per reward</p>
+                </div>
+              </div>
+              <div class="stats-grid">
+                <article class="stats-card">
+                  <div class="summary-head">
+                    <div>
+                      <h3>Owned rewards</h3>
+                      <p>Blueprints you currently have</p>
+                    </div>
+                    <div class="count-badge cyan" id="statsOwnedCount">0</div>
+                  </div>
+                  <div class="timeline" id="statsOwnedList"></div>
+                </article>
+                <article class="stats-card">
+                  <div class="summary-head">
+                    <div>
+                      <h3>Missing rewards</h3>
+                      <p>Blueprints still needed</p>
+                    </div>
+                    <div class="count-badge orange" id="statsMissingCount">0</div>
+                  </div>
+                  <div class="timeline" id="statsMissingList"></div>
+                </article>
+                <article class="stats-card">
+                  <h3>Tries per reward</h3>
+                  <div class="timeline" id="missionAttempts"></div>
+                </article>
+              </div>
+            </section>
+
+            <section class="settings-shell" hidden>
+              <div class="section-head compact">
+                <div>
+                  <h2>Settings</h2>
+                  <p>Theme and app preferences</p>
+                </div>
+              </div>
+              <div class="settings-grid">
+                <button id="themeDark" class="ghost-button">Dark mode</button>
+                <button id="themeLight" class="ghost-button">Light mode</button>
+              </div>
+            </section>
+          </section>
+
+          <aside class="right-column">
+            <section class="detail-shell">
+              <div class="section-head compact">
+                <div>
+                  <h2>Mission / Reward Details</h2>
+                </div>
+                <div class="selected-meta" id="selectedMeta">Nothing selected</div>
+              </div>
+              <div id="selectedDetails" class="detail-card empty">
+                Pick a mission on the left to see the live reward details here.
+              </div>
+            </section>
+          </aside>
+        </main>
+
+        <footer class="footerbar">
+          <span id="footerOwned">Owned: 0</span>
+          <span id="footerMissing">Missing: 0</span>
+          <span id="footerWatch">Local only</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+
