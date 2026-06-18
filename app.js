@@ -108,12 +108,14 @@ function cleanDisplayText(v) {
   return String(v || "")
     .replace(/\u00a0/g, " ")
     .replace(/Ã‚/g, "")
-    .replace(/Ã¢â‚¬â€œ/g, "â€“")
-    .replace(/Ã¢â‚¬â€/g, "â€”")
+    .replace(/Ã¢â‚¬â€œ/g, "–")
+    .replace(/Ã¢â‚¬â€/g, "—")
     .replace(/Ã¢â‚¬Ëœ/g, "'")
     .replace(/Ã¢â‚¬â„¢/g, "'")
     .replace(/Ã¢â‚¬Å“/g, '"')
     .replace(/Ã¢â‚¬Â/g, '"')
+    .replace(/Â·/g, "·")
+    .replace(/Â/g, "")
     .replace(/ï¿½/g, "")
     .replace(/\s+/g, " ")
     .trim();
@@ -1711,7 +1713,7 @@ function missionLocation(mission) {
 
 function missionDescription(mission) {
   const tone = mission?.lawful ? "Lawful contract" : "Unlawful contract";
-  return `${tone} Â· ${missionLocation(mission)} Â· ${missionTitle(mission)}`;
+  return `${tone} · ${missionLocation(mission)} · ${missionTitle(mission)}`;
 }
 
 function rankOrder(rank) {
@@ -1831,7 +1833,7 @@ function renderCollection() {
               (item) => `
                 <div class="item" data-item="${item.name}">
                   <strong>${item.name}</strong>
-                  <small>${item.subtype || "unknown"} Â· ${item.missions?.length || 0} mission links Â· ${isOwned(item.name) ? "owned" : "missing"}</small>
+                  <small>${item.subtype || "unknown"} · ${item.missions?.length || 0} mission links · ${isOwned(item.name) ? "owned" : "missing"}</small>
                 </div>
               `,
             )
@@ -1907,7 +1909,7 @@ function renderSelectedOld() {
     }
 
     const missions = item.missions || [];
-    els.selectedMeta.textContent = `${item.type} Â· ${item.subtype || "unknown"} Â· ${isOwned(item.name) ? "owned" : "missing"}`;
+    els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
     els.selectedDetails.className = "detail-card";
     els.selectedDetails.innerHTML = `
       <div class="detail-grid">
@@ -1924,7 +1926,7 @@ function renderSelectedOld() {
       <div class="detail-kv">
         <span>Mission links</span>
         <div class="mission-list">
-          ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> Â· ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+          ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> · ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
         </div>
       </div>
     </div>
@@ -1942,7 +1944,7 @@ function renderSelectedOld() {
     if (kind === "type" && value) {
       const ownedOfType = owned.filter((item) => collectionCategory(item) === value);
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
-      els.selectedMeta.textContent = `Type Â· ${value}`;
+      els.selectedMeta.textContent = `Type · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
@@ -1958,14 +1960,14 @@ function renderSelectedOld() {
     if (kind === "company" && value) {
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} Â· ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company Â· ${value}`;
+      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} Â· ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -1973,7 +1975,7 @@ function renderSelectedOld() {
 
     if (kind === "missing" && value) {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
-      els.selectedMeta.textContent = `Still needed Â· ${value}`;
+      els.selectedMeta.textContent = `Still needed · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
@@ -2005,7 +2007,7 @@ function renderSelectedOld() {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const ownedFiltered = ownedOfType.filter(matchesSubtype);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Type Â· ${value}`;
+      els.selectedMeta.textContent = `Type · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -2032,14 +2034,14 @@ function renderSelectedOld() {
       state.progressSubtype = "";
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} Â· ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company Â· ${value}`;
+      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<button class="mission-line mission-link" type="button" data-mission-link="${log.type}::${log.company}::${log.mission}"><strong>${log.mission}</strong><div class="muted">${log.type} Â· ${log.reward || "reward logged"}</div></button>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<button class="mission-line mission-link" type="button" data-mission-link="${log.type}::${log.company}::${log.mission}"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></button>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -2050,7 +2052,7 @@ function renderSelectedOld() {
       const matchesSubtype = (item) => !subtype || progressSubtypeLabel(item) === subtype;
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Still needed Â· ${value}`;
+      els.selectedMeta.textContent = `Still needed · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -2082,7 +2084,7 @@ function renderSelectedOld() {
   const rewards = currentRewardOptions();
   const missingRewards = rewards.filter((item) => !isOwned(item.name));
 
-  els.selectedMeta.textContent = `${mission.type} Â· ${mission.faction || "Unknown"} Â· ${mission.repStanding || "Any rank"}`;
+  els.selectedMeta.textContent = `${mission.type} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card";
   els.selectedDetails.innerHTML = `
     <div class="detail-grid">
@@ -2095,7 +2097,7 @@ function renderSelectedOld() {
       <div class="detail-kv">
         <span>Mission description</span>
         <div class="mission-line">
-          ${mission.lawful ? "Lawful contract" : "Unlawful contract"} Â· ${mission.system || "Unknown system"} Â· ${missionTitle(mission)}
+          ${mission.lawful ? "Lawful contract" : "Unlawful contract"} · ${mission.system || "Unknown system"} · ${missionTitle(mission)}
         </div>
       </div>
       <div class="detail-kv">
@@ -2131,7 +2133,7 @@ function renderSelected() {
     }
 
     const missions = item.missions || [];
-    els.selectedMeta.textContent = `${item.type} Â· ${item.subtype || "unknown"} Â· ${isOwned(item.name) ? "owned" : "missing"}`;
+    els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
     els.selectedDetails.className = "detail-card";
     els.selectedDetails.innerHTML = `
       <div class="detail-grid">
@@ -2148,7 +2150,7 @@ function renderSelected() {
         <div class="detail-kv">
           <span>Mission links</span>
           <div class="mission-list">
-            ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> Â· ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+            ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> · ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
           </div>
         </div>
       </div>
@@ -2171,7 +2173,7 @@ function renderSelected() {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const ownedFiltered = ownedOfType.filter(matchesSubtype);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Type Â· ${value}`;
+      els.selectedMeta.textContent = `Type · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -2192,14 +2194,14 @@ function renderSelected() {
       state.progressSubtype = "";
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} Â· ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company Â· ${value}`;
+      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} Â· ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -2210,7 +2212,7 @@ function renderSelected() {
       const matchesSubtype = (item) => !subtype || progressSubtypeLabel(item) === subtype;
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Still needed Â· ${value}`;
+      els.selectedMeta.textContent = `Still needed · ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -2291,7 +2293,7 @@ function renderSelected() {
         <span>Possible Rewards</span>
         <span>Total: ${formatCount(rewards.length)}</span>
       </div>
-      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} Â· Points: ${formatCount(mission.repReward || 0)}</div>
+      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} · Points: ${formatCount(mission.repReward || 0)}</div>
       <div class="mission-list compact">
         ${rewards
           .map(
@@ -2417,7 +2419,7 @@ function renderProgress() {
 
   els.progressByType.innerHTML = [...byType.entries()]
     .sort((a, b) => b[1].owned - a[1].owned || b[1].total - a[1].total)
-    .map(([type, stats]) => `<button class="log-card search-result" type="button" data-progress-kind="type" data-progress-value="${type}"><div class="reward">${type}</div><div class="muted">${formatCount(stats.owned)} owned Â· ${formatCount(stats.total)} total</div></button>`)
+    .map(([type, stats]) => `<button class="log-card search-result" type="button" data-progress-kind="type" data-progress-value="${type}"><div class="reward">${type}</div><div class="muted">${formatCount(stats.owned)} owned · ${formatCount(stats.total)} total</div></button>`)
     .join("");
 
   const companies = [...new Set(missionItems().flatMap((item) => (item.missions || []).map((m) => m.faction)).filter(Boolean))].sort();
@@ -2436,7 +2438,7 @@ function renderProgress() {
       const best = highestCompletedRank(company);
       const rank = best?.repStanding || "No rank yet";
       const mission = best ? missionTitle(best) : "No missions logged yet";
-      return `<button class="log-card search-result" type="button" data-progress-kind="company" data-progress-value="${company}"><div class="reward">${company}</div><div class="muted">Current rank: ${rank} Â· from ${mission}</div></button>`;
+      return `<button class="log-card search-result" type="button" data-progress-kind="company" data-progress-value="${company}"><div class="reward">${company}</div><div class="muted">Current rank: ${rank} · from ${mission}</div></button>`;
     })
     .join("") || `<div class="muted">No ranked companies yet.</div>`;
 
@@ -2444,7 +2446,7 @@ function renderProgress() {
     .slice(0, 40)
     .map((name) => {
       const item = missionItems().find((entry) => entry.name === name);
-      return `<button class="log-card search-result" type="button" data-progress-kind="missing" data-progress-value="${collectionCategory(item)}"><div class="reward">${name}</div><div class="muted">Still needed Â· ${item?.type || "unknown"}</div></button>`;
+      return `<button class="log-card search-result" type="button" data-progress-kind="missing" data-progress-value="${collectionCategory(item)}"><div class="reward">${name}</div><div class="muted">Still needed · ${item?.type || "unknown"}</div></button>`;
     })
     .join("");
 }
@@ -2709,14 +2711,14 @@ function renderStats() {
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 36)
-      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} Â· owned</div></div>`)
+      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} · owned</div></div>`)
       .join("") || `<div class="muted">No owned rewards yet.</div>`;
   els.statsMissingList.innerHTML =
     missing
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 36)
-      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} Â· missing</div></div>`)
+      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} · missing</div></div>`)
       .join("") || `<div class="muted">Nothing missing.</div>`;
   els.missionAttempts.innerHTML =
     [...attempts.entries()]
