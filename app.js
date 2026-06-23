@@ -1488,9 +1488,9 @@ function deleteCurrentUser() {
 }
 
 async function loadBlueprintData() {
-  const bridgeBlueprints = scminersDbExportRecords("blueprint_catalog.json");
-  if (bridgeBlueprints.length) return bridgeBlueprints;
   if (window.BLUEPRINT_EXPLORER_DATA) return window.BLUEPRINT_EXPLORER_DATA;
+  const bridgeBlueprints = scminersDbExportRecords("blueprint_catalog.json");
+  if (bridgeBlueprints.length) return { items: bridgeBlueprints };
   throw new Error("Local blueprint data was not loaded. Make sure blueprint_explorer_data.js is next to index.html.");
 }
 
