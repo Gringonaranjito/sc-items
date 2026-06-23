@@ -270,6 +270,14 @@ function fileStem(v) {
   return cleanDisplayText(String(v || "").split(/[\\/]/).pop().replace(/\.[^.]+$/, ""));
 }
 
+function sourcePathLookupKeys(value) {
+  const raw = cleanDisplayText(value);
+  if (!raw) return [];
+  const basename = cleanDisplayText(String(raw).split(/[\\/]/).pop() || "");
+  const trimmed = cleanDisplayText(raw.replace(/^starbreaker[\\/]/i, "").replace(/^libs[\\/]/i, ""));
+  return [...new Set([norm(raw), norm(trimmed), norm(basename)].filter(Boolean))];
+}
+
 function escapeRegExp(v) {
   return String(v).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
@@ -2887,7 +2895,7 @@ function ensureBlueprintCraftingCache() {
 
   for (const recipe of recipes) {
     const blueprintKey = norm(fileStem(recipe?.blueprint_record_path || recipe?.internal_record_path || recipe?.source_path || ""));
-    const resultPathKey = norm(recipe?.result_item_source_path || recipe?.result_item?.source_path || "");
+    const resultPathKeys = sourcePathLookupKeys(recipe?.result_item_source_path || recipe?.result_item?.source_path || "");
     const resultNameKey = norm(
       cleanDisplayText(recipe?.result_item?.item_name || "")
         .replace(/^EntityClassDefinition\./i, "")
@@ -2895,14 +2903,17 @@ function ensureBlueprintCraftingCache() {
     );
     if (blueprintKey && !recipeByBlueprint.has(blueprintKey)) recipeByBlueprint.set(blueprintKey, recipe);
     if (resultNameKey && !recipeByName.has(resultNameKey)) recipeByName.set(resultNameKey, recipe);
-    if (resultPathKey && !recipeByResultPath.has(resultPathKey)) recipeByResultPath.set(resultPathKey, recipe);
+    for (const key of resultPathKeys) {
+      if (key && !recipeByResultPath.has(key)) recipeByResultPath.set(key, recipe);
+    }
   }
 
   for (const entry of dismantles) {
-    const key = norm(entry?.source_item_source_path || entry?.source_item?.source_path || "");
-    if (!key) continue;
-    if (!dismantleByResultPath.has(key)) dismantleByResultPath.set(key, []);
-    dismantleByResultPath.get(key).push(entry);
+    for (const key of sourcePathLookupKeys(entry?.source_item_source_path || entry?.source_item?.source_path || "")) {
+      if (!key) continue;
+      if (!dismantleByResultPath.has(key)) dismantleByResultPath.set(key, []);
+      dismantleByResultPath.get(key).push(entry);
+    }
   }
 
   blueprintCraftingCache = {
@@ -2920,15 +2931,77 @@ function blueprintCraftingData(item) {
   const cache = ensureBlueprintCraftingCache();
   const blueprintKey = norm(item.blueprint || "");
   const itemNameKey = norm(String(item.name || "").replace(/_/g, " "));
+  const itemSourcePathKeys = sourcePathLookupKeys(item.source_path || item.sourcePath || item.item_info?.source_path || "");
   const recipe =
     cache.recipeByBlueprint.get(blueprintKey) ||
+    itemSourcePathKeys.map((key) => cache.recipeByResultPath.get(key)).find(Boolean) ||
     cache.recipeByName.get(itemNameKey) ||
     null;
-  const resultPathKey = norm(recipe?.result_item_source_path || recipe?.result_item?.source_path || "");
+  const resultPathKeys = sourcePathLookupKeys(recipe?.result_item_source_path || recipe?.result_item?.source_path || item.source_path || item.sourcePath || item.item_info?.source_path || "");
+  const dismantles = [...new Map(
+    resultPathKeys
+      .flatMap((key) => cache.dismantleByResultPath.get(key) || [])
+      .map((entry) => [entry?.source_id || entry?.source_path || JSON.stringify(entry), entry]),
+  ).values()];
   return {
     recipe,
-    dismantles: resultPathKey ? cache.dismantleByResultPath.get(resultPathKey) || [] : [],
+    dismantles,
   };
+}
+
+function blueprintItemByName(name) {
+  const itemNameKey = norm(String(name || "").replace(/_/g, " "));
+  if (!itemNameKey) return null;
+  return missionItems().find((entry) => norm(String(entry?.name || "").replace(/_/g, " ")) === itemNameKey) || null;
+}
+
+function craftingIngredientRows(item, recipe) {
+  const tierIngredients = Array.isArray(recipe?.tiers?.[0]?.ingredients) ? recipe.tiers[0].ingredients : [];
+  const recipeIngredients = Array.isArray(recipe?.ingredients) ? recipe.ingredients : [];
+  const fallbackIngredients = Array.isArray(item?.materials) ? item.materials : [];
+  return tierIngredients.length ? tierIngredients : recipeIngredients.length ? recipeIngredients : fallbackIngredients;
+}
+
+function renderCraftingIngredientMarkup(item, recipe) {
+  const rows = craftingIngredientRows(item, recipe);
+  if (!rows.length) return `<div class="muted">No crafting ingredients are loaded for this item yet.</div>`;
+  return rows
+    .map(
+      (entry) => `
+        <div class="mission-line">
+          <strong>${cleanDisplayText(entry.resource || entry.slot_name || entry.name || "Unknown material")}</strong>
+          <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} units${entry.minQuality !== undefined || entry.min_quality !== undefined ? ` · min quality ${formatCount(entry.minQuality ?? entry.min_quality ?? 0)}` : ""}</div>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+function renderDismantleMarkup(dismantleEntries) {
+  if (!Array.isArray(dismantleEntries) || !dismantleEntries.length) {
+    return `<div class="muted">No dismantle return data is loaded for this item yet.</div>`;
+  }
+  return dismantleEntries
+    .map((entry) => {
+      const results = Array.isArray(entry?.dismantle_results) ? entry.dismantle_results : [];
+      const totalReturned = results.reduce((sum, result) => sum + (Number(result?.quantity_returned || 0) || 0), 0);
+      const resultMarkup = results.length
+        ? results
+            .map((result, index) => `
+              <div class="muted">Returned material ${index + 1}: ${formatCount(result?.quantity_returned || 0)} units</div>
+            `)
+            .join("")
+        : `<div class="muted">Return quantity unavailable</div>`;
+      return `
+        <div class="mission-line">
+          <strong>${cleanDisplayText(entry?.dismantle_method || "Dismantle")}</strong>
+          <div class="muted">${totalReturned ? `${formatCount(totalReturned)} material units returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
+          ${resultMarkup}
+          <div class="muted">SCMinersDB currently exposes return quantities here, but not the returned material names.</div>
+        </div>
+      `;
+    })
+    .join("");
 }
 
 function scminersDbEnsureMissionCache() {
@@ -4486,7 +4559,6 @@ function renderSelected() {
 
     const missions = item.missions || [];
     const crafting = blueprintCraftingData(item);
-    const craftingMaterials = Array.isArray(item.materials) ? item.materials : [];
     const dismantleEntries = crafting.dismantles;
     const craftTimeSeconds = Number(crafting.recipe?.tiers?.[0]?.craft_time_seconds || crafting.recipe?.recipe_time_seconds || item.craftTime || 0);
     els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
@@ -4508,39 +4580,13 @@ function renderSelected() {
         <div class="detail-kv">
           <span>Crafting ingredients</span>
           <div class="mission-list">
-            ${craftingMaterials.length
-              ? craftingMaterials
-                  .map(
-                    (entry) => `
-                      <div class="mission-line">
-                        <strong>${cleanDisplayText(entry.resource || entry.slot_name || "Unknown material")}</strong>
-                        <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} units${entry.minQuality !== undefined ? ` · min quality ${formatCount(entry.minQuality)}` : ""}</div>
-                      </div>
-                    `,
-                  )
-                  .join("")
-              : `<div class="muted">No crafting ingredients are loaded for this blueprint yet.</div>`}
+            ${renderCraftingIngredientMarkup(item, crafting.recipe)}
           </div>
         </div>
         <div class="detail-kv">
           <span>Dismantle returns</span>
           <div class="mission-list">
-            ${dismantleEntries.length
-              ? dismantleEntries
-                  .map((entry) => {
-                    const totalReturned = (entry.dismantle_results || []).reduce(
-                      (sum, result) => sum + (Number(result?.quantity_returned || 0) || 0),
-                      0,
-                    );
-                    return `
-                      <div class="mission-line">
-                        <strong>${cleanDisplayText(entry.dismantle_method || "Dismantle")}</strong>
-                        <div class="muted">${totalReturned ? `${formatCount(totalReturned)} material units returned` : "Return quantity unavailable"}${entry.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
-                      </div>
-                    `;
-                  })
-                  .join("")
-              : `<div class="muted">No dismantle return data is loaded for this blueprint yet.</div>`}
+            ${renderDismantleMarkup(dismantleEntries)}
           </div>
         </div>
         <div class="detail-kv">
@@ -5139,6 +5185,13 @@ function renderBuy() {
   const weaponCounts = countByName(selectedShipWeapons);
   const componentCounts = countByName(selectedShipComponents);
   const statGroups = buyEntryStatsGroups(selected, tab);
+  const selectedBlueprintItem = tab === "items" ? blueprintItemByName(entryName) : null;
+  const itemCraftingSource = selectedBlueprintItem || selected;
+  const itemCrafting = tab === "items" ? blueprintCraftingData(itemCraftingSource) : { recipe: null, dismantles: [] };
+  const itemCraftTimeSeconds =
+    tab === "items"
+      ? Number(itemCrafting.recipe?.tiers?.[0]?.craft_time_seconds || itemCrafting.recipe?.recipe_time_seconds || itemCraftingSource?.craftTime || 0)
+      : 0;
   if (tab === "items" && !statGroups.length) {
     ensureLiveItemWikiSections(selected);
   }
@@ -5192,6 +5245,24 @@ function renderBuy() {
         <div class="detail-kv buy-detail-wide">
           <span>Dimensions</span>
           <strong>${[selected.length ? `L ${selected.length}` : "", selected.width ? `W ${selected.width}` : "", selected.height ? `H ${selected.height}` : "", selected.mass ? `Mass ${selected.mass}` : ""].filter(Boolean).join(" · ")}</strong>
+        </div>
+      ` : ""}
+      ${tab === "items" ? `
+        <div class="detail-kv">
+          <span>Craft time</span>
+          <strong>${itemCraftTimeSeconds ? `${formatCount(itemCraftTimeSeconds)} sec` : "Unknown"}</strong>
+        </div>
+        <div class="detail-kv buy-detail-wide">
+          <span>Crafting ingredients</span>
+          <div class="mission-list">
+            ${renderCraftingIngredientMarkup(itemCraftingSource, itemCrafting.recipe)}
+          </div>
+        </div>
+        <div class="detail-kv buy-detail-wide">
+          <span>Dismantle returns</span>
+          <div class="mission-list">
+            ${renderDismantleMarkup(itemCrafting.dismantles)}
+          </div>
         </div>
       ` : ""}
       ${statBlock}
