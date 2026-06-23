@@ -4,6 +4,7 @@ const USERS_KEY = "sc-blueprint-tracker-users-v1";
 const USER_PREFIX = "sc-blueprint-tracker-user-v1-";
 const SCMINERSDB_MANIFEST_URL_KEY = "scminersdb-manifest-url-v1";
 const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/scminersdb/runs/latest.json";
+const STAR_CITIZEN_DEFAULT_PATH = "C:/Program Files/Roberts Space Industries/StarCitizen/LIVE";
 const BUY_DATA_SCRIPT_VERSION = "20260618a";
 const BUY_DATA_SCRIPT_URLS = Object.freeze([
   `./buy_items_items_1.js?v=${BUY_DATA_SCRIPT_VERSION}`,
@@ -122,6 +123,16 @@ const state = {
     status: "",
   },
   scminersDbManifestUrl: localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY) || SCMINERSDB_DEFAULT_MANIFEST_URL,
+  scminersDbBridgeConfig: {
+    available: false,
+    sourceRoot: "",
+    sourceRootExists: false,
+    sourceRootHasDataP4k: false,
+    workspaceRoot: "",
+    workspaceReady: false,
+    exportRoot: "",
+    manifestUrl: "",
+  },
   appReady: false,
   scminersDbRefreshTimer: null,
   scminersDbCategory: "1h",
@@ -924,7 +935,16 @@ function isMissingDisplayText(value) {
 
 function isBadLabel(v) {
   const value = norm(v);
-  return !value || value.includes("placeholder") || value.includes("null");
+  return (
+    !value
+    || value.includes("placeholder")
+    || value.includes("null")
+    || value.includes("file://")
+    || value.includes("/records/")
+    || value.includes("\\records\\")
+    || value.includes("libs/foundry")
+    || value.includes("libs\\foundry")
+  );
 }
 
 function countByName(values) {
@@ -989,6 +1009,89 @@ function setScminersDbManifestUrl(value) {
   state.scminersDbManifestUrl = normalized;
   localStorage.setItem(SCMINERSDB_MANIFEST_URL_KEY, normalized);
   return normalized;
+}
+
+async function fetchScminersDbBridgeConfig() {
+  if (typeof fetch !== "function") return null;
+  try {
+    const payload = await fetchJson("/api/scminersdb/config");
+    const config = payload?.config || payload;
+    state.scminersDbBridgeConfig = {
+      available: true,
+      sourceRoot: cleanDisplayText(config?.sourceRoot || ""),
+      sourceRootExists: Boolean(config?.sourceRootExists),
+      sourceRootHasDataP4k: Boolean(config?.sourceRootHasDataP4k),
+      workspaceRoot: cleanDisplayText(config?.workspaceRoot || ""),
+      workspaceReady: Boolean(config?.workspaceReady),
+      exportRoot: cleanDisplayText(config?.exportRoot || ""),
+      manifestUrl: cleanDisplayText(config?.manifestUrl || ""),
+    };
+    return state.scminersDbBridgeConfig;
+  } catch {
+    state.scminersDbBridgeConfig = {
+      available: false,
+      sourceRoot: "",
+      sourceRootExists: false,
+      sourceRootHasDataP4k: false,
+      workspaceRoot: "",
+      workspaceReady: false,
+      exportRoot: "",
+      manifestUrl: "",
+    };
+    return null;
+  }
+}
+
+async function saveScminersDbBridgeConfig(partial = {}) {
+  if (typeof fetch !== "function") return null;
+  const response = await fetch("/api/scminersdb/config", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(partial),
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(cleanDisplayText(payload?.message || payload?.error || `HTTP ${response.status}`));
+  }
+  const config = payload?.config || payload;
+  state.scminersDbBridgeConfig = {
+    available: true,
+    sourceRoot: cleanDisplayText(config?.sourceRoot || ""),
+    sourceRootExists: Boolean(config?.sourceRootExists),
+    sourceRootHasDataP4k: Boolean(config?.sourceRootHasDataP4k),
+    workspaceRoot: cleanDisplayText(config?.workspaceRoot || ""),
+    workspaceReady: Boolean(config?.workspaceReady),
+    exportRoot: cleanDisplayText(config?.exportRoot || ""),
+    manifestUrl: cleanDisplayText(config?.manifestUrl || ""),
+  };
+  return state.scminersDbBridgeConfig;
+}
+
+function currentScminersDbSourceRoot() {
+  return cleanDisplayText(state.scminersDbBridgeConfig?.sourceRoot || "");
+}
+
+function scminersDbBridgeStatusText() {
+  const config = state.scminersDbBridgeConfig || {};
+  if (!config.available) return "Local SCMinersDB bridge not detected.";
+  if (!config.workspaceReady) return "SCMinersDB workspace not found for local updates.";
+  if (!config.sourceRoot) return "No Star Citizen path saved yet.";
+  if (!config.sourceRootHasDataP4k) return "Saved Star Citizen path is missing Data.p4k.";
+  return `Saved path: ${config.sourceRoot}`;
+}
+
+async function ensureScminersDbSourceRoot() {
+  const current = state.scminersDbBridgeConfig?.available ? state.scminersDbBridgeConfig : await fetchScminersDbBridgeConfig();
+  if (current?.sourceRoot && current.sourceRootHasDataP4k) return current.sourceRoot;
+  const suggested = current?.sourceRoot || STAR_CITIZEN_DEFAULT_PATH;
+  const entered = window.prompt("Enter your Star Citizen LIVE folder path. It must contain Data.p4k.", suggested);
+  const normalized = cleanDisplayText(entered || "");
+  if (!normalized) throw new Error("Star Citizen install path is required.");
+  const saved = await saveScminersDbBridgeConfig({ sourceRoot: normalized });
+  if (!saved?.sourceRootHasDataP4k) {
+    throw new Error("That folder does not contain Data.p4k. Choose the Star Citizen LIVE folder.");
+  }
+  return saved.sourceRoot;
 }
 
 function resolveScminersDbAssetUrl(manifestUrl, assetUrl) {
@@ -1670,7 +1773,7 @@ async function loadScminersDbBridge() {
   if (bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
   if (typeof fetch !== "function") return null;
   try {
-    const sources = [currentScminersDbManifestUrl(), "/api/scminersdb/manifest"];
+    const sources = ["/api/scminersdb/manifest", currentScminersDbManifestUrl()];
     let manifest = null;
     let manifestUrl = "";
     let lastError = null;
@@ -1795,11 +1898,39 @@ async function updateScminersDb() {
     button.textContent = "Updating...";
   }
   try {
+    const sourceRoot = await ensureScminersDbSourceRoot();
+    const response = await fetch("/api/scminersdb/update", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        sourceRoot,
+        manifestUrl: currentScminersDbManifestUrl(),
+      }),
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(cleanDisplayText(payload?.message || payload?.error || `HTTP ${response.status}`));
+    }
+    if (payload?.config) {
+      state.scminersDbBridgeConfig = {
+        available: true,
+        sourceRoot: cleanDisplayText(payload.config.sourceRoot || ""),
+        sourceRootExists: Boolean(payload.config.sourceRootExists),
+        sourceRootHasDataP4k: Boolean(payload.config.sourceRootHasDataP4k),
+        workspaceRoot: cleanDisplayText(payload.config.workspaceRoot || ""),
+        workspaceReady: Boolean(payload.config.workspaceReady),
+        exportRoot: cleanDisplayText(payload.config.exportRoot || ""),
+        manifestUrl: cleanDisplayText(payload.config.manifestUrl || ""),
+      };
+    }
     await loadScminersDbBridge();
     state.data = await loadBlueprintData();
     state.buyData = await loadBuyData();
     renderAll();
-    return state.scminersDb;
+    return {
+      ...state.scminersDb,
+      updated: payload?.updated || null,
+    };
   } finally {
     if (button) {
       button.disabled = false;
@@ -3279,14 +3410,17 @@ function augmentMissionWithStructuredData(mission) {
   if (!mission) return mission;
   const structured = scminersDbBestMissionMatch(mission);
   if (!structured) return mission;
+  const safeStructuredFaction = isBadLabel(structured.structuredFaction) ? "" : structured.structuredFaction;
+  const safeStructuredMissionType = isBadLabel(structured.structuredMissionType) ? "" : structured.structuredMissionType;
   return {
     ...mission,
     title: structured.structuredTitle || mission.title || mission.name || "",
     description: structured.structuredDescription || mission.description || mission.summary || mission.text || "",
     summary: structured.structuredDescription || mission.summary || mission.description || "",
     text: structured.structuredDescription || mission.text || mission.description || "",
-    faction: structured.structuredFaction || mission.faction || "",
-    type: structured.structuredMissionType || mission.type || "",
+    // Preserve clean local mission labels; only backfill when they are missing.
+    faction: mission.faction || safeStructuredFaction || "",
+    type: mission.type || safeStructuredMissionType || "",
     system: structured.system || structured.system_guess || mission.system || "",
     location: structured.structuredLocation || mission.location || structured.location_guess || "",
     repStanding: structured.structuredRequiredRank || mission.repStanding || "",
@@ -3294,8 +3428,8 @@ function augmentMissionWithStructuredData(mission) {
     structuredMissionName: structured.structuredName || mission.structuredMissionName || "",
     structuredSourcePath: structured.structuredSourcePath || mission.structuredSourcePath || "",
     structuredSourceId: structured.structuredSourceId || mission.structuredSourceId || "",
-    structuredFaction: structured.structuredFaction || mission.structuredFaction || "",
-    structuredMissionType: structured.structuredMissionType || mission.structuredMissionType || "",
+    structuredFaction: safeStructuredFaction || mission.structuredFaction || "",
+    structuredMissionType: safeStructuredMissionType || mission.structuredMissionType || "",
     structuredMoneyReward: structured.structuredMoneyReward ?? mission.structuredMoneyReward ?? 0,
     structuredScriptReward: structured.structuredScriptReward ?? mission.structuredScriptReward ?? 0,
     structuredRewardCount: structured.structuredRewardCount ?? mission.structuredRewardCount ?? 0,
@@ -4823,7 +4957,7 @@ function renderSelected() {
   const structuredMatchScore = Number(mission.structuredMatchScore || 0);
   const hasStructuredMissionData = Boolean(structuredMissionId || structuredMissionName || structuredSourcePath || structuredPrereqSummary || structuredMatchScore);
 
-  els.selectedMeta.textContent = "";
+  els.selectedMeta.textContent = `${mission.type} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card mission-detail";
   els.selectedDetails.innerHTML = `
     <div class="mission-hero">
@@ -5137,6 +5271,8 @@ function buyLocationSummary(entry) {
   return offers.length === 1 ? first : `${first} + ${formatCount(offers.length - 1)} more`;
 }
 
+const BUY_RESULTS_RENDER_LIMIT = 200;
+
 function renderBuy() {
   if (!els.buyResults || !els.buySelectedDetails) return;
   if (!hasBuyDataLoaded()) {
@@ -5153,6 +5289,8 @@ function renderBuy() {
   const tab = state.buyTab || "items";
   const entries = filteredBuyEntries();
   const selected = currentBuyEntry();
+  const previewEntries = entries.slice(0, BUY_RESULTS_RENDER_LIMIT);
+  const hasHiddenEntries = entries.length > previewEntries.length;
 
   const tabs = document.querySelectorAll("[data-buy-tab]");
   tabs.forEach((button) => {
@@ -5261,11 +5399,13 @@ function renderBuy() {
   }
   if (els.buyResultsSummary) {
     const sourceLabel = tab === "items" ? "items" : tab === "ships" ? "ships" : "rentals";
-    els.buyResultsSummary.textContent = `${formatCount(entries.length)} ${sourceLabel} match${entries.length === 1 ? "" : "es"}`;
+    els.buyResultsSummary.textContent = hasHiddenEntries
+      ? `${formatCount(entries.length)} ${sourceLabel} matches · showing first ${formatCount(previewEntries.length)}`
+      : `${formatCount(entries.length)} ${sourceLabel} match${entries.length === 1 ? "" : "es"}`;
   }
 
   els.buyResults.innerHTML =
-    entries
+    previewEntries
       .map((entry) => {
         const name = buyEntryName(entry, tab);
         const type = buyEntryType(entry, tab);
@@ -5282,7 +5422,11 @@ function renderBuy() {
           </button>
         `;
       })
-      .join("") || `<div class="muted">No ${tab} entries match this filter.</div>`;
+      .join("")
+    || `<div class="muted">No ${tab} entries match this filter.</div>`;
+  if (hasHiddenEntries) {
+    els.buyResults.innerHTML += `<div class="muted" style="padding:12px 4px 0;">Showing the first ${formatCount(previewEntries.length)} matches. Narrow the search or filters to reduce the list.</div>`;
+  }
 
   if (!selected) {
     els.buySelectedMeta.textContent = "Nothing selected";
@@ -5512,6 +5656,12 @@ function renderSettings() {
   document.body.dataset.theme = currentTheme;
   if (els.scminersDbManifestUrl) {
     els.scminersDbManifestUrl.value = currentScminersDbManifestUrl();
+  }
+  if (els.scminersDbSourceRoot) {
+    els.scminersDbSourceRoot.value = currentScminersDbSourceRoot();
+  }
+  if (els.scminersDbSourceRootStatus) {
+    els.scminersDbSourceRootStatus.textContent = scminersDbBridgeStatusText();
   }
 }
 
@@ -5821,6 +5971,9 @@ async function init() {
     "resetState",
     "themeDark",
     "themeLight",
+    "scminersDbSourceRoot",
+    "saveScminersDbSourceRoot",
+    "scminersDbSourceRootStatus",
     "scminersDbManifestUrl",
     "saveScminersDbManifestUrl",
   ].forEach((id) => {
@@ -5832,6 +5985,7 @@ async function init() {
   els.searchInput.value = state.search;
   renderAll();
   void bootstrapAppData();
+  void fetchScminersDbBridgeConfig().then(() => renderSettings());
   if (!bundledScminersDbPayload()) void loadScminersDbBridge();
   void loadLiveMissionContracts();
   scheduleScminersDbRefresh();
@@ -6096,7 +6250,7 @@ async function init() {
     try {
       const result = await updateScminersDb();
       if (result) {
-        els.footerWatch.textContent = `Updated ${formatCount(result?.updated?.files || 0)} exports`;
+        els.footerWatch.textContent = `Updated ${formatCount(result?.updated?.files || result?.updated?.json_count || 0)} exports`;
       }
     } catch (error) {
       const message = cleanDisplayText(error?.message || error);
@@ -6116,6 +6270,14 @@ async function init() {
   els.themeLight.addEventListener("click", () => {
     localStorage.setItem("sc-blueprint-tracker-theme", "light");
     renderSettings();
+  });
+  els.saveScminersDbSourceRoot?.addEventListener("click", async () => {
+    try {
+      await saveScminersDbBridgeConfig({ sourceRoot: els.scminersDbSourceRoot?.value || "" });
+      renderSettings();
+    } catch (error) {
+      alert(cleanDisplayText(error?.message || error));
+    }
   });
   els.saveScminersDbManifestUrl?.addEventListener("click", () => {
     setScminersDbManifestUrl(els.scminersDbManifestUrl?.value || SCMINERSDB_DEFAULT_MANIFEST_URL);

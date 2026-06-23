@@ -6,8 +6,8 @@
     <title>SC Items</title>
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./blueprint_explorer_data.js?v=20260618a"></script>
-    <script defer src="./sc_local_api.js?v=20260618a"></script>
     <script defer src="./scminersdb_local_bundle.js?v=20260623b"></script>
+    <script defer src="./sc_local_api.js?v=20260618a"></script>
     <script defer src="./app.js?v=20260623b"></script>
   </head>
   <body>
@@ -474,14 +474,20 @@
                 <div class="summary-head">
                   <div>
                     <h3>SCMinersDB source</h3>
-                    <p>Update Info uses this manifest URL</p>
+                    <p>Update Info uses your saved Star Citizen path first, then this manifest URL as fallback</p>
                   </div>
                 </div>
+                <label class="field">
+                  <span>Star Citizen LIVE folder</span>
+                  <input id="scminersDbSourceRoot" type="text" placeholder="C:/Program Files/Roberts Space Industries/StarCitizen/LIVE" />
+                </label>
+                <div class="muted" id="scminersDbSourceRootStatus">No Star Citizen path saved yet.</div>
                 <label class="field">
                   <span>Manifest URL</span>
                   <input id="scminersDbManifestUrl" type="url" placeholder="https://.../runs/latest.json" />
                 </label>
                 <div class="wizard-actions">
+                  <button id="saveScminersDbSourceRoot" class="ghost-button" type="button">Save game path</button>
                   <button id="saveScminersDbManifestUrl" class="primary-button" type="button">Save manifest URL</button>
                 </div>
               </div>

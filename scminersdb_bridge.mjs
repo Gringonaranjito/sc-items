@@ -3,15 +3,24 @@ import path from "node:path";
 import { promises as fs } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import { spawn } from "node:child_process";
 
 const ROOT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.SC_ITEMS_PORT || 4173);
 const UPDATE_MANIFEST_URL = process.env.SCMINERSDB_UPDATE_MANIFEST_URL || "";
 const UPDATE_SOURCE_DIR = process.env.SCMINERSDB_UPDATE_SOURCE_DIR || "";
+const UPDATE_WORKSPACE_ROOT = process.env.SCMINERSDB_WORKSPACE_ROOT || "";
+const UPDATE_PYTHON = process.env.SCMINERSDB_PYTHON || "";
+const BRIDGE_CONFIG_PATH = path.join(ROOT_DIR, "scminersdb_bridge_config.json");
 const DEFAULT_EXPORT_ROOTS = [
   process.env.SCMINERSDB_EXPORT_ROOT,
   "C:\\Users\\juanc\\Documents\\Codex\\2026-06-19\\i\\scminersdb\\data",
   "C:\\Users\\juanc\\Documents\\Codex\\2026-06-20\\scminersdb\\data",
+];
+const DEFAULT_WORKSPACE_ROOTS = [
+  UPDATE_WORKSPACE_ROOT,
+  path.join(ROOT_DIR, "scminersdb"),
+  "C:\\Users\\juanc\\Documents\\Codex\\2026-06-20\\scminersdb",
 ];
 
 async function pickExportRoot() {
@@ -32,7 +41,7 @@ async function pickExportRoot() {
   return bestCandidate || path.resolve(DEFAULT_EXPORT_ROOTS.find(Boolean) || candidates[0] || ROOT_DIR);
 }
 
-const EXPORT_ROOT = await pickExportRoot();
+let EXPORT_ROOT = await pickExportRoot();
 
 const MIME_TYPES = {
   ".html": "text/html; charset=utf-8",
@@ -75,6 +84,14 @@ function safeResolve(baseDir, requestPath) {
   const baseWithSep = baseDir.endsWith(path.sep) ? baseDir : `${baseDir}${path.sep}`;
   if (resolved !== baseDir && !resolved.startsWith(baseWithSep)) return null;
   return resolved;
+}
+
+function cleanValue(value) {
+  return String(value || "").trim();
+}
+
+function normalizePathInput(value) {
+  return cleanValue(value).replace(/^"(.*)"$/, "$1");
 }
 
 async function readFileIfExists(filePath) {
@@ -133,6 +150,167 @@ async function fetchJsonFromUrl(url) {
   const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
   return response.json();
+}
+
+async function pathExists(targetPath) {
+  if (!targetPath) return false;
+  try {
+    await fs.access(targetPath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function fileExists(targetPath) {
+  const stat = await statIfExists(targetPath);
+  return Boolean(stat?.isFile());
+}
+
+async function directoryExists(targetPath) {
+  const stat = await statIfExists(targetPath);
+  return Boolean(stat?.isDirectory());
+}
+
+async function pickWorkspaceRoot(explicitRoot = "") {
+  const candidates = [explicitRoot, ...DEFAULT_WORKSPACE_ROOTS]
+    .filter(Boolean)
+    .map((value) => path.resolve(value));
+  for (const candidate of candidates) {
+    if (await fileExists(path.join(candidate, "python-tool", "src", "scdm", "pipeline.py"))) {
+      return candidate;
+    }
+  }
+  return "";
+}
+
+async function resolveBundledPython(workspaceRoot) {
+  const candidates = [
+    UPDATE_PYTHON,
+    workspaceRoot ? path.join(workspaceRoot, "Python-3.11.15", "python.exe") : "",
+    workspaceRoot ? path.join(workspaceRoot, ".venv", "Scripts", "python.exe") : "",
+  ]
+    .filter(Boolean)
+    .map((value) => path.resolve(value));
+  for (const candidate of candidates) {
+    if (await fileExists(candidate)) return candidate;
+  }
+  return "python";
+}
+
+async function readBridgeConfig() {
+  const raw = await readFileIfExists(BRIDGE_CONFIG_PATH);
+  const defaults = {
+    sourceRoot: UPDATE_SOURCE_DIR,
+    manifestUrl: UPDATE_MANIFEST_URL,
+    workspaceRoot: UPDATE_WORKSPACE_ROOT,
+  };
+  if (!raw) return defaults;
+  try {
+    const parsed = JSON.parse(raw.toString("utf8"));
+    return {
+      sourceRoot: normalizePathInput(parsed?.sourceRoot || defaults.sourceRoot),
+      manifestUrl: cleanValue(parsed?.manifestUrl || defaults.manifestUrl),
+      workspaceRoot: normalizePathInput(parsed?.workspaceRoot || defaults.workspaceRoot),
+    };
+  } catch {
+    return defaults;
+  }
+}
+
+async function writeBridgeConfig(config) {
+  const payload = {
+    sourceRoot: normalizePathInput(config?.sourceRoot || ""),
+    manifestUrl: cleanValue(config?.manifestUrl || ""),
+    workspaceRoot: normalizePathInput(config?.workspaceRoot || ""),
+  };
+  await writeJson(BRIDGE_CONFIG_PATH, payload);
+  return payload;
+}
+
+async function dataP4kPath(sourceRoot) {
+  const normalized = normalizePathInput(sourceRoot);
+  if (!normalized) return "";
+  return path.join(path.resolve(normalized), "Data.p4k");
+}
+
+async function sourceRootStatus(sourceRoot) {
+  const normalized = normalizePathInput(sourceRoot);
+  if (!normalized) return { sourceRoot: "", exists: false, hasDataP4k: false };
+  const resolved = path.resolve(normalized);
+  const exists = await directoryExists(resolved);
+  const hasDataP4k = exists ? await fileExists(await dataP4kPath(resolved)) : false;
+  return { sourceRoot: resolved, exists, hasDataP4k };
+}
+
+async function currentBridgeStatus(overrides = {}) {
+  const stored = await readBridgeConfig();
+  const merged = {
+    sourceRoot: normalizePathInput(overrides.sourceRoot ?? stored.sourceRoot ?? ""),
+    manifestUrl: cleanValue(overrides.manifestUrl ?? stored.manifestUrl ?? ""),
+    workspaceRoot: normalizePathInput(overrides.workspaceRoot ?? stored.workspaceRoot ?? ""),
+  };
+  const workspaceRoot = await pickWorkspaceRoot(merged.workspaceRoot);
+  const sourceStatus = await sourceRootStatus(merged.sourceRoot);
+  const exportRoot = workspaceRoot ? path.join(workspaceRoot, "data") : EXPORT_ROOT;
+  return {
+    ...merged,
+    workspaceRoot,
+    workspaceReady: Boolean(workspaceRoot),
+    sourceRoot: sourceStatus.sourceRoot,
+    sourceRootExists: sourceStatus.exists,
+    sourceRootHasDataP4k: sourceStatus.hasDataP4k,
+    exportRoot,
+  };
+}
+
+async function runScminersDbSync({ workspaceRoot, sourceRoot }) {
+  const pythonExecutable = await resolveBundledPython(workspaceRoot);
+  const script = `
+import json
+import sys
+from dataclasses import replace
+from pathlib import Path
+
+workspace_root = Path(sys.argv[1])
+source_root = Path(sys.argv[2])
+sys.path.insert(0, str(workspace_root / "python-tool" / "src"))
+
+from scdm.config import load_workspace_config, save_config, workspace_config_path
+from scdm.pipeline import run_default_pipeline
+
+config = load_workspace_config(workspace_root)
+save_config(workspace_config_path(workspace_root), replace(config, source_root=source_root))
+result = run_default_pipeline(workspace_root, source_root=source_root)
+print(json.dumps(result))
+`.trim();
+  return new Promise((resolve, reject) => {
+    const child = spawn(pythonExecutable, ["-c", script, workspaceRoot, sourceRoot], {
+      cwd: workspaceRoot,
+      windowsHide: true,
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+    let stdout = "";
+    let stderr = "";
+    child.stdout.on("data", (chunk) => {
+      stdout += chunk.toString();
+    });
+    child.stderr.on("data", (chunk) => {
+      stderr += chunk.toString();
+    });
+    child.on("error", reject);
+    child.on("close", (code) => {
+      if (code !== 0) {
+        reject(new Error(cleanValue(stderr || stdout || `SCMinersDB sync exited with code ${code}`)));
+        return;
+      }
+      try {
+        resolve(JSON.parse(cleanValue(stdout) || "{}"));
+      } catch {
+        resolve({ status: "ok", raw: cleanValue(stdout), warnings: cleanValue(stderr) ? [cleanValue(stderr)] : [] });
+      }
+    });
+  });
 }
 
 function isAbsoluteUrl(value) {
@@ -228,6 +406,30 @@ async function getManifest() {
 }
 
 async function handleApi(req, res, pathname) {
+  if (pathname === "/api/scminersdb/config" && req.method === "GET") {
+    return sendJson(res, 200, await currentBridgeStatus());
+  }
+
+  if (pathname === "/api/scminersdb/config" && req.method === "POST") {
+    try {
+      const body = await readJsonBody(req).catch(() => ({}));
+      const current = await readBridgeConfig();
+      const next = await writeBridgeConfig({
+        sourceRoot: body?.sourceRoot ?? current.sourceRoot,
+        manifestUrl: body?.manifestUrl ?? current.manifestUrl,
+        workspaceRoot: body?.workspaceRoot ?? current.workspaceRoot,
+      });
+      const status = await currentBridgeStatus(next);
+      if (status.workspaceReady) EXPORT_ROOT = status.exportRoot;
+      return sendJson(res, 200, { ok: true, config: status });
+    } catch (error) {
+      return sendJson(res, 500, {
+        error: "Config save failed",
+        message: String(error?.message || error),
+      });
+    }
+  }
+
   if (pathname === "/api/scminersdb/manifest") {
     const manifest = await getManifest();
     if (!manifest) return sendJson(res, 404, { error: "SCMinersDB manifest not found." });
@@ -247,24 +449,66 @@ async function handleApi(req, res, pathname) {
   if (pathname === "/api/scminersdb/update" && req.method === "POST") {
     try {
       const body = await readJsonBody(req).catch(() => ({}));
-      const sourceDir = String(body?.sourceDir || UPDATE_SOURCE_DIR || "").trim();
-      const manifestUrl = String(body?.manifestUrl || UPDATE_MANIFEST_URL || "").trim();
+      const config = await readBridgeConfig();
+      const sourceRoot = normalizePathInput(body?.sourceRoot || body?.sourceDir || config.sourceRoot || UPDATE_SOURCE_DIR || "");
+      const manifestUrl = cleanValue(body?.manifestUrl || config.manifestUrl || UPDATE_MANIFEST_URL || "");
+      const requestedWorkspace = normalizePathInput(body?.workspaceRoot || config.workspaceRoot || UPDATE_WORKSPACE_ROOT || "");
+      const workspaceRoot = await pickWorkspaceRoot(requestedWorkspace);
       let result = null;
-      if (sourceDir) {
-        result = await syncFromLocalDirectory(path.resolve(sourceDir));
+
+      if (sourceRoot) {
+        const sourceStatus = await sourceRootStatus(sourceRoot);
+        if (!sourceStatus.exists || !sourceStatus.hasDataP4k) {
+          return sendJson(res, 400, {
+            error: "Star Citizen path is missing or invalid.",
+            sourceRoot: sourceStatus.sourceRoot,
+            exists: sourceStatus.exists,
+            hasDataP4k: sourceStatus.hasDataP4k,
+            hint: "Choose the LIVE folder that contains Data.p4k.",
+          });
+        }
+        if (!workspaceRoot) {
+          return sendJson(res, 500, {
+            error: "SCMinersDB workspace not found.",
+            hint: "Bundle the scminersdb workspace with this app or set SCMINERSDB_WORKSPACE_ROOT.",
+          });
+        }
+        result = await runScminersDbSync({
+          workspaceRoot,
+          sourceRoot: sourceStatus.sourceRoot,
+        });
+        await writeBridgeConfig({
+          sourceRoot: sourceStatus.sourceRoot,
+          manifestUrl,
+          workspaceRoot,
+        });
+        EXPORT_ROOT = path.join(workspaceRoot, "data");
+      } else if (body?.copySourceDir) {
+        result = await syncFromLocalDirectory(path.resolve(String(body.copySourceDir)));
       } else if (manifestUrl) {
         result = await syncFromManifestUrl(manifestUrl);
+        await writeBridgeConfig({
+          sourceRoot: "",
+          manifestUrl,
+          workspaceRoot,
+        });
       } else {
         return sendJson(res, 400, {
           error: "No update source configured.",
-          hint: "Set SCMINERSDB_UPDATE_SOURCE_DIR or SCMINERSDB_UPDATE_MANIFEST_URL, then try again.",
+          hint: "Save a Star Citizen install path first, or configure a manifest URL fallback.",
         });
       }
       const manifest = await getManifest();
+      const status = await currentBridgeStatus({
+        sourceRoot,
+        manifestUrl,
+        workspaceRoot,
+      });
       return sendJson(res, 200, {
         ok: true,
         updated: result,
         manifest,
+        config: status,
       });
     } catch (error) {
       return sendJson(res, 500, {
