@@ -1302,6 +1302,45 @@ function defaultProfile() {
   };
 }
 
+function normalizeLegacyProfilePayload(payload) {
+  if (!payload || typeof payload !== "object") return null;
+  const profile = payload.profile && typeof payload.profile === "object" ? payload.profile : payload;
+  return {
+    ...defaultProfile(),
+    ...profile,
+    owned: Array.isArray(profile.owned) ? profile.owned : [],
+    logs: Array.isArray(profile.logs) ? profile.logs : [],
+  };
+}
+
+function migrateLegacyStorageIfNeeded() {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  if (!raw || raw === "default" || raw.startsWith("user-")) return;
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch {
+    return;
+  }
+  const normalized = normalizeLegacyProfilePayload(parsed);
+  if (!normalized) return;
+  const userId = typeof parsed?.currentUserId === "string" && parsed.currentUserId.trim() ? parsed.currentUserId.trim() : "default";
+  const existingUsersRaw = localStorage.getItem(USERS_KEY);
+  if (!existingUsersRaw) {
+    localStorage.setItem(USERS_KEY, JSON.stringify([{ id: userId, name: "Default" }]));
+  }
+  if (!localStorage.getItem(profileKey(userId))) {
+    localStorage.setItem(profileKey(userId), JSON.stringify(normalized));
+  }
+  localStorage.setItem(STORAGE_KEY, userId);
+  if (typeof parsed?.watch === "string" && parsed.watch.trim()) {
+    localStorage.setItem(WATCH_KEY, parsed.watch.trim());
+  }
+  if (typeof parsed?.scminersDbManifestUrl === "string" && parsed.scminersDbManifestUrl.trim()) {
+    localStorage.setItem(SCMINERSDB_MANIFEST_URL_KEY, parsed.scminersDbManifestUrl.trim());
+  }
+}
+
 function loadUsers() {
   try {
     const parsed = JSON.parse(localStorage.getItem(USERS_KEY) || "null");
@@ -2666,6 +2705,7 @@ function selectBuyEntry(entry) {
 }
 
 function loadState() {
+  migrateLegacyStorageIfNeeded();
   loadUsers();
   const savedUserId = localStorage.getItem(STORAGE_KEY) || state.users[0].id;
   state.currentUserId = state.users.some((user) => user.id === savedUserId) ? savedUserId : state.users[0].id;
