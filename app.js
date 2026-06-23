@@ -2120,6 +2120,20 @@ function buyEntryMetadataValue(entry, label) {
   return "";
 }
 
+function buyEntryLooksInternalOnly(entry, tab = state.buyTab) {
+  if (!entry || tab !== "items") return false;
+  const name = cleanDisplayText(buyEntryName(entry, tab));
+  const className = buyEntryMetadataValue(entry, "Class name");
+  const type = norm(buyEntryType(entry, tab));
+  const subtype = norm(buyEntrySubtype(entry, tab));
+  const hasLocations = buyEntryOffers(entry).length > 0;
+  if (hasLocations && !/^entityclassdefinition\./i.test(name)) return false;
+  const rawInternalName = /^entityclassdefinition\./i.test(name);
+  const templateLike = /\b(template|fusebox|crate)\b/i.test(name) || /\b(template|fusebox|crate)\b/i.test(className);
+  const unknownMeta = type === "unknown" && subtype === "unknown";
+  return !hasLocations && (rawInternalName || (templateLike && unknownMeta));
+}
+
 function wikiItemSlug(name) {
   return cleanDisplayText(name)
     .replace(/\s+/g, "_")
@@ -2563,6 +2577,7 @@ function filteredBuyEntries() {
   const query = norm(state.buySearch);
   return buyEntriesForTab()
     .filter((entry) => {
+      if (buyEntryLooksInternalOnly(entry)) return false;
       if (state.buyTab === "items" && state.buyItemCategory !== "All" && buyItemCategory(entry) !== state.buyItemCategory) return false;
       if (state.buyType !== "All" && buyEntryType(entry) !== state.buyType) return false;
       if (state.buySubtype !== "All" && buyEntrySubtype(entry) !== state.buySubtype) return false;
