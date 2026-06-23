@@ -136,6 +136,7 @@ let scminersDbMissionCache = {
 };
 let buyDataLoadPromise = null;
 let buyDataScriptsLoadPromise = null;
+let buyDataProgressRenderTimer = null;
 
 let missionLookupCache = {
   dataItemsRef: null,
@@ -651,13 +652,23 @@ const BUY_GENERIC_SHOP_LABELS = Object.freeze([
 const BUY_GENERIC_SHOP_LABEL_SET = new Set(BUY_GENERIC_SHOP_LABELS);
 const BUY_GENERIC_SHOP_LABELS_BY_LENGTH = Object.freeze([...BUY_GENERIC_SHOP_LABELS].sort((a, b) => b.length - a.length));
 
-const BUY_DATA_BATCH_SIZE = 250;
+const BUY_DATA_BATCH_SIZE = 500;
+const BUY_DATA_PROGRESS_RENDER_DELAY_MS = 120;
 
 function yieldToMainThread(timeout = 0) {
   if (typeof window !== "undefined" && typeof window.requestIdleCallback === "function") {
     return new Promise((resolve) => window.requestIdleCallback(() => resolve(), { timeout: 16 }));
   }
   return new Promise((resolve) => setTimeout(resolve, timeout));
+}
+
+function scheduleBuyLoadingRender() {
+  if (!state.appReady || state.view !== "buy-items") return;
+  if (buyDataProgressRenderTimer) return;
+  buyDataProgressRenderTimer = setTimeout(() => {
+    buyDataProgressRenderTimer = null;
+    if (state.appReady && state.view === "buy-items") renderBuy();
+  }, BUY_DATA_PROGRESS_RENDER_DELAY_MS);
 }
 
 async function chunkMap(items, mapper, { batchSize = BUY_DATA_BATCH_SIZE, onProgress } = {}) {
@@ -1479,12 +1490,6 @@ function ensureBuyDataReady({ render = true } = {}) {
   return buyDataLoadPromise;
 }
 
-async function warmBuyDataInBackground() {
-  if (hasBuyDataLoaded() || buyDataLoadPromise) return;
-  await yieldToMainThread(50);
-  await ensureBuyDataReady({ render: state.view === "buy-items" });
-}
-
 async function bootstrapAppData() {
   await yieldToMainThread();
   const blueprintData = await loadBlueprintData();
@@ -1493,8 +1498,6 @@ async function bootstrapAppData() {
   renderAll();
   if (state.view === "buy-items") {
     void ensureBuyDataReady({ render: true });
-  } else {
-    void warmBuyDataInBackground();
   }
 }
 
@@ -1819,7 +1822,7 @@ async function loadBuyData() {
 
   const updateProgress = (done, total) => {
     state.buyDataStatus = total ? `Loading buy data ${formatCount(done)} / ${formatCount(total)}...` : "Loading buy data...";
-    if (state.appReady) renderBuy();
+    scheduleBuyLoadingRender();
   };
 
   const normalizeDataset = async (source, mapper = normalizeRecord) => {
@@ -1856,6 +1859,10 @@ async function loadBuyData() {
   const processedData = { items, ships, rentals };
   state.buyData = processedData;
   state.buyDataStatus = `Loaded ${formatCount(items.length + ships.length + rentals.length)} buy records`;
+  if (buyDataProgressRenderTimer) {
+    clearTimeout(buyDataProgressRenderTimer);
+    buyDataProgressRenderTimer = null;
+  }
   if (state.appReady && typeof renderAll === "function") renderAll();
   return processedData;
 }
@@ -5403,6 +5410,9 @@ function removeSelectedBlueprintOwned() {
 function activateRail(section) {
   state.view = normalizeRailView(section);
   renderAll();
+  if (state.view === "buy-items" && !hasBuyDataLoaded() && !buyDataLoadPromise) {
+    void ensureBuyDataReady({ render: true });
+  }
 
   const targets = {
     dashboard: ".step-shell",
