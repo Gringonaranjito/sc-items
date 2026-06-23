@@ -2988,16 +2988,17 @@ function renderDismantleMarkup(dismantleEntries) {
       const resultMarkup = results.length
         ? results
             .map((result, index) => `
-              <div class="muted">Returned material ${index + 1}: ${formatCount(result?.quantity_returned || 0)} units</div>
+              <div class="muted">${cleanDisplayText(result?.material_name || result?.item_name || `Returned material ${index + 1}`)}: ${formatCount(result?.quantity_returned || 0)} units</div>
             `)
             .join("")
         : `<div class="muted">Return quantity unavailable</div>`;
+      const hasNamedResults = results.some((result) => cleanDisplayText(result?.material_name || result?.item_name));
       return `
         <div class="mission-line">
           <strong>${cleanDisplayText(entry?.dismantle_method || "Dismantle")}</strong>
           <div class="muted">${totalReturned ? `${formatCount(totalReturned)} material units returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
           ${resultMarkup}
-          <div class="muted">SCMinersDB currently exposes return quantities here, but not the returned material names.</div>
+          ${hasNamedResults ? "" : `<div class="muted">SCMinersDB did not expose returned material names for this row.</div>`}
         </div>
       `;
     })
@@ -5248,16 +5249,6 @@ function renderBuy() {
         </div>
       ` : ""}
       ${tab === "items" ? `
-        <div class="detail-kv">
-          <span>Craft time</span>
-          <strong>${itemCraftTimeSeconds ? `${formatCount(itemCraftTimeSeconds)} sec` : "Unknown"}</strong>
-        </div>
-        <div class="detail-kv buy-detail-wide">
-          <span>Crafting ingredients</span>
-          <div class="mission-list">
-            ${renderCraftingIngredientMarkup(itemCraftingSource, itemCrafting.recipe)}
-          </div>
-        </div>
         <div class="detail-kv buy-detail-wide">
           <span>Dismantle returns</span>
           <div class="mission-list">
