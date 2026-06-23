@@ -281,11 +281,13 @@ body[data-view="buy-items"] .center-column {
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, rgba(14, 19, 27, 0.97), rgba(10, 13, 18, 0.97));
   box-shadow: var(--shadow);
+  contain: layout paint;
 }
 
 .stack-card,
 .collection-card {
   padding: 18px;
+  min-height: 160px;
 }
 
 .stack-card + .stack-card,
@@ -394,11 +396,19 @@ body[data-view="buy-items"] .center-column {
 }
 
 .seg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   border: 0;
   color: var(--muted);
   background: transparent;
   padding: 10px 14px;
   border-radius: 999px;
+}
+
+.seg-count {
+  font-size: 0.78rem;
+  opacity: 0.78;
 }
 
 .seg.active {
@@ -410,6 +420,18 @@ body[data-view="buy-items"] .center-column {
 .search {
   display: grid;
   gap: 8px;
+  margin-top: 16px;
+}
+
+.search-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.search-head .search {
+  flex: 1 1 auto;
   margin-top: 16px;
 }
 
@@ -519,6 +541,7 @@ body[data-view="buy-items"] .center-column {
 .stats-shell,
 .settings-shell {
   padding: 16px;
+  contain: layout paint;
 }
 
 .step-dots {
@@ -1196,6 +1219,36 @@ body[data-theme="light"] .reward-line {
   border: 1px solid rgba(94, 122, 154, 0.12);
 }
 
+.mission-line > strong {
+  color: var(--text);
+}
+
+.buy-stat-rows {
+  display: grid;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.buy-stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.buy-stat-label {
+  color: #ffd15c;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 10px rgba(255, 209, 92, 0.12);
+}
+
+.buy-stat-value {
+  color: var(--text);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
 .mission-link {
   width: 100%;
   text-align: left;
@@ -1215,6 +1268,7 @@ body[data-theme="light"] .reward-line {
 
 .search-shell {
   margin-top: 0;
+  min-height: 480px;
 }
 
 .buy-layout {
@@ -1228,17 +1282,20 @@ body[data-theme="light"] .reward-line {
 .buy-results,
 .buy-detail {
   min-width: 0;
+  contain: layout paint;
 }
 
 .buy-filters,
 .buy-results {
   padding: 18px;
+  min-height: 460px;
 }
 
 .buy-detail {
   padding: 18px;
   display: grid;
   align-content: start;
+  min-height: 460px;
 }
 
 .buy-select-grid {
@@ -1251,8 +1308,13 @@ body[data-theme="light"] .reward-line {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.mission-filter-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .buy-results-list {
   max-height: 620px;
+  min-height: 420px;
 }
 
 .buy-result.active {
@@ -1262,6 +1324,23 @@ body[data-theme="light"] .reward-line {
 
 .buy-detail .detail-card {
   min-height: 0;
+  margin-top: 12px;
+}
+
+#ownedBreakdown,
+#missingBreakdown,
+#collectionList,
+#buyResults,
+#missionSearchResults,
+#progressByType,
+#progressByRank,
+#progressMissing {
+  min-height: 220px;
+  contain: layout paint;
+  contain-intrinsic-size: 220px 480px;
+}
+
+.scminersdb-panel {
   margin-top: 12px;
 }
 
@@ -1283,6 +1362,10 @@ body[data-theme="light"] .reward-line {
   }
 
   .buy-select-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-filter-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1318,6 +1401,12 @@ body[data-theme="light"] .reward-line {
   width: 100%;
   text-align: left;
   cursor: pointer;
+}
+
+.search-result.selected {
+  border-color: rgba(47, 195, 242, 0.55);
+  background: rgba(47, 195, 242, 0.08);
+  box-shadow: 0 0 0 1px rgba(47, 195, 242, 0.15), 0 0 0 2px rgba(47, 195, 242, 0.08) inset;
 }
 
 .search-result .meta {
@@ -1604,5 +1693,10 @@ body[data-theme="light"] .reward-line {
 
   .chip {
     padding: 8px 10px;
+  }
+
+  .search-head {
+    flex-direction: column;
+    align-items: stretch;
   }
 }

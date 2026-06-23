@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SC Items</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./blueprint_explorer_data.js?v=20260614i"></script>
-    <script defer src="./buy_items_items_1.js?v=20260614i"></script>
-    <script defer src="./buy_items_items_2.js?v=20260614i"></script>
-    <script defer src="./buy_items_items_3.js?v=20260614i"></script>
-    <script defer src="./buy_items_items_4.js?v=20260614i"></script>
-    <script defer src="./buy_items_items_5.js?v=20260614i"></script>
-    <script defer src="./buy_items_ships_data.js?v=20260614i"></script>
-    <script defer src="./buy_items_rentals_data.js?v=20260614i"></script>
-    <script defer src="./buy_items_data.js?v=20260614i"></script>
-    <script defer src="./app.js?v=20260614i"></script>
+    <script defer src="./blueprint_explorer_data.js?v=20260618a"></script>
+    <script defer src="./buy_items_items_1.js?v=20260618a"></script>
+    <script defer src="./buy_items_items_2.js?v=20260618a"></script>
+    <script defer src="./buy_items_items_3.js?v=20260618a"></script>
+    <script defer src="./buy_items_items_4.js?v=20260618a"></script>
+    <script defer src="./buy_items_items_5.js?v=20260618a"></script>
+    <script defer src="./buy_items_ships_data.js?v=20260618a"></script>
+    <script defer src="./buy_items_rentals_data.js?v=20260618a"></script>
+    <script defer src="./buy_items_data.js?v=20260618a"></script>
+    <script defer src="./sc_local_api.js?v=20260618a"></script>
+    <script defer src="./app.js?v=20260622a"></script>
   </head>
   <body>
     <div class="app-shell">
@@ -105,6 +106,7 @@
               </div>
             </div>
             <button id="exportState" class="ghost-button">Export</button>
+            <button id="updateInfo" class="primary-button">Update Info</button>
             <button id="resetState" class="ghost-button danger">Reset</button>
           </div>
         </header>
@@ -241,10 +243,38 @@
                   <p>Search every mission by title, company, faction, type, location, or reward</p>
                 </div>
               </div>
-              <label class="search">
-                <span>Search missions</span>
-                <input id="missionSearchInput" type="search" placeholder="Search by name, company, type, faction..." />
-              </label>
+                <div class="search-head">
+                  <label class="search">
+                    <span>Search missions</span>
+                    <input id="missionSearchInput" type="search" placeholder="Search by name, company, type, faction..." />
+                  </label>
+                  <button id="missionSearchReset" class="tiny-switch" type="button">Reset</button>
+                </div>
+              <div class="buy-select-grid mission-filter-grid">
+                <label class="field">
+                  <span>Type</span>
+                  <select id="missionFilterTypeSelect"></select>
+                </label>
+                <label class="field">
+                  <span>Points</span>
+                  <select id="missionFilterPointsSelect"></select>
+                </label>
+                <label class="field">
+                  <span>Reputation</span>
+                  <select id="missionFilterReputationSelect"></select>
+                </label>
+                <label class="field">
+                  <span>Location</span>
+                  <select id="missionFilterLocationSelect"></select>
+                </label>
+                <label class="field">
+                  <span>Difficulty</span>
+                  <select id="missionFilterDifficultySelect"></select>
+                </label>
+              </div>
+              <div class="chip-row">
+                <button id="missionScriptOnlyToggle" class="chip" type="button">All missions</button>
+              </div>
               <div class="search-results" id="missionSearchResults"></div>
             </section>
 
@@ -265,7 +295,7 @@
                   <div class="summary-head">
                     <div>
                       <h3>Filters</h3>
-                      <p>Use source, system, and location to narrow the catalog</p>
+                      <p>Use system, orbit, and location to narrow the catalog</p>
                     </div>
                   </div>
                   <label class="search compact-search">
@@ -282,12 +312,8 @@
                       <select id="buyOrbitSelect"></select>
                     </label>
                     <label class="field">
-                      <span>Area</span>
-                      <select id="buyAreaSelect"></select>
-                    </label>
-                    <label class="field">
                       <span>Location</span>
-                      <select id="buyLocationSelect"></select>
+                      <select id="buyAreaSelect"></select>
                     </label>
                   </div>
                   <div class="buy-select-grid" id="buyShipFilters" hidden>
@@ -315,6 +341,7 @@
                     </label>
                   </div>
                   <div class="chip-row" id="buyTypeChips"></div>
+                  <div class="chip-row" id="buyItemCategoryChips"></div>
                   <div class="chip-row" id="buySubtypeChips"></div>
                 </section>
 
@@ -333,6 +360,29 @@
                   <div id="buySelectedDetails" class="detail-card empty">
                     Pick an item, ship, or rental to see its price and location details here.
                   </div>
+                  <section class="stack-card scminersdb-panel" id="scminersDbPanel" hidden>
+                    <div class="summary-head">
+                      <div>
+                        <h3>SCMinersDB Preview</h3>
+                        <p>Live export mapping for one category at a time</p>
+                      </div>
+                      <div class="count-badge cyan" id="scminersDbCount">0</div>
+                    </div>
+                    <div class="segmented scminersdb-switch" id="scminersDbSwitch"></div>
+                    <div class="summary-row">
+                      <span class="name">Manifest order</span>
+                      <span class="value" id="scminersDbSummary">0 records</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name"><span class="dot"></span>Selected export</span>
+                      <span class="value" id="scminersDbSelectedCount">0 records</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name">Current file</span>
+                      <span class="value" id="scminersDbCategory">1H export</span>
+                    </div>
+                    <div class="timeline" id="scminersDbPreview"></div>
+                  </section>
                 </aside>
               </div>
             </section>
@@ -426,6 +476,21 @@
               <div class="settings-grid">
                 <button id="themeDark" class="ghost-button">Dark mode</button>
                 <button id="themeLight" class="ghost-button">Light mode</button>
+              </div>
+              <div class="stack-card" style="margin-top: 16px;">
+                <div class="summary-head">
+                  <div>
+                    <h3>SCMinersDB source</h3>
+                    <p>Update Info uses this manifest URL</p>
+                  </div>
+                </div>
+                <label class="field">
+                  <span>Manifest URL</span>
+                  <input id="scminersDbManifestUrl" type="url" placeholder="https://.../runs/latest.json" />
+                </label>
+                <div class="wizard-actions">
+                  <button id="saveScminersDbManifestUrl" class="primary-button" type="button">Save manifest URL</button>
+                </div>
               </div>
             </section>
           </section>

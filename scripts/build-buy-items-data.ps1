@@ -36,6 +36,157 @@ function Get-ShipPageHtml {
   return Get-UrlText "https://starcitizen.tools/$slug"
 }
 
+function Get-WikiSlug {
+  param([Parameter(Mandatory = $true)][string]$Name)
+  return Get-ShipSlug $Name
+}
+
+function Get-WikiSearchCandidates {
+  param([Parameter(Mandatory = $true)][string]$Name)
+  $text = Decode-Text $Name
+  if (-not $text) { return @() }
+  $candidates = New-Object System.Collections.Generic.List[string]
+  $candidates.Add($text) | Out-Null
+  $compact = $text
+  $compact = $compact -replace '^item[_\s-]*name[_\s-]*', ''
+  $compact = $compact -replace '^item[_\s-]*', ''
+  $compact = $compact -replace '^name[_\s-]*', ''
+  $compact = $compact -replace '\b[A-Z]{2,}[_\s-]+\d+[A-Z0-9-]*\b', ' '
+  $compact = $compact -replace '_+', ' '
+  $compact = $compact -replace '\s+', ' '
+  $compact = $compact.Trim()
+  if ($compact -and $compact -ne $text) { $candidates.Add($compact) | Out-Null }
+  $parts = $text -split '[_\s-]+' | Where-Object { $_ }
+  if ($parts.Count -gt 0) {
+    $last = $parts[$parts.Count - 1]
+    if ($last -and -not $candidates.Contains($last)) { $candidates.Add($last) | Out-Null }
+  }
+  return @($candidates)
+}
+
+function Resolve-WikiTitle {
+  param([Parameter(Mandatory = $true)][string]$Name)
+  foreach ($candidate in (Get-WikiSearchCandidates $Name)) {
+    try {
+      $exactUrl = "https://starcitizen.tools/api.php?action=query&titles=$([uri]::EscapeDataString($candidate))&redirects=1&format=json&origin=*"
+      $exactJson = (Get-UrlText $exactUrl) | ConvertFrom-Json
+      $exactPages = @($exactJson.query.pages.PSObject.Properties | ForEach-Object { $_.Value })
+      if ($exactPages.Count -gt 0 -and -not $exactPages[0].missing) {
+        $exactTitle = Decode-Text $exactPages[0].title
+        if ($exactTitle) { return $exactTitle }
+      }
+    } catch { }
+
+    try {
+      $searchUrl = "https://starcitizen.tools/api.php?action=query&list=search&srsearch=$([uri]::EscapeDataString($candidate))&srlimit=5&format=json&origin=*"
+      $searchJson = (Get-UrlText $searchUrl) | ConvertFrom-Json
+      foreach ($result in @($searchJson.query.search)) {
+        $title = Decode-Text $result.title
+        if ($title) { return $title }
+      }
+    } catch { }
+  }
+  return ""
+}
+
+function Get-WikiPageHtml {
+  param([Parameter(Mandatory = $true)][string]$Name)
+  $title = Resolve-WikiTitle $Name
+  if ($title) {
+    $parseUrl = "https://starcitizen.tools/api.php?action=parse&page=$([uri]::EscapeDataString($title))&prop=text&formatversion=2&format=json&origin=*"
+    $parseJson = (Get-UrlText $parseUrl) | ConvertFrom-Json
+    if ($parseJson.parse.text) { return [string]$parseJson.parse.text }
+  }
+  $slug = Get-WikiSlug $Name
+  return Get-UrlText "https://starcitizen.tools/$slug"
+}
+
+function Get-WikiInfoboxSections {
+  param([Parameter(Mandatory = $true)][string]$Html)
+  $sections = @()
+  $skipSections = @('metadata', 'external sites')
+
+  $sectionMatches = [regex]::Matches(
+    $Html,
+    '<details\b[^>]*class="[^"]*\bt-infobox-section\b[^"]*"[^>]*>(?<body>.*?)</details>',
+    [System.Text.RegularExpressions.RegexOptions]::Singleline
+  )
+
+  foreach ($sectionMatch in $sectionMatches) {
+    $body = $sectionMatch.Groups['body'].Value
+    $titleMatch = [regex]::Match(
+      $body,
+      '<div[^>]*class="[^"]*\bt-infobox-section-label\b[^"]*"[^>]*>(?<title>.*?)</div>',
+      [System.Text.RegularExpressions.RegexOptions]::Singleline
+    )
+    $title = if ($titleMatch.Success) { Decode-Text $titleMatch.Groups['title'].Value } else { "" }
+    if (-not $title) { $title = "Info" }
+    if ($skipSections -contains ($title.ToLower().Trim())) { continue }
+
+    $rows = @()
+    foreach ($rowMatch in [regex]::Matches(
+      $body,
+      '<dt[^>]*class="[^"]*\bt-infobox-item-label\b[^"]*"[^>]*>(?<label>.*?)</dt>\s*<dd[^>]*class="[^"]*\bt-infobox-item-content\b[^"]*"[^>]*>(?<value>.*?)</dd>',
+      [System.Text.RegularExpressions.RegexOptions]::Singleline
+    )) {
+      $label = Decode-Text $rowMatch.Groups['label'].Value
+      $value = Decode-Text $rowMatch.Groups['value'].Value
+      if (-not $label -or -not $value) { continue }
+      $rows += [ordered]@{
+        label = $label
+        value = $value
+      }
+    }
+
+    if ($rows.Count) {
+      $sections += [ordered]@{
+        title = $title
+        rows = @($rows)
+      }
+    }
+  }
+
+  if ($sections.Count) { return @($sections) }
+
+  $fallbackRows = @()
+  foreach ($rowMatch in [regex]::Matches(
+    $Html,
+    '<div[^>]*class="infobox__label"[^>]*>(?<label>.*?)</div>\s*<div[^>]*class="infobox__data"[^>]*>(?<value>.*?)</div>',
+    [System.Text.RegularExpressions.RegexOptions]::Singleline
+  )) {
+    $label = Decode-Text $rowMatch.Groups['label'].Value
+    $value = Decode-Text $rowMatch.Groups['value'].Value
+    if (-not $label -or -not $value) { continue }
+    $fallbackRows += [ordered]@{
+      label = $label
+      value = $value
+    }
+  }
+
+  if ($fallbackRows.Count) {
+    $sections += [ordered]@{
+      title = "General"
+      rows = @($fallbackRows)
+    }
+  }
+
+  return @($sections)
+}
+
+function Get-ItemPageData {
+  param([Parameter(Mandatory = $true)][string]$Name)
+  try {
+    $html = Get-WikiPageHtml $Name
+    $sections = @(Get-WikiInfoboxSections $html)
+    if (-not $sections.Count) { return $null }
+    return [ordered]@{
+      pageSections = @($sections)
+    }
+  } catch {
+    return $null
+  }
+}
+
 function Get-ShipField {
   param(
     [Parameter(Mandatory = $true)][string]$Html,
@@ -537,6 +688,17 @@ foreach ($location in $locations) {
 
 $itemEntries = $itemsById.Values | Sort-Object name
 
+Write-Host "Fetching item page metadata..."
+for ($i = 0; $i -lt $itemEntries.Count; $i++) {
+  $entry = $itemEntries[$i]
+  if (-not $entry.name) { continue }
+  Write-Progress -Activity "Fetching item pages" -Status $entry.name -PercentComplete (($i / [double][Math]::Max(1, $itemEntries.Count)) * 100)
+  $page = Get-ItemPageData $entry.name
+  if (-not $page) { continue }
+  if ($page.pageSections -and $page.pageSections.Count) { $entry.pageSections = @($page.pageSections) }
+  $itemEntries[$i] = $entry
+}
+
 Write-Host "Fetching ship purchase tables..."
 $purchaseHtml = Get-UrlText "https://starcitizen.tools/Purchasing_ships"
 $purchaseRows = @(Get-TableRows $purchaseHtml)
@@ -708,11 +870,24 @@ foreach ($section in $rentalSections) {
   }
 }
 
+$isMalformedBuyEntry = {
+  param($entry)
+  $name = ""
+  if ($null -ne $entry.name -and [string]$entry.name) { $name = [string]$entry.name }
+  elseif ($null -ne $entry.title -and [string]$entry.title) { $name = [string]$entry.title }
+  $type = ""
+  if ($null -ne $entry.type) { $type = ([string]$entry.type).Trim().ToLowerInvariant() }
+  $subtype = ""
+  if ($null -ne $entry.subtype) { $subtype = ([string]$entry.subtype).Trim().ToLowerInvariant() }
+  $offerCount = if ($entry.offers -and $entry.offers.Count) { [int]$entry.offers.Count } else { 0 }
+  return ($name.Length -gt 1000) -or (($offerCount -eq 0) -and ($type -eq "unknown") -and ($subtype -eq "unknown") -and ($name.Length -gt 200))
+}
+
 $payload = [ordered]@{
   generatedAt = (Get-Date).ToString("o")
-  items = @($itemEntries | ForEach-Object { $_ })
-  ships = @($shipEntries)
-  rentals = @($rentalEntries.GetEnumerator() | ForEach-Object { $_.Value })
+  items = @($itemEntries | Where-Object { -not (& $isMalformedBuyEntry $_) } | ForEach-Object { $_ })
+  ships = @($shipEntries | Where-Object { -not (& $isMalformedBuyEntry $_) })
+  rentals = @($rentalEntries.GetEnumerator() | ForEach-Object { $_.Value } | Where-Object { -not (& $isMalformedBuyEntry $_) })
 }
 
 $js = "window.BUY_ITEMS_DATA = " + (Escape-JsonForJs $payload) + ";"
@@ -723,8 +898,8 @@ $outputDir = Split-Path -Parent $OutputPath
 $shipPartsPath = Join-Path $outputDir "buy_items_ships_data.js"
 $rentalPartsPath = Join-Path $outputDir "buy_items_rentals_data.js"
 
-$shipPartsJs = "window.BUY_ITEMS_DATA_PARTS = window.BUY_ITEMS_DATA_PARTS || {};`nwindow.BUY_ITEMS_DATA_PARTS.ships = " + (Escape-JsonForJs ([ordered]@{ ships = @($shipEntries) })) + ";"
-$rentalPartsJs = "window.BUY_ITEMS_DATA_PARTS = window.BUY_ITEMS_DATA_PARTS || {};`nwindow.BUY_ITEMS_DATA_PARTS.rentals = " + (Escape-JsonForJs ([ordered]@{ rentals = @($rentalEntries.GetEnumerator() | ForEach-Object { $_.Value }) })) + ";"
+$shipPartsJs = "window.BUY_ITEMS_DATA_PARTS = window.BUY_ITEMS_DATA_PARTS || {};`nwindow.BUY_ITEMS_DATA_PARTS.ships = " + (Escape-JsonForJs ([ordered]@{ ships = @($shipEntries | Where-Object { -not (& $isMalformedBuyEntry $_) }) })) + ";"
+$rentalPartsJs = "window.BUY_ITEMS_DATA_PARTS = window.BUY_ITEMS_DATA_PARTS || {};`nwindow.BUY_ITEMS_DATA_PARTS.rentals = " + (Escape-JsonForJs ([ordered]@{ rentals = @($rentalEntries.GetEnumerator() | ForEach-Object { $_.Value } | Where-Object { -not (& $isMalformedBuyEntry $_) }) })) + ";"
 
 Set-Content -LiteralPath $shipPartsPath -Value $shipPartsJs -Encoding UTF8
 Set-Content -LiteralPath $rentalPartsPath -Value $rentalPartsJs -Encoding UTF8
