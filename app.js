@@ -1561,7 +1561,7 @@ function scminersDbExportRecords(fileName) {
     state.scminersDb?.exports?.[legacyKey] ||
     state.scminersDb?.exports?.[legacyKey.replace(/\.json$/i, "")] ||
     null;
-  if (!payload && state.scminersDb?.available) void loadScminersDbExport(key);
+  if (!payload && state.scminersDb?.available && state.scminersDb?.source !== "bundled") void loadScminersDbExport(key);
   return structuredExportRecords(payload);
 }
 
@@ -1592,6 +1592,7 @@ function scminersDbManifestEntries(manifest) {
 async function loadScminersDbExport(fileName) {
   const normalized = scminersDbExportFileName(fileName);
   if (!normalized || typeof fetch !== "function") return null;
+  if (state.scminersDb?.source === "bundled") return null;
   if (state.scminersDb?.exports?.[normalized]) return state.scminersDb.exports[normalized];
   if (state.scminersDbExportPromises?.has(normalized)) return state.scminersDbExportPromises.get(normalized);
   if (!state.scminersDbExportPromises) state.scminersDbExportPromises = new Map();
