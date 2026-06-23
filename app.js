@@ -156,6 +156,7 @@ let blueprintCraftingCache = {
   recipeByBlueprint: new Map(),
   recipeByName: new Map(),
   recipeByResultPath: new Map(),
+  dismantleBySourceId: new Map(),
   dismantleByResultPath: new Map(),
 };
 
@@ -275,7 +276,8 @@ function sourcePathLookupKeys(value) {
   if (!raw) return [];
   const basename = cleanDisplayText(String(raw).split(/[\\/]/).pop() || "");
   const trimmed = cleanDisplayText(raw.replace(/^starbreaker[\\/]/i, "").replace(/^libs[\\/]/i, ""));
-  return [...new Set([norm(raw), norm(trimmed), norm(basename)].filter(Boolean))];
+  const stem = fileStem(raw);
+  return [...new Set([norm(raw), norm(trimmed), norm(basename), norm(stem)].filter(Boolean))];
 }
 
 function escapeRegExp(v) {
@@ -1520,16 +1522,26 @@ function structuredExportRecords(payload) {
   return [];
 }
 
+function scminersDbFileNameKey(fileName) {
+  return String(fileName || "").trim();
+}
+
 function scminersDbExportRecords(fileName) {
-  const key = cleanDisplayText(fileName || "");
+  const key = scminersDbFileNameKey(fileName);
   if (!key) return [];
-  const payload = state.scminersDb?.exports?.[key] || state.scminersDb?.exports?.[key.replace(/\.json$/i, "")] || null;
+  const legacyKey = cleanDisplayText(key);
+  const payload =
+    state.scminersDb?.exports?.[key] ||
+    state.scminersDb?.exports?.[key.replace(/\.json$/i, "")] ||
+    state.scminersDb?.exports?.[legacyKey] ||
+    state.scminersDb?.exports?.[legacyKey.replace(/\.json$/i, "")] ||
+    null;
   if (!payload && state.scminersDb?.available) void loadScminersDbExport(key);
   return structuredExportRecords(payload);
 }
 
 function scminersDbExportFileName(fileName) {
-  const key = cleanDisplayText(fileName || "");
+  const key = scminersDbFileNameKey(fileName);
   if (!key) return "";
   return key.toLowerCase().endsWith(".json") ? key : `${key}.json`;
 }
@@ -1641,6 +1653,7 @@ async function loadScminersDbBridge() {
     for (const file of files) {
       fileIndex[file.file] = file.url;
       fileIndex[file.file.toLowerCase()] = file.url;
+      fileIndex[cleanDisplayText(file.file).toLowerCase()] = file.url;
       if (file.category) fileIndex[cleanDisplayText(file.category).toLowerCase()] = file.url;
     }
     const existingExports = state.scminersDb?.exports || {};
@@ -2093,6 +2106,18 @@ function buyEntryItemWikiSections(entry) {
     }
   }
   return groups;
+}
+
+function buyEntryMetadataValue(entry, label) {
+  const target = norm(label);
+  if (!target) return "";
+  for (const section of Array.isArray(entry?.pageSections) ? entry.pageSections : []) {
+    for (const row of Array.isArray(section?.rows) ? section.rows : []) {
+      if (norm(row?.label) !== target) continue;
+      return cleanDisplayText(row?.value);
+    }
+  }
+  return "";
 }
 
 function wikiItemSlug(name) {
@@ -2891,6 +2916,7 @@ function ensureBlueprintCraftingCache() {
   const recipeByBlueprint = new Map();
   const recipeByName = new Map();
   const recipeByResultPath = new Map();
+  const dismantleBySourceId = new Map();
   const dismantleByResultPath = new Map();
 
   for (const recipe of recipes) {
@@ -2909,6 +2935,13 @@ function ensureBlueprintCraftingCache() {
   }
 
   for (const entry of dismantles) {
+    const sourceIds = [entry?.source_item?.item_id, entry?.source_item?.item_class_id, entry?.source_id]
+      .map((value) => norm(value))
+      .filter(Boolean);
+    for (const key of sourceIds) {
+      if (!dismantleBySourceId.has(key)) dismantleBySourceId.set(key, []);
+      dismantleBySourceId.get(key).push(entry);
+    }
     for (const key of sourcePathLookupKeys(entry?.source_item_source_path || entry?.source_item?.source_path || "")) {
       if (!key) continue;
       if (!dismantleByResultPath.has(key)) dismantleByResultPath.set(key, []);
@@ -2921,6 +2954,7 @@ function ensureBlueprintCraftingCache() {
     recipeByBlueprint,
     recipeByName,
     recipeByResultPath,
+    dismantleBySourceId,
     dismantleByResultPath,
   };
   return blueprintCraftingCache;
@@ -2931,6 +2965,8 @@ function blueprintCraftingData(item) {
   const cache = ensureBlueprintCraftingCache();
   const blueprintKey = norm(item.blueprint || "");
   const itemNameKey = norm(String(item.name || "").replace(/_/g, " "));
+  const itemIdKeys = [item.id, item.uuid, buyEntryMetadataValue(item, "UUID")].map((value) => norm(value)).filter(Boolean);
+  const itemClassNameKeys = sourcePathLookupKeys(buyEntryMetadataValue(item, "Class name"));
   const itemSourcePathKeys = sourcePathLookupKeys(item.source_path || item.sourcePath || item.item_info?.source_path || "");
   const recipe =
     cache.recipeByBlueprint.get(blueprintKey) ||
@@ -2939,8 +2975,11 @@ function blueprintCraftingData(item) {
     null;
   const resultPathKeys = sourcePathLookupKeys(recipe?.result_item_source_path || recipe?.result_item?.source_path || item.source_path || item.sourcePath || item.item_info?.source_path || "");
   const dismantles = [...new Map(
-    resultPathKeys
-      .flatMap((key) => cache.dismantleByResultPath.get(key) || [])
+    [
+      ...itemIdKeys.flatMap((key) => cache.dismantleBySourceId.get(key) || []),
+      ...itemClassNameKeys.flatMap((key) => cache.dismantleByResultPath.get(key) || []),
+      ...resultPathKeys.flatMap((key) => cache.dismantleByResultPath.get(key) || []),
+    ]
       .map((entry) => [entry?.source_id || entry?.source_path || JSON.stringify(entry), entry]),
   ).values()];
   return {
@@ -2970,7 +3009,7 @@ function renderCraftingIngredientMarkup(item, recipe) {
       (entry) => `
         <div class="mission-line">
           <strong>${cleanDisplayText(entry.resource || entry.slot_name || entry.name || "Unknown material")}</strong>
-          <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} units${entry.minQuality !== undefined || entry.min_quality !== undefined ? ` · min quality ${formatCount(entry.minQuality ?? entry.min_quality ?? 0)}` : ""}</div>
+          <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} SCU${entry.minQuality !== undefined || entry.min_quality !== undefined ? ` · min quality ${formatCount(entry.minQuality ?? entry.min_quality ?? 0)}` : ""}</div>
         </div>
       `,
     )
@@ -2988,7 +3027,7 @@ function renderDismantleMarkup(dismantleEntries) {
       const resultMarkup = results.length
         ? results
             .map((result, index) => `
-              <div class="muted">${cleanDisplayText(result?.material_name || result?.item_name || `Returned material ${index + 1}`)}: ${formatCount(result?.quantity_returned || 0)} units</div>
+              <div class="muted">${cleanDisplayText(result?.material_name || result?.item_name || `Returned material ${index + 1}`)}: ${formatCount(result?.quantity_returned || 0)} SCU</div>
             `)
             .join("")
         : `<div class="muted">Return quantity unavailable</div>`;
@@ -2996,7 +3035,7 @@ function renderDismantleMarkup(dismantleEntries) {
       return `
         <div class="mission-line">
           <strong>${cleanDisplayText(entry?.dismantle_method || "Dismantle")}</strong>
-          <div class="muted">${totalReturned ? `${formatCount(totalReturned)} material units returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
+          <div class="muted">${totalReturned ? `${formatCount(totalReturned)} SCU returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
           ${resultMarkup}
           ${hasNamedResults ? "" : `<div class="muted">SCMinersDB did not expose returned material names for this row.</div>`}
         </div>
