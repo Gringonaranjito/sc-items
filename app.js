@@ -2747,6 +2747,10 @@ function missionRecordKey(mission) {
 }
 
 function scminersDbMissionRecords() {
+  const appReady = scminersDbExportRecords("missions_app_ready.json");
+  if (appReady.length) return appReady;
+  const playerReady = scminersDbExportRecords("mission_catalog_player_ready.json");
+  if (playerReady.length) return playerReady;
   return scminersDbExportRecords("missions.json");
 }
 
@@ -2769,6 +2773,7 @@ function scminersDbRecordKeys(entry) {
   return [...new Set([
     entry?.mission_id,
     entry?.name,
+    entry?.title,
     entry?.source_id,
     entry?.source_path,
     entry?.mission_type,
@@ -2777,6 +2782,15 @@ function scminersDbRecordKeys(entry) {
   ]
     .map((value) => norm(value))
     .filter(Boolean))];
+}
+
+function scminersDbMissionUsesAppReady(entry) {
+  return Boolean(
+    cleanDisplayText(entry?.title || "") ||
+    cleanDisplayText(entry?.mission_giver || "") ||
+    cleanDisplayText(entry?.required_rank || "") ||
+    Array.isArray(entry?.location_options),
+  );
 }
 
 function scminersDbRewardMoney(entry) {
@@ -2937,30 +2951,52 @@ function scminersDbEnsureMissionCache() {
   }
 
   const structuredEntries = missions.map((entry) => {
+    const usesAppReady = scminersDbMissionUsesAppReady(entry);
     const keys = scminersDbRecordKeys(entry);
     const rewardEntry = keys.map((key) => rewardsByKey.get(key)).find(Boolean) || null;
     const prereqEntry = keys.map((key) => prereqsByKey.get(key)).find(Boolean) || null;
     return {
       ...entry,
-      structuredName: cleanDisplayText(entry.name || entry.mission_id || ""),
+      structuredName: cleanDisplayText(entry.title || entry.name || entry.mission_id || ""),
       structuredMissionId: cleanDisplayText(entry.mission_id || entry.name || ""),
       structuredMissionType: cleanDisplayText(entry.mission_type || ""),
-      structuredFaction: cleanDisplayText(entry.faction_company || entry.company_faction || ""),
+      structuredFaction: cleanDisplayText(entry.mission_giver || entry.faction_company || entry.company_faction || ""),
       structuredSourcePath: cleanDisplayText(entry.source_path || ""),
       structuredSourceId: cleanDisplayText(entry.source_id || ""),
-      structuredMoneyReward: scminersDbRewardMoney(rewardEntry),
-      structuredScriptReward: scminersDbRewardScript(rewardEntry),
+      structuredMoneyReward: usesAppReady ? firstFiniteNumber(entry.money_reward, entry.moneyReward) || 0 : scminersDbRewardMoney(rewardEntry),
+      structuredScriptReward: usesAppReady ? firstFiniteNumber(entry.script_reward, entry.scriptReward) || 0 : scminersDbRewardScript(rewardEntry),
       structuredRewardCount: Number(rewardEntry?.reward_counts ? Object.values(rewardEntry.reward_counts).reduce((sum, value) => sum + (Number(value) || 0), 0) : 0) || 0,
       structuredRewardSummary: cleanDisplayText(
-        rewardEntry?.rewards
+        usesAppReady
+          ? entry.reward_summary || ""
+          : rewardEntry?.rewards
           ? Object.entries(rewardEntry.rewards)
               .filter(([, value]) => value !== null && value !== undefined && value !== "")
               .map(([key, value]) => `${key}: ${cleanDisplayText(value)}`)
               .join(" · ")
           : "",
       ),
-      structuredPrereqSummary: scminersDbPrereqSummary(prereqEntry),
+      structuredPrereqSummary: cleanDisplayText(entry.required_rank || entry.required_mission_count || entry.required_missions?.length || entry.location || entry.system)
+        ? [
+            cleanDisplayText(entry.required_rank || ""),
+            Number(entry.required_mission_count || 0) > 0 ? `${formatCount(entry.required_mission_count)} missions` : "",
+            Array.isArray(entry.required_missions) && entry.required_missions.length ? entry.required_missions.join(", ") : "",
+            cleanDisplayText(entry.location || ""),
+            cleanDisplayText(entry.system || ""),
+          ].filter(Boolean).join(" · ")
+        : scminersDbPrereqSummary(prereqEntry),
       structuredPrereqSource: cleanDisplayText(prereqEntry?.source_path || ""),
+      structuredTitle: cleanDisplayText(entry.title || ""),
+      structuredDescription: cleanDisplayText(entry.description || ""),
+      structuredLocation: cleanDisplayText(entry.location || ""),
+      structuredLocationOptions: Array.isArray(entry.location_options) ? entry.location_options.map((value) => cleanDisplayText(value)).filter(Boolean) : [],
+      structuredRequiredRank: cleanDisplayText(entry.required_rank || ""),
+      structuredRequiredMissionCount: Number(entry.required_mission_count || 0) || 0,
+      structuredRequiredMissions: Array.isArray(entry.required_missions) ? entry.required_missions.map((value) => cleanDisplayText(value)).filter(Boolean) : [],
+      structuredRuntimeOnlyPossible: Boolean(entry.runtime_only_possible),
+      structuredSameSessionKnown: Boolean(entry.same_session_required_known),
+      structuredSameSessionRequired: entry.same_session_required,
+      structuredVariantKinds: Array.isArray(entry.variant_kinds) ? entry.variant_kinds.map((value) => cleanDisplayText(value)).filter(Boolean) : [],
     };
   });
 
@@ -2980,6 +3016,10 @@ function scminersDbMissionScore(mission, entry) {
   const missionFactionTokens = scminersDbTextTokens(mission.faction);
   const missionLocationTokens = scminersDbTextTokens(missionLocation(mission));
   const searchable = [
+    entry.title,
+    entry.description,
+    entry.system,
+    entry.location,
     entry.structuredName,
     entry.structuredMissionId,
     entry.structuredMissionType,
@@ -3034,6 +3074,15 @@ function augmentMissionWithStructuredData(mission) {
   if (!structured) return mission;
   return {
     ...mission,
+    title: structured.structuredTitle || mission.title || mission.name || "",
+    description: structured.structuredDescription || mission.description || mission.summary || mission.text || "",
+    summary: structured.structuredDescription || mission.summary || mission.description || "",
+    text: structured.structuredDescription || mission.text || mission.description || "",
+    faction: structured.structuredFaction || mission.faction || "",
+    type: structured.structuredMissionType || mission.type || "",
+    system: structured.system || structured.system_guess || mission.system || "",
+    location: structured.structuredLocation || mission.location || structured.location_guess || "",
+    repStanding: structured.structuredRequiredRank || mission.repStanding || "",
     structuredMissionId: structured.structuredMissionId || mission.structuredMissionId || "",
     structuredMissionName: structured.structuredName || mission.structuredMissionName || "",
     structuredSourcePath: structured.structuredSourcePath || mission.structuredSourcePath || "",
@@ -3046,6 +3095,16 @@ function augmentMissionWithStructuredData(mission) {
     structuredRewardSummary: structured.structuredRewardSummary || mission.structuredRewardSummary || "",
     structuredPrereqSummary: structured.structuredPrereqSummary || mission.structuredPrereqSummary || "",
     structuredPrereqSource: structured.structuredPrereqSource || mission.structuredPrereqSource || "",
+    structuredDescription: structured.structuredDescription || mission.structuredDescription || "",
+    structuredLocation: structured.structuredLocation || mission.structuredLocation || "",
+    structuredLocationOptions: structured.structuredLocationOptions || mission.structuredLocationOptions || [],
+    structuredRequiredRank: structured.structuredRequiredRank || mission.structuredRequiredRank || "",
+    structuredRequiredMissionCount: structured.structuredRequiredMissionCount ?? mission.structuredRequiredMissionCount ?? 0,
+    structuredRequiredMissions: structured.structuredRequiredMissions || mission.structuredRequiredMissions || [],
+    structuredRuntimeOnlyPossible: structured.structuredRuntimeOnlyPossible ?? mission.structuredRuntimeOnlyPossible ?? false,
+    structuredSameSessionKnown: structured.structuredSameSessionKnown ?? mission.structuredSameSessionKnown ?? false,
+    structuredSameSessionRequired: structured.structuredSameSessionRequired ?? mission.structuredSameSessionRequired ?? null,
+    structuredVariantKinds: structured.structuredVariantKinds || mission.structuredVariantKinds || [],
     structuredMatchScore: structured.structuredMatchScore ?? mission.structuredMatchScore ?? 0,
     source: mission.source || "structured",
   };
@@ -3707,6 +3766,21 @@ function missionAppearanceLines(mission) {
     }
   }
 
+  const requiredCount = Number(mission?.structuredRequiredMissionCount || 0);
+  if (requiredCount > 0) lines.push(`Requires ${formatCount(requiredCount)} prior missions`);
+  if (Array.isArray(mission?.structuredRequiredMissions) && mission.structuredRequiredMissions.length) {
+    lines.push(`Required missions: ${mission.structuredRequiredMissions.join(", ")}`);
+  }
+  if (Array.isArray(mission?.structuredLocationOptions) && mission.structuredLocationOptions.length) {
+    lines.push(`Appears near: ${mission.structuredLocationOptions.join(", ")}`);
+  }
+  if (Array.isArray(mission?.structuredVariantKinds) && mission.structuredVariantKinds.length) {
+    lines.push(`Variants: ${mission.structuredVariantKinds.join(", ")}`);
+  }
+  if (mission?.structuredRuntimeOnlyPossible) {
+    lines.push("Some appearance conditions may still depend on runtime or server state.");
+  }
+
   const fallback = [
     mission?.repStanding ? `Rank: ${cleanDisplayText(mission.repStanding)}` : "",
     mission?.system ? `System: ${cleanDisplayText(mission.system)}` : "",
@@ -4014,10 +4088,12 @@ function clearWizardSelection() {
 }
 
 function formatMissionRequirement(m) {
-  const rank = m.repStanding ? m.repStanding : "Any rank";
+  const rank = cleanDisplayText(m?.structuredRequiredRank || m?.repStanding || "") || "Any rank";
+  const missionCount = Number(m?.structuredRequiredMissionCount || 0);
+  const countText = missionCount > 0 ? `, ${formatCount(missionCount)} missions` : "";
   const rep = typeof m.minRep === "number" ? `, ${formatCount(m.minRep)} rep` : "";
   const system = m.system || (m.systems || []).join(", ") || "Unknown system";
-  return `${rank}${rep} - ${system}`;
+  return `${rank}${countText}${rep} - ${system}`;
 }
 
 function renderSummary() {
