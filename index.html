@@ -6,16 +6,8 @@
     <title>SC Items</title>
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./blueprint_explorer_data.js?v=20260618a"></script>
-    <script defer src="./buy_items_items_1.js?v=20260618a"></script>
-    <script defer src="./buy_items_items_2.js?v=20260618a"></script>
-    <script defer src="./buy_items_items_3.js?v=20260618a"></script>
-    <script defer src="./buy_items_items_4.js?v=20260618a"></script>
-    <script defer src="./buy_items_items_5.js?v=20260618a"></script>
-    <script defer src="./buy_items_ships_data.js?v=20260618a"></script>
-    <script defer src="./buy_items_rentals_data.js?v=20260618a"></script>
-    <script defer src="./buy_items_data.js?v=20260618a"></script>
     <script defer src="./sc_local_api.js?v=20260618a"></script>
-    <script defer src="./app.js?v=20260622a"></script>
+    <script defer src="./app.js?v=20260623a"></script>
   </head>
   <body>
     <div class="app-shell">
@@ -398,7 +390,7 @@
                 </div>
 
                 <label class="search">
-                  <span>Search blueprints</span>
+                  <span>Filter current collection</span>
                   <input id="searchInput" type="search" placeholder="Search by name, type, company, mission..." />
                 </label>
 
@@ -506,6 +498,19 @@
               <div id="selectedDetails" class="detail-card empty">
                 Pick a mission on the left to see the live reward details here.
               </div>
+            </section>
+            <section class="search-shell" hidden>
+              <div class="section-head compact">
+                <div>
+                  <h2>Blueprint Explorer</h2>
+                  <p>Browse blueprint matches by name, type, company, or mission link</p>
+                </div>
+              </div>
+              <label class="search">
+                <span>Search all blueprints</span>
+                <input id="searchBlueprintInput" type="search" placeholder="Search every blueprint reward..." />
+              </label>
+              <div class="search-results" id="searchResults"></div>
             </section>
           </aside>
         </main>

@@ -4,6 +4,17 @@ const USERS_KEY = "sc-blueprint-tracker-users-v1";
 const USER_PREFIX = "sc-blueprint-tracker-user-v1-";
 const SCMINERSDB_MANIFEST_URL_KEY = "scminersdb-manifest-url-v1";
 const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/scminersdb/runs/latest.json";
+const BUY_DATA_SCRIPT_VERSION = "20260618a";
+const BUY_DATA_SCRIPT_URLS = Object.freeze([
+  `./buy_items_items_1.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./buy_items_items_2.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./buy_items_items_3.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./buy_items_items_4.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./buy_items_items_5.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./buy_items_ships_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./buy_items_rentals_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+]);
 
 const ownedSeed = [
   "P4-AR Magazine",
@@ -123,6 +134,8 @@ let scminersDbMissionCache = {
   rewardById: new Map(),
   prereqById: new Map(),
 };
+let buyDataLoadPromise = null;
+let buyDataScriptsLoadPromise = null;
 
 let missionLookupCache = {
   dataItemsRef: null,
@@ -413,6 +426,65 @@ const BUY_KNOWN_AREAS = Object.freeze([
 
 const BUY_KNOWN_AREAS_BY_LENGTH = Object.freeze([...BUY_KNOWN_AREAS].sort((a, b) => b.length - a.length));
 const BUY_KNOWN_AREA_SET = new Set(BUY_KNOWN_AREAS.map((value) => norm(value)));
+
+const BUY_AREA_TO_ORBIT = Object.freeze({
+  nyx: Object.freeze({
+    levski: "Delamar",
+    "nyx gateway": "Nyx",
+  }),
+  pyro: Object.freeze({
+    bloom: "Bloom",
+    checkmate: "Pyro",
+    "dudley & daughters": "Pyro",
+    endgame: "Pyro",
+    gaslight: "Pyro",
+    monox: "Pyro",
+    orbituary: "Pyro",
+    "pyr2-l4": "Pyro",
+    "pyr3-l1": "Pyro",
+    "pyr3-l3": "Pyro",
+    "pyr5-l2": "Pyro",
+    "pyr5-l4": "Pyro",
+    "pyr5-l5": "Pyro",
+    "pyr6-l3": "Pyro",
+    "pyr6-l4": "Pyro",
+    "pyr6-l5": "Pyro",
+    "pyro gateway": "Pyro",
+    "pyro i": "Pyro",
+    "pyro ii": "Pyro",
+    "pyro iii": "Pyro",
+    "pyro iv": "Pyro",
+    "pyro v": "Pyro",
+    "pyro vi": "Pyro",
+    "rat's nest": "Pyro",
+    "ruin station": "Terminus",
+    "starlight service station": "Pyro",
+    terminus: "Pyro",
+  }),
+  stanton: Object.freeze({
+    "area 18": "ArcCorp",
+    area18: "ArcCorp",
+    "astro armada": "ArcCorp",
+    "baijini point": "ArcCorp",
+    "crusader showroom": "Crusader",
+    "dumper's depot": "ArcCorp",
+    "everus harbor": "Hurston",
+    galleria: "Stanton",
+    "grim hex": "Crusader",
+    hurston: "Hurston",
+    lorville: "Hurston",
+    microtech: "microTech",
+    "new babbage": "microTech",
+    "new deal": "Hurston",
+    "port tressler": "microTech",
+    "platinum bay": "Stanton",
+    "seraphim station": "Crusader",
+    "tammany and sons": "Hurston",
+    "teach's ship shop": "Delamar",
+    "teasa spaceport": "Hurston",
+    "the commons": "microTech",
+  }),
+});
 
 const BUY_BUSINESS_TO_AREA = Object.freeze({
   "astro armada": "Area 18",
@@ -1316,6 +1388,50 @@ async function loadBlueprintData() {
   throw new Error("Local blueprint data was not loaded. Make sure blueprint_explorer_data.js is next to index.html.");
 }
 
+function hasBuyDataScriptsLoaded() {
+  return Boolean(window.BUY_ITEMS_DATA || window.BUY_ITEMS_DATA_PARTS);
+}
+
+function loadScriptTag(src) {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector(`script[data-buy-src="${src}"]`);
+    if (existing?.dataset.loaded === "true") {
+      resolve();
+      return;
+    }
+    if (existing) {
+      existing.addEventListener("load", () => resolve(), { once: true });
+      existing.addEventListener("error", () => reject(new Error(`Failed to load ${src}`)), { once: true });
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = src;
+    script.defer = true;
+    script.dataset.buySrc = src;
+    script.addEventListener(
+      "load",
+      () => {
+        script.dataset.loaded = "true";
+        resolve();
+      },
+      { once: true },
+    );
+    script.addEventListener("error", () => reject(new Error(`Failed to load ${src}`)), { once: true });
+    document.head.appendChild(script);
+  });
+}
+
+function ensureBuyDataScriptsLoaded() {
+  if (hasBuyDataScriptsLoaded()) return Promise.resolve();
+  if (buyDataScriptsLoadPromise) return buyDataScriptsLoadPromise;
+  buyDataScriptsLoadPromise = Promise.all(BUY_DATA_SCRIPT_URLS.map((src) => loadScriptTag(src)))
+    .then(() => undefined)
+    .finally(() => {
+      buyDataScriptsLoadPromise = null;
+    });
+  return buyDataScriptsLoadPromise;
+}
+
 async function bootstrapDataPipeline({ render = true } = {}) {
   state.buyDataStatus = "Loading buy data...";
   const buyData = await loadBuyData();
@@ -1329,15 +1445,36 @@ async function bootstrapDataPipeline({ render = true } = {}) {
   return state.buyData;
 }
 
+function hasBuyDataLoaded() {
+  return Boolean(state.buyData && (Array.isArray(state.buyData.items) || Array.isArray(state.buyData.ships) || Array.isArray(state.buyData.rentals)));
+}
+
+function ensureBuyDataReady({ render = true } = {}) {
+  if (hasBuyDataLoaded()) return Promise.resolve(state.buyData);
+  if (buyDataLoadPromise) return buyDataLoadPromise;
+  buyDataLoadPromise = bootstrapDataPipeline({ render }).finally(() => {
+    buyDataLoadPromise = null;
+  });
+  return buyDataLoadPromise;
+}
+
+async function warmBuyDataInBackground() {
+  if (hasBuyDataLoaded() || buyDataLoadPromise) return;
+  await yieldToMainThread(50);
+  await ensureBuyDataReady({ render: state.view === "buy-items" });
+}
+
 async function bootstrapAppData() {
   await yieldToMainThread();
-  const [blueprintData] = await Promise.all([
-    loadBlueprintData(),
-    bootstrapDataPipeline({ render: false }),
-  ]);
+  const blueprintData = await loadBlueprintData();
   state.data = blueprintData;
   state.appReady = true;
   renderAll();
+  if (state.view === "buy-items") {
+    void ensureBuyDataReady({ render: true });
+  } else {
+    void warmBuyDataInBackground();
+  }
 }
 
 function structuredExportRecords(payload) {
@@ -1652,6 +1789,7 @@ function scheduleScminersDbRefresh() {
 }
 
 async function loadBuyData() {
+  await ensureBuyDataScriptsLoaded();
   const baseData = window.BUY_ITEMS_DATA || { items: [], ships: [], rentals: [] };
   const partsData = window.BUY_ITEMS_DATA_PARTS || {};
   const bridgeItems = scminersDbExportRecords("item_catalog.json");
@@ -2113,7 +2251,7 @@ function isKnownBuyArea(value) {
 function isKnownBuyLocation(value) {
   const label = norm(value);
   if (!label) return false;
-  return BUY_KNOWN_LOCATIONS.some((entry) => label.includes(entry));
+  return BUY_LOCATION_LABELS.some((entry) => label.includes(entry));
 }
 
 function buyOfferMatches(offer, system, orbit, location, tab = state.buyTab) {
@@ -3210,7 +3348,8 @@ function currentItemDetail() {
 function currentMissionDetail() {
   if (!state.missionType || !state.company || !state.mission) return null;
   const targetKey = missionTitleKey(state.mission);
-  const mission = missionsFor(state.missionType, state.company).find((m) => missionTitleKey(m) === targetKey) || null;
+  const mission =
+    missionsFor(state.missionType, state.company).find((m) => missionTitleKey(missionTitle(m)) === targetKey) || null;
   return mission ? augmentMissionWithStructuredData(mission) : null;
 }
 
@@ -4382,7 +4521,14 @@ function renderMissionBrowser() {
           const missionKey = `${norm(mission.type || "")}::${norm(mission.faction || "")}::${missionTitleKey(mission)}`;
           const selected = missionKey === selectedKey ? " selected" : "";
           return `
-            <button class="log-card search-result${selected}" type="button" data-mission="${missionKey}">
+            <button
+              class="log-card search-result${selected}"
+              type="button"
+              data-mission="${missionKey}"
+              data-mission-type="${mission.type || ""}"
+              data-mission-company="${mission.faction || ""}"
+              data-mission-title="${missionTitle(mission)}"
+            >
               <div class="reward">${missionTitle(mission)}</div>
               <div class="meta">
                 <span>${mission.type || "Unknown"}</span>
@@ -4545,6 +4691,17 @@ function buyLocationSummary(entry) {
 
 function renderBuy() {
   if (!els.buyResults || !els.buySelectedDetails) return;
+  if (!hasBuyDataLoaded()) {
+    if (!buyDataLoadPromise) void ensureBuyDataReady({ render: true });
+    if (els.buyResultsSummary) {
+      els.buyResultsSummary.textContent = state.buyDataStatus || "Loading buy data...";
+    }
+    els.buyResults.innerHTML = `<div class="muted">${state.buyDataStatus || "Loading buy data..."}</div>`;
+    els.buySelectedMeta.textContent = "Loading catalog";
+    els.buySelectedDetails.className = "detail-card empty";
+    els.buySelectedDetails.textContent = "Buy items are still loading. This view will fill in automatically when the catalog is ready.";
+    return;
+  }
   const tab = state.buyTab || "items";
   const entries = filteredBuyEntries();
   const selected = currentBuyEntry();
@@ -4915,17 +5072,28 @@ function renderAll() {
   renderRail();
   renderView();
   renderSummary();
-  renderChips();
-  renderCollection();
-  renderWizard();
-  renderMissionBrowser();
-  renderSelected();
-  renderSearchResults();
-  renderBuy();
-  renderLogs();
-  renderProgress();
-  renderStats();
-  renderSettings();
+  if (state.view === "dashboard") {
+    renderWizard();
+    renderSelected();
+  } else if (state.view === "missions") {
+    renderWizard();
+    renderMissionBrowser();
+    renderSelected();
+  } else if (state.view === "blueprints") {
+    renderChips();
+    renderCollection();
+    renderSelected();
+    renderSearchResults();
+  } else if (state.view === "buy-items") {
+    renderBuy();
+  } else if (state.view === "progress") {
+    renderProgress();
+    renderSelected();
+  } else if (state.view === "stats") {
+    renderStats();
+  } else if (state.view === "settings") {
+    renderSettings();
+  }
   saveState();
 }
 
@@ -5301,10 +5469,10 @@ async function init() {
   els.missionSearchResults.addEventListener("click", (event) => {
     const button = event.target.closest("[data-mission]");
     if (!button) return;
-    const [type, company, title] = button.dataset.mission.split("::");
-    state.missionType = type || "";
-    state.company = company || "";
-    state.mission = title || "";
+    const type = button.dataset.missionType || "";
+    const company = button.dataset.missionCompany || "";
+    const title = button.dataset.missionTitle || "";
+    selectMission(type, company, title);
     state.view = "missions";
     renderAll();
   });
