@@ -150,6 +150,13 @@ let missionLookupCache = {
   missionCatalogReady: false,
   rewardsIndex: new Map(),
 };
+let blueprintCraftingCache = {
+  signature: "",
+  recipeByBlueprint: new Map(),
+  recipeByName: new Map(),
+  recipeByResultPath: new Map(),
+  dismantleByResultPath: new Map(),
+};
 
 function invalidateMissionLookupCache() {
   missionLookupCache = {
@@ -209,7 +216,17 @@ function ensureMissionLookupCache() {
     combinedMap.set(key, augmentMissionWithStructuredData(mission));
   }
 
-  const combinedRecords = [...combinedMap.values()];
+  for (const mission of missionRewardOverrideRecords()) {
+    const key = missionRecordKey(mission);
+    const existing = combinedMap.get(key);
+    if (existing) {
+      combinedMap.set(key, augmentMissionWithRewardOverride(existing));
+      continue;
+    }
+    combinedMap.set(key, augmentMissionWithStructuredData(mission));
+  }
+
+  const combinedRecords = [...combinedMap.values()].map((mission) => augmentMissionWithRewardOverride(mission));
   const rewardsIndex = new Map();
   for (const item of missionOnly) {
     for (const mission of item.missions || []) {
@@ -246,6 +263,10 @@ function norm(v) {
 
 function normalizeText(v) {
   return String(v || "").trim().replace(/\s+/g, " ");
+}
+
+function fileStem(v) {
+  return cleanDisplayText(String(v || "").split(/[\\/]/).pop().replace(/\.[^.]+$/, ""));
 }
 
 function escapeRegExp(v) {
@@ -2832,6 +2853,63 @@ function scminersDbPrereqSummary(entry) {
   return parts.join(" | ");
 }
 
+function ensureBlueprintCraftingCache() {
+  const signature = `${state.scminersDb?.signature || ""}|${(state.data?.items || []).length}`;
+  if (blueprintCraftingCache.signature === signature) return blueprintCraftingCache;
+
+  const recipes = scminersDbExportRecords("crafting_recipes.json");
+  const dismantles = scminersDbExportRecords("dismantle_returns.json");
+  const recipeByBlueprint = new Map();
+  const recipeByName = new Map();
+  const recipeByResultPath = new Map();
+  const dismantleByResultPath = new Map();
+
+  for (const recipe of recipes) {
+    const blueprintKey = norm(fileStem(recipe?.blueprint_record_path || recipe?.internal_record_path || recipe?.source_path || ""));
+    const resultPathKey = norm(recipe?.result_item_source_path || recipe?.result_item?.source_path || "");
+    const resultNameKey = norm(
+      cleanDisplayText(recipe?.result_item?.item_name || "")
+        .replace(/^EntityClassDefinition\./i, "")
+        .replace(/_/g, " "),
+    );
+    if (blueprintKey && !recipeByBlueprint.has(blueprintKey)) recipeByBlueprint.set(blueprintKey, recipe);
+    if (resultNameKey && !recipeByName.has(resultNameKey)) recipeByName.set(resultNameKey, recipe);
+    if (resultPathKey && !recipeByResultPath.has(resultPathKey)) recipeByResultPath.set(resultPathKey, recipe);
+  }
+
+  for (const entry of dismantles) {
+    const key = norm(entry?.source_item_source_path || entry?.source_item?.source_path || "");
+    if (!key) continue;
+    if (!dismantleByResultPath.has(key)) dismantleByResultPath.set(key, []);
+    dismantleByResultPath.get(key).push(entry);
+  }
+
+  blueprintCraftingCache = {
+    signature,
+    recipeByBlueprint,
+    recipeByName,
+    recipeByResultPath,
+    dismantleByResultPath,
+  };
+  return blueprintCraftingCache;
+}
+
+function blueprintCraftingData(item) {
+  if (!item) return { recipe: null, dismantles: [] };
+  const cache = ensureBlueprintCraftingCache();
+  const blueprintKey = norm(item.blueprint || "");
+  const itemNameKey = norm(String(item.name || "").replace(/_/g, " "));
+  const recipe =
+    cache.recipeByBlueprint.get(blueprintKey) ||
+    cache.recipeByName.get(itemNameKey) ||
+    null;
+  const resultPathKey = norm(recipe?.result_item_source_path || recipe?.result_item?.source_path || "");
+  return {
+    recipe,
+    dismantles: resultPathKey ? cache.dismantleByResultPath.get(resultPathKey) || [] : [],
+  };
+}
+
 function scminersDbEnsureMissionCache() {
   const signature = [
     state.scminersDb?.signature || "",
@@ -3643,6 +3721,12 @@ function missionAppearanceLines(mission) {
 
 const MISSION_REWARD_OVERRIDES = {
   [norm("Retrieve Additional Smuggler Intel")]: {
+    title: "Retrieve Additional Smuggler Intel",
+    type: "Investigation",
+    faction: "InterSec Defense Solutions",
+    system: "Nyx",
+    lawful: true,
+    repStanding: "Head Contractor",
     moneyReward: 1000000,
     scriptReward: 1,
   },
@@ -3650,6 +3734,47 @@ const MISSION_REWARD_OVERRIDES = {
 
 function missionRewardOverride(mission) {
   return MISSION_REWARD_OVERRIDES[norm(missionTitle(mission))] || null;
+}
+
+function missionRewardOverrideRecords() {
+  return Object.values(MISSION_REWARD_OVERRIDES)
+    .map((entry) => {
+      const title = cleanDisplayText(entry?.title || "");
+      if (!title) return null;
+      return {
+        title,
+        type: cleanDisplayText(entry?.type || "Unknown"),
+        faction: cleanDisplayText(entry?.faction || "Unknown"),
+        system: cleanDisplayText(entry?.system || ""),
+        location: cleanDisplayText(entry?.location || entry?.system || ""),
+        lawful: entry?.lawful === false ? false : true,
+        repStanding: cleanDisplayText(entry?.repStanding || "Any rank"),
+        moneyReward: firstFiniteNumber(entry?.moneyReward) || null,
+        scriptReward: firstFiniteNumber(entry?.scriptReward) || null,
+        rewardCount: 0,
+        rewards: [],
+        source: "override",
+      };
+    })
+    .filter(Boolean);
+}
+
+function augmentMissionWithRewardOverride(mission) {
+  if (!mission) return mission;
+  const override = missionRewardOverride(mission);
+  if (!override) return mission;
+  return {
+    ...mission,
+    moneyReward: override.moneyReward ?? mission.moneyReward ?? null,
+    scriptReward: override.scriptReward ?? mission.scriptReward ?? null,
+    type: mission.type || override.type || "Unknown",
+    faction: mission.faction || override.faction || "Unknown",
+    system: mission.system || override.system || "",
+    location: mission.location || override.location || mission.system || "",
+    repStanding: mission.repStanding || override.repStanding || "Any rank",
+    lawful: mission.lawful ?? override.lawful ?? true,
+    source: mission.source || "override",
+  };
 }
 
 function firstFiniteNumber(...values) {
@@ -3828,6 +3953,29 @@ function missionMoneyReward(mission) {
 
 function missionHasScriptReward(mission) {
   return Number(missionScriptReward(mission) || 0) > 0;
+}
+
+function missionHasKnownMoneyReward(mission) {
+  if (!mission) return false;
+  return firstFiniteNumber(
+    mission?.moneyReward,
+    mission?.auecReward,
+    mission?.uecReward,
+    mission?.cashReward,
+    mission?.rewardMoney,
+    mission?.rewardCash,
+    mission?.payout,
+    mission?.reward_value,
+    mission?.rewardAmount,
+    mission?.reward_amount,
+    mission?.structuredMoneyReward,
+    missionRewardOverride(mission)?.moneyReward,
+  ) !== null;
+}
+
+function missionMoneyRewardLabel(mission) {
+  if (!missionHasKnownMoneyReward(mission)) return "Unknown";
+  return `${formatCount(missionMoneyReward(mission))} aUEC`;
 }
 
 function missionDifficultyOptionsList() {
@@ -4254,6 +4402,10 @@ function renderSelected() {
     }
 
     const missions = item.missions || [];
+    const crafting = blueprintCraftingData(item);
+    const craftingMaterials = Array.isArray(item.materials) ? item.materials : [];
+    const dismantleEntries = crafting.dismantles;
+    const craftTimeSeconds = Number(crafting.recipe?.tiers?.[0]?.craft_time_seconds || crafting.recipe?.recipe_time_seconds || item.craftTime || 0);
     els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
     els.selectedDetails.className = "detail-card";
     els.selectedDetails.innerHTML = `
@@ -4262,10 +4414,50 @@ function renderSelected() {
         <div class="detail-kv"><span>Category</span><strong>${item.type} / ${item.subtype || "unknown"}</strong></div>
         <div class="detail-kv"><span>Reward links</span><strong>${formatCount(missions.length)}</strong></div>
         <div class="detail-kv"><span>Status</span><strong>${isOwned(item.name) ? "Already owned" : "Still needed"}</strong></div>
+        <div class="detail-kv"><span>Craftable</span><strong>${item.craftable ? "Yes" : "No"}</strong></div>
+        <div class="detail-kv"><span>Craft time</span><strong>${craftTimeSeconds ? `${formatCount(craftTimeSeconds)} sec` : "Unknown"}</strong></div>
         <div class="detail-kv">
           <span>Actions</span>
           <div class="wizard-actions">
             ${isOwned(item.name) ? `<button class="ghost-button" type="button" data-action="remove-owned">Remove from collection</button>` : `<button class="primary-button" type="button" data-action="mark-owned">Add to collection</button>`}
+          </div>
+        </div>
+        <div class="detail-kv">
+          <span>Crafting ingredients</span>
+          <div class="mission-list">
+            ${craftingMaterials.length
+              ? craftingMaterials
+                  .map(
+                    (entry) => `
+                      <div class="mission-line">
+                        <strong>${cleanDisplayText(entry.resource || entry.slot_name || "Unknown material")}</strong>
+                        <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} units${entry.minQuality !== undefined ? ` · min quality ${formatCount(entry.minQuality)}` : ""}</div>
+                      </div>
+                    `,
+                  )
+                  .join("")
+              : `<div class="muted">No crafting ingredients are loaded for this blueprint yet.</div>`}
+          </div>
+        </div>
+        <div class="detail-kv">
+          <span>Dismantle returns</span>
+          <div class="mission-list">
+            ${dismantleEntries.length
+              ? dismantleEntries
+                  .map((entry) => {
+                    const totalReturned = (entry.dismantle_results || []).reduce(
+                      (sum, result) => sum + (Number(result?.quantity_returned || 0) || 0),
+                      0,
+                    );
+                    return `
+                      <div class="mission-line">
+                        <strong>${cleanDisplayText(entry.dismantle_method || "Dismantle")}</strong>
+                        <div class="muted">${totalReturned ? `${formatCount(totalReturned)} material units returned` : "Return quantity unavailable"}${entry.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
+                      </div>
+                    `;
+                  })
+                  .join("")
+              : `<div class="muted">No dismantle return data is loaded for this blueprint yet.</div>`}
           </div>
         </div>
         <div class="detail-kv">
@@ -4365,6 +4557,7 @@ function renderSelected() {
   const rewards = currentRewardOptions();
   const missingRewards = rewards.filter((item) => !isOwned(item.name));
   const moneyReward = missionMoneyReward(mission);
+  const moneyRewardLabel = missionMoneyRewardLabel(mission);
   const scriptReward = missionScriptReward(mission);
   const structuredMissionId = cleanDisplayText(mission.structuredMissionId || "");
   const structuredMissionName = cleanDisplayText(mission.structuredMissionName || "");
@@ -4400,7 +4593,7 @@ function renderSelected() {
       </div>
       <div class="mission-metric">
         <span>Money</span>
-        <strong>${formatCount(moneyReward)} aUEC</strong>
+        <strong>${moneyRewardLabel}</strong>
       </div>
       ${scriptReward ? `
       <div class="mission-metric">
@@ -4423,9 +4616,9 @@ function renderSelected() {
     <div class="mission-section">
       <div class="mission-section-head">
         <span>Mission Description</span>
-        <span>${formatCount(mission.repReward || 0)} points · ${formatCount(moneyReward)} aUEC${scriptReward ? ` · ${formatCount(scriptReward)} script` : ""}</span>
+        <span>${formatCount(mission.repReward || 0)} points · ${moneyRewardLabel}${scriptReward ? ` · ${formatCount(scriptReward)} script` : ""}</span>
       </div>
-      <p class="mission-description">${missionDescription(mission)}. Points for completion: ${formatCount(mission.repReward || 0)}. Money reward: ${formatCount(moneyReward)} aUEC.${scriptReward ? ` Script reward: ${formatCount(scriptReward)}.` : ""}</p>
+      <p class="mission-description">${missionDescription(mission)}. Points for completion: ${formatCount(mission.repReward || 0)}. Money reward: ${moneyRewardLabel}.${scriptReward ? ` Script reward: ${formatCount(scriptReward)}.` : ""}</p>
     </div>
     ${hasStructuredMissionData ? `
     <div class="mission-section">
@@ -4445,7 +4638,7 @@ function renderSelected() {
         <span>Possible Rewards</span>
         <span>Total: ${rewards.length ? formatCount(rewards.length) : "0"}</span>
       </div>
-      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} · Points: ${formatCount(mission.repReward || 0)} · Money: ${formatCount(moneyReward)} aUEC${scriptReward ? ` · Script: ${formatCount(scriptReward)}` : ""}</div>
+      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} · Points: ${formatCount(mission.repReward || 0)} · Money: ${moneyRewardLabel}${scriptReward ? ` · Script: ${formatCount(scriptReward)}` : ""}</div>
       <div class="mission-list compact">
         ${rewards.length
           ? rewards
@@ -4514,9 +4707,8 @@ function renderMissionBrowser() {
         ${results
         .map((mission) => {
           const scriptReward = missionScriptReward(mission);
-          const moneyReward = missionMoneyReward(mission);
           const rewardLabel = mission.rewardCount ? `${formatCount(mission.rewardCount)} reward${mission.rewardCount === 1 ? "" : "s"}` : "No rewards";
-          const moneyLabel = ` · ${formatCount(moneyReward)} aUEC`;
+          const moneyLabel = ` · ${missionMoneyRewardLabel(mission)}`;
           const scriptLabel = scriptReward ? ` · ${formatCount(scriptReward)} script` : "";
           const missionKey = `${norm(mission.type || "")}::${norm(mission.faction || "")}::${missionTitleKey(mission)}`;
           const selected = missionKey === selectedKey ? " selected" : "";

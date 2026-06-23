@@ -19,6 +19,6 @@
 17. Add the missing Surge Module from Nyx - Levski, then audit the item list for any other missing entries and move item stats above purchase location in the right pane.
 18. Correct the ship career and role names so careers stop appearing in the roles tab, remove careers from that tab, and keep only real roles.
 19. Merge cargo and freight into one shared ship filter option since they mean the same thing.
-20. Fix mission reward display so every mission shows its money reward and all script-reward missions are included in the mission list and filter.
-21. Add blueprint crafting and dismantle data so each blueprint shows the ingredients needed to make it and what materials it returns when dismantled.
+20. [done] Fix mission reward display so every mission shows its money reward and all script-reward missions are included in the mission list and filter.
+21. [done] Add blueprint crafting and dismantle data so each blueprint shows the ingredients needed to make it and what materials it returns when dismantled.
 22. [done] Speed up app loading and page/view switching so the dashboard, missions, blueprints, buy items, and settings open faster.
