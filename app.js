@@ -950,6 +950,31 @@ function normalizeScminersDbManifestUrl(value) {
   return text || SCMINERSDB_DEFAULT_MANIFEST_URL;
 }
 
+function bundledScminersDbPayload() {
+  const payload = window.SC_MINERS_DB_BUNDLED;
+  return payload && typeof payload === "object" ? payload : null;
+}
+
+function useBundledScminersDbData() {
+  const bundled = bundledScminersDbPayload();
+  if (!bundled) return null;
+  state.scminersDb = {
+    available: true,
+    manifestUrl: "bundled://scminersdb-local-bundle",
+    manifest: bundled.manifest || null,
+    files: Array.isArray(bundled.files) ? bundled.files : [],
+    exports: bundled.exports && typeof bundled.exports === "object" ? bundled.exports : {},
+    fileIndex: bundled.fileIndex && typeof bundled.fileIndex === "object" ? bundled.fileIndex : {},
+    signature: cleanDisplayText(bundled.signature || ""),
+    status: cleanDisplayText(bundled.status || "Bundled SCMinersDB data loaded"),
+    lastLoaded: cleanDisplayText(bundled.generatedAt || new Date().toISOString()),
+    source: "bundled",
+  };
+  window.SC_MINERS_DB = state.scminersDb;
+  if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
+  return state.scminersDb;
+}
+
 function currentScminersDbManifestUrl() {
   return normalizeScminersDbManifestUrl(
     state.scminersDb?.manifestUrl
@@ -1602,6 +1627,7 @@ function summarizeScminersDbManifest(manifest) {
 }
 
 async function loadScminersDbBridge() {
+  if (bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
   if (typeof fetch !== "function") return null;
   try {
     const sources = [currentScminersDbManifestUrl(), "/api/scminersdb/manifest"];
@@ -1702,6 +1728,10 @@ async function loadScminersDbBridge() {
     }
     return state.scminersDb;
   } catch (error) {
+    if (bundledScminersDbPayload()) {
+      const bundled = useBundledScminersDbData();
+      if (bundled) return bundled;
+    }
     state.scminersDb = {
       available: false,
       manifestUrl: currentScminersDbManifestUrl(),
@@ -1827,6 +1857,7 @@ function scminersDbEntrySummary(entry) {
 }
 
 function scheduleScminersDbRefresh() {
+  if (bundledScminersDbPayload()) return;
   if (state.scminersDbRefreshTimer) clearInterval(state.scminersDbRefreshTimer);
   state.scminersDbRefreshTimer = setInterval(() => {
     void loadScminersDbBridge();
@@ -5756,10 +5787,11 @@ async function init() {
   });
 
   loadState();
+  useBundledScminersDbData();
   els.searchInput.value = state.search;
   renderAll();
   void bootstrapAppData();
-  void loadScminersDbBridge();
+  if (!bundledScminersDbPayload()) void loadScminersDbBridge();
   void loadLiveMissionContracts();
   scheduleScminersDbRefresh();
 
