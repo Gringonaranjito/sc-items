@@ -6,13 +6,6 @@ const SCMINERSDB_MANIFEST_URL_KEY = "scminersdb-manifest-url-v1";
 const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/scminersdb/runs/latest.json";
 const BUY_DATA_SCRIPT_VERSION = "20260618a";
 const BUY_DATA_SCRIPT_URLS = Object.freeze([
-  `./buy_items_items_1.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_2.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_3.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_4.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_5.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_ships_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_rentals_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
   `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
 ]);
 
@@ -137,6 +130,8 @@ let scminersDbMissionCache = {
 let buyDataLoadPromise = null;
 let buyDataScriptsLoadPromise = null;
 let buyDataProgressRenderTimer = null;
+let buyDataWorker = null;
+let liveMissionLoadPromise = null;
 
 let missionLookupCache = {
   dataItemsRef: null,
@@ -150,6 +145,8 @@ let missionLookupCache = {
   missionCatalog: [],
   missionCatalogReady: false,
   rewardsIndex: new Map(),
+  missionSearchIndex: new Map(),
+  missionMatchIndex: new Map(),
 };
 let blueprintCraftingCache = {
   signature: "",
@@ -173,6 +170,8 @@ function invalidateMissionLookupCache() {
     missionCatalog: [],
     missionCatalogReady: false,
     rewardsIndex: new Map(),
+    missionSearchIndex: new Map(),
+    missionMatchIndex: new Map(),
   };
 }
 
@@ -662,13 +661,10 @@ const BUY_GENERIC_SHOP_LABELS = Object.freeze([
 const BUY_GENERIC_SHOP_LABEL_SET = new Set(BUY_GENERIC_SHOP_LABELS);
 const BUY_GENERIC_SHOP_LABELS_BY_LENGTH = Object.freeze([...BUY_GENERIC_SHOP_LABELS].sort((a, b) => b.length - a.length));
 
-const BUY_DATA_BATCH_SIZE = 500;
+const BUY_DATA_BATCH_SIZE = 50;
 const BUY_DATA_PROGRESS_RENDER_DELAY_MS = 120;
 
 function yieldToMainThread(timeout = 0) {
-  if (typeof window !== "undefined" && typeof window.requestIdleCallback === "function") {
-    return new Promise((resolve) => window.requestIdleCallback(() => resolve(), { timeout: 16 }));
-  }
   return new Promise((resolve) => setTimeout(resolve, timeout));
 }
 
@@ -1089,10 +1085,6 @@ function escapeHtml(value) {
 }
 
 function buyEntryStatsGroups(entry, tab = state.buyTab) {
-  if (tab === "items") {
-    const liveSections = buyEntryItemWikiSections(entry);
-    return liveSections;
-  }
   const groups = [];
   const seen = new Set();
   const pushGroup = (label, value) => {
@@ -1334,7 +1326,7 @@ function loadProfile(userId) {
   state.owned = new Set((parsed.owned || ownedSeed).map(norm));
   state.logs = parsed.logs || [];
   state.view = parsed.view || "dashboard";
-  if (state.view === "missions") state.view = "dashboard";
+  if (state.view === "missions" || state.view === "buy-items") state.view = "dashboard";
   state.collectionMode = parsed.collectionMode || parsed.view || "owned";
   state.search = parsed.search || "";
   state.blueprintSearch = parsed.blueprintSearch || "";
@@ -1468,49 +1460,103 @@ function hasBuyDataScriptsLoaded() {
   return Boolean(window.BUY_ITEMS_DATA || window.BUY_ITEMS_DATA_PARTS);
 }
 
-function loadScriptTag(src) {
-  return new Promise((resolve, reject) => {
-    const existing = document.querySelector(`script[data-buy-src="${src}"]`);
-    if (existing?.dataset.loaded === "true") {
-      resolve();
-      return;
-    }
-    if (existing) {
-      existing.addEventListener("load", () => resolve(), { once: true });
-      existing.addEventListener("error", () => reject(new Error(`Failed to load ${src}`)), { once: true });
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = src;
-    script.defer = true;
-    script.dataset.buySrc = src;
-    script.addEventListener(
-      "load",
-      () => {
-        script.dataset.loaded = "true";
-        resolve();
-      },
-      { once: true },
-    );
-    script.addEventListener("error", () => reject(new Error(`Failed to load ${src}`)), { once: true });
-    document.head.appendChild(script);
-  });
+function combineBuyDataParts() {
+  const parts = window.BUY_ITEMS_DATA_PARTS;
+  if (!parts || typeof parts !== "object") return null;
+  const merged = { items: [], ships: [], rentals: [] };
+  for (const value of Object.values(parts)) {
+    if (!value || typeof value !== "object") continue;
+    if (Array.isArray(value.items)) merged.items.push(...value.items);
+    if (Array.isArray(value.ships)) merged.ships.push(...value.ships);
+    if (Array.isArray(value.rentals)) merged.rentals.push(...value.rentals);
+  }
+  if (!merged.items.length && !merged.ships.length && !merged.rentals.length) return null;
+  window.BUY_ITEMS_DATA = merged;
+  return merged;
 }
 
 function ensureBuyDataScriptsLoaded() {
   if (hasBuyDataScriptsLoaded()) return Promise.resolve();
   if (buyDataScriptsLoadPromise) return buyDataScriptsLoadPromise;
-  buyDataScriptsLoadPromise = Promise.all(BUY_DATA_SCRIPT_URLS.map((src) => loadScriptTag(src)))
-    .then(() => undefined)
-    .finally(() => {
-      buyDataScriptsLoadPromise = null;
-    });
+  buyDataScriptsLoadPromise = new Promise((resolve, reject) => {
+    try {
+      if (typeof Worker === "undefined") throw new Error("Worker support unavailable");
+      if (buyDataWorker) {
+        try {
+          buyDataWorker.terminate();
+        } catch {
+          // ignore
+        }
+        buyDataWorker = null;
+      }
+
+      const workerSource = `
+        self.window = self;
+        const mergeParts = () => {
+          const parts = self.BUY_ITEMS_DATA_PARTS || {};
+          const merged = { items: [], ships: [], rentals: [] };
+          for (const value of Object.values(parts)) {
+            if (!value || typeof value !== "object") continue;
+            if (Array.isArray(value.items)) merged.items.push(...value.items);
+            if (Array.isArray(value.ships)) merged.ships.push(...value.ships);
+            if (Array.isArray(value.rentals)) merged.rentals.push(...value.rentals);
+          }
+          return merged;
+        };
+        self.onmessage = async (event) => {
+          try {
+            const urls = Array.isArray(event?.data?.urls) ? event.data.urls : [];
+            for (const src of urls) {
+              importScripts(src);
+            }
+            const data = self.BUY_ITEMS_DATA || mergeParts();
+            self.postMessage({ ok: true, data });
+          } catch (error) {
+            self.postMessage({ ok: false, error: String(error?.message || error) });
+          }
+        };
+      `;
+      const workerUrl = URL.createObjectURL(new Blob([workerSource], { type: "text/javascript" }));
+      buyDataWorker = new Worker(workerUrl);
+      URL.revokeObjectURL(workerUrl);
+      buyDataWorker.onmessage = (event) => {
+        const payload = event?.data || {};
+        if (!payload.ok) {
+          reject(new Error(payload.error || "Failed to load buy data"));
+          return;
+        }
+        if (payload.data && typeof payload.data === "object") {
+          window.BUY_ITEMS_DATA = payload.data;
+        }
+        if (!window.BUY_ITEMS_DATA && window.BUY_ITEMS_DATA_PARTS) {
+          combineBuyDataParts();
+        }
+        resolve();
+      };
+      buyDataWorker.onerror = (error) => {
+        reject(new Error(error?.message || "Failed to load buy data"));
+      };
+      buyDataWorker.postMessage({ urls: BUY_DATA_SCRIPT_URLS.map((src) => new URL(src, window.location.href).href) });
+    } catch (error) {
+      reject(error);
+    }
+  }).finally(() => {
+    if (buyDataWorker) {
+      try {
+        buyDataWorker.terminate();
+      } catch {
+        // ignore
+      }
+      buyDataWorker = null;
+    }
+    buyDataScriptsLoadPromise = null;
+  });
   return buyDataScriptsLoadPromise;
 }
 
 async function bootstrapDataPipeline({ render = true } = {}) {
   state.buyDataStatus = "Loading buy data...";
-  const buyData = await loadBuyData();
+  const buyData = await loadBuyData({ render });
   state.buyData = {
     items: Array.isArray(buyData?.items) ? buyData.items : [],
     ships: Array.isArray(buyData?.ships) ? buyData.ships : [],
@@ -1540,9 +1586,6 @@ async function bootstrapAppData() {
   state.data = blueprintData;
   state.appReady = true;
   renderAll();
-  if (state.view === "buy-items") {
-    void ensureBuyDataReady({ render: true });
-  }
 }
 
 function structuredExportRecords(payload) {
@@ -1563,6 +1606,7 @@ function scminersDbFileNameKey(fileName) {
 function scminersDbExportRecords(fileName) {
   const key = scminersDbFileNameKey(fileName);
   if (!key) return [];
+  const bundled = state.scminersDb?.source === "bundled" || currentScminersDbManifestUrl().startsWith("bundled://");
   const legacyKey = cleanDisplayText(key);
   const payload =
     state.scminersDb?.exports?.[key] ||
@@ -1570,7 +1614,7 @@ function scminersDbExportRecords(fileName) {
     state.scminersDb?.exports?.[legacyKey] ||
     state.scminersDb?.exports?.[legacyKey.replace(/\.json$/i, "")] ||
     null;
-  if (!payload && state.scminersDb?.available) void loadScminersDbExport(key);
+  if (!payload && state.scminersDb?.available && !bundled) void loadScminersDbExport(key);
   return structuredExportRecords(payload);
 }
 
@@ -1601,6 +1645,13 @@ function scminersDbManifestEntries(manifest) {
 async function loadScminersDbExport(fileName) {
   const normalized = scminersDbExportFileName(fileName);
   if (!normalized || typeof fetch !== "function") return null;
+  if (state.scminersDb?.source === "bundled" || currentScminersDbManifestUrl().startsWith("bundled://")) {
+    return (
+      state.scminersDb?.exports?.[normalized] ||
+      state.scminersDb?.exports?.[normalized.replace(/\.json$/i, "")] ||
+      null
+    );
+  }
   if (state.scminersDb?.exports?.[normalized]) return state.scminersDb.exports[normalized];
   if (state.scminersDbExportPromises?.has(normalized)) return state.scminersDbExportPromises.get(normalized);
   if (!state.scminersDbExportPromises) state.scminersDbExportPromises = new Map();
@@ -1873,9 +1924,25 @@ function scheduleScminersDbRefresh() {
   }, 30000);
 }
 
-async function loadBuyData() {
+async function loadBuyData({ render = true } = {}) {
   await ensureBuyDataScriptsLoaded();
   const baseData = window.BUY_ITEMS_DATA || { items: [], ships: [], rentals: [] };
+  const baseItems = Array.isArray(baseData.items) ? baseData.items : [];
+  const baseShips = Array.isArray(baseData.ships) ? baseData.ships : [];
+  const baseRentals = Array.isArray(baseData.rentals) ? baseData.rentals : [];
+  if (baseItems.length || baseShips.length || baseRentals.length) {
+    const directData = {
+      items: baseItems,
+      ships: baseShips,
+      rentals: baseRentals,
+    };
+    state.buyData = directData;
+    state.buyDataStatus = `Loaded ${formatCount(baseItems.length + baseShips.length + baseRentals.length)} buy records`;
+    window.shipByName = new Map(baseShips.map((entry) => [norm(entry?.name), entry]));
+    if (render && state.appReady && typeof renderAll === "function") renderAll();
+    return directData;
+  }
+
   const partsData = window.BUY_ITEMS_DATA_PARTS || {};
   const bridgeItems = scminersDbExportRecords("item_catalog.json");
   const bridgeShips = scminersDbExportRecords("ship_catalog.json");
@@ -1883,7 +1950,7 @@ async function loadBuyData() {
 
   const updateProgress = (done, total) => {
     state.buyDataStatus = total ? `Loading buy data ${formatCount(done)} / ${formatCount(total)}...` : "Loading buy data...";
-    scheduleBuyLoadingRender();
+    if (render) scheduleBuyLoadingRender();
   };
 
   const normalizeDataset = async (source, mapper = normalizeRecord) => {
@@ -1924,7 +1991,7 @@ async function loadBuyData() {
     clearTimeout(buyDataProgressRenderTimer);
     buyDataProgressRenderTimer = null;
   }
-  if (state.appReady && typeof renderAll === "function") renderAll();
+  if (render && state.appReady && typeof renderAll === "function") renderAll();
   return processedData;
 }
 
@@ -2040,9 +2107,13 @@ function buyEntryOffers(entry) {
 }
 
 function offerOrbit(offer) {
-  const localOrbit = window.SC_ITEMS_API?.resolveOrbit?.(offer);
-  if (localOrbit && norm(localOrbit) !== "other") return cleanDisplayText(localOrbit);
-  const orbit = cleanDisplayText(offer?.orbit || offer?.planet || offer?.body || "");
+  const directOrbit = cleanDisplayText(offer?.orbit || offer?.planet || offer?.body || "");
+  const localOrbit = cleanDisplayText(window.SC_ITEMS_API?.resolveOrbit?.(offer) || "");
+  const rawText = cleanDisplayText(offerLocationPath(offer) || offerLocationName(offer) || offer?.location || "");
+  const rawSegments = splitBuySegments(rawText);
+  const areaOrbit = orbitFromArea(offerSystem(offer), offerArea(offer));
+  const parsedOrbit = cleanDisplayText(rawSegments.find((segment) => isKnownBuyOrbit(segment)) || "");
+  const orbit = cleanDisplayText(localOrbit || directOrbit || areaOrbit || parsedOrbit || "");
   return orbit && norm(orbit) !== "other" ? orbit : "";
 }
 
@@ -2728,7 +2799,12 @@ function isOwned(itemName) {
 }
 
 function missionDisplayTitle(value) {
-  return cleanDisplayText(value || "");
+  return cleanDisplayText(value || "")
+    .replace(/\[[^\]]+\]/g, " ")
+    .replace(/\bLOCATION\d+\b/gi, " ")
+    .replace(/\s+/g, " ")
+    .replace(/^\W+|\W+$/g, "")
+    .trim();
 }
 
 function missionTitle(m) {
@@ -2827,6 +2903,7 @@ function missionRecordKey(mission) {
 }
 
 function scminersDbMissionRecords() {
+  if (state.scminersDb?.source === "bundled" || currentScminersDbManifestUrl().startsWith("bundled://")) return scminersDbExportRecords("missions.json");
   const appReady = scminersDbExportRecords("missions_app_ready.json");
   if (appReady.length) return appReady;
   const playerReady = scminersDbExportRecords("mission_catalog_player_ready.json");
@@ -3115,14 +3192,42 @@ function scminersDbEnsureMissionCache() {
     const keys = scminersDbRecordKeys(entry);
     const rewardEntry = keys.map((key) => rewardsByKey.get(key)).find(Boolean) || null;
     const prereqEntry = keys.map((key) => prereqsByKey.get(key)).find(Boolean) || null;
+    const structuredName = cleanDisplayText(entry.title || entry.name || entry.mission_id || "");
+    const structuredMissionId = cleanDisplayText(entry.mission_id || entry.name || "");
+    const structuredMissionType = cleanDisplayText(entry.mission_type || "");
+    const structuredFaction = cleanDisplayText(entry.mission_giver || entry.faction_company || entry.company_faction || "");
+    const structuredSourcePath = cleanDisplayText(entry.source_path || "");
+    const structuredSourceId = cleanDisplayText(entry.source_id || "");
+    const structuredDescription = cleanDisplayText(entry.description || "");
+    const structuredLocation = cleanDisplayText(entry.location || "");
+    const structuredTitle = cleanDisplayText(entry.title || "");
+    const structuredSearchText = [
+      structuredTitle,
+      structuredDescription,
+      entry.system,
+      entry.location,
+      structuredName,
+      structuredMissionId,
+      structuredMissionType,
+      structuredFaction,
+      structuredSourcePath,
+      structuredSourceId,
+      entry.name,
+      entry.mission_id,
+      entry.mission_type,
+      entry.faction_company,
+      entry.company_faction,
+    ]
+      .map((value) => cleanDisplayText(value).toLowerCase())
+      .join(" ");
     return {
       ...entry,
-      structuredName: cleanDisplayText(entry.title || entry.name || entry.mission_id || ""),
-      structuredMissionId: cleanDisplayText(entry.mission_id || entry.name || ""),
-      structuredMissionType: cleanDisplayText(entry.mission_type || ""),
-      structuredFaction: cleanDisplayText(entry.mission_giver || entry.faction_company || entry.company_faction || ""),
-      structuredSourcePath: cleanDisplayText(entry.source_path || ""),
-      structuredSourceId: cleanDisplayText(entry.source_id || ""),
+      structuredName,
+      structuredMissionId,
+      structuredMissionType,
+      structuredFaction,
+      structuredSourcePath,
+      structuredSourceId,
       structuredMoneyReward: usesAppReady ? firstFiniteNumber(entry.money_reward, entry.moneyReward) || 0 : scminersDbRewardMoney(rewardEntry),
       structuredScriptReward: usesAppReady ? firstFiniteNumber(entry.script_reward, entry.scriptReward) || 0 : scminersDbRewardScript(rewardEntry),
       structuredRewardCount: Number(rewardEntry?.reward_counts ? Object.values(rewardEntry.reward_counts).reduce((sum, value) => sum + (Number(value) || 0), 0) : 0) || 0,
@@ -3146,9 +3251,9 @@ function scminersDbEnsureMissionCache() {
           ].filter(Boolean).join(" · ")
         : scminersDbPrereqSummary(prereqEntry),
       structuredPrereqSource: cleanDisplayText(prereqEntry?.source_path || ""),
-      structuredTitle: cleanDisplayText(entry.title || ""),
-      structuredDescription: cleanDisplayText(entry.description || ""),
-      structuredLocation: cleanDisplayText(entry.location || ""),
+      structuredTitle,
+      structuredDescription,
+      structuredLocation,
       structuredLocationOptions: Array.isArray(entry.location_options) ? entry.location_options.map((value) => cleanDisplayText(value)).filter(Boolean) : [],
       structuredRequiredRank: cleanDisplayText(entry.required_rank || ""),
       structuredRequiredMissionCount: Number(entry.required_mission_count || 0) || 0,
@@ -3157,6 +3262,14 @@ function scminersDbEnsureMissionCache() {
       structuredSameSessionKnown: Boolean(entry.same_session_required_known),
       structuredSameSessionRequired: entry.same_session_required,
       structuredVariantKinds: Array.isArray(entry.variant_kinds) ? entry.variant_kinds.map((value) => cleanDisplayText(value)).filter(Boolean) : [],
+      structuredSearchText,
+      structuredSearchTokens: new Set(scminersDbTextTokens(structuredSearchText)),
+      structuredSearchExactTitle: norm(structuredName || entry.name || ""),
+      structuredSearchExactId: norm(structuredMissionId || entry.mission_id || ""),
+      structuredSearchType: norm(structuredMissionType || entry.mission_type || ""),
+      structuredSearchFaction: norm(structuredFaction || entry.faction_company || entry.company_faction || ""),
+      structuredSearchSystem: norm(entry.system || ""),
+      structuredSearchLocation: norm(structuredLocation || ""),
     };
   });
 
@@ -3165,50 +3278,53 @@ function scminersDbEnsureMissionCache() {
     entries: structuredEntries,
     rewardById: rewardsByKey,
     prereqById: prereqsByKey,
+    missionSearchIndex: new Map(),
+    missionMatchIndex: new Map(),
   };
   return scminersDbMissionCache;
 }
 
-function scminersDbMissionScore(mission, entry) {
-  if (!mission || !entry) return 0;
-  const missionTitleTokens = scminersDbTextTokens(missionTitle(mission));
-  const missionTypeTokens = scminersDbTextTokens(mission.type);
-  const missionFactionTokens = scminersDbTextTokens(mission.faction);
-  const missionLocationTokens = scminersDbTextTokens(missionLocation(mission));
-  const searchable = [
-    entry.title,
-    entry.description,
-    entry.system,
-    entry.location,
-    entry.structuredName,
-    entry.structuredMissionId,
-    entry.structuredMissionType,
-    entry.structuredFaction,
-    entry.structuredSourcePath,
-    entry.source_id,
-    entry.name,
-    entry.mission_id,
-    entry.mission_type,
-    entry.faction_company,
-    entry.company_faction,
-  ]
-    .map((value) => cleanDisplayText(value).toLowerCase())
-    .join(" ");
-  const entryTokens = new Set(scminersDbTextTokens(searchable));
+function scminersDbMissionSearchIndex(mission) {
+  if (!mission) return null;
+  const cache = scminersDbEnsureMissionCache();
+  const missionKey = missionRecordKey(mission);
+  if (cache.missionSearchIndex?.has(missionKey)) return cache.missionSearchIndex.get(missionKey);
+  const missionTitleValue = missionTitle(mission);
+  const missionTypeValue = mission.type;
+  const missionFactionValue = mission.faction;
+  const missionLocationValue = missionLocation(mission);
+  const index = {
+    titleNorm: norm(missionTitleValue),
+    typeNorm: norm(missionTypeValue),
+    factionNorm: norm(missionFactionValue),
+    systemNorm: norm(mission.system),
+    locationNorm: norm(missionLocationValue),
+    titleTokens: scminersDbTextTokens(missionTitleValue),
+    typeTokens: scminersDbTextTokens(missionTypeValue),
+    factionTokens: scminersDbTextTokens(missionFactionValue),
+    locationTokens: scminersDbTextTokens(missionLocationValue),
+  };
+  if (cache.missionSearchIndex) cache.missionSearchIndex.set(missionKey, index);
+  return index;
+}
+
+function scminersDbMissionScore(missionIndex, entry) {
+  if (!missionIndex || !entry) return 0;
+  const searchable = entry.structuredSearchText || "";
+  const entryTokens = entry.structuredSearchTokens || new Set();
   let score = 0;
 
-  const exactTitle = norm(missionTitle(mission));
-  if (exactTitle && exactTitle === norm(entry.structuredName || entry.name)) score += 200;
-  if (exactTitle && exactTitle === norm(entry.mission_id)) score += 180;
-  if (norm(mission.type) && norm(mission.type) === norm(entry.structuredMissionType || entry.mission_type)) score += 60;
-  if (norm(mission.faction) && norm(mission.faction) === norm(entry.structuredFaction || entry.faction_company || entry.company_faction)) score += 80;
-  if (norm(mission.system) && searchable.includes(norm(mission.system))) score += 30;
-  if (norm(mission.location) && searchable.includes(norm(mission.location))) score += 30;
+  if (missionIndex.titleNorm && missionIndex.titleNorm === entry.structuredSearchExactTitle) score += 200;
+  if (missionIndex.titleNorm && missionIndex.titleNorm === entry.structuredSearchExactId) score += 180;
+  if (missionIndex.typeNorm && missionIndex.typeNorm === entry.structuredSearchType) score += 60;
+  if (missionIndex.factionNorm && missionIndex.factionNorm === entry.structuredSearchFaction) score += 80;
+  if (missionIndex.systemNorm && searchable.includes(missionIndex.systemNorm)) score += 30;
+  if (missionIndex.locationNorm && searchable.includes(missionIndex.locationNorm)) score += 30;
 
-  for (const token of missionTitleTokens) if (entryTokens.has(token)) score += 12;
-  for (const token of missionTypeTokens) if (entryTokens.has(token)) score += 8;
-  for (const token of missionFactionTokens) if (entryTokens.has(token)) score += 8;
-  for (const token of missionLocationTokens) if (entryTokens.has(token)) score += 4;
+  for (const token of missionIndex.titleTokens) if (entryTokens.has(token)) score += 12;
+  for (const token of missionIndex.typeTokens) if (entryTokens.has(token)) score += 8;
+  for (const token of missionIndex.factionTokens) if (entryTokens.has(token)) score += 8;
+  for (const token of missionIndex.locationTokens) if (entryTokens.has(token)) score += 4;
 
   return score;
 }
@@ -3216,16 +3332,21 @@ function scminersDbMissionScore(mission, entry) {
 function scminersDbBestMissionMatch(mission) {
   if (!mission) return null;
   const cache = scminersDbEnsureMissionCache();
+  const missionKey = missionRecordKey(mission);
+  if (cache.missionMatchIndex?.has(missionKey)) return cache.missionMatchIndex.get(missionKey);
+  const missionIndex = scminersDbMissionSearchIndex(mission);
   let best = null;
   let bestScore = 0;
   for (const entry of cache.entries) {
-    const score = scminersDbMissionScore(mission, entry);
+    const score = scminersDbMissionScore(missionIndex, entry);
     if (score > bestScore) {
       best = entry;
       bestScore = score;
     }
   }
-  return bestScore > 0 ? { ...best, structuredMatchScore: bestScore } : null;
+  const matched = bestScore > 0 ? { ...best, structuredMatchScore: bestScore } : null;
+  if (cache.missionMatchIndex) cache.missionMatchIndex.set(missionKey, matched);
+  return matched;
 }
 
 function augmentMissionWithStructuredData(mission) {
@@ -3234,9 +3355,10 @@ function augmentMissionWithStructuredData(mission) {
   if (!structured) return mission;
   const safeStructuredFaction = isBadLabel(structured.structuredFaction) ? "" : structured.structuredFaction;
   const safeStructuredMissionType = isBadLabel(structured.structuredMissionType) ? "" : structured.structuredMissionType;
+  const safeStructuredTitle = isBadLabel(structured.structuredTitle) ? "" : missionDisplayTitle(structured.structuredTitle);
   return {
     ...mission,
-    title: structured.structuredTitle || mission.title || mission.name || "",
+    title: safeStructuredTitle || missionDisplayTitle(mission.title || mission.name || "") || mission.title || mission.name || "",
     description: structured.structuredDescription || mission.description || mission.summary || mission.text || "",
     summary: structured.structuredDescription || mission.summary || mission.description || "",
     text: structured.structuredDescription || mission.text || mission.description || "",
@@ -3285,6 +3407,7 @@ function normalizeLiveMissionContract(contract) {
       "",
   );
   if (!title) return null;
+  const cleanTitle = missionDisplayTitle(title);
 
   const description = cleanDisplayText(
     contract.description ||
@@ -3328,7 +3451,7 @@ function normalizeLiveMissionContract(contract) {
   ) || rewardScriptCountFromAny(contract.reward_items || contract.rewardItems || contract.rewards || contract.reward);
 
   return {
-    title,
+    title: cleanTitle || title,
     type,
     faction,
     system,
@@ -3387,24 +3510,30 @@ function combinedMissionRecords() {
 }
 
 async function loadLiveMissionContracts() {
-  state.liveMissionsStatus = "Loading live missions...";
-  renderMissionBrowser();
-  try {
-    const response = await fetch("https://api.uexcorp.uk/2.0/contracts/");
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
-    const contracts = extractContractsFromPayload(payload);
-    const normalized = contracts
-      .map(normalizeLiveMissionContract)
-      .filter(Boolean)
-      .filter((mission) => !isBadLabel(mission.title));
-    state.liveMissions = normalized;
-    state.liveMissionsStatus = normalized.length ? `Loaded ${formatCount(normalized.length)} live missions` : "No live missions found";
-  } catch (error) {
-    state.liveMissions = [];
-    state.liveMissionsStatus = `Live missions unavailable: ${cleanDisplayText(error?.message || error)}`;
-  }
-  renderAll();
+  if (liveMissionLoadPromise) return liveMissionLoadPromise;
+  liveMissionLoadPromise = (async () => {
+    state.liveMissionsStatus = "Loading live missions...";
+    renderMissionBrowser();
+    try {
+      const response = await fetch("https://api.uexcorp.uk/2.0/contracts/");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const payload = await response.json();
+      const contracts = extractContractsFromPayload(payload);
+      const normalized = contracts
+        .map(normalizeLiveMissionContract)
+        .filter(Boolean)
+        .filter((mission) => !isBadLabel(mission.title));
+      state.liveMissions = normalized;
+      state.liveMissionsStatus = normalized.length ? `Loaded ${formatCount(normalized.length)} live missions` : "No live missions found";
+    } catch (error) {
+      state.liveMissions = [];
+      state.liveMissionsStatus = `Live missions unavailable: ${cleanDisplayText(error?.message || error)}`;
+    }
+    renderAll();
+  })().finally(() => {
+    liveMissionLoadPromise = null;
+  });
+  return liveMissionLoadPromise;
 }
 
 function missionCatalog() {
@@ -3649,7 +3778,7 @@ function currentMissionDetail() {
   const targetKey = missionTitleKey(state.mission);
   const mission =
     missionsFor(state.missionType, state.company).find((m) => missionTitleKey(missionTitle(m)) === targetKey) || null;
-  return mission ? augmentMissionWithStructuredData(mission) : null;
+  return mission ? augmentMissionWithRewardOverride(augmentMissionWithStructuredData(mission)) : null;
 }
 
 function selectMission(type, company, title) {
@@ -3715,7 +3844,7 @@ function renderView() {
       statsShell: false,
       settingsShell: false,
       logShell: false,
-      searchShell: true,
+      searchShell: false,
       missionBrowserShell: false,
       buyShell: false,
     },
@@ -4270,23 +4399,23 @@ function renderSummary() {
     map.set(collectionCategory(item), (map.get(collectionCategory(item)) || 0) + 1);
   }
 
-  const renderRows = (map) =>
+  const renderRows = (map, mode) =>
     [...map.entries()]
       .sort((a, b) => b[1] - a[1])
       .map(
         ([label, count]) => `
-          <div class="summary-row">
+          <button class="summary-row" type="button" data-collection-filter data-collection-filter-mode="${mode}" data-collection-filter-chip="${label}">
             <div class="name"><span class="dot"></span>${label}</div>
             <div class="value">${formatCount(count)}</div>
-          </div>
+          </button>
         `,
       )
       .join("");
 
   els.ownedTotal.textContent = formatCount(owned);
   els.missingTotal.textContent = formatCount(missing);
-  els.ownedBreakdown.innerHTML = renderRows(ownedByType);
-  els.missingBreakdown.innerHTML = renderRows(missingByType);
+  els.ownedBreakdown.innerHTML = renderRows(ownedByType, "owned");
+  els.missingBreakdown.innerHTML = renderRows(missingByType, "missing");
   els.footerOwned.textContent = `Owned: ${formatCount(owned)}`;
   els.footerMissing.textContent = `Missing: ${formatCount(missing)}`;
   const footerBits = [];
@@ -4770,13 +4899,8 @@ function renderSelected() {
   const moneyReward = missionMoneyReward(mission);
   const moneyRewardLabel = missionMoneyRewardLabel(mission);
   const scriptReward = missionScriptReward(mission);
-  const structuredMissionId = cleanDisplayText(mission.structuredMissionId || "");
-  const structuredMissionName = cleanDisplayText(mission.structuredMissionName || "");
-  const structuredSourcePath = cleanDisplayText(mission.structuredSourcePath || "");
   const structuredPrereqSummary = cleanDisplayText(mission.structuredPrereqSummary || "");
-  const structuredPrereqSource = cleanDisplayText(mission.structuredPrereqSource || "");
-  const structuredMatchScore = Number(mission.structuredMatchScore || 0);
-  const hasStructuredMissionData = Boolean(structuredMissionId || structuredMissionName || structuredSourcePath || structuredPrereqSummary || structuredMatchScore);
+  const appearanceLines = missionAppearanceLines(mission).filter(Boolean);
 
   els.selectedMeta.textContent = `${mission.type || "Mission"} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card mission-detail";
@@ -4831,19 +4955,6 @@ function renderSelected() {
       </div>
       <p class="mission-description">${missionDescription(mission)}. Points for completion: ${formatCount(mission.repReward || 0)}. Money reward: ${moneyRewardLabel}.${scriptReward ? ` Script reward: ${formatCount(scriptReward)}.` : ""}</p>
     </div>
-    ${hasStructuredMissionData ? `
-    <div class="mission-section">
-      <div class="mission-section-head">
-        <span>SCMinersDB Mission Data</span>
-        <span>${structuredMatchScore ? `Match ${formatCount(structuredMatchScore)}` : "Structured overlay"}</span>
-      </div>
-      <div class="detail-grid">
-        ${structuredMissionName ? `<div class="detail-kv"><span>Record name</span><strong>${structuredMissionName}</strong></div>` : ""}
-        ${structuredMissionId ? `<div class="detail-kv"><span>Record id</span><strong>${structuredMissionId}</strong></div>` : ""}
-        ${structuredSourcePath ? `<div class="detail-kv"><span>Source path</span><strong>${structuredSourcePath}</strong></div>` : ""}
-        ${structuredPrereqSummary ? `<div class="detail-kv"><span>Prerequisites</span><strong>${structuredPrereqSummary}</strong></div>` : ""}
-      </div>
-    </div>` : ""}
     <div class="mission-section">
       <div class="mission-section-head">
         <span>Possible Rewards</span>
@@ -4874,10 +4985,10 @@ function renderSelected() {
     <div class="mission-section">
       <div class="mission-section-head">
         <span>How to Make This Mission Appear</span>
-        <span>${structuredPrereqSource ? `Source: ${structuredPrereqSource}` : "Mission prereqs"}</span>
+        <span>${structuredPrereqSummary ? "Mission prereqs" : "Best known conditions"}</span>
       </div>
       <div class="mission-list compact">
-        ${missionAppearanceLines(mission)
+        ${appearanceLines
           .map((line) => `<div class="mission-line"><strong>${line}</strong></div>`)
           .join("")}
       </div>
@@ -4907,6 +5018,9 @@ function renderMissionBrowser() {
   if (state.view !== "missions") {
     els.missionSearchResults.innerHTML = `<div class="muted">Open Missions to browse every mission and its details.</div>`;
     return;
+  }
+  if (!state.liveMissions.length && !state.liveMissionsStatus && !liveMissionLoadPromise) {
+    void loadLiveMissionContracts();
   }
 
   const results = missionSearchItems();
@@ -5274,9 +5388,6 @@ function renderBuy() {
     tab === "items"
       ? Number(itemCrafting.recipe?.tiers?.[0]?.craft_time_seconds || itemCrafting.recipe?.recipe_time_seconds || itemCraftingSource?.craftTime || 0)
       : 0;
-  if (tab === "items" && !statGroups.length) {
-    ensureLiveItemWikiSections(selected);
-  }
   const statLabel = tab === "items" ? "Item info" : "Stats";
   const statBlock =
     statGroups.length || tab !== "items"
@@ -5485,7 +5596,9 @@ function syncWizardState() {
 }
 
 function renderAll() {
-  syncWizardState();
+  if (state.view === "dashboard" || state.view === "missions") {
+    syncWizardState();
+  }
   renderUsers();
   renderRail();
   renderView();
@@ -5501,7 +5614,6 @@ function renderAll() {
     renderChips();
     renderCollection();
     renderSelected();
-    renderSearchResults();
   } else if (state.view === "buy-items") {
     renderBuy();
   } else if (state.view === "progress") {
@@ -5788,7 +5900,6 @@ async function init() {
   renderAll();
   void bootstrapAppData();
   if (!bundledScminersDbPayload()) void loadScminersDbBridge();
-  void loadLiveMissionContracts();
   scheduleScminersDbRefresh();
 
     els.typeChips.addEventListener("click", handleChipClick);
@@ -6085,6 +6196,13 @@ async function init() {
       const label = (button.getAttribute("aria-label") || "").toLowerCase();
       activateRail(label);
     });
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-collection-filter]");
+    if (!button) return;
+    state.collectionMode = button.dataset.collectionFilterMode || "owned";
+    state.chip = button.dataset.collectionFilterChip || "All";
+    activateRail("blueprints");
   });
   document.querySelectorAll(".progress-shell").forEach((shell) => {
     shell.addEventListener("click", (event) => {
