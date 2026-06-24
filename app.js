@@ -6,7 +6,8 @@ const SCMINERSDB_MANIFEST_URL_KEY = "scminersdb-manifest-url-v1";
 const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/scminersdb/runs/latest.json";
 const STAR_CITIZEN_DEFAULT_PATH = "C:/Program Files/Roberts Space Industries/StarCitizen/LIVE";
 const BUY_DATA_SCRIPT_VERSION = "20260618a";
-const BUY_DATA_SCRIPT_URLS = Object.freeze([
+const BUY_DATA_PRIMARY_SCRIPT_URL = `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`;
+const BUY_DATA_FALLBACK_SCRIPT_URLS = Object.freeze([
   `./buy_items_items_1.js?v=${BUY_DATA_SCRIPT_VERSION}`,
   `./buy_items_items_2.js?v=${BUY_DATA_SCRIPT_VERSION}`,
   `./buy_items_items_3.js?v=${BUY_DATA_SCRIPT_VERSION}`,
@@ -14,7 +15,6 @@ const BUY_DATA_SCRIPT_URLS = Object.freeze([
   `./buy_items_items_5.js?v=${BUY_DATA_SCRIPT_VERSION}`,
   `./buy_items_ships_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
   `./buy_items_rentals_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
 ]);
 
 const ownedSeed = [
@@ -673,13 +673,10 @@ const BUY_GENERIC_SHOP_LABELS = Object.freeze([
 const BUY_GENERIC_SHOP_LABEL_SET = new Set(BUY_GENERIC_SHOP_LABELS);
 const BUY_GENERIC_SHOP_LABELS_BY_LENGTH = Object.freeze([...BUY_GENERIC_SHOP_LABELS].sort((a, b) => b.length - a.length));
 
-const BUY_DATA_BATCH_SIZE = 500;
+const BUY_DATA_BATCH_SIZE = 100;
 const BUY_DATA_PROGRESS_RENDER_DELAY_MS = 120;
 
 function yieldToMainThread(timeout = 0) {
-  if (typeof window !== "undefined" && typeof window.requestIdleCallback === "function") {
-    return new Promise((resolve) => window.requestIdleCallback(() => resolve(), { timeout: 16 }));
-  }
   return new Promise((resolve) => setTimeout(resolve, timeout));
 }
 
@@ -1633,8 +1630,11 @@ function loadScriptTag(src) {
 function ensureBuyDataScriptsLoaded() {
   if (hasBuyDataScriptsLoaded()) return Promise.resolve();
   if (buyDataScriptsLoadPromise) return buyDataScriptsLoadPromise;
-  buyDataScriptsLoadPromise = Promise.all(BUY_DATA_SCRIPT_URLS.map((src) => loadScriptTag(src)))
-    .then(() => undefined)
+  buyDataScriptsLoadPromise = loadScriptTag(BUY_DATA_PRIMARY_SCRIPT_URL)
+    .then(async () => {
+      if (window.BUY_ITEMS_DATA) return;
+      await Promise.all(BUY_DATA_FALLBACK_SCRIPT_URLS.map((src) => loadScriptTag(src)));
+    })
     .finally(() => {
       buyDataScriptsLoadPromise = null;
     });
@@ -2038,10 +2038,21 @@ function scheduleScminersDbRefresh() {
 async function loadBuyData() {
   await ensureBuyDataScriptsLoaded();
   const baseData = window.BUY_ITEMS_DATA || { items: [], ships: [], rentals: [] };
+  if (Array.isArray(baseData.items) && baseData.items.length) {
+    const items = baseData.items.filter((entry) => !isMalformedBuyEntry(entry));
+    const ships = Array.isArray(baseData.ships) ? baseData.ships.filter((entry) => !isMalformedBuyEntry(entry)) : [];
+    const rentals = Array.isArray(baseData.rentals) ? baseData.rentals.filter((entry) => !isMalformedBuyEntry(entry)) : [];
+    const processedData = { items, ships, rentals };
+    window.shipByName = new Map(ships.map((entry) => [norm(entry?.name), entry]));
+    state.buyData = processedData;
+    state.buyDataStatus = `Loaded ${formatCount(items.length + ships.length + rentals.length)} buy records`;
+    if (state.appReady && typeof renderAll === "function") renderAll();
+    return processedData;
+  }
   const partsData = window.BUY_ITEMS_DATA_PARTS || {};
-  const bridgeItems = scminersDbExportRecords("item_catalog.json");
-  const bridgeShips = scminersDbExportRecords("ship_catalog.json");
-  const bridgeRentals = scminersDbExportRecords("rentals.json");
+  const bridgeItems = Array.isArray(baseData.items) && baseData.items.length ? [] : scminersDbExportRecords("item_catalog.json");
+  const bridgeShips = Array.isArray(baseData.ships) && baseData.ships.length ? [] : scminersDbExportRecords("ship_catalog.json");
+  const bridgeRentals = Array.isArray(baseData.rentals) && baseData.rentals.length ? [] : scminersDbExportRecords("rentals.json");
 
   const updateProgress = (done, total) => {
     state.buyDataStatus = total ? `Loading buy data ${formatCount(done)} / ${formatCount(total)}...` : "Loading buy data...";
