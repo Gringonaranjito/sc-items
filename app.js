@@ -924,7 +924,16 @@ function isMissingDisplayText(value) {
 
 function isBadLabel(v) {
   const value = norm(v);
-  return !value || value.includes("placeholder") || value.includes("null");
+  return (
+    !value
+    || value.includes("placeholder")
+    || value.includes("null")
+    || value.includes("file://")
+    || value.includes("/records/")
+    || value.includes("\\records\\")
+    || value.includes("libs/foundry")
+    || value.includes("libs\\foundry")
+  );
 }
 
 function countByName(values) {
@@ -964,6 +973,31 @@ function setScminersDbManifestUrl(value) {
   state.scminersDbManifestUrl = normalized;
   localStorage.setItem(SCMINERSDB_MANIFEST_URL_KEY, normalized);
   return normalized;
+}
+
+function bundledScminersDbPayload() {
+  const payload = window.SC_MINERS_DB_BUNDLED;
+  return payload && typeof payload === "object" ? payload : null;
+}
+
+function useBundledScminersDbData() {
+  const bundled = bundledScminersDbPayload();
+  if (!bundled) return null;
+  state.scminersDb = {
+    available: true,
+    manifestUrl: "bundled://scminersdb-local-bundle",
+    manifest: bundled.manifest || null,
+    files: Array.isArray(bundled.files) ? bundled.files : [],
+    exports: bundled.exports && typeof bundled.exports === "object" ? bundled.exports : {},
+    fileIndex: bundled.fileIndex && typeof bundled.fileIndex === "object" ? bundled.fileIndex : {},
+    signature: cleanDisplayText(bundled.signature || ""),
+    status: cleanDisplayText(bundled.status || "Bundled SCMinersDB data loaded"),
+    lastLoaded: cleanDisplayText(bundled.generatedAt || new Date().toISOString()),
+    source: "bundled",
+  };
+  window.SC_MINERS_DB = state.scminersDb;
+  if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
+  return state.scminersDb;
 }
 
 function resolveScminersDbAssetUrl(manifestUrl, assetUrl) {
@@ -1424,9 +1458,9 @@ function deleteCurrentUser() {
 }
 
 async function loadBlueprintData() {
-  const bridgeBlueprints = scminersDbExportRecords("blueprint_catalog.json");
-  if (bridgeBlueprints.length) return bridgeBlueprints;
   if (window.BLUEPRINT_EXPLORER_DATA) return window.BLUEPRINT_EXPLORER_DATA;
+  const bridgeBlueprints = scminersDbExportRecords("blueprint_catalog.json");
+  if (bridgeBlueprints.length) return { items: bridgeBlueprints };
   throw new Error("Local blueprint data was not loaded. Make sure blueprint_explorer_data.js is next to index.html.");
 }
 
@@ -1602,6 +1636,7 @@ function summarizeScminersDbManifest(manifest) {
 }
 
 async function loadScminersDbBridge() {
+  if (bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
   if (typeof fetch !== "function") return null;
   try {
     const sources = [currentScminersDbManifestUrl(), "/api/scminersdb/manifest"];
@@ -1702,6 +1737,10 @@ async function loadScminersDbBridge() {
     }
     return state.scminersDb;
   } catch (error) {
+    if (bundledScminersDbPayload()) {
+      const bundled = useBundledScminersDbData();
+      if (bundled) return bundled;
+    }
     state.scminersDb = {
       available: false,
       manifestUrl: currentScminersDbManifestUrl(),
@@ -1827,6 +1866,7 @@ function scminersDbEntrySummary(entry) {
 }
 
 function scheduleScminersDbRefresh() {
+  if (bundledScminersDbPayload()) return;
   if (state.scminersDbRefreshTimer) clearInterval(state.scminersDbRefreshTimer);
   state.scminersDbRefreshTimer = setInterval(() => {
     void loadScminersDbBridge();
@@ -3192,14 +3232,16 @@ function augmentMissionWithStructuredData(mission) {
   if (!mission) return mission;
   const structured = scminersDbBestMissionMatch(mission);
   if (!structured) return mission;
+  const safeStructuredFaction = isBadLabel(structured.structuredFaction) ? "" : structured.structuredFaction;
+  const safeStructuredMissionType = isBadLabel(structured.structuredMissionType) ? "" : structured.structuredMissionType;
   return {
     ...mission,
     title: structured.structuredTitle || mission.title || mission.name || "",
     description: structured.structuredDescription || mission.description || mission.summary || mission.text || "",
     summary: structured.structuredDescription || mission.summary || mission.description || "",
     text: structured.structuredDescription || mission.text || mission.description || "",
-    faction: structured.structuredFaction || mission.faction || "",
-    type: structured.structuredMissionType || mission.type || "",
+    faction: mission.faction || safeStructuredFaction || "",
+    type: mission.type || safeStructuredMissionType || "",
     system: structured.system || structured.system_guess || mission.system || "",
     location: structured.structuredLocation || mission.location || structured.location_guess || "",
     repStanding: structured.structuredRequiredRank || mission.repStanding || "",
@@ -3207,8 +3249,8 @@ function augmentMissionWithStructuredData(mission) {
     structuredMissionName: structured.structuredName || mission.structuredMissionName || "",
     structuredSourcePath: structured.structuredSourcePath || mission.structuredSourcePath || "",
     structuredSourceId: structured.structuredSourceId || mission.structuredSourceId || "",
-    structuredFaction: structured.structuredFaction || mission.structuredFaction || "",
-    structuredMissionType: structured.structuredMissionType || mission.structuredMissionType || "",
+    structuredFaction: safeStructuredFaction || mission.structuredFaction || "",
+    structuredMissionType: safeStructuredMissionType || mission.structuredMissionType || "",
     structuredMoneyReward: structured.structuredMoneyReward ?? mission.structuredMoneyReward ?? 0,
     structuredScriptReward: structured.structuredScriptReward ?? mission.structuredScriptReward ?? 0,
     structuredRewardCount: structured.structuredRewardCount ?? mission.structuredRewardCount ?? 0,
@@ -4736,7 +4778,7 @@ function renderSelected() {
   const structuredMatchScore = Number(mission.structuredMatchScore || 0);
   const hasStructuredMissionData = Boolean(structuredMissionId || structuredMissionName || structuredSourcePath || structuredPrereqSummary || structuredMatchScore);
 
-  els.selectedMeta.textContent = "";
+  els.selectedMeta.textContent = `${mission.type || "Mission"} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card mission-detail";
   els.selectedDetails.innerHTML = `
     <div class="mission-hero">
@@ -5741,10 +5783,11 @@ async function init() {
   });
 
   loadState();
+  useBundledScminersDbData();
   els.searchInput.value = state.search;
   renderAll();
   void bootstrapAppData();
-  void loadScminersDbBridge();
+  if (!bundledScminersDbPayload()) void loadScminersDbBridge();
   void loadLiveMissionContracts();
   scheduleScminersDbRefresh();
 
