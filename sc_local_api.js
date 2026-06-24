@@ -23,20 +23,21 @@
   const pathParts = (offer) => {
     const raw = clean(offer?.location || offer?.locationPath || offer?.locationLabel || offer?.locationName || "");
     const parts = splitPath(raw);
+    const explicitOrbit = clean(offer?.area || offer?.orbit || offer?.planet || offer?.body || "");
     if (!parts.length) {
       return {
-        orbit: clean(offer?.orbit || offer?.planet || offer?.body || offer?.area || ""),
+        orbit: explicitOrbit,
         location: clean(offer?.locationPath || offer?.locationLabel || offer?.locationName || ""),
       };
     }
     if (parts.length === 1) {
       return {
-        orbit: clean(offer?.area || offer?.orbit || offer?.planet || offer?.body || parts[0]),
+        orbit: explicitOrbit || parts[0],
         location: "",
       };
     }
     return {
-      orbit: parts[1] || clean(offer?.area || offer?.orbit || offer?.planet || offer?.body || ""),
+      orbit: explicitOrbit || parts[1] || parts[0],
       location: parts.slice(2).join(" - "),
     };
   };

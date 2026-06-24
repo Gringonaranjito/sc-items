@@ -7,6 +7,8 @@ const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/scmin
 const BUY_DATA_SCRIPT_VERSION = "20260618a";
 const BUY_DATA_SCRIPT_URLS = Object.freeze([
   `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./scminersdb_dismantle_returns_data.js?v=20260624a`,
+  `./buy_items_dismantle_append.js?v=20260624a`,
 ]);
 
 const ownedSeed = [
@@ -132,6 +134,7 @@ let buyDataScriptsLoadPromise = null;
 let buyDataProgressRenderTimer = null;
 let buyDataWorker = null;
 let liveMissionLoadPromise = null;
+let bundledScminersDbDataCache = null;
 
 let missionLookupCache = {
   dataItemsRef: null,
@@ -154,8 +157,10 @@ let blueprintCraftingCache = {
   recipeByName: new Map(),
   recipeByResultPath: new Map(),
   dismantleBySourceId: new Map(),
+  dismantleBySourceName: new Map(),
   dismantleByResultPath: new Map(),
 };
+const buyOfferFieldCache = new WeakMap();
 
 function invalidateMissionLookupCache() {
   missionLookupCache = {
@@ -277,6 +282,14 @@ function sourcePathLookupKeys(value) {
   const trimmed = cleanDisplayText(raw.replace(/^starbreaker[\\/]/i, "").replace(/^libs[\\/]/i, ""));
   const stem = fileStem(raw);
   return [...new Set([norm(raw), norm(trimmed), norm(basename), norm(stem)].filter(Boolean))];
+}
+
+function buyOfferFields(offer) {
+  if (!offer || typeof offer !== "object") return null;
+  if (buyOfferFieldCache.has(offer)) return buyOfferFieldCache.get(offer);
+  const fields = deriveBuyOfferFields(offer);
+  buyOfferFieldCache.set(offer, fields);
+  return fields;
 }
 
 function escapeRegExp(v) {
@@ -846,7 +859,8 @@ function deriveBuyOfferFields(offer) {
   const system = extractBuySystem(offer?.system, offer?.location, raw, fullPath[0]) || "";
   const localOrbit = cleanDisplayText(window.SC_ITEMS_API?.resolveOrbit?.(offer) || "");
   const localLocation = cleanDisplayText(window.SC_ITEMS_API?.resolveLocation?.(offer) || "");
-  const fallbackOrbit = cleanDisplayText(offer?.area || offer?.orbit || pathSegments[0] || "");
+  const fallbackOrbitRaw = cleanDisplayText(offer?.area || offer?.orbit || pathSegments[0] || "");
+  const fallbackOrbit = orbitFromArea(system, fallbackOrbitRaw) || fallbackOrbitRaw;
   const fallbackLocation =
     fullPath.length > 2
       ? fullPath.slice(2).join(" - ")
@@ -903,6 +917,76 @@ function normalizeRecord(entry) {
         })
       : [],
   };
+}
+
+function dismantleSourceName(entry) {
+  const source = entry?.source_item || {};
+  return cleanDisplayText(
+    source.item_name ||
+      source.item_record_name ||
+      source.name ||
+      source.label ||
+      source.display_name ||
+      source.item_class_name ||
+      source.class_name ||
+      entry?.name ||
+      entry?.source_id ||
+      "",
+  );
+}
+
+function dismantleSourceType(entry) {
+  const name = dismantleSourceName(entry).toLowerCase();
+  if (!name) return { type: "Miscellaneous", subtype: "Miscellaneous" };
+  if (/battery\b/.test(name)) return { type: "Ammo", subtype: "Energy" };
+  if (/magazine|clip|cap\b/.test(name)) return { type: "Ammo", subtype: "Ballistic" };
+  if (/beam|tool|salvage|repair|mining|tractor/.test(name)) return { type: "Utility", subtype: "Utility" };
+  return { type: "Miscellaneous", subtype: "Miscellaneous" };
+}
+
+function syntheticDismantleItems(items) {
+  const sourceItems = bundledDismantleReturnsPayload().length ? bundledDismantleReturnsPayload() : scminersDbExportRecords("dismantle_returns.json");
+  if (!Array.isArray(sourceItems) || !sourceItems.length) return Array.isArray(items) ? items : [];
+  const existingKeys = new Set(
+    (Array.isArray(items) ? items : [])
+      .flatMap((item) => [
+        norm(item?.name),
+        norm(item?.record_name),
+        norm(item?.item_name),
+        norm(item?.source_path),
+        norm(item?.sourcePath),
+      ])
+      .filter(Boolean),
+  );
+  const additions = [];
+  const seenSources = new Set();
+  for (const entry of sourceItems) {
+    const name = dismantleSourceName(entry);
+    if (!name) continue;
+    const sourceKey = norm(name);
+    if (!sourceKey || seenSources.has(sourceKey) || existingKeys.has(sourceKey)) continue;
+    seenSources.add(sourceKey);
+    const sourcePath = cleanDisplayText(entry?.source_item_source_path || entry?.source_item?.source_path || "");
+    const sourceId = cleanDisplayText(entry?.source_id || entry?.source_item?.item_id || entry?.source_item?.item_class_id || "");
+    const { type, subtype } = dismantleSourceType(entry);
+    additions.push({
+      id: sourceId || sourcePath || name,
+      name,
+      type,
+      subtype,
+      missions: [],
+      craftable: false,
+      blueprint: "",
+      craftTime: 0,
+      materials: [],
+      offers: [],
+      source_path: sourcePath,
+      source_id: sourceId,
+      source_item: entry?.source_item || null,
+      synthetic: true,
+    });
+  }
+  return Array.isArray(items) ? [...items, ...additions] : additions;
 }
 
 function isMalformedBuyEntry(entry) {
@@ -972,8 +1056,26 @@ function setScminersDbManifestUrl(value) {
 }
 
 function bundledScminersDbPayload() {
-  const payload = window.SC_MINERS_DB_BUNDLED;
+  const payload = bundledScminersDbDataCache || window.SC_MINERS_DB_BUNDLED;
   return payload && typeof payload === "object" ? payload : null;
+}
+
+async function ensureBundledScminersDbPayload() {
+  const existing = bundledScminersDbPayload();
+  if (existing) return existing;
+  try {
+    const bundleScript = [...document.querySelectorAll("script")].find((script) => String(script?.src || "").includes("scminersdb_local_bundle.js"));
+    const response = await fetch(bundleScript?.src || "./scminersdb_local_bundle.js?v=20260623b");
+    if (!response.ok) return null;
+    const text = await response.text();
+    const start = text.indexOf("=");
+    const jsonText = (start >= 0 ? text.slice(start + 1) : text).trim().replace(/;\s*$/, "");
+    const payload = JSON.parse(jsonText);
+    if (payload && typeof payload === "object") bundledScminersDbDataCache = payload;
+  } catch {
+    return null;
+  }
+  return bundledScminersDbPayload();
 }
 
 function useBundledScminersDbData() {
@@ -1450,9 +1552,14 @@ function deleteCurrentUser() {
 }
 
 async function loadBlueprintData() {
-  if (window.BLUEPRINT_EXPLORER_DATA) return window.BLUEPRINT_EXPLORER_DATA;
+  if (window.BLUEPRINT_EXPLORER_DATA) {
+    return {
+      ...window.BLUEPRINT_EXPLORER_DATA,
+      items: syntheticDismantleItems(window.BLUEPRINT_EXPLORER_DATA.items || []),
+    };
+  }
   const bridgeBlueprints = scminersDbExportRecords("blueprint_catalog.json");
-  if (bridgeBlueprints.length) return { items: bridgeBlueprints };
+  if (bridgeBlueprints.length) return { items: syntheticDismantleItems(bridgeBlueprints) };
   throw new Error("Local blueprint data was not loaded. Make sure blueprint_explorer_data.js is next to index.html.");
 }
 
@@ -1601,6 +1708,10 @@ function structuredExportRecords(payload) {
 
 function scminersDbFileNameKey(fileName) {
   return String(fileName || "").trim();
+}
+
+function bundledDismantleReturnsPayload() {
+  return Array.isArray(window.SCMINERSDB_DISMANTLE_RETURNS) ? window.SCMINERSDB_DISMANTLE_RETURNS : [];
 }
 
 function scminersDbExportRecords(fileName) {
@@ -1974,7 +2085,7 @@ async function loadBuyData({ render = true } = {}) {
     onProgress: updateProgress,
   });
 
-  const items = await normalizeDataset(itemsMerged);
+  const items = syntheticDismantleItems(await normalizeDataset(itemsMerged));
   const ships = await normalizeDataset(shipsMerged);
   const shipByName = new Map(ships.map((entry) => [norm(entry?.name), entry]));
   window.shipByName = shipByName;
@@ -2107,13 +2218,16 @@ function buyEntryOffers(entry) {
 }
 
 function offerOrbit(offer) {
-  const directOrbit = cleanDisplayText(offer?.orbit || offer?.planet || offer?.body || "");
-  const localOrbit = cleanDisplayText(window.SC_ITEMS_API?.resolveOrbit?.(offer) || "");
-  const rawText = cleanDisplayText(offerLocationPath(offer) || offerLocationName(offer) || offer?.location || "");
-  const rawSegments = splitBuySegments(rawText);
-  const areaOrbit = orbitFromArea(offerSystem(offer), offerArea(offer));
-  const parsedOrbit = cleanDisplayText(rawSegments.find((segment) => isKnownBuyOrbit(segment)) || "");
-  const orbit = cleanDisplayText(localOrbit || directOrbit || areaOrbit || parsedOrbit || "");
+  const fields = buyOfferFields(offer);
+  const orbit = cleanDisplayText(
+    fields?.orbit ||
+      offer?.orbit ||
+      offer?.planet ||
+      offer?.body ||
+      orbitFromArea(offerSystem(offer), offerArea(offer)) ||
+      cleanDisplayText(window.SC_ITEMS_API?.resolveOrbit?.(offer) || "") ||
+      "",
+  );
   return orbit && norm(orbit) !== "other" ? orbit : "";
 }
 
@@ -2402,10 +2516,11 @@ function buyOfferAllowedForTab(offer, tab = state.buyTab) {
 }
 
 function buyOfferDisplayLocation(offer) {
-  const path = cleanDisplayText(offerLocationPath(offer));
-  const name = cleanDisplayText(offerLocationName(offer));
+  const fields = buyOfferFields(offer);
+  const path = cleanDisplayText(fields?.locationPath || offerLocationPath(offer));
+  const name = cleanDisplayText(fields?.locationName || offerLocationName(offer));
   if (path && name && norm(path) !== norm(name)) return path;
-  return path || name || cleanDisplayText(offerArea(offer)) || "";
+  return path || name || cleanDisplayText(fields?.area || offerArea(offer)) || "";
 }
 
 function isKnownBuyOrbit(value) {
@@ -2429,14 +2544,15 @@ function isKnownBuyLocation(value) {
 function buyOfferMatches(offer, system, orbit, location, tab = state.buyTab) {
   if (!offer) return false;
   if (!buyOfferAllowedForTab(offer, tab)) return false;
-  if (system !== "All" && offerSystem(offer) !== system) return false;
-  if (orbit !== "All" && offerOrbit(offer) !== orbit) return false;
+  const fields = buyOfferFields(offer);
+  if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) return false;
+  if (orbit !== "All" && (fields?.orbit || offerOrbit(offer)) !== orbit) return false;
   if (location !== "All") {
     const selected = norm(location);
     const candidates = [
-      offerLocationName(offer),
-      offerLocationPath(offer),
-      offerArea(offer),
+      fields?.locationName || offerLocationName(offer),
+      fields?.locationPath || offerLocationPath(offer),
+      fields?.area || offerArea(offer),
       offer?.location,
       offer?.locationPath,
       offer?.locationLabel,
@@ -2462,8 +2578,9 @@ function buyOrbits(system = state.buySystem, tab = state.buyTab) {
   for (const entry of buyEntriesForTab()) {
     for (const offer of buyEntryOffers(entry)) {
       if (!buyOfferAllowedForTab(offer, tab)) continue;
-      if (system !== "All" && offerSystem(offer) !== system) continue;
-      const value = offerOrbit(offer);
+      const fields = buyOfferFields(offer);
+      if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) continue;
+      const value = fields?.orbit || offerOrbit(offer);
       if (value && norm(value) !== "other") values.add(value);
     }
   }
@@ -2475,12 +2592,15 @@ function buyAreas(system = state.buySystem, orbit = state.buyOrbit, tab = state.
   for (const entry of buyEntriesForTab()) {
     for (const offer of buyEntryOffers(entry)) {
       if (!buyOfferAllowedForTab(offer, tab)) continue;
-      if (system !== "All" && offerSystem(offer) !== system) continue;
-      if (orbit !== "All" && offerOrbit(offer) !== orbit) continue;
+      const fields = buyOfferFields(offer);
+      if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) continue;
+      if (orbit !== "All" && (fields?.orbit || offerOrbit(offer)) !== orbit) continue;
       const label =
         cleanDisplayText(
-          buyOfferDisplayLocation(offer) ||
+          fields?.locationPath ||
+            buyOfferDisplayLocation(offer) ||
             lastMeaningfulShop(splitBuySegments(offerLocationPath(offer))) ||
+            fields?.area ||
             offerArea(offer) ||
             "",
         );
@@ -2542,10 +2662,11 @@ function buyLocations(system = state.buySystem, orbit = state.buyOrbit, area = s
   for (const entry of buyEntriesForTab()) {
     for (const offer of buyEntryOffers(entry)) {
       if (!buyOfferAllowedForTab(offer, tab)) continue;
-      if (system !== "All" && offerSystem(offer) !== system) continue;
-      if (orbit !== "All" && offerOrbit(offer) !== orbit) continue;
-      if (area !== "All" && offerArea(offer) !== area) continue;
-      const location = buyOfferDisplayLocation(offer);
+      const fields = buyOfferFields(offer);
+      if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) continue;
+      if (orbit !== "All" && (fields?.orbit || offerOrbit(offer)) !== orbit) continue;
+      if (area !== "All" && (fields?.area || offerArea(offer)) !== area) continue;
+      const location = fields?.locationPath || buyOfferDisplayLocation(offer);
       if (!location || norm(location) === "other") continue;
       if (isKnownBuyOrbit(location) || isKnownBuyArea(location)) continue;
       if (!buyIsBusinessLabel(location) && isGenericBuyShopLabel(location)) continue;
@@ -2691,7 +2812,7 @@ function filteredBuyEntries() {
       const offers = buyEntryOffers(entry);
       if (offers.length) {
         if (!offers.some((offer) => buyOfferMatches(offer, state.buySystem, state.buyOrbit, state.buyArea, state.buyTab))) return false;
-      } else if (state.buySystem !== "All" || state.buyOrbit !== "All" || state.buyArea !== "All") {
+      } else if (!entry?.synthetic && (state.buySystem !== "All" || state.buyOrbit !== "All" || state.buyArea !== "All")) {
         return false;
       }
       if (!query) return true;
@@ -3034,6 +3155,7 @@ function ensureBlueprintCraftingCache() {
   const recipeByName = new Map();
   const recipeByResultPath = new Map();
   const dismantleBySourceId = new Map();
+  const dismantleBySourceName = new Map();
   const dismantleByResultPath = new Map();
 
   for (const recipe of recipes) {
@@ -3055,9 +3177,24 @@ function ensureBlueprintCraftingCache() {
     const sourceIds = [entry?.source_item?.item_id, entry?.source_item?.item_class_id, entry?.source_id]
       .map((value) => norm(value))
       .filter(Boolean);
+    const sourceNames = [
+      entry?.source_item?.item_name,
+      entry?.source_item?.item_record_name,
+      entry?.source_item?.name,
+      entry?.source_item?.label,
+      entry?.source_item?.display_name,
+      entry?.source_item?.item_class_name,
+      entry?.source_item?.class_name,
+    ]
+      .map((value) => norm(cleanDisplayText(value).replace(/^EntityClassDefinition\./i, "").replace(/_/g, " ")))
+      .filter(Boolean);
     for (const key of sourceIds) {
       if (!dismantleBySourceId.has(key)) dismantleBySourceId.set(key, []);
       dismantleBySourceId.get(key).push(entry);
+    }
+    for (const key of sourceNames) {
+      if (!dismantleBySourceName.has(key)) dismantleBySourceName.set(key, []);
+      dismantleBySourceName.get(key).push(entry);
     }
     for (const key of sourcePathLookupKeys(entry?.source_item_source_path || entry?.source_item?.source_path || "")) {
       if (!key) continue;
@@ -3072,6 +3209,7 @@ function ensureBlueprintCraftingCache() {
     recipeByName,
     recipeByResultPath,
     dismantleBySourceId,
+    dismantleBySourceName,
     dismantleByResultPath,
   };
   return blueprintCraftingCache;
@@ -3085,6 +3223,16 @@ function blueprintCraftingData(item) {
   const itemIdKeys = [item.id, item.uuid, buyEntryMetadataValue(item, "UUID")].map((value) => norm(value)).filter(Boolean);
   const itemClassNameKeys = sourcePathLookupKeys(buyEntryMetadataValue(item, "Class name"));
   const itemSourcePathKeys = sourcePathLookupKeys(item.source_path || item.sourcePath || item.item_info?.source_path || "");
+  const itemNameCandidates = [
+    item.name,
+    item.title,
+    item.item_name,
+    buyEntryMetadataValue(item, "Name"),
+    buyEntryMetadataValue(item, "Class name"),
+    item.record_name,
+  ]
+    .map((value) => norm(cleanDisplayText(value).replace(/^EntityClassDefinition\./i, "").replace(/_/g, " ")))
+    .filter(Boolean);
   const recipe =
     cache.recipeByBlueprint.get(blueprintKey) ||
     itemSourcePathKeys.map((key) => cache.recipeByResultPath.get(key)).find(Boolean) ||
@@ -3094,6 +3242,7 @@ function blueprintCraftingData(item) {
   const dismantles = [...new Map(
     [
       ...itemIdKeys.flatMap((key) => cache.dismantleBySourceId.get(key) || []),
+      ...itemNameCandidates.flatMap((key) => cache.dismantleBySourceName.get(key) || []),
       ...itemClassNameKeys.flatMap((key) => cache.dismantleByResultPath.get(key) || []),
       ...resultPathKeys.flatMap((key) => cache.dismantleByResultPath.get(key) || []),
     ]
@@ -3108,7 +3257,7 @@ function blueprintCraftingData(item) {
 function blueprintItemByName(name) {
   const itemNameKey = norm(String(name || "").replace(/_/g, " "));
   if (!itemNameKey) return null;
-  return missionItems().find((entry) => norm(String(entry?.name || "").replace(/_/g, " ")) === itemNameKey) || null;
+  return allItems().find((entry) => norm(String(entry?.name || "").replace(/_/g, " ")) === itemNameKey) || null;
 }
 
 function craftingIngredientRows(item, recipe) {
@@ -5895,6 +6044,7 @@ async function init() {
   });
 
   loadState();
+  await ensureBundledScminersDbPayload();
   useBundledScminersDbData();
   els.searchInput.value = state.search;
   renderAll();
