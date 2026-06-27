@@ -1,0 +1,54 @@
+[
+  {
+    "source_id": "userconfig",
+    "category": "spawnscreen",
+    "name": "userconfig",
+    "raw_json": {
+      "Version": 1,
+      "VehicleSlotMap": [
+        {
+          "key": {
+            "gameModeId": 0,
+            "lpc32": 0,
+            "npc32": 0
+          },
+          "value": [
+            {
+              "Entitlement": 189751113
+            },
+            {
+              "Entitlement": 0
+            },
+            {
+              "Entitlement": 0
+            },
+            {
+              "Entitlement": 0
+            }
+          ]
+        },
+        {
+          "key": {
+            "gameModeId": 5,
+            "lpc32": 0,
+            "npc32": 0
+          },
+          "value": [
+            {
+              "Entitlement": 189751113
+            },
+            {
+              "Entitlement": 0
+            },
+            {
+              "Entitlement": 0
+            },
+            {
+              "Entitlement": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

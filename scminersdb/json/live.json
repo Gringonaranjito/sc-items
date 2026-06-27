@@ -1,0 +1,25 @@
+[
+  {
+    "source_id": "launcherData",
+    "category": "live",
+    "name": "launcherData",
+    "raw_json": {
+      "launcher_version": "2.14.0"
+    }
+  },
+  {
+    "source_id": "loginData",
+    "category": "live",
+    "name": "loginData",
+    "raw_json": {
+      "username": "elchingon1st",
+      "token": "1e65271db0d44060ff18a665ec8ae200",
+      "auth_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL3JvYmVydHNzcGFjZWluZHVzdHJpZXMuY29tIiwiaWF0IjoxNzgxOTE5NjEzLCJleHAiOjE3ODIwMjc2MTMsImp0aSI6IjBia3h6b2tlY3QycG4iLCJzdWIiOiJnYW1lL1NDLzRjZGNjMWNmY2U4ZTVjMWI3M2JkZjM0MjNiMDBlMDlmMGI4ODJlZTQiLCJhdWQiOiJyc2kvZ2FtZS9iZWFyZXIiLCJhY2NvdW50X2lkIjoiNTQ2ODcwMSIsImRpc3BsYXluYW1lIjoiZWxjaGluZ29uMXN0Iiwibmlja25hbWUiOiJlbGNoaW5nb24xc3QiLCJpcEFkZHJlc3MiOiIyMy4yOC4xNjEuMTQ4In0.ji0sFmGCcAqyQWl4wBf0xieRm-1IopJnu85XyL84Q6Hns5JpdbBivGiFld9aNd2uWp11M3lLNyoGiGwE6rDw1P0KOUuQAv6SDAfN-927qg9becvkbPECm7-Rpn7tcKJHXtKkLAxS_HqJYigITZ4b_tDQoFxx1RCQXvH9V5WmkLiRw9fNB-Gzl5WaiISA6C0KZp9YwBNmCgZyjfLsHPQ-Cg3d9M2gpvVtBWLpRgOHGNcrq1N2KvDNDM3EmED3NK0rLWq9iqoJKXGUMIP8at5udcDrQ-jWMvXcXwno-IEH7gt1-LjzKypPJxAmawVs3SqSkG1f-T106HmrKKPfWmtWtIccIUdeMEE83rkmjrOCI6v3Cb6kYW8hwa2wvXVTn4Jyx9AB-D-cRzD11v3BSiHb0cnip8hYSMFtLGyiIW1R9w_FF36uyi92X_MvLjQoCT3NGwoXFpuFWIm1-esYfp85B5fZ2Mak1JI28hq15U_7YNDGXDLyKIwmCJDky-mTeQsKJXBQeXUwKw4JIkD1jUp221B5MGPiKS2r6xn9Dfhb1fi2cwXkOWPQfp6pdwyLiSILDSrDRKDdVw8OyvZhpEqfKxhbZOFllA4jYqZK7dL0aSug2sOwIfydp2-tWxX7JIt2CFb4IzLepk9YmtZvX86SZuVa7DbnzxviFCPsdNT0VKo",
+      "star_network": {
+        "services_endpoint": "https://pub-sc-alpha-480-11825000.test1.cloudimperiumgames.com:443",
+        "hostname": "34.149.135.127",
+        "port": 8000
+      }
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "default_language": "english",
+  "language": "english",
+  "available_languages": [
+    "chinese_(simplified)",
+    "chinese_(traditional)",
+    "english",
+    "french_(france)",
+    "german_(germany)",
+    "italian_(italy)",
+    "japanese_(japan)",
+    "korean_(south_korea)",
+    "portuguese_(brazil)",
+    "spanish_(latin_america)",
+    "spanish_(spain)"
+  ],
+  "key_count": 88246
+}
