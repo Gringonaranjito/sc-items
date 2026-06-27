@@ -3,7 +3,7 @@ const WATCH_KEY = "sc-blueprint-tracker-watch-v1";
 const USERS_KEY = "sc-blueprint-tracker-users-v1";
 const USER_PREFIX = "sc-blueprint-tracker-user-v1-";
 const SCMINERSDB_MANIFEST_URL_KEY = "scminersdb-manifest-url-v1";
-const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/scminersdb/runs/latest.json";
+const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/sc-items/scminersdb/runs/latest.json";
 const BUY_DATA_SCRIPT_VERSION = "20260618a";
 const BUY_DATA_SCRIPT_URLS = Object.freeze([
   `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
@@ -6570,6 +6570,7 @@ async function init() {
 init().catch((error) => {
   document.body.innerHTML = `<pre style="color:#fff;padding:20px;white-space:pre-wrap">${error.stack || error}</pre>`;
 });
+
 
 
 
