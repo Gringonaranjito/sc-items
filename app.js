@@ -1761,9 +1761,6 @@ function scminersDbExportUrl(fileName) {
   if (!key) return "";
   const manifestUrl = currentScminersDbManifestUrl();
   const fileIndex = state.scminersDb?.fileIndex || {};
-  if (manifestUrl.includes("/api/scminersdb/manifest")) {
-    return `/api/scminersdb/json/${encodeURIComponent(key)}`;
-  }
   return fileIndex[key] || fileIndex[key.toLowerCase()] || resolveScminersDbAssetUrl(manifestUrl, `../json/${key}`);
 }
 
@@ -1821,62 +1818,36 @@ function summarizeScminersDbManifest(manifest) {
 async function loadScminersDbBridge() {
   if (bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
   if (typeof fetch !== "function") return null;
-  try {
-    const sources = [currentScminersDbManifestUrl(), "/api/scminersdb/manifest"];
-    let manifest = null;
-    let manifestUrl = "";
-    let lastError = null;
-    for (const source of sources) {
-      try {
-        manifest = await fetchJson(source);
-        manifestUrl = source;
-        break;
-      } catch (error) {
-        lastError = error;
-      }
-    }
-    if (!manifest) throw lastError || new Error("SCMinersDB manifest not available");
 
-    const isLegacyApiManifest = manifestUrl.includes("/api/scminersdb/manifest");
-    let files = scminersDbManifestEntries(manifest).map((entry) => {
+  const manifestUrl = currentScminersDbManifestUrl();
+
+  try {
+    const manifest = await fetchJson(manifestUrl);
+    if (!manifest) throw new Error("SCMinersDB manifest not available");
+
+    const files = scminersDbManifestEntries(manifest).map((entry) => {
       const file = scminersDbExportFileName(entry?.file || entry?.name || entry?.category || entry?.path || entry?.url);
       return {
         ...entry,
         file,
-        url: isLegacyApiManifest
-          ? `/api/scminersdb/json/${encodeURIComponent(file)}`
-          : resolveScminersDbAssetUrl(manifestUrl, entry?.url || entry?.path || `../json/${file}`),
+        url: resolveScminersDbAssetUrl(manifestUrl, entry?.url || entry?.path || `../json/${file}`),
       };
     }).filter((entry) => entry.file);
 
-    if (!files.length && isLegacyApiManifest) {
-      try {
-        const legacyFilesPayload = await fetchJson("/api/scminersdb/files");
-        const legacyFiles = Array.isArray(legacyFilesPayload?.files) ? legacyFilesPayload.files : [];
-        files = legacyFiles.map((entry) => {
-          const file = scminersDbExportFileName(entry?.name || entry?.file || entry?.path || entry?.url);
-          return {
-            ...entry,
-            file,
-            url: `/api/scminersdb/json/${encodeURIComponent(file)}`,
-          };
-        }).filter((entry) => entry.file);
-      } catch {
-        // keep going with whatever the manifest provided
-      }
-    }
-
     const exportsByFile = {};
     const fileIndex = {};
+
     for (const file of files) {
       fileIndex[file.file] = file.url;
       fileIndex[file.file.toLowerCase()] = file.url;
       fileIndex[cleanDisplayText(file.file).toLowerCase()] = file.url;
       if (file.category) fileIndex[cleanDisplayText(file.category).toLowerCase()] = file.url;
     }
+
     const existingExports = state.scminersDb?.exports || {};
     state.scminersDb = {
       available: true,
+      source: "manifest",
       manifestUrl,
       manifest,
       files,
@@ -1886,18 +1857,29 @@ async function loadScminersDbBridge() {
       status: "Loading SCMinersDB exports...",
       lastLoaded: new Date().toISOString(),
     };
+
     window.SC_MINERS_DB = state.scminersDb;
     if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
-    const jsonFiles = files.map((file) => file.file).filter((name) => name && name.toLowerCase().endsWith(".json"));
-    const loadedExports = await Promise.all(jsonFiles.map(async (name) => [name, await loadScminersDbExport(name)]));
+
+    const jsonFiles = files
+      .map((file) => file.file)
+      .filter((name) => name && name.toLowerCase().endsWith(".json"));
+
+    const loadedExports = await Promise.all(
+      jsonFiles.map(async (name) => [name, await loadScminersDbExport(name)])
+    );
+
     for (const [name, payload] of loadedExports) {
       exportsByFile[name] = payload;
     }
+
     const signature = files.map((file) => `${file.file}:${file.record_count || file.size || ""}`).join("|");
     const previousSignature = state.scminersDb?.signature || "";
     const changed = signature !== previousSignature;
+
     state.scminersDb = {
       available: true,
+      source: "manifest",
       manifestUrl,
       manifest,
       files,
@@ -1907,8 +1889,10 @@ async function loadScminersDbBridge() {
       status: summarizeScminersDbManifest(manifest) || `Loaded ${formatCount(files.length)} export files`,
       lastLoaded: new Date().toISOString(),
     };
+
     window.SC_MINERS_DB = state.scminersDb;
     if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
+
     if (state.appReady && changed) {
       try {
         state.data = await loadBlueprintData();
@@ -1918,20 +1902,24 @@ async function loadScminersDbBridge() {
         console.warn("SCMinersDB sync refresh skipped:", error);
       }
     }
+
     return state.scminersDb;
   } catch (error) {
     if (bundledScminersDbPayload()) {
       const bundled = useBundledScminersDbData();
       if (bundled) return bundled;
     }
+
     state.scminersDb = {
       available: false,
-      manifestUrl: currentScminersDbManifestUrl(),
+      source: "manifest",
+      manifestUrl,
       files: [],
       exports: {},
       fileIndex: {},
-      status: `SCMinersDB bridge unavailable: ${cleanDisplayText(error?.message || error)}`,
+      status: `SCMinersDB manifest unavailable: ${cleanDisplayText(error?.message || error)}`,
     };
+
     window.SC_MINERS_DB = state.scminersDb;
     if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
     return null;
