@@ -75,6 +75,7 @@ const state = {
   missionFilterReputation: "All",
   missionFilterLocation: "All",
   missionFilterDifficulty: "All",
+  missionFilterMoney: "All",
   chip: "All",
   missionType: "",
   company: "",
@@ -195,45 +196,57 @@ function ensureMissionLookupCache() {
     return missionLookupCache;
   }
 
-  const all = dataItems.slice();
+  const all = dataItems.map((item) => {
+    const rawMissions = Array.isArray(item.missions) ? item.missions : [];
+    const missions = rawMissions
+      .map((m) => repairMissionLabels(augmentMissionWithStructuredData({ ...m, source: "local", itemName: item.name })))
+      .filter((mission) => !isBadLabel(missionTitle(mission)) && !isBadLabel(mission.type) && !isBadLabel(mission.faction));
+
+    return {
+      ...item,
+      missions,
+    };
+  });
+
   const missionOnly = all.filter((item) => item.name && (item.missions || []).length);
   const combinedMap = new Map();
 
-  for (const mission of missionOnly.flatMap((item) => (item.missions || []).map((m) => ({ ...m, source: "local", itemName: item.name })))) {
-    if (isBadLabel(mission.title) || isBadLabel(mission.type) || isBadLabel(mission.faction)) continue;
-    combinedMap.set(missionRecordKey(mission), augmentMissionWithStructuredData(mission));
+  for (const mission of missionOnly.flatMap((item) => item.missions || [])) {
+    combinedMap.set(missionRecordKey(mission), mission);
   }
 
   for (const mission of liveMissions) {
     const key = missionRecordKey(mission);
     const existing = combinedMap.get(key);
     if (existing) {
-      combinedMap.set(key, {
-        ...augmentMissionWithStructuredData(existing),
-        ...augmentMissionWithStructuredData(mission),
+      const mergedMission = repairMissionLabels({
+        ...repairMissionLabels(augmentMissionWithStructuredData(existing)),
+        ...repairMissionLabels(augmentMissionWithStructuredData(mission)),
         source: existing.source || mission.source,
         rewards: Array.isArray(existing.rewards) && existing.rewards.length ? existing.rewards : mission.rewards,
         rewardCount: existing.rewardCount || mission.rewardCount || 0,
         moneyReward: mission.moneyReward ?? existing.moneyReward ?? null,
         scriptReward: mission.scriptReward ?? existing.scriptReward ?? null,
       });
+      combinedMap.set(key, mergedMission);
       continue;
     }
-    combinedMap.set(key, augmentMissionWithStructuredData(mission));
+    combinedMap.set(key, repairMissionLabels(augmentMissionWithStructuredData(mission)));
   }
 
   for (const mission of missionRewardOverrideRecords()) {
     const key = missionRecordKey(mission);
     const existing = combinedMap.get(key);
     if (existing) {
-      combinedMap.set(key, augmentMissionWithRewardOverride(existing));
+      combinedMap.set(key, repairMissionLabels(augmentMissionWithRewardOverride(existing)));
       continue;
     }
-    combinedMap.set(key, augmentMissionWithStructuredData(mission));
+    combinedMap.set(key, repairMissionLabels(augmentMissionWithStructuredData(mission)));
   }
 
-  const combinedRecords = [...combinedMap.values()].map((mission) => augmentMissionWithRewardOverride(mission));
+  const combinedRecords = [...combinedMap.values()].map((mission) => repairMissionLabels(augmentMissionWithRewardOverride(mission)));
   const rewardsIndex = new Map();
+
   for (const item of missionOnly) {
     for (const mission of item.missions || []) {
       const key = [
@@ -259,6 +272,8 @@ function ensureMissionLookupCache() {
     missionCatalog: [],
     missionCatalogReady: false,
     rewardsIndex,
+    missionSearchIndex: new Map(),
+    missionMatchIndex: new Map(),
   };
   return missionLookupCache;
 }
@@ -1006,6 +1021,9 @@ function isBadLabel(v) {
   const value = norm(v);
   return (
     !value
+    || value === "unknown"
+    || value === "n/a"
+    || value === "none"
     || value.includes("placeholder")
     || value.includes("null")
     || value.includes("file://")
@@ -1378,6 +1396,7 @@ function defaultProfile() {
     missionFilterReputation: "All",
     missionFilterLocation: "All",
     missionFilterDifficulty: "All",
+    missionFilterMoney: "All",
     missionType: "",
     company: "",
     mission: "",
@@ -1439,6 +1458,7 @@ function loadProfile(userId) {
   state.missionFilterReputation = parsed.missionFilterReputation || "All";
   state.missionFilterLocation = parsed.missionFilterLocation || "All";
   state.missionFilterDifficulty = parsed.missionFilterDifficulty || "All";
+  state.missionFilterMoney = parsed.missionFilterMoney || "All";
   state.chip = parsed.chip || "All";
   state.missionType = parsed.missionType || "";
   state.company = parsed.company || "";
@@ -1479,11 +1499,12 @@ function saveProfile(userId = state.currentUserId) {
       blueprintSearch: state.blueprintSearch,
       missionSearch: state.missionSearch,
       missionScriptOnly: state.missionScriptOnly,
-      missionFilterType: state.missionFilterType,
+       missionFilterType: state.missionFilterType,
       missionFilterPoints: state.missionFilterPoints,
       missionFilterReputation: state.missionFilterReputation,
       missionFilterLocation: state.missionFilterLocation,
       missionFilterDifficulty: state.missionFilterDifficulty,
+      missionFilterMoney: state.missionFilterMoney,
       chip: state.chip,
       missionType: state.missionType,
       company: state.company,
@@ -3074,19 +3095,64 @@ function scminersDbMissionUsesAppReady(entry) {
 function scminersDbRewardMoney(entry) {
   if (!entry) return 0;
   const rewards = entry.rewards || {};
-  return firstFiniteNumber(
+
+  const direct = firstFiniteNumber(
     entry.auec_amount,
+    entry.auecAmount,
+    entry.uec_amount,
+    entry.uecAmount,
     entry.money_reward,
     entry.moneyReward,
+    entry.cash_reward,
+    entry.cashReward,
+    entry.payout,
+    entry.reward_value,
+    entry.rewardValue,
+    entry.rewardAmount,
+    entry.amount,
+    entry.value,
     rewards.auec_amount,
+    rewards.auecAmount,
+    rewards.uec_amount,
+    rewards.uecAmount,
     rewards.money_reward,
     rewards.moneyReward,
+    rewards.cash_reward,
+    rewards.cashReward,
     rewards.auec,
     rewards.uec,
     rewards.payout,
     rewards.reward_value,
+    rewards.rewardValue,
     rewards.rewardAmount,
-  ) || 0;
+    rewards.amount,
+    rewards.value,
+  );
+
+  if (direct !== null && direct > 0) return direct;
+
+  const text = [
+    entry.reward_summary,
+    entry.rewardSummary,
+    entry.description,
+    entry.text,
+    rewards.reward_summary,
+    rewards.rewardSummary,
+    rewards.description,
+    rewards.text,
+    JSON.stringify(rewards),
+  ]
+    .map((value) => cleanDisplayText(value))
+    .filter(Boolean)
+    .join(" ");
+
+  const match = text.match(/\b(\d[\d,]*)\s*(?:auec|uec|credits?)\b/i);
+  if (match) {
+    const total = Number(match[1].replace(/,/g, ""));
+    if (Number.isFinite(total) && total > 0) return total;
+  }
+
+  return 0;
 }
 
 function scminersDbRewardScript(entry) {
@@ -3498,21 +3564,90 @@ function scminersDbBestMissionMatch(mission) {
   return matched;
 }
 
+function inferMissionTypeFromMission(mission, faction = "") {
+  const text = [
+    mission?.type,
+    mission?.category,
+    mission?.mission_type,
+    mission?.structuredMissionType,
+    mission?.title,
+    mission?.name,
+    mission?.mission,
+    mission?.description,
+    mission?.summary,
+    mission?.text,
+    mission?.structuredDescription,
+    mission?.structuredSourcePath,
+    mission?.structuredMissionId,
+    faction,
+  ]
+    .map((value) => cleanDisplayText(value))
+    .join(" ")
+    .toLowerCase();
+
+  if (!text.trim()) return "";
+
+  if (/\b(refuel|refueling|fuel)\b/.test(text)) return "Refueling";
+  if (/\b(salvage|scrap|scraper|reclaimer)\b/.test(text)) return "Salvage";
+  if (/\b(mine|mining|ore|asteroid)\b/.test(text)) return "Hand Mining";
+  if (/\b(deliver|delivery|drop off|pickup|pick up|courier|package|box)\b/.test(text)) return "Delivery";
+  if (/\b(haul|hauling|cargo|freight|transport)\b/.test(text)) return "Hauling";
+  if (/\b(investigate|investigation|search|missing|intel|scan|data|evidence)\b/.test(text)) return "Investigation";
+
+  if (/\b(bounty hunter|bounty|arlington|eckhart|miles eckhart)\b/.test(text)) {
+  return "Bounty Hunter";
+}
+
+if (
+  /\b(defend|defense|eliminate|neutralize|mercenary|merc|attack|protect|patrol|strike|vanduul|terrorist|hostile|threat|combat|capture|gang|operative extraction)\b/.test(text)
+) {
+  return "Mercenary";
+}
+
+  return "";
+}
+
 function augmentMissionWithStructuredData(mission) {
   if (!mission) return mission;
   const structured = scminersDbBestMissionMatch(mission);
   if (!structured) return mission;
-  const safeStructuredFaction = isBadLabel(structured.structuredFaction) ? "" : structured.structuredFaction;
-  const safeStructuredMissionType = isBadLabel(structured.structuredMissionType) ? "" : structured.structuredMissionType;
-  const safeStructuredTitle = isBadLabel(structured.structuredTitle) ? "" : missionDisplayTitle(structured.structuredTitle);
+
+  const safeMissionFaction = isBadLabel(mission.faction) ? "" : cleanDisplayText(mission.faction);
+  const safeMissionType = isBadLabel(mission.type) ? "" : cleanDisplayText(mission.type);
+  const safeStructuredFaction = isBadLabel(structured.structuredFaction) ? "" : cleanDisplayText(structured.structuredFaction);
+  const safeStructuredMissionType = isBadLabel(structured.structuredMissionType) ? "" : cleanDisplayText(structured.structuredMissionType);
+
+  const compactLabel = (value) => norm(value).replace(/[^a-z0-9]/g, "");
+  const structuredTypeLooksLikeFaction =
+    compactLabel(safeStructuredMissionType) &&
+    compactLabel(safeStructuredMissionType) === compactLabel(safeStructuredFaction);
+
+  const resolvedFaction = safeMissionFaction || safeStructuredFaction || "";
+  const inferredType = inferMissionTypeFromMission(
+    {
+      ...mission,
+      structuredMissionType: safeStructuredMissionType,
+      structuredDescription: structured.structuredDescription || "",
+      structuredSourcePath: structured.structuredSourcePath || "",
+      structuredMissionId: structured.structuredMissionId || "",
+    },
+    resolvedFaction,
+  );
+
+  const resolvedType =
+    safeMissionType ||
+    (structuredTypeLooksLikeFaction ? "" : safeStructuredMissionType) ||
+    inferredType ||
+    "";
+
   return {
     ...mission,
-    title: safeStructuredTitle || missionDisplayTitle(mission.title || mission.name || "") || mission.title || mission.name || "",
+    title: structured.structuredTitle || missionDisplayTitle(mission.title || mission.name || "") || mission.title || mission.name || "",
     description: structured.structuredDescription || mission.description || mission.summary || mission.text || "",
     summary: structured.structuredDescription || mission.summary || mission.description || "",
     text: structured.structuredDescription || mission.text || mission.description || "",
-    faction: mission.faction || safeStructuredFaction || "",
-    type: mission.type || safeStructuredMissionType || "",
+    faction: resolvedFaction,
+    type: resolvedType,
     system: structured.system || structured.system_guess || mission.system || "",
     location: structured.structuredLocation || mission.location || structured.location_guess || "",
     repStanding: structured.structuredRequiredRank || mission.repStanding || "",
@@ -3540,6 +3675,26 @@ function augmentMissionWithStructuredData(mission) {
     structuredVariantKinds: structured.structuredVariantKinds || mission.structuredVariantKinds || [],
     structuredMatchScore: structured.structuredMatchScore ?? mission.structuredMatchScore ?? 0,
     source: mission.source || "structured",
+  };
+}
+
+function repairMissionLabels(mission) {
+  if (!mission) return mission;
+
+  const faction =
+    isBadLabel(mission.faction)
+      ? cleanDisplayText(mission.structuredFaction || "")
+      : cleanDisplayText(mission.faction || "");
+
+  const type =
+    isBadLabel(mission.type)
+      ? inferMissionTypeFromMission(mission, faction)
+      : cleanDisplayText(mission.type || "");
+
+  return {
+    ...mission,
+    faction: faction || mission.faction || "",
+    type: type || mission.type || "",
   };
 }
 
@@ -3757,6 +3912,11 @@ function missionSearchItems() {
     if (state.missionFilterReputation !== "All" && cleanDisplayText(mission.repStanding) !== state.missionFilterReputation) return false;
     if (state.missionFilterLocation !== "All" && missionLocation(mission) !== state.missionFilterLocation) return false;
     if (state.missionFilterDifficulty !== "All" && missionDifficulty(mission) !== state.missionFilterDifficulty) return false;
+
+    const moneyReward = Number(missionMoneyReward(mission) || 0);
+    if (state.missionFilterMoney === "Unknown" && moneyReward > 0) return false;
+    if (state.missionFilterMoney !== "All" && state.missionFilterMoney !== "Unknown" && String(moneyReward) !== String(Number(state.missionFilterMoney))) return false;
+
     return true;
   });
   const scriptFiltered = state.missionScriptOnly ? missionFiltered.filter((mission) => missionHasScriptReward(mission)) : missionFiltered;
@@ -3893,6 +4053,50 @@ function missionFilterDifficultyOptions() {
     state.missionFilterDifficulty,
     (a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }),
   );
+}
+
+function missionFilterMoneyOptions() {
+  const missions = missionCatalog();
+  const moneyCounts = new Map();
+  let unknownCount = 0;
+
+  for (const mission of missions) {
+    const money = Number(missionMoneyReward(mission) || 0);
+    if (money > 0) {
+      moneyCounts.set(money, (moneyCounts.get(money) || 0) + 1);
+    } else {
+      unknownCount += 1;
+    }
+  }
+
+  const moneyOptions = [...moneyCounts.entries()].sort((a, b) => a[0] - b[0]);
+
+  return [
+    `<option value="All" ${state.missionFilterMoney === "All" ? "selected" : ""}>All</option>`,
+    ...moneyOptions.map(([money, count]) => {
+      const selected = String(state.missionFilterMoney) === String(money) ? "selected" : "";
+      return `<option value="${money}" ${selected}>${formatCount(money)} aUEC (${formatCount(count)})</option>`;
+    }),
+    `<option value="Unknown" ${state.missionFilterMoney === "Unknown" ? "selected" : ""}>Unknown Money (${formatCount(unknownCount)})</option>`,
+  ].join("");
+}
+
+function ensureMissionMoneyFilterControl() {
+  if (els.missionFilterMoneySelect) return els.missionFilterMoneySelect;
+
+  const anchor = els.missionFilterDifficultySelect?.parentElement;
+  if (!anchor || !anchor.parentElement) return null;
+
+  const wrapper = document.createElement("label");
+  wrapper.className = anchor.className || "";
+  wrapper.innerHTML = `
+    Money
+    <select id="missionFilterMoneySelect"></select>
+  `;
+
+  anchor.insertAdjacentElement("afterend", wrapper);
+  els.missionFilterMoneySelect = wrapper.querySelector("select");
+  return els.missionFilterMoneySelect;
 }
 
 function missionsFor(type, company) {
@@ -4412,41 +4616,27 @@ function missionScriptReward(mission) {
 
 function missionMoneyReward(mission) {
   if (!mission) return 0;
+
+  const override = missionRewardOverride(mission);
   const structured = Number(mission.structuredMoneyReward || 0);
   if (structured > 0) return structured;
-  const override = missionRewardOverride(mission);
-  const raw =
-    override?.moneyReward ??
-    mission?.moneyReward ??
-    mission?.auecReward ??
-    mission?.uecReward ??
-    mission?.cashReward ??
-    mission?.rewardMoney ??
-    mission?.rewardCash ??
-    mission?.payout ??
-    mission?.reward_value ??
-      mission?.rewardAmount ??
-      mission?.reward_amount ??
-      mission?.reward;
 
-  if (Array.isArray(raw)) {
-    const total = rewardMoneyCountFromAny(raw) || firstFiniteNumber(raw);
-    return total > 0 ? total : null;
-  }
-
-  if (typeof raw === "number" && Number.isFinite(raw) && raw > 0) return raw;
-  if (typeof raw === "string") {
-    const match = raw.match(/(\d[\d,]*)/);
-    if (match) {
-      const total = Number(match[1].replace(/,/g, ""));
-      return Number.isFinite(total) && total > 0 ? total : null;
-    }
-  }
-
-  if (raw && typeof raw === "object") {
-    const value = Number(raw.count ?? raw.amount ?? raw.quantity ?? raw.value ?? 0);
-    if (Number.isFinite(value) && value > 0) return value;
-  }
+  const direct = firstFiniteNumber(
+    override?.moneyReward,
+    mission?.moneyReward,
+    mission?.auecReward,
+    mission?.uecReward,
+    mission?.cashReward,
+    mission?.rewardMoney,
+    mission?.rewardCash,
+    mission?.payout,
+    mission?.money_reward,
+    mission?.reward_money,
+    mission?.reward_value,
+    mission?.rewardAmount,
+    mission?.reward_amount,
+  );
+  if (direct !== null && direct > 0) return direct;
 
   const rewardObjects = Array.isArray(mission?.rewardItems)
     ? mission.rewardItems
@@ -4454,13 +4644,41 @@ function missionMoneyReward(mission) {
       ? mission.reward_items
       : Array.isArray(mission?.rewards)
         ? mission.rewards
-        : [];
-  const fromRewards = rewardMoneyCountFromAny(rewardObjects) || firstFiniteNumber(
-    rewardObjects,
-    rewardObjects.map((entry) => entry?.payout ?? entry?.amount ?? entry?.value ?? entry?.quantity),
-    rewardObjects.map((entry) => entry?.rewardMoney ?? entry?.money ?? entry?.uec ?? entry?.auec),
-  );
-  if (fromRewards !== null) return fromRewards;
+        : Array.isArray(mission?.reward)
+          ? mission.reward
+          : [];
+
+  const fromRewards = rewardMoneyCountFromAny(rewardObjects);
+  if (fromRewards > 0) return fromRewards;
+
+  const text = [
+    mission?.rewardText,
+    mission?.reward_text,
+    mission?.rewardSummary,
+    mission?.structuredRewardSummary,
+    mission?.description,
+    mission?.summary,
+    mission?.text,
+    mission?.structuredDescription,
+  ]
+    .map((value) => cleanDisplayText(value))
+    .filter(Boolean)
+    .join(" ");
+
+  if (text) {
+    const moneyPatterns = [
+      /\b(?:money reward|cash reward|payout|reward|pays?|payment)\s*[:\-]?\s*(\d[\d,]*)\s*(?:auec|uec|credits?)\b/i,
+      /\b(\d[\d,]*)\s*(?:auec|uec|credits?)\b/i,
+    ];
+
+    for (const pattern of moneyPatterns) {
+      const match = text.match(pattern);
+      if (match) {
+        const total = Number(String(match[1] || "").replace(/,/g, ""));
+        if (Number.isFinite(total) && total > 0) return total;
+      }
+    }
+  }
 
   return 0;
 }
@@ -4470,21 +4688,7 @@ function missionHasScriptReward(mission) {
 }
 
 function missionHasKnownMoneyReward(mission) {
-  if (!mission) return false;
-  return firstFiniteNumber(
-    mission?.moneyReward,
-    mission?.auecReward,
-    mission?.uecReward,
-    mission?.cashReward,
-    mission?.rewardMoney,
-    mission?.rewardCash,
-    mission?.payout,
-    mission?.reward_value,
-    mission?.rewardAmount,
-    mission?.reward_amount,
-    mission?.structuredMoneyReward,
-    missionRewardOverride(mission)?.moneyReward,
-  ) !== null;
+  return Number(missionMoneyReward(mission) || 0) > 0;
 }
 
 function missionMoneyRewardLabel(mission) {
@@ -5149,16 +5353,21 @@ function renderMissionBrowser() {
   if (!els.missionSearchInput || !els.missionSearchResults) return;
   els.missionSearchInput.value = state.missionSearch || "";
   if (els.missionSearchReset) els.missionSearchReset.hidden = false;
+  const moneyFilterSelect = ensureMissionMoneyFilterControl();
+
   if (els.missionFilterTypeSelect) els.missionFilterTypeSelect.innerHTML = missionFilterTypeOptions();
   if (els.missionFilterPointsSelect) els.missionFilterPointsSelect.innerHTML = missionFilterPointOptions();
   if (els.missionFilterReputationSelect) els.missionFilterReputationSelect.innerHTML = missionFilterReputationOptions();
   if (els.missionFilterLocationSelect) els.missionFilterLocationSelect.innerHTML = missionFilterLocationOptions();
   if (els.missionFilterDifficultySelect) els.missionFilterDifficultySelect.innerHTML = missionFilterDifficultyOptions();
+  if (moneyFilterSelect) moneyFilterSelect.innerHTML = missionFilterMoneyOptions();
+
   if (els.missionFilterTypeSelect) els.missionFilterTypeSelect.value = state.missionFilterType || "All";
   if (els.missionFilterPointsSelect) els.missionFilterPointsSelect.value = state.missionFilterPoints || "All";
   if (els.missionFilterReputationSelect) els.missionFilterReputationSelect.value = state.missionFilterReputation || "All";
   if (els.missionFilterLocationSelect) els.missionFilterLocationSelect.value = state.missionFilterLocation || "All";
   if (els.missionFilterDifficultySelect) els.missionFilterDifficultySelect.value = state.missionFilterDifficulty || "All";
+  if (moneyFilterSelect) moneyFilterSelect.value = state.missionFilterMoney || "All";
   if (els.missionScriptOnlyToggle) {
     els.missionScriptOnlyToggle.classList.toggle("active", Boolean(state.missionScriptOnly));
     els.missionScriptOnlyToggle.textContent = state.missionScriptOnly ? "All missions" : "Script";
@@ -6115,6 +6324,7 @@ async function init() {
     state.missionFilterReputation = "All";
     state.missionFilterLocation = "All";
     state.missionFilterDifficulty = "All";
+    state.missionFilterMoney = "All";
     state.missionScriptOnly = false;
     renderMissionBrowser();
     saveState();
@@ -6141,6 +6351,11 @@ async function init() {
   });
   els.missionFilterDifficultySelect?.addEventListener("change", (event) => {
     state.missionFilterDifficulty = event.target.value || "All";
+    renderMissionBrowser();
+    saveState();
+  });
+  ensureMissionMoneyFilterControl()?.addEventListener("change", (event) => {
+    state.missionFilterMoney = event.target.value || "All";
     renderMissionBrowser();
     saveState();
   });
