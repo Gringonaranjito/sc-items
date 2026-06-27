@@ -1059,8 +1059,7 @@ function normalizeScminersDbManifestUrl(value) {
 
 function currentScminersDbManifestUrl() {
   return normalizeScminersDbManifestUrl(
-    state.scminersDb?.manifestUrl
-      || state.scminersDbManifestUrl
+    state.scminersDbManifestUrl
       || localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY)
       || SCMINERSDB_DEFAULT_MANIFEST_URL,
   );
