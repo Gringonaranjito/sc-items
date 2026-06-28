@@ -1,4 +1,4 @@
-﻿const STORAGE_KEY = "sc-blueprint-tracker-v1";
+const STORAGE_KEY = "sc-blueprint-tracker-v1";
 const WATCH_KEY = "sc-blueprint-tracker-watch-v1";
 const USERS_KEY = "sc-blueprint-tracker-users-v1";
 const USER_PREFIX = "sc-blueprint-tracker-user-v1-";
@@ -1817,8 +1817,9 @@ function summarizeScminersDbManifest(manifest) {
   return parts.join(" · ");
 }
 
-async function loadScminersDbBridge() {
-  if (bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
+async function loadScminersDbBridge(options = {}) {
+  const forceManifest = Boolean(options?.forceManifest);
+  if (!forceManifest && bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
   if (typeof fetch !== "function") return null;
 
   const manifestUrl = currentScminersDbManifestUrl();
@@ -1937,7 +1938,7 @@ async function updateScminersDb() {
     button.textContent = "Updating...";
   }
   try {
-    await loadScminersDbBridge();
+    await loadScminersDbBridge({ forceManifest: true });
     state.data = await loadBlueprintData();
     state.buyData = await loadBuyData();
     renderAll();
