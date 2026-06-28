@@ -6233,6 +6233,7 @@ async function init() {
     "missionAttempts",
     "exportState",
     "updateInfo",
+    "updateInfoStatus",
     "resetState",
     "themeDark",
     "themeLight",
@@ -6526,11 +6527,15 @@ async function init() {
           recordCount ? `${formatCount(recordCount)} records` : "",
           result.manifestUrl ? "source sc-items public data" : "",
         ].filter(Boolean);
-        els.footerWatch.textContent = statusParts.join(" · ");
+        const statusText = statusParts.join(" · ");
+        if (els.updateInfoStatus) els.updateInfoStatus.textContent = statusText;
+        els.footerWatch.textContent = statusText;
       }
     } catch (error) {
       const message = cleanDisplayText(error?.message || error);
-      els.footerWatch.textContent = `Update failed: ${message}`;
+      const errorText = `Update failed: ${message}`;
+      if (els.updateInfoStatus) els.updateInfoStatus.textContent = errorText;
+      els.footerWatch.textContent = errorText;
       console.warn("SCMinersDB update failed:", error);
     }
   });
