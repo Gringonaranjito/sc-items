@@ -2940,6 +2940,9 @@ function loadState() {
   const savedUserId = localStorage.getItem(STORAGE_KEY) || state.users[0].id;
   state.currentUserId = state.users.some((user) => user.id === savedUserId) ? savedUserId : state.users[0].id;
   loadProfile(state.currentUserId);
+  if (state.liveMissionsStatus === "Live missions are offline in this build.") {
+    state.liveMissionsStatus = "";
+  }
   state.watch.name = localStorage.getItem(WATCH_KEY) || "";
   state.scminersDbManifestUrl = normalizeScminersDbManifestUrl(
     localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY) || state.scminersDbManifestUrl,
