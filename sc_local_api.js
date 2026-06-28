@@ -21,17 +21,23 @@
       .filter(Boolean);
 
   const pathParts = (offer) => {
-    const raw = clean(offer?.location || offer?.locationPath || offer?.locationLabel || "");
+    const raw = clean(offer?.location || offer?.locationPath || offer?.locationLabel || offer?.locationName || "");
     const parts = splitPath(raw);
-    if (!parts.length) return { orbit: "", location: "" };
+    const explicitOrbit = clean(offer?.area || offer?.orbit || offer?.planet || offer?.body || "");
+    if (!parts.length) {
+      return {
+        orbit: explicitOrbit,
+        location: clean(offer?.locationPath || offer?.locationLabel || offer?.locationName || ""),
+      };
+    }
     if (parts.length === 1) {
       return {
-        orbit: clean(offer?.area || offer?.orbit || ""),
+        orbit: explicitOrbit || parts[0],
         location: "",
       };
     }
     return {
-      orbit: parts[1] || clean(offer?.area || offer?.orbit || ""),
+      orbit: explicitOrbit || parts[1] || parts[0],
       location: parts.slice(2).join(" - "),
     };
   };

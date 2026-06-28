@@ -1,20 +1,15 @@
-﻿const STORAGE_KEY = "sc-blueprint-tracker-v1";
+const STORAGE_KEY = "sc-blueprint-tracker-v1";
 const WATCH_KEY = "sc-blueprint-tracker-watch-v1";
 const USERS_KEY = "sc-blueprint-tracker-users-v1";
 const USER_PREFIX = "sc-blueprint-tracker-user-v1-";
 const SCMINERSDB_MANIFEST_URL_KEY = "scminersdb-manifest-url-v1";
-const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/scminersdb/runs/latest.json";
-const STAR_CITIZEN_DEFAULT_PATH = "C:/Program Files/Roberts Space Industries/StarCitizen/LIVE";
+const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/sc-items/scminersdb/runs/latest.json";
+const SCMINERSDB_PTU_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/sc-items/scminersdb/ptu/runs/latest.json";
 const BUY_DATA_SCRIPT_VERSION = "20260618a";
-const BUY_DATA_PRIMARY_SCRIPT_URL = `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`;
-const BUY_DATA_FALLBACK_SCRIPT_URLS = Object.freeze([
-  `./buy_items_items_1.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_2.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_3.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_4.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_items_5.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_ships_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
-  `./buy_items_rentals_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+const BUY_DATA_SCRIPT_URLS = Object.freeze([
+  `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
+  `./scminersdb_dismantle_returns_data.js?v=20260624a`,
+  `./buy_items_dismantle_append.js?v=20260624a`,
 ]);
 
 const ownedSeed = [
@@ -81,6 +76,7 @@ const state = {
   missionFilterReputation: "All",
   missionFilterLocation: "All",
   missionFilterDifficulty: "All",
+  missionFilterMoney: "All",
   chip: "All",
   missionType: "",
   company: "",
@@ -122,17 +118,13 @@ const state = {
     fileIndex: {},
     status: "",
   },
-  scminersDbManifestUrl: localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY) || SCMINERSDB_DEFAULT_MANIFEST_URL,
-  scminersDbBridgeConfig: {
+  scminersDbPtu: {
     available: false,
-    sourceRoot: "",
-    sourceRootExists: false,
-    sourceRootHasDataP4k: false,
-    workspaceRoot: "",
-    workspaceReady: false,
-    exportRoot: "",
-    manifestUrl: "",
+    manifestUrl: SCMINERSDB_PTU_DEFAULT_MANIFEST_URL,
+    manifest: null,
+    status: "",
   },
+  scminersDbManifestUrl: localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY) || SCMINERSDB_DEFAULT_MANIFEST_URL,
   appReady: false,
   scminersDbRefreshTimer: null,
   scminersDbCategory: "1h",
@@ -148,6 +140,9 @@ let scminersDbMissionCache = {
 let buyDataLoadPromise = null;
 let buyDataScriptsLoadPromise = null;
 let buyDataProgressRenderTimer = null;
+let buyDataWorker = null;
+let liveMissionLoadPromise = null;
+let bundledScminersDbDataCache = null;
 
 let missionLookupCache = {
   dataItemsRef: null,
@@ -161,6 +156,8 @@ let missionLookupCache = {
   missionCatalog: [],
   missionCatalogReady: false,
   rewardsIndex: new Map(),
+  missionSearchIndex: new Map(),
+  missionMatchIndex: new Map(),
 };
 let blueprintCraftingCache = {
   signature: "",
@@ -168,8 +165,10 @@ let blueprintCraftingCache = {
   recipeByName: new Map(),
   recipeByResultPath: new Map(),
   dismantleBySourceId: new Map(),
+  dismantleBySourceName: new Map(),
   dismantleByResultPath: new Map(),
 };
+const buyOfferFieldCache = new WeakMap();
 
 function invalidateMissionLookupCache() {
   missionLookupCache = {
@@ -184,6 +183,8 @@ function invalidateMissionLookupCache() {
     missionCatalog: [],
     missionCatalogReady: false,
     rewardsIndex: new Map(),
+    missionSearchIndex: new Map(),
+    missionMatchIndex: new Map(),
   };
 }
 
@@ -202,45 +203,57 @@ function ensureMissionLookupCache() {
     return missionLookupCache;
   }
 
-  const all = dataItems.slice();
+  const all = dataItems.map((item) => {
+    const rawMissions = Array.isArray(item.missions) ? item.missions : [];
+    const missions = rawMissions
+      .map((m) => repairMissionLabels(augmentMissionWithStructuredData({ ...m, source: "local", itemName: item.name })))
+      .filter((mission) => !isBadLabel(missionTitle(mission)) && !isBadLabel(mission.type) && !isBadLabel(mission.faction));
+
+    return {
+      ...item,
+      missions,
+    };
+  });
+
   const missionOnly = all.filter((item) => item.name && (item.missions || []).length);
   const combinedMap = new Map();
 
-  for (const mission of missionOnly.flatMap((item) => (item.missions || []).map((m) => ({ ...m, source: "local", itemName: item.name })))) {
-    if (isBadLabel(mission.title) || isBadLabel(mission.type) || isBadLabel(mission.faction)) continue;
-    combinedMap.set(missionRecordKey(mission), augmentMissionWithStructuredData(mission));
+  for (const mission of missionOnly.flatMap((item) => item.missions || [])) {
+    combinedMap.set(missionRecordKey(mission), mission);
   }
 
   for (const mission of liveMissions) {
     const key = missionRecordKey(mission);
     const existing = combinedMap.get(key);
     if (existing) {
-      combinedMap.set(key, {
-        ...augmentMissionWithStructuredData(existing),
-        ...augmentMissionWithStructuredData(mission),
+      const mergedMission = repairMissionLabels({
+        ...repairMissionLabels(augmentMissionWithStructuredData(existing)),
+        ...repairMissionLabels(augmentMissionWithStructuredData(mission)),
         source: existing.source || mission.source,
         rewards: Array.isArray(existing.rewards) && existing.rewards.length ? existing.rewards : mission.rewards,
         rewardCount: existing.rewardCount || mission.rewardCount || 0,
         moneyReward: mission.moneyReward ?? existing.moneyReward ?? null,
         scriptReward: mission.scriptReward ?? existing.scriptReward ?? null,
       });
+      combinedMap.set(key, mergedMission);
       continue;
     }
-    combinedMap.set(key, augmentMissionWithStructuredData(mission));
+    combinedMap.set(key, repairMissionLabels(augmentMissionWithStructuredData(mission)));
   }
 
   for (const mission of missionRewardOverrideRecords()) {
     const key = missionRecordKey(mission);
     const existing = combinedMap.get(key);
     if (existing) {
-      combinedMap.set(key, augmentMissionWithRewardOverride(existing));
+      combinedMap.set(key, repairMissionLabels(augmentMissionWithRewardOverride(existing)));
       continue;
     }
-    combinedMap.set(key, augmentMissionWithStructuredData(mission));
+    combinedMap.set(key, repairMissionLabels(augmentMissionWithStructuredData(mission)));
   }
 
-  const combinedRecords = [...combinedMap.values()].map((mission) => augmentMissionWithRewardOverride(mission));
+  const combinedRecords = [...combinedMap.values()].map((mission) => repairMissionLabels(augmentMissionWithRewardOverride(mission)));
   const rewardsIndex = new Map();
+
   for (const item of missionOnly) {
     for (const mission of item.missions || []) {
       const key = [
@@ -266,6 +279,8 @@ function ensureMissionLookupCache() {
     missionCatalog: [],
     missionCatalogReady: false,
     rewardsIndex,
+    missionSearchIndex: new Map(),
+    missionMatchIndex: new Map(),
   };
   return missionLookupCache;
 }
@@ -291,34 +306,42 @@ function sourcePathLookupKeys(value) {
   return [...new Set([norm(raw), norm(trimmed), norm(basename), norm(stem)].filter(Boolean))];
 }
 
+function buyOfferFields(offer) {
+  if (!offer || typeof offer !== "object") return null;
+  if (buyOfferFieldCache.has(offer)) return buyOfferFieldCache.get(offer);
+  const fields = deriveBuyOfferFields(offer);
+  buyOfferFieldCache.set(offer, fields);
+  return fields;
+}
+
 function escapeRegExp(v) {
   return String(v).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 const CLEAN_DISPLAY_TEXT_REPLACEMENTS = Object.freeze({
   "\u00a0": " ",
-  "Ã‚Â": "",
-  "Ã‚": "",
-  "â€‹": "",
-  "â€Œ": "",
-  "â€": "",
-  "â€": "-",
-  "â€": '"',
-  "â€œ": '"',
-  "â€˜": "'",
-  "â€™": "'",
-  "â€“": "–",
-  "â€”": "—",
-  "â€¦": "…",
-  "Ã¢â‚¬â€œ": "–",
-  "Ã¢â‚¬â€": "—",
-  "Ã¢â‚¬Ëœ": "'",
-  "Ã¢â‚¬â„¢": "'",
-  "Ã¢â‚¬Å“": '"',
-  "Ã¢â‚¬Â": '"',
-  "Â·": "·",
-  "Â": "",
-  "ï¿½": "",
+  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡": "",
+  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬â„¢": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "-",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": '"',
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“": '"',
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œ": "'",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢": "'",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦": "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“": "'",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢": "'",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ": '"',
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â": '"',
+  "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·": "Ãƒâ€šÃ‚Â·",
+  "ÃƒÆ’Ã¢â‚¬Å¡": "",
+  "ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½": "",
   "_": " ",
 });
 
@@ -337,7 +360,7 @@ function cleanDisplayText(v) {
   if (!input) return "";
   if (cleanDisplayTextCache.has(input)) return cleanDisplayTextCache.get(input);
 
-  if (!/[ÃâÂï¿½_\u00a0]/.test(input) && !/\s{2,}/.test(input)) {
+  if (!/[ÃƒÆ’Ã†â€™ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã¢â‚¬Å¡ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½_\u00a0]/.test(input) && !/\s{2,}/.test(input)) {
     const fast = input.trim();
     if (cleanDisplayTextCache.size > 5000) cleanDisplayTextCache.clear();
     cleanDisplayTextCache.set(input, fast);
@@ -673,7 +696,7 @@ const BUY_GENERIC_SHOP_LABELS = Object.freeze([
 const BUY_GENERIC_SHOP_LABEL_SET = new Set(BUY_GENERIC_SHOP_LABELS);
 const BUY_GENERIC_SHOP_LABELS_BY_LENGTH = Object.freeze([...BUY_GENERIC_SHOP_LABELS].sort((a, b) => b.length - a.length));
 
-const BUY_DATA_BATCH_SIZE = 100;
+const BUY_DATA_BATCH_SIZE = 50;
 const BUY_DATA_PROGRESS_RENDER_DELAY_MS = 120;
 
 function yieldToMainThread(timeout = 0) {
@@ -858,7 +881,8 @@ function deriveBuyOfferFields(offer) {
   const system = extractBuySystem(offer?.system, offer?.location, raw, fullPath[0]) || "";
   const localOrbit = cleanDisplayText(window.SC_ITEMS_API?.resolveOrbit?.(offer) || "");
   const localLocation = cleanDisplayText(window.SC_ITEMS_API?.resolveLocation?.(offer) || "");
-  const fallbackOrbit = cleanDisplayText(offer?.area || offer?.orbit || pathSegments[0] || "");
+  const fallbackOrbitRaw = cleanDisplayText(offer?.area || offer?.orbit || pathSegments[0] || "");
+  const fallbackOrbit = orbitFromArea(system, fallbackOrbitRaw) || fallbackOrbitRaw;
   const fallbackLocation =
     fullPath.length > 2
       ? fullPath.slice(2).join(" - ")
@@ -917,6 +941,76 @@ function normalizeRecord(entry) {
   };
 }
 
+function dismantleSourceName(entry) {
+  const source = entry?.source_item || {};
+  return cleanDisplayText(
+    source.item_name ||
+      source.item_record_name ||
+      source.name ||
+      source.label ||
+      source.display_name ||
+      source.item_class_name ||
+      source.class_name ||
+      entry?.name ||
+      entry?.source_id ||
+      "",
+  );
+}
+
+function dismantleSourceType(entry) {
+  const name = dismantleSourceName(entry).toLowerCase();
+  if (!name) return { type: "Miscellaneous", subtype: "Miscellaneous" };
+  if (/battery\b/.test(name)) return { type: "Ammo", subtype: "Energy" };
+  if (/magazine|clip|cap\b/.test(name)) return { type: "Ammo", subtype: "Ballistic" };
+  if (/beam|tool|salvage|repair|mining|tractor/.test(name)) return { type: "Utility", subtype: "Utility" };
+  return { type: "Miscellaneous", subtype: "Miscellaneous" };
+}
+
+function syntheticDismantleItems(items) {
+  const sourceItems = bundledDismantleReturnsPayload().length ? bundledDismantleReturnsPayload() : scminersDbExportRecords("dismantle_returns.json");
+  if (!Array.isArray(sourceItems) || !sourceItems.length) return Array.isArray(items) ? items : [];
+  const existingKeys = new Set(
+    (Array.isArray(items) ? items : [])
+      .flatMap((item) => [
+        norm(item?.name),
+        norm(item?.record_name),
+        norm(item?.item_name),
+        norm(item?.source_path),
+        norm(item?.sourcePath),
+      ])
+      .filter(Boolean),
+  );
+  const additions = [];
+  const seenSources = new Set();
+  for (const entry of sourceItems) {
+    const name = dismantleSourceName(entry);
+    if (!name) continue;
+    const sourceKey = norm(name);
+    if (!sourceKey || seenSources.has(sourceKey) || existingKeys.has(sourceKey)) continue;
+    seenSources.add(sourceKey);
+    const sourcePath = cleanDisplayText(entry?.source_item_source_path || entry?.source_item?.source_path || "");
+    const sourceId = cleanDisplayText(entry?.source_id || entry?.source_item?.item_id || entry?.source_item?.item_class_id || "");
+    const { type, subtype } = dismantleSourceType(entry);
+    additions.push({
+      id: sourceId || sourcePath || name,
+      name,
+      type,
+      subtype,
+      missions: [],
+      craftable: false,
+      blueprint: "",
+      craftTime: 0,
+      materials: [],
+      offers: [],
+      source_path: sourcePath,
+      source_id: sourceId,
+      source_item: entry?.source_item || null,
+      synthetic: true,
+    });
+  }
+  return Array.isArray(items) ? [...items, ...additions] : additions;
+}
+
 function isMalformedBuyEntry(entry) {
   const name = String(entry?.name || entry?.title || "");
   const type = norm(entry?.type || "");
@@ -934,6 +1028,9 @@ function isBadLabel(v) {
   const value = norm(v);
   return (
     !value
+    || value === "unknown"
+    || value === "n/a"
+    || value === "none"
     || value.includes("placeholder")
     || value.includes("null")
     || value.includes("file://")
@@ -967,9 +1064,81 @@ function normalizeScminersDbManifestUrl(value) {
   return text || SCMINERSDB_DEFAULT_MANIFEST_URL;
 }
 
+function currentScminersDbManifestUrl() {
+  return normalizeScminersDbManifestUrl(
+    state.scminersDbManifestUrl
+      || localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY)
+      || SCMINERSDB_DEFAULT_MANIFEST_URL,
+  );
+}
+
+function currentScminersDbPtuManifestUrl() {
+  const liveUrl = currentScminersDbManifestUrl();
+  if (!liveUrl || liveUrl.startsWith("bundled://")) return SCMINERSDB_PTU_DEFAULT_MANIFEST_URL;
+  if (/\/runs\/latest\.json(?:[?#].*)?$/i.test(liveUrl)) {
+    return liveUrl.replace(/\/runs\/latest\.json(?:[?#].*)?$/i, "/ptu/runs/latest.json");
+  }
+  return SCMINERSDB_PTU_DEFAULT_MANIFEST_URL;
+}
+
+async function loadScminersDbPtuBridge() {
+  const manifestUrl = currentScminersDbPtuManifestUrl();
+  state.scminersDbPtu = {
+    available: false,
+    manifestUrl,
+    manifest: null,
+    status: "Loading PTU manifest...",
+  };
+
+  try {
+    const manifest = await fetchJson(manifestUrl);
+    if (!manifest) throw new Error("PTU manifest not available");
+    state.scminersDbPtu = {
+      available: true,
+      manifestUrl,
+      manifest,
+      status: summarizeScminersDbManifest(manifest) || "PTU manifest loaded",
+    };
+  } catch (error) {
+    state.scminersDbPtu = {
+      available: false,
+      manifestUrl,
+      manifest: null,
+      status: `PTU manifest unavailable: ${cleanDisplayText(error?.message || error)}`,
+    };
+  }
+
+  return state.scminersDbPtu;
+}
+
+function setScminersDbManifestUrl(value) {
+  const normalized = normalizeScminersDbManifestUrl(value);
+  state.scminersDbManifestUrl = normalized;
+  localStorage.setItem(SCMINERSDB_MANIFEST_URL_KEY, normalized);
+  return normalized;
+}
+
 function bundledScminersDbPayload() {
-  const payload = window.SC_MINERS_DB_BUNDLED;
+  const payload = bundledScminersDbDataCache || window.SC_MINERS_DB_BUNDLED;
   return payload && typeof payload === "object" ? payload : null;
+}
+
+async function ensureBundledScminersDbPayload() {
+  const existing = bundledScminersDbPayload();
+  if (existing) return existing;
+  try {
+    const bundleScript = [...document.querySelectorAll("script")].find((script) => String(script?.src || "").includes("scminersdb_local_bundle.js"));
+    const response = await fetch(bundleScript?.src || "./scminersdb_local_bundle.js?v=20260623b");
+    if (!response.ok) return null;
+    const text = await response.text();
+    const start = text.indexOf("=");
+    const jsonText = (start >= 0 ? text.slice(start + 1) : text).trim().replace(/;\s*$/, "");
+    const payload = JSON.parse(jsonText);
+    if (payload && typeof payload === "object") bundledScminersDbDataCache = payload;
+  } catch {
+    return null;
+  }
+  return bundledScminersDbPayload();
 }
 
 function useBundledScminersDbData() {
@@ -990,105 +1159,6 @@ function useBundledScminersDbData() {
   window.SC_MINERS_DB = state.scminersDb;
   if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
   return state.scminersDb;
-}
-
-function currentScminersDbManifestUrl() {
-  return normalizeScminersDbManifestUrl(
-    state.scminersDb?.manifestUrl
-      || state.scminersDbManifestUrl
-      || localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY)
-      || SCMINERSDB_DEFAULT_MANIFEST_URL,
-  );
-}
-
-function setScminersDbManifestUrl(value) {
-  const normalized = normalizeScminersDbManifestUrl(value);
-  state.scminersDbManifestUrl = normalized;
-  localStorage.setItem(SCMINERSDB_MANIFEST_URL_KEY, normalized);
-  return normalized;
-}
-
-async function fetchScminersDbBridgeConfig() {
-  if (typeof fetch !== "function") return null;
-  try {
-    const payload = await fetchJson("/api/scminersdb/config");
-    const config = payload?.config || payload;
-    state.scminersDbBridgeConfig = {
-      available: true,
-      sourceRoot: cleanDisplayText(config?.sourceRoot || ""),
-      sourceRootExists: Boolean(config?.sourceRootExists),
-      sourceRootHasDataP4k: Boolean(config?.sourceRootHasDataP4k),
-      workspaceRoot: cleanDisplayText(config?.workspaceRoot || ""),
-      workspaceReady: Boolean(config?.workspaceReady),
-      exportRoot: cleanDisplayText(config?.exportRoot || ""),
-      manifestUrl: cleanDisplayText(config?.manifestUrl || ""),
-    };
-    return state.scminersDbBridgeConfig;
-  } catch {
-    state.scminersDbBridgeConfig = {
-      available: false,
-      sourceRoot: "",
-      sourceRootExists: false,
-      sourceRootHasDataP4k: false,
-      workspaceRoot: "",
-      workspaceReady: false,
-      exportRoot: "",
-      manifestUrl: "",
-    };
-    return null;
-  }
-}
-
-async function saveScminersDbBridgeConfig(partial = {}) {
-  if (typeof fetch !== "function") return null;
-  const response = await fetch("/api/scminersdb/config", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(partial),
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) {
-    throw new Error(cleanDisplayText(payload?.message || payload?.error || `HTTP ${response.status}`));
-  }
-  const config = payload?.config || payload;
-  state.scminersDbBridgeConfig = {
-    available: true,
-    sourceRoot: cleanDisplayText(config?.sourceRoot || ""),
-    sourceRootExists: Boolean(config?.sourceRootExists),
-    sourceRootHasDataP4k: Boolean(config?.sourceRootHasDataP4k),
-    workspaceRoot: cleanDisplayText(config?.workspaceRoot || ""),
-    workspaceReady: Boolean(config?.workspaceReady),
-    exportRoot: cleanDisplayText(config?.exportRoot || ""),
-    manifestUrl: cleanDisplayText(config?.manifestUrl || ""),
-  };
-  return state.scminersDbBridgeConfig;
-}
-
-function currentScminersDbSourceRoot() {
-  return cleanDisplayText(state.scminersDbBridgeConfig?.sourceRoot || "");
-}
-
-function scminersDbBridgeStatusText() {
-  const config = state.scminersDbBridgeConfig || {};
-  if (!config.available) return "Local SCMinersDB bridge not detected.";
-  if (!config.workspaceReady) return "SCMinersDB workspace not found for local updates.";
-  if (!config.sourceRoot) return "No Star Citizen path saved yet.";
-  if (!config.sourceRootHasDataP4k) return "Saved Star Citizen path is missing Data.p4k.";
-  return `Saved path: ${config.sourceRoot}`;
-}
-
-async function ensureScminersDbSourceRoot() {
-  const current = state.scminersDbBridgeConfig?.available ? state.scminersDbBridgeConfig : await fetchScminersDbBridgeConfig();
-  if (current?.sourceRoot && current.sourceRootHasDataP4k) return current.sourceRoot;
-  const suggested = current?.sourceRoot || STAR_CITIZEN_DEFAULT_PATH;
-  const entered = window.prompt("Enter your Star Citizen LIVE folder path. It must contain Data.p4k.", suggested);
-  const normalized = cleanDisplayText(entered || "");
-  if (!normalized) throw new Error("Star Citizen install path is required.");
-  const saved = await saveScminersDbBridgeConfig({ sourceRoot: normalized });
-  if (!saved?.sourceRootHasDataP4k) {
-    throw new Error("That folder does not contain Data.p4k. Choose the Star Citizen LIVE folder.");
-  }
-  return saved.sourceRoot;
 }
 
 function resolveScminersDbAssetUrl(manifestUrl, assetUrl) {
@@ -1180,10 +1250,6 @@ function escapeHtml(value) {
 }
 
 function buyEntryStatsGroups(entry, tab = state.buyTab) {
-  if (tab === "items") {
-    const liveSections = buyEntryItemWikiSections(entry);
-    return liveSections;
-  }
   const groups = [];
   const seen = new Set();
   const pushGroup = (label, value) => {
@@ -1253,7 +1319,7 @@ function buyEntryStatsGroups(entry, tab = state.buyTab) {
   if (tab === "ships" || tab === "rentals") {
     addDirectStat("Crew", entry?.crew);
     addDirectStat("Cargo", entry?.cargo);
-    const dims = [entry?.length ? `L ${cleanDisplayText(entry.length)}` : "", entry?.width ? `W ${cleanDisplayText(entry.width)}` : "", entry?.height ? `H ${cleanDisplayText(entry.height)}` : "", entry?.mass ? `Mass ${cleanDisplayText(entry.mass)}` : ""].filter(Boolean).join(" · ");
+    const dims = [entry?.length ? `L ${cleanDisplayText(entry.length)}` : "", entry?.width ? `W ${cleanDisplayText(entry.width)}` : "", entry?.height ? `H ${cleanDisplayText(entry.height)}` : "", entry?.mass ? `Mass ${cleanDisplayText(entry.mass)}` : ""].filter(Boolean).join(" | ");
     addDirectStat("Dimensions", dims);
   }
   for (const key of ["charges", "duration", "instability", "optimalChargeWindow", "shatterDamage", "laserPower", "tractorPower", "resistance", "volume", "damage", "dps", "ammo", "muzzleVelocity", "effectiveRange", "fireModes"]) {
@@ -1375,6 +1441,7 @@ function defaultProfile() {
     missionFilterReputation: "All",
     missionFilterLocation: "All",
     missionFilterDifficulty: "All",
+    missionFilterMoney: "All",
     missionType: "",
     company: "",
     mission: "",
@@ -1402,45 +1469,6 @@ function defaultProfile() {
   };
 }
 
-function normalizeLegacyProfilePayload(payload) {
-  if (!payload || typeof payload !== "object") return null;
-  const profile = payload.profile && typeof payload.profile === "object" ? payload.profile : payload;
-  return {
-    ...defaultProfile(),
-    ...profile,
-    owned: Array.isArray(profile.owned) ? profile.owned : [],
-    logs: Array.isArray(profile.logs) ? profile.logs : [],
-  };
-}
-
-function migrateLegacyStorageIfNeeded() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if (!raw || raw === "default" || raw.startsWith("user-")) return;
-  let parsed;
-  try {
-    parsed = JSON.parse(raw);
-  } catch {
-    return;
-  }
-  const normalized = normalizeLegacyProfilePayload(parsed);
-  if (!normalized) return;
-  const userId = typeof parsed?.currentUserId === "string" && parsed.currentUserId.trim() ? parsed.currentUserId.trim() : "default";
-  const existingUsersRaw = localStorage.getItem(USERS_KEY);
-  if (!existingUsersRaw) {
-    localStorage.setItem(USERS_KEY, JSON.stringify([{ id: userId, name: "Default" }]));
-  }
-  if (!localStorage.getItem(profileKey(userId))) {
-    localStorage.setItem(profileKey(userId), JSON.stringify(normalized));
-  }
-  localStorage.setItem(STORAGE_KEY, userId);
-  if (typeof parsed?.watch === "string" && parsed.watch.trim()) {
-    localStorage.setItem(WATCH_KEY, parsed.watch.trim());
-  }
-  if (typeof parsed?.scminersDbManifestUrl === "string" && parsed.scminersDbManifestUrl.trim()) {
-    localStorage.setItem(SCMINERSDB_MANIFEST_URL_KEY, parsed.scminersDbManifestUrl.trim());
-  }
-}
-
 function loadUsers() {
   try {
     const parsed = JSON.parse(localStorage.getItem(USERS_KEY) || "null");
@@ -1464,7 +1492,7 @@ function loadProfile(userId) {
   state.owned = new Set((parsed.owned || ownedSeed).map(norm));
   state.logs = parsed.logs || [];
   state.view = parsed.view || "dashboard";
-  if (state.view === "missions") state.view = "dashboard";
+  if (state.view === "missions" || state.view === "buy-items") state.view = "dashboard";
   state.collectionMode = parsed.collectionMode || parsed.view || "owned";
   state.search = parsed.search || "";
   state.blueprintSearch = parsed.blueprintSearch || "";
@@ -1475,6 +1503,7 @@ function loadProfile(userId) {
   state.missionFilterReputation = parsed.missionFilterReputation || "All";
   state.missionFilterLocation = parsed.missionFilterLocation || "All";
   state.missionFilterDifficulty = parsed.missionFilterDifficulty || "All";
+  state.missionFilterMoney = parsed.missionFilterMoney || "All";
   state.chip = parsed.chip || "All";
   state.missionType = parsed.missionType || "";
   state.company = parsed.company || "";
@@ -1515,11 +1544,12 @@ function saveProfile(userId = state.currentUserId) {
       blueprintSearch: state.blueprintSearch,
       missionSearch: state.missionSearch,
       missionScriptOnly: state.missionScriptOnly,
-      missionFilterType: state.missionFilterType,
+       missionFilterType: state.missionFilterType,
       missionFilterPoints: state.missionFilterPoints,
       missionFilterReputation: state.missionFilterReputation,
       missionFilterLocation: state.missionFilterLocation,
       missionFilterDifficulty: state.missionFilterDifficulty,
+      missionFilterMoney: state.missionFilterMoney,
       chip: state.chip,
       missionType: state.missionType,
       company: state.company,
@@ -1575,6 +1605,33 @@ function promptForUserName() {
   return name.trim() || fallback;
 }
 
+function renameCurrentUser() {
+  const user = currentUser();
+  if (!user) return;
+
+  const nextNameRaw = prompt("Rename selected user:", user.name || "");
+  if (nextNameRaw === null) return;
+
+  const nextName = cleanDisplayText(nextNameRaw).trim();
+  if (!nextName) {
+    alert("User name cannot be empty.");
+    return;
+  }
+
+  const duplicate = state.users.find(
+    (entry) => entry.id !== user.id && String(entry.name || "").toLowerCase() === nextName.toLowerCase(),
+  );
+
+  if (duplicate) {
+    alert(`A user named "${nextName}" already exists.`);
+    return;
+  }
+
+  user.name = nextName;
+  saveUsers();
+  renderAll();
+  saveState();
+}
 function deleteCurrentUser() {
   if (state.users.length <= 1) return;
   const user = currentUser();
@@ -1588,9 +1645,14 @@ function deleteCurrentUser() {
 }
 
 async function loadBlueprintData() {
-  if (window.BLUEPRINT_EXPLORER_DATA) return window.BLUEPRINT_EXPLORER_DATA;
+  if (window.BLUEPRINT_EXPLORER_DATA) {
+    return {
+      ...window.BLUEPRINT_EXPLORER_DATA,
+      items: syntheticDismantleItems(window.BLUEPRINT_EXPLORER_DATA.items || []),
+    };
+  }
   const bridgeBlueprints = scminersDbExportRecords("blueprint_catalog.json");
-  if (bridgeBlueprints.length) return { items: bridgeBlueprints };
+  if (bridgeBlueprints.length) return { items: syntheticDismantleItems(bridgeBlueprints) };
   throw new Error("Local blueprint data was not loaded. Make sure blueprint_explorer_data.js is next to index.html.");
 }
 
@@ -1598,52 +1660,103 @@ function hasBuyDataScriptsLoaded() {
   return Boolean(window.BUY_ITEMS_DATA || window.BUY_ITEMS_DATA_PARTS);
 }
 
-function loadScriptTag(src) {
-  return new Promise((resolve, reject) => {
-    const existing = document.querySelector(`script[data-buy-src="${src}"]`);
-    if (existing?.dataset.loaded === "true") {
-      resolve();
-      return;
-    }
-    if (existing) {
-      existing.addEventListener("load", () => resolve(), { once: true });
-      existing.addEventListener("error", () => reject(new Error(`Failed to load ${src}`)), { once: true });
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = src;
-    script.defer = true;
-    script.dataset.buySrc = src;
-    script.addEventListener(
-      "load",
-      () => {
-        script.dataset.loaded = "true";
-        resolve();
-      },
-      { once: true },
-    );
-    script.addEventListener("error", () => reject(new Error(`Failed to load ${src}`)), { once: true });
-    document.head.appendChild(script);
-  });
+function combineBuyDataParts() {
+  const parts = window.BUY_ITEMS_DATA_PARTS;
+  if (!parts || typeof parts !== "object") return null;
+  const merged = { items: [], ships: [], rentals: [] };
+  for (const value of Object.values(parts)) {
+    if (!value || typeof value !== "object") continue;
+    if (Array.isArray(value.items)) merged.items.push(...value.items);
+    if (Array.isArray(value.ships)) merged.ships.push(...value.ships);
+    if (Array.isArray(value.rentals)) merged.rentals.push(...value.rentals);
+  }
+  if (!merged.items.length && !merged.ships.length && !merged.rentals.length) return null;
+  window.BUY_ITEMS_DATA = merged;
+  return merged;
 }
 
 function ensureBuyDataScriptsLoaded() {
   if (hasBuyDataScriptsLoaded()) return Promise.resolve();
   if (buyDataScriptsLoadPromise) return buyDataScriptsLoadPromise;
-  buyDataScriptsLoadPromise = loadScriptTag(BUY_DATA_PRIMARY_SCRIPT_URL)
-    .then(async () => {
-      if (window.BUY_ITEMS_DATA) return;
-      await Promise.all(BUY_DATA_FALLBACK_SCRIPT_URLS.map((src) => loadScriptTag(src)));
-    })
-    .finally(() => {
-      buyDataScriptsLoadPromise = null;
-    });
+  buyDataScriptsLoadPromise = new Promise((resolve, reject) => {
+    try {
+      if (typeof Worker === "undefined") throw new Error("Worker support unavailable");
+      if (buyDataWorker) {
+        try {
+          buyDataWorker.terminate();
+        } catch {
+          // ignore
+        }
+        buyDataWorker = null;
+      }
+
+      const workerSource = `
+        self.window = self;
+        const mergeParts = () => {
+          const parts = self.BUY_ITEMS_DATA_PARTS || {};
+          const merged = { items: [], ships: [], rentals: [] };
+          for (const value of Object.values(parts)) {
+            if (!value || typeof value !== "object") continue;
+            if (Array.isArray(value.items)) merged.items.push(...value.items);
+            if (Array.isArray(value.ships)) merged.ships.push(...value.ships);
+            if (Array.isArray(value.rentals)) merged.rentals.push(...value.rentals);
+          }
+          return merged;
+        };
+        self.onmessage = async (event) => {
+          try {
+            const urls = Array.isArray(event?.data?.urls) ? event.data.urls : [];
+            for (const src of urls) {
+              importScripts(src);
+            }
+            const data = self.BUY_ITEMS_DATA || mergeParts();
+            self.postMessage({ ok: true, data });
+          } catch (error) {
+            self.postMessage({ ok: false, error: String(error?.message || error) });
+          }
+        };
+      `;
+      const workerUrl = URL.createObjectURL(new Blob([workerSource], { type: "text/javascript" }));
+      buyDataWorker = new Worker(workerUrl);
+      URL.revokeObjectURL(workerUrl);
+      buyDataWorker.onmessage = (event) => {
+        const payload = event?.data || {};
+        if (!payload.ok) {
+          reject(new Error(payload.error || "Failed to load buy data"));
+          return;
+        }
+        if (payload.data && typeof payload.data === "object") {
+          window.BUY_ITEMS_DATA = payload.data;
+        }
+        if (!window.BUY_ITEMS_DATA && window.BUY_ITEMS_DATA_PARTS) {
+          combineBuyDataParts();
+        }
+        resolve();
+      };
+      buyDataWorker.onerror = (error) => {
+        reject(new Error(error?.message || "Failed to load buy data"));
+      };
+      buyDataWorker.postMessage({ urls: BUY_DATA_SCRIPT_URLS.map((src) => new URL(src, window.location.href).href) });
+    } catch (error) {
+      reject(error);
+    }
+  }).finally(() => {
+    if (buyDataWorker) {
+      try {
+        buyDataWorker.terminate();
+      } catch {
+        // ignore
+      }
+      buyDataWorker = null;
+    }
+    buyDataScriptsLoadPromise = null;
+  });
   return buyDataScriptsLoadPromise;
 }
 
 async function bootstrapDataPipeline({ render = true } = {}) {
   state.buyDataStatus = "Loading buy data...";
-  const buyData = await loadBuyData();
+  const buyData = await loadBuyData({ render });
   state.buyData = {
     items: Array.isArray(buyData?.items) ? buyData.items : [],
     ships: Array.isArray(buyData?.ships) ? buyData.ships : [],
@@ -1673,9 +1786,6 @@ async function bootstrapAppData() {
   state.data = blueprintData;
   state.appReady = true;
   renderAll();
-  if (state.view === "buy-items") {
-    void ensureBuyDataReady({ render: true });
-  }
 }
 
 function structuredExportRecords(payload) {
@@ -1693,9 +1803,14 @@ function scminersDbFileNameKey(fileName) {
   return String(fileName || "").trim();
 }
 
+function bundledDismantleReturnsPayload() {
+  return Array.isArray(window.SCMINERSDB_DISMANTLE_RETURNS) ? window.SCMINERSDB_DISMANTLE_RETURNS : [];
+}
+
 function scminersDbExportRecords(fileName) {
   const key = scminersDbFileNameKey(fileName);
   if (!key) return [];
+  const bundled = state.scminersDb?.source === "bundled" || currentScminersDbManifestUrl().startsWith("bundled://");
   const legacyKey = cleanDisplayText(key);
   const payload =
     state.scminersDb?.exports?.[key] ||
@@ -1703,7 +1818,7 @@ function scminersDbExportRecords(fileName) {
     state.scminersDb?.exports?.[legacyKey] ||
     state.scminersDb?.exports?.[legacyKey.replace(/\.json$/i, "")] ||
     null;
-  if (!payload && state.scminersDb?.available && state.scminersDb?.source !== "bundled") void loadScminersDbExport(key);
+  if (!payload && state.scminersDb?.available && !bundled) void loadScminersDbExport(key);
   return structuredExportRecords(payload);
 }
 
@@ -1718,9 +1833,6 @@ function scminersDbExportUrl(fileName) {
   if (!key) return "";
   const manifestUrl = currentScminersDbManifestUrl();
   const fileIndex = state.scminersDb?.fileIndex || {};
-  if (manifestUrl.includes("/api/scminersdb/manifest")) {
-    return `/api/scminersdb/json/${encodeURIComponent(key)}`;
-  }
   return fileIndex[key] || fileIndex[key.toLowerCase()] || resolveScminersDbAssetUrl(manifestUrl, `../json/${key}`);
 }
 
@@ -1734,7 +1846,13 @@ function scminersDbManifestEntries(manifest) {
 async function loadScminersDbExport(fileName) {
   const normalized = scminersDbExportFileName(fileName);
   if (!normalized || typeof fetch !== "function") return null;
-  if (state.scminersDb?.source === "bundled") return null;
+  if (state.scminersDb?.source === "bundled" || currentScminersDbManifestUrl().startsWith("bundled://")) {
+    return (
+      state.scminersDb?.exports?.[normalized] ||
+      state.scminersDb?.exports?.[normalized.replace(/\.json$/i, "")] ||
+      null
+    );
+  }
   if (state.scminersDb?.exports?.[normalized]) return state.scminersDb.exports[normalized];
   if (state.scminersDbExportPromises?.has(normalized)) return state.scminersDbExportPromises.get(normalized);
   if (!state.scminersDbExportPromises) state.scminersDbExportPromises = new Map();
@@ -1759,75 +1877,53 @@ function summarizeScminersDbManifest(manifest) {
   if (!manifest || typeof manifest !== "object") return "";
   const parts = [];
   const status = cleanDisplayText(manifest.status || "");
-  const count = Number(manifest.json_count || 0);
+  const exportCount = Number(manifest.json_count || 0);
+  const recordCount = Number(manifest.record_count || 0);
   const source = cleanDisplayText(manifest.source_root || "");
   const output = cleanDisplayText(manifest.output_root || "");
   if (status) parts.push(status);
-  if (count) parts.push(`${formatCount(count)} exports`);
+  if (exportCount) parts.push(`${formatCount(exportCount)} exports`);
+  if (recordCount) parts.push(`${formatCount(recordCount)} records`);
   if (source) parts.push(`source ${source}`);
+  else parts.push("source sc-items public data");
   if (output) parts.push(`data ${output}`);
-  return parts.join(" · ");
+  return parts.join(" | ");
 }
 
-async function loadScminersDbBridge() {
-  if (bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
+async function loadScminersDbBridge(options = {}) {
+  const forceManifest = Boolean(options?.forceManifest);
+  if (!forceManifest && bundledScminersDbPayload() && state.scminersDb?.source === "bundled") return state.scminersDb;
   if (typeof fetch !== "function") return null;
-  try {
-    const sources = ["/api/scminersdb/manifest", currentScminersDbManifestUrl()];
-    let manifest = null;
-    let manifestUrl = "";
-    let lastError = null;
-    for (const source of sources) {
-      try {
-        manifest = await fetchJson(source);
-        manifestUrl = source;
-        break;
-      } catch (error) {
-        lastError = error;
-      }
-    }
-    if (!manifest) throw lastError || new Error("SCMinersDB manifest not available");
 
-    const isLegacyApiManifest = manifestUrl.includes("/api/scminersdb/manifest");
-    let files = scminersDbManifestEntries(manifest).map((entry) => {
+  const manifestUrl = currentScminersDbManifestUrl();
+
+  try {
+    const manifest = await fetchJson(manifestUrl);
+    if (!manifest) throw new Error("SCMinersDB manifest not available");
+
+    const files = scminersDbManifestEntries(manifest).map((entry) => {
       const file = scminersDbExportFileName(entry?.file || entry?.name || entry?.category || entry?.path || entry?.url);
       return {
         ...entry,
         file,
-        url: isLegacyApiManifest
-          ? `/api/scminersdb/json/${encodeURIComponent(file)}`
-          : resolveScminersDbAssetUrl(manifestUrl, entry?.url || entry?.path || `../json/${file}`),
+        url: resolveScminersDbAssetUrl(manifestUrl, entry?.url || entry?.path || `../json/${file}`),
       };
     }).filter((entry) => entry.file);
 
-    if (!files.length && isLegacyApiManifest) {
-      try {
-        const legacyFilesPayload = await fetchJson("/api/scminersdb/files");
-        const legacyFiles = Array.isArray(legacyFilesPayload?.files) ? legacyFilesPayload.files : [];
-        files = legacyFiles.map((entry) => {
-          const file = scminersDbExportFileName(entry?.name || entry?.file || entry?.path || entry?.url);
-          return {
-            ...entry,
-            file,
-            url: `/api/scminersdb/json/${encodeURIComponent(file)}`,
-          };
-        }).filter((entry) => entry.file);
-      } catch {
-        // keep going with whatever the manifest provided
-      }
-    }
-
     const exportsByFile = {};
     const fileIndex = {};
+
     for (const file of files) {
       fileIndex[file.file] = file.url;
       fileIndex[file.file.toLowerCase()] = file.url;
       fileIndex[cleanDisplayText(file.file).toLowerCase()] = file.url;
       if (file.category) fileIndex[cleanDisplayText(file.category).toLowerCase()] = file.url;
     }
+
     const existingExports = state.scminersDb?.exports || {};
     state.scminersDb = {
       available: true,
+      source: "manifest",
       manifestUrl,
       manifest,
       files,
@@ -1837,18 +1933,29 @@ async function loadScminersDbBridge() {
       status: "Loading SCMinersDB exports...",
       lastLoaded: new Date().toISOString(),
     };
+
     window.SC_MINERS_DB = state.scminersDb;
     if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
-    const jsonFiles = files.map((file) => file.file).filter((name) => name && name.toLowerCase().endsWith(".json"));
-    const loadedExports = await Promise.all(jsonFiles.map(async (name) => [name, await loadScminersDbExport(name)]));
+
+    const jsonFiles = files
+      .map((file) => file.file)
+      .filter((name) => name && name.toLowerCase().endsWith(".json"));
+
+    const loadedExports = await Promise.all(
+      jsonFiles.map(async (name) => [name, await loadScminersDbExport(name)])
+    );
+
     for (const [name, payload] of loadedExports) {
       exportsByFile[name] = payload;
     }
+
     const signature = files.map((file) => `${file.file}:${file.record_count || file.size || ""}`).join("|");
     const previousSignature = state.scminersDb?.signature || "";
     const changed = signature !== previousSignature;
+
     state.scminersDb = {
       available: true,
+      source: "manifest",
       manifestUrl,
       manifest,
       files,
@@ -1858,8 +1965,10 @@ async function loadScminersDbBridge() {
       status: summarizeScminersDbManifest(manifest) || `Loaded ${formatCount(files.length)} export files`,
       lastLoaded: new Date().toISOString(),
     };
+
     window.SC_MINERS_DB = state.scminersDb;
     if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
+
     if (state.appReady && changed) {
       try {
         state.data = await loadBlueprintData();
@@ -1869,20 +1978,24 @@ async function loadScminersDbBridge() {
         console.warn("SCMinersDB sync refresh skipped:", error);
       }
     }
+
     return state.scminersDb;
   } catch (error) {
     if (bundledScminersDbPayload()) {
       const bundled = useBundledScminersDbData();
       if (bundled) return bundled;
     }
+
     state.scminersDb = {
       available: false,
-      manifestUrl: currentScminersDbManifestUrl(),
+      source: "manifest",
+      manifestUrl,
       files: [],
       exports: {},
       fileIndex: {},
-      status: `SCMinersDB bridge unavailable: ${cleanDisplayText(error?.message || error)}`,
+      status: `SCMinersDB manifest unavailable: ${cleanDisplayText(error?.message || error)}`,
     };
+
     window.SC_MINERS_DB = state.scminersDb;
     if (window.SC_ITEMS_API) window.SC_ITEMS_API.scminersDb = state.scminersDb;
     return null;
@@ -1898,39 +2011,11 @@ async function updateScminersDb() {
     button.textContent = "Updating...";
   }
   try {
-    const sourceRoot = await ensureScminersDbSourceRoot();
-    const response = await fetch("/api/scminersdb/update", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        sourceRoot,
-        manifestUrl: currentScminersDbManifestUrl(),
-      }),
-    });
-    const payload = await response.json().catch(() => ({}));
-    if (!response.ok) {
-      throw new Error(cleanDisplayText(payload?.message || payload?.error || `HTTP ${response.status}`));
-    }
-    if (payload?.config) {
-      state.scminersDbBridgeConfig = {
-        available: true,
-        sourceRoot: cleanDisplayText(payload.config.sourceRoot || ""),
-        sourceRootExists: Boolean(payload.config.sourceRootExists),
-        sourceRootHasDataP4k: Boolean(payload.config.sourceRootHasDataP4k),
-        workspaceRoot: cleanDisplayText(payload.config.workspaceRoot || ""),
-        workspaceReady: Boolean(payload.config.workspaceReady),
-        exportRoot: cleanDisplayText(payload.config.exportRoot || ""),
-        manifestUrl: cleanDisplayText(payload.config.manifestUrl || ""),
-      };
-    }
-    await loadScminersDbBridge();
+    await loadScminersDbBridge({ forceManifest: true });
     state.data = await loadBlueprintData();
     state.buyData = await loadBuyData();
     renderAll();
-    return {
-      ...state.scminersDb,
-      updated: payload?.updated || null,
-    };
+    return state.scminersDb;
   } finally {
     if (button) {
       button.disabled = false;
@@ -2024,7 +2109,7 @@ function scminersDbEntrySummary(entry) {
   if (raw.Category) summaryBits.push(cleanDisplayText(raw.Category));
   if (raw.Icon) summaryBits.push(cleanDisplayText(raw.Icon));
   if (entry?.category) summaryBits.push(cleanDisplayText(entry.category));
-  return summaryBits.filter(Boolean).join(" · ");
+  return summaryBits.filter(Boolean).join(" | ");
 }
 
 function scheduleScminersDbRefresh() {
@@ -2035,28 +2120,33 @@ function scheduleScminersDbRefresh() {
   }, 30000);
 }
 
-async function loadBuyData() {
+async function loadBuyData({ render = true } = {}) {
   await ensureBuyDataScriptsLoaded();
   const baseData = window.BUY_ITEMS_DATA || { items: [], ships: [], rentals: [] };
-  if (Array.isArray(baseData.items) && baseData.items.length) {
-    const items = baseData.items.filter((entry) => !isMalformedBuyEntry(entry));
-    const ships = Array.isArray(baseData.ships) ? baseData.ships.filter((entry) => !isMalformedBuyEntry(entry)) : [];
-    const rentals = Array.isArray(baseData.rentals) ? baseData.rentals.filter((entry) => !isMalformedBuyEntry(entry)) : [];
-    const processedData = { items, ships, rentals };
-    window.shipByName = new Map(ships.map((entry) => [norm(entry?.name), entry]));
-    state.buyData = processedData;
-    state.buyDataStatus = `Loaded ${formatCount(items.length + ships.length + rentals.length)} buy records`;
-    if (state.appReady && typeof renderAll === "function") renderAll();
-    return processedData;
+  const baseItems = Array.isArray(baseData.items) ? baseData.items : [];
+  const baseShips = Array.isArray(baseData.ships) ? baseData.ships : [];
+  const baseRentals = Array.isArray(baseData.rentals) ? baseData.rentals : [];
+  if (baseItems.length || baseShips.length || baseRentals.length) {
+    const directData = {
+      items: baseItems,
+      ships: baseShips,
+      rentals: baseRentals,
+    };
+    state.buyData = directData;
+    state.buyDataStatus = `Loaded ${formatCount(baseItems.length + baseShips.length + baseRentals.length)} buy records`;
+    window.shipByName = new Map(baseShips.map((entry) => [norm(entry?.name), entry]));
+    if (render && state.appReady && typeof renderAll === "function") renderAll();
+    return directData;
   }
+
   const partsData = window.BUY_ITEMS_DATA_PARTS || {};
-  const bridgeItems = Array.isArray(baseData.items) && baseData.items.length ? [] : scminersDbExportRecords("item_catalog.json");
-  const bridgeShips = Array.isArray(baseData.ships) && baseData.ships.length ? [] : scminersDbExportRecords("ship_catalog.json");
-  const bridgeRentals = Array.isArray(baseData.rentals) && baseData.rentals.length ? [] : scminersDbExportRecords("rentals.json");
+  const bridgeItems = scminersDbExportRecords("item_catalog.json");
+  const bridgeShips = scminersDbExportRecords("ship_catalog.json");
+  const bridgeRentals = scminersDbExportRecords("rentals.json");
 
   const updateProgress = (done, total) => {
     state.buyDataStatus = total ? `Loading buy data ${formatCount(done)} / ${formatCount(total)}...` : "Loading buy data...";
-    scheduleBuyLoadingRender();
+    if (render) scheduleBuyLoadingRender();
   };
 
   const normalizeDataset = async (source, mapper = normalizeRecord) => {
@@ -2080,7 +2170,7 @@ async function loadBuyData() {
     onProgress: updateProgress,
   });
 
-  const items = await normalizeDataset(itemsMerged);
+  const items = syntheticDismantleItems(await normalizeDataset(itemsMerged));
   const ships = await normalizeDataset(shipsMerged);
   const shipByName = new Map(ships.map((entry) => [norm(entry?.name), entry]));
   window.shipByName = shipByName;
@@ -2097,7 +2187,7 @@ async function loadBuyData() {
     clearTimeout(buyDataProgressRenderTimer);
     buyDataProgressRenderTimer = null;
   }
-  if (state.appReady && typeof renderAll === "function") renderAll();
+  if (render && state.appReady && typeof renderAll === "function") renderAll();
   return processedData;
 }
 
@@ -2213,9 +2303,16 @@ function buyEntryOffers(entry) {
 }
 
 function offerOrbit(offer) {
-  const localOrbit = window.SC_ITEMS_API?.resolveOrbit?.(offer);
-  if (localOrbit && norm(localOrbit) !== "other") return cleanDisplayText(localOrbit);
-  const orbit = cleanDisplayText(offer?.orbit || offer?.planet || offer?.body || "");
+  const fields = buyOfferFields(offer);
+  const orbit = cleanDisplayText(
+    fields?.orbit ||
+      offer?.orbit ||
+      offer?.planet ||
+      offer?.body ||
+      orbitFromArea(offerSystem(offer), offerArea(offer)) ||
+      cleanDisplayText(window.SC_ITEMS_API?.resolveOrbit?.(offer) || "") ||
+      "",
+  );
   return orbit && norm(orbit) !== "other" ? orbit : "";
 }
 
@@ -2331,20 +2428,6 @@ function buyEntryMetadataValue(entry, label) {
     }
   }
   return "";
-}
-
-function buyEntryLooksInternalOnly(entry, tab = state.buyTab) {
-  if (!entry || tab !== "items") return false;
-  const name = cleanDisplayText(buyEntryName(entry, tab));
-  const className = buyEntryMetadataValue(entry, "Class name");
-  const type = norm(buyEntryType(entry, tab));
-  const subtype = norm(buyEntrySubtype(entry, tab));
-  const hasLocations = buyEntryOffers(entry).length > 0;
-  if (hasLocations && !/^entityclassdefinition\./i.test(name)) return false;
-  const rawInternalName = /^entityclassdefinition\./i.test(name);
-  const templateLike = /\b(template|fusebox|crate)\b/i.test(name) || /\b(template|fusebox|crate)\b/i.test(className);
-  const unknownMeta = type === "unknown" && subtype === "unknown";
-  return !hasLocations && (rawInternalName || (templateLike && unknownMeta));
 }
 
 function wikiItemSlug(name) {
@@ -2518,10 +2601,11 @@ function buyOfferAllowedForTab(offer, tab = state.buyTab) {
 }
 
 function buyOfferDisplayLocation(offer) {
-  const path = cleanDisplayText(offerLocationPath(offer));
-  const name = cleanDisplayText(offerLocationName(offer));
+  const fields = buyOfferFields(offer);
+  const path = cleanDisplayText(fields?.locationPath || offerLocationPath(offer));
+  const name = cleanDisplayText(fields?.locationName || offerLocationName(offer));
   if (path && name && norm(path) !== norm(name)) return path;
-  return path || name || cleanDisplayText(offerArea(offer)) || "";
+  return path || name || cleanDisplayText(fields?.area || offerArea(offer)) || "";
 }
 
 function isKnownBuyOrbit(value) {
@@ -2545,14 +2629,15 @@ function isKnownBuyLocation(value) {
 function buyOfferMatches(offer, system, orbit, location, tab = state.buyTab) {
   if (!offer) return false;
   if (!buyOfferAllowedForTab(offer, tab)) return false;
-  if (system !== "All" && offerSystem(offer) !== system) return false;
-  if (orbit !== "All" && offerOrbit(offer) !== orbit) return false;
+  const fields = buyOfferFields(offer);
+  if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) return false;
+  if (orbit !== "All" && (fields?.orbit || offerOrbit(offer)) !== orbit) return false;
   if (location !== "All") {
     const selected = norm(location);
     const candidates = [
-      offerLocationName(offer),
-      offerLocationPath(offer),
-      offerArea(offer),
+      fields?.locationName || offerLocationName(offer),
+      fields?.locationPath || offerLocationPath(offer),
+      fields?.area || offerArea(offer),
       offer?.location,
       offer?.locationPath,
       offer?.locationLabel,
@@ -2578,8 +2663,9 @@ function buyOrbits(system = state.buySystem, tab = state.buyTab) {
   for (const entry of buyEntriesForTab()) {
     for (const offer of buyEntryOffers(entry)) {
       if (!buyOfferAllowedForTab(offer, tab)) continue;
-      if (system !== "All" && offerSystem(offer) !== system) continue;
-      const value = offerOrbit(offer);
+      const fields = buyOfferFields(offer);
+      if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) continue;
+      const value = fields?.orbit || offerOrbit(offer);
       if (value && norm(value) !== "other") values.add(value);
     }
   }
@@ -2591,12 +2677,15 @@ function buyAreas(system = state.buySystem, orbit = state.buyOrbit, tab = state.
   for (const entry of buyEntriesForTab()) {
     for (const offer of buyEntryOffers(entry)) {
       if (!buyOfferAllowedForTab(offer, tab)) continue;
-      if (system !== "All" && offerSystem(offer) !== system) continue;
-      if (orbit !== "All" && offerOrbit(offer) !== orbit) continue;
+      const fields = buyOfferFields(offer);
+      if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) continue;
+      if (orbit !== "All" && (fields?.orbit || offerOrbit(offer)) !== orbit) continue;
       const label =
         cleanDisplayText(
-          buyOfferDisplayLocation(offer) ||
+          fields?.locationPath ||
+            buyOfferDisplayLocation(offer) ||
             lastMeaningfulShop(splitBuySegments(offerLocationPath(offer))) ||
+            fields?.area ||
             offerArea(offer) ||
             "",
         );
@@ -2658,10 +2747,11 @@ function buyLocations(system = state.buySystem, orbit = state.buyOrbit, area = s
   for (const entry of buyEntriesForTab()) {
     for (const offer of buyEntryOffers(entry)) {
       if (!buyOfferAllowedForTab(offer, tab)) continue;
-      if (system !== "All" && offerSystem(offer) !== system) continue;
-      if (orbit !== "All" && offerOrbit(offer) !== orbit) continue;
-      if (area !== "All" && offerArea(offer) !== area) continue;
-      const location = buyOfferDisplayLocation(offer);
+      const fields = buyOfferFields(offer);
+      if (system !== "All" && (fields?.system || offerSystem(offer)) !== system) continue;
+      if (orbit !== "All" && (fields?.orbit || offerOrbit(offer)) !== orbit) continue;
+      if (area !== "All" && (fields?.area || offerArea(offer)) !== area) continue;
+      const location = fields?.locationPath || buyOfferDisplayLocation(offer);
       if (!location || norm(location) === "other") continue;
       if (isKnownBuyOrbit(location) || isKnownBuyArea(location)) continue;
       if (!buyIsBusinessLabel(location) && isGenericBuyShopLabel(location)) continue;
@@ -2790,7 +2880,6 @@ function filteredBuyEntries() {
   const query = norm(state.buySearch);
   return buyEntriesForTab()
     .filter((entry) => {
-      if (buyEntryLooksInternalOnly(entry)) return false;
       if (state.buyTab === "items" && state.buyItemCategory !== "All" && buyItemCategory(entry) !== state.buyItemCategory) return false;
       if (state.buyType !== "All" && buyEntryType(entry) !== state.buyType) return false;
       if (state.buySubtype !== "All" && buyEntrySubtype(entry) !== state.buySubtype) return false;
@@ -2808,7 +2897,7 @@ function filteredBuyEntries() {
       const offers = buyEntryOffers(entry);
       if (offers.length) {
         if (!offers.some((offer) => buyOfferMatches(offer, state.buySystem, state.buyOrbit, state.buyArea, state.buyTab))) return false;
-      } else if (state.buySystem !== "All" || state.buyOrbit !== "All" || state.buyArea !== "All") {
+      } else if (!entry?.synthetic && (state.buySystem !== "All" || state.buyOrbit !== "All" || state.buyArea !== "All")) {
         return false;
       }
       if (!query) return true;
@@ -2847,7 +2936,6 @@ function selectBuyEntry(entry) {
 }
 
 function loadState() {
-  migrateLegacyStorageIfNeeded();
   loadUsers();
   const savedUserId = localStorage.getItem(STORAGE_KEY) || state.users[0].id;
   state.currentUserId = state.users.some((user) => user.id === savedUserId) ? savedUserId : state.users[0].id;
@@ -2917,7 +3005,12 @@ function isOwned(itemName) {
 }
 
 function missionDisplayTitle(value) {
-  return cleanDisplayText(value || "");
+  return cleanDisplayText(value || "")
+    .replace(/\[[^\]]+\]/g, " ")
+    .replace(/\bLOCATION\d+\b/gi, " ")
+    .replace(/\s+/g, " ")
+    .replace(/^\W+|\W+$/g, "")
+    .trim();
 }
 
 function missionTitle(m) {
@@ -3016,6 +3109,7 @@ function missionRecordKey(mission) {
 }
 
 function scminersDbMissionRecords() {
+  if (state.scminersDb?.source === "bundled" || currentScminersDbManifestUrl().startsWith("bundled://")) return scminersDbExportRecords("missions.json");
   const appReady = scminersDbExportRecords("missions_app_ready.json");
   if (appReady.length) return appReady;
   const playerReady = scminersDbExportRecords("mission_catalog_player_ready.json");
@@ -3065,19 +3159,64 @@ function scminersDbMissionUsesAppReady(entry) {
 function scminersDbRewardMoney(entry) {
   if (!entry) return 0;
   const rewards = entry.rewards || {};
-  return firstFiniteNumber(
+
+  const direct = firstFiniteNumber(
     entry.auec_amount,
+    entry.auecAmount,
+    entry.uec_amount,
+    entry.uecAmount,
     entry.money_reward,
     entry.moneyReward,
+    entry.cash_reward,
+    entry.cashReward,
+    entry.payout,
+    entry.reward_value,
+    entry.rewardValue,
+    entry.rewardAmount,
+    entry.amount,
+    entry.value,
     rewards.auec_amount,
+    rewards.auecAmount,
+    rewards.uec_amount,
+    rewards.uecAmount,
     rewards.money_reward,
     rewards.moneyReward,
+    rewards.cash_reward,
+    rewards.cashReward,
     rewards.auec,
     rewards.uec,
     rewards.payout,
     rewards.reward_value,
+    rewards.rewardValue,
     rewards.rewardAmount,
-  ) || 0;
+    rewards.amount,
+    rewards.value,
+  );
+
+  if (direct !== null && direct > 0) return direct;
+
+  const text = [
+    entry.reward_summary,
+    entry.rewardSummary,
+    entry.description,
+    entry.text,
+    rewards.reward_summary,
+    rewards.rewardSummary,
+    rewards.description,
+    rewards.text,
+    JSON.stringify(rewards),
+  ]
+    .map((value) => cleanDisplayText(value))
+    .filter(Boolean)
+    .join(" ");
+
+  const match = text.match(/\b(\d[\d,]*)\s*(?:auec|uec|credits?)\b/i);
+  if (match) {
+    const total = Number(match[1].replace(/,/g, ""));
+    if (Number.isFinite(total) && total > 0) return total;
+  }
+
+  return 0;
 }
 
 function scminersDbRewardScript(entry) {
@@ -3120,7 +3259,7 @@ function scminersDbPrereqSummary(entry) {
     if (location) blockParts.push(location);
     if (count) blockParts.push(`${count} missions`);
     if (mission) blockParts.push(mission);
-    if (blockParts.length) parts.push(blockParts.join(" · "));
+    if (blockParts.length) parts.push(blockParts.join(" | "));
   }
 
   const fallbackBits = [
@@ -3132,7 +3271,7 @@ function scminersDbPrereqSummary(entry) {
   ]
     .map((value) => cleanDisplayText(value))
     .filter(Boolean);
-  if (!parts.length && fallbackBits.length) return fallbackBits.join(" · ");
+  if (!parts.length && fallbackBits.length) return fallbackBits.join(" | ");
   return parts.join(" | ");
 }
 
@@ -3146,6 +3285,7 @@ function ensureBlueprintCraftingCache() {
   const recipeByName = new Map();
   const recipeByResultPath = new Map();
   const dismantleBySourceId = new Map();
+  const dismantleBySourceName = new Map();
   const dismantleByResultPath = new Map();
 
   for (const recipe of recipes) {
@@ -3167,9 +3307,24 @@ function ensureBlueprintCraftingCache() {
     const sourceIds = [entry?.source_item?.item_id, entry?.source_item?.item_class_id, entry?.source_id]
       .map((value) => norm(value))
       .filter(Boolean);
+    const sourceNames = [
+      entry?.source_item?.item_name,
+      entry?.source_item?.item_record_name,
+      entry?.source_item?.name,
+      entry?.source_item?.label,
+      entry?.source_item?.display_name,
+      entry?.source_item?.item_class_name,
+      entry?.source_item?.class_name,
+    ]
+      .map((value) => norm(cleanDisplayText(value).replace(/^EntityClassDefinition\./i, "").replace(/_/g, " ")))
+      .filter(Boolean);
     for (const key of sourceIds) {
       if (!dismantleBySourceId.has(key)) dismantleBySourceId.set(key, []);
       dismantleBySourceId.get(key).push(entry);
+    }
+    for (const key of sourceNames) {
+      if (!dismantleBySourceName.has(key)) dismantleBySourceName.set(key, []);
+      dismantleBySourceName.get(key).push(entry);
     }
     for (const key of sourcePathLookupKeys(entry?.source_item_source_path || entry?.source_item?.source_path || "")) {
       if (!key) continue;
@@ -3184,6 +3339,7 @@ function ensureBlueprintCraftingCache() {
     recipeByName,
     recipeByResultPath,
     dismantleBySourceId,
+    dismantleBySourceName,
     dismantleByResultPath,
   };
   return blueprintCraftingCache;
@@ -3197,6 +3353,16 @@ function blueprintCraftingData(item) {
   const itemIdKeys = [item.id, item.uuid, buyEntryMetadataValue(item, "UUID")].map((value) => norm(value)).filter(Boolean);
   const itemClassNameKeys = sourcePathLookupKeys(buyEntryMetadataValue(item, "Class name"));
   const itemSourcePathKeys = sourcePathLookupKeys(item.source_path || item.sourcePath || item.item_info?.source_path || "");
+  const itemNameCandidates = [
+    item.name,
+    item.title,
+    item.item_name,
+    buyEntryMetadataValue(item, "Name"),
+    buyEntryMetadataValue(item, "Class name"),
+    item.record_name,
+  ]
+    .map((value) => norm(cleanDisplayText(value).replace(/^EntityClassDefinition\./i, "").replace(/_/g, " ")))
+    .filter(Boolean);
   const recipe =
     cache.recipeByBlueprint.get(blueprintKey) ||
     itemSourcePathKeys.map((key) => cache.recipeByResultPath.get(key)).find(Boolean) ||
@@ -3206,6 +3372,7 @@ function blueprintCraftingData(item) {
   const dismantles = [...new Map(
     [
       ...itemIdKeys.flatMap((key) => cache.dismantleBySourceId.get(key) || []),
+      ...itemNameCandidates.flatMap((key) => cache.dismantleBySourceName.get(key) || []),
       ...itemClassNameKeys.flatMap((key) => cache.dismantleByResultPath.get(key) || []),
       ...resultPathKeys.flatMap((key) => cache.dismantleByResultPath.get(key) || []),
     ]
@@ -3220,7 +3387,7 @@ function blueprintCraftingData(item) {
 function blueprintItemByName(name) {
   const itemNameKey = norm(String(name || "").replace(/_/g, " "));
   if (!itemNameKey) return null;
-  return missionItems().find((entry) => norm(String(entry?.name || "").replace(/_/g, " ")) === itemNameKey) || null;
+  return allItems().find((entry) => norm(String(entry?.name || "").replace(/_/g, " ")) === itemNameKey) || null;
 }
 
 function craftingIngredientRows(item, recipe) {
@@ -3238,7 +3405,7 @@ function renderCraftingIngredientMarkup(item, recipe) {
       (entry) => `
         <div class="mission-line">
           <strong>${cleanDisplayText(entry.resource || entry.slot_name || entry.name || "Unknown material")}</strong>
-          <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} SCU${entry.minQuality !== undefined || entry.min_quality !== undefined ? ` · min quality ${formatCount(entry.minQuality ?? entry.min_quality ?? 0)}` : ""}</div>
+          <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} SCU${entry.minQuality !== undefined || entry.min_quality !== undefined ? ` | min quality ${formatCount(entry.minQuality ?? entry.min_quality ?? 0)}` : ""}</div>
         </div>
       `,
     )
@@ -3264,7 +3431,7 @@ function renderDismantleMarkup(dismantleEntries) {
       return `
         <div class="mission-line">
           <strong>${cleanDisplayText(entry?.dismantle_method || "Dismantle")}</strong>
-          <div class="muted">${totalReturned ? `${formatCount(totalReturned)} SCU returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
+          <div class="muted">${totalReturned ? `${formatCount(totalReturned)} SCU returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` | ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
           ${resultMarkup}
           ${hasNamedResults ? "" : `<div class="muted">SCMinersDB did not expose returned material names for this row.</div>`}
         </div>
@@ -3304,14 +3471,42 @@ function scminersDbEnsureMissionCache() {
     const keys = scminersDbRecordKeys(entry);
     const rewardEntry = keys.map((key) => rewardsByKey.get(key)).find(Boolean) || null;
     const prereqEntry = keys.map((key) => prereqsByKey.get(key)).find(Boolean) || null;
+    const structuredName = cleanDisplayText(entry.title || entry.name || entry.mission_id || "");
+    const structuredMissionId = cleanDisplayText(entry.mission_id || entry.name || "");
+    const structuredMissionType = cleanDisplayText(entry.mission_type || "");
+    const structuredFaction = cleanDisplayText(entry.mission_giver || entry.faction_company || entry.company_faction || "");
+    const structuredSourcePath = cleanDisplayText(entry.source_path || "");
+    const structuredSourceId = cleanDisplayText(entry.source_id || "");
+    const structuredDescription = cleanDisplayText(entry.description || "");
+    const structuredLocation = cleanDisplayText(entry.location || "");
+    const structuredTitle = cleanDisplayText(entry.title || "");
+    const structuredSearchText = [
+      structuredTitle,
+      structuredDescription,
+      entry.system,
+      entry.location,
+      structuredName,
+      structuredMissionId,
+      structuredMissionType,
+      structuredFaction,
+      structuredSourcePath,
+      structuredSourceId,
+      entry.name,
+      entry.mission_id,
+      entry.mission_type,
+      entry.faction_company,
+      entry.company_faction,
+    ]
+      .map((value) => cleanDisplayText(value).toLowerCase())
+      .join(" ");
     return {
       ...entry,
-      structuredName: cleanDisplayText(entry.title || entry.name || entry.mission_id || ""),
-      structuredMissionId: cleanDisplayText(entry.mission_id || entry.name || ""),
-      structuredMissionType: cleanDisplayText(entry.mission_type || ""),
-      structuredFaction: cleanDisplayText(entry.mission_giver || entry.faction_company || entry.company_faction || ""),
-      structuredSourcePath: cleanDisplayText(entry.source_path || ""),
-      structuredSourceId: cleanDisplayText(entry.source_id || ""),
+      structuredName,
+      structuredMissionId,
+      structuredMissionType,
+      structuredFaction,
+      structuredSourcePath,
+      structuredSourceId,
       structuredMoneyReward: usesAppReady ? firstFiniteNumber(entry.money_reward, entry.moneyReward) || 0 : scminersDbRewardMoney(rewardEntry),
       structuredScriptReward: usesAppReady ? firstFiniteNumber(entry.script_reward, entry.scriptReward) || 0 : scminersDbRewardScript(rewardEntry),
       structuredRewardCount: Number(rewardEntry?.reward_counts ? Object.values(rewardEntry.reward_counts).reduce((sum, value) => sum + (Number(value) || 0), 0) : 0) || 0,
@@ -3322,7 +3517,7 @@ function scminersDbEnsureMissionCache() {
           ? Object.entries(rewardEntry.rewards)
               .filter(([, value]) => value !== null && value !== undefined && value !== "")
               .map(([key, value]) => `${key}: ${cleanDisplayText(value)}`)
-              .join(" · ")
+              .join(" | ")
           : "",
       ),
       structuredPrereqSummary: cleanDisplayText(entry.required_rank || entry.required_mission_count || entry.required_missions?.length || entry.location || entry.system)
@@ -3332,12 +3527,12 @@ function scminersDbEnsureMissionCache() {
             Array.isArray(entry.required_missions) && entry.required_missions.length ? entry.required_missions.join(", ") : "",
             cleanDisplayText(entry.location || ""),
             cleanDisplayText(entry.system || ""),
-          ].filter(Boolean).join(" · ")
+          ].filter(Boolean).join(" | ")
         : scminersDbPrereqSummary(prereqEntry),
       structuredPrereqSource: cleanDisplayText(prereqEntry?.source_path || ""),
-      structuredTitle: cleanDisplayText(entry.title || ""),
-      structuredDescription: cleanDisplayText(entry.description || ""),
-      structuredLocation: cleanDisplayText(entry.location || ""),
+      structuredTitle,
+      structuredDescription,
+      structuredLocation,
       structuredLocationOptions: Array.isArray(entry.location_options) ? entry.location_options.map((value) => cleanDisplayText(value)).filter(Boolean) : [],
       structuredRequiredRank: cleanDisplayText(entry.required_rank || ""),
       structuredRequiredMissionCount: Number(entry.required_mission_count || 0) || 0,
@@ -3346,6 +3541,14 @@ function scminersDbEnsureMissionCache() {
       structuredSameSessionKnown: Boolean(entry.same_session_required_known),
       structuredSameSessionRequired: entry.same_session_required,
       structuredVariantKinds: Array.isArray(entry.variant_kinds) ? entry.variant_kinds.map((value) => cleanDisplayText(value)).filter(Boolean) : [],
+      structuredSearchText,
+      structuredSearchTokens: new Set(scminersDbTextTokens(structuredSearchText)),
+      structuredSearchExactTitle: norm(structuredName || entry.name || ""),
+      structuredSearchExactId: norm(structuredMissionId || entry.mission_id || ""),
+      structuredSearchType: norm(structuredMissionType || entry.mission_type || ""),
+      structuredSearchFaction: norm(structuredFaction || entry.faction_company || entry.company_faction || ""),
+      structuredSearchSystem: norm(entry.system || ""),
+      structuredSearchLocation: norm(structuredLocation || ""),
     };
   });
 
@@ -3354,50 +3557,53 @@ function scminersDbEnsureMissionCache() {
     entries: structuredEntries,
     rewardById: rewardsByKey,
     prereqById: prereqsByKey,
+    missionSearchIndex: new Map(),
+    missionMatchIndex: new Map(),
   };
   return scminersDbMissionCache;
 }
 
-function scminersDbMissionScore(mission, entry) {
-  if (!mission || !entry) return 0;
-  const missionTitleTokens = scminersDbTextTokens(missionTitle(mission));
-  const missionTypeTokens = scminersDbTextTokens(mission.type);
-  const missionFactionTokens = scminersDbTextTokens(mission.faction);
-  const missionLocationTokens = scminersDbTextTokens(missionLocation(mission));
-  const searchable = [
-    entry.title,
-    entry.description,
-    entry.system,
-    entry.location,
-    entry.structuredName,
-    entry.structuredMissionId,
-    entry.structuredMissionType,
-    entry.structuredFaction,
-    entry.structuredSourcePath,
-    entry.source_id,
-    entry.name,
-    entry.mission_id,
-    entry.mission_type,
-    entry.faction_company,
-    entry.company_faction,
-  ]
-    .map((value) => cleanDisplayText(value).toLowerCase())
-    .join(" ");
-  const entryTokens = new Set(scminersDbTextTokens(searchable));
+function scminersDbMissionSearchIndex(mission) {
+  if (!mission) return null;
+  const cache = scminersDbEnsureMissionCache();
+  const missionKey = missionRecordKey(mission);
+  if (cache.missionSearchIndex?.has(missionKey)) return cache.missionSearchIndex.get(missionKey);
+  const missionTitleValue = missionTitle(mission);
+  const missionTypeValue = mission.type;
+  const missionFactionValue = mission.faction;
+  const missionLocationValue = missionLocation(mission);
+  const index = {
+    titleNorm: norm(missionTitleValue),
+    typeNorm: norm(missionTypeValue),
+    factionNorm: norm(missionFactionValue),
+    systemNorm: norm(mission.system),
+    locationNorm: norm(missionLocationValue),
+    titleTokens: scminersDbTextTokens(missionTitleValue),
+    typeTokens: scminersDbTextTokens(missionTypeValue),
+    factionTokens: scminersDbTextTokens(missionFactionValue),
+    locationTokens: scminersDbTextTokens(missionLocationValue),
+  };
+  if (cache.missionSearchIndex) cache.missionSearchIndex.set(missionKey, index);
+  return index;
+}
+
+function scminersDbMissionScore(missionIndex, entry) {
+  if (!missionIndex || !entry) return 0;
+  const searchable = entry.structuredSearchText || "";
+  const entryTokens = entry.structuredSearchTokens || new Set();
   let score = 0;
 
-  const exactTitle = norm(missionTitle(mission));
-  if (exactTitle && exactTitle === norm(entry.structuredName || entry.name)) score += 200;
-  if (exactTitle && exactTitle === norm(entry.mission_id)) score += 180;
-  if (norm(mission.type) && norm(mission.type) === norm(entry.structuredMissionType || entry.mission_type)) score += 60;
-  if (norm(mission.faction) && norm(mission.faction) === norm(entry.structuredFaction || entry.faction_company || entry.company_faction)) score += 80;
-  if (norm(mission.system) && searchable.includes(norm(mission.system))) score += 30;
-  if (norm(mission.location) && searchable.includes(norm(mission.location))) score += 30;
+  if (missionIndex.titleNorm && missionIndex.titleNorm === entry.structuredSearchExactTitle) score += 200;
+  if (missionIndex.titleNorm && missionIndex.titleNorm === entry.structuredSearchExactId) score += 180;
+  if (missionIndex.typeNorm && missionIndex.typeNorm === entry.structuredSearchType) score += 60;
+  if (missionIndex.factionNorm && missionIndex.factionNorm === entry.structuredSearchFaction) score += 80;
+  if (missionIndex.systemNorm && searchable.includes(missionIndex.systemNorm)) score += 30;
+  if (missionIndex.locationNorm && searchable.includes(missionIndex.locationNorm)) score += 30;
 
-  for (const token of missionTitleTokens) if (entryTokens.has(token)) score += 12;
-  for (const token of missionTypeTokens) if (entryTokens.has(token)) score += 8;
-  for (const token of missionFactionTokens) if (entryTokens.has(token)) score += 8;
-  for (const token of missionLocationTokens) if (entryTokens.has(token)) score += 4;
+  for (const token of missionIndex.titleTokens) if (entryTokens.has(token)) score += 12;
+  for (const token of missionIndex.typeTokens) if (entryTokens.has(token)) score += 8;
+  for (const token of missionIndex.factionTokens) if (entryTokens.has(token)) score += 8;
+  for (const token of missionIndex.locationTokens) if (entryTokens.has(token)) score += 4;
 
   return score;
 }
@@ -3405,33 +3611,107 @@ function scminersDbMissionScore(mission, entry) {
 function scminersDbBestMissionMatch(mission) {
   if (!mission) return null;
   const cache = scminersDbEnsureMissionCache();
+  const missionKey = missionRecordKey(mission);
+  if (cache.missionMatchIndex?.has(missionKey)) return cache.missionMatchIndex.get(missionKey);
+  const missionIndex = scminersDbMissionSearchIndex(mission);
   let best = null;
   let bestScore = 0;
   for (const entry of cache.entries) {
-    const score = scminersDbMissionScore(mission, entry);
+    const score = scminersDbMissionScore(missionIndex, entry);
     if (score > bestScore) {
       best = entry;
       bestScore = score;
     }
   }
-  return bestScore > 0 ? { ...best, structuredMatchScore: bestScore } : null;
+  const matched = bestScore > 0 ? { ...best, structuredMatchScore: bestScore } : null;
+  if (cache.missionMatchIndex) cache.missionMatchIndex.set(missionKey, matched);
+  return matched;
+}
+
+function inferMissionTypeFromMission(mission, faction = "") {
+  const text = [
+    mission?.type,
+    mission?.category,
+    mission?.mission_type,
+    mission?.structuredMissionType,
+    mission?.title,
+    mission?.name,
+    mission?.mission,
+    mission?.description,
+    mission?.summary,
+    mission?.text,
+    mission?.structuredDescription,
+    mission?.structuredSourcePath,
+    mission?.structuredMissionId,
+    faction,
+  ]
+    .map((value) => cleanDisplayText(value))
+    .join(" ")
+    .toLowerCase();
+
+  if (!text.trim()) return "";
+
+  if (/\b(refuel|refueling|fuel)\b/.test(text)) return "Refueling";
+  if (/\b(salvage|scrap|scraper|reclaimer)\b/.test(text)) return "Salvage";
+  if (/\b(mine|mining|ore|asteroid)\b/.test(text)) return "Hand Mining";
+  if (/\b(deliver|delivery|drop off|pickup|pick up|courier|package|box)\b/.test(text)) return "Delivery";
+  if (/\b(haul|hauling|cargo|freight|transport)\b/.test(text)) return "Hauling";
+  if (/\b(investigate|investigation|search|missing|intel|scan|data|evidence)\b/.test(text)) return "Investigation";
+
+  if (/\b(bounty hunter|bounty|arlington|eckhart|miles eckhart)\b/.test(text)) {
+  return "Bounty Hunter";
+}
+
+if (
+  /\b(defend|defense|eliminate|neutralize|mercenary|merc|attack|protect|patrol|strike|vanduul|terrorist|hostile|threat|combat|capture|gang|operative extraction)\b/.test(text)
+) {
+  return "Mercenary";
+}
+
+  return "";
 }
 
 function augmentMissionWithStructuredData(mission) {
   if (!mission) return mission;
   const structured = scminersDbBestMissionMatch(mission);
   if (!structured) return mission;
-  const safeStructuredFaction = isBadLabel(structured.structuredFaction) ? "" : structured.structuredFaction;
-  const safeStructuredMissionType = isBadLabel(structured.structuredMissionType) ? "" : structured.structuredMissionType;
+
+  const safeMissionFaction = isBadLabel(mission.faction) ? "" : cleanDisplayText(mission.faction);
+  const safeMissionType = isBadLabel(mission.type) ? "" : cleanDisplayText(mission.type);
+  const safeStructuredFaction = isBadLabel(structured.structuredFaction) ? "" : cleanDisplayText(structured.structuredFaction);
+  const safeStructuredMissionType = isBadLabel(structured.structuredMissionType) ? "" : cleanDisplayText(structured.structuredMissionType);
+
+  const compactLabel = (value) => norm(value).replace(/[^a-z0-9]/g, "");
+  const structuredTypeLooksLikeFaction =
+    compactLabel(safeStructuredMissionType) &&
+    compactLabel(safeStructuredMissionType) === compactLabel(safeStructuredFaction);
+
+  const resolvedFaction = safeMissionFaction || safeStructuredFaction || "";
+  const inferredType = inferMissionTypeFromMission(
+    {
+      ...mission,
+      structuredMissionType: safeStructuredMissionType,
+      structuredDescription: structured.structuredDescription || "",
+      structuredSourcePath: structured.structuredSourcePath || "",
+      structuredMissionId: structured.structuredMissionId || "",
+    },
+    resolvedFaction,
+  );
+
+  const resolvedType =
+    safeMissionType ||
+    (structuredTypeLooksLikeFaction ? "" : safeStructuredMissionType) ||
+    inferredType ||
+    "";
+
   return {
     ...mission,
-    title: structured.structuredTitle || mission.title || mission.name || "",
+    title: structured.structuredTitle || missionDisplayTitle(mission.title || mission.name || "") || mission.title || mission.name || "",
     description: structured.structuredDescription || mission.description || mission.summary || mission.text || "",
     summary: structured.structuredDescription || mission.summary || mission.description || "",
     text: structured.structuredDescription || mission.text || mission.description || "",
-    // Preserve clean local mission labels; only backfill when they are missing.
-    faction: mission.faction || safeStructuredFaction || "",
-    type: mission.type || safeStructuredMissionType || "",
+    faction: resolvedFaction,
+    type: resolvedType,
     system: structured.system || structured.system_guess || mission.system || "",
     location: structured.structuredLocation || mission.location || structured.location_guess || "",
     repStanding: structured.structuredRequiredRank || mission.repStanding || "",
@@ -3462,6 +3742,26 @@ function augmentMissionWithStructuredData(mission) {
   };
 }
 
+function repairMissionLabels(mission) {
+  if (!mission) return mission;
+
+  const faction =
+    isBadLabel(mission.faction)
+      ? cleanDisplayText(mission.structuredFaction || "")
+      : cleanDisplayText(mission.faction || "");
+
+  const type =
+    isBadLabel(mission.type)
+      ? inferMissionTypeFromMission(mission, faction)
+      : cleanDisplayText(mission.type || "");
+
+  return {
+    ...mission,
+    faction: faction || mission.faction || "",
+    type: type || mission.type || "",
+  };
+}
+
 function normalizeLiveMissionContract(contract) {
   if (!contract || typeof contract !== "object") return null;
   const title = cleanDisplayText(
@@ -3475,6 +3775,7 @@ function normalizeLiveMissionContract(contract) {
       "",
   );
   if (!title) return null;
+  const cleanTitle = missionDisplayTitle(title);
 
   const description = cleanDisplayText(
     contract.description ||
@@ -3518,7 +3819,7 @@ function normalizeLiveMissionContract(contract) {
   ) || rewardScriptCountFromAny(contract.reward_items || contract.rewardItems || contract.rewards || contract.reward);
 
   return {
-    title,
+    title: cleanTitle || title,
     type,
     faction,
     system,
@@ -3577,24 +3878,30 @@ function combinedMissionRecords() {
 }
 
 async function loadLiveMissionContracts() {
-  state.liveMissionsStatus = "Loading live missions...";
-  renderMissionBrowser();
-  try {
-    const response = await fetch("https://api.uexcorp.uk/2.0/contracts/");
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
-    const contracts = extractContractsFromPayload(payload);
-    const normalized = contracts
-      .map(normalizeLiveMissionContract)
-      .filter(Boolean)
-      .filter((mission) => !isBadLabel(mission.title));
-    state.liveMissions = normalized;
-    state.liveMissionsStatus = normalized.length ? `Loaded ${formatCount(normalized.length)} live missions` : "No live missions found";
-  } catch (error) {
-    state.liveMissions = [];
-    state.liveMissionsStatus = `Live missions unavailable: ${cleanDisplayText(error?.message || error)}`;
-  }
-  renderAll();
+  if (liveMissionLoadPromise) return liveMissionLoadPromise;
+  liveMissionLoadPromise = (async () => {
+    state.liveMissionsStatus = "Loading live missions...";
+    renderMissionBrowser();
+    try {
+      const response = await fetch("https://api.uexcorp.uk/2.0/contracts/");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const payload = await response.json();
+      const contracts = extractContractsFromPayload(payload);
+      const normalized = contracts
+        .map(normalizeLiveMissionContract)
+        .filter(Boolean)
+        .filter((mission) => !isBadLabel(mission.title));
+      state.liveMissions = normalized;
+      state.liveMissionsStatus = normalized.length ? `Loaded ${formatCount(normalized.length)} live missions` : "No live missions found";
+    } catch (error) {
+      state.liveMissions = [];
+      state.liveMissionsStatus = `Live missions unavailable: ${cleanDisplayText(error?.message || error)}`;
+    }
+    renderAll();
+  })().finally(() => {
+    liveMissionLoadPromise = null;
+  });
+  return liveMissionLoadPromise;
 }
 
 function missionCatalog() {
@@ -3669,6 +3976,11 @@ function missionSearchItems() {
     if (state.missionFilterReputation !== "All" && cleanDisplayText(mission.repStanding) !== state.missionFilterReputation) return false;
     if (state.missionFilterLocation !== "All" && missionLocation(mission) !== state.missionFilterLocation) return false;
     if (state.missionFilterDifficulty !== "All" && missionDifficulty(mission) !== state.missionFilterDifficulty) return false;
+
+    const moneyReward = Number(missionMoneyReward(mission) || 0);
+    if (state.missionFilterMoney === "Unknown" && moneyReward > 0) return false;
+    if (state.missionFilterMoney !== "All" && state.missionFilterMoney !== "Unknown" && String(moneyReward) !== String(Number(state.missionFilterMoney))) return false;
+
     return true;
   });
   const scriptFiltered = state.missionScriptOnly ? missionFiltered.filter((mission) => missionHasScriptReward(mission)) : missionFiltered;
@@ -3807,6 +4119,50 @@ function missionFilterDifficultyOptions() {
   );
 }
 
+function missionFilterMoneyOptions() {
+  const missions = missionCatalog();
+  const moneyCounts = new Map();
+  let unknownCount = 0;
+
+  for (const mission of missions) {
+    const money = Number(missionMoneyReward(mission) || 0);
+    if (money > 0) {
+      moneyCounts.set(money, (moneyCounts.get(money) || 0) + 1);
+    } else {
+      unknownCount += 1;
+    }
+  }
+
+  const moneyOptions = [...moneyCounts.entries()].sort((a, b) => a[0] - b[0]);
+
+  return [
+    `<option value="All" ${state.missionFilterMoney === "All" ? "selected" : ""}>All</option>`,
+    ...moneyOptions.map(([money, count]) => {
+      const selected = String(state.missionFilterMoney) === String(money) ? "selected" : "";
+      return `<option value="${money}" ${selected}>${formatCount(money)} aUEC (${formatCount(count)})</option>`;
+    }),
+    `<option value="Unknown" ${state.missionFilterMoney === "Unknown" ? "selected" : ""}>Unknown Money (${formatCount(unknownCount)})</option>`,
+  ].join("");
+}
+
+function ensureMissionMoneyFilterControl() {
+  if (els.missionFilterMoneySelect) return els.missionFilterMoneySelect;
+
+  const anchor = els.missionFilterDifficultySelect?.parentElement;
+  if (!anchor || !anchor.parentElement) return null;
+
+  const wrapper = document.createElement("label");
+  wrapper.className = anchor.className || "";
+  wrapper.innerHTML = `
+    Money
+    <select id="missionFilterMoneySelect"></select>
+  `;
+
+  anchor.insertAdjacentElement("afterend", wrapper);
+  els.missionFilterMoneySelect = wrapper.querySelector("select");
+  return els.missionFilterMoneySelect;
+}
+
 function missionsFor(type, company) {
   const map = new Map();
   for (const m of missionCatalog()) {
@@ -3839,7 +4195,7 @@ function currentMissionDetail() {
   const targetKey = missionTitleKey(state.mission);
   const mission =
     missionsFor(state.missionType, state.company).find((m) => missionTitleKey(missionTitle(m)) === targetKey) || null;
-  return mission ? augmentMissionWithStructuredData(mission) : null;
+  return mission ? augmentMissionWithRewardOverride(augmentMissionWithStructuredData(mission)) : null;
 }
 
 function selectMission(type, company, title) {
@@ -3905,7 +4261,7 @@ function renderView() {
       statsShell: false,
       settingsShell: false,
       logShell: false,
-      searchShell: true,
+      searchShell: false,
       missionBrowserShell: false,
       buyShell: false,
     },
@@ -4105,7 +4461,7 @@ function missionDescription(mission) {
     missionTitle(mission),
   ]
     .filter(Boolean)
-    .join(" · ");
+    .join(" | ");
 }
 
 function missionAppearanceLines(mission) {
@@ -4324,41 +4680,27 @@ function missionScriptReward(mission) {
 
 function missionMoneyReward(mission) {
   if (!mission) return 0;
+
+  const override = missionRewardOverride(mission);
   const structured = Number(mission.structuredMoneyReward || 0);
   if (structured > 0) return structured;
-  const override = missionRewardOverride(mission);
-  const raw =
-    override?.moneyReward ??
-    mission?.moneyReward ??
-    mission?.auecReward ??
-    mission?.uecReward ??
-    mission?.cashReward ??
-    mission?.rewardMoney ??
-    mission?.rewardCash ??
-    mission?.payout ??
-    mission?.reward_value ??
-      mission?.rewardAmount ??
-      mission?.reward_amount ??
-      mission?.reward;
 
-  if (Array.isArray(raw)) {
-    const total = rewardMoneyCountFromAny(raw) || firstFiniteNumber(raw);
-    return total > 0 ? total : null;
-  }
-
-  if (typeof raw === "number" && Number.isFinite(raw) && raw > 0) return raw;
-  if (typeof raw === "string") {
-    const match = raw.match(/(\d[\d,]*)/);
-    if (match) {
-      const total = Number(match[1].replace(/,/g, ""));
-      return Number.isFinite(total) && total > 0 ? total : null;
-    }
-  }
-
-  if (raw && typeof raw === "object") {
-    const value = Number(raw.count ?? raw.amount ?? raw.quantity ?? raw.value ?? 0);
-    if (Number.isFinite(value) && value > 0) return value;
-  }
+  const direct = firstFiniteNumber(
+    override?.moneyReward,
+    mission?.moneyReward,
+    mission?.auecReward,
+    mission?.uecReward,
+    mission?.cashReward,
+    mission?.rewardMoney,
+    mission?.rewardCash,
+    mission?.payout,
+    mission?.money_reward,
+    mission?.reward_money,
+    mission?.reward_value,
+    mission?.rewardAmount,
+    mission?.reward_amount,
+  );
+  if (direct !== null && direct > 0) return direct;
 
   const rewardObjects = Array.isArray(mission?.rewardItems)
     ? mission.rewardItems
@@ -4366,13 +4708,41 @@ function missionMoneyReward(mission) {
       ? mission.reward_items
       : Array.isArray(mission?.rewards)
         ? mission.rewards
-        : [];
-  const fromRewards = rewardMoneyCountFromAny(rewardObjects) || firstFiniteNumber(
-    rewardObjects,
-    rewardObjects.map((entry) => entry?.payout ?? entry?.amount ?? entry?.value ?? entry?.quantity),
-    rewardObjects.map((entry) => entry?.rewardMoney ?? entry?.money ?? entry?.uec ?? entry?.auec),
-  );
-  if (fromRewards !== null) return fromRewards;
+        : Array.isArray(mission?.reward)
+          ? mission.reward
+          : [];
+
+  const fromRewards = rewardMoneyCountFromAny(rewardObjects);
+  if (fromRewards > 0) return fromRewards;
+
+  const text = [
+    mission?.rewardText,
+    mission?.reward_text,
+    mission?.rewardSummary,
+    mission?.structuredRewardSummary,
+    mission?.description,
+    mission?.summary,
+    mission?.text,
+    mission?.structuredDescription,
+  ]
+    .map((value) => cleanDisplayText(value))
+    .filter(Boolean)
+    .join(" ");
+
+  if (text) {
+    const moneyPatterns = [
+      /\b(?:money reward|cash reward|payout|reward|pays?|payment)\s*[:\-]?\s*(\d[\d,]*)\s*(?:auec|uec|credits?)\b/i,
+      /\b(\d[\d,]*)\s*(?:auec|uec|credits?)\b/i,
+    ];
+
+    for (const pattern of moneyPatterns) {
+      const match = text.match(pattern);
+      if (match) {
+        const total = Number(String(match[1] || "").replace(/,/g, ""));
+        if (Number.isFinite(total) && total > 0) return total;
+      }
+    }
+  }
 
   return 0;
 }
@@ -4382,21 +4752,7 @@ function missionHasScriptReward(mission) {
 }
 
 function missionHasKnownMoneyReward(mission) {
-  if (!mission) return false;
-  return firstFiniteNumber(
-    mission?.moneyReward,
-    mission?.auecReward,
-    mission?.uecReward,
-    mission?.cashReward,
-    mission?.rewardMoney,
-    mission?.rewardCash,
-    mission?.payout,
-    mission?.reward_value,
-    mission?.rewardAmount,
-    mission?.reward_amount,
-    mission?.structuredMoneyReward,
-    missionRewardOverride(mission)?.moneyReward,
-  ) !== null;
+  return Number(missionMoneyReward(mission) || 0) > 0;
 }
 
 function missionMoneyRewardLabel(mission) {
@@ -4460,29 +4816,29 @@ function renderSummary() {
     map.set(collectionCategory(item), (map.get(collectionCategory(item)) || 0) + 1);
   }
 
-  const renderRows = (map) =>
+  const renderRows = (map, mode) =>
     [...map.entries()]
       .sort((a, b) => b[1] - a[1])
       .map(
         ([label, count]) => `
-          <div class="summary-row">
+          <button class="summary-row" type="button" data-collection-filter data-collection-filter-mode="${mode}" data-collection-filter-chip="${label}">
             <div class="name"><span class="dot"></span>${label}</div>
             <div class="value">${formatCount(count)}</div>
-          </div>
+          </button>
         `,
       )
       .join("");
 
   els.ownedTotal.textContent = formatCount(owned);
   els.missingTotal.textContent = formatCount(missing);
-  els.ownedBreakdown.innerHTML = renderRows(ownedByType);
-  els.missingBreakdown.innerHTML = renderRows(missingByType);
+  els.ownedBreakdown.innerHTML = renderRows(ownedByType, "owned");
+  els.missingBreakdown.innerHTML = renderRows(missingByType, "missing");
   els.footerOwned.textContent = `Owned: ${formatCount(owned)}`;
   els.footerMissing.textContent = `Missing: ${formatCount(missing)}`;
   const footerBits = [];
   footerBits.push(state.watch.name ? `Watching: ${state.watch.name}` : "No monitored file");
   if (state.scminersDb?.status) footerBits.push(state.scminersDb.status);
-  els.footerWatch.textContent = footerBits.join(" · ");
+  els.footerWatch.textContent = footerBits.join(" | ");
 }
 
 function renderUsers() {
@@ -4530,7 +4886,7 @@ function renderCollection() {
               (item) => `
                 <div class="item" data-item="${item.name}">
                   <strong>${item.name}</strong>
-                  <small>${item.subtype || "unknown"} · ${item.missions?.length || 0} mission links · ${isOwned(item.name) ? "owned" : "missing"}</small>
+                  <small>${item.subtype || "unknown"} | ${item.missions?.length || 0} mission links | ${isOwned(item.name) ? "owned" : "missing"}</small>
                 </div>
               `,
             )
@@ -4606,7 +4962,7 @@ function renderSelectedOld() {
     }
 
     const missions = item.missions || [];
-    els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
+    els.selectedMeta.textContent = `${item.type} | ${item.subtype || "unknown"} | ${isOwned(item.name) ? "owned" : "missing"}`;
     els.selectedDetails.className = "detail-card";
     els.selectedDetails.innerHTML = `
       <div class="detail-grid">
@@ -4623,7 +4979,7 @@ function renderSelectedOld() {
       <div class="detail-kv">
         <span>Mission links</span>
         <div class="mission-list">
-          ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> · ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+          ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> | ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
         </div>
       </div>
     </div>
@@ -4641,7 +4997,7 @@ function renderSelectedOld() {
     if (kind === "type" && value) {
       const ownedOfType = owned.filter((item) => collectionCategory(item) === value);
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
-      els.selectedMeta.textContent = `Type · ${value}`;
+      els.selectedMeta.textContent = `Type | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
@@ -4657,14 +5013,14 @@ function renderSelectedOld() {
     if (kind === "company" && value) {
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company · ${value}`;
+      const bestLabel = best ? `${best.repStanding} | ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} | ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -4672,7 +5028,7 @@ function renderSelectedOld() {
 
     if (kind === "missing" && value) {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
-      els.selectedMeta.textContent = `Still needed · ${value}`;
+      els.selectedMeta.textContent = `Still needed | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
@@ -4704,7 +5060,7 @@ function renderSelectedOld() {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const ownedFiltered = ownedOfType.filter(matchesSubtype);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Type · ${value}`;
+      els.selectedMeta.textContent = `Type | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -4731,14 +5087,14 @@ function renderSelectedOld() {
       state.progressSubtype = "";
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company · ${value}`;
+      const bestLabel = best ? `${best.repStanding} | ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<button class="mission-line mission-link" type="button" data-mission-link="${log.type}::${log.company}::${log.mission}"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></button>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<button class="mission-line mission-link" type="button" data-mission-link="${log.type}::${log.company}::${log.mission}"><strong>${log.mission}</strong><div class="muted">${log.type} | ${log.reward || "reward logged"}</div></button>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -4749,7 +5105,7 @@ function renderSelectedOld() {
       const matchesSubtype = (item) => !subtype || progressSubtypeLabel(item) === subtype;
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Still needed · ${value}`;
+      els.selectedMeta.textContent = `Still needed | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -4781,7 +5137,7 @@ function renderSelectedOld() {
   const rewards = currentRewardOptions();
   const missingRewards = rewards.filter((item) => !isOwned(item.name));
 
-  els.selectedMeta.textContent = `${mission.type} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
+  els.selectedMeta.textContent = `${mission.type} | ${mission.faction || "Unknown"} | ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card";
   els.selectedDetails.innerHTML = `
     <div class="detail-grid">
@@ -4794,7 +5150,7 @@ function renderSelectedOld() {
       <div class="detail-kv">
         <span>Mission description</span>
         <div class="mission-line">
-          ${mission.lawful ? "Lawful contract" : "Unlawful contract"} · ${mission.system || "Unknown system"} · ${missionTitle(mission)}
+          ${mission.lawful ? "Lawful contract" : "Unlawful contract"} | ${mission.system || "Unknown system"} | ${missionTitle(mission)}
         </div>
       </div>
       <div class="detail-kv">
@@ -4833,7 +5189,7 @@ function renderSelected() {
     const crafting = blueprintCraftingData(item);
     const dismantleEntries = crafting.dismantles;
     const craftTimeSeconds = Number(crafting.recipe?.tiers?.[0]?.craft_time_seconds || crafting.recipe?.recipe_time_seconds || item.craftTime || 0);
-    els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
+    els.selectedMeta.textContent = `${item.type} | ${item.subtype || "unknown"} | ${isOwned(item.name) ? "owned" : "missing"}`;
     els.selectedDetails.className = "detail-card";
     els.selectedDetails.innerHTML = `
       <div class="detail-grid">
@@ -4864,7 +5220,7 @@ function renderSelected() {
         <div class="detail-kv">
           <span>Mission links</span>
           <div class="mission-list">
-            ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> · ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+            ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> | ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
           </div>
         </div>
       </div>
@@ -4887,7 +5243,7 @@ function renderSelected() {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const ownedFiltered = ownedOfType.filter(matchesSubtype);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Type · ${value}`;
+      els.selectedMeta.textContent = `Type | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -4908,14 +5264,14 @@ function renderSelected() {
       state.progressSubtype = "";
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company · ${value}`;
+      const bestLabel = best ? `${best.repStanding} | ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} | ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -4926,7 +5282,7 @@ function renderSelected() {
       const matchesSubtype = (item) => !subtype || progressSubtypeLabel(item) === subtype;
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Still needed · ${value}`;
+      els.selectedMeta.textContent = `Still needed | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -4960,15 +5316,10 @@ function renderSelected() {
   const moneyReward = missionMoneyReward(mission);
   const moneyRewardLabel = missionMoneyRewardLabel(mission);
   const scriptReward = missionScriptReward(mission);
-  const structuredMissionId = cleanDisplayText(mission.structuredMissionId || "");
-  const structuredMissionName = cleanDisplayText(mission.structuredMissionName || "");
-  const structuredSourcePath = cleanDisplayText(mission.structuredSourcePath || "");
   const structuredPrereqSummary = cleanDisplayText(mission.structuredPrereqSummary || "");
-  const structuredPrereqSource = cleanDisplayText(mission.structuredPrereqSource || "");
-  const structuredMatchScore = Number(mission.structuredMatchScore || 0);
-  const hasStructuredMissionData = Boolean(structuredMissionId || structuredMissionName || structuredSourcePath || structuredPrereqSummary || structuredMatchScore);
+  const appearanceLines = missionAppearanceLines(mission).filter(Boolean);
 
-  els.selectedMeta.textContent = `${mission.type} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
+  els.selectedMeta.textContent = `${mission.type || "Mission"} | ${mission.faction || "Unknown"} | ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card mission-detail";
   els.selectedDetails.innerHTML = `
     <div class="mission-hero">
@@ -5017,29 +5368,16 @@ function renderSelected() {
     <div class="mission-section">
       <div class="mission-section-head">
         <span>Mission Description</span>
-        <span>${formatCount(mission.repReward || 0)} points · ${moneyRewardLabel}${scriptReward ? ` · ${formatCount(scriptReward)} script` : ""}</span>
+        <span>${formatCount(mission.repReward || 0)} points | ${moneyRewardLabel}${scriptReward ? ` | ${formatCount(scriptReward)} script` : ""}</span>
       </div>
       <p class="mission-description">${missionDescription(mission)}. Points for completion: ${formatCount(mission.repReward || 0)}. Money reward: ${moneyRewardLabel}.${scriptReward ? ` Script reward: ${formatCount(scriptReward)}.` : ""}</p>
     </div>
-    ${hasStructuredMissionData ? `
-    <div class="mission-section">
-      <div class="mission-section-head">
-        <span>SCMinersDB Mission Data</span>
-        <span>${structuredMatchScore ? `Match ${formatCount(structuredMatchScore)}` : "Structured overlay"}</span>
-      </div>
-      <div class="detail-grid">
-        ${structuredMissionName ? `<div class="detail-kv"><span>Record name</span><strong>${structuredMissionName}</strong></div>` : ""}
-        ${structuredMissionId ? `<div class="detail-kv"><span>Record id</span><strong>${structuredMissionId}</strong></div>` : ""}
-        ${structuredSourcePath ? `<div class="detail-kv"><span>Source path</span><strong>${structuredSourcePath}</strong></div>` : ""}
-        ${structuredPrereqSummary ? `<div class="detail-kv"><span>Prerequisites</span><strong>${structuredPrereqSummary}</strong></div>` : ""}
-      </div>
-    </div>` : ""}
     <div class="mission-section">
       <div class="mission-section-head">
         <span>Possible Rewards</span>
         <span>Total: ${rewards.length ? formatCount(rewards.length) : "0"}</span>
       </div>
-      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} · Points: ${formatCount(mission.repReward || 0)} · Money: ${moneyRewardLabel}${scriptReward ? ` · Script: ${formatCount(scriptReward)}` : ""}</div>
+      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} | Points: ${formatCount(mission.repReward || 0)} | Money: ${moneyRewardLabel}${scriptReward ? ` | Script: ${formatCount(scriptReward)}` : ""}</div>
       <div class="mission-list compact">
         ${rewards.length
           ? rewards
@@ -5064,10 +5402,10 @@ function renderSelected() {
     <div class="mission-section">
       <div class="mission-section-head">
         <span>How to Make This Mission Appear</span>
-        <span>${structuredPrereqSource ? `Source: ${structuredPrereqSource}` : "Mission prereqs"}</span>
+        <span>${structuredPrereqSummary ? "Mission prereqs" : "Best known conditions"}</span>
       </div>
       <div class="mission-list compact">
-        ${missionAppearanceLines(mission)
+        ${appearanceLines
           .map((line) => `<div class="mission-line"><strong>${line}</strong></div>`)
           .join("")}
       </div>
@@ -5079,16 +5417,21 @@ function renderMissionBrowser() {
   if (!els.missionSearchInput || !els.missionSearchResults) return;
   els.missionSearchInput.value = state.missionSearch || "";
   if (els.missionSearchReset) els.missionSearchReset.hidden = false;
+  const moneyFilterSelect = ensureMissionMoneyFilterControl();
+
   if (els.missionFilterTypeSelect) els.missionFilterTypeSelect.innerHTML = missionFilterTypeOptions();
   if (els.missionFilterPointsSelect) els.missionFilterPointsSelect.innerHTML = missionFilterPointOptions();
   if (els.missionFilterReputationSelect) els.missionFilterReputationSelect.innerHTML = missionFilterReputationOptions();
   if (els.missionFilterLocationSelect) els.missionFilterLocationSelect.innerHTML = missionFilterLocationOptions();
   if (els.missionFilterDifficultySelect) els.missionFilterDifficultySelect.innerHTML = missionFilterDifficultyOptions();
+  if (moneyFilterSelect) moneyFilterSelect.innerHTML = missionFilterMoneyOptions();
+
   if (els.missionFilterTypeSelect) els.missionFilterTypeSelect.value = state.missionFilterType || "All";
   if (els.missionFilterPointsSelect) els.missionFilterPointsSelect.value = state.missionFilterPoints || "All";
   if (els.missionFilterReputationSelect) els.missionFilterReputationSelect.value = state.missionFilterReputation || "All";
   if (els.missionFilterLocationSelect) els.missionFilterLocationSelect.value = state.missionFilterLocation || "All";
   if (els.missionFilterDifficultySelect) els.missionFilterDifficultySelect.value = state.missionFilterDifficulty || "All";
+  if (moneyFilterSelect) moneyFilterSelect.value = state.missionFilterMoney || "All";
   if (els.missionScriptOnlyToggle) {
     els.missionScriptOnlyToggle.classList.toggle("active", Boolean(state.missionScriptOnly));
     els.missionScriptOnlyToggle.textContent = state.missionScriptOnly ? "All missions" : "Script";
@@ -5097,6 +5440,9 @@ function renderMissionBrowser() {
   if (state.view !== "missions") {
     els.missionSearchResults.innerHTML = `<div class="muted">Open Missions to browse every mission and its details.</div>`;
     return;
+  }
+  if (!state.liveMissions.length && !state.liveMissionsStatus && !liveMissionLoadPromise) {
+    void loadLiveMissionContracts();
   }
 
   const results = missionSearchItems();
@@ -5109,8 +5455,8 @@ function renderMissionBrowser() {
         .map((mission) => {
           const scriptReward = missionScriptReward(mission);
           const rewardLabel = mission.rewardCount ? `${formatCount(mission.rewardCount)} reward${mission.rewardCount === 1 ? "" : "s"}` : "No rewards";
-          const moneyLabel = ` · ${missionMoneyRewardLabel(mission)}`;
-          const scriptLabel = scriptReward ? ` · ${formatCount(scriptReward)} script` : "";
+          const moneyLabel = ` | ${missionMoneyRewardLabel(mission)}`;
+          const scriptLabel = scriptReward ? ` | ${formatCount(scriptReward)} script` : "";
           const missionKey = `${norm(mission.type || "")}::${norm(mission.faction || "")}::${missionTitleKey(mission)}`;
           const selected = missionKey === selectedKey ? " selected" : "";
           return `
@@ -5208,7 +5554,7 @@ function renderProgress() {
 
   els.progressByType.innerHTML = [...byType.entries()]
     .sort((a, b) => b[1].owned - a[1].owned || b[1].total - a[1].total)
-    .map(([type, stats]) => `<button class="log-card search-result" type="button" data-progress-kind="type" data-progress-value="${type}"><div class="reward">${type}</div><div class="muted">${formatCount(stats.owned)} owned · ${formatCount(stats.total)} total</div></button>`)
+    .map(([type, stats]) => `<button class="log-card search-result" type="button" data-progress-kind="type" data-progress-value="${type}"><div class="reward">${type}</div><div class="muted">${formatCount(stats.owned)} owned | ${formatCount(stats.total)} total</div></button>`)
     .join("");
 
   const companies = [...new Set(missionItems().flatMap((item) => (item.missions || []).map((m) => m.faction)).filter(Boolean))].sort();
@@ -5227,7 +5573,7 @@ function renderProgress() {
       const best = highestCompletedRank(company);
       const rank = best?.repStanding || "No rank yet";
       const mission = best ? missionTitle(best) : "No missions logged yet";
-      return `<button class="log-card search-result" type="button" data-progress-kind="company" data-progress-value="${company}"><div class="reward">${company}</div><div class="muted">Current rank: ${rank} · from ${mission}</div></button>`;
+      return `<button class="log-card search-result" type="button" data-progress-kind="company" data-progress-value="${company}"><div class="reward">${company}</div><div class="muted">Current rank: ${rank} | from ${mission}</div></button>`;
     })
     .join("") || `<div class="muted">No ranked companies yet.</div>`;
 
@@ -5235,7 +5581,7 @@ function renderProgress() {
     .slice(0, 40)
     .map((name) => {
       const item = missionItems().find((entry) => entry.name === name);
-      return `<button class="log-card search-result" type="button" data-progress-kind="missing" data-progress-value="${collectionCategory(item)}"><div class="reward">${name}</div><div class="muted">Still needed · ${item?.type || "unknown"}</div></button>`;
+      return `<button class="log-card search-result" type="button" data-progress-kind="missing" data-progress-value="${collectionCategory(item)}"><div class="reward">${name}</div><div class="muted">Still needed | ${item?.type || "unknown"}</div></button>`;
     })
     .join("");
 }
@@ -5282,8 +5628,6 @@ function buyLocationSummary(entry) {
   return offers.length === 1 ? first : `${first} + ${formatCount(offers.length - 1)} more`;
 }
 
-const BUY_RESULTS_RENDER_LIMIT = 200;
-
 function renderBuy() {
   if (!els.buyResults || !els.buySelectedDetails) return;
   if (!hasBuyDataLoaded()) {
@@ -5300,8 +5644,6 @@ function renderBuy() {
   const tab = state.buyTab || "items";
   const entries = filteredBuyEntries();
   const selected = currentBuyEntry();
-  const previewEntries = entries.slice(0, BUY_RESULTS_RENDER_LIMIT);
-  const hasHiddenEntries = entries.length > previewEntries.length;
 
   const tabs = document.querySelectorAll("[data-buy-tab]");
   tabs.forEach((button) => {
@@ -5410,13 +5752,11 @@ function renderBuy() {
   }
   if (els.buyResultsSummary) {
     const sourceLabel = tab === "items" ? "items" : tab === "ships" ? "ships" : "rentals";
-    els.buyResultsSummary.textContent = hasHiddenEntries
-      ? `${formatCount(entries.length)} ${sourceLabel} matches · showing first ${formatCount(previewEntries.length)}`
-      : `${formatCount(entries.length)} ${sourceLabel} match${entries.length === 1 ? "" : "es"}`;
+    els.buyResultsSummary.textContent = `${formatCount(entries.length)} ${sourceLabel} match${entries.length === 1 ? "" : "es"}`;
   }
 
   els.buyResults.innerHTML =
-    previewEntries
+    entries
       .map((entry) => {
         const name = buyEntryName(entry, tab);
         const type = buyEntryType(entry, tab);
@@ -5433,11 +5773,7 @@ function renderBuy() {
           </button>
         `;
       })
-      .join("")
-    || `<div class="muted">No ${tab} entries match this filter.</div>`;
-  if (hasHiddenEntries) {
-    els.buyResults.innerHTML += `<div class="muted" style="padding:12px 4px 0;">Showing the first ${formatCount(previewEntries.length)} matches. Narrow the search or filters to reduce the list.</div>`;
-  }
+      .join("") || `<div class="muted">No ${tab} entries match this filter.</div>`;
 
   if (!selected) {
     els.buySelectedMeta.textContent = "Nothing selected";
@@ -5474,9 +5810,6 @@ function renderBuy() {
     tab === "items"
       ? Number(itemCrafting.recipe?.tiers?.[0]?.craft_time_seconds || itemCrafting.recipe?.recipe_time_seconds || itemCraftingSource?.craftTime || 0)
       : 0;
-  if (tab === "items" && !statGroups.length) {
-    ensureLiveItemWikiSections(selected);
-  }
   const statLabel = tab === "items" ? "Item info" : "Stats";
   const statBlock =
     statGroups.length || tab !== "items"
@@ -5526,7 +5859,7 @@ function renderBuy() {
       ${((tab === "ships" || tab === "rentals") && (selected.length || selected.width || selected.height || selected.mass)) ? `
         <div class="detail-kv buy-detail-wide">
           <span>Dimensions</span>
-          <strong>${[selected.length ? `L ${selected.length}` : "", selected.width ? `W ${selected.width}` : "", selected.height ? `H ${selected.height}` : "", selected.mass ? `Mass ${selected.mass}` : ""].filter(Boolean).join(" · ")}</strong>
+          <strong>${[selected.length ? `L ${selected.length}` : "", selected.width ? `W ${selected.width}` : "", selected.height ? `H ${selected.height}` : "", selected.mass ? `Mass ${selected.mass}` : ""].filter(Boolean).join(" | ")}</strong>
         </div>
       ` : ""}
       ${tab === "items" ? `
@@ -5557,8 +5890,8 @@ function renderBuy() {
             .join("") || `<div class="muted">No availability data found for the current filters.</div>`}
         </div>
       </div>
-      ${tab === "ships" || tab === "rentals" ? selectedShipWeapons.length ? `<div class="detail-kv buy-detail-wide"><span>Weapons</span><strong>${weaponCounts.map(([name, count]) => `${name} x ${count}`).join(" · ")}</strong></div>` : "" : ""}
-      ${tab === "ships" || tab === "rentals" ? selectedShipComponents.length ? `<div class="detail-kv buy-detail-wide"><span>Components</span><strong>${componentCounts.map(([name, count]) => `${name} x ${count}`).join(" · ")}</strong></div>` : "" : ""}
+      ${tab === "ships" || tab === "rentals" ? selectedShipWeapons.length ? `<div class="detail-kv buy-detail-wide"><span>Weapons</span><strong>${weaponCounts.map(([name, count]) => `${name} x ${count}`).join(" | ")}</strong></div>` : "" : ""}
+      ${tab === "ships" || tab === "rentals" ? selectedShipComponents.length ? `<div class="detail-kv buy-detail-wide"><span>Components</span><strong>${componentCounts.map(([name, count]) => `${name} x ${count}`).join(" | ")}</strong></div>` : "" : ""}
       ${tab === "rentals" ? `<div class="detail-kv buy-detail-wide"><span>Rental pricing</span><div class="mission-list"><div class="mission-line"><strong>1 day / 3 days / 7 days</strong><div class="muted">${price}</div></div></div></div>` : ""}
     </div>
   `;
@@ -5574,7 +5907,7 @@ function renderBuy() {
       const manifestCount = Number(state.scminersDb?.manifest?.record_count || 0);
       const exportCount = Number(state.scminersDb?.manifest?.json_count || 0);
       const previewEntries = scminersDbEntries.slice();
-      els.scminersDbPanel.hidden = !scminersDbEntries.length;
+      els.scminersDbPanel.hidden = false;
       els.scminersDbCategory.textContent = `${scminersDbCategoryLabel(state.scminersDbCategory) || "Export"} export`;
       els.scminersDbCount.textContent = formatCount(selectedCount);
       if (els.scminersDbSummary) {
@@ -5585,10 +5918,28 @@ function renderBuy() {
           exportCount ? `${formatCount(exportCount)} exports` : "",
         ]
           .filter(Boolean)
-          .join(" · ");
+          .join(" | ");
       }
       if (els.scminersDbSelectedCount) {
         els.scminersDbSelectedCount.textContent = `${formatCount(previewEntries.length)} records`;
+      }
+      if (els.scminersDbPtuSummary) {
+        const ptu = state.scminersDbPtu || {};
+        const ptuManifest = ptu.manifest || {};
+        const ptuEnv = ptuManifest.source_environments?.ptu || ptuManifest.source_environments?.PTU || {};
+        const ptuParts = [];
+        if (ptu.available) {
+          const ptuExportCount = Number(ptuManifest.json_count || 0);
+          const ptuRecordCount = Number(ptuManifest.record_count || 0);
+          if (ptuExportCount) ptuParts.push(`${formatCount(ptuExportCount)} exports`);
+          if (ptuRecordCount) ptuParts.push(`${formatCount(ptuRecordCount)} records`);
+          if (ptuEnv.data_p4k_last_write_time) ptuParts.push(`Data.p4k ${cleanDisplayText(ptuEnv.data_p4k_last_write_time)}`);
+          if (ptuEnv.is_stale) ptuParts.push(`STALE: ${cleanDisplayText(ptuEnv.stale_reason || "PTU data is stale")}`);
+        }
+        els.scminersDbPtuSummary.textContent = ptuParts.join(" | ") || cleanDisplayText(ptu.status || "PTU manifest not loaded");
+      }
+      if (els.scminersDbPtuSource) {
+        els.scminersDbPtuSource.textContent = state.scminersDbPtu?.manifestUrl || SCMINERSDB_PTU_DEFAULT_MANIFEST_URL;
       }
       if (els.scminersDbSwitch) {
         els.scminersDbSwitch.innerHTML =
@@ -5612,7 +5963,7 @@ function renderBuy() {
           return `
             <div class="mission-line">
               <div class="reward">${String(index + 1).padStart(2, "0")}. ${escapeHtml(title)}</div>
-              <div class="muted">${escapeHtml(type || "Unknown type")}${summary ? ` · ${escapeHtml(summary)}` : ""}</div>
+              <div class="muted">${escapeHtml(type || "Unknown type")}${summary ? ` | ${escapeHtml(summary)}` : ""}</div>
             </div>
           `;
         })
@@ -5642,14 +5993,14 @@ function renderStats() {
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 36)
-      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} · owned</div></div>`)
+      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} | owned</div></div>`)
       .join("") || `<div class="muted">No owned rewards yet.</div>`;
   els.statsMissingList.innerHTML =
     missing
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 36)
-      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} · missing</div></div>`)
+      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} | missing</div></div>`)
       .join("") || `<div class="muted">Nothing missing.</div>`;
   els.missionAttempts.innerHTML =
     [...attempts.entries()]
@@ -5668,12 +6019,7 @@ function renderSettings() {
   if (els.scminersDbManifestUrl) {
     els.scminersDbManifestUrl.value = currentScminersDbManifestUrl();
   }
-  if (els.scminersDbSourceRoot) {
-    els.scminersDbSourceRoot.value = currentScminersDbSourceRoot();
-  }
-  if (els.scminersDbSourceRootStatus) {
-    els.scminersDbSourceRootStatus.textContent = scminersDbBridgeStatusText();
-  }
+  renderBuy();
 }
 
 function syncWizardState() {
@@ -5691,7 +6037,9 @@ function syncWizardState() {
 }
 
 function renderAll() {
-  syncWizardState();
+  if (state.view === "dashboard" || state.view === "missions") {
+    syncWizardState();
+  }
   renderUsers();
   renderRail();
   renderView();
@@ -5707,7 +6055,6 @@ function renderAll() {
     renderChips();
     renderCollection();
     renderSelected();
-    renderSearchResults();
   } else if (state.view === "buy-items") {
     renderBuy();
   } else if (state.view === "progress") {
@@ -5875,17 +6222,215 @@ function stopWatch() {
   renderSummary();
 }
 
-function exportState() {
-  const blob = new Blob(
-    [JSON.stringify({ owned: [...state.owned], logs: state.logs }, null, 2)],
-    { type: "application/json" },
-  );
+function storedProfileForExport(userId) {
+  try {
+    const raw = localStorage.getItem(profileKey(userId));
+    return raw ? JSON.parse(raw) : defaultProfile();
+  } catch {
+    return defaultProfile();
+  }
+}
+
+function downloadJsonFile(payload, fileName) {
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "blueprint-tracker-export.json";
+  a.download = fileName;
   a.click();
   URL.revokeObjectURL(url);
+}
+
+function safeSaveFileName(value) {
+  return cleanDisplayText(value || "sc-items")
+    .replace(/[^a-z0-9_-]+/gi, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase() || "sc-items";
+}
+
+function buildSaveFileUsers(scope) {
+  const selected = currentUser();
+  const exportAll = scope === "all";
+  const users = exportAll ? state.users : [selected].filter(Boolean);
+  return users.map((user) => ({
+    id: user.id,
+    name: user.name,
+    profile: storedProfileForExport(user.id),
+  }));
+}
+
+function exportState() {
+  saveState();
+  const answer = prompt("Export which users?\n\n1 = Current user only\n2 = All users", "1");
+  if (answer === null) return;
+  const scope = String(answer).trim() === "2" ? "all" : "current";
+  const users = buildSaveFileUsers(scope);
+  if (!users.length) {
+    alert("No users found to export.");
+    return;
+  }
+
+  const payload = {
+    app: "SC Items",
+    type: "sc-items-save",
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    scope,
+    currentUserId: state.currentUserId || "",
+    settings: {
+      scminersDbManifestUrl: currentScminersDbManifestUrl(),
+      theme: localStorage.getItem("sc-blueprint-tracker-theme") || "dark",
+      watch: state.watch.name || "",
+    },
+    users,
+  };
+
+  const label = scope === "all" ? "all-users" : safeSaveFileName(users[0]?.name || "current-user");
+  downloadJsonFile(payload, `sc-items-save-${label}.json`);
+}
+
+function importedUsersFromPayload(payload) {
+  if (!payload || typeof payload !== "object") return [];
+  if (Array.isArray(payload.users)) return payload.users.filter(Boolean);
+  if (payload.profile || payload.owned || payload.logs) {
+    return [{
+      id: payload.id || "imported-user",
+      name: payload.name || "Imported User",
+      profile: payload.profile || payload,
+    }];
+  }
+  return [];
+}
+
+function uniqueUserId(baseId = "imported-user") {
+  const base = safeSaveFileName(baseId) || "imported-user";
+  const existing = new Set(state.users.map((user) => String(user.id)));
+  if (!existing.has(base)) return base;
+  let counter = 2;
+  while (existing.has(`${base}-${counter}`)) counter += 1;
+  return `${base}-${counter}`;
+}
+
+function uniqueUserName(baseName = "Imported User") {
+  const base = cleanDisplayText(baseName || "Imported User") || "Imported User";
+  const existing = new Set(state.users.map((user) => String(user.name || "").toLowerCase()));
+  if (!existing.has(base.toLowerCase())) return base;
+  let counter = 2;
+  while (existing.has(`${base} ${counter}`.toLowerCase())) counter += 1;
+  return `${base} ${counter}`;
+}
+
+function normalizeImportedProfile(profile) {
+  const fallback = defaultProfile();
+  if (!profile || typeof profile !== "object") return fallback;
+  return {
+    ...fallback,
+    ...profile,
+    owned: Array.isArray(profile.owned) ? profile.owned : fallback.owned,
+    logs: Array.isArray(profile.logs) ? profile.logs : fallback.logs,
+  };
+}
+
+function chooseImportedUsers(users) {
+  if (users.length <= 1) return users;
+  const lines = users.map((user, index) => `${index + 1} = ${cleanDisplayText(user.name || user.id || "Imported User")}`);
+  const answer = prompt(`Import which users?\n\n0 = All users\n${lines.join("\n")}`, "0");
+  if (answer === null) return [];
+  const value = Number(String(answer).trim());
+  if (!Number.isFinite(value) || value === 0) return users;
+  const selected = users[value - 1];
+  return selected ? [selected] : [];
+}
+
+function importOneUser(imported) {
+  const incomingName = cleanDisplayText(imported.name || "Imported User") || "Imported User";
+  const incomingId = cleanDisplayText(imported.id || safeSaveFileName(incomingName) || "imported-user");
+  const profile = normalizeImportedProfile(imported.profile || imported);
+
+  const existingById = state.users.find((user) => String(user.id) === String(incomingId));
+  const existingByName = state.users.find((user) => String(user.name || "").toLowerCase() === incomingName.toLowerCase());
+  const existing = existingById || existingByName;
+
+  if (!existing) {
+    const id = uniqueUserId(incomingId);
+    const name = uniqueUserName(incomingName);
+    state.users.push({ id, name });
+    localStorage.setItem(profileKey(id), JSON.stringify(profile));
+    return { action: "added", id, name };
+  }
+
+  const choice = prompt(
+    `Imported user conflicts with existing user:\n\nExisting: ${existing.name}\nImported: ${incomingName}\n\n1 = Keep original / skip imported\n2 = Replace original with imported\n3 = Add imported as new copy\n4 = Cancel import`,
+    "1",
+  );
+
+  if (choice === null || String(choice).trim() === "4") return { action: "cancelled" };
+  if (String(choice).trim() === "2") {
+    existing.name = incomingName;
+    localStorage.setItem(profileKey(existing.id), JSON.stringify(profile));
+    return { action: "replaced", id: existing.id, name: existing.name };
+  }
+  if (String(choice).trim() === "3") {
+    const id = uniqueUserId(`${incomingId}-imported`);
+    const name = uniqueUserName(`${incomingName} imported`);
+    state.users.push({ id, name });
+    localStorage.setItem(profileKey(id), JSON.stringify(profile));
+    return { action: "added", id, name };
+  }
+  return { action: "skipped", id: existing.id, name: existing.name };
+}
+
+async function importStateFromFile(file) {
+  if (!file) return;
+  const text = await file.text();
+  const payload = JSON.parse(text);
+  const users = chooseImportedUsers(importedUsersFromPayload(payload));
+  if (!users.length) return;
+
+  const results = [];
+  for (const imported of users) {
+    const result = importOneUser(imported);
+    results.push(result);
+    if (result.action === "cancelled") break;
+  }
+
+  saveUsers();
+
+  const firstImported = results.find((result) => result.id);
+  if (firstImported?.id) {
+    applyUserSelection(firstImported.id);
+  } else {
+    loadUsers();
+    applyUserSelection(state.currentUserId || state.users[0]?.id || "default");
+  }
+
+  const summary = results.reduce((counts, result) => {
+    counts[result.action] = (counts[result.action] || 0) + 1;
+    return counts;
+  }, {});
+
+  const summaryText = [
+    summary.added ? `${summary.added} added` : "",
+    summary.replaced ? `${summary.replaced} replaced` : "",
+    summary.skipped ? `${summary.skipped} skipped` : "",
+    summary.cancelled ? "cancelled" : "",
+  ].filter(Boolean).join(" | ") || "Import complete";
+
+  if (els.updateInfoStatus) els.updateInfoStatus.textContent = `Import complete: ${summaryText}`;
+  els.footerWatch.textContent = `Import complete: ${summaryText}`;
+  renderAll();
+  saveState();
+}
+
+function handleImportStateFile(event) {
+  const file = event.target.files?.[0];
+  event.target.value = "";
+  if (!file) return;
+  importStateFromFile(file).catch((error) => {
+    const message = cleanDisplayText(error?.message || error);
+    alert(`Import failed: ${message}`);
+    if (els.updateInfoStatus) els.updateInfoStatus.textContent = `Import failed: ${message}`;
+  });
 }
 
 function resetState() {
@@ -5904,11 +6449,13 @@ async function init() {
     "userCount",
     "userSelect",
     "addUser",
+    "editUser",
     "deleteUser",
     "currentUserName",
     "currentUserIndex",
     "userSelectSide",
     "addUserSide",
+    "editUserSide",
     "deleteUserSide",
     "ownedTotal",
     "missingTotal",
@@ -5962,6 +6509,8 @@ async function init() {
     "scminersDbSummary",
     "scminersDbSelectedCount",
     "scminersDbCategory",
+    "scminersDbPtuSummary",
+    "scminersDbPtuSource",
     "scminersDbPreview",
     "scminersDbSwitch",
     "statsOwnedCount",
@@ -5978,13 +6527,13 @@ async function init() {
     "searchInput",
     "missionAttempts",
     "exportState",
+    "importStateButton",
+    "importState",
     "updateInfo",
+    "updateInfoStatus",
     "resetState",
     "themeDark",
     "themeLight",
-    "scminersDbSourceRoot",
-    "saveScminersDbSourceRoot",
-    "scminersDbSourceRootStatus",
     "scminersDbManifestUrl",
     "saveScminersDbManifestUrl",
   ].forEach((id) => {
@@ -5992,13 +6541,13 @@ async function init() {
   });
 
   loadState();
+  await ensureBundledScminersDbPayload();
   useBundledScminersDbData();
   els.searchInput.value = state.search;
   renderAll();
   void bootstrapAppData();
-  void fetchScminersDbBridgeConfig().then(() => renderSettings());
   if (!bundledScminersDbPayload()) void loadScminersDbBridge();
-  void loadLiveMissionContracts();
+  void loadScminersDbPtuBridge().then(() => renderAll());
   scheduleScminersDbRefresh();
 
     els.typeChips.addEventListener("click", handleChipClick);
@@ -6064,6 +6613,7 @@ async function init() {
     state.missionFilterReputation = "All";
     state.missionFilterLocation = "All";
     state.missionFilterDifficulty = "All";
+    state.missionFilterMoney = "All";
     state.missionScriptOnly = false;
     renderMissionBrowser();
     saveState();
@@ -6090,6 +6640,11 @@ async function init() {
   });
   els.missionFilterDifficultySelect?.addEventListener("change", (event) => {
     state.missionFilterDifficulty = event.target.value || "All";
+    renderMissionBrowser();
+    saveState();
+  });
+  ensureMissionMoneyFilterControl()?.addEventListener("change", (event) => {
+    state.missionFilterMoney = event.target.value || "All";
     renderMissionBrowser();
     saveState();
   });
@@ -6252,20 +6807,39 @@ async function init() {
     const name = promptForUserName();
     if (name !== null) createUser(name);
   });
+  els.editUser?.addEventListener("click", renameCurrentUser);
+  els.editUserSide?.addEventListener("click", renameCurrentUser);
   els.deleteUser.addEventListener("click", deleteCurrentUser);
   els.deleteUserSide.addEventListener("click", deleteCurrentUser);
   els.logReward.addEventListener("click", logReward);
   els.clearSelection.addEventListener("click", clearSelection);
   els.exportState.addEventListener("click", exportState);
+  els.importStateButton?.addEventListener("click", () => els.importState?.click());
+  els.importState?.addEventListener("change", handleImportStateFile);
   els.updateInfo.addEventListener("click", async () => {
     try {
       const result = await updateScminersDb();
+      const ptuResult = await loadScminersDbPtuBridge();
       if (result) {
-        els.footerWatch.textContent = `Updated ${formatCount(result?.updated?.files || result?.updated?.json_count || 0)} exports`;
+        const manifest = result.manifest || {};
+        const exportCount = Number(manifest.json_count || result.files?.length || 0);
+        const recordCount = Number(manifest.record_count || 0);
+        const statusParts = [
+          "Updated successfully",
+          exportCount ? `${formatCount(exportCount)} exports` : "",
+          recordCount ? `${formatCount(recordCount)} records` : "",
+          result.manifestUrl ? "source sc-items public data" : "",
+          ptuResult?.available ? `PTU ${formatCount(Number(ptuResult.manifest?.record_count || 0))} records` : "",
+        ].filter(Boolean);
+        const statusText = statusParts.join(" | ");
+        if (els.updateInfoStatus) els.updateInfoStatus.textContent = statusText;
+        els.footerWatch.textContent = statusText;
       }
     } catch (error) {
       const message = cleanDisplayText(error?.message || error);
-      els.footerWatch.textContent = `Update failed: ${message}`;
+      const errorText = `Update failed: ${message}`;
+      if (els.updateInfoStatus) els.updateInfoStatus.textContent = errorText;
+      els.footerWatch.textContent = errorText;
       console.warn("SCMinersDB update failed:", error);
     }
   });
@@ -6282,14 +6856,6 @@ async function init() {
     localStorage.setItem("sc-blueprint-tracker-theme", "light");
     renderSettings();
   });
-  els.saveScminersDbSourceRoot?.addEventListener("click", async () => {
-    try {
-      await saveScminersDbBridgeConfig({ sourceRoot: els.scminersDbSourceRoot?.value || "" });
-      renderSettings();
-    } catch (error) {
-      alert(cleanDisplayText(error?.message || error));
-    }
-  });
   els.saveScminersDbManifestUrl?.addEventListener("click", () => {
     setScminersDbManifestUrl(els.scminersDbManifestUrl?.value || SCMINERSDB_DEFAULT_MANIFEST_URL);
     renderAll();
@@ -6303,6 +6869,13 @@ async function init() {
       const label = (button.getAttribute("aria-label") || "").toLowerCase();
       activateRail(label);
     });
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-collection-filter]");
+    if (!button) return;
+    state.collectionMode = button.dataset.collectionFilterMode || "owned";
+    state.chip = button.dataset.collectionFilterChip || "All";
+    activateRail("blueprints");
   });
   document.querySelectorAll(".progress-shell").forEach((shell) => {
     shell.addEventListener("click", (event) => {
@@ -6318,6 +6891,10 @@ async function init() {
 init().catch((error) => {
   document.body.innerHTML = `<pre style="color:#fff;padding:20px;white-space:pre-wrap">${error.stack || error}</pre>`;
 });
+
+
+
+
 
 
 

@@ -6,9 +6,9 @@
     <title>SC Items</title>
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./blueprint_explorer_data.js?v=20260618a"></script>
-    <script defer src="./scminersdb_local_bundle.js?v=20260623b"></script>
     <script defer src="./sc_local_api.js?v=20260618a"></script>
-    <script defer src="./app.js?v=20260623b"></script>
+    <script defer src="./scminersdb_local_bundle.js?v=20260623b"></script>
+    <script defer src="./app.js?v=20260624a"></script>
   </head>
   <body>
     <div class="app-shell">
@@ -95,11 +95,10 @@
               <div class="user-controls">
                 <select id="userSelect" aria-label="Select user"></select>
                 <button id="addUser" class="ghost-button">New</button>
+                <button id="editUser" class="ghost-button">Edit Name</button>
                 <button id="deleteUser" class="ghost-button danger">Delete</button>
               </div>
             </div>
-            <button id="exportState" class="ghost-button">Export</button>
-            <button id="updateInfo" class="primary-button">Update Info</button>
             <button id="resetState" class="ghost-button danger">Reset</button>
           </div>
         </header>
@@ -118,6 +117,7 @@
                 <select id="userSelectSide" aria-label="Select user from sidebar"></select>
                 <div class="watch-row">
                   <button id="addUserSide" class="ghost-button">Add user</button>
+                  <button id="editUserSide" class="ghost-button">Edit Name</button>
                   <button id="deleteUserSide" class="ghost-button danger">Delete user</button>
                 </div>
               </div>
@@ -353,29 +353,6 @@
                   <div id="buySelectedDetails" class="detail-card empty">
                     Pick an item, ship, or rental to see its price and location details here.
                   </div>
-                  <section class="stack-card scminersdb-panel" id="scminersDbPanel" hidden>
-                    <div class="summary-head">
-                      <div>
-                        <h3>SCMinersDB Preview</h3>
-                        <p>Live export mapping for one category at a time</p>
-                      </div>
-                      <div class="count-badge cyan" id="scminersDbCount">0</div>
-                    </div>
-                    <div class="segmented scminersdb-switch" id="scminersDbSwitch"></div>
-                    <div class="summary-row">
-                      <span class="name">Manifest order</span>
-                      <span class="value" id="scminersDbSummary">0 records</span>
-                    </div>
-                    <div class="summary-row">
-                      <span class="name"><span class="dot"></span>Selected export</span>
-                      <span class="value" id="scminersDbSelectedCount">0 records</span>
-                    </div>
-                    <div class="summary-row">
-                      <span class="name">Current file</span>
-                      <span class="value" id="scminersDbCategory">1H export</span>
-                    </div>
-                    <div class="timeline" id="scminersDbPreview"></div>
-                  </section>
                 </aside>
               </div>
             </section>
@@ -474,22 +451,54 @@
                 <div class="summary-head">
                   <div>
                     <h3>SCMinersDB source</h3>
-                    <p>Update Info uses your saved Star Citizen path first, then this manifest URL as fallback</p>
+                    <p>Update Info uses this manifest URL</p>
                   </div>
                 </div>
-                <label class="field">
-                  <span>Star Citizen LIVE folder</span>
-                  <input id="scminersDbSourceRoot" type="text" placeholder="C:/Program Files/Roberts Space Industries/StarCitizen/LIVE" />
-                </label>
-                <div class="muted" id="scminersDbSourceRootStatus">No Star Citizen path saved yet.</div>
                 <label class="field">
                   <span>Manifest URL</span>
                   <input id="scminersDbManifestUrl" type="url" placeholder="https://.../runs/latest.json" />
                 </label>
                 <div class="wizard-actions">
-                  <button id="saveScminersDbSourceRoot" class="ghost-button" type="button">Save game path</button>
                   <button id="saveScminersDbManifestUrl" class="primary-button" type="button">Save manifest URL</button>
+                  <button id="updateInfo" class="primary-button" type="button">Update Info</button>
+                  <button id="exportState" class="ghost-button" type="button">Export Save</button>
+                  <button id="importStateButton" class="ghost-button" type="button">Import Save</button>
+                  <input id="importState" type="file" accept="application/json,.json" hidden />
                 </div>
+                <p id="updateInfoStatus" class="muted update-info-status">Update status will appear here.</p>
+
+
+                  <section class="stack-card scminersdb-panel" id="scminersDbPanel">
+                    <div class="summary-head">
+                      <div>
+                        <h3>SCMinersDB Preview</h3>
+                        <p>Live export mapping for one category at a time</p>
+                      </div>
+                      <div class="count-badge cyan" id="scminersDbCount">0</div>
+                    </div>
+                    <div class="segmented scminersdb-switch" id="scminersDbSwitch"></div>
+                    <div class="summary-row">
+                      <span class="name">Manifest order</span>
+                      <span class="value" id="scminersDbSummary">0 records</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name"><span class="dot"></span>Selected export</span>
+                      <span class="value" id="scminersDbSelectedCount">0 records</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name">Current file</span>
+                      <span class="value" id="scminersDbCategory">1H export</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name">PTU manifest</span>
+                      <span class="value" id="scminersDbPtuSummary">PTU manifest not loaded</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name">PTU source</span>
+                      <span class="value" id="scminersDbPtuSource">Not loaded</span>
+                    </div>
+                    <div class="timeline" id="scminersDbPreview"></div>
+                  </section>
               </div>
             </section>
           </section>

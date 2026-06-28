@@ -360,6 +360,13 @@ body[data-view="buy-items"] .center-column {
   gap: 10px;
   padding: 12px 0;
   border-bottom: 1px solid rgba(94, 122, 154, 0.1);
+  width: 100%;
+  background: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  text-align: left;
+  cursor: pointer;
 }
 
 .summary-row:last-child {
@@ -1699,4 +1706,31 @@ body[data-theme="light"] .reward-line {
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+.settings-shell .scminersdb-panel {
+  width: 100%;
+  max-width: none;
+  overflow: hidden;
+}
+
+.settings-shell .scminersdb-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow: visible;
+}
+
+.settings-shell .scminersdb-switch .seg {
+  white-space: normal;
+}
+
+.settings-shell .summary-row {
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.settings-shell .summary-row .value {
+  overflow-wrap: anywhere;
+  text-align: right;
 }
