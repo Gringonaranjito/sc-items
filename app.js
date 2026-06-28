@@ -320,28 +320,28 @@ function escapeRegExp(v) {
 
 const CLEAN_DISPLAY_TEXT_REPLACEMENTS = Object.freeze({
   "\u00a0": " ",
-  "Ãƒâ€šÃ‚": "",
-  "Ãƒâ€š": "",
-  "Ã¢â‚¬â€¹": "",
-  "Ã¢â‚¬Å’": "",
-  "Ã¢â‚¬Â": "",
-  "Ã¢â‚¬Â": "-",
-  "Ã¢â‚¬Â": '"',
-  "Ã¢â‚¬Å“": '"',
-  "Ã¢â‚¬Ëœ": "'",
-  "Ã¢â‚¬â„¢": "'",
-  "Ã¢â‚¬â€œ": "â€“",
-  "Ã¢â‚¬â€": "â€”",
-  "Ã¢â‚¬Â¦": "â€¦",
-  "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“": "â€“",
-  "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â": "â€”",
-  "ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“": "'",
-  "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢": "'",
-  "ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ": '"',
-  "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â": '"',
-  "Ã‚Â·": "Â·",
-  "Ã‚": "",
-  "Ã¯Â¿Â½": "",
+  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡": "",
+  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬â„¢": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "-",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": '"',
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“": '"',
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œ": "'",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢": "'",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦": "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“": "'",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢": "'",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ": '"',
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â": '"',
+  "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·": "Ãƒâ€šÃ‚Â·",
+  "ÃƒÆ’Ã¢â‚¬Å¡": "",
+  "ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½": "",
   "_": " ",
 });
 
@@ -360,7 +360,7 @@ function cleanDisplayText(v) {
   if (!input) return "";
   if (cleanDisplayTextCache.has(input)) return cleanDisplayTextCache.get(input);
 
-  if (!/[ÃƒÃ¢Ã‚Ã¯Â¿Â½_\u00a0]/.test(input) && !/\s{2,}/.test(input)) {
+  if (!/[ÃƒÆ’Ã†â€™ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã¢â‚¬Å¡ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½_\u00a0]/.test(input) && !/\s{2,}/.test(input)) {
     const fast = input.trim();
     if (cleanDisplayTextCache.size > 5000) cleanDisplayTextCache.clear();
     cleanDisplayTextCache.set(input, fast);
@@ -5880,7 +5880,7 @@ function renderBuy() {
       const manifestCount = Number(state.scminersDb?.manifest?.record_count || 0);
       const exportCount = Number(state.scminersDb?.manifest?.json_count || 0);
       const previewEntries = scminersDbEntries.slice();
-      els.scminersDbPanel.hidden = !scminersDbEntries.length;
+      els.scminersDbPanel.hidden = false;
       els.scminersDbCategory.textContent = `${scminersDbCategoryLabel(state.scminersDbCategory) || "Export"} export`;
       els.scminersDbCount.textContent = formatCount(selectedCount);
       if (els.scminersDbSummary) {
@@ -5992,6 +5992,7 @@ function renderSettings() {
   if (els.scminersDbManifestUrl) {
     els.scminersDbManifestUrl.value = currentScminersDbManifestUrl();
   }
+  renderBuy();
 }
 
 function syncWizardState() {
