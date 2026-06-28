@@ -98,10 +98,7 @@
                 <button id="deleteUser" class="ghost-button danger">Delete</button>
               </div>
             </div>
-            <button id="exportState" class="ghost-button">Export</button>
-            <button id="updateInfo" class="primary-button">Update Info</button>
             <button id="resetState" class="ghost-button danger">Reset</button>
-            <p id="updateInfoStatus" class="muted update-info-status">Update status will appear here.</p>
           </div>
         </header>
 
@@ -461,7 +458,12 @@
                 </label>
                 <div class="wizard-actions">
                   <button id="saveScminersDbManifestUrl" class="primary-button" type="button">Save manifest URL</button>
+                  <button id="updateInfo" class="primary-button" type="button">Update Info</button>
+                  <button id="exportState" class="ghost-button" type="button">Export Save</button>
+                  <button id="importStateButton" class="ghost-button" type="button">Import Save</button>
+                  <input id="importState" type="file" accept="application/json,.json" hidden />
                 </div>
+                <p id="updateInfoStatus" class="muted update-info-status">Update status will appear here.</p>
 
 
                   <section class="stack-card scminersdb-panel" id="scminersDbPanel">
