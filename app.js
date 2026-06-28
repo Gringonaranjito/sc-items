@@ -6546,9 +6546,7 @@ async function init() {
   els.searchInput.value = state.search;
   renderAll();
   void bootstrapAppData();
-  if (!bundledScminersDbPayload()) void loadScminersDbBridge();
-  void loadScminersDbPtuBridge().then(() => renderAll());
-  scheduleScminersDbRefresh();
+  // Stay offline at startup. Online SCMinersDB LIVE/PTU refresh only runs from Update Info.
 
     els.typeChips.addEventListener("click", handleChipClick);
   document.querySelectorAll(".segmented").forEach((group) => group.addEventListener("click", handleCollectionMode));
