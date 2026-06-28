@@ -1804,12 +1804,15 @@ function summarizeScminersDbManifest(manifest) {
   if (!manifest || typeof manifest !== "object") return "";
   const parts = [];
   const status = cleanDisplayText(manifest.status || "");
-  const count = Number(manifest.json_count || 0);
+  const exportCount = Number(manifest.json_count || 0);
+  const recordCount = Number(manifest.record_count || 0);
   const source = cleanDisplayText(manifest.source_root || "");
   const output = cleanDisplayText(manifest.output_root || "");
   if (status) parts.push(status);
-  if (count) parts.push(`${formatCount(count)} exports`);
+  if (exportCount) parts.push(`${formatCount(exportCount)} exports`);
+  if (recordCount) parts.push(`${formatCount(recordCount)} records`);
   if (source) parts.push(`source ${source}`);
+  else parts.push("source sc-items public data");
   if (output) parts.push(`data ${output}`);
   return parts.join(" · ");
 }
@@ -6514,7 +6517,16 @@ async function init() {
     try {
       const result = await updateScminersDb();
       if (result) {
-        els.footerWatch.textContent = `Updated ${formatCount(result?.updated?.files || 0)} exports`;
+        const manifest = result.manifest || {};
+        const exportCount = Number(manifest.json_count || result.files?.length || 0);
+        const recordCount = Number(manifest.record_count || 0);
+        const statusParts = [
+          "Updated successfully",
+          exportCount ? `${formatCount(exportCount)} exports` : "",
+          recordCount ? `${formatCount(recordCount)} records` : "",
+          result.manifestUrl ? "source sc-items public data" : "",
+        ].filter(Boolean);
+        els.footerWatch.textContent = statusParts.join(" · ");
       }
     } catch (error) {
       const message = cleanDisplayText(error?.message || error);
@@ -6570,6 +6582,8 @@ async function init() {
 init().catch((error) => {
   document.body.innerHTML = `<pre style="color:#fff;padding:20px;white-space:pre-wrap">${error.stack || error}</pre>`;
 });
+
+
 
 
 
