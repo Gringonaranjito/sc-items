@@ -1,0 +1,24 @@
+[
+  {
+    "source_id": "Settings",
+    "category": "easyanticheat",
+    "name": "Settings",
+    "raw_json": {
+      "productid": "aa19e17796924cf6b6d846faf484ec85",
+      "sandboxid": "f23787b1a9ea48a2a77d4fc5f54d4a09",
+      "clientid": "xyza7891ncXPR5tWfx8wVuhuDPa7vK2A",
+      "clientsecret": "zbH2FF7NGEt11q2DjeP9fGfOtm4ZVbV1/Ew4RtBVcQc",
+      "deploymentid": "4d044c953a844d819c234bb3698cf669",
+      "title": "Star Citizen",
+      "executable": "Bin64/StarCitizen.exe",
+      "requested_splash": "EasyAntiCheat/SplashScreen.png",
+      "logo_position": "bottom-right",
+      "parameters": "-no_login_dialog -envtag PTU --client-login-show-dialog 0 --services-config-enabled 1 --system-trace-service-enabled 1 --system-trace-env-id ptu-sc-alpha-450-10869259 --grpc-client-endpoint-override https://ptu-sc-alpha-450-10869259.test1.cloudimperiumgames.com:443",
+      "use_cmdline_parameters": "1",
+      "working_directory": "",
+      "wait_for_game_process_exit": "1",
+      "hide_splash_screen": "1",
+      "hide_ui_controls": "0"
+    }
+  }
+]

@@ -1,20 +1,20 @@
 {
   "category_counts": {
     "audit_export": 5,
-    "blueprint_catalog": 47,
-    "concept_status": 2418,
-    "crafting_recipes": 2,
-    "dismantle_returns": 31,
-    "factions_companies": 10025,
-    "item_catalog": 1829,
-    "locations": 2230,
-    "mission_prerequisites": 515,
-    "mission_rewards": 515,
-    "missions": 515,
-    "rentals": 716,
-    "ship_catalog": 2418,
-    "ship_components": 1290,
-    "shop_locations": 2114
+    "blueprint_catalog": 0,
+    "concept_status": 0,
+    "crafting_recipes": 0,
+    "dismantle_returns": 0,
+    "factions_companies": 0,
+    "item_catalog": 0,
+    "locations": 0,
+    "mission_prerequisites": 0,
+    "mission_rewards": 0,
+    "missions": 0,
+    "rentals": 0,
+    "ship_catalog": 0,
+    "ship_components": 0,
+    "shop_locations": 0
   },
   "exports": [
     {
@@ -33,7 +33,7 @@
       "file": "crafting_recipes.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\crafting_recipes.json",
       "path": "../json/crafting_recipes.json",
-      "record_count": 2,
+      "record_count": 0,
       "title": "Crafting recipes",
       "url": "../json/crafting_recipes.json"
     },
@@ -43,7 +43,7 @@
       "file": "dismantle_returns.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\dismantle_returns.json",
       "path": "../json/dismantle_returns.json",
-      "record_count": 31,
+      "record_count": 0,
       "title": "Dismantle returns",
       "url": "../json/dismantle_returns.json"
     },
@@ -53,7 +53,7 @@
       "file": "missions.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\missions.json",
       "path": "../json/missions.json",
-      "record_count": 515,
+      "record_count": 0,
       "title": "Mission definitions",
       "url": "../json/missions.json"
     },
@@ -63,7 +63,7 @@
       "file": "mission_rewards.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\mission_rewards.json",
       "path": "../json/mission_rewards.json",
-      "record_count": 515,
+      "record_count": 0,
       "title": "Mission rewards",
       "url": "../json/mission_rewards.json"
     },
@@ -73,7 +73,7 @@
       "file": "mission_prerequisites.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\mission_prerequisites.json",
       "path": "../json/mission_prerequisites.json",
-      "record_count": 515,
+      "record_count": 0,
       "title": "Mission prerequisites",
       "url": "../json/mission_prerequisites.json"
     },
@@ -83,7 +83,7 @@
       "file": "factions_companies.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\factions_companies.json",
       "path": "../json/factions_companies.json",
-      "record_count": 10025,
+      "record_count": 0,
       "title": "Factions and companies",
       "url": "../json/factions_companies.json"
     },
@@ -93,7 +93,7 @@
       "file": "ship_catalog.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\ship_catalog.json",
       "path": "../json/ship_catalog.json",
-      "record_count": 2418,
+      "record_count": 0,
       "title": "Ships and vehicles",
       "url": "../json/ship_catalog.json"
     },
@@ -103,7 +103,7 @@
       "file": "item_catalog.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\item_catalog.json",
       "path": "../json/item_catalog.json",
-      "record_count": 1829,
+      "record_count": 0,
       "title": "Items",
       "url": "../json/item_catalog.json"
     },
@@ -113,7 +113,7 @@
       "file": "ship_components.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\ship_components.json",
       "path": "../json/ship_components.json",
-      "record_count": 1290,
+      "record_count": 0,
       "title": "Ship components",
       "url": "../json/ship_components.json"
     },
@@ -123,7 +123,7 @@
       "file": "blueprint_catalog.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\blueprint_catalog.json",
       "path": "../json/blueprint_catalog.json",
-      "record_count": 47,
+      "record_count": 0,
       "title": "Blueprints",
       "url": "../json/blueprint_catalog.json"
     },
@@ -133,7 +133,7 @@
       "file": "locations.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\locations.json",
       "path": "../json/locations.json",
-      "record_count": 2230,
+      "record_count": 0,
       "title": "Locations",
       "url": "../json/locations.json"
     },
@@ -143,7 +143,7 @@
       "file": "shop_locations.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\shop_locations.json",
       "path": "../json/shop_locations.json",
-      "record_count": 2114,
+      "record_count": 0,
       "title": "Shop locations",
       "url": "../json/shop_locations.json"
     },
@@ -153,7 +153,7 @@
       "file": "rentals.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\rentals.json",
       "path": "../json/rentals.json",
-      "record_count": 716,
+      "record_count": 0,
       "title": "Rental locations",
       "url": "../json/rentals.json"
     },
@@ -163,7 +163,7 @@
       "file": "concept_status.json",
       "filesystem_path": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json\\concept_status.json",
       "path": "../json/concept_status.json",
-      "record_count": 2418,
+      "record_count": 0,
       "title": "Concept status",
       "url": "../json/concept_status.json"
     }
@@ -172,8 +172,8 @@
   "manifest_url": "../runs/latest.json",
   "output_root": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\json",
   "raw_root": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data\\raw",
-  "record_count": 24670,
+  "record_count": 5,
   "source_root": null,
   "status": "ok",
-  "updated_at": "2026-06-28T00:07:09.603747-04:00"
+  "updated_at": "2026-06-28T10:24:07.904824-04:00"
 }
