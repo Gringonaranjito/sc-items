@@ -1,55 +1,57 @@
-﻿{
-    "started_at":  "2026-06-28T10:24:07.805436-04:00",
-    "finished_at":  "2026-06-28T10:24:07.910339-04:00",
-    "status":  "ok",
-    "source_root":  "",
-    "output_root":  "",
-    "json_count":  25,
-    "record_count":  3,
-    "category_counts":  {
-                            "easyanticheat":  1,
-                            "ptu":  1,
-                            "spawnscreen":  1
-                        },
-    "source_environments":  {
-                                "live":  {
-                                             "folder":  "LIVE",
-                                             "exists":  true,
-                                             "data_p4k_exists":  true,
-                                             "data_p4k_size":  160527892480,
-                                             "data_p4k_last_write_time":  "2026-06-19T21:40:09.542349-04:00",
-                                             "is_stale":  false,
-                                             "stale_reason":  ""
-                                         },
-                                "ptu":  {
-                                            "folder":  "PTU",
-                                            "exists":  true,
-                                            "data_p4k_exists":  true,
-                                            "data_p4k_size":  147493404672,
-                                            "data_p4k_last_write_time":  "2025-12-06T02:43:04.071413-05:00",
-                                            "is_stale":  true,
-                                            "stale_reason":  "PTU Data.p4k is older than LIVE Data.p4k"
-                                        },
-                                "eptu":  {
-                                             "folder":  "EPTU",
-                                             "exists":  false,
-                                             "data_p4k_exists":  false,
-                                             "data_p4k_size":  0,
-                                             "data_p4k_last_write_time":  null,
-                                             "is_stale":  false,
-                                             "stale_reason":  ""
-                                         },
-                                "tech_preview":  {
-                                                     "folder":  "TECH-PREVIEW",
-                                                     "exists":  false,
-                                                     "data_p4k_exists":  false,
-                                                     "data_p4k_size":  0,
-                                                     "data_p4k_last_write_time":  null,
-                                                     "is_stale":  false,
-                                                     "stale_reason":  ""
-                                                 }
-                            },
-    "warnings":  [
-                     "SCDM / StarBreaker is not installed."
-                 ]
+{
+  "started_at": "2026-06-28T10:24:07.805436-04:00",
+  "finished_at": "2026-06-28T10:24:07.910339-04:00",
+  "status": "ok",
+  "source_root": "D:\\Program Files\\Roberts Space Industries\\StarCitizen\\PTU",
+  "output_root": "C:\\Users\\juanc\\AppData\\Local\\Temp\\scminersdb-ptu-workspace\\data",
+  "json_count": 25,
+  "record_count": 7821,
+  "category_counts": {
+    "item_catalog": 1858,
+    "ship_catalog": 2713,
+    "ship_components": 1659,
+    "crafting_recipes": 1560,
+    "dismantle_returns": 31
+  },
+  "source_environments": {
+    "live": {
+      "folder": "LIVE",
+      "exists": true,
+      "data_p4k_exists": true,
+      "data_p4k_size": 160527892480,
+      "data_p4k_last_write_time": "2026-06-19T21:40:09.542349-04:00",
+      "is_stale": false,
+      "stale_reason": ""
+    },
+    "ptu": {
+      "folder": "PTU",
+      "exists": true,
+      "data_p4k_exists": true,
+      "data_p4k_size": 147493404672,
+      "data_p4k_last_write_time": "2025-12-06T02:43:04.071413-05:00",
+      "is_stale": true,
+      "stale_reason": "PTU Data.p4k is older than LIVE Data.p4k"
+    },
+    "eptu": {
+      "folder": "EPTU",
+      "exists": false,
+      "data_p4k_exists": false,
+      "data_p4k_size": 0,
+      "data_p4k_last_write_time": null,
+      "is_stale": false,
+      "stale_reason": ""
+    },
+    "tech_preview": {
+      "folder": "TECH-PREVIEW",
+      "exists": false,
+      "data_p4k_exists": false,
+      "data_p4k_size": 0,
+      "data_p4k_last_write_time": null,
+      "is_stale": false,
+      "stale_reason": ""
+    }
+  },
+  "warnings": [
+    "SCDM / StarBreaker is not installed."
+  ]
 }
