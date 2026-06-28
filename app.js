@@ -5441,9 +5441,6 @@ function renderMissionBrowser() {
     els.missionSearchResults.innerHTML = `<div class="muted">Open Missions to browse every mission and its details.</div>`;
     return;
   }
-  if (!state.liveMissions.length && !state.liveMissionsStatus && !liveMissionLoadPromise) {
-    state.liveMissionsStatus = "Live missions are offline in this build.";
-  }
 
   const results = missionSearchItems();
   const selectedKey = `${norm(state.missionType || "")}::${norm(state.company || "")}::${missionTitleKey(state.mission || "")}`;
