@@ -5442,7 +5442,7 @@ function renderMissionBrowser() {
     return;
   }
   if (!state.liveMissions.length && !state.liveMissionsStatus && !liveMissionLoadPromise) {
-    void loadLiveMissionContracts();
+    state.liveMissionsStatus = "Live missions are offline in this build.";
   }
 
   const results = missionSearchItems();
