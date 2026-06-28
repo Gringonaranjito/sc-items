@@ -1,18 +1,23 @@
-# SC Items
+﻿# SC Items
 
-Local-first Star Citizen tracker for blueprints, missions, and buy items.
+SC Items is a local-first Star Citizen item, blueprint, mission, and buy-location tracker.
 
-## Run locally
+## How to run
 
-Use `run.ps1` or `launch.bat` to start the local bridge and open the app at `http://127.0.0.1:4173/`.
+1. Download and extract `scitems.zip`.
+2. Open the extracted folder.
+3. Double-click `SC Items.bat`.
 
-## Refresh data
+Optional:
 
-The `Update Info` button reloads the local JSON bundle without needing any extra installs.
-By default it syncs from the local SCMinersDB export folder configured in `run.ps1`.
-If you want it to pull from a hosted manifest instead, set `SCMINERSDB_UPDATE_MANIFEST_URL` before launch.
+- Double-click `Create Desktop Shortcut.bat` to make a desktop shortcut.
 
-## GitHub Pages
+## Updating data
 
-This repo is prepared for GitHub Pages via `.github/workflows/pages.yml`.
-Once the repository is connected to GitHub, enable Pages using the GitHub Actions source.
+The app uses bundled data when it starts.
+
+To refresh the app with the newest public LIVE/PTU data, open:
+
+Settings > Update Info
+
+That update button uses the internet. Other than that, the app is meant to work mostly offline.
