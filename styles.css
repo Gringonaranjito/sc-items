@@ -1707,3 +1707,30 @@ body[data-theme="light"] .reward-line {
     align-items: stretch;
   }
 }
+
+.settings-shell .scminersdb-panel {
+  width: 100%;
+  max-width: none;
+  overflow: hidden;
+}
+
+.settings-shell .scminersdb-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow: visible;
+}
+
+.settings-shell .scminersdb-switch .seg {
+  white-space: normal;
+}
+
+.settings-shell .summary-row {
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.settings-shell .summary-row .value {
+  overflow-wrap: anywhere;
+  text-align: right;
+}

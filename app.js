@@ -4,6 +4,7 @@ const USERS_KEY = "sc-blueprint-tracker-users-v1";
 const USER_PREFIX = "sc-blueprint-tracker-user-v1-";
 const SCMINERSDB_MANIFEST_URL_KEY = "scminersdb-manifest-url-v1";
 const SCMINERSDB_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/sc-items/scminersdb/runs/latest.json";
+const SCMINERSDB_PTU_DEFAULT_MANIFEST_URL = "https://gringonaranjito.github.io/sc-items/scminersdb/ptu/runs/latest.json";
 const BUY_DATA_SCRIPT_VERSION = "20260618a";
 const BUY_DATA_SCRIPT_URLS = Object.freeze([
   `./buy_items_data.js?v=${BUY_DATA_SCRIPT_VERSION}`,
@@ -115,6 +116,12 @@ const state = {
     files: [],
     exports: {},
     fileIndex: {},
+    status: "",
+  },
+  scminersDbPtu: {
+    available: false,
+    manifestUrl: SCMINERSDB_PTU_DEFAULT_MANIFEST_URL,
+    manifest: null,
     status: "",
   },
   scminersDbManifestUrl: localStorage.getItem(SCMINERSDB_MANIFEST_URL_KEY) || SCMINERSDB_DEFAULT_MANIFEST_URL,
@@ -313,28 +320,28 @@ function escapeRegExp(v) {
 
 const CLEAN_DISPLAY_TEXT_REPLACEMENTS = Object.freeze({
   "\u00a0": " ",
-  "Ã‚Â": "",
-  "Ã‚": "",
-  "â€‹": "",
-  "â€Œ": "",
-  "â€": "",
-  "â€": "-",
-  "â€": '"',
-  "â€œ": '"',
-  "â€˜": "'",
-  "â€™": "'",
-  "â€“": "–",
-  "â€”": "—",
-  "â€¦": "…",
-  "Ã¢â‚¬â€œ": "–",
-  "Ã¢â‚¬â€": "—",
-  "Ã¢â‚¬Ëœ": "'",
-  "Ã¢â‚¬â„¢": "'",
-  "Ã¢â‚¬Å“": '"',
-  "Ã¢â‚¬Â": '"',
-  "Â·": "·",
-  "Â": "",
-  "ï¿½": "",
+  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡": "",
+  "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬â„¢": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "-",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": '"',
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“": '"',
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œ": "'",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢": "'",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",
+  "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦": "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â": "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“": "'",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢": "'",
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ": '"',
+  "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â": '"',
+  "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·": "Ãƒâ€šÃ‚Â·",
+  "ÃƒÆ’Ã¢â‚¬Å¡": "",
+  "ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½": "",
   "_": " ",
 });
 
@@ -353,7 +360,7 @@ function cleanDisplayText(v) {
   if (!input) return "";
   if (cleanDisplayTextCache.has(input)) return cleanDisplayTextCache.get(input);
 
-  if (!/[ÃâÂï¿½_\u00a0]/.test(input) && !/\s{2,}/.test(input)) {
+  if (!/[ÃƒÆ’Ã†â€™ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã¢â‚¬Å¡ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½_\u00a0]/.test(input) && !/\s{2,}/.test(input)) {
     const fast = input.trim();
     if (cleanDisplayTextCache.size > 5000) cleanDisplayTextCache.clear();
     cleanDisplayTextCache.set(input, fast);
@@ -1065,6 +1072,45 @@ function currentScminersDbManifestUrl() {
   );
 }
 
+function currentScminersDbPtuManifestUrl() {
+  const liveUrl = currentScminersDbManifestUrl();
+  if (!liveUrl || liveUrl.startsWith("bundled://")) return SCMINERSDB_PTU_DEFAULT_MANIFEST_URL;
+  if (/\/runs\/latest\.json(?:[?#].*)?$/i.test(liveUrl)) {
+    return liveUrl.replace(/\/runs\/latest\.json(?:[?#].*)?$/i, "/ptu/runs/latest.json");
+  }
+  return SCMINERSDB_PTU_DEFAULT_MANIFEST_URL;
+}
+
+async function loadScminersDbPtuBridge() {
+  const manifestUrl = currentScminersDbPtuManifestUrl();
+  state.scminersDbPtu = {
+    available: false,
+    manifestUrl,
+    manifest: null,
+    status: "Loading PTU manifest...",
+  };
+
+  try {
+    const manifest = await fetchJson(manifestUrl);
+    if (!manifest) throw new Error("PTU manifest not available");
+    state.scminersDbPtu = {
+      available: true,
+      manifestUrl,
+      manifest,
+      status: summarizeScminersDbManifest(manifest) || "PTU manifest loaded",
+    };
+  } catch (error) {
+    state.scminersDbPtu = {
+      available: false,
+      manifestUrl,
+      manifest: null,
+      status: `PTU manifest unavailable: ${cleanDisplayText(error?.message || error)}`,
+    };
+  }
+
+  return state.scminersDbPtu;
+}
+
 function setScminersDbManifestUrl(value) {
   const normalized = normalizeScminersDbManifestUrl(value);
   state.scminersDbManifestUrl = normalized;
@@ -1273,7 +1319,7 @@ function buyEntryStatsGroups(entry, tab = state.buyTab) {
   if (tab === "ships" || tab === "rentals") {
     addDirectStat("Crew", entry?.crew);
     addDirectStat("Cargo", entry?.cargo);
-    const dims = [entry?.length ? `L ${cleanDisplayText(entry.length)}` : "", entry?.width ? `W ${cleanDisplayText(entry.width)}` : "", entry?.height ? `H ${cleanDisplayText(entry.height)}` : "", entry?.mass ? `Mass ${cleanDisplayText(entry.mass)}` : ""].filter(Boolean).join(" · ");
+    const dims = [entry?.length ? `L ${cleanDisplayText(entry.length)}` : "", entry?.width ? `W ${cleanDisplayText(entry.width)}` : "", entry?.height ? `H ${cleanDisplayText(entry.height)}` : "", entry?.mass ? `Mass ${cleanDisplayText(entry.mass)}` : ""].filter(Boolean).join(" | ");
     addDirectStat("Dimensions", dims);
   }
   for (const key of ["charges", "duration", "instability", "optimalChargeWindow", "shatterDamage", "laserPower", "tractorPower", "resistance", "volume", "damage", "dps", "ammo", "muzzleVelocity", "effectiveRange", "fireModes"]) {
@@ -1814,7 +1860,7 @@ function summarizeScminersDbManifest(manifest) {
   if (source) parts.push(`source ${source}`);
   else parts.push("source sc-items public data");
   if (output) parts.push(`data ${output}`);
-  return parts.join(" · ");
+  return parts.join(" | ");
 }
 
 async function loadScminersDbBridge(options = {}) {
@@ -2036,7 +2082,7 @@ function scminersDbEntrySummary(entry) {
   if (raw.Category) summaryBits.push(cleanDisplayText(raw.Category));
   if (raw.Icon) summaryBits.push(cleanDisplayText(raw.Icon));
   if (entry?.category) summaryBits.push(cleanDisplayText(entry.category));
-  return summaryBits.filter(Boolean).join(" · ");
+  return summaryBits.filter(Boolean).join(" | ");
 }
 
 function scheduleScminersDbRefresh() {
@@ -3186,7 +3232,7 @@ function scminersDbPrereqSummary(entry) {
     if (location) blockParts.push(location);
     if (count) blockParts.push(`${count} missions`);
     if (mission) blockParts.push(mission);
-    if (blockParts.length) parts.push(blockParts.join(" · "));
+    if (blockParts.length) parts.push(blockParts.join(" | "));
   }
 
   const fallbackBits = [
@@ -3198,7 +3244,7 @@ function scminersDbPrereqSummary(entry) {
   ]
     .map((value) => cleanDisplayText(value))
     .filter(Boolean);
-  if (!parts.length && fallbackBits.length) return fallbackBits.join(" · ");
+  if (!parts.length && fallbackBits.length) return fallbackBits.join(" | ");
   return parts.join(" | ");
 }
 
@@ -3332,7 +3378,7 @@ function renderCraftingIngredientMarkup(item, recipe) {
       (entry) => `
         <div class="mission-line">
           <strong>${cleanDisplayText(entry.resource || entry.slot_name || entry.name || "Unknown material")}</strong>
-          <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} SCU${entry.minQuality !== undefined || entry.min_quality !== undefined ? ` · min quality ${formatCount(entry.minQuality ?? entry.min_quality ?? 0)}` : ""}</div>
+          <div class="muted">${formatCount(entry.quantity || entry.quantity_required || 0)} SCU${entry.minQuality !== undefined || entry.min_quality !== undefined ? ` | min quality ${formatCount(entry.minQuality ?? entry.min_quality ?? 0)}` : ""}</div>
         </div>
       `,
     )
@@ -3358,7 +3404,7 @@ function renderDismantleMarkup(dismantleEntries) {
       return `
         <div class="mission-line">
           <strong>${cleanDisplayText(entry?.dismantle_method || "Dismantle")}</strong>
-          <div class="muted">${totalReturned ? `${formatCount(totalReturned)} SCU returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` · ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
+          <div class="muted">${totalReturned ? `${formatCount(totalReturned)} SCU returned` : "Return quantity unavailable"}${entry?.recipe_time_seconds ? ` | ${formatCount(entry.recipe_time_seconds)} sec` : ""}</div>
           ${resultMarkup}
           ${hasNamedResults ? "" : `<div class="muted">SCMinersDB did not expose returned material names for this row.</div>`}
         </div>
@@ -3444,7 +3490,7 @@ function scminersDbEnsureMissionCache() {
           ? Object.entries(rewardEntry.rewards)
               .filter(([, value]) => value !== null && value !== undefined && value !== "")
               .map(([key, value]) => `${key}: ${cleanDisplayText(value)}`)
-              .join(" · ")
+              .join(" | ")
           : "",
       ),
       structuredPrereqSummary: cleanDisplayText(entry.required_rank || entry.required_mission_count || entry.required_missions?.length || entry.location || entry.system)
@@ -3454,7 +3500,7 @@ function scminersDbEnsureMissionCache() {
             Array.isArray(entry.required_missions) && entry.required_missions.length ? entry.required_missions.join(", ") : "",
             cleanDisplayText(entry.location || ""),
             cleanDisplayText(entry.system || ""),
-          ].filter(Boolean).join(" · ")
+          ].filter(Boolean).join(" | ")
         : scminersDbPrereqSummary(prereqEntry),
       structuredPrereqSource: cleanDisplayText(prereqEntry?.source_path || ""),
       structuredTitle,
@@ -4388,7 +4434,7 @@ function missionDescription(mission) {
     missionTitle(mission),
   ]
     .filter(Boolean)
-    .join(" · ");
+    .join(" | ");
 }
 
 function missionAppearanceLines(mission) {
@@ -4765,7 +4811,7 @@ function renderSummary() {
   const footerBits = [];
   footerBits.push(state.watch.name ? `Watching: ${state.watch.name}` : "No monitored file");
   if (state.scminersDb?.status) footerBits.push(state.scminersDb.status);
-  els.footerWatch.textContent = footerBits.join(" · ");
+  els.footerWatch.textContent = footerBits.join(" | ");
 }
 
 function renderUsers() {
@@ -4813,7 +4859,7 @@ function renderCollection() {
               (item) => `
                 <div class="item" data-item="${item.name}">
                   <strong>${item.name}</strong>
-                  <small>${item.subtype || "unknown"} · ${item.missions?.length || 0} mission links · ${isOwned(item.name) ? "owned" : "missing"}</small>
+                  <small>${item.subtype || "unknown"} | ${item.missions?.length || 0} mission links | ${isOwned(item.name) ? "owned" : "missing"}</small>
                 </div>
               `,
             )
@@ -4889,7 +4935,7 @@ function renderSelectedOld() {
     }
 
     const missions = item.missions || [];
-    els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
+    els.selectedMeta.textContent = `${item.type} | ${item.subtype || "unknown"} | ${isOwned(item.name) ? "owned" : "missing"}`;
     els.selectedDetails.className = "detail-card";
     els.selectedDetails.innerHTML = `
       <div class="detail-grid">
@@ -4906,7 +4952,7 @@ function renderSelectedOld() {
       <div class="detail-kv">
         <span>Mission links</span>
         <div class="mission-list">
-          ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> · ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+          ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> | ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
         </div>
       </div>
     </div>
@@ -4924,7 +4970,7 @@ function renderSelectedOld() {
     if (kind === "type" && value) {
       const ownedOfType = owned.filter((item) => collectionCategory(item) === value);
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
-      els.selectedMeta.textContent = `Type · ${value}`;
+      els.selectedMeta.textContent = `Type | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
@@ -4940,14 +4986,14 @@ function renderSelectedOld() {
     if (kind === "company" && value) {
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company · ${value}`;
+      const bestLabel = best ? `${best.repStanding} | ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} | ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -4955,7 +5001,7 @@ function renderSelectedOld() {
 
     if (kind === "missing" && value) {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
-      els.selectedMeta.textContent = `Still needed · ${value}`;
+      els.selectedMeta.textContent = `Still needed | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
@@ -4987,7 +5033,7 @@ function renderSelectedOld() {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const ownedFiltered = ownedOfType.filter(matchesSubtype);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Type · ${value}`;
+      els.selectedMeta.textContent = `Type | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -5014,14 +5060,14 @@ function renderSelectedOld() {
       state.progressSubtype = "";
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company · ${value}`;
+      const bestLabel = best ? `${best.repStanding} | ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<button class="mission-line mission-link" type="button" data-mission-link="${log.type}::${log.company}::${log.mission}"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></button>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<button class="mission-line mission-link" type="button" data-mission-link="${log.type}::${log.company}::${log.mission}"><strong>${log.mission}</strong><div class="muted">${log.type} | ${log.reward || "reward logged"}</div></button>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -5032,7 +5078,7 @@ function renderSelectedOld() {
       const matchesSubtype = (item) => !subtype || progressSubtypeLabel(item) === subtype;
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Still needed · ${value}`;
+      els.selectedMeta.textContent = `Still needed | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -5064,7 +5110,7 @@ function renderSelectedOld() {
   const rewards = currentRewardOptions();
   const missingRewards = rewards.filter((item) => !isOwned(item.name));
 
-  els.selectedMeta.textContent = `${mission.type} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
+  els.selectedMeta.textContent = `${mission.type} | ${mission.faction || "Unknown"} | ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card";
   els.selectedDetails.innerHTML = `
     <div class="detail-grid">
@@ -5077,7 +5123,7 @@ function renderSelectedOld() {
       <div class="detail-kv">
         <span>Mission description</span>
         <div class="mission-line">
-          ${mission.lawful ? "Lawful contract" : "Unlawful contract"} · ${mission.system || "Unknown system"} · ${missionTitle(mission)}
+          ${mission.lawful ? "Lawful contract" : "Unlawful contract"} | ${mission.system || "Unknown system"} | ${missionTitle(mission)}
         </div>
       </div>
       <div class="detail-kv">
@@ -5116,7 +5162,7 @@ function renderSelected() {
     const crafting = blueprintCraftingData(item);
     const dismantleEntries = crafting.dismantles;
     const craftTimeSeconds = Number(crafting.recipe?.tiers?.[0]?.craft_time_seconds || crafting.recipe?.recipe_time_seconds || item.craftTime || 0);
-    els.selectedMeta.textContent = `${item.type} · ${item.subtype || "unknown"} · ${isOwned(item.name) ? "owned" : "missing"}`;
+    els.selectedMeta.textContent = `${item.type} | ${item.subtype || "unknown"} | ${isOwned(item.name) ? "owned" : "missing"}`;
     els.selectedDetails.className = "detail-card";
     els.selectedDetails.innerHTML = `
       <div class="detail-grid">
@@ -5147,7 +5193,7 @@ function renderSelected() {
         <div class="detail-kv">
           <span>Mission links</span>
           <div class="mission-list">
-            ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> · ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
+            ${missions.map((m) => `<button class="mission-line mission-link" type="button" data-mission-link data-mission-type="${m.type || ""}" data-mission-company="${m.faction || ""}" data-mission-title="${missionTitle(m)}"><div><strong>${m.type}</strong> | ${m.faction || "Unknown"}</div><div>${missionTitle(m)}</div><div class="muted">${formatMissionRequirement(m)}</div></button>`).join("")}
           </div>
         </div>
       </div>
@@ -5170,7 +5216,7 @@ function renderSelected() {
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const ownedFiltered = ownedOfType.filter(matchesSubtype);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Type · ${value}`;
+      els.selectedMeta.textContent = `Type | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -5191,14 +5237,14 @@ function renderSelected() {
       state.progressSubtype = "";
       const completed = state.logs.filter((log) => log.company === value);
       const best = highestCompletedRank(value);
-      const bestLabel = best ? `${best.repStanding} · ${best.title}` : "No rank yet";
-      els.selectedMeta.textContent = `Company · ${value}`;
+      const bestLabel = best ? `${best.repStanding} | ${best.title}` : "No rank yet";
+      els.selectedMeta.textContent = `Company | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-grid">
           <div class="detail-kv"><span>Current rank</span><strong>${bestLabel}</strong></div>
           <div class="detail-kv"><span>Completed missions</span><strong>${formatCount(completed.length)}</strong></div>
-          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} · ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
+          <div class="detail-kv"><span>Mission history</span><div class="mission-list">${completed.map((log) => `<div class="mission-line"><strong>${log.mission}</strong><div class="muted">${log.type} | ${log.reward || "reward logged"}</div></div>`).join("") || `<div class="muted">No missions logged yet.</div>`}</div></div>
         </div>
       `;
       return;
@@ -5209,7 +5255,7 @@ function renderSelected() {
       const matchesSubtype = (item) => !subtype || progressSubtypeLabel(item) === subtype;
       const missingOfType = missing.filter((item) => collectionCategory(item) === value);
       const missingFiltered = missingOfType.filter(matchesSubtype);
-      els.selectedMeta.textContent = `Still needed · ${value}`;
+      els.selectedMeta.textContent = `Still needed | ${value}`;
       els.selectedDetails.className = "detail-card";
       els.selectedDetails.innerHTML = `
         <div class="detail-filterbar">
@@ -5246,7 +5292,7 @@ function renderSelected() {
   const structuredPrereqSummary = cleanDisplayText(mission.structuredPrereqSummary || "");
   const appearanceLines = missionAppearanceLines(mission).filter(Boolean);
 
-  els.selectedMeta.textContent = `${mission.type || "Mission"} · ${mission.faction || "Unknown"} · ${mission.repStanding || "Any rank"}`;
+  els.selectedMeta.textContent = `${mission.type || "Mission"} | ${mission.faction || "Unknown"} | ${mission.repStanding || "Any rank"}`;
   els.selectedDetails.className = "detail-card mission-detail";
   els.selectedDetails.innerHTML = `
     <div class="mission-hero">
@@ -5295,7 +5341,7 @@ function renderSelected() {
     <div class="mission-section">
       <div class="mission-section-head">
         <span>Mission Description</span>
-        <span>${formatCount(mission.repReward || 0)} points · ${moneyRewardLabel}${scriptReward ? ` · ${formatCount(scriptReward)} script` : ""}</span>
+        <span>${formatCount(mission.repReward || 0)} points | ${moneyRewardLabel}${scriptReward ? ` | ${formatCount(scriptReward)} script` : ""}</span>
       </div>
       <p class="mission-description">${missionDescription(mission)}. Points for completion: ${formatCount(mission.repReward || 0)}. Money reward: ${moneyRewardLabel}.${scriptReward ? ` Script reward: ${formatCount(scriptReward)}.` : ""}</p>
     </div>
@@ -5304,7 +5350,7 @@ function renderSelected() {
         <span>Possible Rewards</span>
         <span>Total: ${rewards.length ? formatCount(rewards.length) : "0"}</span>
       </div>
-      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} · Points: ${formatCount(mission.repReward || 0)} · Money: ${moneyRewardLabel}${scriptReward ? ` · Script: ${formatCount(scriptReward)}` : ""}</div>
+      <div class="mission-summary-line">Rewards left: ${formatCount(missingRewards.length)} | Points: ${formatCount(mission.repReward || 0)} | Money: ${moneyRewardLabel}${scriptReward ? ` | Script: ${formatCount(scriptReward)}` : ""}</div>
       <div class="mission-list compact">
         ${rewards.length
           ? rewards
@@ -5382,8 +5428,8 @@ function renderMissionBrowser() {
         .map((mission) => {
           const scriptReward = missionScriptReward(mission);
           const rewardLabel = mission.rewardCount ? `${formatCount(mission.rewardCount)} reward${mission.rewardCount === 1 ? "" : "s"}` : "No rewards";
-          const moneyLabel = ` · ${missionMoneyRewardLabel(mission)}`;
-          const scriptLabel = scriptReward ? ` · ${formatCount(scriptReward)} script` : "";
+          const moneyLabel = ` | ${missionMoneyRewardLabel(mission)}`;
+          const scriptLabel = scriptReward ? ` | ${formatCount(scriptReward)} script` : "";
           const missionKey = `${norm(mission.type || "")}::${norm(mission.faction || "")}::${missionTitleKey(mission)}`;
           const selected = missionKey === selectedKey ? " selected" : "";
           return `
@@ -5481,7 +5527,7 @@ function renderProgress() {
 
   els.progressByType.innerHTML = [...byType.entries()]
     .sort((a, b) => b[1].owned - a[1].owned || b[1].total - a[1].total)
-    .map(([type, stats]) => `<button class="log-card search-result" type="button" data-progress-kind="type" data-progress-value="${type}"><div class="reward">${type}</div><div class="muted">${formatCount(stats.owned)} owned · ${formatCount(stats.total)} total</div></button>`)
+    .map(([type, stats]) => `<button class="log-card search-result" type="button" data-progress-kind="type" data-progress-value="${type}"><div class="reward">${type}</div><div class="muted">${formatCount(stats.owned)} owned | ${formatCount(stats.total)} total</div></button>`)
     .join("");
 
   const companies = [...new Set(missionItems().flatMap((item) => (item.missions || []).map((m) => m.faction)).filter(Boolean))].sort();
@@ -5500,7 +5546,7 @@ function renderProgress() {
       const best = highestCompletedRank(company);
       const rank = best?.repStanding || "No rank yet";
       const mission = best ? missionTitle(best) : "No missions logged yet";
-      return `<button class="log-card search-result" type="button" data-progress-kind="company" data-progress-value="${company}"><div class="reward">${company}</div><div class="muted">Current rank: ${rank} · from ${mission}</div></button>`;
+      return `<button class="log-card search-result" type="button" data-progress-kind="company" data-progress-value="${company}"><div class="reward">${company}</div><div class="muted">Current rank: ${rank} | from ${mission}</div></button>`;
     })
     .join("") || `<div class="muted">No ranked companies yet.</div>`;
 
@@ -5508,7 +5554,7 @@ function renderProgress() {
     .slice(0, 40)
     .map((name) => {
       const item = missionItems().find((entry) => entry.name === name);
-      return `<button class="log-card search-result" type="button" data-progress-kind="missing" data-progress-value="${collectionCategory(item)}"><div class="reward">${name}</div><div class="muted">Still needed · ${item?.type || "unknown"}</div></button>`;
+      return `<button class="log-card search-result" type="button" data-progress-kind="missing" data-progress-value="${collectionCategory(item)}"><div class="reward">${name}</div><div class="muted">Still needed | ${item?.type || "unknown"}</div></button>`;
     })
     .join("");
 }
@@ -5786,7 +5832,7 @@ function renderBuy() {
       ${((tab === "ships" || tab === "rentals") && (selected.length || selected.width || selected.height || selected.mass)) ? `
         <div class="detail-kv buy-detail-wide">
           <span>Dimensions</span>
-          <strong>${[selected.length ? `L ${selected.length}` : "", selected.width ? `W ${selected.width}` : "", selected.height ? `H ${selected.height}` : "", selected.mass ? `Mass ${selected.mass}` : ""].filter(Boolean).join(" · ")}</strong>
+          <strong>${[selected.length ? `L ${selected.length}` : "", selected.width ? `W ${selected.width}` : "", selected.height ? `H ${selected.height}` : "", selected.mass ? `Mass ${selected.mass}` : ""].filter(Boolean).join(" | ")}</strong>
         </div>
       ` : ""}
       ${tab === "items" ? `
@@ -5817,8 +5863,8 @@ function renderBuy() {
             .join("") || `<div class="muted">No availability data found for the current filters.</div>`}
         </div>
       </div>
-      ${tab === "ships" || tab === "rentals" ? selectedShipWeapons.length ? `<div class="detail-kv buy-detail-wide"><span>Weapons</span><strong>${weaponCounts.map(([name, count]) => `${name} x ${count}`).join(" · ")}</strong></div>` : "" : ""}
-      ${tab === "ships" || tab === "rentals" ? selectedShipComponents.length ? `<div class="detail-kv buy-detail-wide"><span>Components</span><strong>${componentCounts.map(([name, count]) => `${name} x ${count}`).join(" · ")}</strong></div>` : "" : ""}
+      ${tab === "ships" || tab === "rentals" ? selectedShipWeapons.length ? `<div class="detail-kv buy-detail-wide"><span>Weapons</span><strong>${weaponCounts.map(([name, count]) => `${name} x ${count}`).join(" | ")}</strong></div>` : "" : ""}
+      ${tab === "ships" || tab === "rentals" ? selectedShipComponents.length ? `<div class="detail-kv buy-detail-wide"><span>Components</span><strong>${componentCounts.map(([name, count]) => `${name} x ${count}`).join(" | ")}</strong></div>` : "" : ""}
       ${tab === "rentals" ? `<div class="detail-kv buy-detail-wide"><span>Rental pricing</span><div class="mission-list"><div class="mission-line"><strong>1 day / 3 days / 7 days</strong><div class="muted">${price}</div></div></div></div>` : ""}
     </div>
   `;
@@ -5834,7 +5880,7 @@ function renderBuy() {
       const manifestCount = Number(state.scminersDb?.manifest?.record_count || 0);
       const exportCount = Number(state.scminersDb?.manifest?.json_count || 0);
       const previewEntries = scminersDbEntries.slice();
-      els.scminersDbPanel.hidden = !scminersDbEntries.length;
+      els.scminersDbPanel.hidden = false;
       els.scminersDbCategory.textContent = `${scminersDbCategoryLabel(state.scminersDbCategory) || "Export"} export`;
       els.scminersDbCount.textContent = formatCount(selectedCount);
       if (els.scminersDbSummary) {
@@ -5845,10 +5891,28 @@ function renderBuy() {
           exportCount ? `${formatCount(exportCount)} exports` : "",
         ]
           .filter(Boolean)
-          .join(" · ");
+          .join(" | ");
       }
       if (els.scminersDbSelectedCount) {
         els.scminersDbSelectedCount.textContent = `${formatCount(previewEntries.length)} records`;
+      }
+      if (els.scminersDbPtuSummary) {
+        const ptu = state.scminersDbPtu || {};
+        const ptuManifest = ptu.manifest || {};
+        const ptuEnv = ptuManifest.source_environments?.ptu || ptuManifest.source_environments?.PTU || {};
+        const ptuParts = [];
+        if (ptu.available) {
+          const ptuExportCount = Number(ptuManifest.json_count || 0);
+          const ptuRecordCount = Number(ptuManifest.record_count || 0);
+          if (ptuExportCount) ptuParts.push(`${formatCount(ptuExportCount)} exports`);
+          if (ptuRecordCount) ptuParts.push(`${formatCount(ptuRecordCount)} records`);
+          if (ptuEnv.data_p4k_last_write_time) ptuParts.push(`Data.p4k ${cleanDisplayText(ptuEnv.data_p4k_last_write_time)}`);
+          if (ptuEnv.is_stale) ptuParts.push(`STALE: ${cleanDisplayText(ptuEnv.stale_reason || "PTU data is stale")}`);
+        }
+        els.scminersDbPtuSummary.textContent = ptuParts.join(" | ") || cleanDisplayText(ptu.status || "PTU manifest not loaded");
+      }
+      if (els.scminersDbPtuSource) {
+        els.scminersDbPtuSource.textContent = state.scminersDbPtu?.manifestUrl || SCMINERSDB_PTU_DEFAULT_MANIFEST_URL;
       }
       if (els.scminersDbSwitch) {
         els.scminersDbSwitch.innerHTML =
@@ -5872,7 +5936,7 @@ function renderBuy() {
           return `
             <div class="mission-line">
               <div class="reward">${String(index + 1).padStart(2, "0")}. ${escapeHtml(title)}</div>
-              <div class="muted">${escapeHtml(type || "Unknown type")}${summary ? ` · ${escapeHtml(summary)}` : ""}</div>
+              <div class="muted">${escapeHtml(type || "Unknown type")}${summary ? ` | ${escapeHtml(summary)}` : ""}</div>
             </div>
           `;
         })
@@ -5902,14 +5966,14 @@ function renderStats() {
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 36)
-      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} · owned</div></div>`)
+      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} | owned</div></div>`)
       .join("") || `<div class="muted">No owned rewards yet.</div>`;
   els.statsMissingList.innerHTML =
     missing
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 36)
-      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} · missing</div></div>`)
+      .map((item) => `<div class="log-card"><div class="reward">${item.name}</div><div class="muted">${item.type} | missing</div></div>`)
       .join("") || `<div class="muted">Nothing missing.</div>`;
   els.missionAttempts.innerHTML =
     [...attempts.entries()]
@@ -5928,6 +5992,7 @@ function renderSettings() {
   if (els.scminersDbManifestUrl) {
     els.scminersDbManifestUrl.value = currentScminersDbManifestUrl();
   }
+  renderBuy();
 }
 
 function syncWizardState() {
@@ -6217,6 +6282,8 @@ async function init() {
     "scminersDbSummary",
     "scminersDbSelectedCount",
     "scminersDbCategory",
+    "scminersDbPtuSummary",
+    "scminersDbPtuSource",
     "scminersDbPreview",
     "scminersDbSwitch",
     "statsOwnedCount",
@@ -6251,6 +6318,7 @@ async function init() {
   renderAll();
   void bootstrapAppData();
   if (!bundledScminersDbPayload()) void loadScminersDbBridge();
+  void loadScminersDbPtuBridge().then(() => renderAll());
   scheduleScminersDbRefresh();
 
     els.typeChips.addEventListener("click", handleChipClick);
@@ -6518,6 +6586,7 @@ async function init() {
   els.updateInfo.addEventListener("click", async () => {
     try {
       const result = await updateScminersDb();
+      const ptuResult = await loadScminersDbPtuBridge();
       if (result) {
         const manifest = result.manifest || {};
         const exportCount = Number(manifest.json_count || result.files?.length || 0);
@@ -6527,8 +6596,9 @@ async function init() {
           exportCount ? `${formatCount(exportCount)} exports` : "",
           recordCount ? `${formatCount(recordCount)} records` : "",
           result.manifestUrl ? "source sc-items public data" : "",
+          ptuResult?.available ? `PTU ${formatCount(Number(ptuResult.manifest?.record_count || 0))} records` : "",
         ].filter(Boolean);
-        const statusText = statusParts.join(" · ");
+        const statusText = statusParts.join(" | ");
         if (els.updateInfoStatus) els.updateInfoStatus.textContent = statusText;
         els.footerWatch.textContent = statusText;
       }
@@ -6588,6 +6658,7 @@ async function init() {
 init().catch((error) => {
   document.body.innerHTML = `<pre style="color:#fff;padding:20px;white-space:pre-wrap">${error.stack || error}</pre>`;
 });
+
 
 
 

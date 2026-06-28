@@ -354,29 +354,6 @@
                   <div id="buySelectedDetails" class="detail-card empty">
                     Pick an item, ship, or rental to see its price and location details here.
                   </div>
-                  <section class="stack-card scminersdb-panel" id="scminersDbPanel" hidden>
-                    <div class="summary-head">
-                      <div>
-                        <h3>SCMinersDB Preview</h3>
-                        <p>Live export mapping for one category at a time</p>
-                      </div>
-                      <div class="count-badge cyan" id="scminersDbCount">0</div>
-                    </div>
-                    <div class="segmented scminersdb-switch" id="scminersDbSwitch"></div>
-                    <div class="summary-row">
-                      <span class="name">Manifest order</span>
-                      <span class="value" id="scminersDbSummary">0 records</span>
-                    </div>
-                    <div class="summary-row">
-                      <span class="name"><span class="dot"></span>Selected export</span>
-                      <span class="value" id="scminersDbSelectedCount">0 records</span>
-                    </div>
-                    <div class="summary-row">
-                      <span class="name">Current file</span>
-                      <span class="value" id="scminersDbCategory">1H export</span>
-                    </div>
-                    <div class="timeline" id="scminersDbPreview"></div>
-                  </section>
                 </aside>
               </div>
             </section>
@@ -485,6 +462,39 @@
                 <div class="wizard-actions">
                   <button id="saveScminersDbManifestUrl" class="primary-button" type="button">Save manifest URL</button>
                 </div>
+
+
+                  <section class="stack-card scminersdb-panel" id="scminersDbPanel">
+                    <div class="summary-head">
+                      <div>
+                        <h3>SCMinersDB Preview</h3>
+                        <p>Live export mapping for one category at a time</p>
+                      </div>
+                      <div class="count-badge cyan" id="scminersDbCount">0</div>
+                    </div>
+                    <div class="segmented scminersdb-switch" id="scminersDbSwitch"></div>
+                    <div class="summary-row">
+                      <span class="name">Manifest order</span>
+                      <span class="value" id="scminersDbSummary">0 records</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name"><span class="dot"></span>Selected export</span>
+                      <span class="value" id="scminersDbSelectedCount">0 records</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name">Current file</span>
+                      <span class="value" id="scminersDbCategory">1H export</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name">PTU manifest</span>
+                      <span class="value" id="scminersDbPtuSummary">PTU manifest not loaded</span>
+                    </div>
+                    <div class="summary-row">
+                      <span class="name">PTU source</span>
+                      <span class="value" id="scminersDbPtuSource">Not loaded</span>
+                    </div>
+                    <div class="timeline" id="scminersDbPreview"></div>
+                  </section>
               </div>
             </section>
           </section>
