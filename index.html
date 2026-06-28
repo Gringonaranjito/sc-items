@@ -95,13 +95,11 @@
               <div class="user-controls">
                 <select id="userSelect" aria-label="Select user"></select>
                 <button id="addUser" class="ghost-button">New</button>
+                <button id="editUser" class="ghost-button">Edit Name</button>
                 <button id="deleteUser" class="ghost-button danger">Delete</button>
               </div>
             </div>
-            <button id="exportState" class="ghost-button">Export</button>
-            <button id="updateInfo" class="primary-button">Update Info</button>
             <button id="resetState" class="ghost-button danger">Reset</button>
-            <p id="updateInfoStatus" class="muted update-info-status">Update status will appear here.</p>
           </div>
         </header>
 
@@ -119,6 +117,7 @@
                 <select id="userSelectSide" aria-label="Select user from sidebar"></select>
                 <div class="watch-row">
                   <button id="addUserSide" class="ghost-button">Add user</button>
+                  <button id="editUserSide" class="ghost-button">Edit Name</button>
                   <button id="deleteUserSide" class="ghost-button danger">Delete user</button>
                 </div>
               </div>
@@ -461,7 +460,12 @@
                 </label>
                 <div class="wizard-actions">
                   <button id="saveScminersDbManifestUrl" class="primary-button" type="button">Save manifest URL</button>
+                  <button id="updateInfo" class="primary-button" type="button">Update Info</button>
+                  <button id="exportState" class="ghost-button" type="button">Export Save</button>
+                  <button id="importStateButton" class="ghost-button" type="button">Import Save</button>
+                  <input id="importState" type="file" accept="application/json,.json" hidden />
                 </div>
+                <p id="updateInfoStatus" class="muted update-info-status">Update status will appear here.</p>
 
 
                   <section class="stack-card scminersdb-panel" id="scminersDbPanel">

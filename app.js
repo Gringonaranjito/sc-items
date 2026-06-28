@@ -1605,6 +1605,33 @@ function promptForUserName() {
   return name.trim() || fallback;
 }
 
+function renameCurrentUser() {
+  const user = currentUser();
+  if (!user) return;
+
+  const nextNameRaw = prompt("Rename selected user:", user.name || "");
+  if (nextNameRaw === null) return;
+
+  const nextName = cleanDisplayText(nextNameRaw).trim();
+  if (!nextName) {
+    alert("User name cannot be empty.");
+    return;
+  }
+
+  const duplicate = state.users.find(
+    (entry) => entry.id !== user.id && String(entry.name || "").toLowerCase() === nextName.toLowerCase(),
+  );
+
+  if (duplicate) {
+    alert(`A user named "${nextName}" already exists.`);
+    return;
+  }
+
+  user.name = nextName;
+  saveUsers();
+  renderAll();
+  saveState();
+}
 function deleteCurrentUser() {
   if (state.users.length <= 1) return;
   const user = currentUser();
@@ -6195,17 +6222,215 @@ function stopWatch() {
   renderSummary();
 }
 
-function exportState() {
-  const blob = new Blob(
-    [JSON.stringify({ owned: [...state.owned], logs: state.logs }, null, 2)],
-    { type: "application/json" },
-  );
+function storedProfileForExport(userId) {
+  try {
+    const raw = localStorage.getItem(profileKey(userId));
+    return raw ? JSON.parse(raw) : defaultProfile();
+  } catch {
+    return defaultProfile();
+  }
+}
+
+function downloadJsonFile(payload, fileName) {
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "blueprint-tracker-export.json";
+  a.download = fileName;
   a.click();
   URL.revokeObjectURL(url);
+}
+
+function safeSaveFileName(value) {
+  return cleanDisplayText(value || "sc-items")
+    .replace(/[^a-z0-9_-]+/gi, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase() || "sc-items";
+}
+
+function buildSaveFileUsers(scope) {
+  const selected = currentUser();
+  const exportAll = scope === "all";
+  const users = exportAll ? state.users : [selected].filter(Boolean);
+  return users.map((user) => ({
+    id: user.id,
+    name: user.name,
+    profile: storedProfileForExport(user.id),
+  }));
+}
+
+function exportState() {
+  saveState();
+  const answer = prompt("Export which users?\n\n1 = Current user only\n2 = All users", "1");
+  if (answer === null) return;
+  const scope = String(answer).trim() === "2" ? "all" : "current";
+  const users = buildSaveFileUsers(scope);
+  if (!users.length) {
+    alert("No users found to export.");
+    return;
+  }
+
+  const payload = {
+    app: "SC Items",
+    type: "sc-items-save",
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    scope,
+    currentUserId: state.currentUserId || "",
+    settings: {
+      scminersDbManifestUrl: currentScminersDbManifestUrl(),
+      theme: localStorage.getItem("sc-blueprint-tracker-theme") || "dark",
+      watch: state.watch.name || "",
+    },
+    users,
+  };
+
+  const label = scope === "all" ? "all-users" : safeSaveFileName(users[0]?.name || "current-user");
+  downloadJsonFile(payload, `sc-items-save-${label}.json`);
+}
+
+function importedUsersFromPayload(payload) {
+  if (!payload || typeof payload !== "object") return [];
+  if (Array.isArray(payload.users)) return payload.users.filter(Boolean);
+  if (payload.profile || payload.owned || payload.logs) {
+    return [{
+      id: payload.id || "imported-user",
+      name: payload.name || "Imported User",
+      profile: payload.profile || payload,
+    }];
+  }
+  return [];
+}
+
+function uniqueUserId(baseId = "imported-user") {
+  const base = safeSaveFileName(baseId) || "imported-user";
+  const existing = new Set(state.users.map((user) => String(user.id)));
+  if (!existing.has(base)) return base;
+  let counter = 2;
+  while (existing.has(`${base}-${counter}`)) counter += 1;
+  return `${base}-${counter}`;
+}
+
+function uniqueUserName(baseName = "Imported User") {
+  const base = cleanDisplayText(baseName || "Imported User") || "Imported User";
+  const existing = new Set(state.users.map((user) => String(user.name || "").toLowerCase()));
+  if (!existing.has(base.toLowerCase())) return base;
+  let counter = 2;
+  while (existing.has(`${base} ${counter}`.toLowerCase())) counter += 1;
+  return `${base} ${counter}`;
+}
+
+function normalizeImportedProfile(profile) {
+  const fallback = defaultProfile();
+  if (!profile || typeof profile !== "object") return fallback;
+  return {
+    ...fallback,
+    ...profile,
+    owned: Array.isArray(profile.owned) ? profile.owned : fallback.owned,
+    logs: Array.isArray(profile.logs) ? profile.logs : fallback.logs,
+  };
+}
+
+function chooseImportedUsers(users) {
+  if (users.length <= 1) return users;
+  const lines = users.map((user, index) => `${index + 1} = ${cleanDisplayText(user.name || user.id || "Imported User")}`);
+  const answer = prompt(`Import which users?\n\n0 = All users\n${lines.join("\n")}`, "0");
+  if (answer === null) return [];
+  const value = Number(String(answer).trim());
+  if (!Number.isFinite(value) || value === 0) return users;
+  const selected = users[value - 1];
+  return selected ? [selected] : [];
+}
+
+function importOneUser(imported) {
+  const incomingName = cleanDisplayText(imported.name || "Imported User") || "Imported User";
+  const incomingId = cleanDisplayText(imported.id || safeSaveFileName(incomingName) || "imported-user");
+  const profile = normalizeImportedProfile(imported.profile || imported);
+
+  const existingById = state.users.find((user) => String(user.id) === String(incomingId));
+  const existingByName = state.users.find((user) => String(user.name || "").toLowerCase() === incomingName.toLowerCase());
+  const existing = existingById || existingByName;
+
+  if (!existing) {
+    const id = uniqueUserId(incomingId);
+    const name = uniqueUserName(incomingName);
+    state.users.push({ id, name });
+    localStorage.setItem(profileKey(id), JSON.stringify(profile));
+    return { action: "added", id, name };
+  }
+
+  const choice = prompt(
+    `Imported user conflicts with existing user:\n\nExisting: ${existing.name}\nImported: ${incomingName}\n\n1 = Keep original / skip imported\n2 = Replace original with imported\n3 = Add imported as new copy\n4 = Cancel import`,
+    "1",
+  );
+
+  if (choice === null || String(choice).trim() === "4") return { action: "cancelled" };
+  if (String(choice).trim() === "2") {
+    existing.name = incomingName;
+    localStorage.setItem(profileKey(existing.id), JSON.stringify(profile));
+    return { action: "replaced", id: existing.id, name: existing.name };
+  }
+  if (String(choice).trim() === "3") {
+    const id = uniqueUserId(`${incomingId}-imported`);
+    const name = uniqueUserName(`${incomingName} imported`);
+    state.users.push({ id, name });
+    localStorage.setItem(profileKey(id), JSON.stringify(profile));
+    return { action: "added", id, name };
+  }
+  return { action: "skipped", id: existing.id, name: existing.name };
+}
+
+async function importStateFromFile(file) {
+  if (!file) return;
+  const text = await file.text();
+  const payload = JSON.parse(text);
+  const users = chooseImportedUsers(importedUsersFromPayload(payload));
+  if (!users.length) return;
+
+  const results = [];
+  for (const imported of users) {
+    const result = importOneUser(imported);
+    results.push(result);
+    if (result.action === "cancelled") break;
+  }
+
+  saveUsers();
+
+  const firstImported = results.find((result) => result.id);
+  if (firstImported?.id) {
+    applyUserSelection(firstImported.id);
+  } else {
+    loadUsers();
+    applyUserSelection(state.currentUserId || state.users[0]?.id || "default");
+  }
+
+  const summary = results.reduce((counts, result) => {
+    counts[result.action] = (counts[result.action] || 0) + 1;
+    return counts;
+  }, {});
+
+  const summaryText = [
+    summary.added ? `${summary.added} added` : "",
+    summary.replaced ? `${summary.replaced} replaced` : "",
+    summary.skipped ? `${summary.skipped} skipped` : "",
+    summary.cancelled ? "cancelled" : "",
+  ].filter(Boolean).join(" | ") || "Import complete";
+
+  if (els.updateInfoStatus) els.updateInfoStatus.textContent = `Import complete: ${summaryText}`;
+  els.footerWatch.textContent = `Import complete: ${summaryText}`;
+  renderAll();
+  saveState();
+}
+
+function handleImportStateFile(event) {
+  const file = event.target.files?.[0];
+  event.target.value = "";
+  if (!file) return;
+  importStateFromFile(file).catch((error) => {
+    const message = cleanDisplayText(error?.message || error);
+    alert(`Import failed: ${message}`);
+    if (els.updateInfoStatus) els.updateInfoStatus.textContent = `Import failed: ${message}`;
+  });
 }
 
 function resetState() {
@@ -6224,11 +6449,13 @@ async function init() {
     "userCount",
     "userSelect",
     "addUser",
+    "editUser",
     "deleteUser",
     "currentUserName",
     "currentUserIndex",
     "userSelectSide",
     "addUserSide",
+    "editUserSide",
     "deleteUserSide",
     "ownedTotal",
     "missingTotal",
@@ -6300,6 +6527,8 @@ async function init() {
     "searchInput",
     "missionAttempts",
     "exportState",
+    "importStateButton",
+    "importState",
     "updateInfo",
     "updateInfoStatus",
     "resetState",
@@ -6578,11 +6807,15 @@ async function init() {
     const name = promptForUserName();
     if (name !== null) createUser(name);
   });
+  els.editUser?.addEventListener("click", renameCurrentUser);
+  els.editUserSide?.addEventListener("click", renameCurrentUser);
   els.deleteUser.addEventListener("click", deleteCurrentUser);
   els.deleteUserSide.addEventListener("click", deleteCurrentUser);
   els.logReward.addEventListener("click", logReward);
   els.clearSelection.addEventListener("click", clearSelection);
   els.exportState.addEventListener("click", exportState);
+  els.importStateButton?.addEventListener("click", () => els.importState?.click());
+  els.importState?.addEventListener("change", handleImportStateFile);
   els.updateInfo.addEventListener("click", async () => {
     try {
       const result = await updateScminersDb();
