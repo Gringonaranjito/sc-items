@@ -13,7 +13,7 @@
       "executable": "Bin64/StarCitizen.exe",
       "requested_splash": "EasyAntiCheat/SplashScreen.png",
       "logo_position": "bottom-right",
-      "parameters": "-no_login_dialog -envtag PTU --client-login-show-dialog 0 --services-config-enabled 1 --system-trace-service-enabled 1 --system-trace-env-id ptu-sc-alpha-450-10869259 --grpc-client-endpoint-override https://ptu-sc-alpha-450-10869259.test1.cloudimperiumgames.com:443",
+      "parameters": "",
       "use_cmdline_parameters": "1",
       "working_directory": "",
       "wait_for_game_process_exit": "1",
