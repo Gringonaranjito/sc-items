@@ -6,6 +6,12 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/adagio holdings/adagio_resourcegathering_shipsalvage.json"
   },
   {
+    "name": "ContractGenerator.Battaglia_Generator",
+    "record_type": "ContractGenerator",
+    "source_id": "0a42dd4d-6ad2-4970-bd3f-ac2e500e3abc",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia_generator.json"
+  },
+  {
     "name": "ContractGenerator.BitZeros_RecoverItem",
     "record_type": "ContractGenerator",
     "source_id": "1171e04a-0739-4bb0-8a10-b048aa7d4ebb",
@@ -216,6 +222,12 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_fpskill.json"
   },
   {
+    "name": "ContractGenerator.NorthRock_SOO2",
+    "record_type": "ContractGenerator",
+    "source_id": "0073dfd3-f3a0-411f-a9b8-c52eef65b098",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_soo2.json"
+  },
+  {
     "name": "ContractGenerator.Rayari_RecoverItem",
     "record_type": "ContractGenerator",
     "source_id": "23257f42-2028-46e0-8a5e-9cc5abbbdb49",
@@ -238,6 +250,12 @@
     "record_type": "ContractGenerator",
     "source_id": "efdf4c00-c040-4730-a8cf-c1cc0a39f422",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/shubin interstellar/shubininterstellar.json"
+  },
+  {
+    "name": "ContractGenerator.TheBackpocket",
+    "record_type": "ContractGenerator",
+    "source_id": "0124afb6-2fab-4faf-be09-041cbb06fc8c",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
   },
   {
     "name": "ContractGenerator.TheCollector",
@@ -356,6 +374,18 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "6c7d0dd4-c604-4a5f-9836-30756cc15b43",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/ballistic/scatter/bp_craft_apar_ballisticscattergun_s3.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_apar_hmg_ballistic_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "b2857c9f-e7ca-4e6f-9071-d352a58383d4",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/$templates/bp_craft_apar_hmg_ballistic_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_apar_hmg_ballistic_01_collector01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "4e3a610c-ed81-4d65-8957-933ea5a7c767",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/$templates/bp_craft_apar_hmg_ballistic_01_collector01.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_APAR_MassDriver_S2",
@@ -562,6 +592,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/ammo/ballistic/bp_craft_behr_pistol_ballistic_01_mag.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_behr_pistol_ballistic_01_mr01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "020bb260-171f-441b-9bc0-6e44284efa1a",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/pistol/bp_craft_behr_pistol_ballistic_01_mr01.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_behr_rifle_ballistic_01",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "30e48bec-41ec-4322-92b5-da628e85830c",
@@ -586,6 +622,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/ammo/ballistic/bp_craft_behr_rifle_ballistic_01_mag.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_behr_rifle_ballistic_01_mr01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "7012c8b6-a894-41c2-a954-5b8f3f3e1b9a",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/rifle/bp_craft_behr_rifle_ballistic_01_mr01.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_behr_rifle_ballistic_01_tan01",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "07cf5e1e-ec19-4a0c-9750-b8897de97cb8",
@@ -608,6 +650,12 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "edcf3145-e9a9-471a-baa2-12f54da9ed26",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/ammo/ballistic/bp_craft_behr_rifle_ballistic_02_mag_civilian.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_behr_rifle_ballistic_03",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "1a85280e-7b8f-4486-a563-17cd2549d268",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/rifle/bp_craft_behr_rifle_ballistic_03.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_behr_shotgun_ballistic_01",
@@ -728,6 +776,18 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "ea3c2e6f-5dbb-4a98-b2c2-491cde65201d",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/missionitems/bp_craft_carryable_2h_fl_missionitem_microsatellite_a.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Carryable_2H_FL_MissionItem_prototype_ship_component_2_a",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "00eabb01-d628-49f5-a1f6-7c9df4ad9259",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/missionitems/bp_craft_carryable_2h_fl_missionitem_prototype_ship_component_2_a.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Carryable_2H_SQ_CollectorMaterial_002",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "d31e71e2-38f1-4773-8c4f-2507ca0470db",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/missionitems/bp_craft_carryable_2h_sq_collectormaterial_002.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_ccc_medium_armor_arms_01_01_01",
@@ -976,10 +1036,40 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/medium/bp_craft_cds_armor_medium_legs_01_01_20.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_heavy_arms_01_02_02",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "5fa322e9-ddb3-4696-94fb-45725aca6aef",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/heavy/bp_craft_cds_combat_heavy_arms_01_02_02.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_heavy_backpack_01_01_01",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "292f90d9-dbbd-4c9d-bd81-b474bc48e2ed",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/heavy/bp_craft_cds_combat_heavy_backpack_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_heavy_core_01_02_02",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "d0d6a9aa-9e5a-4e11-8211-d080faeeca47",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/heavy/bp_craft_cds_combat_heavy_core_01_02_02.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_heavy_helmet_01_02_02",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "b7c1c3e2-7c74-4219-830c-7a75c4d13f80",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/heavy/bp_craft_cds_combat_heavy_helmet_01_02_02.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_heavy_legs_01_02_02",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "d7471459-d238-4f44-b5c5-e793377de11a",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/heavy/bp_craft_cds_combat_heavy_legs_01_02_02.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_light_arms_02_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "350cc844-93d1-49a7-a2fc-b50eac006945",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/light/bp_craft_cds_combat_light_arms_02_02_01.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_light_backpack_01_01_01",
@@ -988,10 +1078,88 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/light/bp_craft_cds_combat_light_backpack_01_01_01.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_light_core_02_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "1ac52ca8-a15c-445a-9b1b-adbc4f060cf0",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/light/bp_craft_cds_combat_light_core_02_02_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_light_helmet_02_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "e75c0be5-82b7-4cdf-ab29-7187040a27ac",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/light/bp_craft_cds_combat_light_helmet_02_02_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_light_legs_02_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "77047612-1413-4401-a29d-74822babf286",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/light/bp_craft_cds_combat_light_legs_02_02_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_medium_arms_01_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "939fd17c-9ab9-42ba-9c66-bdff35650f10",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/medium/bp_craft_cds_combat_medium_arms_01_02_01.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_medium_backpack_01_01_01",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "82e51d72-b371-4720-83a0-b8bc7ffb7ece",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/medium/bp_craft_cds_combat_medium_backpack_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_medium_core_01_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "cfb81d2e-21f6-432e-9293-335a2b76833e",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/medium/bp_craft_cds_combat_medium_core_01_02_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_medium_helmet_01_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "7e329a5d-3b5a-4f8c-a1ec-1299ef1debd9",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/medium/bp_craft_cds_combat_medium_helmet_01_02_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_medium_legs_01_02_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "ad7e7203-073a-4937-a43e-d5ed7170e460",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/medium/bp_craft_cds_combat_medium_legs_01_02_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_superheavy_backpack_01_01_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "2c622127-8999-4818-8540-1959c26aa96d",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_backpack_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_superheavy_backpack_01_03_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "82cec6d6-7716-4318-bd49-39002e5dfa96",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_backpack_01_03_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_superheavy_helmet_01_01_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "1917de77-e1ae-46ac-ac77-d43b9bc1454e",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_helmet_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_superheavy_helmet_01_03_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "c2bc06a3-5e08-47a2-b27b-dc8b9da187c0",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_helmet_01_03_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_superheavy_suit_01_01_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "305aeac5-543f-463e-b2ae-f04a9cdbef8c",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_suit_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_combat_superheavy_suit_01_03_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "eaa1307a-211a-4927-9af2-41296a1e8c4e",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_suit_01_03_01.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_cds_legacy_armor_heavy_arms_01_01_01",
@@ -1870,6 +2038,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/light/bp_craft_cds_legacy_armor_light_helmet_01_01_16.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_legacy_armor_light_helmet_01_01_17",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "05893db6-e97c-40db-9019-0a8641363280",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/light/bp_craft_cds_legacy_armor_light_helmet_01_01_17.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_cds_legacy_armor_light_helmet_01_01_18",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "cad6c1d5-eef7-48f5-9b70-9a9db370ac93",
@@ -2626,6 +2800,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/undersuit/bp_craft_cds_undersuit_01_01_01.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_cds_undersuit_01_02_02",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "3ac19a05-1b4c-4c10-bfd4-78b8a44a59be",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/undersuit/bp_craft_cds_undersuit_01_02_02.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_cds_undersuit_helmet_01_01_01",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "172f6f26-9a96-450e-b379-9ccb734ed744",
@@ -3310,6 +3490,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_fta_medium_helmet_01_01_18.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_fta_medium_helmet_01_15_16",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "a747fdac-acaa-4570-9c91-8e8c0a21fd0a",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_fta_medium_helmet_01_15_16.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_GATS_BallisticCannon_S1",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "511c22a9-7ba1-487b-b768-1b14d2ddbf2f",
@@ -3622,6 +3808,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_arms_02_01_16.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_arms_03_05_16",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "d9de0fdb-bede-42d9-b2ab-0cf4897f3762",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_arms_03_05_16.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_backpack_01_01_01",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "bea0f8d3-d764-49cc-ae71-855252ddb717",
@@ -3632,6 +3824,12 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "beb4dad4-1da8-4670-be13-a34d5b7cac24",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_backpack_02_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_backpack_03_05_16",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "da6ec330-12af-4d03-aded-c84574b41b69",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_backpack_03_05_16.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_core_01_01_01",
@@ -3668,6 +3866,12 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "49964d8a-91a3-480d-b784-1ef5202d40c3",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_core_02_01_16.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_core_03_05_16",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "fdf5d10f-8c1f-4ab1-b214-d9f3f081de8e",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_core_03_05_16.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_helmet_01_01_01",
@@ -3712,6 +3916,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_legs_02_01_16.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_legs_03_05_16",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "8e84ac20-d218-4c46-97f8-dc28fcdb23f5",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_legs_03_05_16.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_gys_jacket_01_01_01",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "d55d8b7a-398b-43d9-9391-805a5d0b1d5a",
@@ -3740,6 +3950,30 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "6cda4923-9225-40d4-a45f-6c041ea816e6",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/pistol/bp_craft_hdgw_pistol_ballistic_01_engraved02.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_hdtc_jacket_01_01_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "df70f106-b946-4f99-bc5d-811d0b964d5a",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_jacket_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_hdtc_pants_01_01_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "0646d386-d907-482f-b1a6-1e832952297a",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_pants_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_hdtc_shirt_02_01_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "8913923b-e0db-4338-8bf6-b284a567db08",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_shirt_02_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_hdtc_shoes_01_01_01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "38dcf3fc-7141-4133-bae9-4dc6b02ed2df",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_shoes_01_01_01.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_hdtc_undersuit_01_01_01",
@@ -4180,16 +4414,34 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s1.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S1_mr01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "ad3568b3-9a28-441e-b8cd-af572cd52e3f",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s1_mr01.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S2",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "e4103421-02a1-4636-8e38-bf06878fbc53",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s2.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S2_mr01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "51512369-2271-4ed6-9d65-b004924d2964",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s2_mr01.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S3",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "fc04742c-2db3-4bfd-a5fb-833d4304a5fe",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s3.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S3_mr01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "e622355c-46fe-48c7-85d3-e9a843777d0c",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s3_mr01.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S4",
@@ -4370,6 +4622,12 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "48acd0ca-9877-4218-9662-cb5b6f5a211a",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/ammo/laser/bp_craft_klwe_smg_energy_01_mag.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_klwe_smg_energy_01_mr01",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "b488199e-f0fc-4e8b-89bd-d3a435d6dce1",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/smg/bp_craft_klwe_smg_energy_01_mr01.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_klwe_sniper_energy_01",
@@ -6898,6 +7156,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_arms_01_01_01.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_arms_01_01_04",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "b8de3d12-3ac1-4646-8b6c-00372f1e6072",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_arms_01_01_04.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_arms_01_01_10",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "1a8413f9-42db-4544-a6be-cecba29e7579",
@@ -6950,6 +7214,12 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "1d08464a-1b62-4ec7-bd92-68fc842a9a4f",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_core_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_core_01_01_04",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "7c7144a1-a83f-452a-9172-200467137b06",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_core_01_01_04.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_core_01_01_10",
@@ -7006,6 +7276,12 @@
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_helmet_01_01_01.json"
   },
   {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_helmet_01_01_04",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "3574b1f2-b730-4950-854d-4f2812b0ff90",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_helmet_01_01_04.json"
+  },
+  {
     "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_helmet_01_01_10",
     "record_type": "CraftingBlueprintRecord",
     "source_id": "bc21018e-29fd-4397-80e8-214cf17252fe",
@@ -7052,6 +7328,12 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "89110801-b093-4fa7-8622-562e8fb386ff",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_legs_01_01_01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_legs_01_01_04",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "e4fd9d05-cef2-48d0-a54c-4e33825ae93f",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/stealth/medium/bp_craft_qrt_specialist_medium_legs_01_01_04.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_qrt_specialist_medium_legs_01_01_10",

@@ -1,6 +1,6 @@
 ﻿{
-    "started_at":  "2026-07-16T08:52:51.413601-04:00",
-    "finished_at":  "2026-07-16T08:52:53.870756-04:00",
+    "started_at":  "2026-07-16T21:14:38.726866-04:00",
+    "finished_at":  "2026-07-16T21:14:40.749003-04:00",
     "status":  "ok",
     "source_root":  "",
     "output_root":  "",
@@ -44,7 +44,7 @@
                                              "exists":  true,
                                              "data_p4k_exists":  true,
                                              "data_p4k_size":  160217047040,
-                                             "data_p4k_last_write_time":  "2026-07-16T08:52:53.844288-04:00",
+                                             "data_p4k_last_write_time":  "2026-07-16T08:56:58.121790-04:00",
                                              "is_stale":  false,
                                              "stale_reason":  ""
                                          },

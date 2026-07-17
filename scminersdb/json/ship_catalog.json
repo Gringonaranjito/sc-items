@@ -1391,6 +1391,18 @@
   {
     "manufacturer": "Drak",
     "mass": false,
+    "name": "EntityClassDefinition.ARMR_GLSN_Basher",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "66c79402-e68b-4b4b-832a-f4e720f921c6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_glsn_basher.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Drak",
+    "mass": false,
     "name": "EntityClassDefinition.ARMR_GLSN_Shiv",
     "record_type": "EntityClassDefinition",
     "size": 1,
@@ -1528,6 +1540,18 @@
     "size": 1,
     "source_id": "b932c185-f4f5-417b-9673-3c0d841f99a9",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_krig_merlin.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Krig",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_KRIG_S65_Stingray",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "bf09538f-1c0f-4efa-9a32-b0b6b9ebfbe5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_krig_s65_stingray.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -6566,6 +6590,37 @@
     },
     "has_components": true,
     "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_GLSN_Basher",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "wing_left",
+      "wing_right",
+      "stabilizer_left",
+      "stabilizer_right"
+    ],
+    "size": 1,
+    "source_id": "71f4ac44-62df-4fc1-aa07-95191ac159de",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_glsn_basher.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_GLSN_Shiv",
     "purchase_price": 1.0,
     "record_type": "EntityClassDefinition",
@@ -6722,6 +6777,35 @@
     "size": 1,
     "source_id": "ce0c3841-823b-4ecd-bf72-e61389c3a0e3",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_p72_archimedes.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_KRIG_S65_Stingray",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "wing_left_rl_geom",
+      "wing_right_rl_geom"
+    ],
+    "size": 1,
+    "source_id": "1dc58b11-2ca8-48e1-8903-d37a495600d8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_s65_stingray.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -11909,7 +11993,7 @@
     "status_label": "Flyable"
   },
   {
-    "cargo": 14.3,
+    "cargo": 23.0,
     "component_count": 1,
     "components": [
       {
@@ -11935,7 +12019,7 @@
     "status_label": "Flyable"
   },
   {
-    "cargo": 14.3,
+    "cargo": 23.0,
     "component_count": 1,
     "components": [
       {
@@ -11961,7 +12045,7 @@
     "status_label": "Flyable"
   },
   {
-    "cargo": 14.3,
+    "cargo": 23.0,
     "component_count": 1,
     "components": [
       {
@@ -14097,6 +14181,18 @@
     "status_label": "Flyable"
   },
   {
+    "cargo": 4.0,
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_GLSN_Basher",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "ebd0bde5-932a-48cd-971f-ef7b2e6b60ae",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_glsn_basher.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "cargo": 32.0,
     "mass": false,
     "name": "EntityClassDefinition.HTNK_GLSN_Shiv",
@@ -14176,6 +14272,18 @@
     "size": 1,
     "source_id": "851319cf-e5c5-4978-ba5f-ae337664e353",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_krig_p72_archimedes.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 6.0,
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_KRIG_S65_Stingray",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "21b46310-905c-4b33-a47d-403048a8ffb3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_krig_s65_stingray.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -15993,6 +16101,17 @@
   },
   {
     "mass": false,
+    "name": "EntityClassDefinition.INTK_GLSN_Basher",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "a4b733f5-07e3-4e31-8b5b-a2c4b652934e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_glsn_basher.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
     "name": "EntityClassDefinition.INTK_GLSN_Shiv",
     "record_type": "EntityClassDefinition",
     "size": 1,
@@ -16020,6 +16139,17 @@
     "size": 1,
     "source_id": "be7a89fa-08d7-44ba-a8b6-7c278811bb07",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_krig_p72_archimedes.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
+    "name": "EntityClassDefinition.INTK_KRIG_S65_Stingray",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "d9ad282e-fab2-48de-a008-0b32b1408034",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_krig_s65_stingray.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -19880,6 +20010,93 @@
     "size": 4,
     "source_id": "825b4468-64a7-4ee1-b11b-ec912e7f5315",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/orig/mrck_s04_gama_railen_octo_s01_right.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S04_BEHR_Quad_S02",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Behr",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray",
+    "record_type": "EntityClassDefinition",
+    "size": 4,
+    "source_id": "df0bf3dc-0de6-4fac-ab95-92ccc2e8e731",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S04_BEHR_Quad_S02",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Behr",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray_Left",
+    "record_type": "EntityClassDefinition",
+    "size": 4,
+    "source_id": "fe25d662-f988-4e21-8b13-c535262ac408",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray_left.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S04_BEHR_Quad_S02",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Behr",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray_Right",
+    "record_type": "EntityClassDefinition",
+    "size": 4,
+    "source_id": "67b2e867-3053-4d05-ab7a-30e413ea7fe4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray_right.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable",
@@ -24925,6 +25142,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameAtls_Paint_silver_teal_white",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Atls Silver Teal White Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_ATLS_silver_teal_white",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "8194bc48-51b2-4fdb-8f8d-acc117760679",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_atls_silver_teal_white.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameATLS_Paint_Steel_Steel_Black",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -25518,6 +25757,50 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameAurora_mk2_Paint_silver_teal_white",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Aurora Mk2 Silver Teal White Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Aurora_Mk2_silver_teal_white",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "429a8271-b46a-4d31-bc2c-955b6b1a6823",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameAurora_mk2_Paint_silver_teal_white",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Aurora Mk2 Silver Teal White Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Aurora_Mk2_silver_teal_white_torch",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "418cfba5-06ca-4622-a274-c54735eda39d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white_torch.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -25925,6 +26208,115 @@
     "size": 1,
     "source_id": "6434a1d7-d9a3-4c0e-8cb5-428af8f90bb8",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ballista_camo_01.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameBasher_Paint_Black_Grey_Grey",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Basher Black Grey Grey Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Basher_Black_Grey_Grey",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "e744089e-db14-4b75-be46-75ad37461b55",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_grey_grey.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameBasher_Paint_Brown_Green_Grey",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Basher Brown Green Grey Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Basher_Brown_Green_Grey",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "104ee9bf-95c5-4b0d-b9c6-fcec1d97fccd",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_brown_green_grey.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameBasher_Paint_Brown_White_Brown",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Basher Brown White Brown Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Basher_Brown_White_Brown",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "b2607061-4fa0-4286-93b1-50e0c774422b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_brown_white_brown.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Basher_Template",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "773f7ced-4d69-4a4e-8361-258a0d26a9a9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_template.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameBasher_Paint_White_Blue_Black",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Basher White Blue Black Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Basher_White_Blue_Black",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "5d5317c1-5156-4900-94fb-fdda4135ffcd",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_white_blue_black.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -29715,6 +30107,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameFury_Paint_Black_Black_Gold",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Fury Black Black Gold Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Fury_Black_Black_Gold",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "fcda6eb5-f936-4c91-93c4-e8955420329d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_fury_black_black_gold.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameFury_Paint_Blue_Black_Black",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -30353,6 +30767,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameGolem_Paint_Black_Black_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Golem Black Black Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Golem_Black_Black_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "ed37227e-a44e-4fe3-ae2b-cbdbe12bc64a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_black_black_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameGolem_Paint_Black_Green_Grey",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -30520,6 +30956,28 @@
     "size": 1,
     "source_id": "7e19ec04-acd7-466e-98e9-857fbc3ca000",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_orange_white_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameGolem_Paint_Black_Green_Grey",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Golem Silver Teal White Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Golem_silver_teal_white",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "9c81d1a4-5108-4776-a904-ac93209b71ee",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_silver_teal_white.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -34588,6 +35046,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameMoth_Paint_Black_Black_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Moth Black Black Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Moth_Black_Black_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "4b6f347c-4b2a-4a07-b43b-b69ca17274cc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_moth_black_black_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameMoth_Paint_Blue_Grey_Green",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -37303,6 +37783,28 @@
     "size": 1,
     "source_id": "44fd4baf-ecb2-40dd-909b-afc333edfbbe",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_prospector_aphorite_purple.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameProspector_Paint_Black_Black_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Prospector Black Black Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Prospector_Black_Black_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "27787ecd-4621-4c11-b643-7dd31fb5c165",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_prospector_black_black_yellow.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -40073,6 +40575,28 @@
     "size": 1,
     "source_id": "b5532228-ef37-47fd-9b83-2593c7a0d7af",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_pink_grey_black_iridescent.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSalvation_Paint_silver_teal_white",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Salvation Silver Teal White Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Salvation_silver_teal_white",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "9badada3-e935-4b8b-a270-1a2d06f096ee",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_silver_teal_white.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -46846,6 +47370,20 @@
     "status_label": "Flyable"
   },
   {
+    "mass": false,
+    "name": "EntityClassDefinition.PersonalStorage_XNAA_SanTokYai",
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "None"
+    ],
+    "size": 1,
+    "source_id": "3d527bdc-3dcb-47dc-9330-cc54a59d0414",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_xnaa_santokyai.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "manufacturer": "True",
     "mass": false,
     "name": "EntityClassDefinition.Projector_HUD_Aim",
@@ -50093,6 +50631,18 @@
     "status_label": "Flyable"
   },
   {
+    "cargo": 1.3,
+    "mass": false,
+    "name": "EntityClassDefinition.QTNK_GLSN_Basher",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "9feeafa0-5091-4613-8b27-a9237bf758cc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_glsn_basher.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "cargo": 1.65,
     "mass": false,
     "name": "EntityClassDefinition.QTNK_GLSN_Shiv",
@@ -50124,6 +50674,18 @@
     "size": 1,
     "source_id": "4e1bbf84-48c7-4222-a517-7539a9eeeafb",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_krig_l22_alphawolf.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 100.0,
+    "mass": false,
+    "name": "EntityClassDefinition.QTNK_KRIG_S65_Stingray",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "6d83cb90-811f-4f31-9e53-21b707a1fa28",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_krig_s65_stingray.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"

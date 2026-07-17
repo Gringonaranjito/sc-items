@@ -110,6 +110,16 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/intersecdefensesolutions/intersec_recoverdata.json"
   },
   {
+    "name": "ContractGenerator.Battaglia_Generator",
+    "record_type": "ContractGenerator",
+    "shop_names": [
+      "@BrightSky_Objective_Marker",
+      "kioskType"
+    ],
+    "source_id": "0a42dd4d-6ad2-4970-bd3f-ac2e500e3abc",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia_generator.json"
+  },
+  {
     "name": "ContractGenerator.TheCollector",
     "record_type": "ContractGenerator",
     "shop_names": [
@@ -397,6 +407,48 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_yellow.json"
   },
   {
+    "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "eb6ca6a0-5bae-4a82-9ec0-8beb7f446401",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic_Hardened",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "9c992601-2bfb-470a-9b36-d2fd4287f345",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic_hardened.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic_TEMPLATE",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "5a4fbe90-2538-4d19-a6c8-ec45e653c6f1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic_template.json"
+  },
+  {
     "name": "EntityClassDefinition.FPS_Consumable_KeyCard_Delving_TEMPLATE",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -409,6 +461,20 @@
     ],
     "source_id": "c0808676-1f13-4210-b0e3-0e2b60e96bea",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_keycard_delving_template.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_Generic_TEMPLATE",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "d6fadd7b-67b2-4945-af8f-90cae7295451",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_keycard_generic_template.json"
   },
   {
     "name": "EntityClassDefinition.FPS_Consumable_HackingChip_Gold_Access",
@@ -647,6 +713,62 @@
     ],
     "source_id": "8840712a-c16b-41f4-82f4-c2940546866e",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_rockcrack_template.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_1",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "8e5a3d02-909a-4bd6-870f-edad5e6abe1f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_1.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_2",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "92e123fa-4a69-4e6b-9f44-d7dcad72a52b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_2.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_3",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "2b84b3d5-3de1-48a1-81f9-be2fd93763ad",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_3.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_WeaponCache",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "ab8fcfd0-5571-42a5-8408-9fe7f3bc56fa",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_weaponcache.json"
   },
   {
     "name": "EntityClassDefinition.FPS_Consumable_KeyCard_StormBreaker_DoctorCredentials",
@@ -2366,6 +2488,94 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/devices/rkhm_dply_shield_01_miningbase.json"
   },
   {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "e302c7ae-b850-412d-983e-36dbf04f98fe",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01.json"
+  },
+  {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_collector01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "2445465a-d906-4e06-9a02-7eaead122bf7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01_collector01.json"
+  },
+  {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_mr01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "8d77c07f-2f9d-426a-ab24-5d8e0fb1d2ca",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01_mr01.json"
+  },
+  {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_mr02",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "565b47b7-9043-4e5d-89dd-936a5b7c1251",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01_mr02.json"
+  },
+  {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "a94b7e9b-0f4b-44d9-b5fc-b22fe4ea95bc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01_store01.json"
+  },
+  {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_tint01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "bfa503cd-cf8d-407c-abf5-0d89ceeae639",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01_tint01.json"
+  },
+  {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_tint02",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "3f79efad-4990-43ed-9906-4f52afc8db67",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01_tint02.json"
+  },
+  {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_tint03",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:14"
+    ],
+    "source_id": "4a0d9247-7bbb-44b6-ab3a-0a24ddb0b9ac",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/apar_hmg_ballistic_01_tint03.json"
+  },
+  {
     "name": "EntityClassDefinition.apar_special_ballistic_01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -2630,6 +2840,17 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_pistol_ballistic_01_firerats01.json"
   },
   {
+    "name": "EntityClassDefinition.behr_pistol_ballistic_01_mr01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:17"
+    ],
+    "source_id": "c8c2e14b-5263-44f4-add3-bf70055976a3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_pistol_ballistic_01_mr01.json"
+  },
+  {
     "name": "EntityClassDefinition.behr_rifle_ballistic_01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -2668,6 +2889,26 @@
     ],
     "source_id": "992e922f-8c21-41dd-b1b6-c2753c74c97b",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_01_green01.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_01_mr01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "62669187-1bcc-446f-881b-dd9ecd5f9704",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_01_mr01.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_01_sf01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "5bafbf55-7706-4daf-8782-31e2684048cc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_01_sf01.json"
   },
   {
     "name": "EntityClassDefinition.behr_rifle_ballistic_01_store01",
@@ -2768,6 +3009,66 @@
     ],
     "source_id": "b90d31fd-cefd-4731-a03a-eba1994d57db",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_02_civilian_store01.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "adb5c353-7685-461c-9c3c-32ad182430b1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_mr01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "09ca39f1-ebc5-49d2-9683-14cafc2724a5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_mr01.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "20a1903b-6e92-4909-8cd4-c448f0c5b504",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_store01.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_tint01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "4207dfc1-099d-4942-8869-f1b67b5aedda",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_tint01.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_tint02",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "8363b277-253a-4e48-9963-b088f4f75e96",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_tint02.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_tint03",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "6190ce62-3d9f-4844-9834-55edeb0017e2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_tint03.json"
   },
   {
     "name": "EntityClassDefinition.behr_shotgun_ballistic_01",
@@ -4350,6 +4651,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/klwe_smg_energy_01_blue_gold.json"
   },
   {
+    "name": "EntityClassDefinition.klwe_smg_energy_01_mr01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "da14a7b1-daa4-4109-8684-54be0d13bb61",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/klwe_smg_energy_01_mr01.json"
+  },
+  {
     "name": "EntityClassDefinition.klwe_sniper_energy_01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -4974,6 +5285,16 @@
     ],
     "source_id": "bab1362b-0860-4a52-ad5b-dfb63d12f651",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/ksar_sniper_ballistic_01.json"
+  },
+  {
+    "name": "EntityClassDefinition.ksar_sniper_ballistic_01_sf01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "9bce2684-8971-4134-821b-4182bc7a5e27",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/ksar_sniper_ballistic_01_sf01.json"
   },
   {
     "name": "EntityClassDefinition.ksar_sniper_ballistic_01_white_blue_01",
@@ -6206,6 +6527,17 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_sniper_energy_01_tint03.json"
   },
   {
+    "name": "EntityClassDefinition.apar_hmg_ballistic_01_mag",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "b601c979-1a7e-41a9-b4f4-7e74d954d186",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/apar_hmg_ballistic_01_mag.json"
+  },
+  {
     "name": "EntityClassDefinition.apar_special_ballistic_01_mag",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -6292,6 +6624,17 @@
     ],
     "source_id": "dd21edb8-a0ba-42ab-a02a-bec325e96c87",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/behr_rifle_ballistic_02_mag_civilian.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_mag",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "dbd68e25-d363-46ad-a924-be7337fd8305",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/behr_rifle_ballistic_03_mag.json"
   },
   {
     "name": "EntityClassDefinition.behr_shotgun_ballistic_01_mag",
@@ -7962,6 +8305,17 @@
     ],
     "source_id": "71aac893-8957-42e2-8956-61985ab2c4a5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/ksar_optics_tsco_x8_s3.json"
+  },
+  {
+    "name": "EntityClassDefinition.ksar_optics_tsco_x8_s3_sf01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:3",
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:13"
+    ],
+    "source_id": "70bd691d-13ce-4261-a3f1-640697baaf3e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/ksar_optics_tsco_x8_s3_sf01.json"
   },
   {
     "name": "EntityClassDefinition.lbco_optics_tsco_x16_s3",

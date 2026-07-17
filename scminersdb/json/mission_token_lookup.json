@@ -306,6 +306,576 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_BoardShip_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_CreateUplink_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_DataDownload_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_02_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_03_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_M_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VE_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VH_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_E_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_H_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_M_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_02_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_03_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_04_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_05_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_06_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_Golem_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_Prosp_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_02_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_03_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_04_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_05_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_06_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_Mole_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_Story01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_Story02_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_Story03_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@BHG_Certification_Easy_Desc",
     "kinds": [
       "description"
@@ -1483,6 +2053,310 @@
     ]
   },
   {
+    "token": "@LingFamily_delivery_desc_ICC_Special_Cryo",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Lingfamilyhauling"
+    ],
+    "mission_ids": [
+      "ContractGenerator.LingFamilyHauling Delivery"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/lingfamilyhauling/lingfamilyhauling delivery.json"
+    ]
+  },
+  {
+    "token": "@northrock_SOO_intro_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
+    ]
+  },
+  {
+    "token": "@northrock_SOO_repeat_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
+    ]
+  },
+  {
+    "token": "@ORS_BunkerRaid_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Large_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Medium_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Small_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherLarge_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherMedium_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherSmall_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_Delivery_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingLarge_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingMedium_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingSmall_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ShipAmb_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ShipWaveAt_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
     "token": "@RedWind_RecoverCargo_Easy_Description",
     "kinds": [
       "description"
@@ -1635,25 +2509,6 @@
     ]
   },
   {
-    "token": "@soo2_contract_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.CDF Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/cdf generator.json"
-    ]
-  },
-  {
     "token": "@TheCollector_Mod_ATLS_Geo_Grad1_Desc",
     "kinds": [
       "description"
@@ -1711,6 +2566,82 @@
     ]
   },
   {
+    "token": "@TheCollector_Recipes_Desc_aparGatlingGun",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Desc_CombatSuit",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Desc_SuperHeavyCombat",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_DrakeClipper",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
     "token": "@UWC_Refueling_high_desc_001",
     "kinds": [
       "description"
@@ -1731,6 +2662,25 @@
   },
   {
     "token": "@UWC_Refueling_moderate_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "United Wayfarers Club"
+    ],
+    "mission_ids": [
+      "ContractGenerator.UnitedWayfarersClub"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
+    ]
+  },
+  {
+    "token": "@UWC_Refueling_multiple_hard_desc_001",
     "kinds": [
       "description"
     ],
@@ -2466,25 +3416,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters investigation.json"
-    ]
-  },
-  {
-    "token": "@headhunters_defendship_multi_MRT_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "A few Headhunters just comm'd to say they were jumped as they were leaving ~mission(Location|Address).\\n\\nThey'll probably be fine, but I'll feel a whole lot better if you could go there and lend a hand. \\n\\nI've got a stack of credits for you if you manage to save all of them.\\n\\n-Stows Out",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [],
-    "company_hints": [
-      "Headhunters"
-    ],
-    "mission_ids": [
-      "ContractGenerator.HeadHunters DefendShip"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendship.json"
     ]
   },
   {
@@ -4215,25 +5146,6 @@
     ]
   },
   {
-    "token": "@foxwell_DefendShip_H_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "An emergency contract just came in about a fight near ~mission(Location|Address). Apparently a group of ships were ambushed by outlaws led by ~mission(TargetName), who's been wanted on multiple planets for murder and ship theft. Foxwell's looking for top tier combat pilots to go and protect the clients against them.\\n\\nThis one's been flagged as a red level contract so it's really dangerous. If you have people you could bring, you probably should. If you do, you should also let them know about Foxwell's hiring policies. \\n\\nMarcus Clenn\\nFoxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [],
-    "company_hints": [
-      "Foxwellenforcement"
-    ],
-    "mission_ids": [
-      "ContractGenerator.FoxwellEnforcement Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement generator.json"
-    ]
-  },
-  {
     "token": "@Foxwell_DefendDestructibleEntites_S_Desc_001",
     "kinds": [
       "description"
@@ -4908,6 +5820,695 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendship.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_BoardShip_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Board Ship 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Board Ship 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_CreateUplink_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Create Uplink 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Create Uplink 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_DataDownload_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Data Download 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Data Download 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Miss Crew 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Miss Crew 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_02_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Miss Crew 02",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Miss Crew 02",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_03_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Miss Crew 03",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Miss Crew 03",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_M_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Recover Item M 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Recover Item M 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VE_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Recover Item VE 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Recover Item VE 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VH_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Recover Item VH 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Recover Item VH 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_E_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Salvage E 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Salvage E 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_H_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Salvage H 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Salvage H 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_M_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Salvage M 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Salvage M 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_02_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan 02",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan 02",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_03_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan 03",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan 03",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_04_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan 04",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan 04",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_05_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan 05",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan 05",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_06_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan 06",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan 06",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_Golem_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Golem",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Golem",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Mine 01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_02_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Mine 02",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 02",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_03_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Mine 03",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 03",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_04_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Mine 04",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 04",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_05_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Mine 05",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 05",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_06_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Mine 06",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 06",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_Mole_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Mine Mole",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine Mole",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_Prosp_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia RPT Scan Prosp",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia RPT Scan Prosp",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_Story01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia Story01",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_Story02_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia Story02",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia Story02",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_Story03_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Battaglia Story03",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Battaglia Story03",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -5788,7 +7389,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Eliminate All Non Hostiles 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -5969,7 +7570,7 @@
       "cfp Eliminate All FF 001",
       "cfp Eliminate Specific Generic E 001",
       "Citizens For Prosperity Mercenary FPS",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -7206,6 +8807,29 @@
     ]
   },
   {
+    "token": "@UWC_Refueling_multiple_hard_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "CRITICAL FLEET REFUEL",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "UWC Refueling multiple hard 001",
+      "UWC Refueling 001",
+      "United Wayfarers Club"
+    ],
+    "company_hints": [
+      "United Wayfarers Club"
+    ],
+    "mission_ids": [
+      "ContractGenerator.UnitedWayfarersClub"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
+    ]
+  },
+  {
     "token": "@cfp_missingperson_sabotage_servers_title_001",
     "kinds": [
       "title"
@@ -7892,7 +9516,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Destroy Narcotics H 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -7938,7 +9562,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Destroy Narcotics M 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -9757,7 +11381,6 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Mercenary 001",
-      "foxwell Defend Ship E 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -10937,25 +12560,6 @@
     ]
   },
   {
-    "token": "@foxwell_DefendShip_E_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "Foxwell is looking for an available combat pilot to provide immediate assistance to a ~mission(Ship) under attack over by ~mission(Location|Address). We have not identified the perpetrators in the attack, but have been assured it is a small force.\\n\\nPlease dispatch quickly and clear out all hostiles. We need the client to make it through this as they haven't paid us yet.\\n\\nGood luck,\\n\\nMarcus Clenn\\nFoxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [],
-    "company_hints": [
-      "Foxwellenforcement"
-    ],
-    "mission_ids": [
-      "ContractGenerator.FoxwellEnforcement Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement generator.json"
-    ]
-  },
-  {
     "token": "@TheCollector_Recipes_Title_KopSkull",
     "kinds": [
       "title"
@@ -11778,25 +13382,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/deadsaints/deadsaints hauling.json"
-    ]
-  },
-  {
-    "token": "@foxwell_DefendShip_M_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "Got an orange level contract for any available combat pilots. A ~mission(Ship) is under attack around ~mission(Location|Address) and is in desperate need for assistance. We're not sure how many perpetrators there are, but they seem motivated and dangerous so exercise caution.\\n\\nOnce on site, engage and destroy any hostiles you encounter and protect the client. Once they've transferred the credits, we'll route you your payment.\\n\\nMarcus Clenn\\nFoxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [],
-    "company_hints": [
-      "Foxwellenforcement"
-    ],
-    "mission_ids": [
-      "ContractGenerator.FoxwellEnforcement Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement generator.json"
     ]
   },
   {
@@ -12629,75 +14214,6 @@
     ]
   },
   {
-    "token": "@headhunters_defendship_multi_VHRT_XT_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Headhunter Ships Ambushed by XenoThreat",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [
-      "headhunters defendship multi VHRT XT 001",
-      "headhunters defendship VLRT PA 001",
-      "Head Hunters Defend Ship"
-    ],
-    "company_hints": [
-      "Headhunters"
-    ],
-    "mission_ids": [
-      "ContractGenerator.HeadHunters DefendShip"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendship.json"
-    ]
-  },
-  {
-    "token": "@headhunters_defendship_multi_HRT_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Headhunter Ships in Big Trouble",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [
-      "headhunters defendship multi HRT 001",
-      "headhunters defendship VLRT PA 001",
-      "Head Hunters Defend Ship"
-    ],
-    "company_hints": [
-      "Headhunters"
-    ],
-    "mission_ids": [
-      "ContractGenerator.HeadHunters DefendShip"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendship.json"
-    ]
-  },
-  {
-    "token": "@headhunters_defendship_multi_MRT_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Headhunter Ships Need Backup",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [
-      "headhunters defendship multi MRT 001",
-      "headhunters defendship VLRT PA 001",
-      "Head Hunters Defend Ship"
-    ],
-    "company_hints": [
-      "Headhunters"
-    ],
-    "mission_ids": [
-      "ContractGenerator.HeadHunters DefendShip"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendship.json"
-    ]
-  },
-  {
     "token": "@Headhunters_theft_intro_desc_001",
     "kinds": [
       "description"
@@ -13442,7 +14958,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Eliminate All Allies 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -18346,7 +19862,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Destroy Narcotics E 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -18633,6 +20149,28 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/ruto generator.json"
+    ]
+  },
+  {
+    "token": "@LingFamily_delivery_name_ICC_Special_Cryo",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Ling Family delivery name ICC Special Cryo",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "Ling Family delivery name ICC Special Cryo",
+      "Ling Family Hauling Delivery"
+    ],
+    "company_hints": [
+      "Lingfamilyhauling"
+    ],
+    "mission_ids": [
+      "ContractGenerator.LingFamilyHauling Delivery"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/lingfamilyhauling/lingfamilyhauling delivery.json"
     ]
   },
   {
@@ -21987,6 +23525,51 @@
     ]
   },
   {
+    "token": "@northrock_SOO_intro_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "northrock SOO 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "northrock SOO 001",
+      "northrock SOO repeat 001",
+      "North Rock SOO2"
+    ],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
+    ]
+  },
+  {
+    "token": "@northrock_SOO_repeat_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "northrock SOO repeat 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "northrock SOO repeat 001",
+      "North Rock SOO2"
+    ],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
+    ]
+  },
+  {
     "token": "@Headhunters_EliminateBoss_OLP_VH_desc_001",
     "kinds": [
       "description"
@@ -22853,29 +24436,6 @@
     ]
   },
   {
-    "token": "@foxwell_DefendShip_M_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Orange Level Contract: ~mission(Ship) Needs Assistance",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [
-      "foxwell Defend Ship M 001",
-      "foxwell Defend Ship E 001",
-      "Foxwell Enforcement Generator"
-    ],
-    "company_hints": [
-      "Foxwellenforcement"
-    ],
-    "mission_ids": [
-      "ContractGenerator.FoxwellEnforcement Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement generator.json"
-    ]
-  },
-  {
     "token": "@Foxwell_DefendDestructibleEntites_M_Title_001",
     "kinds": [
       "title"
@@ -22919,6 +24479,305 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/shipbattles/foxwellenforcement defenddestructibleentities.json"
+    ]
+  },
+  {
+    "token": "@ORS_BunkerRaid_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Bunker Raid",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Bunker Raid",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Large_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Construct Large",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Construct Large",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Medium_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Construct Medium",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Construct Medium",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Small_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Construct Small",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Construct Small",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherLarge_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Construction Aid Resource Gather Large",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Construction Aid Resource Gather Large",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherMedium_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Construction Aid Resource Gather Medium",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Construction Aid Resource Gather Medium",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherSmall_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Construction Aid Resource Gather Small",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Construction Aid Resource Gather Small",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_Delivery_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Medical Aid Delivery",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Medical Aid Delivery",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingLarge_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Medical Aid Hauling Large",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Medical Aid Hauling Large",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingMedium_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Medical Aid Hauling Medium",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Medical Aid Hauling Medium",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingSmall_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Medical Aid Hauling Small",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Medical Aid Hauling Small",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ShipAmb_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Ship Amb",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Ship Amb",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ShipWaveAt_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ORS Ship Wave At",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "ORS Ship Wave At",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
     ]
   },
   {
@@ -24630,7 +26489,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Eliminate Specific Non Hostiles 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -25864,7 +27723,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Haul Cargo Multi To Single 01",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -25956,7 +27815,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Haul Cargo A To B PAF 01",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -25979,7 +27838,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Haul Cargo A To B OLP 01",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -26036,29 +27895,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/shipbattles/foxwellenforcement patrol.json"
-    ]
-  },
-  {
-    "token": "@foxwell_DefendShip_H_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Red Level Contract: Ship Under Attack",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [
-      "foxwell Defend Ship H 001",
-      "foxwell Defend Ship E 001",
-      "Foxwell Enforcement Generator"
-    ],
-    "company_hints": [
-      "Foxwellenforcement"
-    ],
-    "mission_ids": [
-      "ContractGenerator.FoxwellEnforcement Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement generator.json"
     ]
   },
   {
@@ -30015,25 +31851,6 @@
     ]
   },
   {
-    "token": "@headhunters_defendship_multi_VHRT_XT_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "Some of my more hotheaded Headhunters got themselves embroiled in a battle against a host of XenoThreat ships, and it's looking more and more certain that they can't get themselves out of it.\\n\\nThink you can head to ~mission(Location|Address) and give 'em a hand?\\n\\n-Stows",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [],
-    "company_hints": [
-      "Headhunters"
-    ],
-    "mission_ids": [
-      "ContractGenerator.HeadHunters DefendShip"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendship.json"
-    ]
-  },
-  {
     "token": "@headhunters_searchbody_danger_outpost_desc_001",
     "kinds": [
       "description"
@@ -30164,29 +31981,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
-    "token": "@soo2_contract_name",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "soo2 contract name",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "soo2 contract name",
-      "openbounty",
-      "CDF Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.CDF Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/cdf generator.json"
     ]
   },
   {
@@ -30649,7 +32443,6 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Mercenary 001",
-      "foxwell Defend Ship E 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -31243,7 +33036,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Eliminate All 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -31834,6 +33627,98 @@
     "confidence": "medium",
     "guess_texts": [
       "The Collector Mod ATLS Geo Grad3 Name",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_aparGatlingGun",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "The Collector Recipes apar Gatling Gun",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "The Collector Recipes apar Gatling Gun",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_CombatSuit",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "The Collector Recipes Combat Suit",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "The Collector Recipes Combat Suit",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_DrakeClipper",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "The Collector Recipes Drake Clipper",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "The Collector Recipes Drake Clipper",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_SuperHeavyCombat",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "The Collector Recipes Super Heavy Combat",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "The Collector Recipes Super Heavy Combat",
       "The Collector Recipes Sand Armour",
       "The Collector"
     ],
@@ -32815,7 +34700,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Eliminate Specific 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -33193,25 +35078,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
-    "token": "@headhunters_defendship_multi_HRT_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "Turns out some double-crossing assholes set us up. We were supposed to meet for a deal, but they attacked our ships instead. Now my people got a fight on their hands, and I'll be honest, I'm not sure they're gonna make it out alive.\\n\\nWould be good if they had some extra firepower on their side. Think you could hurry over to ~mission(Location|Address) and take out a few of these lying lowlifes for me?\\n\\nWill make it worth your while, but only if all the Headhunters make it out in one piece.\\n\\n- Stows Out",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [],
-    "company_hints": [
-      "Headhunters"
-    ],
-    "mission_ids": [
-      "ContractGenerator.HeadHunters DefendShip"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendship.json"
     ]
   },
   {
@@ -36558,7 +38424,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Eliminate All PAF M 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -36671,7 +38537,7 @@
     "confidence": "high",
     "guess_texts": [
       "Foxwell Eliminate All OLP M 001",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [
@@ -36750,28 +38616,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/shipbattles/foxwellenforcement patrol.json"
-    ]
-  },
-  {
-    "token": "@foxwell_DefendShip_E_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Yellow Level Contract: Ship Under Attack",
-    "resolution_source": "localization",
-    "confidence": "high",
-    "guess_texts": [
-      "foxwell Defend Ship E 001",
-      "Foxwell Enforcement Generator"
-    ],
-    "company_hints": [
-      "Foxwellenforcement"
-    ],
-    "mission_ids": [
-      "ContractGenerator.FoxwellEnforcement Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement generator.json"
     ]
   },
   {
@@ -37763,7 +39607,7 @@
     "confidence": "high",
     "guess_texts": [
       "destroyprobelegal",
-      "foxwell Defend Ship E 001",
+      "Foxwell Mercenary 001",
       "Foxwell Enforcement Generator"
     ],
     "company_hints": [

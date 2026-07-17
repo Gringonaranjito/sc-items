@@ -840,6 +840,72 @@
     ]
   },
   {
+    "display_token": "@RepScope_Assassination_Name",
+    "initial_reputation": 0,
+    "mission_contributors": [],
+    "reputation_ceiling": 112001,
+    "scope_name": "Assassination",
+    "source_path": "libs/foundry/records/reputation/scopes/reputationscope_assassination.json",
+    "standings": [
+      {
+        "display": "Not Eligible",
+        "display_token": "@RepStanding_NotEligible",
+        "gated": false,
+        "min_reputation": -1000,
+        "name": "Assassination_NotEligible"
+      },
+      {
+        "display": "Under Review",
+        "display_token": "@RepStanding_Assassination_Rank0",
+        "gated": true,
+        "min_reputation": 0,
+        "name": "Assassination_Outsider"
+      },
+      {
+        "display": "Assassin In Training",
+        "display_token": "@RepStanding_Assassination_Rank1",
+        "gated": false,
+        "min_reputation": 1,
+        "name": "Assassination_Rookie"
+      },
+      {
+        "display": "Low Level Assassin",
+        "display_token": "@RepStanding_Assassination_Rank2",
+        "gated": false,
+        "min_reputation": 3000,
+        "name": "Assassination_Assosciate"
+      },
+      {
+        "display": "Assassin",
+        "display_token": "@RepStanding_Assassination_Rank3",
+        "gated": false,
+        "min_reputation": 8000,
+        "name": "Assassination_Soldier"
+      },
+      {
+        "display": "High Value Assassin",
+        "display_token": "@RepStanding_Assassination_Rank4",
+        "gated": false,
+        "min_reputation": 24000,
+        "name": "Assassination_Captain"
+      },
+      {
+        "display": "Elite Assassin",
+        "display_token": "@RepStanding_Assassination_Rank5",
+        "gated": false,
+        "min_reputation": 56000,
+        "name": "Assassination_Counsel"
+      },
+      {
+        "display": "Master Assassin",
+        "display_token": "@RepStanding_Assassination_Rank6",
+        "gated": false,
+        "min_reputation": 112000,
+        "name": "Assassination_Underboss"
+      }
+    ]
+  },
+  {
     "display_token": "@mobiGlas_Reputation_ScopeTitle_Reliability",
     "initial_reputation": 0,
     "mission_contributors": [],
@@ -2264,6 +2330,492 @@
     ]
   },
   {
+    "display_token": "@mobiGlas_Reputation_Standing",
+    "faction": "Battaglia",
+    "initial_reputation": 0,
+    "mission_contributors": [
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "abf87b9c-b778-4283-a544-10ddc2fd95b8",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Rpt Board Ship 01 Title"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "48c283cc-ab8f-45a8-ba52-20913315b90c",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Rpt Board Ship 01 Title"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d8332707-f74a-4b35-a363-0452aeed9fd0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Rpt Create Uplink 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "c9d5a3e6-e703-4419-aab0-36a0362697fa",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Data Download 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "93a0e3ff-2121-4906-b721-5ad2cd82bca8",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Data Download 01 Title"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "984bf4cb-84c1-4e6c-a09c-6d1bb1f10ee2",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 8.0,
+        "title": "Battaglia Rpt Miss Crew 01 Title"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "984bf4cb-84c1-4e6c-a09c-6d1bb1f10ee2",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 8.0,
+        "title": "Battaglia Rpt Miss Crew 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "628de0bc-020c-403e-bc1f-66b8afcd51a8",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Miss Crew 02 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "671ab679-e102-43f2-9908-cf4a02a7a71f",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Battaglia Rpt Miss Crew 03 Title"
+      },
+      {
+        "amount": 40,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "671ab679-e102-43f2-9908-cf4a02a7a71f",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Battaglia Rpt Miss Crew 03 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "2b926255-e2cf-4f36-996b-f7b5505d3635",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Battaglia Rpt Recover Item M 01 Title"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "2b926255-e2cf-4f36-996b-f7b5505d3635",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Battaglia Rpt Recover Item M 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b74ed677-1f03-4e8e-abed-8896d3bc0e2d",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Battaglia Rpt Recover Item Ve 01 Title"
+      },
+      {
+        "amount": 40,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b74ed677-1f03-4e8e-abed-8896d3bc0e2d",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Battaglia Rpt Recover Item Ve 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b3a1bf21-e0be-4e8b-9888-f478b586fa07",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Battaglia Rpt Recover Item Ve 01 Title"
+      },
+      {
+        "amount": 40,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b3a1bf21-e0be-4e8b-9888-f478b586fa07",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Battaglia Rpt Recover Item Ve 01 Title"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d98b633a-0c32-4ddd-b33c-791cccf61666",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 18.0,
+        "title": "Battaglia Rpt Recover Item Vh 01 Title"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d98b633a-0c32-4ddd-b33c-791cccf61666",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 18.0,
+        "title": "Battaglia Rpt Recover Item Vh 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "953f4c07-d7cc-429c-8b85-d52513ee5a66",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Salvage E 01 Title"
+      },
+      {
+        "amount": 600,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "a249020e-9c94-44dd-9d9a-ddb11cc74533",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "Battaglia Rpt Salvage H 01 Title"
+      },
+      {
+        "amount": 400,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "f76726b6-a26d-4f21-bc84-558c6a1304a0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Battaglia Rpt Salvage M 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "4173543e-eaa7-4efd-ada3-41549f84448a",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Scan 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "230aa1eb-2dd3-43e6-85e3-7775efabb143",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Scan 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "ee2b9d1a-09ff-429b-a28f-195431011ad0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Battaglia Rpt Scan 02 Title"
+      },
+      {
+        "amount": 20,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "ee2b9d1a-09ff-429b-a28f-195431011ad0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Battaglia Rpt Scan 02 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "297465df-5f08-41ff-bced-e5ccb017ff87",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Battaglia Rpt Scan 03 Title"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "297465df-5f08-41ff-bced-e5ccb017ff87",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Battaglia Rpt Scan 03 Title"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "86289d0e-f0f5-482a-b20d-0d3364cbfe3a",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Rpt Scan 04 Title"
+      },
+      {
+        "amount": 400,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "80751516-7556-46af-bd77-b6839fa3f876",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Battaglia Rpt Scan 05 Title"
+      },
+      {
+        "amount": 600,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "6eceb64c-44fc-4846-8666-8471e346bd8f",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "Battaglia Rpt Scan 06 Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d865c8d4-d0b7-44da-9867-678f8c006907",
+        "rep_per_hour": 4800.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Scan Golem Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "57f5021a-167a-466a-bee3-8c068c12d146",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Scan Mine 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "decd5427-168b-4afc-8f0a-692284ab63c0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Battaglia Rpt Scan Mine 01 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "f85b4b24-d344-4892-827c-0e47aa9996a7",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Battaglia Rpt Scan Mine 02 Title"
+      },
+      {
+        "amount": 20,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "f85b4b24-d344-4892-827c-0e47aa9996a7",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Battaglia Rpt Scan Mine 02 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "bab81477-8da9-4dc8-8949-2978fc77d998",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Battaglia Rpt Scan Mine 03 Title"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "bab81477-8da9-4dc8-8949-2978fc77d998",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Battaglia Rpt Scan Mine 03 Title"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "0a37727f-50b3-4a65-a5a7-4efbed9324db",
+        "rep_per_hour": 1520.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Rpt Scan Mine 04 Title"
+      },
+      {
+        "amount": 80,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "0a37727f-50b3-4a65-a5a7-4efbed9324db",
+        "rep_per_hour": 1520.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Rpt Scan Mine 04 Title"
+      },
+      {
+        "amount": 400,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "e4095b72-7b57-43b7-ba22-9ffe7b60c34b",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Battaglia Rpt Scan Mine 05 Title"
+      },
+      {
+        "amount": 600,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "5db8502c-da59-4652-ac74-e99d3b758600",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "Battaglia Rpt Scan Mine 06 Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "3ca1adb1-4155-45d4-9df4-2f21f05e8020",
+        "rep_per_hour": 3692.31,
+        "time_to_complete_minutes": 13.0,
+        "title": "Battaglia Rpt Scan Mine Mole Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "0c3aa2ea-a401-4303-bd68-0d52ff96f0cb",
+        "rep_per_hour": 4363.64,
+        "time_to_complete_minutes": 11.0,
+        "title": "Battaglia Rpt Scan Prosp Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "f81b133e-6043-469c-97e6-7524cad5eca5",
+        "rep_per_hour": 3200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Story01 Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "67623fed-550c-4b1a-a451-e670c260f1d9",
+        "rep_per_hour": 3200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Story02 Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "90a586aa-3a33-4bc6-a3b6-5d034d84909a",
+        "rep_per_hour": 3200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Story02 Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "67cf0b4c-c894-4bb1-8409-4a14334abcd4",
+        "rep_per_hour": 2400.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Battaglia Story03 Title"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "2ec4b069-a755-4d43-b1a4-f99f0bb28887",
+        "rep_per_hour": 2400.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Battaglia Story03 Title"
+      }
+    ],
+    "reputation_ceiling": 69600,
+    "scope_name": "Standing",
+    "source_path": "libs/foundry/records/reputation/scopes/missionprovider/missionproviderreputationscope_battaglia.json",
+    "standings": [
+      {
+        "display": "Mg Battaglia Rep Scope Rank0",
+        "display_token": "@mg_battaglia_RepScope_Rank0",
+        "gated": false,
+        "min_reputation": 0,
+        "name": "MissionProviderRep_Battaglia_Rank0"
+      },
+      {
+        "display": "Mg Battaglia Rep Scope Rank1",
+        "display_token": "@mg_battaglia_RepScope_Rank1",
+        "gated": false,
+        "min_reputation": 2400,
+        "name": "MissionProviderRep_Battaglia_Rank1"
+      },
+      {
+        "display": "Mg Battaglia Rep Scope Rank2",
+        "display_token": "@mg_battaglia_RepScope_Rank2",
+        "gated": false,
+        "min_reputation": 6000,
+        "name": "MissionProviderRep_Battaglia_Rank2"
+      },
+      {
+        "display": "Mg Battaglia Rep Scope Rank3",
+        "display_token": "@mg_battaglia_RepScope_Rank3",
+        "gated": false,
+        "min_reputation": 10800,
+        "name": "MissionProviderRep_Battaglia_Rank3"
+      },
+      {
+        "display": "Mg Battaglia Rep Scope Rank4",
+        "display_token": "@mg_battaglia_RepScope_Rank4",
+        "gated": false,
+        "min_reputation": 30000,
+        "name": "MissionProviderRep_Battaglia_Rank4"
+      },
+      {
+        "display": "Mg Battaglia Rep Scope Rank5",
+        "display_token": "@mg_battaglia_RepScope_Rank5",
+        "gated": false,
+        "min_reputation": 69600,
+        "name": "MissionProviderRep_Battaglia_Rank5"
+      }
+    ]
+  },
+  {
     "display_token": "@RepScope_Bounty_Name",
     "faction": "Lawful Bountyhuntersguild",
     "initial_reputation": 0,
@@ -2907,6 +3459,60 @@
         "amount": 500,
         "location": "Stanton1",
         "mission_giver": "Eckhartsecurity",
+        "mission_id": "00913455-4019-4b7e-a5eb-347ad3d49740",
+        "rep_per_hour": 1350.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
+      },
+      {
+        "amount": -50,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "00913455-4019-4b7e-a5eb-347ad3d49740",
+        "rep_per_hour": 1350.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "920fe294-7e9d-435b-a475-1a5651eac16c",
+        "rep_per_hour": 1800.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
+      },
+      {
+        "amount": -50,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "920fe294-7e9d-435b-a475-1a5651eac16c",
+        "rep_per_hour": 1800.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ec99f981-dac4-4f47-8177-855019bc438f",
+        "rep_per_hour": 1928.57,
+        "time_to_complete_minutes": 14.0,
+        "title": "Expel Outlaws"
+      },
+      {
+        "amount": -50,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ec99f981-dac4-4f47-8177-855019bc438f",
+        "rep_per_hour": 1928.57,
+        "time_to_complete_minutes": 14.0,
+        "title": "Expel Outlaws"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
         "mission_id": "25440ea0-7b89-4926-aea2-69699bca35b3",
         "rep_per_hour": 1588.24,
         "time_to_complete_minutes": 17.0,
@@ -2967,6 +3573,15 @@
         "title": "High-Risk Bounty: ~mission(TargetName)"
       },
       {
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "63c605db-220f-40f1-b203-ab7852a070a1",
+        "rep_per_hour": 2500.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "High-Risk Bounty: ~mission(TargetName)"
+      },
+      {
         "amount": 300,
         "location": "Nyx",
         "mission_giver": "Eckhartsecurity",
@@ -2983,6 +3598,42 @@
         "rep_per_hour": 751.57,
         "time_to_complete_minutes": 23.95,
         "title": "Highly Dangerous Ambush"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
+        "rep_per_hour": 3214.29,
+        "time_to_complete_minutes": 14.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
+        "rep_per_hour": 3214.29,
+        "time_to_complete_minutes": 14.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
       },
       {
         "amount": 50,
@@ -3123,42 +3774,6 @@
         "amount": 500,
         "location": "Stanton1",
         "mission_giver": "Foxwellenforcement",
-        "mission_id": "275c47a7-9af7-4f68-bc1c-310c5f8e375c",
-        "rep_per_hour": 454.55,
-        "time_to_complete_minutes": 33.0,
-        "title": "Destroy Dangerous Drugs"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "275c47a7-9af7-4f68-bc1c-310c5f8e375c",
-        "rep_per_hour": 454.55,
-        "time_to_complete_minutes": 33.0,
-        "title": "Destroy Dangerous Drugs"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "d7696f35-b781-4c0b-8e9d-b95de9f3d43b",
-        "rep_per_hour": 473.19,
-        "time_to_complete_minutes": 31.7,
-        "title": "Destroy Illegal Drugs"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "d7696f35-b781-4c0b-8e9d-b95de9f3d43b",
-        "rep_per_hour": 473.19,
-        "time_to_complete_minutes": 31.7,
-        "title": "Destroy Illegal Drugs"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
         "mission_id": "bfc725de-6d4f-4b00-940e-3b96028aae58",
         "rep_per_hour": 909.09,
         "time_to_complete_minutes": 16.5,
@@ -3172,24 +3787,6 @@
         "rep_per_hour": 909.09,
         "time_to_complete_minutes": 16.5,
         "title": "Help Protect Site"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "9f87be01-d306-4663-9c63-b6f669783b48",
-        "rep_per_hour": 473.19,
-        "time_to_complete_minutes": 31.7,
-        "title": "Knock Out New Drug Op"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "9f87be01-d306-4663-9c63-b6f669783b48",
-        "rep_per_hour": 473.19,
-        "time_to_complete_minutes": 31.7,
-        "title": "Knock Out New Drug Op"
       },
       {
         "amount": 1000,
@@ -3328,7 +3925,7 @@
       },
       {
         "amount": 500,
-        "location": "Stanton",
+        "location": "Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "9ef512ad-9832-4fa9-bad7-60e99268df74",
         "rep_per_hour": 3103.45,
@@ -3337,138 +3934,12 @@
       },
       {
         "amount": -50,
-        "location": "Stanton",
+        "location": "Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "9ef512ad-9832-4fa9-bad7-60e99268df74",
         "rep_per_hour": 3103.45,
         "time_to_complete_minutes": 8.7,
         "title": "~mission(Contractor|DestroyProbeTitle)"
-      },
-      {
-        "amount": 2000,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "24dda332-16b2-44d7-ae25-7787287b61e8",
-        "rep_per_hour": 6000.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Cull Invasive Creatures"
-      },
-      {
-        "amount": -500,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "24dda332-16b2-44d7-ae25-7787287b61e8",
-        "rep_per_hour": 6000.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Cull Invasive Creatures"
-      },
-      {
-        "amount": 4000,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "cdcb713c-701e-4a62-afdd-067774d62085",
-        "rep_per_hour": 6000.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Intensive Eradication Effort"
-      },
-      {
-        "amount": -2000,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "cdcb713c-701e-4a62-afdd-067774d62085",
-        "rep_per_hour": 6000.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Intensive Eradication Effort"
-      },
-      {
-        "amount": 1000,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "e870c6b4-9632-4ff9-ab2e-bb8ba72a25aa",
-        "rep_per_hour": 9000.0,
-        "time_to_complete_minutes": 5.0,
-        "title": "Pest Control"
-      },
-      {
-        "amount": -250,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "e870c6b4-9632-4ff9-ab2e-bb8ba72a25aa",
-        "rep_per_hour": 9000.0,
-        "time_to_complete_minutes": 5.0,
-        "title": "Pest Control"
-      },
-      {
-        "amount": 4000,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "457bc4cf-f92d-4356-8502-f5e11861f3da",
-        "rep_per_hour": 8000.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Pest Control"
-      },
-      {
-        "amount": -2000,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "457bc4cf-f92d-4356-8502-f5e11861f3da",
-        "rep_per_hour": 8000.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Pest Control"
-      },
-      {
-        "amount": 2000,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "bbaf1fe7-09f5-4404-a7cf-56f4b381fbb7",
-        "rep_per_hour": 9000.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Pest Control"
-      },
-      {
-        "amount": -500,
-        "location": "",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "bbaf1fe7-09f5-4404-a7cf-56f4b381fbb7",
-        "rep_per_hour": 9000.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Pest Control"
-      },
-      {
-        "amount": 1000,
-        "location": "Stanton1",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "294cdd89-f3db-47ac-9163-9a2d69333275",
-        "rep_per_hour": 4500.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Reduce Overpopulation"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "294cdd89-f3db-47ac-9163-9a2d69333275",
-        "rep_per_hour": 4500.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Reduce Overpopulation"
-      },
-      {
-        "amount": 1000,
-        "location": "Stanton1",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "c282e0a1-b472-4a68-bd67-5455716055bb",
-        "rep_per_hour": 4500.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Reduce Overpopulation"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Highpoint Wilderness Specialists",
-        "mission_id": "c282e0a1-b472-4a68-bd67-5455716055bb",
-        "rep_per_hour": 4500.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Reduce Overpopulation"
       },
       {
         "amount": 4000,
@@ -5522,6 +5993,42 @@
         "rep_per_hour": 1724.14,
         "time_to_complete_minutes": 8.7,
         "title": "Capture Arlington Gang Member Sam ‘Weepy’ Arlington"
+      },
+      {
+        "amount": 250,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 250,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
+        "rep_per_hour": 3214.29,
+        "time_to_complete_minutes": 14.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
+        "rep_per_hour": 3214.29,
+        "time_to_complete_minutes": 14.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
       },
       {
         "amount": 500,
@@ -10421,7 +10928,7 @@
         "amount": 500,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "1438c6b2-aec4-4b36-9d37-10eaf9d6c699",
+        "mission_id": "bcf3840e-9b2b-4477-9993-fbb8ed5b7a92",
         "rep_per_hour": 2727.27,
         "time_to_complete_minutes": 11.0,
         "title": "Eliminate Annoyance"
@@ -10430,7 +10937,7 @@
         "amount": 500,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "d83e1bff-52e1-4bab-8481-fec61316d0ac",
+        "mission_id": "afc59f9a-15ba-45b7-a3e8-2b4f9f4ecea7",
         "rep_per_hour": 2727.27,
         "time_to_complete_minutes": 11.0,
         "title": "Eliminate Annoyance"
@@ -10475,7 +10982,7 @@
         "amount": 2000,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "4e98a2ec-6367-4932-927f-e73b78c8207f",
+        "mission_id": "7d05343c-d629-439b-befb-de86cf38715b",
         "rep_per_hour": 1666.67,
         "time_to_complete_minutes": 72.0,
         "title": "Help Headhunters at ~mission(DefendLocationWrapperLocation)"
@@ -10484,7 +10991,7 @@
         "amount": 2000,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "6b6e8d28-73b3-430f-a13b-adcc115a4748",
+        "mission_id": "8e4a00bf-ea92-4e96-a67d-363cd1c1f867",
         "rep_per_hour": 1666.67,
         "time_to_complete_minutes": 72.0,
         "title": "Help Headhunters at ~mission(DefendLocationWrapperLocation)"
@@ -10529,7 +11036,7 @@
         "amount": 1000,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "e8b4cf77-8606-4264-ada6-9cc3a6913a89",
+        "mission_id": "5aefc427-5c02-4940-a2f0-c93dab00383b",
         "rep_per_hour": 2307.69,
         "time_to_complete_minutes": 26.0,
         "title": "Protect Our Site"
@@ -10538,7 +11045,7 @@
         "amount": 1000,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "e16840c9-baa9-422c-ae09-b99aca5df0b0",
+        "mission_id": "eadcd6bc-1c7b-4782-b7f6-4cad4fb39bcc",
         "rep_per_hour": 2307.69,
         "time_to_complete_minutes": 26.0,
         "title": "Protect Our Site"
@@ -10565,7 +11072,7 @@
         "amount": 16000,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "8cc441d4-6d6b-4972-a437-47d427eabdf6",
+        "mission_id": "63c181b7-462b-45bf-8ca6-0a6eadf0bc25",
         "rep_per_hour": 7619.05,
         "time_to_complete_minutes": 126.0,
         "title": "Restore Order at ~mission(DefendLocationWrapperLocation)"
@@ -10574,7 +11081,7 @@
         "amount": 16000,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "8b68db1f-1b83-44f0-9627-8fa5377a95bf",
+        "mission_id": "5b1b82d9-fa2f-4a7a-8d5d-fa21e4908493",
         "rep_per_hour": 7619.05,
         "time_to_complete_minutes": 126.0,
         "title": "Restore Order at ~mission(DefendLocationWrapperLocation)"
@@ -10601,7 +11108,7 @@
         "amount": 2000,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "717189bc-7bfd-436b-9f3e-6a59b786d58c",
+        "mission_id": "2d54b476-7ed3-462a-b046-8ee4cf0b8249",
         "rep_per_hour": 2500.0,
         "time_to_complete_minutes": 48.0,
         "title": "Secure Our Airspace"
@@ -10610,7 +11117,7 @@
         "amount": 2000,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "5f9e875e-575a-4630-90f8-2a3b45d6da1c",
+        "mission_id": "bc8b5616-d602-439b-ae3a-1025bb809ae2",
         "rep_per_hour": 2500.0,
         "time_to_complete_minutes": 48.0,
         "title": "Secure Our Airspace"
@@ -10619,7 +11126,7 @@
         "amount": 2000,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "c1ed0682-7e6e-4278-a7ed-d9ec0e666dd4",
+        "mission_id": "7d4e6d75-d694-4b55-8728-1a2ee752cae2",
         "rep_per_hour": 2400.0,
         "time_to_complete_minutes": 50.0,
         "title": "Secure ~mission(Location) from Upstarts"
@@ -10628,7 +11135,7 @@
         "amount": 2000,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "0a48e244-c2db-45be-9713-3062a515bbcb",
+        "mission_id": "28bee1b6-60ad-48db-a5af-5a8ac50562d5",
         "rep_per_hour": 4000.0,
         "time_to_complete_minutes": 30.0,
         "title": "Secure ~mission(Objects) From Rivals"
@@ -10709,7 +11216,7 @@
         "amount": 8000,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "f974664d-4b13-4eca-bd8c-5b5e02356e30",
+        "mission_id": "0952be21-c29f-4e37-bcd8-6132d2f77646",
         "rep_per_hour": 5333.33,
         "time_to_complete_minutes": 90.0,
         "title": "Stop Attack at ~mission(DefendLocationWrapperLocation)"
@@ -10718,7 +11225,7 @@
         "amount": 8000,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "b12fc8c1-e24a-413f-a21c-f7ccebb8d264",
+        "mission_id": "d0198bf9-bafe-47c9-87ba-a7e625c0a240",
         "rep_per_hour": 5333.33,
         "time_to_complete_minutes": 90.0,
         "title": "Stop Attack at ~mission(DefendLocationWrapperLocation)"
@@ -11225,135 +11732,9 @@
       },
       {
         "amount": 100,
-        "location": "Nyx",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "6aa230b9-0719-4ca6-8e8f-55358c88ab74",
-        "rep_per_hour": 163.93,
-        "time_to_complete_minutes": 36.6,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "93113c47-1c37-4e7f-bda3-76911dfebd67",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
-        "location": "Nyx",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "6198b19b-187d-4342-8883-350387408a03",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 150,
-        "location": "Nyx",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "c2871e21-9f59-448e-97c7-0e7bfe4bf8b6",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
-        "location": "Nyx",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "d56b6a21-6ccc-4620-8bcc-aa3538f220dd",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
-        "location": "Regiona",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "6795cdad-8f10-47f0-905b-2383f16dccbb",
-        "rep_per_hour": 163.93,
-        "time_to_complete_minutes": 36.6,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 200,
-        "location": "Regiona",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "22813e94-3e98-4237-8591-337ce65122a9",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
-        "location": "Regiona",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "5dc4e0f0-7f7c-4e16-a3cd-85733313ce5e",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 150,
-        "location": "Regiona",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "4e250414-76b6-4e1a-afe0-3fcb463cde40",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
-        "location": "Regiona",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "b60aee2f-77a9-4b1a-9ef9-0e30f523c5bd",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
-        "location": "Stanton1",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "41127c2d-7685-fb1d-9f08-57bde4310aa7",
-        "rep_per_hour": 163.93,
-        "time_to_complete_minutes": 36.6,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 200,
-        "location": "Stanton1",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "6948c2b9-b8b3-4358-8051-11ef761deebb",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Adagio Holdings",
         "mission_id": "46541e90-fa81-f9d4-7206-a88fdda5789f",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 150,
-        "location": "Stanton1",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "40a00ef8-0b53-9270-bc2c-ef38cda62eb2",
-        "rep_per_hour": 0,
-        "time_to_complete_minutes": 0.0,
-        "title": "~mission(Contractor|SalvageContractorTitle)"
-      },
-      {
-        "amount": 100,
-        "location": "Stanton1",
-        "mission_giver": "Adagio Holdings",
-        "mission_id": "4eebc223-b15f-9cba-d1b9-070816b6caa9",
         "rep_per_hour": 0,
         "time_to_complete_minutes": 0.0,
         "title": "~mission(Contractor|SalvageContractorTitle)"
@@ -14419,6 +14800,24 @@
         "title": "Med. Distance Covalex Delivery Stanton"
       },
       {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Covalex Industries",
+        "mission_id": "ee6b4f0f-fd9b-4475-a310-9cdf8545ca57",
+        "rep_per_hour": 750.0,
+        "time_to_complete_minutes": 8.0,
+        "title": "Med. Distance Covalex Delivery Stanton"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Covalex Industries",
+        "mission_id": "32b653cd-664d-46ba-9389-04a6e0a06497",
+        "rep_per_hour": 750.0,
+        "time_to_complete_minutes": 8.0,
+        "title": "Med. Distance Covalex Delivery Stanton"
+      },
+      {
         "amount": 300,
         "location": "Nyx",
         "mission_giver": "Covalex Industries",
@@ -15338,7 +15737,7 @@
       },
       {
         "amount": 200,
-        "location": "Stanton",
+        "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "5365d562-a6c2-4bb4-af8e-346cf3430b62",
         "rep_per_hour": 1000.0,
@@ -15365,7 +15764,7 @@
       },
       {
         "amount": 150,
-        "location": "Stanton",
+        "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "54dcd780-5050-45be-85ec-fa983185abfc",
         "rep_per_hour": 900.0,
@@ -15374,7 +15773,7 @@
       },
       {
         "amount": 300,
-        "location": "Stanton",
+        "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "2e13f91f-c78d-4160-bdb8-7d69cd43d652",
         "rep_per_hour": 1200.0,
@@ -15383,7 +15782,7 @@
       },
       {
         "amount": 250,
-        "location": "Stanton",
+        "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "f09d79bc-250a-4001-88ff-203b191ddbd2",
         "rep_per_hour": 1153.85,
@@ -15401,7 +15800,7 @@
       },
       {
         "amount": 100,
-        "location": "Stanton",
+        "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "3182e3b9-82f4-46a9-8479-b5496b51b852",
         "rep_per_hour": 750.0,
@@ -15410,11 +15809,11 @@
       },
       {
         "amount": 100,
-        "location": "Stanton",
+        "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "6d43451e-c36b-4f9a-bc41-9ee6e3b8587f",
-        "rep_per_hour": 1000.0,
-        "time_to_complete_minutes": 6.0,
+        "rep_per_hour": 500.0,
+        "time_to_complete_minutes": 12.0,
         "title": "Yellow Level Contract: Limiting Potential Threat"
       },
       {
@@ -15895,6 +16294,15 @@
         "title": "Backup Needed Now"
       },
       {
+        "amount": 150,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "89ae67ed-b16f-4329-8111-c29087edde0d",
+        "rep_per_hour": 500.0,
+        "time_to_complete_minutes": 18.0,
+        "title": "Backup Needed Now"
+      },
+      {
         "amount": 200,
         "location": "Regionb, Pyrostar",
         "mission_giver": "Headhunters",
@@ -15935,6 +16343,15 @@
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "36ac4116-9283-462b-9204-a7c7752ffeae",
+        "rep_per_hour": 545.45,
+        "time_to_complete_minutes": 22.0,
+        "title": "Bring Down the Hammer"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "efbed276-35bf-463d-8b78-a5256e4f7570",
         "rep_per_hour": 545.45,
         "time_to_complete_minutes": 22.0,
         "title": "Bring Down the Hammer"
@@ -16096,7 +16513,7 @@
         "amount": 250,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "44f3deee-d85d-4b80-a715-755fe2cf022a",
+        "mission_id": "dfaa5175-9226-4e7b-9980-2ef5f13ac5a0",
         "rep_per_hour": 178.57,
         "time_to_complete_minutes": 84.0,
         "title": "Defend ~mission(Location) From Mercs"
@@ -16105,7 +16522,7 @@
         "amount": 250,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "b7963b4b-902c-4bdf-9803-7531c5204790",
+        "mission_id": "3c228b26-8aaa-4d87-8ec7-b355bf594af5",
         "rep_per_hour": 178.57,
         "time_to_complete_minutes": 84.0,
         "title": "Defend ~mission(Location) From Mercs"
@@ -16114,7 +16531,7 @@
         "amount": 250,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "43170126-137c-44d5-9992-caa76b6c1d38",
+        "mission_id": "52a2eb46-f4fe-411f-861e-355371a5dc5a",
         "rep_per_hour": 178.57,
         "time_to_complete_minutes": 84.0,
         "title": "Defend ~mission(Location) From Mercs"
@@ -16123,7 +16540,7 @@
         "amount": 250,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "9cee381f-5638-48df-bffd-0be4600fa531",
+        "mission_id": "99eef676-42d3-4bd5-b910-28d5b1f11dcf",
         "rep_per_hour": 294.12,
         "time_to_complete_minutes": 51.0,
         "title": "Defend ~mission(Objects) From Mercs"
@@ -16132,7 +16549,7 @@
         "amount": 250,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "0728a440-8b62-4b90-ae45-92c19d2547af",
+        "mission_id": "2f063444-86e6-4c06-8d17-2c21ef4f9f2e",
         "rep_per_hour": 294.12,
         "time_to_complete_minutes": 51.0,
         "title": "Defend ~mission(Objects) From Mercs"
@@ -16141,7 +16558,7 @@
         "amount": 250,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "dd769a3b-a149-4284-af02-e889a300cd88",
+        "mission_id": "889c253e-7435-4ee1-9e34-f7996e71c9e8",
         "rep_per_hour": 294.12,
         "time_to_complete_minutes": 51.0,
         "title": "Defend ~mission(Objects) From Mercs"
@@ -16582,7 +16999,7 @@
         "amount": 300,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "a43e965f-7feb-4380-b74e-00d88a726b17",
+        "mission_id": "d687fa20-4647-4816-b5a5-b3329aceaa67",
         "rep_per_hour": 150.0,
         "time_to_complete_minutes": 120.0,
         "title": "Guard ~mission(Location) From Rivals"
@@ -16591,7 +17008,7 @@
         "amount": 300,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "e10ab8fe-a4b4-486c-8666-8712b8f0f789",
+        "mission_id": "ccf425e8-af52-451b-bb46-d4d72b4d9dfa",
         "rep_per_hour": 150.0,
         "time_to_complete_minutes": 120.0,
         "title": "Guard ~mission(Location) From Rivals"
@@ -16600,7 +17017,7 @@
         "amount": 300,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "7d1322fd-86bf-498e-b420-23a2a99dc7d9",
+        "mission_id": "be753ebd-e29f-4969-aa3b-de47454254ee",
         "rep_per_hour": 150.0,
         "time_to_complete_minutes": 120.0,
         "title": "Guard ~mission(Location) From Rivals"
@@ -16609,7 +17026,7 @@
         "amount": 300,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "993af7d7-48b6-4312-92ff-d813d4eb3cb5",
+        "mission_id": "dd543713-310d-44e9-83ce-5a77ed209abe",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 72.0,
         "title": "Guard ~mission(Objects) At All Costs"
@@ -16618,7 +17035,7 @@
         "amount": 300,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "3015ea31-7967-448f-9c9b-e453ab6b6dba",
+        "mission_id": "2cde1926-d79e-4b0c-97f3-f70d47c2f5e3",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 72.0,
         "title": "Guard ~mission(Objects) At All Costs"
@@ -16627,7 +17044,7 @@
         "amount": 300,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "d571f6a8-58fc-4c90-a9f7-52dc18e266c8",
+        "mission_id": "f461bd37-8b2a-49dd-a5c5-ea38a589ccda",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 72.0,
         "title": "Guard ~mission(Objects) At All Costs"
@@ -16682,6 +17099,15 @@
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "922f2480-2b0f-470d-90c7-63c766633912",
+        "rep_per_hour": 400.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Headhunter Needs Help"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "61eecd26-6a64-4ccc-9ba0-c5592f096c34",
         "rep_per_hour": 400.0,
         "time_to_complete_minutes": 15.0,
         "title": "Headhunter Needs Help"
@@ -16849,6 +17275,15 @@
         "title": "Help Headhunters Prospect"
       },
       {
+        "amount": 100,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "af309dab-851d-4509-ba18-ac663b5d4dee",
+        "rep_per_hour": 600.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Help Headhunters Prospect"
+      },
+      {
         "amount": 300,
         "location": "Regionb, Pyrostar",
         "mission_giver": "Headhunters",
@@ -16996,7 +17431,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "80c3155a-f57c-4d22-8bad-de66ce2b0a60",
+        "mission_id": "72fac260-b856-4d48-82f8-5f7c536049cb",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Keep ~mission(Location) Safe"
@@ -17005,7 +17440,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "254df4aa-c281-4712-bd0d-ce2aeb3e7775",
+        "mission_id": "2163d4e3-3fa4-4593-b936-0b860cf18706",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Keep ~mission(Location) Safe"
@@ -17014,7 +17449,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "48e5f9e7-a3de-405b-9c0e-a82247398514",
+        "mission_id": "27ac3a6b-922d-445c-903b-5f71480f4c36",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Keep ~mission(Location) Safe"
@@ -17023,7 +17458,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "0f923f79-aec0-455f-bd7e-fa3b4b94a451",
+        "mission_id": "ae173ae3-0e72-4884-9b81-584b19be0d7c",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Keep ~mission(Location) Safe"
@@ -17032,7 +17467,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "8d2c0e5b-4474-48a1-aa2e-70718de73309",
+        "mission_id": "6de6a0e8-7eb1-4fd7-89b5-82a8575251f1",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Keep ~mission(Location) Safe"
@@ -17041,7 +17476,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "cf99a0e6-d134-49ac-a578-09ec02315f7c",
+        "mission_id": "6a21ab6b-6980-48c2-a7c6-7c94d0c5e297",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Keep ~mission(Location) Safe"
@@ -17050,7 +17485,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "c0c71b98-64c3-4564-b74c-f1d97a3579fa",
+        "mission_id": "78c14822-ea17-41c9-af27-4e2072675948",
         "rep_per_hour": 600.0,
         "time_to_complete_minutes": 10.0,
         "title": "Keep ~mission(Objects) Safe From Upstarts"
@@ -17059,7 +17494,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "6bc6a80d-bb9b-4ea3-a613-053ed42fb105",
+        "mission_id": "e51f7a50-4fef-45a8-94a6-325fd32fb434",
         "rep_per_hour": 600.0,
         "time_to_complete_minutes": 10.0,
         "title": "Keep ~mission(Objects) Safe From Upstarts"
@@ -17068,7 +17503,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "b807dac7-97c8-46f7-9d8c-99a92433e9c2",
+        "mission_id": "d5ce9150-5ca8-4871-9796-36900378704c",
         "rep_per_hour": 600.0,
         "time_to_complete_minutes": 10.0,
         "title": "Keep ~mission(Objects) Safe From Upstarts"
@@ -17213,6 +17648,15 @@
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "b8ed09b9-30af-4d8a-bef3-df9a20c1e833",
+        "rep_per_hour": 450.0,
+        "time_to_complete_minutes": 40.0,
+        "title": "Looking for a Damn Hero"
+      },
+      {
+        "amount": 300,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "26056d84-3296-4563-8228-db4dcd201d62",
         "rep_per_hour": 450.0,
         "time_to_complete_minutes": 40.0,
         "title": "Looking for a Damn Hero"
@@ -17455,7 +17899,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "d9b69130-1021-4d00-9178-ab800bcb3027",
+        "mission_id": "f89b7163-52b6-4b8b-a941-6c62a8d571ba",
         "rep_per_hour": 500.0,
         "time_to_complete_minutes": 12.0,
         "title": "Protect ~mission(Objects) From Luggers"
@@ -17464,7 +17908,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "7bd05ae6-3292-4422-8a1a-9d8d50a7a129",
+        "mission_id": "c6effe42-9a2e-4222-adab-168fb6e74001",
         "rep_per_hour": 500.0,
         "time_to_complete_minutes": 12.0,
         "title": "Protect ~mission(Objects) From Luggers"
@@ -17473,7 +17917,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "6dad39a7-08f5-433c-9d0f-d5eb56f5b51e",
+        "mission_id": "2de750c2-44b5-4e3d-93a9-7b433882fd4e",
         "rep_per_hour": 500.0,
         "time_to_complete_minutes": 12.0,
         "title": "Protect ~mission(Objects) From Luggers"
@@ -17482,7 +17926,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "de72f185-824b-4c66-84b9-b5731e168a53",
+        "mission_id": "6e2c4232-79a6-4738-8568-014f0c45bfce",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 30.0,
         "title": "Provide Protection at ~mission(Location)"
@@ -17491,7 +17935,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "3bf00ca0-410d-41b1-8d84-e678b3ffbf38",
+        "mission_id": "504f6d01-22e9-4bd0-8cec-bed0ff09937a",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 30.0,
         "title": "Provide Protection at ~mission(Location)"
@@ -17500,7 +17944,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "22f4983f-3637-441f-ac3f-2ff1e0a5d272",
+        "mission_id": "6f7e918e-518a-4765-b110-c4c5b98c8a2d",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 30.0,
         "title": "Provide Protection at ~mission(Location)"
@@ -17510,6 +17954,15 @@
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "73090b67-7bcf-4485-a6e3-a5341724f50d",
+        "rep_per_hour": 600.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Rally to Help Clips Convoy"
+      },
+      {
+        "amount": 250,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "a49671c2-3637-455d-be33-9ca28eba7faa",
         "rep_per_hour": 600.0,
         "time_to_complete_minutes": 25.0,
         "title": "Rally to Help Clips Convoy"
@@ -17797,7 +18250,7 @@
         "amount": 150,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "affa71b7-2192-4ef6-b16a-b1b19b4f4a69",
+        "mission_id": "d2f45155-d6ee-4f2a-9eb6-b69f08c6c154",
         "rep_per_hour": 180.0,
         "time_to_complete_minutes": 50.0,
         "title": "Secure ~mission(Location) from Upstarts"
@@ -17806,7 +18259,7 @@
         "amount": 150,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "db2be15b-a264-454c-b43e-0e4c1aaf3db6",
+        "mission_id": "c7ddca23-7abd-4b5e-8697-cd7e750476df",
         "rep_per_hour": 180.0,
         "time_to_complete_minutes": 50.0,
         "title": "Secure ~mission(Location) from Upstarts"
@@ -17815,7 +18268,7 @@
         "amount": 150,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "eb41f9dc-fa18-4d75-8fe4-66d5acd27910",
+        "mission_id": "f03e9edd-f363-4b31-89d3-9747a6591314",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 30.0,
         "title": "Secure ~mission(Objects) From Rivals"
@@ -17824,7 +18277,7 @@
         "amount": 150,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "d3ad4444-5568-4c80-b41c-08cfd0d1495a",
+        "mission_id": "2a659ffb-703b-4ad6-8111-c7c9188f2f20",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 30.0,
         "title": "Secure ~mission(Objects) From Rivals"
@@ -18067,7 +18520,7 @@
         "amount": 200,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "b5e32df0-1928-42da-896c-737f08b86f9c",
+        "mission_id": "b3956ae1-de0c-4c09-8364-0b7389836e2a",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 48.0,
         "title": "Stop Gang From Destroying ~mission(Objects)"
@@ -18076,7 +18529,7 @@
         "amount": 200,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "1c9d8fc6-15a1-48c0-9a8e-6c4c59683676",
+        "mission_id": "0df11757-df3f-4afb-b0a8-b193f7ee4219",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 48.0,
         "title": "Stop Gang From Destroying ~mission(Objects)"
@@ -18085,7 +18538,7 @@
         "amount": 200,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "bfe98ee6-1f93-423e-b93a-a6c3b38c3563",
+        "mission_id": "c55d5716-24b4-458e-b1be-a5a626348433",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 48.0,
         "title": "Stop Gang From Destroying ~mission(Objects)"
@@ -18094,7 +18547,7 @@
         "amount": 200,
         "location": "Nyx",
         "mission_giver": "Headhunters",
-        "mission_id": "4683f665-83d3-4d4a-a26b-5e66a7e0658a",
+        "mission_id": "3fcc6cb4-7831-4f8f-896a-fd099aa75906",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 60.0,
         "title": "Stop Rival Attack at ~mission(Location)"
@@ -18103,7 +18556,7 @@
         "amount": 200,
         "location": "Regiona",
         "mission_giver": "Headhunters",
-        "mission_id": "e7eb0b01-8149-4f7f-8ca3-0710d1fd8579",
+        "mission_id": "f109c240-7bd7-47c4-9765-1fd87862ab95",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 60.0,
         "title": "Stop Rival Attack at ~mission(Location)"
@@ -18112,7 +18565,7 @@
         "amount": 200,
         "location": "Stanton1",
         "mission_giver": "Headhunters",
-        "mission_id": "41b44c63-80e8-4d1b-8cba-358770d7af4e",
+        "mission_id": "a8e945e9-4b5e-4466-9ac3-67a856af21b0",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 60.0,
         "title": "Stop Rival Attack at ~mission(Location)"
@@ -18982,6 +19435,15 @@
         "title": "~mission(TargetName) needs stomping"
       },
       {
+        "amount": 150,
+        "location": "",
+        "mission_giver": "Highpoint Wilderness Specialists",
+        "mission_id": "24dda332-16b2-44d7-ae25-7787287b61e8",
+        "rep_per_hour": 600.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Cull Invasive Creatures"
+      },
+      {
         "amount": 75,
         "location": "Pyro2 Outpost Col M Scrp Indy 001",
         "mission_giver": "Highpoint Wilderness Specialists",
@@ -19043,6 +19505,60 @@
         "rep_per_hour": 1000.0,
         "time_to_complete_minutes": 15.0,
         "title": "Highpoint Killanimals Derelictoutpostscaves Title M 001"
+      },
+      {
+        "amount": 300,
+        "location": "",
+        "mission_giver": "Highpoint Wilderness Specialists",
+        "mission_id": "cdcb713c-701e-4a62-afdd-067774d62085",
+        "rep_per_hour": 900.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Intensive Eradication Effort"
+      },
+      {
+        "amount": 100,
+        "location": "",
+        "mission_giver": "Highpoint Wilderness Specialists",
+        "mission_id": "e870c6b4-9632-4ff9-ab2e-bb8ba72a25aa",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 5.0,
+        "title": "Pest Control"
+      },
+      {
+        "amount": 200,
+        "location": "",
+        "mission_giver": "Highpoint Wilderness Specialists",
+        "mission_id": "457bc4cf-f92d-4356-8502-f5e11861f3da",
+        "rep_per_hour": 800.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Pest Control"
+      },
+      {
+        "amount": 150,
+        "location": "",
+        "mission_giver": "Highpoint Wilderness Specialists",
+        "mission_id": "bbaf1fe7-09f5-4404-a7cf-56f4b381fbb7",
+        "rep_per_hour": 900.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Pest Control"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Highpoint Wilderness Specialists",
+        "mission_id": "294cdd89-f3db-47ac-9163-9a2d69333275",
+        "rep_per_hour": 600.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Reduce Overpopulation"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Highpoint Wilderness Specialists",
+        "mission_id": "c282e0a1-b472-4a68-bd67-5455716055bb",
+        "rep_per_hour": 600.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Reduce Overpopulation"
       },
       {
         "amount": 100,
@@ -19729,6 +20245,24 @@
         "title": "Stuck Ling Shipment Pending Delivery"
       },
       {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "fade3a4e-4d28-4efc-be7c-d5ba38a6dd5c",
+        "rep_per_hour": 3200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Battaglia Story01 Title"
+      },
+      {
+        "amount": 150,
+        "location": "",
+        "mission_giver": "Northrock Service Group",
+        "mission_id": "e4148db6-26d6-49da-87de-b73f34eaa63e",
+        "rep_per_hour": 450.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Pro Tem Bounty Assignment: ~mission(TargetName)"
+      },
+      {
         "amount": 100,
         "location": "",
         "mission_giver": "Rayari Inc",
@@ -20191,7 +20725,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "0e558915-e797-4ebc-b49c-5bace9ca6405",
+        "mission_id": "7e59e676-7b82-448a-b37e-a18035c74612",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 30.0,
         "title": "Foxwell Defend Entites And Escort E Title"
@@ -20200,7 +20734,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "aeb8462c-ac70-4861-8f23-e60c99c1c02c",
+        "mission_id": "f4054178-9d89-4963-a801-387a902d5dc7",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 30.0,
         "title": "Foxwell Defend Entites And Escort E Title"
@@ -20209,7 +20743,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Shipbattles",
-        "mission_id": "05052ef1-d6ad-41e7-93eb-bd31ef99b055",
+        "mission_id": "7cfba8eb-2437-45e5-814c-03ca1b1665e9",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 30.0,
         "title": "Foxwell Defend Entites And Escort E Title"
@@ -20218,7 +20752,7 @@
         "amount": 200,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "26c217bd-922e-49c6-9b7c-d95a11178b20",
+        "mission_id": "6c4b94f2-3b43-4e0a-9be5-93186e0a957e",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 60.0,
         "title": "Foxwell Defend Entites And Escort H Title"
@@ -20227,7 +20761,7 @@
         "amount": 200,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "22a5240e-d007-40b7-a2e3-027065c19537",
+        "mission_id": "8436bbb2-8057-4220-b75d-65cb9639389f",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 60.0,
         "title": "Foxwell Defend Entites And Escort H Title"
@@ -20236,7 +20770,7 @@
         "amount": 200,
         "location": "Stanton1",
         "mission_giver": "Shipbattles",
-        "mission_id": "1aa27fc8-08fe-4410-8f7a-79f09b64e2a0",
+        "mission_id": "2f6c2d5d-51e6-43bf-a5a8-18dec9c7e5b5",
         "rep_per_hour": 200.0,
         "time_to_complete_minutes": 60.0,
         "title": "Foxwell Defend Entites And Escort H Title"
@@ -20245,7 +20779,7 @@
         "amount": 150,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "cccbe08f-e098-4ca4-ba12-774d16e68e6e",
+        "mission_id": "4742cff7-dcd3-4fa7-9c0b-567a93b2b36a",
         "rep_per_hour": 180.0,
         "time_to_complete_minutes": 50.0,
         "title": "Foxwell Defend Entites And Escort M Title"
@@ -20254,7 +20788,7 @@
         "amount": 150,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "b1b9630e-06d9-4760-a2be-1899fdb97fb7",
+        "mission_id": "9731c308-24e7-4f31-abe0-10f2078483ab",
         "rep_per_hour": 180.0,
         "time_to_complete_minutes": 50.0,
         "title": "Foxwell Defend Entites And Escort M Title"
@@ -20263,7 +20797,7 @@
         "amount": 150,
         "location": "Stanton1",
         "mission_giver": "Shipbattles",
-        "mission_id": "128b6848-f56e-4880-a66c-f269f268495c",
+        "mission_id": "faaecfc5-fcca-4d9a-83c8-1646563c9817",
         "rep_per_hour": 180.0,
         "time_to_complete_minutes": 50.0,
         "title": "Foxwell Defend Entites And Escort M Title"
@@ -20272,7 +20806,7 @@
         "amount": 300,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "9785cd75-415d-4cdf-98d6-d66e0b957813",
+        "mission_id": "13bb2a40-ff41-4fed-b71b-a6489b8a0a7d",
         "rep_per_hour": 150.0,
         "time_to_complete_minutes": 120.0,
         "title": "Foxwell Defend Entites And Escort S Title"
@@ -20281,7 +20815,7 @@
         "amount": 300,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "a5de5995-825a-408b-bedb-3e386192c8b1",
+        "mission_id": "ece88c3a-492e-478e-b7f2-fa3c80d8b643",
         "rep_per_hour": 150.0,
         "time_to_complete_minutes": 120.0,
         "title": "Foxwell Defend Entites And Escort S Title"
@@ -20290,7 +20824,7 @@
         "amount": 300,
         "location": "Stanton1",
         "mission_giver": "Shipbattles",
-        "mission_id": "6d1aacc1-5c0c-433a-bfa9-6f3d3a425a1b",
+        "mission_id": "592d5229-9c66-40da-b0d5-33e8f88dffd0",
         "rep_per_hour": 150.0,
         "time_to_complete_minutes": 120.0,
         "title": "Foxwell Defend Entites And Escort S Title"
@@ -20299,7 +20833,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "dcc895fc-a9f5-4374-bd18-95c6ce20000c",
+        "mission_id": "7955dd52-b892-4e0a-8daa-7abd5c63e192",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Foxwell Defend Entites And Escort Ve Title"
@@ -20308,7 +20842,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "05634133-77cf-47aa-8a94-bc8e436029d3",
+        "mission_id": "526856dd-2a11-4980-bb2f-37ddf0696b6a",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Foxwell Defend Entites And Escort Ve Title"
@@ -20317,7 +20851,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "f3293ec9-3120-413c-81dc-6edebb49593c",
+        "mission_id": "af3d21d8-c6a3-46c6-9f1b-fc1ceb5472c4",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Foxwell Defend Entites And Escort Ve Title"
@@ -20326,7 +20860,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Shipbattles",
-        "mission_id": "e98fd56d-624c-4d32-a582-0fc5511a1ce6",
+        "mission_id": "595b60c2-ed21-47ff-952e-87f09d406e3e",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Foxwell Defend Entites And Escort Ve Title"
@@ -20335,7 +20869,7 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Shipbattles",
-        "mission_id": "e2ab634e-2c4b-453f-93e4-5d8360d8b507",
+        "mission_id": "d35c23b4-f63f-40fe-ad4b-455900f0c2af",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 20.0,
         "title": "Foxwell Defend Entites And Escort Ve Title"
@@ -20344,7 +20878,7 @@
         "amount": 250,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "bfd0c42f-ad46-480f-8b73-d82236499dd3",
+        "mission_id": "b8f85a2d-6ae6-4011-b206-5b85e359a313",
         "rep_per_hour": 178.57,
         "time_to_complete_minutes": 84.0,
         "title": "Foxwell Defend Entites And Escort Vh Title"
@@ -20353,7 +20887,7 @@
         "amount": 250,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "3bff1eba-cb09-412c-a755-42292b3e0679",
+        "mission_id": "d838d03b-8b38-48c6-956e-2017daae0aca",
         "rep_per_hour": 178.57,
         "time_to_complete_minutes": 84.0,
         "title": "Foxwell Defend Entites And Escort Vh Title"
@@ -20362,7 +20896,7 @@
         "amount": 250,
         "location": "Stanton1",
         "mission_giver": "Shipbattles",
-        "mission_id": "c3969f5d-942e-4b32-a065-4ceb97ae971a",
+        "mission_id": "3fba29db-01d3-4f32-a28b-74cce49a5667",
         "rep_per_hour": 178.57,
         "time_to_complete_minutes": 84.0,
         "title": "Foxwell Defend Entites And Escort Vh Title"
@@ -20470,7 +21004,7 @@
         "amount": 150,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "68ba28ac-70b1-4f91-b994-7c7209f39e3f",
+        "mission_id": "ffb4a5bd-6e38-47b9-b221-e841c944536d",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 30.0,
         "title": "Orange Lvl. Contract: Defend ~mission(Objects)"
@@ -20479,16 +21013,7 @@
         "amount": 150,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "23038ddc-7568-4691-a963-42a1d2bb71d9",
-        "rep_per_hour": 300.0,
-        "time_to_complete_minutes": 30.0,
-        "title": "Orange Lvl. Contract: Defend ~mission(Objects)"
-      },
-      {
-        "amount": 150,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "eda80f06-4a44-471c-8b4f-a195a6a988c9",
+        "mission_id": "1759176e-aafb-4bc7-baf9-a2da25018d47",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 30.0,
         "title": "Orange Lvl. Contract: Defend ~mission(Objects)"
@@ -20506,7 +21031,7 @@
         "amount": 200,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "67fa8115-4040-4788-882c-7236bb5dd7b7",
+        "mission_id": "253ed55b-be9b-40cf-8e57-d5105ec5cab4",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 48.0,
         "title": "Orange Lvl. Contract: Protect ~mission(Objects)"
@@ -20515,16 +21040,7 @@
         "amount": 200,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "26cdef83-0828-4526-a245-60a6ec05b351",
-        "rep_per_hour": 250.0,
-        "time_to_complete_minutes": 48.0,
-        "title": "Orange Lvl. Contract: Protect ~mission(Objects)"
-      },
-      {
-        "amount": 200,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "31d2d60e-aa5f-4c43-b39b-caf3195b67a7",
+        "mission_id": "a2ad3201-f931-4cf7-bec5-cbe113af7689",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 48.0,
         "title": "Orange Lvl. Contract: Protect ~mission(Objects)"
@@ -20650,7 +21166,7 @@
         "amount": 250,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "54900978-db60-46a2-9ce1-adc76758a0f4",
+        "mission_id": "d5c94f7b-0a69-4a65-9d5b-855620ba8829",
         "rep_per_hour": 294.12,
         "time_to_complete_minutes": 51.0,
         "title": "Red Lvl. Contract: Defend ~mission(Objects)"
@@ -20659,16 +21175,7 @@
         "amount": 250,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "2d05bd2f-6c73-48d5-a4a3-afb0c6153e12",
-        "rep_per_hour": 294.12,
-        "time_to_complete_minutes": 51.0,
-        "title": "Red Lvl. Contract: Defend ~mission(Objects)"
-      },
-      {
-        "amount": 250,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "802b6f6f-8b6c-47b7-80e5-06663b7a06c4",
+        "mission_id": "af3d8565-c239-4484-934f-6cd6bceafb9d",
         "rep_per_hour": 294.12,
         "time_to_complete_minutes": 51.0,
         "title": "Red Lvl. Contract: Defend ~mission(Objects)"
@@ -20686,7 +21193,7 @@
         "amount": 300,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "7557caf0-7285-4bbf-bdc1-4e452d31ecd9",
+        "mission_id": "62e63ca3-1f93-4810-8d86-b6377228190d",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 72.0,
         "title": "Red Lvl. Contract: Protect ~mission(Objects)"
@@ -20695,16 +21202,7 @@
         "amount": 300,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "ab4fed82-1dc7-4038-9add-d63670bbc783",
-        "rep_per_hour": 250.0,
-        "time_to_complete_minutes": 72.0,
-        "title": "Red Lvl. Contract: Protect ~mission(Objects)"
-      },
-      {
-        "amount": 300,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "c1c16bc6-a55a-4af0-adbb-7fc63f1dfdb5",
+        "mission_id": "54309fee-5ba5-4b5f-af9d-6df2c305056a",
         "rep_per_hour": 250.0,
         "time_to_complete_minutes": 72.0,
         "title": "Red Lvl. Contract: Protect ~mission(Objects)"
@@ -20821,7 +21319,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "100c7734-7ea5-44ad-8613-47c8735b246f",
+        "mission_id": "ab9bc47d-57f5-4ae8-ad61-c78ade917627",
         "rep_per_hour": 600.0,
         "time_to_complete_minutes": 10.0,
         "title": "Yellow Lvl. Contract: Defend ~mission(Objects)"
@@ -20830,16 +21328,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "73a2f033-2d3d-4fc2-aaee-245ba13b0375",
-        "rep_per_hour": 600.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Yellow Lvl. Contract: Defend ~mission(Objects)"
-      },
-      {
-        "amount": 100,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "8744d536-ee31-493b-a2b1-c819ba2f8955",
+        "mission_id": "4011955c-14bf-4942-9150-c9fbd67e291c",
         "rep_per_hour": 600.0,
         "time_to_complete_minutes": 10.0,
         "title": "Yellow Lvl. Contract: Defend ~mission(Objects)"
@@ -20857,7 +21346,7 @@
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
-        "mission_id": "eda57006-6a8f-44d8-9689-c938fffc26fa",
+        "mission_id": "32e98d19-2172-4734-8fef-834af5a97141",
         "rep_per_hour": 500.0,
         "time_to_complete_minutes": 12.0,
         "title": "Yellow Lvl. Contract: Protect ~mission(Objects)"
@@ -20866,16 +21355,7 @@
         "amount": 100,
         "location": "Regiona",
         "mission_giver": "Shipbattles",
-        "mission_id": "d3cbf1d3-7bc9-4798-884b-060ee83c1382",
-        "rep_per_hour": 500.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "Yellow Lvl. Contract: Protect ~mission(Objects)"
-      },
-      {
-        "amount": 100,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "f4d690b6-f20e-4ab9-a098-906e308909a4",
+        "mission_id": "e3642732-191f-4915-9eea-e5a47df5f1e1",
         "rep_per_hour": 500.0,
         "time_to_complete_minutes": 12.0,
         "title": "Yellow Lvl. Contract: Protect ~mission(Objects)"
@@ -22738,6 +23218,168 @@
         "amount": 200,
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
+        "mission_id": "b2dd6892-75a0-4252-bafd-3a9de97c0c0e",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "a3b2707c-9e8d-455f-9d10-e6db43e7d234",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "492bfe2d-f080-4892-8ccc-901d43ec2f73",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "328fa205-e376-4e67-abcb-6dbd35c5fa73",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "446c3c74-f920-4520-bbef-180af085fc17",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "2c50bc3a-40d9-447a-baf2-3a9547125ae2",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "bd1e48f4-7d7a-4ec3-934c-2441842dc884",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "51df6219-059e-400e-af6c-ee14b36f58e6",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "934a41e0-4a33-415a-823e-0e7f3d713b8b",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "23a6c554-3ed2-48ff-87e3-5c3521ca7ec3",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "9f22600f-aae7-4470-8f79-a614bb866b2b",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "1128fd25-1fb1-4406-ad92-c802cfa65588",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "bf7770b6-5d56-49a3-80b1-5e28643b1fec",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "ab8e2944-d6cd-425e-a6e4-6a8e1abe61cd",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "517f3094-eeaf-4177-8d4f-8eb2c96f9d87",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "6b73fc99-0dc7-478f-89cd-a861ced1e833",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "4a8e0eaf-3426-40ff-a928-23a258a576c5",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "1c0a7a17-4748-42a4-9ac6-7797b8ecd6d3",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
         "mission_id": "1080d9fc-d511-4bda-a567-161797dac491",
         "rep_per_hour": 409.56,
         "time_to_complete_minutes": 29.3,
@@ -22745,11 +23387,47 @@
       },
       {
         "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "3ddfed2f-1c73-43dd-832b-66e683d553db",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "9262cdc6-6033-4364-a0f4-103713494a05",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "5a3fb744-787c-460c-aecb-3ae0422d744d",
-        "rep_per_hour": 253.16,
-        "time_to_complete_minutes": 47.4,
+        "rep_per_hour": 291.97,
+        "time_to_complete_minutes": 41.1,
+        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "5eec8aad-4aa8-4f4b-b72d-42049a9e19eb",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "422acb7c-0666-452a-b259-29941012370e",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
         "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -22759,6 +23437,15 @@
         "mission_id": "1f2d664c-2c64-4469-85ee-037febaa382b",
         "rep_per_hour": 491.8,
         "time_to_complete_minutes": 24.4,
+        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "adebbccc-fff4-46f6-8dac-9cb9be474b52",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
         "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -22775,8 +23462,8 @@
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "9bbba062-857d-4d81-bc71-773eb8d2db41",
-        "rep_per_hour": 759.49,
-        "time_to_complete_minutes": 15.8,
+        "rep_per_hour": 2500.0,
+        "time_to_complete_minutes": 4.8,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -22784,6 +23471,15 @@
         "location": "Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "90da5507-58fa-45a6-8388-f2bb84d4b814",
+        "rep_per_hour": 895.52,
+        "time_to_complete_minutes": 6.7,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "c6e070d0-ac7b-4f80-a941-772fb0de9981",
         "rep_per_hour": 895.52,
         "time_to_complete_minutes": 6.7,
         "title": "REFUEL REQUEST: ~mission(Ship)"
@@ -22799,11 +23495,83 @@
       },
       {
         "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "81a82acd-d286-4087-a4d4-187493f2ad3a",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "2597de48-f738-45bb-8baf-9cdc327b2328",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "7665885b-55ce-4847-a076-2262ae3f22b4",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "ef17c7be-ed82-48f0-a6bc-62a76fa88d8d",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "4b0ba86c-4796-4d32-8bab-7e39d0dd83cd",
-        "rep_per_hour": 2142.86,
-        "time_to_complete_minutes": 5.6,
+        "rep_per_hour": 2500.0,
+        "time_to_complete_minutes": 4.8,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "9b51e83c-1377-417f-a641-5b2069c1e423",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 100,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "e333dac6-8d53-46de-b749-6c6dabaf09b5",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 100,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "4a7f1bcc-290c-4801-bcee-483cc4c1771c",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "e29a04dc-6e45-49d5-90ef-8fad002da766",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -22811,6 +23579,42 @@
         "location": "Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "6d1b2fe3-ed6b-4b94-9b6f-18fd3dccf2a0",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "593b983c-0f26-4674-82e4-81cac04106ec",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "a17c4abc-d8e2-4921-8070-e5aa56f665a5",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "0485507c-e88b-4a9d-aeec-4a528087921c",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "d5f675d6-2e55-4931-b3da-9dd2d6e95709",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
         "title": "REFUEL REQUEST: ~mission(Ship)"
@@ -22865,8 +23669,8 @@
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "b95ac811-ec6b-4027-9294-3e1f8d9107f5",
-        "rep_per_hour": 458.72,
-        "time_to_complete_minutes": 32.7,
+        "rep_per_hour": 530.04,
+        "time_to_complete_minutes": 28.3,
         "title": "URGENT FLEET REFUEL"
       },
       {
@@ -22874,8 +23678,8 @@
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "b95ac811-ec6b-4027-9294-3e1f8d9107f5",
-        "rep_per_hour": 458.72,
-        "time_to_complete_minutes": 32.7,
+        "rep_per_hour": 530.04,
+        "time_to_complete_minutes": 28.3,
         "title": "URGENT FLEET REFUEL"
       },
       {
@@ -22883,8 +23687,8 @@
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "0d66c038-2136-4c36-8e77-e449eba8e493",
-        "rep_per_hour": 569.62,
-        "time_to_complete_minutes": 15.8,
+        "rep_per_hour": 656.93,
+        "time_to_complete_minutes": 13.7,
         "title": "URGENT FLEET REFUEL"
       },
       {
@@ -22892,8 +23696,8 @@
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "321e27a8-40ea-4b30-8811-153833aead14",
-        "rep_per_hour": 97.72,
-        "time_to_complete_minutes": 153.5,
+        "rep_per_hour": 338.6,
+        "time_to_complete_minutes": 44.3,
         "title": "URGENT FLEET REFUEL"
       },
       {
@@ -22901,8 +23705,8 @@
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "321e27a8-40ea-4b30-8811-153833aead14",
-        "rep_per_hour": 97.72,
-        "time_to_complete_minutes": 153.5,
+        "rep_per_hour": 338.6,
+        "time_to_complete_minutes": 44.3,
         "title": "URGENT FLEET REFUEL"
       },
       {
@@ -22951,6 +23755,195 @@
         "title": "URGENT FLEET REFUEL"
       },
       {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "dfc22b0a-2e02-447b-baaa-b67d97712a53",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "2504eda0-4149-4b87-8c16-2f405a0ef4cf",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "689e9ac1-30a6-48ab-9691-bfb649e7e98e",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "2d59b1f3-5802-4921-893f-c0538bbcfd5a",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "664407d8-8f62-42a6-bb04-3b6c368f2aa8",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "997eddff-754e-4a5f-9a6b-6411707e97b7",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "b137e47d-7c3f-464c-bf45-0d49d46bfcd0",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "c88fe59f-39b3-40ad-93a6-db76b505042b",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "f5d62781-5f6b-4eb0-8167-1362ebcaa3d8",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 100,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "29c23153-3ebf-4c34-9128-2174da5d60e0",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "f81c98d1-59ac-420d-8ab3-2a839ae41b6f",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 100,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "2c5309c8-6fb0-419a-9727-98cd07d3b77b",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "5347637c-8313-45c8-850e-120346391b40",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "49a2d0fe-8428-4a1f-af74-df332a4ef828",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "4f4ff99e-0440-41e7-9071-8a84e0e61af5",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "51e8d38f-6a18-4b95-afd6-8f82ff5564c2",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "f4723ecc-5927-4fdc-a238-9318f491ba12",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "0b862c68-8b32-40af-96ed-40a0dbc1c47c",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "3b19d365-3ff9-4980-9eac-f04da407499f",
+        "rep_per_hour": 1818.18,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "3ab903b3-3c9b-48a4-aa60-1d6050a53aa8",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "b4593eb8-3ad0-407c-906b-4a5a0c97ed94",
+        "rep_per_hour": 3636.36,
+        "time_to_complete_minutes": 3.3,
+        "title": "URGENT FLEET REFUEL"
+      },
+      {
         "amount": 150,
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
@@ -22964,8 +23957,8 @@
         "location": "Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "16cb5fd9-18c9-4ff7-a4b1-e4433c13e7ad",
-        "rep_per_hour": 796.46,
-        "time_to_complete_minutes": 11.3,
+        "rep_per_hour": 918.37,
+        "time_to_complete_minutes": 9.8,
         "title": "URGENT REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23014,19 +24007,91 @@
         "title": "A Chance to Impress"
       },
       {
-        "amount": 50,
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Vaughn",
+        "mission_id": "28836655-7b10-4838-aa95-4b45aae22bd0",
+        "rep_per_hour": 521.74,
+        "time_to_complete_minutes": 11.5,
+        "title": "A Chance to Impress"
+      },
+      {
+        "amount": 150,
         "location": "Nyx",
         "mission_giver": "Vaughn",
-        "mission_id": "ffc306fa-ef8a-4446-a44f-7745e7531c6c",
-        "rep_per_hour": 230.77,
-        "time_to_complete_minutes": 13.0,
-        "title": "Another Chance to Impress"
+        "mission_id": "4d1cc670-7249-4edc-ab59-75a26aaa78d0",
+        "rep_per_hour": 900.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "A Well Deserved Break"
+      },
+      {
+        "amount": 150,
+        "location": "Nyx",
+        "mission_giver": "Vaughn",
+        "mission_id": "12a01016-d0e9-400c-b285-0016401eebda",
+        "rep_per_hour": 900.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "A Well Deserved Break"
+      },
+      {
+        "amount": 150,
+        "location": "Nyx",
+        "mission_giver": "Vaughn",
+        "mission_id": "38a1dfde-22f0-46a2-80de-ea4949a409c6",
+        "rep_per_hour": 450.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "A Well Deserved Break"
+      },
+      {
+        "amount": 300,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "46590930-4039-d4e2-5f80-8059137a3bb8",
+        "rep_per_hour": 918.37,
+        "time_to_complete_minutes": 19.6,
+        "title": "All Things Come To An End"
+      },
+      {
+        "amount": 100,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "41d02f67-3abc-4a67-86bc-7037c2c4b2bd",
+        "rep_per_hour": 342.86,
+        "time_to_complete_minutes": 17.5,
+        "title": "All Things Come To An End"
+      },
+      {
+        "amount": 250,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "49e03834-2e9c-bebb-87cd-3840679d4a96",
+        "rep_per_hour": 810.81,
+        "time_to_complete_minutes": 18.5,
+        "title": "They Will Be Missed"
+      },
+      {
+        "amount": 100,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "494d970a-a73e-af8d-155e-ab608cf65e92",
+        "rep_per_hour": 333.33,
+        "time_to_complete_minutes": 18.0,
+        "title": "They Will Be Missed"
       },
       {
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Vaughn",
         "mission_id": "971e8dd9-9f67-4f92-9b36-9b376c2e9db2",
+        "rep_per_hour": 500.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "~mission(Contractor|BountyTitleEasy)"
+      },
+      {
+        "amount": 100,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "9e6d0df7-4854-4f2e-ac3d-b7dfd1c1aef8",
         "rep_per_hour": 500.0,
         "time_to_complete_minutes": 12.0,
         "title": "~mission(Contractor|BountyTitleEasy)"
@@ -23041,10 +24106,28 @@
         "title": "~mission(Contractor|BountyTitleHard)"
       },
       {
+        "amount": 200,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "98a63bb6-b554-4dfc-937c-9a530192e132",
+        "rep_per_hour": 952.38,
+        "time_to_complete_minutes": 12.6,
+        "title": "~mission(Contractor|BountyTitleHard)"
+      },
+      {
         "amount": 150,
         "location": "Nyx",
         "mission_giver": "Vaughn",
         "mission_id": "82c08b3d-9786-4cfb-8f68-f3e8ea8c5a50",
+        "rep_per_hour": 803.57,
+        "time_to_complete_minutes": 11.2,
+        "title": "~mission(Contractor|BountyTitleMedium)"
+      },
+      {
+        "amount": 150,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "ca7ebac2-f2f3-4897-8018-3341387f7a5a",
         "rep_per_hour": 803.57,
         "time_to_complete_minutes": 11.2,
         "title": "~mission(Contractor|BountyTitleMedium)"
@@ -23059,16 +24142,34 @@
         "title": "~mission(Contractor|BountyTitleSuper)"
       },
       {
-        "amount": 50,
+        "amount": 300,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "7b20122f-b786-4b00-9d13-4a4b1d0b9bd4",
+        "rep_per_hour": 1374.05,
+        "time_to_complete_minutes": 13.1,
+        "title": "~mission(Contractor|BountyTitleSuper)"
+      },
+      {
+        "amount": 100,
         "location": "Nyx",
         "mission_giver": "Vaughn",
         "mission_id": "a9ea72b2-9e58-4603-ae9f-a07e3ef27a7e",
-        "rep_per_hour": 230.77,
+        "rep_per_hour": 461.54,
         "time_to_complete_minutes": 13.0,
         "title": "~mission(Contractor|BountyTitleVeryEasy)"
       },
       {
-        "amount": 200,
+        "amount": 100,
+        "location": "",
+        "mission_giver": "Vaughn",
+        "mission_id": "7d998921-ec39-437f-b608-69410ae57f18",
+        "rep_per_hour": 461.54,
+        "time_to_complete_minutes": 13.0,
+        "title": "~mission(Contractor|BountyTitleVeryEasy)"
+      },
+      {
+        "amount": 250,
         "location": "Nyx",
         "mission_giver": "Vaughn",
         "mission_id": "96b306a6-38f3-491d-96bf-d35ba76ff169",
@@ -23077,10 +24178,10 @@
         "title": "~mission(Contractor|BountyTitleVeryHard)"
       },
       {
-        "amount": 50,
-        "location": "Nyx",
+        "amount": 250,
+        "location": "",
         "mission_giver": "Vaughn",
-        "mission_id": "96b306a6-38f3-491d-96bf-d35ba76ff169",
+        "mission_id": "e1f04f40-01d0-4270-94fa-21cfaeeb7e18",
         "rep_per_hour": 1200.0,
         "time_to_complete_minutes": 12.5,
         "title": "~mission(Contractor|BountyTitleVeryHard)"
@@ -24110,263 +25211,6 @@
         "gated": false,
         "min_reputation": 95250,
         "name": "FactionRep_Allied_Rank6"
-      }
-    ]
-  },
-  {
-    "display_token": "@RepScope_Assassination_Name",
-    "faction": "Unlawful Vaughn",
-    "initial_reputation": 0,
-    "mission_contributors": [
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Vaughn",
-        "mission_id": "8b13ffa5-3e2e-489d-b39f-45a0a2c3e288",
-        "rep_per_hour": 1304.35,
-        "time_to_complete_minutes": 11.5,
-        "title": "A Chance to Impress"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Vaughn",
-        "mission_id": "8b13ffa5-3e2e-489d-b39f-45a0a2c3e288",
-        "rep_per_hour": 1304.35,
-        "time_to_complete_minutes": 11.5,
-        "title": "A Chance to Impress"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Vaughn",
-        "mission_id": "28836655-7b10-4838-aa95-4b45aae22bd0",
-        "rep_per_hour": 2608.7,
-        "time_to_complete_minutes": 11.5,
-        "title": "A Chance to Impress"
-      },
-      {
-        "amount": 150,
-        "location": "Nyx",
-        "mission_giver": "Vaughn",
-        "mission_id": "4d1cc670-7249-4edc-ab59-75a26aaa78d0",
-        "rep_per_hour": 900.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "A Well Deserved Break"
-      },
-      {
-        "amount": 150,
-        "location": "Nyx",
-        "mission_giver": "Vaughn",
-        "mission_id": "12a01016-d0e9-400c-b285-0016401eebda",
-        "rep_per_hour": 900.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "A Well Deserved Break"
-      },
-      {
-        "amount": 150,
-        "location": "Nyx",
-        "mission_giver": "Vaughn",
-        "mission_id": "38a1dfde-22f0-46a2-80de-ea4949a409c6",
-        "rep_per_hour": 450.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "A Well Deserved Break"
-      },
-      {
-        "amount": 8000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "46590930-4039-d4e2-5f80-8059137a3bb8",
-        "rep_per_hour": 12244.9,
-        "time_to_complete_minutes": 19.6,
-        "title": "All Things Come To An End"
-      },
-      {
-        "amount": -4000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "46590930-4039-d4e2-5f80-8059137a3bb8",
-        "rep_per_hour": 12244.9,
-        "time_to_complete_minutes": 19.6,
-        "title": "All Things Come To An End"
-      },
-      {
-        "amount": 1000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "41d02f67-3abc-4a67-86bc-7037c2c4b2bd",
-        "rep_per_hour": 1714.29,
-        "time_to_complete_minutes": 17.5,
-        "title": "All Things Come To An End"
-      },
-      {
-        "amount": -500,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "41d02f67-3abc-4a67-86bc-7037c2c4b2bd",
-        "rep_per_hour": 1714.29,
-        "time_to_complete_minutes": 17.5,
-        "title": "All Things Come To An End"
-      },
-      {
-        "amount": 500,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "f899ff13-cb0d-489c-a020-140de8e256ef",
-        "rep_per_hour": 2307.69,
-        "time_to_complete_minutes": 13.0,
-        "title": "Another Chance to Impress"
-      },
-      {
-        "amount": 4000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "49e03834-2e9c-bebb-87cd-3840679d4a96",
-        "rep_per_hour": 6486.49,
-        "time_to_complete_minutes": 18.5,
-        "title": "They Will Be Missed"
-      },
-      {
-        "amount": -2000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "49e03834-2e9c-bebb-87cd-3840679d4a96",
-        "rep_per_hour": 6486.49,
-        "time_to_complete_minutes": 18.5,
-        "title": "They Will Be Missed"
-      },
-      {
-        "amount": 500,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "494d970a-a73e-af8d-155e-ab608cf65e92",
-        "rep_per_hour": 833.33,
-        "time_to_complete_minutes": 18.0,
-        "title": "They Will Be Missed"
-      },
-      {
-        "amount": -250,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "494d970a-a73e-af8d-155e-ab608cf65e92",
-        "rep_per_hour": 833.33,
-        "time_to_complete_minutes": 18.0,
-        "title": "They Will Be Missed"
-      },
-      {
-        "amount": 1000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "9e6d0df7-4854-4f2e-ac3d-b7dfd1c1aef8",
-        "rep_per_hour": 5000.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "~mission(Contractor|BountyTitleEasy)"
-      },
-      {
-        "amount": 4000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "98a63bb6-b554-4dfc-937c-9a530192e132",
-        "rep_per_hour": 19047.62,
-        "time_to_complete_minutes": 12.6,
-        "title": "~mission(Contractor|BountyTitleHard)"
-      },
-      {
-        "amount": 2000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "ca7ebac2-f2f3-4897-8018-3341387f7a5a",
-        "rep_per_hour": 10714.29,
-        "time_to_complete_minutes": 11.2,
-        "title": "~mission(Contractor|BountyTitleMedium)"
-      },
-      {
-        "amount": 16000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "7b20122f-b786-4b00-9d13-4a4b1d0b9bd4",
-        "rep_per_hour": 73282.44,
-        "time_to_complete_minutes": 13.1,
-        "title": "~mission(Contractor|BountyTitleSuper)"
-      },
-      {
-        "amount": 500,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "7d998921-ec39-437f-b608-69410ae57f18",
-        "rep_per_hour": 2307.69,
-        "time_to_complete_minutes": 13.0,
-        "title": "~mission(Contractor|BountyTitleVeryEasy)"
-      },
-      {
-        "amount": 8000,
-        "location": "",
-        "mission_giver": "Vaughn",
-        "mission_id": "e1f04f40-01d0-4270-94fa-21cfaeeb7e18",
-        "rep_per_hour": 38400.0,
-        "time_to_complete_minutes": 12.5,
-        "title": "~mission(Contractor|BountyTitleVeryHard)"
-      }
-    ],
-    "reputation_ceiling": 112001,
-    "scope_name": "Assassination",
-    "source_path": "libs/foundry/records/reputation/scopes/reputationscope_assassination.json",
-    "standings": [
-      {
-        "display": "Not Eligible",
-        "display_token": "@RepStanding_NotEligible",
-        "gated": false,
-        "min_reputation": -1000,
-        "name": "Assassination_NotEligible"
-      },
-      {
-        "display": "Under Review",
-        "display_token": "@RepStanding_Assassination_Rank0",
-        "gated": true,
-        "min_reputation": 0,
-        "name": "Assassination_Outsider"
-      },
-      {
-        "display": "Assassin In Training",
-        "display_token": "@RepStanding_Assassination_Rank1",
-        "gated": false,
-        "min_reputation": 1,
-        "name": "Assassination_Rookie"
-      },
-      {
-        "display": "Low Level Assassin",
-        "display_token": "@RepStanding_Assassination_Rank2",
-        "gated": false,
-        "min_reputation": 3000,
-        "name": "Assassination_Assosciate"
-      },
-      {
-        "display": "Assassin",
-        "display_token": "@RepStanding_Assassination_Rank3",
-        "gated": false,
-        "min_reputation": 8000,
-        "name": "Assassination_Soldier"
-      },
-      {
-        "display": "High Value Assassin",
-        "display_token": "@RepStanding_Assassination_Rank4",
-        "gated": false,
-        "min_reputation": 24000,
-        "name": "Assassination_Captain"
-      },
-      {
-        "display": "Elite Assassin",
-        "display_token": "@RepStanding_Assassination_Rank5",
-        "gated": false,
-        "min_reputation": 56000,
-        "name": "Assassination_Counsel"
-      },
-      {
-        "display": "Master Assassin",
-        "display_token": "@RepStanding_Assassination_Rank6",
-        "gated": false,
-        "min_reputation": 112000,
-        "name": "Assassination_Underboss"
       }
     ]
   },

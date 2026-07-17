@@ -159,6 +159,48 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_yellow.json"
   },
   {
+    "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "eb6ca6a0-5bae-4a82-9ec0-8beb7f446401",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic_Hardened",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "9c992601-2bfb-470a-9b36-d2fd4287f345",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic_hardened.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic_TEMPLATE",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "5a4fbe90-2538-4d19-a6c8-ec45e653c6f1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic_template.json"
+  },
+  {
     "name": "EntityClassDefinition.FPS_Consumable_KeyCard_Delving_TEMPLATE",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -171,6 +213,20 @@
     ],
     "source_id": "c0808676-1f13-4210-b0e3-0e2b60e96bea",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_keycard_delving_template.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_Generic_TEMPLATE",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "d6fadd7b-67b2-4945-af8f-90cae7295451",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_keycard_generic_template.json"
   },
   {
     "name": "EntityClassDefinition.FPS_Consumable_HackingChip_Gold_Access",
@@ -409,6 +465,62 @@
     ],
     "source_id": "8840712a-c16b-41f4-82f4-c2940546866e",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_rockcrack_template.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_1",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "8e5a3d02-909a-4bd6-870f-edad5e6abe1f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_1.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_2",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "92e123fa-4a69-4e6b-9f44-d7dcad72a52b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_2.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_3",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "2b84b3d5-3de1-48a1-81f9-be2fd93763ad",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_3.json"
+  },
+  {
+    "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_WeaponCache",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:15"
+    ],
+    "source_id": "ab8fcfd0-5571-42a5-8408-9fe7f3bc56fa",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_weaponcache.json"
   },
   {
     "name": "EntityClassDefinition.FPS_Consumable_KeyCard_StormBreaker_DoctorCredentials",
@@ -2118,6 +2230,18 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_gama_tyilui.json"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_GLSN_Basher",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right",
+      "stabilizer_left",
+      "stabilizer_right"
+    ],
+    "source_id": "71f4ac44-62df-4fc1-aa07-95191ac159de",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_glsn_basher.json"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_GLSN_Shiv",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -2239,6 +2363,16 @@
     ],
     "source_id": "ce0c3841-823b-4ecd-bf72-e61389c3a0e3",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_p72_archimedes.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_KRIG_S65_Stingray",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left_rl_geom",
+      "wing_right_rl_geom"
+    ],
+    "source_id": "1dc58b11-2ca8-48e1-8903-d37a495600d8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_s65_stingray.json"
   },
   {
     "name": "EntityClassDefinition.Controller_Flight_MISC_Fortune",
@@ -3680,6 +3814,15 @@
     ],
     "source_id": "66348bb4-20d0-4c9c-9b1f-bbdaac133dae",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_tmbl_storm.json"
+  },
+  {
+    "name": "EntityClassDefinition.PersonalStorage_XNAA_SanTokYai",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "3d527bdc-3dcb-47dc-9330-cc54a59d0414",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_xnaa_santokyai.json"
   },
   {
     "name": "EntityClassDefinition.QDMP_RSI_S03_Captor",
@@ -7004,6 +7147,15 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_aegs_retaliator.json"
   },
   {
+    "name": "EntityClassDefinition.Weapon_Rack_Anim_GLSN_Basher_Single",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "1d188794-6648-4486-99e5-691e4d98519c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_anim_glsn_basher_single.json"
+  },
+  {
     "name": "EntityClassDefinition.Weapon_Rack_Animated_Grin_MTC",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -7164,6 +7316,15 @@
     ],
     "source_id": "f29b3c46-df00-4147-91ad-745142bd9192",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_grin_mtc.json"
+  },
+  {
+    "name": "EntityClassDefinition.Weapon_Rack_KRIG_S65_Stingray",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "0d1ae1af-237b-4d26-b2b0-33d6f826fecc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_krig_s65_stingray.json"
   },
   {
     "name": "EntityClassDefinition.Weapon_Rack_Krig_Wolf",
@@ -7769,6 +7930,15 @@
     ],
     "source_id": "b53e4969-f9d6-4e6e-b8ea-e1d9b3b72f83",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_medical_instance_hospital_rcd_norespawn.json"
+  },
+  {
+    "name": "EntityClassDefinition.Bed_Single_Medical_Instance_Hospital_SOO2",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "b3babf29-7e2d-424f-8536-04c094b7adce",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_medical_instance_hospital_soo2.json"
   },
   {
     "name": "EntityClassDefinition.Bed_Single_Medical_Instance_Hospital_StormBreaker",
@@ -9339,6 +9509,24 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/kiosk_cargo_1_wall_a.json"
   },
   {
+    "name": "EntityClassDefinition.Lever_PullSwitch_Fusebox",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "b837dab7-8ef5-4426-b6c0-ee51e714bb86",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/lever_pullswitch_fusebox.json"
+  },
+  {
+    "name": "EntityClassDefinition.Lever_PullSwitch_Fusebox_TEMPLATE",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "c7026784-ac31-4a4c-8995-9297f14aa1a6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/lever_pullswitch_fusebox_template.json"
+  },
+  {
     "name": "EntityClassDefinition.Lever_Template",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -9555,6 +9743,15 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_col.json"
   },
   {
+    "name": "EntityClassDefinition.resource_relay_3_slot_standing_col_1_a",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "040e5cf2-a41e-4770-aa7e-f20e72002530",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_col_1_a.json"
+  },
+  {
     "name": "EntityClassDefinition.resource_relay_3_slot_standing_freestanding_col",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -9564,6 +9761,15 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_freestanding_col.json"
   },
   {
+    "name": "EntityClassDefinition.resource_relay_3_slot_standing_freestanding_col_1_a",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "6739ab91-dc05-4c5f-a0ca-0a6def102485",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_freestanding_col_1_a.json"
+  },
+  {
     "name": "EntityClassDefinition.resource_relay_3_slot_standing_freestanding_template",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -9571,6 +9777,15 @@
     ],
     "source_id": "38da6431-a175-419c-a4e4-9d89cae0b89b",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_freestanding_template.json"
+  },
+  {
+    "name": "EntityClassDefinition.resource_relay_3_slot_standing_ht_1_a",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "4ca4dbcb-e2c7-44ed-a580-a073e4a167d9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_ht_1_a.json"
   },
   {
     "name": "EntityClassDefinition.resource_relay_3_slot_standing_template",

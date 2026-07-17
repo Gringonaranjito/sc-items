@@ -1,8 +1,8 @@
 {
   "counts": {
-    "item_issues": 1856,
-    "mission_issues": 1300,
-    "ship_issues": 2684,
+    "item_issues": 1872,
+    "mission_issues": 1352,
+    "ship_issues": 2712,
     "unclassified_sources": 168
   },
   "duplicates": {
@@ -11,7 +11,7 @@
     "missions": [],
     "ships": []
   },
-  "generated_at": "2026-07-16T08:50:33.670332-04:00",
+  "generated_at": "2026-07-16T21:13:13.746321-04:00",
   "missing_data": {
     "item_issues": [
       {
@@ -1271,8 +1271,44 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic_Hardened",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic_hardened.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.FPS_Consumable_HardDrive_Generic_TEMPLATE",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_generic_template.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.FPS_Consumable_KeyCard_Delving_TEMPLATE",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_keycard_delving_template.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.FPS_Consumable_KeyCard_Generic_TEMPLATE",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_keycard_generic_template.json"
       },
       {
         "missing_fields": [
@@ -1426,6 +1462,33 @@
         ],
         "name": "EntityClassDefinition.FPS_Consumable_KeyCard_Rockcrack_TEMPLATE",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_rockcrack_template.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_1",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_1.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_2",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_2.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_3",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_3.json"
       },
       {
         "missing_fields": [
@@ -4720,6 +4783,15 @@
         ],
         "name": "EntityClassDefinition.Bed_Single_Medical_Instance_Hospital_RCD_noRespawn",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_medical_instance_hospital_rcd_norespawn.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Single_Medical_Instance_Hospital_SOO2",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_medical_instance_hospital_soo2.json"
       },
       {
         "missing_fields": [
@@ -8426,6 +8498,15 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.Counter_Shop_Factory_1x2",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/counter_shop_factory_1x2.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.Counter_Shop_Improvised_Cart_1_a_1x2",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/counter_shop_improvised_cart_1_a_1x2.json"
       },
@@ -8950,6 +9031,15 @@
         ],
         "name": "EntityClassDefinition.ExerciseSpot_With_Mat",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/exercisespot_with_mat.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Extracta_Button_Attachable",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/extracta_button_attachable.json"
       },
       {
         "missing_fields": [
@@ -9902,6 +9992,24 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.Lever_PullSwitch_Fusebox",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/lever_pullswitch_fusebox.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Lever_PullSwitch_Fusebox_TEMPLATE",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/lever_pullswitch_fusebox_template.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.Lever_PullSwitch_TEMPLATE",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/lever_pullswitch_template.json"
       },
@@ -9922,6 +10030,15 @@
         ],
         "name": "EntityClassDefinition.Lever_PullSwitch_universal_a_singlePull",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/lever_pullswitch_universal_a_singlepull.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Lever_PullSwitch_universal_a_singlePull_Attachable",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/lever_pullswitch_universal_a_singlepull_attachable.json"
       },
       {
         "missing_fields": [
@@ -11369,6 +11486,15 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.resource_relay_3_slot_standing_col_1_a",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_col_1_a.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.resource_relay_3_slot_standing_freestanding_col",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_freestanding_col.json"
       },
@@ -11378,8 +11504,26 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.resource_relay_3_slot_standing_freestanding_col_1_a",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_freestanding_col_1_a.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.resource_relay_3_slot_standing_freestanding_template",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_freestanding_template.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.resource_relay_3_slot_standing_ht_1_a",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/resource_relay_3_slot_standing_ht_1_a.json"
       },
       {
         "missing_fields": [
@@ -16862,6 +17006,16 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractGenerator.LingFamilyHauling_Delivery",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_delivery.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractGenerator.LingFamilyHauling_Delivery",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_delivery.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractGenerator.LingFamilyHauling_Hauling",
         "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_hauling.json"
       },
@@ -17339,6 +17493,26 @@
         "issue": "Missing prerequisites",
         "name": "ContractGenerator.NorthRock_PVP",
         "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_pvp.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractGenerator.NorthRock_SOO2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_soo2.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractGenerator.NorthRock_SOO2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_soo2.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractGenerator.Battaglia_Generator",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia_generator.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractGenerator.Battaglia_Generator",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia_generator.json"
       },
       {
         "issue": "Missing rewards",
@@ -17872,6 +18046,66 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractTemplate.Battaglia_Story1",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story1.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Battaglia_Story1",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story1.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Battaglia_Story1_NoMeet",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story1_nomeet.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Battaglia_Story1_NoMeet",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story1_nomeet.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Battaglia_Story2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story2.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Battaglia_Story2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story2.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Battaglia_Story2_NoMeet",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story2_nomeet.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Battaglia_Story2_NoMeet",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story2_nomeet.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Battaglia_Story3",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story3.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Battaglia_Story3",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story3.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Battaglia_Story3_NoMeet",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story3_nomeet.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Battaglia_Story3_NoMeet",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story3_nomeet.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.BoardShip",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/boardship.json"
       },
@@ -18002,6 +18236,36 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractTemplate.Courier_1box_UnmarkedCollect",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1box_unmarkedcollect.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Courier_1box_UnmarkedCollect",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1box_unmarkedcollect.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Courier_1H",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1h.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Courier_1H",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1h.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Courier_1H_CardReader",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1h_cardreader.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Courier_1H_CardReader",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1h_cardreader.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.Courier_3boxes",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_3boxes.json"
       },
@@ -18039,6 +18303,16 @@
         "issue": "Missing prerequisites",
         "name": "ContractTemplate.Courier_Goto",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Courier_Goto_Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_battaglia.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Courier_Goto_Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_battaglia.json"
       },
       {
         "issue": "Missing rewards",
@@ -18089,6 +18363,16 @@
         "issue": "Missing prerequisites",
         "name": "ContractTemplate.Courier_Goto_ShipCombatEncounter",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_shipcombatencounter.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.Courier_Goto_ShipCombatEncounter_Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_shipcombatencounter_battaglia.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.Courier_Goto_ShipCombatEncounter_Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_shipcombatencounter_battaglia.json"
       },
       {
         "issue": "Missing rewards",
@@ -18239,6 +18523,16 @@
         "issue": "Missing prerequisites",
         "name": "ContractTemplate.DataDownload",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/datadownload.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.DataDownload_Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/datadownload_battaglia.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.DataDownload_Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/datadownload_battaglia.json"
       },
       {
         "issue": "Missing rewards",
@@ -18739,6 +19033,16 @@
         "issue": "Missing prerequisites",
         "name": "ContractTemplate.EliminateAll_2Locations",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/eliminateall_2locations.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.EliminateAll_CargoHauling",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/eliminateall_cargohauling.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.EliminateAll_CargoHauling",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/eliminateall_cargohauling.json"
       },
       {
         "issue": "Missing rewards",
@@ -20372,6 +20676,16 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractTemplate.HaulCargo_OpenDelivery_WithTarget",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/haulcargo_opendelivery_withtarget.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.HaulCargo_OpenDelivery_WithTarget",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/haulcargo_opendelivery_withtarget.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.HaulCargo_SingleToMulti",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/haulcargo_singletomulti.json"
       },
@@ -20862,6 +21176,16 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractTemplate.HuntThePolaris_FW2025",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/huntthepolaris_fw2025.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.HuntThePolaris_FW2025",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/huntthepolaris_fw2025.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.InfiltrateFFOutpost",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/infiltrateffoutpost.json"
       },
@@ -20972,6 +21296,16 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractTemplate.ItemResourceGathering_Rayari_MoldTreatmentResearch",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_rayari_moldtreatmentresearch.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.ItemResourceGathering_Rayari_MoldTreatmentResearch",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_rayari_moldtreatmentresearch.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.ItemResourceGathering_Recipe_TheCollector_Lightnin_KopSkull",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_recipe_thecollector_lightnin_kopskull.json"
       },
@@ -21009,6 +21343,16 @@
         "issue": "Missing prerequisites",
         "name": "ContractTemplate.ItemResourceGathering_Recipe_TheCollector_Lightnin_MiltTooth",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_recipe_thecollector_lightnin_milttooth.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.ItemResourceGathering_Shubin_VentFilters",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_shubin_ventfilters.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.ItemResourceGathering_Shubin_VentFilters",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_shubin_ventfilters.json"
       },
       {
         "issue": "Missing rewards",
@@ -21239,6 +21583,16 @@
         "issue": "Missing prerequisites",
         "name": "ContractTemplate.MultiKillShip_2Locations",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/multikillship_2locations.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.MW_CH2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/mw_ch2.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.MW_CH2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/mw_ch2.json"
       },
       {
         "issue": "Missing rewards",
@@ -21482,6 +21836,36 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractTemplate.ScanEntities_Intro",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_intro.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.ScanEntities_Intro",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_intro.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.ScanEntities_Multi2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_multi2.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.ScanEntities_Multi2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_multi2.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.ScanEntities_Multi3",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_multi3.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.ScanEntities_Multi3",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_multi3.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.Search",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/search.json"
       },
@@ -21629,6 +22013,16 @@
         "issue": "Missing prerequisites",
         "name": "ContractTemplate.SimpleObjective",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/simpleobjective.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.SOO2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/soo2.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.SOO2",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/soo2.json"
       },
       {
         "issue": "Missing rewards",
@@ -22889,6 +23283,16 @@
         "issue": "Missing prerequisites",
         "name": "MissionType.Appointment",
         "source_path": "starbreaker/libs/foundry/records/missiontype/pu/appointment.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "MissionType.Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/missiontype/pu/battaglia.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "MissionType.Battaglia",
+        "source_path": "starbreaker/libs/foundry/records/missiontype/pu/battaglia.json"
       },
       {
         "issue": "Missing rewards",
@@ -23982,6 +24386,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.ARMR_GLSN_Basher",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_glsn_basher.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.ARMR_GLSN_Shiv",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_glsn_shiv.json"
       },
@@ -24063,6 +24474,13 @@
         ],
         "name": "EntityClassDefinition.ARMR_KRIG_Merlin",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_krig_merlin.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_KRIG_S65_Stingray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_krig_s65_stingray.json"
       },
       {
         "missing_fields": [
@@ -25688,6 +26106,14 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.Controller_Flight_GLSN_Basher",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_glsn_basher.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.Controller_Flight_GLSN_Shiv",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_glsn_shiv.json"
       },
@@ -25730,6 +26156,14 @@
         ],
         "name": "EntityClassDefinition.Controller_Flight_KRIG_P72_Archimedes",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_p72_archimedes.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_KRIG_S65_Stingray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_s65_stingray.json"
       },
       {
         "missing_fields": [
@@ -28896,6 +29330,14 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.INTK_GLSN_Basher",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_glsn_basher.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.INTK_GLSN_Shiv",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_glsn_shiv.json"
       },
@@ -28914,6 +29356,14 @@
         ],
         "name": "EntityClassDefinition.INTK_KRIG_P72_Archimedes",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_krig_p72_archimedes.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.INTK_KRIG_S65_Stingray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_krig_s65_stingray.json"
       },
       {
         "missing_fields": [
@@ -30121,6 +30571,14 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.HTNK_GLSN_Basher",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_glsn_basher.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.HTNK_GLSN_Shiv",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_glsn_shiv.json"
       },
@@ -30171,6 +30629,14 @@
         ],
         "name": "EntityClassDefinition.HTNK_KRIG_P72_Archimedes",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_krig_p72_archimedes.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.HTNK_KRIG_S65_Stingray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_krig_s65_stingray.json"
       },
       {
         "missing_fields": [
@@ -31435,6 +31901,14 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.QTNK_GLSN_Basher",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_glsn_basher.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.QTNK_GLSN_Shiv",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_glsn_shiv.json"
       },
@@ -31453,6 +31927,14 @@
         ],
         "name": "EntityClassDefinition.QTNK_Krig_l22_alphawolf",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_krig_l22_alphawolf.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.QTNK_KRIG_S65_Stingray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_krig_s65_stingray.json"
       },
       {
         "missing_fields": [
@@ -32480,6 +32962,27 @@
         ],
         "name": "EntityClassDefinition.MRCK_S04_duel_S02_orig_m80",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_duel_s02_orig_m80.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray_Left",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray_left.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray_Right",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray_right.json"
       },
       {
         "missing_fields": [
@@ -34101,6 +34604,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_ATLS_silver_teal_white",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_atls_silver_teal_white.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_ATLS_Steel_Steel_Black",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_atls_steel_steel_black.json"
       },
@@ -34291,6 +34801,20 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Aurora_Mk2_silver_teal_white",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Aurora_Mk2_silver_teal_white_torch",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white_torch.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Aurora_Mk2_Template",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_template.json"
       },
@@ -34421,6 +34945,42 @@
         ],
         "name": "EntityClassDefinition.Paint_Ballista_Camo_01",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ballista_camo_01.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Basher_Black_Grey_Grey",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_grey_grey.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Basher_Brown_Green_Grey",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_brown_green_grey.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Basher_Brown_White_Brown",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_brown_white_brown.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Basher_Template",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_template.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Basher_White_Blue_Black",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_white_blue_black.json"
       },
       {
         "missing_fields": [
@@ -35633,6 +36193,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Fury_Black_Black_Gold",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_fury_black_black_gold.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Fury_Blue_Black_Black",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_fury_blue_black_black.json"
       },
@@ -35836,6 +36403,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Golem_Black_Black_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_black_black_yellow.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Golem_Black_Green_Grey",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_black_green_grey.json"
       },
@@ -35887,6 +36461,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Golem_Orange_White_Orange",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_orange_white_orange.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Golem_silver_teal_white",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_silver_teal_white.json"
       },
       {
         "missing_fields": [
@@ -37198,6 +37779,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Moth_Black_Black_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_moth_black_black_yellow.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Moth_blue_grey_green",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_moth_blue_grey_green.json"
       },
@@ -38065,6 +38653,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Prospector_Aphorite_Purple",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_prospector_aphorite_purple.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Prospector_Black_Black_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_prospector_black_black_yellow.json"
       },
       {
         "missing_fields": [
@@ -38949,6 +39544,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Salvation_pink_grey_black_iridescent",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_pink_grey_black_iridescent.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Salvation_silver_teal_white",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_silver_teal_white.json"
       },
       {
         "missing_fields": [
@@ -41345,6 +41947,14 @@
         ],
         "name": "EntityClassDefinition.PersonalStorage_TMBL_Storm",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_tmbl_storm.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.PersonalStorage_XNAA_SanTokYai",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_xnaa_santokyai.json"
       },
       {
         "missing_fields": [

@@ -996,6 +996,14 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_GLSN_Basher",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_glsn_basher.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_GLSN_Shiv",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_glsn_shiv.json"
   },
@@ -1038,6 +1046,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_KRIG_P72_Archimedes",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_p72_archimedes.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_KRIG_S65_Stingray",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_krig_s65_stingray.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
@@ -3336,6 +3352,30 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/orig/mrck_s04_gama_railen_octo_s01_right.json"
   },
   {
+    "component_name": "@item_NameMRCK_S04_BEHR_Quad_S02",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray.json"
+  },
+  {
+    "component_name": "@item_NameMRCK_S04_BEHR_Quad_S02",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray_Left",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray_left.json"
+  },
+  {
+    "component_name": "@item_NameMRCK_S04_BEHR_Quad_S02",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S04_KRIG_S65_Stingray_Right",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s04_krig_s65_stingray_right.json"
+  },
+  {
     "component_name": "@item_NameMRCK_S05_BEHR_Quad_S03",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -4944,6 +4984,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_atls_silver_grey_lime.json"
   },
   {
+    "component_name": "@item_NameAtls_Paint_silver_teal_white",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_ATLS_silver_teal_white",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_atls_silver_teal_white.json"
+  },
+  {
     "component_name": "@item_NameATLS_Paint_Steel_Steel_Black",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -5160,6 +5208,22 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_pink_green_purple.json"
   },
   {
+    "component_name": "@item_NameAurora_mk2_Paint_silver_teal_white",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Aurora_Mk2_silver_teal_white",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white.json"
+  },
+  {
+    "component_name": "@item_NameAurora_mk2_Paint_silver_teal_white",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Aurora_Mk2_silver_teal_white_torch",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white_torch.json"
+  },
+  {
     "component_name": "@LOC_PLACEHOLDER",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -5310,6 +5374,46 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Ballista_Camo_01",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ballista_camo_01.json"
+  },
+  {
+    "component_name": "@item_NameBasher_Paint_Black_Grey_Grey",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Basher_Black_Grey_Grey",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_grey_grey.json"
+  },
+  {
+    "component_name": "@item_NameBasher_Paint_Brown_Green_Grey",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Basher_Brown_Green_Grey",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_brown_green_grey.json"
+  },
+  {
+    "component_name": "@item_NameBasher_Paint_Brown_White_Brown",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Basher_Brown_White_Brown",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_brown_white_brown.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Basher_Template",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_template.json"
+  },
+  {
+    "component_name": "@item_NameBasher_Paint_White_Blue_Black",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Basher_White_Blue_Black",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_white_blue_black.json"
   },
   {
     "component_name": "@item_NameBuccaneer_Paint_Black_Black_Red_Camo",
@@ -6688,6 +6792,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_freelancer_white_red.json"
   },
   {
+    "component_name": "@item_NameFury_Paint_Black_Black_Gold",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Fury_Black_Black_Gold",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_fury_black_black_gold.json"
+  },
+  {
     "component_name": "@item_NameFury_Paint_Blue_Black_Black",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -6920,6 +7032,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_gladius_valiant.json"
   },
   {
+    "component_name": "@item_NameGolem_Paint_Black_Black_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Golem_Black_Black_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_black_black_yellow.json"
+  },
+  {
     "component_name": "@item_NameGolem_Paint_Black_Green_Grey",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -6982,6 +7102,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Golem_Orange_White_Orange",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_orange_white_orange.json"
+  },
+  {
+    "component_name": "@item_NameGolem_Paint_Black_Green_Grey",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Golem_silver_teal_white",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_golem_silver_teal_white.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
@@ -8464,6 +8592,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mole_yellow_grey_black.json"
   },
   {
+    "component_name": "@item_NameMoth_Paint_Black_Black_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Moth_Black_Black_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_moth_black_black_yellow.json"
+  },
+  {
     "component_name": "@item_NameMoth_Paint_Blue_Grey_Green",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -9454,6 +9590,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Prospector_Aphorite_Purple",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_prospector_aphorite_purple.json"
+  },
+  {
+    "component_name": "@item_NameProspector_Paint_Black_Black_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Prospector_Black_Black_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_prospector_black_black_yellow.json"
   },
   {
     "component_name": "@item_NameProspector_Paint_Unity",
@@ -10462,6 +10606,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Salvation_pink_grey_black_iridescent",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_pink_grey_black_iridescent.json"
+  },
+  {
+    "component_name": "@item_NameSalvation_Paint_silver_teal_white",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Salvation_silver_teal_white",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_silver_teal_white.json"
   },
   {
     "component_name": "@item_NameSanTokYai_Paint_AlienWeek_Teal_Pink",

@@ -41,6 +41,17 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/adagio holdings/adagio_resourcegathering_shipsalvage.json"
   },
   {
+    "mission_id": "contractgenerator_battaglia_generator",
+    "name": "ContractGenerator.Battaglia_Generator",
+    "record_type": "ContractGenerator",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "0a42dd4d-6ad2-4970-bd3f-ac2e500e3abc",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia_generator.json"
+  },
+  {
     "mission_id": "contractgenerator_bitzeros_recoveritem",
     "name": "ContractGenerator.BitZeros_RecoverItem",
     "record_type": "ContractGenerator",
@@ -461,7 +472,7 @@
     "record_type": "ContractGenerator",
     "reward_counts": {},
     "rewards": {
-      "reward_chance": 0.0
+      "reward_chance": 1.0
     },
     "source_id": "4ea43286-cc88-4d7c-aa7e-d84077893446",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json"
@@ -832,6 +843,17 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/klescher_generator.json"
   },
   {
+    "mission_id": "contractgenerator_lingfamilyhauling_delivery",
+    "name": "ContractGenerator.LingFamilyHauling_Delivery",
+    "record_type": "ContractGenerator",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "1a277b61-c901-41ed-9b0b-a75fa6cab996",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_delivery.json"
+  },
+  {
     "mission_id": "contractgenerator_lingfamilyhauling_hauling",
     "name": "ContractGenerator.LingFamilyHauling_Hauling",
     "record_type": "ContractGenerator",
@@ -871,6 +893,17 @@
     "reward_counts": {},
     "source_id": "01d2539f-00ff-40bc-be04-9d6e20c82357",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_pvp.json"
+  },
+  {
+    "mission_id": "contractgenerator_northrock_soo2",
+    "name": "ContractGenerator.NorthRock_SOO2",
+    "record_type": "ContractGenerator",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "0073dfd3-f3a0-411f-a9b8-c52eef65b098",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_soo2.json"
   },
   {
     "mission_id": "contractgenerator_pacheco_generator",
@@ -1201,6 +1234,72 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/antibombingrun.json"
   },
   {
+    "mission_id": "contracttemplate_battaglia_story1",
+    "name": "ContractTemplate.Battaglia_Story1",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "3f320449-14ab-41c0-a46f-6afe05016e4b",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story1.json"
+  },
+  {
+    "mission_id": "contracttemplate_battaglia_story1_nomeet",
+    "name": "ContractTemplate.Battaglia_Story1_NoMeet",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "d0be7f9f-cfc7-475a-b07d-b66ace9cdef2",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story1_nomeet.json"
+  },
+  {
+    "mission_id": "contracttemplate_battaglia_story2",
+    "name": "ContractTemplate.Battaglia_Story2",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "32a5c613-9573-4c55-b25c-93eefcad6b49",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story2.json"
+  },
+  {
+    "mission_id": "contracttemplate_battaglia_story2_nomeet",
+    "name": "ContractTemplate.Battaglia_Story2_NoMeet",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "f56278de-b14d-429f-8c4f-5b67c80fa113",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story2_nomeet.json"
+  },
+  {
+    "mission_id": "contracttemplate_battaglia_story3",
+    "name": "ContractTemplate.Battaglia_Story3",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "33b89d7f-ea47-4672-83bf-11bdb862ab18",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story3.json"
+  },
+  {
+    "mission_id": "contracttemplate_battaglia_story3_nomeet",
+    "name": "ContractTemplate.Battaglia_Story3_NoMeet",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "04670953-3f19-4880-9318-8b65a2a90320",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/battaglia_story3_nomeet.json"
+  },
+  {
     "mission_id": "contracttemplate_boardship",
     "name": "ContractTemplate.BoardShip",
     "record_type": "ContractTemplate",
@@ -1341,6 +1440,33 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1box.json"
   },
   {
+    "mission_id": "contracttemplate_courier_1box_unmarkedcollect",
+    "name": "ContractTemplate.Courier_1box_UnmarkedCollect",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "719fdc0c-a545-4b1d-8ace-a22725f1b893",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1box_unmarkedcollect.json"
+  },
+  {
+    "mission_id": "contracttemplate_courier_1h",
+    "name": "ContractTemplate.Courier_1H",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "source_id": "cf520bcb-c1af-4a3b-aa1f-d57fdb3aadc1",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1h.json"
+  },
+  {
+    "mission_id": "contracttemplate_courier_1h_cardreader",
+    "name": "ContractTemplate.Courier_1H_CardReader",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "source_id": "9080fe6f-7667-4915-abd5-c8d4ddbe3d90",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_1h_cardreader.json"
+  },
+  {
     "mission_id": "contracttemplate_courier_3boxes",
     "name": "ContractTemplate.Courier_3boxes",
     "record_type": "ContractTemplate",
@@ -1383,6 +1509,17 @@
     },
     "source_id": "54b785ad-2000-42bd-87b6-f74c88d04b02",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto.json"
+  },
+  {
+    "mission_id": "contracttemplate_courier_goto_battaglia",
+    "name": "ContractTemplate.Courier_Goto_Battaglia",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "145af149-fbea-4bbe-8912-360f9de86c5f",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_battaglia.json"
   },
   {
     "mission_id": "contracttemplate_courier_goto_exclocker",
@@ -1438,6 +1575,17 @@
     },
     "source_id": "9f3f5be5-2138-4447-a4b3-0975bdd38145",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_shipcombatencounter.json"
+  },
+  {
+    "mission_id": "contracttemplate_courier_goto_shipcombatencounter_battaglia",
+    "name": "ContractTemplate.Courier_Goto_ShipCombatEncounter_Battaglia",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "1d0641a2-c43a-4630-8d16-e53f2acc18f3",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/courier_goto_shipcombatencounter_battaglia.json"
   },
   {
     "mission_id": "contracttemplate_courier_goto_shipcombatencounter_exclocker",
@@ -1598,8 +1746,22 @@
     "name": "ContractTemplate.DataDownload",
     "record_type": "ContractTemplate",
     "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
     "source_id": "7994c862-86ac-45f3-a937-6c27a351eb4a",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/datadownload.json"
+  },
+  {
+    "mission_id": "contracttemplate_datadownload_battaglia",
+    "name": "ContractTemplate.DataDownload_Battaglia",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "50aa668f-0449-4770-ab5e-41cfbc3290a4",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/datadownload_battaglia.json"
   },
   {
     "mission_id": "contracttemplate_defend",
@@ -1684,7 +1846,7 @@
     "record_type": "ContractTemplate",
     "reward_counts": {},
     "rewards": {
-      "reward_chance": 0.5
+      "reward_chance": 1.0
     },
     "source_id": "11ee4da9-8efe-408d-be21-e75bf8c48170",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/defendlocationspace.json"
@@ -1695,7 +1857,7 @@
     "record_type": "ContractTemplate",
     "reward_counts": {},
     "rewards": {
-      "reward_chance": 0.5
+      "reward_chance": 1.0
     },
     "source_id": "24dcd037-fa77-48f7-9be7-d8e7b53d9901",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/defendlocationspace_hangar.json"
@@ -2153,6 +2315,17 @@
     },
     "source_id": "1e604ca5-a405-4dc8-9657-669767491d01",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/eliminateall_2locations.json"
+  },
+  {
+    "mission_id": "contracttemplate_eliminateall_cargohauling",
+    "name": "ContractTemplate.EliminateAll_CargoHauling",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "82866a96-38aa-4e73-951e-4bd33b885c21",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/eliminateall_cargohauling.json"
   },
   {
     "mission_id": "contracttemplate_eliminateall_courier",
@@ -4294,6 +4467,14 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/haulcargo_opendelivery.json"
   },
   {
+    "mission_id": "contracttemplate_haulcargo_opendelivery_withtarget",
+    "name": "ContractTemplate.HaulCargo_OpenDelivery_WithTarget",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "source_id": "5f4f08dc-9230-4e72-a7f0-c5eb009f0df9",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/haulcargo_opendelivery_withtarget.json"
+  },
+  {
     "auec_amount": 0.76,
     "mission_id": "contracttemplate_haulcargo_singletomulti",
     "name": "ContractTemplate.HaulCargo_SingleToMulti",
@@ -4968,6 +5149,17 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/huntthepolaris_fffinale.json"
   },
   {
+    "mission_id": "contracttemplate_huntthepolaris_fw2025",
+    "name": "ContractTemplate.HuntThePolaris_FW2025",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "5af5e5ca-a47b-428a-8c4a-0fe017d14f36",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/huntthepolaris_fw2025.json"
+  },
+  {
     "mission_id": "contracttemplate_infiltrateffoutpost",
     "name": "ContractTemplate.InfiltrateFFOutpost",
     "record_type": "ContractTemplate",
@@ -5089,6 +5281,17 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_gotoandscan_generic.json"
   },
   {
+    "mission_id": "contracttemplate_itemresourcegathering_rayari_moldtreatmentresearch",
+    "name": "ContractTemplate.ItemResourceGathering_Rayari_MoldTreatmentResearch",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "c0c22793-3167-45b0-98ff-2a49af02624b",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_rayari_moldtreatmentresearch.json"
+  },
+  {
     "mission_id": "contracttemplate_itemresourcegathering_recipe_thecollector_lightnin_kopskull",
     "name": "ContractTemplate.ItemResourceGathering_Recipe_TheCollector_Lightnin_KopSkull",
     "record_type": "ContractTemplate",
@@ -5131,6 +5334,17 @@
     },
     "source_id": "8363ec8f-eb5c-4d8e-9396-de44486ea72a",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_recipe_thecollector_lightnin_milttooth.json"
+  },
+  {
+    "mission_id": "contracttemplate_itemresourcegathering_shubin_ventfilters",
+    "name": "ContractTemplate.ItemResourceGathering_Shubin_VentFilters",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "a3d74a2a-2e3d-488f-ad56-45927500f9f8",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_shubin_ventfilters.json"
   },
   {
     "mission_id": "contracttemplate_itemresourcegathering_thecollector",
@@ -5366,6 +5580,17 @@
     },
     "source_id": "91054a90-b72a-4c71-89e6-a1df0e24324b",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/multikillship_2locations.json"
+  },
+  {
+    "mission_id": "contracttemplate_mw_ch2",
+    "name": "ContractTemplate.MW_CH2",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "47a8cf4e-a100-4d48-a781-a3b0017adc39",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/mw_ch2.json"
   },
   {
     "mission_id": "contracttemplate_phase2_mission01",
@@ -5695,6 +5920,39 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities.json"
   },
   {
+    "mission_id": "contracttemplate_scanentities_intro",
+    "name": "ContractTemplate.ScanEntities_Intro",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "c6923d5c-7437-4cb8-a3a5-1d904e919693",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_intro.json"
+  },
+  {
+    "mission_id": "contracttemplate_scanentities_multi2",
+    "name": "ContractTemplate.ScanEntities_Multi2",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "58e1e1b6-8edb-4c6b-9fad-68b89014f043",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_multi2.json"
+  },
+  {
+    "mission_id": "contracttemplate_scanentities_multi3",
+    "name": "ContractTemplate.ScanEntities_Multi3",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "b3be0c1f-bb68-496b-8557-5abeac2295b9",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/scanentities_multi3.json"
+  },
+  {
     "mission_id": "contracttemplate_search",
     "name": "ContractTemplate.Search",
     "record_type": "ContractTemplate",
@@ -5849,6 +6107,17 @@
     },
     "source_id": "a69e464d-3079-4ab5-9888-d3e6f2fad591",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/simpleobjective.json"
+  },
+  {
+    "mission_id": "contracttemplate_soo2",
+    "name": "ContractTemplate.SOO2",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "5b6d631a-c028-4aed-b0e7-86e94cfd8525",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/soo2.json"
   },
   {
     "mission_id": "contracttemplate_supportattackedship",
@@ -7031,6 +7300,14 @@
     "reward_counts": {},
     "source_id": "d1269fc9-c2cc-45e5-a819-1db6a39d4639",
     "source_path": "starbreaker/libs/foundry/records/missiontype/pu/appointment.json"
+  },
+  {
+    "mission_id": "missiontype_battaglia",
+    "name": "MissionType.Battaglia",
+    "record_type": "MissionType",
+    "reward_counts": {},
+    "source_id": "faf5b67b-7eea-4f5c-89d1-e970e58a8ae0",
+    "source_path": "starbreaker/libs/foundry/records/missiontype/pu/battaglia.json"
   },
   {
     "mission_id": "missiontype_bountyhunter",
