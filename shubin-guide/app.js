@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const path=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('[data-page]').forEach(a=>{if(a.getAttribute('data-page')===path)a.classList.add('active')});document.querySelectorAll('a[target="_blank"]').forEach(a=>a.setAttribute('rel','noopener noreferrer'));});
