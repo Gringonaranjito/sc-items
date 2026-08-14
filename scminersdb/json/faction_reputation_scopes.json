@@ -2335,393 +2335,6 @@
     "initial_reputation": 0,
     "mission_contributors": [
       {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "abf87b9c-b778-4283-a544-10ddc2fd95b8",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Rpt Board Ship 01 Title"
-      },
-      {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "48c283cc-ab8f-45a8-ba52-20913315b90c",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Rpt Board Ship 01 Title"
-      },
-      {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "d8332707-f74a-4b35-a363-0452aeed9fd0",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Rpt Create Uplink 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "c9d5a3e6-e703-4419-aab0-36a0362697fa",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Data Download 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "93a0e3ff-2121-4906-b721-5ad2cd82bca8",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Data Download 01 Title"
-      },
-      {
-        "amount": 100,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "984bf4cb-84c1-4e6c-a09c-6d1bb1f10ee2",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 8.0,
-        "title": "Battaglia Rpt Miss Crew 01 Title"
-      },
-      {
-        "amount": 60,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "984bf4cb-84c1-4e6c-a09c-6d1bb1f10ee2",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 8.0,
-        "title": "Battaglia Rpt Miss Crew 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "628de0bc-020c-403e-bc1f-66b8afcd51a8",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Miss Crew 02 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "671ab679-e102-43f2-9908-cf4a02a7a71f",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "Battaglia Rpt Miss Crew 03 Title"
-      },
-      {
-        "amount": 40,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "671ab679-e102-43f2-9908-cf4a02a7a71f",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "Battaglia Rpt Miss Crew 03 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "2b926255-e2cf-4f36-996b-f7b5505d3635",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 13.0,
-        "title": "Battaglia Rpt Recover Item M 01 Title"
-      },
-      {
-        "amount": 60,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "2b926255-e2cf-4f36-996b-f7b5505d3635",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 13.0,
-        "title": "Battaglia Rpt Recover Item M 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "b74ed677-1f03-4e8e-abed-8896d3bc0e2d",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "Battaglia Rpt Recover Item Ve 01 Title"
-      },
-      {
-        "amount": 40,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "b74ed677-1f03-4e8e-abed-8896d3bc0e2d",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "Battaglia Rpt Recover Item Ve 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "b3a1bf21-e0be-4e8b-9888-f478b586fa07",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "Battaglia Rpt Recover Item Ve 01 Title"
-      },
-      {
-        "amount": 40,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "b3a1bf21-e0be-4e8b-9888-f478b586fa07",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "Battaglia Rpt Recover Item Ve 01 Title"
-      },
-      {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "d98b633a-0c32-4ddd-b33c-791cccf61666",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 18.0,
-        "title": "Battaglia Rpt Recover Item Vh 01 Title"
-      },
-      {
-        "amount": 60,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "d98b633a-0c32-4ddd-b33c-791cccf61666",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 18.0,
-        "title": "Battaglia Rpt Recover Item Vh 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "953f4c07-d7cc-429c-8b85-d52513ee5a66",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Salvage E 01 Title"
-      },
-      {
-        "amount": 600,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "a249020e-9c94-44dd-9d9a-ddb11cc74533",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 30.0,
-        "title": "Battaglia Rpt Salvage H 01 Title"
-      },
-      {
-        "amount": 400,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "f76726b6-a26d-4f21-bc84-558c6a1304a0",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Battaglia Rpt Salvage M 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "4173543e-eaa7-4efd-ada3-41549f84448a",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Scan 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "230aa1eb-2dd3-43e6-85e3-7775efabb143",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Scan 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "ee2b9d1a-09ff-429b-a28f-195431011ad0",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 11.0,
-        "title": "Battaglia Rpt Scan 02 Title"
-      },
-      {
-        "amount": 20,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "ee2b9d1a-09ff-429b-a28f-195431011ad0",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 11.0,
-        "title": "Battaglia Rpt Scan 02 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "297465df-5f08-41ff-bced-e5ccb017ff87",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 13.0,
-        "title": "Battaglia Rpt Scan 03 Title"
-      },
-      {
-        "amount": 60,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "297465df-5f08-41ff-bced-e5ccb017ff87",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 13.0,
-        "title": "Battaglia Rpt Scan 03 Title"
-      },
-      {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "86289d0e-f0f5-482a-b20d-0d3364cbfe3a",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Rpt Scan 04 Title"
-      },
-      {
-        "amount": 400,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "80751516-7556-46af-bd77-b6839fa3f876",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Battaglia Rpt Scan 05 Title"
-      },
-      {
-        "amount": 600,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "6eceb64c-44fc-4846-8666-8471e346bd8f",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 30.0,
-        "title": "Battaglia Rpt Scan 06 Title"
-      },
-      {
-        "amount": 800,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "d865c8d4-d0b7-44da-9867-678f8c006907",
-        "rep_per_hour": 4800.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Scan Golem Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "57f5021a-167a-466a-bee3-8c068c12d146",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Scan Mine 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "decd5427-168b-4afc-8f0a-692284ab63c0",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "Battaglia Rpt Scan Mine 01 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "f85b4b24-d344-4892-827c-0e47aa9996a7",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 11.0,
-        "title": "Battaglia Rpt Scan Mine 02 Title"
-      },
-      {
-        "amount": 20,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "f85b4b24-d344-4892-827c-0e47aa9996a7",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 11.0,
-        "title": "Battaglia Rpt Scan Mine 02 Title"
-      },
-      {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "bab81477-8da9-4dc8-8949-2978fc77d998",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 13.0,
-        "title": "Battaglia Rpt Scan Mine 03 Title"
-      },
-      {
-        "amount": 60,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "bab81477-8da9-4dc8-8949-2978fc77d998",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 13.0,
-        "title": "Battaglia Rpt Scan Mine 03 Title"
-      },
-      {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "0a37727f-50b3-4a65-a5a7-4efbed9324db",
-        "rep_per_hour": 1520.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Rpt Scan Mine 04 Title"
-      },
-      {
-        "amount": 80,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "0a37727f-50b3-4a65-a5a7-4efbed9324db",
-        "rep_per_hour": 1520.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Rpt Scan Mine 04 Title"
-      },
-      {
-        "amount": 400,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "e4095b72-7b57-43b7-ba22-9ffe7b60c34b",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Battaglia Rpt Scan Mine 05 Title"
-      },
-      {
-        "amount": 600,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "5db8502c-da59-4652-ac74-e99d3b758600",
-        "rep_per_hour": 1200.0,
-        "time_to_complete_minutes": 30.0,
-        "title": "Battaglia Rpt Scan Mine 06 Title"
-      },
-      {
-        "amount": 800,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "3ca1adb1-4155-45d4-9df4-2f21f05e8020",
-        "rep_per_hour": 3692.31,
-        "time_to_complete_minutes": 13.0,
-        "title": "Battaglia Rpt Scan Mine Mole Title"
-      },
-      {
-        "amount": 800,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "0c3aa2ea-a401-4303-bd68-0d52ff96f0cb",
-        "rep_per_hour": 4363.64,
-        "time_to_complete_minutes": 11.0,
-        "title": "Battaglia Rpt Scan Prosp Title"
-      },
-      {
         "amount": 800,
         "location": "Nyx",
         "mission_giver": "Missionproviders",
@@ -2765,6 +2378,393 @@
         "rep_per_hour": 2400.0,
         "time_to_complete_minutes": 20.0,
         "title": "Battaglia Story03 Title"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b74ed677-1f03-4e8e-abed-8896d3bc0e2d",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Blackbox Retrieval"
+      },
+      {
+        "amount": 40,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b74ed677-1f03-4e8e-abed-8896d3bc0e2d",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Blackbox Retrieval"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b3a1bf21-e0be-4e8b-9888-f478b586fa07",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Blackbox Retrieval"
+      },
+      {
+        "amount": 40,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "b3a1bf21-e0be-4e8b-9888-f478b586fa07",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Blackbox Retrieval"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d98b633a-0c32-4ddd-b33c-791cccf61666",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 18.0,
+        "title": "Blackbox Retrieval Very Dangerous"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d98b633a-0c32-4ddd-b33c-791cccf61666",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 18.0,
+        "title": "Blackbox Retrieval Very Dangerous"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "2b926255-e2cf-4f36-996b-f7b5505d3635",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Blackbox Retrieval w/Danger"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "2b926255-e2cf-4f36-996b-f7b5505d3635",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Blackbox Retrieval w/Danger"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "984bf4cb-84c1-4e6c-a09c-6d1bb1f10ee2",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 8.0,
+        "title": "Crew Hasn’t Checked In"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "984bf4cb-84c1-4e6c-a09c-6d1bb1f10ee2",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 8.0,
+        "title": "Crew Hasn’t Checked In"
+      },
+      {
+        "amount": 400,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "e4095b72-7b57-43b7-ba22-9ffe7b60c34b",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Efficient Miners Wanted"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d865c8d4-d0b7-44da-9867-678f8c006907",
+        "rep_per_hour": 4800.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Extra Special Job"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "86289d0e-f0f5-482a-b20d-0d3364cbfe3a",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Full Area Scan for Ore"
+      },
+      {
+        "amount": 600,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "6eceb64c-44fc-4846-8666-8471e346bd8f",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "High Priority Ore Scan"
+      },
+      {
+        "amount": 400,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "80751516-7556-46af-bd77-b6839fa3f876",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Large Deposit Of Ore To Confirm"
+      },
+      {
+        "amount": 600,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "5db8502c-da59-4652-ac74-e99d3b758600",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "Mining and Data Collection"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "3ca1adb1-4155-45d4-9df4-2f21f05e8020",
+        "rep_per_hour": 3692.31,
+        "time_to_complete_minutes": 13.0,
+        "title": "Mining and MOLE"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "57f5021a-167a-466a-bee3-8c068c12d146",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Minor Mining Job"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "decd5427-168b-4afc-8f0a-692284ab63c0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Minor Mining Job"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "628de0bc-020c-403e-bc1f-66b8afcd51a8",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Missing Mining Team"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "671ab679-e102-43f2-9908-cf4a02a7a71f",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Missing Persons"
+      },
+      {
+        "amount": 40,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "671ab679-e102-43f2-9908-cf4a02a7a71f",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 12.0,
+        "title": "Missing Persons"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "c9d5a3e6-e703-4419-aab0-36a0362697fa",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Moraine Data Retrieval"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "93a0e3ff-2121-4906-b721-5ad2cd82bca8",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Moraine Data Retrieval"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "d8332707-f74a-4b35-a363-0452aeed9fd0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Moraine Movements"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "f85b4b24-d344-4892-827c-0e47aa9996a7",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Need Some Ore Mined"
+      },
+      {
+        "amount": 20,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "f85b4b24-d344-4892-827c-0e47aa9996a7",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Need Some Ore Mined"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "297465df-5f08-41ff-bced-e5ccb017ff87",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Ore Deposit Needs Scanning"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "297465df-5f08-41ff-bced-e5ccb017ff87",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Ore Deposit Needs Scanning"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "0a37727f-50b3-4a65-a5a7-4efbed9324db",
+        "rep_per_hour": 1520.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Ore Needs Gathering"
+      },
+      {
+        "amount": 80,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "0a37727f-50b3-4a65-a5a7-4efbed9324db",
+        "rep_per_hour": 1520.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Ore Needs Gathering"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "4173543e-eaa7-4efd-ada3-41549f84448a",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Ore Scan Needed"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "230aa1eb-2dd3-43e6-85e3-7775efabb143",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Ore Scan Needed"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "ee2b9d1a-09ff-429b-a28f-195431011ad0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Ore To Be Scanned"
+      },
+      {
+        "amount": 20,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "ee2b9d1a-09ff-429b-a28f-195431011ad0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 11.0,
+        "title": "Ore To Be Scanned"
+      },
+      {
+        "amount": 600,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "a249020e-9c94-44dd-9d9a-ddb11cc74533",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "Salvage Job: Large"
+      },
+      {
+        "amount": 400,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "f76726b6-a26d-4f21-bc84-558c6a1304a0",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Salvage Job: Mid"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "953f4c07-d7cc-429c-8b85-d52513ee5a66",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "Salvage Job: Small"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "bab81477-8da9-4dc8-8949-2978fc77d998",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Scan And Mining Needed"
+      },
+      {
+        "amount": 60,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "bab81477-8da9-4dc8-8949-2978fc77d998",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 13.0,
+        "title": "Scan And Mining Needed"
+      },
+      {
+        "amount": 800,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "0c3aa2ea-a401-4303-bd68-0d52ff96f0cb",
+        "rep_per_hour": 4363.64,
+        "time_to_complete_minutes": 11.0,
+        "title": "Scan with a Prospector Payout"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "abf87b9c-b778-4283-a544-10ddc2fd95b8",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Ship In Distress"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Missionproviders",
+        "mission_id": "48c283cc-ab8f-45a8-ba52-20913315b90c",
+        "rep_per_hour": 1200.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Ship In Distress"
       }
     ],
     "reputation_ceiling": 69600,
@@ -2772,42 +2772,42 @@
     "source_path": "libs/foundry/records/reputation/scopes/missionprovider/missionproviderreputationscope_battaglia.json",
     "standings": [
       {
-        "display": "Mg Battaglia Rep Scope Rank0",
+        "display": "Prospective Associate",
         "display_token": "@mg_battaglia_RepScope_Rank0",
         "gated": false,
         "min_reputation": 0,
         "name": "MissionProviderRep_Battaglia_Rank0"
       },
       {
-        "display": "Mg Battaglia Rep Scope Rank1",
+        "display": "Associate",
         "display_token": "@mg_battaglia_RepScope_Rank1",
         "gated": false,
         "min_reputation": 2400,
         "name": "MissionProviderRep_Battaglia_Rank1"
       },
       {
-        "display": "Mg Battaglia Rep Scope Rank2",
+        "display": "Trusted Associate",
         "display_token": "@mg_battaglia_RepScope_Rank2",
         "gated": false,
         "min_reputation": 6000,
         "name": "MissionProviderRep_Battaglia_Rank2"
       },
       {
-        "display": "Mg Battaglia Rep Scope Rank3",
+        "display": "Prestige 1",
         "display_token": "@mg_battaglia_RepScope_Rank3",
         "gated": false,
         "min_reputation": 10800,
         "name": "MissionProviderRep_Battaglia_Rank3"
       },
       {
-        "display": "Mg Battaglia Rep Scope Rank4",
+        "display": "Prestige 2",
         "display_token": "@mg_battaglia_RepScope_Rank4",
         "gated": false,
         "min_reputation": 30000,
         "name": "MissionProviderRep_Battaglia_Rank4"
       },
       {
-        "display": "Mg Battaglia Rep Scope Rank5",
+        "display": "Prestige 3",
         "display_token": "@mg_battaglia_RepScope_Rank5",
         "gated": false,
         "min_reputation": 69600,
@@ -23626,7 +23626,7 @@
         "mission_id": "82e38ec9-3066-4aac-9363-608a4d67383c",
         "rep_per_hour": 857.14,
         "time_to_complete_minutes": 17.5,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23635,7 +23635,7 @@
         "mission_id": "82e38ec9-3066-4aac-9363-608a4d67383c",
         "rep_per_hour": 857.14,
         "time_to_complete_minutes": 17.5,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 150,
@@ -23644,7 +23644,7 @@
         "mission_id": "bed4ea01-87f4-444a-a50a-cb9f60c55bcf",
         "rep_per_hour": 841.12,
         "time_to_complete_minutes": 10.7,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 50,
@@ -23653,7 +23653,7 @@
         "mission_id": "e690d82b-d309-4ff2-a76b-0a1a4d920c77",
         "rep_per_hour": 579.15,
         "time_to_complete_minutes": 25.9,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23662,7 +23662,7 @@
         "mission_id": "e690d82b-d309-4ff2-a76b-0a1a4d920c77",
         "rep_per_hour": 579.15,
         "time_to_complete_minutes": 25.9,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 50,
@@ -23671,7 +23671,7 @@
         "mission_id": "b95ac811-ec6b-4027-9294-3e1f8d9107f5",
         "rep_per_hour": 530.04,
         "time_to_complete_minutes": 28.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23680,7 +23680,7 @@
         "mission_id": "b95ac811-ec6b-4027-9294-3e1f8d9107f5",
         "rep_per_hour": 530.04,
         "time_to_complete_minutes": 28.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 150,
@@ -23689,7 +23689,7 @@
         "mission_id": "0d66c038-2136-4c36-8e77-e449eba8e493",
         "rep_per_hour": 656.93,
         "time_to_complete_minutes": 13.7,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 50,
@@ -23698,7 +23698,7 @@
         "mission_id": "321e27a8-40ea-4b30-8811-153833aead14",
         "rep_per_hour": 338.6,
         "time_to_complete_minutes": 44.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23707,7 +23707,7 @@
         "mission_id": "321e27a8-40ea-4b30-8811-153833aead14",
         "rep_per_hour": 338.6,
         "time_to_complete_minutes": 44.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 50,
@@ -23716,7 +23716,7 @@
         "mission_id": "14910f0b-9b69-41ae-bd78-d072725b074a",
         "rep_per_hour": 1027.4,
         "time_to_complete_minutes": 14.6,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23725,7 +23725,7 @@
         "mission_id": "14910f0b-9b69-41ae-bd78-d072725b074a",
         "rep_per_hour": 1027.4,
         "time_to_complete_minutes": 14.6,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 150,
@@ -23734,7 +23734,7 @@
         "mission_id": "85d17b53-5f6c-4c8b-876b-5032d998642c",
         "rep_per_hour": 1011.24,
         "time_to_complete_minutes": 8.9,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 50,
@@ -23743,7 +23743,7 @@
         "mission_id": "33944d03-1b31-4457-8717-75b36a6f0ad6",
         "rep_per_hour": 694.44,
         "time_to_complete_minutes": 21.6,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23752,7 +23752,7 @@
         "mission_id": "33944d03-1b31-4457-8717-75b36a6f0ad6",
         "rep_per_hour": 694.44,
         "time_to_complete_minutes": 21.6,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23761,7 +23761,7 @@
         "mission_id": "dfc22b0a-2e02-447b-baaa-b67d97712a53",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23770,7 +23770,7 @@
         "mission_id": "2504eda0-4149-4b87-8c16-2f405a0ef4cf",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 100,
@@ -23779,7 +23779,7 @@
         "mission_id": "689e9ac1-30a6-48ab-9691-bfb649e7e98e",
         "rep_per_hour": 1818.18,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23788,7 +23788,7 @@
         "mission_id": "2d59b1f3-5802-4921-893f-c0538bbcfd5a",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 100,
@@ -23797,7 +23797,7 @@
         "mission_id": "664407d8-8f62-42a6-bb04-3b6c368f2aa8",
         "rep_per_hour": 1818.18,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23806,7 +23806,7 @@
         "mission_id": "997eddff-754e-4a5f-9a6b-6411707e97b7",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23815,7 +23815,7 @@
         "mission_id": "b137e47d-7c3f-464c-bf45-0d49d46bfcd0",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23824,7 +23824,7 @@
         "mission_id": "c88fe59f-39b3-40ad-93a6-db76b505042b",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23833,7 +23833,7 @@
         "mission_id": "f5d62781-5f6b-4eb0-8167-1362ebcaa3d8",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 100,
@@ -23842,7 +23842,7 @@
         "mission_id": "29c23153-3ebf-4c34-9128-2174da5d60e0",
         "rep_per_hour": 1818.18,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23851,7 +23851,7 @@
         "mission_id": "f81c98d1-59ac-420d-8ab3-2a839ae41b6f",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 100,
@@ -23860,7 +23860,7 @@
         "mission_id": "2c5309c8-6fb0-419a-9727-98cd07d3b77b",
         "rep_per_hour": 1818.18,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23869,7 +23869,7 @@
         "mission_id": "5347637c-8313-45c8-850e-120346391b40",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23878,7 +23878,7 @@
         "mission_id": "49a2d0fe-8428-4a1f-af74-df332a4ef828",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23887,7 +23887,7 @@
         "mission_id": "4f4ff99e-0440-41e7-9071-8a84e0e61af5",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23896,7 +23896,7 @@
         "mission_id": "51e8d38f-6a18-4b95-afd6-8f82ff5564c2",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 100,
@@ -23905,7 +23905,7 @@
         "mission_id": "f4723ecc-5927-4fdc-a238-9318f491ba12",
         "rep_per_hour": 1818.18,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23914,7 +23914,7 @@
         "mission_id": "0b862c68-8b32-40af-96ed-40a0dbc1c47c",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 100,
@@ -23923,7 +23923,7 @@
         "mission_id": "3b19d365-3ff9-4980-9eac-f04da407499f",
         "rep_per_hour": 1818.18,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23932,7 +23932,7 @@
         "mission_id": "3ab903b3-3c9b-48a4-aa60-1d6050a53aa8",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
@@ -23941,7 +23941,7 @@
         "mission_id": "b4593eb8-3ad0-407c-906b-4a5a0c97ed94",
         "rep_per_hour": 3636.36,
         "time_to_complete_minutes": 3.3,
-        "title": "URGENT FLEET REFUEL"
+        "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 150,

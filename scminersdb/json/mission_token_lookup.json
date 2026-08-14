@@ -306,234 +306,6 @@
     ]
   },
   {
-    "token": "@Battaglia_RPT_BoardShip_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_CreateUplink_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_DataDownload_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_MissCrew_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_MissCrew_02_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_MissCrew_03_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_RecoverItem_M_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_RecoverItem_VE_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_RecoverItem_VH_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Salvage_E_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Salvage_H_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Salvage_M_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
     "token": "@Battaglia_RPT_Scan_01_desc",
     "kinds": [
       "description"
@@ -630,177 +402,6 @@
   },
   {
     "token": "@Battaglia_RPT_Scan_06_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_Golem_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_Prosp_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_01_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_02_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_03_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_04_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_05_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_06_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_Mole_desc",
     "kinds": [
       "description"
     ],
@@ -2053,310 +1654,6 @@
     ]
   },
   {
-    "token": "@LingFamily_delivery_desc_ICC_Special_Cryo",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Lingfamilyhauling"
-    ],
-    "mission_ids": [
-      "ContractGenerator.LingFamilyHauling Delivery"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/lingfamilyhauling/lingfamilyhauling delivery.json"
-    ]
-  },
-  {
-    "token": "@northrock_SOO_intro_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Northrock Service Group"
-    ],
-    "mission_ids": [
-      "ContractGenerator.NorthRock SOO2"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
-    ]
-  },
-  {
-    "token": "@northrock_SOO_repeat_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Northrock Service Group"
-    ],
-    "mission_ids": [
-      "ContractGenerator.NorthRock SOO2"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
-    ]
-  },
-  {
-    "token": "@ORS_BunkerRaid_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_Construct_Large_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_Construct_Medium_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_Construct_Small_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ConstructionAid_ResourceGatherLarge_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ConstructionAid_ResourceGatherMedium_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ConstructionAid_ResourceGatherSmall_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_MedicalAid_Delivery_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_MedicalAid_HaulingLarge_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_MedicalAid_HaulingMedium_desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_MedicalAid_HaulingSmall_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ShipAmb_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ShipWaveAt_Desc",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
     "token": "@RedWind_RecoverCargo_Easy_Description",
     "kinds": [
       "description"
@@ -2566,25 +1863,6 @@
     ]
   },
   {
-    "token": "@TheCollector_Recipes_Desc_aparGatlingGun",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
     "token": "@TheCollector_Recipes_Desc_CombatSuit",
     "kinds": [
       "description"
@@ -2601,101 +1879,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
-    "token": "@TheCollector_Recipes_Desc_SuperHeavyCombat",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
-    "token": "@TheCollector_Recipes_DrakeClipper",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
-    "token": "@UWC_Refueling_high_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "United Wayfarers Club"
-    ],
-    "mission_ids": [
-      "ContractGenerator.UnitedWayfarersClub"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
-    ]
-  },
-  {
-    "token": "@UWC_Refueling_moderate_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "United Wayfarers Club"
-    ],
-    "mission_ids": [
-      "ContractGenerator.UnitedWayfarersClub"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
-    ]
-  },
-  {
-    "token": "@UWC_Refueling_multiple_hard_desc_001",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "United Wayfarers Club"
-    ],
-    "mission_ids": [
-      "ContractGenerator.UnitedWayfarersClub"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
     ]
   },
   {
@@ -2734,6 +1917,405 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/unaffiliated generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VH_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Blackbox Retrieval Very Dangerous\\n\\nWORK BRIEF: \\nThere's been another attack out at ~mission(Location). Whoever did it killed the entire crew in the ambush. The Governing Committee wants answers so we're looking for someone to head out there, <EM4>retrieve the blackbox and deliver it ~mission(Destination)</EM4>. Make sure you <EM4>bring a ship with some storage to hold the blackbox</EM4>.\\n\\nBe incredibly careful. They said it was a large group that attacked them, and I'd be <EM4>they're still in the area</EM4>.\\n\\nPAYMENT:\\nStandard listed rate upon delivery\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_M_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Blackbox Retrieval w/Danger\\n\\nWORK BRIEF: \\nWe had another ship attacked out near ~mission(Location) and received conflicting reports about who did the ambush, so we're looking to hire someone to fly out and <EM4>retrieve the blackbox</EM4>. Last thing we want to do is blame the wrong people. You should be able to carry it, but <EM4>you'll need a ship with some storage.</EM4>\\n\\nJust be careful, there's a real good chance <EM4>the ambushers are still there waiting</EM4> for someone to claim it.\\n\\nIf you're able to get it, <EM4>deliver the blackbox to ~mission(Destination)</EM4> and we'll get you paid.\\n\\nPAYMENT:\\nStandard listed rate upon delivery\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VE_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Blackbox Retrieval\\n\\nWORK BRIEF: \\nReceived a tip about <EM4>a ship that had been attacked at ~mission(Location)</EM4>.  Apparently it's been there for a little while, but the Governing Committee would like to know how it got there. \\n\\nWe're looking for someone to go out, <EM4>retrieve the blackbox and bring it to ~mission(Destination)</EM4> so we can figure out what happened. \\n\\nJust a reminder, the blackbox isn't small, so <EM4>you'll need a ship with some storage</EM4>.\\n\\nPAYMENT:\\nStandard listed rate upon delivery\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Crew Hasn\u2019t Checked In\\n\\nWORK BRIEF: \\nJust got word that one of the mining teams is unaccounted for. They were supposed to be back hours ago, but no one\u2019s heard from them. Family have tried to reach out but haven\u2019t gotten a response from anyone on the crew.\\n\\nI can send you their last known location, so we\u2019re looking for someone to go check in and see if they\u2019re okay. If the worst happened, <EM4>please identify anyone you find</EM4>. I\u2019m sure the families would appreciate some closure on what happened.\\n\\nThanks\\n\\nPAYMENT:\\nStandard listed rate upon entire crew's status confirmation.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_05_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Efficient Miners Wanted\\n\\nWORK BRIEF: \\nNeed your help with something. If you could harvest ~mission(Resources) ~mission(MineableType)</EM4>, that would really help out our understanding of the current mineral levels in the system. ~mission(Rarity)\\n\\nAlso, if you're stuck of where to look or new to mining, <EM4>the United Resource Workers wrote a helpful journal that you should check out. It's in your mobi.</EM4>\\n\\nThanks in advance.\\n\\nPAYMENT:\\nStandard listed rate upon full area scan confirmation and extraction.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_Golem_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Extra Special Job\\n\\nWORK BRIEF: \\nYou've been doing some excellent work for us lately and wanted to offer a special job with a special reward. I'm looking for some more data, so I need someone <EM4>to scan ~mission(Resources)</EM4> and send me what you find. ~mission(Rarity)\\n\\nBy this point you know what you're doing but just going to remind you that <EM4>the United Resource Workers' mining journal on your mobi is great if you're stuck.</EM4>\\n\\nLet me know if you\u2019re up for it.\\n\\nPAYMENT:\\nPolished up a special Drake Golem from Teach's for this one.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_H_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Large Ship Salvage\\n\\nWORK BRIEF: \\nWord got passed over that <EM4>there's a large derelict ship out near ~mission(Location)</EM4>, so we're putting the word out for anyone who's got the ships and gear to break it down. \\n\\nIf you can chop it up, then <EM4>deliver the resources to ~mission(Destination)</EM4> and we'll pay you for your time.\\n\\nPAYMENT:\\nStandard listed rate upon resource delivery\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_M_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Medium Ship Salvage\\n\\nWORK BRIEF: \\nGot word that a ship got destroyed out by ~mission(Location) after an ambush. Owner is willing to pay for someone to go salvage the parts and <EM4>bring them to ~mission(Destination)</EM4>.\\n\\nPAYMENT:\\nStandard listed rate upon resource delivery\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_06_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Mining and Data Collection\\n\\nWORK BRIEF: \\nHave a big one for you today. Need you to get down there and mine ~mission(Resources) ~mission(MineableType)</EM4> and relay your stats back to us. I'm looking to pull together some findings from various miners around the system. ~mission(Rarity)\\n\\nAlso, if you're stuck of where to look or new to mining, <EM4>the United Resource Workers wrote a helpful journal that you should check out. It's in your mobi.</EM4>\\n\\nLet me know if you\u2019re up for it.\\n\\nPAYMENT:\\nStandard listed rate upon full area scan confirmation and extraction.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_Mole_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Mining and MOLE\\n\\nWORK BRIEF: \\nAnother special job for you with an extra special payout. Like the previous jobs, I need you to find and extract <EM4> ~mission(Resources) ~mission(MineableType)</EM4> and relay your stats back to us. ~mission(Rarity) \\n\\nI can't even tell you how helpful your work has been in the past so I've arranged an extra special payout for this one. ~mission(Rarity)\\n\\nBy this point you know what you're doing but just going to remind you that <EM4>the United Resource Workers' mining journal on your mobi is great if you're stuck.</EM4>\\n\\nLet me know if you\u2019re up for it.\\n\\nPAYMENT:\\nYou'll receive a custom ARGO MOLE as payment for all your help.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Minor Mining Job\\n\\nWORK BRIEF: \\nIf you\u2019ve got time, I\u2019ve got a pretty basic mining job for you. I'm building a database of mineral types and their locations but I need some raw data, so I need someone to locate <EM4>~mission(Resources) ~mission(MineableType)</EM4>. You can keep what you find, I'll pull the data I need. ~mission(Rarity)\\n\\nAlso, if you're stuck on where to look or new to mining, <EM4>the United Resource Workers wrote a helpful journal that you should check out. It's in your mobi.</EM4>\\n\\nThanks.\\n\\nPAYMENT:\\nStandard listed rate upon full area scan confirmation and extraction.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_02_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Missing Mining Team\\n\\nWORK BRIEF: \\nOne of our local crews set off for a dig and haven\u2019t checked back in. With everything going on out there, people are starting to get a little worried, so <EM4>we\u2019d like someone to try and get eyes on them</EM4>.\\n\\nI hate to say this, but if something happened to them, could you <EM4>please identify everyone you find</EM4> so we can let next of kin know?\\n\\nPAYMENT:\\nStandard listed rate upon entire crew's status confirmation.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_03_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Missing Persons\\n\\nWORK BRIEF: \\nA group of prospectors set out to look for some mining opportunities and haven\u2019t been heard from since. We\u2019re looking for someone to check in and see if they\u2019re okay.\\n\\nI'll send you <EM4>their last known location</EM4>. Just head out there and see what happened.\\n\\nPAYMENT:\\nStandard listed rate upon entire crew's status confirmation.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_DataDownload_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Moraine Data Retrieval\\n\\nWORK BRIEF: \\nThis is a little outside our usual purview, but with the Moraine attacking more often, we\u2019re hoping to find out where they\u2019re operating and steer crews clear of those areas.\\n\\nWe need someone to <EM4>infiltrate a suspected Moraine facility and make a copy of their server data</EM4>. We\u2019ve been told that the station is rarely occupied but it\u2019s possible that you will encounter Moraine there, so be careful.\\n\\nWhile we don\u2019t advocate violence, the potential benefits of this intel will be able to save many lives on both sides.\\n\\nPAYMENT:\\nStandard listed rate upon delivery\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_CreateUplink_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Moraine Movements\\n\\nWORK BRIEF: \\nThis is a little outside our usual purview, but with the Moraine attacking more often, we\u2019re hoping to find out where they\u2019re operating and steer crews clear of those areas.\\n\\nWe need someone to <EM4>infiltrate a suspected Moraine facility and plug a small listening device into their server</EM4>. We\u2019ve been told that the station is rarely occupied but <EM4>it\u2019s possible that you will encounter Moraine there</EM4>, so be careful.\\n\\nWhile we don\u2019t advocate violence, the potential benefits of this intel will be able to save many lives on both sides.\\n\\nPAYMENT:\\nStandard listed rate upon successful installation.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_02_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Need Some Ore Mined\\n\\nWORK BRIEF: \\nGot a moment? Need someone to fly over to locate <EM4>~mission(Resources)</EM4> and mine at least <EM4>~mission(Resources)</EM4> <EM4>~mission(MineableType)</EM4>. We're updating our database for future mining expeditions. You can keep what you find, we just need the data. ~mission(Rarity)\\n\\nAlso, if new to mining, <EM4>the United Resource Workers wrote a helpful journal that you should check out in your mobi.</EM4>\\n\\nLet me know if you\u2019re up for it.\\n\\nPAYMENT:\\nStandard listed rate upon full area scan confirmation and extraction.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_04_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Ore Needs Gathering\\n\\nWORK BRIEF: \\nGot a big mining job with your name on it. We're looking to update our records about mineral yields so we need someone to scan and extract about <EM4>~mission(Resources)</EM4> <EM4>~mission(MineableType)</EM4> mined if possible. ~mission(Rarity)\\n\\nAlso, if you're stuck or new to mining, there's a <EM4>journal on mining by the United Resource Workers in your mobi</EM4> that you should check out.\\n\\nLet me know.\\n\\nPAYMENT:\\nStandard listed rate upon full area scan confirmation and extraction.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_E_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Salvage\\n\\nWORK BRIEF: \\nGot a call about <EM4>a derelict ship out near ~mission(Location)</EM4>. Ran the regtag through the system to make sure we weren't taking someone's ride but it looks unclaimed, so I need someone with a salvage ship to head out and break it down. \\n\\nOnce you're done, <EM4>take the resources to ~mission(Destination)</EM4> and we'll get you paid.\\n\\nPAYMENT:\\nStandard listed rate upon resource delivery\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_03_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Scan And Mining Needed\\n\\nWORK BRIEF: \\nI have a job here that might interest you. I need people to go out and do some basic mining in order to pull some geological data for future prospecting. Need someone to scope out and mine <EM4>~mission(Resources)</EM4> <EM4>~mission(MineableType)</EM4>. You'll be helping us out massively. ~mission(Rarity)\\n\\nAlso, if you're stuck or new to mining, there's a <EM4>journal on mining by the United Resource Workers in your mobi</EM4> that you should check out.\\n\\nKeep me posted.\\n\\nPAYMENT:\\nStandard listed rate upon full area scan confirmation and extraction.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_Prosp_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Scan, Mine, and Prospector Payout\\n\\nWORK BRIEF: \\nStill pulling together data on mining and mineral extraction but got a special payout for this one. Once <EM4>you scan ~mission(Resources)</EM4> and relay your stats back to us, I'll get you something real nice for all your help. ~mission(Rarity)\\n\\nBy this point you know what you're doing but just going to remind you that <EM4>the United Resource Workers' mining journal on your mobi is great if you're stuck.</EM4>\\n\\nLet me know if you\u2019re up for it.\\n\\nPAYMENT:\\nGot a special MISC Prospector as payment for all your help.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_BoardShip_01_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "*********** People's Alliance ***********\\n******/ 'Stronger When United' /******\\n\\nRE: Ship In Distress\\n\\nWORK BRIEF: \\nGot an urgent distress call from one of the Miners Amalgamated crews I sent out, saying they\u2019re under attack by a gang that ambushed their ship. \\n\\nI need you to rush down there, board the <EM4>~mission(Ship)</EM4> and help protect my people out there.\\n\\nPlease let me know ASAP if you can help.\\n\\nPAYMENT:\\nStandard listed rate upon elimination of all targets.\\n\\nAUTHORIZATION:\\nBattaglia, Recco",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -5081,6 +4663,44 @@
     ]
   },
   {
+    "token": "@ORS_ConstructionAid_ResourceGatherLarge_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Alright,\\n\\nGot a large scale order from the Crusader folks to help them fix up their platforms. Big order means a big payout.\\n\\nWhen you're done collecting all the materials, take them to <EM4>~mission(Destination|Target|Address)</EM4> and job's a good'un.\\n\\nTa very much,\\nHal Grimsby\\nContracts Manager\\n\\nCORNERSTONE MAINTENANCE\\n\"Building on the Foundations of our Past.\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Large_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Alright,\\n\\nThe damage reports are still rolling in from the Nine Tails' attack on Orison and the folks at Crusader are saying they might have to repair a significant proportion of the propulsors on those platforms. That's why this one's a massive order.\\n\\nLarger quantity, but same as before otherwise. Either manufacturer them yourself using an Item Fabricator or source them some other way.\\n\\nWhen you're done, drop the propulsors off at <EM4>~mission(Destination|Target|Address)</EM4>. Be a big payout with this one.\\n\\nTa very much,\\nHal Grimsby\\nContracts Manager\\n\\nCORNERSTONE MAINTENANCE\\n\"Building on the Foundations of our Past.\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
     "token": "@cfp_ChainElimAll_3C_ElimSpec_XTAttack_VH_desc_001",
     "kinds": [
       "description"
@@ -5823,627 +5443,6 @@
     ]
   },
   {
-    "token": "@Battaglia_RPT_BoardShip_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Board Ship 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Board Ship 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_CreateUplink_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Create Uplink 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Create Uplink 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_DataDownload_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Data Download 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Data Download 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_MissCrew_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Miss Crew 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Miss Crew 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_MissCrew_02_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Miss Crew 02",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Miss Crew 02",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_MissCrew_03_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Miss Crew 03",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Miss Crew 03",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_RecoverItem_M_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Recover Item M 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Recover Item M 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_RecoverItem_VE_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Recover Item VE 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Recover Item VE 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_RecoverItem_VH_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Recover Item VH 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Recover Item VH 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Salvage_E_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Salvage E 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Salvage E 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Salvage_H_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Salvage H 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Salvage H 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Salvage_M_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Salvage M 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Salvage M 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_02_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan 02",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan 02",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_03_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan 03",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan 03",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_04_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan 04",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan 04",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_05_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan 05",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan 05",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_06_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan 06",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan 06",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_Golem_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Golem",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Golem",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_01_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Mine 01",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Mine 01",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_02_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Mine 02",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Mine 02",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_03_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Mine 03",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Mine 03",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_04_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Mine 04",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Mine 04",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_05_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Mine 05",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Mine 05",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_06_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Mine 06",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Mine 06",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_ScanMine_Mole_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Mine Mole",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Mine Mole",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
-    "token": "@Battaglia_RPT_Scan_Prosp_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Battaglia RPT Scan Prosp",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Battaglia RPT Scan Prosp",
-      "Battaglia Story01",
-      "Battaglia Generator"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.Battaglia Generator"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
-    ]
-  },
-  {
     "token": "@Battaglia_Story01_title",
     "kinds": [
       "title"
@@ -6794,6 +5793,75 @@
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/bitzeros/bitzeros recoveritem.json",
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/hockrowagency/hockrowagency recoveritem.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VE_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Blackbox Retrieval",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Recover Item VE 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_VH_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Blackbox Retrieval Very Dangerous",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Recover Item VH 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_RecoverItem_M_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Blackbox Retrieval w/Danger",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Recover Item M 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -8059,6 +7127,48 @@
     ]
   },
   {
+    "token": "@TheCollector_Recipes_DrakeClipper",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Clipper does a bunch of things good, but Wikelo think what if it did more fight? Then it still do all things, but now do one thing better. Good yes? I give you blueprint, you make my new metamaterial, bring to me, and I will trade.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_DrakeClipper",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Clipper Fight Now",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "The Collector Recipes Drake Clipper",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
     "token": "@RAIN_CollectResources_storm_title_001",
     "kinds": [
       "title"
@@ -8781,6 +7891,29 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters mercenary ship.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Crew Hasn\u2019t Checked In",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Miss Crew 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -10984,6 +10117,29 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_ScanMine_05_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Efficient Miners Wanted",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 05",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@GoblinG_ArcCorp_RecoverCargo_S_Desc",
     "kinds": [
       "description"
@@ -11508,6 +10664,29 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_Scan_Golem_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Extra Special Job",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Golem",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@TheCollector_Recipes_Title_L22Wolf",
     "kinds": [
       "title"
@@ -11597,6 +10776,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/eckhartsecurity/eckhartsecurity defendship.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherMedium_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Ey up,\\n\\nWe're still on the hunt for more materials to help Crusader after the Nine Tails attack. Need a bit more this time though. Will make sure you're compensated accordingly.\\n\\nAfter you've got the materials, head to <EM4>~mission(Destination|Target|Address)</EM4> and we'll get it sorted.\\n\\nTa very much,\\nHal Grimsby\\nContracts Manager\\n\\nCORNERSTONE MAINTENANCE\\n\"Building on the Foundations of our Past.\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
     ]
   },
   {
@@ -12560,6 +11758,29 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_Scan_04_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Full Area Scan for Ore",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan 04",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@TheCollector_Recipes_Title_KopSkull",
     "kinds": [
       "title"
@@ -12963,6 +12184,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters mercenary fps.json"
+    ]
+  },
+  {
+    "token": "@northrock_SOO_repeat_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Glad to have you undertaking this operation for Northrock. Here is the full brief:\\n\\nYour priority is to <EM4>disable all three Identify Friend or Foe Inverters</EM4> that are blocking Crusader Security from accessing the airspace around these platforms. Once the inverters are offline, Crusader Security will be able to fly their ships in and resecure the platforms. In the meanwhile, the platforms are connected by a series of shuttles unaffected by the inverters and will serve as your main form of transport between them.\\n\\nBe aware that you will meet heavy resistance as you progress. Crusader has tried multiple times to deal with this incursion themselves but have thus far been unsuccessful. However, we believe a small strike team will prove more effective in dealing with the Nine Tails forces. \\n\\nAdditionally, in the spirit of full cooperation, Crusader has given you carte blanche to utilize any of the resources you discover that may prove helpful to the mission. \\n\\nBest of luck,\\nAdrienne Du-Buisson\\nLogistics Officer - Stanton Branch\\nNorthrock Service Group",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
     ]
   },
   {
@@ -13701,6 +12941,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters mercenary fps.json"
+    ]
+  },
+  {
+    "token": "@northrock_SOO_intro_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Greetings,\\n\\nCrusader Security Forces have contacted us seeking our expertise in dealing with an urgent situation. Several platforms near Orison have been overtaken by members of the Nine Tails gang and Northrock is eager to staff an operation to remove them and return the platforms to Crusader.\\n\\nThe Nine Tails have put measures in place to block all air traffic in the area, so we've been granted access to a secure shuttle that will take you, and any other members of your assault team, to the first platform.\\n\\nFor full disclosure, I must warn that this is not a contract for the faint of heart. I am confident though that your combat skills, you and your selected team will be fully up to the challenge. \\n\\nOnce you've arrived at the shuttle I'll be in touch directly with more information.\\n\\nSpeak more soon,\\nAdrienne Du-Buisson\\nLogistics Officer - Stanton Branch\\nNorthrock Service Group",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
     ]
   },
   {
@@ -14507,6 +13766,29 @@
     ]
   },
   {
+    "token": "@TheCollector_Recipes_Title_SuperHeavyCombat",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Heavy and Bright",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "The Collector Recipes Super Heavy Combat",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
     "token": "@TheCollector_Recipes_Title_LotsOfZipZap",
     "kinds": [
       "title"
@@ -14622,6 +13904,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_Delivery_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hello,\\n\\nCrusader has asked us here at Ling Family Hauling to aid their relief efforts, and it\u2019s extremely important to us as a business and a family to do this right. The thought of what happened to the victims of Orison happening to anyone in my family\u2026 We owe it to the survivors to do everything in our power to help them.\\nThe medical supplies Crusader needs are set to get picked up from <EM4>~mission(Location|Target|Address)</EM4> and needs to be dropped at <EM4>~mission(Destination|Target|Address)</EM4>. And be sure to bring a <EM4>handheld tractor beam</EM4> to speed things along.\\n\\nThank you, \\nConni Ling\\nShipment Coordinator\\nLing Family Hauling",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
     ]
   },
   {
@@ -15147,7 +14448,7 @@
     "kinds": [
       "description"
     ],
-    "best_text": "Hey there,\\n\\nIf you're fitted for refueling, you might like this one. \\n\\nA beacon has just gone live at <EM4>~mission(Location|Address)</EM4>, from a client whose <EM4>~mission(Ship)</EM4> is running on empty, so make sure your fuel pods are topped off.\\n\\nThe client vessel will pay you at the rate of <EM4>~mission(FuelRate) aUEC per SCU of Hydrogen</EM4> and  <EM4>~mission(QTFuelRate) aUEC per SCU of Quantum </EM4>, and as a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nLooks like a zero-drama one and done, but it never hurts to keep your scanners live.\\nLet me know if you're interested and let's get these good people on their way.\\n\\nWaiting to hear from you,\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"",
+    "best_text": "Hey there,\\n\\nIf you're fitted for refueling, you might like this one. \\n\\nA beacon has just gone live at <EM4>~mission(Location|Address)</EM4>, from a client whose <EM4>~mission(Ship)</EM4> is in need of ~mission(FuelType), so make sure your pods are topped off.\\n\\nThe client vessel will pay you at the rate of ~mission(RefuelRequest), and as a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nLooks like a zero-drama one and done, but it never hurts to keep your scanners live.\\nLet me know if you're interested and let's get these good people on their way.\\n\\nWaiting to hear from you,\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"",
     "resolution_source": "localization",
     "confidence": "high",
     "guess_texts": [],
@@ -15213,7 +14514,7 @@
     "kinds": [
       "description"
     ],
-    "best_text": "Hey!\\n\\nDD from the United Wayfarers Club here.\\n\\nThe UWC offers repair, rearming and refuelling services across the UEE. It just so happens that we're on the look-out for new affiliates whose ships are fitted for refuelling. If you've got the fuel pods and like it when people are pleased to see you, the UWC might be the club for you.\\n\\nAnd if you think it might be, I've got a live beacon you might like.\\n\\nIf you do happen to like it, a word to the wise: <EM4>make sure your fuel pods are full before you head out</EM4>.\\n\\nA Club member has run out of fuel at <EM4>~mission(Location|Address)</EM4>. I'm not sure on the details, like how they ended up out there with no Go Juice, but the UWC doesn't like to leave folk hanging.\\n\\nThe client vessel will pay you at the rate of <EM4>~mission(FuelRate) aUEC per SCU of Hydrogen</EM4> and  <EM4>~mission(QTFuelRate) aUEC per SCU of Quantum </EM4>. As a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nIt's a straightforward run. Perfect if you want to get a feel for this kind of job. Get out there, fill up the tanks of their <EM4>~mission(Ship)</EM4> and get them on their way. Do enough runs like this, and the process becomes muscle memory. Until then, there's a <EM4>journal entry</EM4> on your mobiGlas called \"\"Refueling Protocols\"\" that covers the basics.\\n\\nThere have been no reports of outlaw activity in that sector, but stay alert. I always recommend you aim for a fast turnaround. The sooner you're done, the sooner I can fix you up with another contract. UWC's always looking for new affiliates. \\n\\nLooking forward to working with you.\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"",
+    "best_text": "Hey!\\n\\nDD from the United Wayfarers Club here.\\n\\nThe UWC offers repair, rearming and refueling services across the UEE. It just so happens that we're on the look-out for new affiliates whose ships are fitted for refueling. If you've got the fuel pods and like it when people are pleased to see you, the UWC might be the club for you.\\n\\nAnd if you think it might be, I've got a live beacon you might like.\\n\\nIf you do happen to like it, a word to the wise: <EM4>make sure your fuel pods are full before you head out</EM4>.\\n\\nA Club member has run out of ~misssion(FuelType) at <EM4>~mission(Location|Address)</EM4>. I'm not sure on the details, like how they ended up out there with no Go Juice, but the UWC doesn't like to leave folk hanging.\\n\\nThe client vessel will pay you at the rate of ~mission(RefuelRequest). As a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nIt's a straightforward run. Perfect if you want to get a feel for this kind of job. Get out there, fill up the tanks of their <EM4>~mission(Ship)</EM4> and get them on their way. Do enough runs like this, and the process becomes muscle memory. Until then, there's a <EM4>journal entry</EM4> on your mobiGlas called \"Refueling Protocols\" that covers the basics.\\n\\nThere have been no reports of outlaw activity in that sector, but stay alert. I always recommend you aim for a fast turnaround. The sooner you're done, the sooner I can fix you up with another contract. UWC's always looking for new affiliates. \\n\\nLooking forward to working with you.\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"",
     "resolution_source": "localization",
     "confidence": "high",
     "guess_texts": [],
@@ -15396,6 +14697,82 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/covalex industries/covalex hauling.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingMedium_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hey, it\u2019s El.\\n\\nCrusader is still trying to make things right in Orison following the attack, so I\u2019m hoping you\u2019re free to keep assisting with the effort.\\n\\nWe been contracted to deliver relief supplies to <EM4>~mission(Destination|Target|Address)</EM4>. Pick up\u2019s at <EM4>~mission(Location|Target|Address)</EM4>. \\nNot too shabby a haul either, so make sure you\u2019re in a ship that can hold <EM4>~mission(MissionMaxSCUSize) cargo containers</EM4> and bring a <EM4>handheld tractor beam</EM4>, or you\u2019ll make us all look unprofessional.\\n\\nI\u2019m not kidding around with this job being important to get done right. Lotta people got hurt during the Nine Tails raid, and they\u2019re relying on people like us to get them the help they need. So let\u2019s do right by them, okay?\\n\\nElla Tieno \\nJr. Logistics Coordinator \\nCovalex Shipping   \\n'Anything you need, anywhere you need it.'",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingSmall_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hey, it\u2019s El.\\n\\nNeed a reliable contractor for a pretty important delivery today. I\u2019m sure you\u2019re aware of what went down in Orison, big commotion. Made my job about ten times harder.\\n\\nAnyway, we\u2019ve been contracted by Crusader to deliver some medical stuff to <EM4>~mission(Destination|Target|Address)</EM4>. Pick up\u2019s at <EM4>~mission(Location|Target|Address)</EM4>. Shouldn\u2019t be too heavy an order for this one, just make sure you\u2019ve got a ship that can hold <EM4>~mission(MissionMaxSCUSize) cargo containers</EM4> and a <EM4>handheld tractor beam</EM4>, or you\u2019ll really embarrass yourself when you get there.\\n\\nLook, I\u2019ll level with you. This job isn\u2019t just hauling for hauling\u2019s sake. Orison got pretty messed up by those Nine Tails, so anything we can do to help them out is probably the right thing to do.\\n\\nLet\u2019s get it done,\\n\\nElla Tieno \\nJr. Logistics Coordinator \\nCovalex Shipping   \\n'Anything you need, anywhere you need it.'",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_HaulingLarge_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hey, it\u2019s El.\\n\\nOff the bat \u2013 this particular job\u2019s a big deal, so if you\u2019re looking to take this one on for us, make sure you\u2019re confident in your ability to do a job well. \\n\\nWe\u2019ve been contracted by Crusader to deliver medical supplies to <EM4>~mission(Destination|Target|Address)</EM4>. Pick up\u2019s at <EM4>~mission(Location|Target|Address)</EM4>. Bear in mind, this is gonna be a big one, so make sure bring a <EM4>handheld tractor beam</EM4> and a ship that can hold <EM4>~mission(MissionMaxSCUSize) cargo containers</EM4> otherwise it might be a little rough.\\n\\nI can\u2019t stress the importance of this contract enough \u2013 lots of good people got hurt in those attacks, and it\u2019s our responsibility to do what we can to help them in the aftermath. We owe the victims that much, at the very least.\\n\\nLet\u2019s do right by them,\\n\\nElla Tieno \\nJr. Logistics Coordinator \\nCovalex Shipping   \\n'Anything you need, anywhere you need it.'",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@UWC_Refueling_moderate_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hey, you!\\n\\nI've got a beacon at <EM4>~mission(Location|Address)</EM4>. They say their tanks are running dry and they could use ~mission(FuelType). If you're interested, I get the feeling they'll be really pleased to see you.\\n\\nThe client vessel will pay you at the rate of ~mission(RefuelRequest), and as a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nThey're stuck out in an area with a bad reputation, though things have been a bit more quiet recently. Still worth staying alert I'd say, just in case there's still trouble lurking out there. \\n\\nEither way, the sooner everyone's able to get flying again - and that includes you - the better.\\n\\nHappy trails,\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "United Wayfarers Club"
+    ],
+    "mission_ids": [
+      "ContractGenerator.UnitedWayfarersClub"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
     ]
   },
   {
@@ -16038,6 +15415,25 @@
     ]
   },
   {
+    "token": "@UWC_Refueling_multiple_hard_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Heyo,\\n\\nOver at <EM4>~mission(Location|Address)</EM4> we just got a refueling job for an entire small fleet of ships who all together need ~mission(FuelType). Talk about when it rains it pours!\\n\\nThe client will pay you at the rate of ~mission(RefuelRequest), and as a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nUnfortunately, where they're held up isn't the nicest of sectors so I'd be alert for any tomfoolery while you're doing the run. \\n\\nIt'll be best to try get them all back on their way as soon as you can.\\n\\nHappy trails,\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "United Wayfarers Club"
+    ],
+    "mission_ids": [
+      "ContractGenerator.UnitedWayfarersClub"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
+    ]
+  },
+  {
     "token": "@Covalex_HaulCargo_SingleToMulti_RefinedOre",
     "kinds": [
       "description"
@@ -16440,6 +15836,25 @@
     ]
   },
   {
+    "token": "@UWC_Refueling_high_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hi,\\n\\nAnother day another beacon. There's a <EM4>~mission(Ship)</EM4> looking to be topped up with ~mission(FuelType) at <EM4>~mission(Location|Address)</EM4>.  The client vessel will pay you at the rate of ~mission(RefuelRequest), and as a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nI can't lie: it's a nasty place to get stuck and a worse place to get caught by surprise. We've lost good people out there - even the ones who got lucky made it home with pieces missing.\\n\\nIf you decide to take the job, do me a favor and keep everything peeled. If you've got a buddy with time to spare, maybe reach out for a little back-up.\\n\\nMaybe I'm being paranoid, but that doesn't mean they're not out to get you, as Momma Deloit used to say. \\n\\nActually she never said that - but I'm pretty sure she would if she did this for a living.\\n\\nJust do the job and get home safe, okay?\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "United Wayfarers Club"
+    ],
+    "mission_ids": [
+      "ContractGenerator.UnitedWayfarersClub"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
+    ]
+  },
+  {
     "token": "@CFP_RetrieveCargo_DerelictOutpost_E_desc_001",
     "kinds": [
       "description"
@@ -16696,6 +16111,25 @@
       "starbreaker/libs/foundry/records/missionbroker/pu missions/cargo/haulcargo multi3tosingle waste waste stanton1 supplygrade.json",
       "starbreaker/libs/foundry/records/missionbroker/pu missions/cargo/haulcargo multi4tosingle waste waste stanton1 smallgrade.json",
       "starbreaker/libs/foundry/records/missionbroker/pu missions/cargo/haulcargo multi4tosingle waste waste stanton1 supplygrade.json"
+    ]
+  },
+  {
+    "token": "@LingFamily_delivery_desc_ICC_Special_Cryo",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hi,\\n\\nNot sure if you ever heard of them, but a rep from the ICC (they make starmaps and study space for the empire) just reached out to us about a special job they need picked up from Wikelo's Emporium. \\n\\nKind of surprised to be honest that they having any dealings there since that Banu's trading-post doesn't exactly scream \"cutting-edge science\" to me.\\n\\n\\nAnyway, they want the delivery brought from there to ~mission(Destination|Target|Address). They also emphasized that the cargo's very delicate so make sure that you use kid gloves when you're handling it, okay? (Not that you aren't careful normally, but you know how clients are.) \\n\\nBe sure to bring a <EM4>heavy-duty tractor beam</EM4> and a ship with enough space to store <EM4>~mission(MissionMaxSCUSize) cargo</EM4>.\\n\\nThanks,  \\nConni Ling \\nCargo Logistics Coordinator \\nLing Family Hauling",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Lingfamilyhauling"
+    ],
+    "mission_ids": [
+      "ContractGenerator.LingFamilyHauling Delivery"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/lingfamilyhauling/lingfamilyhauling delivery.json"
     ]
   },
   {
@@ -16975,6 +16409,29 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_06_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "High Priority Ore Scan",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan 06",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -17776,6 +17233,25 @@
     ]
   },
   {
+    "token": "@ORS_Construct_Medium_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Hullo,\\n\\nCrusader have been in touch to say that the scale of the damage to their platforms is greater than they initially thought and they'll need more propulsors than they originally estimated for.\\n\\nWe're contracting out their request to anyone with an available Item Fabricator standing by. Though I guess you could source the propulsors some other way, but that's on you.\\n\\nOnce ready, deliver them to <EM4>~mission(Destination|Target|Address)</EM4>. Payment sent on completion.\\n\\nTa very much,\\nHal Grimsby\\nContracts Manager\\n\\nCORNERSTONE MAINTENANCE\\n\"Building on the Foundations of our Past.\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
     "token": "@EckhartSecurity_EliminateSpecific_DC_Title_001",
     "kinds": [
       "title"
@@ -18355,6 +17831,28 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/vaughn/vaughn generator.json"
+    ]
+  },
+  {
+    "token": "@LingFamily_delivery_name_ICC_Special_Cryo",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "ICC Special Delivery",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Ling Family delivery name ICC Special Cryo",
+      "Ling Family Hauling Delivery"
+    ],
+    "company_hints": [
+      "Lingfamilyhauling"
+    ],
+    "mission_ids": [
+      "ContractGenerator.LingFamilyHauling Delivery"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/lingfamilyhauling/lingfamilyhauling delivery.json"
     ]
   },
   {
@@ -19493,6 +18991,25 @@
     ]
   },
   {
+    "token": "@ORS_ShipWaveAt_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Just got word that some of the Nine Tails involved in the recent assault on Orison are convening near <EM4>~mission(Location|Address)</EM4> before launching their next attack. We need a capable fighter pilot to head them off and take care of them before they start wreaking havoc again.\\n\\nTo complicate matters, from what we know there\u2019s a very high chance that they might have additional reinforcements inbound, so be sure the extra ships don\u2019t take you by surprise.\\n\\nAll the best,\\n\\nKevin Walton\\nDispatcher, Foxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
     "token": "@Headhunters_RetrieveCargo_Lagrange_E_desc_002",
     "kinds": [
       "description"
@@ -19982,6 +19499,29 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_Scan_05_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Large Deposit Of Ore To Confirm",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan 05",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@hh_missingperson_inv_m_criminalbase_desc_01",
     "kinds": [
       "description"
@@ -20149,28 +19689,6 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/ruto generator.json"
-    ]
-  },
-  {
-    "token": "@LingFamily_delivery_name_ICC_Special_Cryo",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "Ling Family delivery name ICC Special Cryo",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "Ling Family delivery name ICC Special Cryo",
-      "Ling Family Hauling Delivery"
-    ],
-    "company_hints": [
-      "Lingfamilyhauling"
-    ],
-    "mission_ids": [
-      "ContractGenerator.LingFamilyHauling Delivery"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/lingfamilyhauling/lingfamilyhauling delivery.json"
     ]
   },
   {
@@ -20652,6 +20170,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters mercenary fps.json"
+    ]
+  },
+  {
+    "token": "@ORS_ShipAmb_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Looking for a tough and competent pilot in the area willing to take on some of the outlaws responsible for the attack on Crusader. We\u2019ve received word that a group of Nine Tails stragglers are hunkering down near <EM4>~mission(Location|Address)</EM4> after they got pushed out of Orison, and Crusader Security wants our help dealing with them while they\u2019re down. \\n\\nWe\u2019ve mapped out a good spot in the area to get the drop on them, so you\u2019ll go there, wait quietly until they show up, and hit them before they know what\u2019s happening. Hopefully this\u2019ll send a message to the rest of them out there that their actions have consequences.\\n\\nGood luck,\\n\\nKevin Walton\\nDispatcher, Foxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
     ]
   },
   {
@@ -21696,6 +21233,75 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_ScanMine_06_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Mining and Data Collection",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 06",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_Mole_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Mining and MOLE",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine Mole",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Minor Mining Job",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@cfp_maintenance_E_title_001",
     "kinds": [
       "title"
@@ -21738,6 +21344,52 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/citizensforprosperity/citizensforprosperity investigation.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_02_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Missing Mining Team",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Miss Crew 02",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_MissCrew_03_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Missing Persons",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Miss Crew 03",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -22671,6 +22323,52 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_DataDownload_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Moraine Data Retrieval",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Data Download 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_CreateUplink_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Moraine Movements",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Create Uplink 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@CFP_RecoverCargo_VeryHard_Description",
     "kinds": [
       "description"
@@ -23210,6 +22908,29 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_ScanMine_02_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Need Some Ore Mined",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 02",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@headhunters_defend_Generic_M_WindFall_desc_001",
     "kinds": [
       "description"
@@ -23525,51 +23246,6 @@
     ]
   },
   {
-    "token": "@northrock_SOO_intro_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "northrock SOO 001",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "northrock SOO 001",
-      "northrock SOO repeat 001",
-      "North Rock SOO2"
-    ],
-    "company_hints": [
-      "Northrock Service Group"
-    ],
-    "mission_ids": [
-      "ContractGenerator.NorthRock SOO2"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
-    ]
-  },
-  {
-    "token": "@northrock_SOO_repeat_title_001",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "northrock SOO repeat 001",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "northrock SOO repeat 001",
-      "North Rock SOO2"
-    ],
-    "company_hints": [
-      "Northrock Service Group"
-    ],
-    "mission_ids": [
-      "ContractGenerator.NorthRock SOO2"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
-    ]
-  },
-  {
     "token": "@Headhunters_EliminateBoss_OLP_VH_desc_001",
     "kinds": [
       "description"
@@ -23666,6 +23342,44 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Small_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Now then,\\n\\nAfter the Nine Tails attack, the folks at Crusader could do with more than just a helping hand. What they need are proper propulsors to help replace the ones damaged in the attacks.\\n\\nWe've attached a blueprint outlining what materials you'll need to create them. Up to you whether you go out and find those materials yourself or buy them from a trader. Either way you will need access to an Item Fabricator to make the propulsors yourself.\\n\\nOnce you're done bring them to <EM4>~mission(Destination|Target|Address)</EM4> and one of the team will sort out the rest.\\n\\nTa very much,\\nHal Grimsby\\nContracts Manager\\n\\nCORNERSTONE MAINTENANCE\\n\"Building on the Foundations of our Past.\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherSmall_desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Now then,\\n\\nYou might have heard about the recent attacks on the Orison platforms. Terrible stuff. The folks at Crusader are scrambling around trying to put it all back together and have contracted us to help.\\n\\nTo get them back on their feet what we need is construction materials. Can give you a decent pay packet for them too.\\n\\nIf you don't know already how to get construction materials, your best bet is to read United Resource Workers' <EM4>A Salvager's Guide to Material Collection</EM4>. That'll set you on the right path.\\n\\nOnce you've got the order ready, you'll need to drop it all off at <EM4>~mission(Destination|Target|Address)</EM4>.\\n\\nTa very much,\\nHal Grimsby\\nContracts Manager\\n\\nCORNERSTONE MAINTENANCE\\n\"Building on the Foundations of our Past.\"",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
     ]
   },
   {
@@ -24482,26 +24196,118 @@
     ]
   },
   {
-    "token": "@ORS_BunkerRaid_Title",
+    "token": "@Battaglia_RPT_Scan_03_title",
     "kinds": [
       "title"
     ],
-    "best_text": "ORS Bunker Raid",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
+    "best_text": "Ore Deposit Needs Scanning",
+    "resolution_source": "localization",
+    "confidence": "high",
     "guess_texts": [
-      "ORS Bunker Raid",
-      "Foxwell X2 Attack Idris",
-      "The Backpocket"
+      "Battaglia RPT Scan 03",
+      "Battaglia Story01",
+      "Battaglia Generator"
     ],
     "company_hints": [
       "Json"
     ],
     "mission_ids": [
-      "ContractGenerator.TheBackpocket"
+      "ContractGenerator.Battaglia Generator"
     ],
     "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_04_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Ore Needs Gathering",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 04",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Ore Scan Needed",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_02_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Ore To Be Scanned",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan 02",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@northrock_SOO_intro_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Platforms Under Attack",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "northrock SOO 001",
+      "northrock SOO repeat 001",
+      "North Rock SOO2"
+    ],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
     ]
   },
   {
@@ -24509,57 +24315,11 @@
     "kinds": [
       "title"
     ],
-    "best_text": "ORS Construct Large",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
+    "best_text": "Orison Relief: Large Fabrication Order",
+    "resolution_source": "localization",
+    "confidence": "high",
     "guess_texts": [
       "ORS Construct Large",
-      "Foxwell X2 Attack Idris",
-      "The Backpocket"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_Construct_Medium_Title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "ORS Construct Medium",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "ORS Construct Medium",
-      "Foxwell X2 Attack Idris",
-      "The Backpocket"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_Construct_Small_Title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "ORS Construct Small",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "ORS Construct Small",
       "Foxwell X2 Attack Idris",
       "The Backpocket"
     ],
@@ -24578,80 +24338,11 @@
     "kinds": [
       "title"
     ],
-    "best_text": "ORS Construction Aid Resource Gather Large",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
+    "best_text": "Orison Relief: Large Materials Order",
+    "resolution_source": "localization",
+    "confidence": "high",
     "guess_texts": [
       "ORS Construction Aid Resource Gather Large",
-      "Foxwell X2 Attack Idris",
-      "The Backpocket"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ConstructionAid_ResourceGatherMedium_Title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "ORS Construction Aid Resource Gather Medium",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "ORS Construction Aid Resource Gather Medium",
-      "Foxwell X2 Attack Idris",
-      "The Backpocket"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ConstructionAid_ResourceGatherSmall_title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "ORS Construction Aid Resource Gather Small",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "ORS Construction Aid Resource Gather Small",
-      "Foxwell X2 Attack Idris",
-      "The Backpocket"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_MedicalAid_Delivery_Title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "ORS Medical Aid Delivery",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "ORS Medical Aid Delivery",
       "Foxwell X2 Attack Idris",
       "The Backpocket"
     ],
@@ -24670,11 +24361,80 @@
     "kinds": [
       "title"
     ],
-    "best_text": "ORS Medical Aid Hauling Large",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
+    "best_text": "Orison Relief: Large Supply Haul",
+    "resolution_source": "localization",
+    "confidence": "high",
     "guess_texts": [
       "ORS Medical Aid Hauling Large",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_MedicalAid_Delivery_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Relief: Medical Aid Delivery",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "ORS Medical Aid Delivery",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Medium_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Relief: Medium Fabrication Order",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "ORS Construct Medium",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherMedium_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Relief: Medium Materials Order",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "ORS Construction Aid Resource Gather Medium",
       "Foxwell X2 Attack Idris",
       "The Backpocket"
     ],
@@ -24693,11 +24453,80 @@
     "kinds": [
       "title"
     ],
-    "best_text": "ORS Medical Aid Hauling Medium",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
+    "best_text": "Orison Relief: Medium Supply Haul",
+    "resolution_source": "localization",
+    "confidence": "high",
     "guess_texts": [
       "ORS Medical Aid Hauling Medium",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_BunkerRaid_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Relief: Neutralize Nine Tails Reprisal",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "ORS Bunker Raid",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_Construct_Small_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Relief: Small Fabrication Order",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "ORS Construct Small",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ConstructionAid_ResourceGatherSmall_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Relief: Small Materials Order",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "ORS Construction Aid Resource Gather Small",
       "Foxwell X2 Attack Idris",
       "The Backpocket"
     ],
@@ -24716,34 +24545,11 @@
     "kinds": [
       "title"
     ],
-    "best_text": "ORS Medical Aid Hauling Small",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
+    "best_text": "Orison Relief: Small Supply Haul",
+    "resolution_source": "localization",
+    "confidence": "high",
     "guess_texts": [
       "ORS Medical Aid Hauling Small",
-      "Foxwell X2 Attack Idris",
-      "The Backpocket"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheBackpocket"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
-    ]
-  },
-  {
-    "token": "@ORS_ShipAmb_Title",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "ORS Ship Amb",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "ORS Ship Amb",
       "Foxwell X2 Attack Idris",
       "The Backpocket"
     ],
@@ -24762,11 +24568,34 @@
     "kinds": [
       "title"
     ],
-    "best_text": "ORS Ship Wave At",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
+    "best_text": "Orison Relief: Stop Nine Tails Regrouping",
+    "resolution_source": "localization",
+    "confidence": "high",
     "guess_texts": [
       "ORS Ship Wave At",
+      "Foxwell X2 Attack Idris",
+      "The Backpocket"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@ORS_ShipAmb_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orison Relief: Strike Nine Tails Squad",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "ORS Ship Amb",
       "Foxwell X2 Attack Idris",
       "The Backpocket"
     ],
@@ -29839,6 +29668,28 @@
     ]
   },
   {
+    "token": "@northrock_SOO_repeat_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Retake Platforms From Nine Tails",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "northrock SOO repeat 001",
+      "North Rock SOO2"
+    ],
+    "company_hints": [
+      "Northrock Service Group"
+    ],
+    "mission_ids": [
+      "ContractGenerator.NorthRock SOO2"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/northrock service group/northrock soo2.json"
+    ]
+  },
+  {
     "token": "@cfp_ChainElimAll_2C_ElimSpec_HHAttack_H_title_001",
     "kinds": [
       "title"
@@ -30046,6 +29897,75 @@
     ]
   },
   {
+    "token": "@Battaglia_RPT_Salvage_H_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Salvage Job: Large",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Salvage H 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_M_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Salvage Job: Mid",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Salvage M 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Salvage_E_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Salvage Job: Small",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Salvage E 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
     "token": "@roughready_salvage_M_title_001",
     "kinds": [
       "title"
@@ -30226,6 +30146,52 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/eckhartsecurity/eckhartsecurity defendship.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_ScanMine_03_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Scan And Mining Needed",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Mine 03",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_Scan_Prosp_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Scan with a Prospector Payout",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Scan Prosp",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -30829,6 +30795,29 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@Battaglia_RPT_BoardShip_01_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Ship In Distress",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "Battaglia RPT Board Ship 01",
+      "Battaglia Story01",
+      "Battaglia Generator"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.Battaglia Generator"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/battaglia generator.json"
     ]
   },
   {
@@ -31867,6 +31856,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters investigation.json"
+    ]
+  },
+  {
+    "token": "@ORS_BunkerRaid_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Some of the Nine Tails responsible for the attack on Orison have reportedly been sighted around <EM4>~mission(Location|Address)</EM4> marshalling their forces. Crusader is concerned they\u2019re planning another attack, so this is a job that needs doing well.\\n\\nYou\u2019ll be tasked with infiltrating the site and neutralizing the Nine Tails however necessary before they can enact a retaliation attempt on Orison. As I\u2019m sure you\u2019re aware, these guys are bad news, so be careful they don\u2019t get the better of you.\\n\\nGood luck,\\n\\nKevin Walton\\nDispatcher, Foxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheBackpocket"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
     ]
   },
   {
@@ -33641,29 +33649,6 @@
     ]
   },
   {
-    "token": "@TheCollector_Recipes_Title_aparGatlingGun",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "The Collector Recipes apar Gatling Gun",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "The Collector Recipes apar Gatling Gun",
-      "The Collector Recipes Sand Armour",
-      "The Collector"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
     "token": "@TheCollector_Recipes_Title_CombatSuit",
     "kinds": [
       "title"
@@ -33673,52 +33658,6 @@
     "confidence": "medium",
     "guess_texts": [
       "The Collector Recipes Combat Suit",
-      "The Collector Recipes Sand Armour",
-      "The Collector"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
-    "token": "@TheCollector_Recipes_Title_DrakeClipper",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "The Collector Recipes Drake Clipper",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "The Collector Recipes Drake Clipper",
-      "The Collector Recipes Sand Armour",
-      "The Collector"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
-    "token": "@TheCollector_Recipes_Title_SuperHeavyCombat",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "The Collector Recipes Super Heavy Combat",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "The Collector Recipes Super Heavy Combat",
       "The Collector Recipes Sand Armour",
       "The Collector"
     ],
@@ -34082,11 +34021,49 @@
     ]
   },
   {
+    "token": "@TheCollector_Recipes_Desc_SuperHeavyCombat",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "This armor is big, yes! Protect you real good. Wikelo make it extra bright so everyone can see how good your armor is. If you bring the things I need, I trade for it.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
     "token": "@TheCollector_Recipes_Desc_SlimyLMG",
     "kinds": [
       "description"
     ],
     "best_text": "This gun has picture of amazing creature on side. Use it and it make you big and strong like Yormandi. Spit lightning. Bring my items and then you get it. Bye.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Desc_aparGatlingGun",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "This gun is very big and very loud. Wikelo love it. Made it extra bright so that everyone can see how special this gun is. I think you will like this so bring me trade.",
     "resolution_source": "localization",
     "confidence": "high",
     "guess_texts": [],
@@ -34421,7 +34398,7 @@
     "kinds": [
       "description"
     ],
-    "best_text": "To all available contractors,\\n\\nRayari Incorporated is looking for independent contractors to provide additional support in our efforts to push the boundaries of science, agriculture, and medicine in the Empire and beyond. \\n\\nA research initiative at <EM4>~mission(Destination|Address)</EM4> is in desperate need of resources, so we are looking for a reliable contractor to obtain and deliver these crucial components.\\n\\nFor more information on the animals in question, refer to \"The Guide to Stanton Wildlife\" in your Journal.\\n\\nRayari offers competitive wages along with the knowledge that you're building a better universe.\\n\\nLet\u2019s grow together,\\n\\nNarina Lerrem\\nSenior Manager\\nClinical Research Outsourcing",
+    "best_text": "To all available contractors,\\n\\nRayari Incorporated is looking for independent contractors to provide additional support in our efforts to push the boundaries of science, agriculture, and medicine in the Empire and beyond. \\n\\nA research initiative at <EM4>~mission(Destination|Address)</EM4> is in desperate need of resources, so we are looking for a reliable contractor to obtain and deliver these crucial components.\\n\\nFor more information on the materials in question, refer to \"A Forager's Guide\" in your Journal.\\n\\nRayari offers competitive wages along with the knowledge that you're building a better universe.\\n\\nLet\u2019s grow together,\\n\\nNarina Lerrem\\nSenior Manager\\nClinical Research Outsourcing",
     "resolution_source": "localization",
     "confidence": "high",
     "guess_texts": [],
@@ -34665,6 +34642,29 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/ruto generator.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_aparGatlingGun",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Too Much Gun",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "The Collector Recipes apar Gatling Gun",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
     ]
   },
   {
@@ -35291,7 +35291,7 @@
     "kinds": [
       "title"
     ],
-    "best_text": "URGENT FLEET REFUEL",
+    "best_text": "URGENT CONVOY REFUEL",
     "resolution_source": "localization",
     "confidence": "high",
     "guess_texts": [

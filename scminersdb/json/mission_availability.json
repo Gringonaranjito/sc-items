@@ -22383,7 +22383,7 @@
   },
   {
     "mission_id": "ContractGenerator.LingFamilyHauling Delivery",
-    "title": "Ling Family delivery name ICC Special Cryo",
+    "title": "ICC Special Delivery",
     "title_token": "@LingFamily_delivery_name_ICC_Special_Cryo",
     "mission_giver": "Lingfamilyhauling",
     "mission_giver_token": "",
@@ -24696,7 +24696,7 @@
   },
   {
     "mission_id": "ContractGenerator.NorthRock SOO2",
-    "title": "northrock SOO repeat 001",
+    "title": "Retake Platforms From Nine Tails",
     "title_token": "@northrock_SOO_repeat_title_001",
     "mission_giver": "Northrock Service Group",
     "mission_giver_token": "",

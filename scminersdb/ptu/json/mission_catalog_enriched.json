@@ -319180,7 +319180,7 @@
     "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
     "sub_contract_ids": [],
     "time_to_complete_minutes": 17.5,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -319367,7 +319367,7 @@
     "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
     "sub_contract_ids": [],
     "time_to_complete_minutes": 10.7,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -319564,7 +319564,7 @@
     "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
     "sub_contract_ids": [],
     "time_to_complete_minutes": 25.9,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -319757,7 +319757,7 @@
       "916d5ada-1927-452f-bc26-7b70619a7303"
     ],
     "time_to_complete_minutes": 32.7,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -319940,7 +319940,7 @@
       "ff33bdd3-4a82-4341-8629-aafb0053d960"
     ],
     "time_to_complete_minutes": 15.8,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -320133,7 +320133,7 @@
       "2b5f2e46-62d2-47a1-9fc8-906f0e1f79f4"
     ],
     "time_to_complete_minutes": 153.5,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -320326,7 +320326,7 @@
       "808f6c12-519b-485b-9ef0-44bbe6f6a97e"
     ],
     "time_to_complete_minutes": 14.6,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -320509,7 +320509,7 @@
       "21003c04-8bf2-49c8-b5b7-5acff1d649ea"
     ],
     "time_to_complete_minutes": 8.9,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
@@ -320686,7 +320686,7 @@
       "5c7594b9-7525-4c78-a33e-68c278e99b26"
     ],
     "time_to_complete_minutes": 21.6,
-    "title": "URGENT FLEET REFUEL",
+    "title": "URGENT CONVOY REFUEL",
     "title_token": "@UWC_Refueling_multiple_med_title_001",
     "work_in_progress": false
   },
