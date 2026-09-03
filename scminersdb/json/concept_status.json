@@ -1428,6 +1428,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Cargo_ShipMining_Pod_Golem_BTGL",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem_btgl.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Cargo_ShipMining_Pod_Mole",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_mole.json",
     "status": "Flyable",
@@ -1436,6 +1442,12 @@
   {
     "name": "EntityClassDefinition.Cargo_ShipMining_Pod_Mole_Collapsed",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_mole_collapsed.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Cargo_ShipMining_Pod_MoleProspector_BTGL",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_moleprospector_btgl.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -3534,6 +3546,54 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleFast",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlefast.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleSecure",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlesecure.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVeryFast",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleveryfast.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVerySecure",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleverysecure.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Fuel_Nozzle_MISC_NozzleStandard",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_misc_nozzlestandard.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveFast",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivefast.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveSecure",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivesecure.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleMostExpensive",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzlemostexpensive.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.FuelPod_AI_STOR_Big",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_ai_stor_big.json",
     "status": "Flyable",
@@ -3612,6 +3672,24 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_HydrogenPrefilled",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_hydrogenprefilled.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_QuantumPrefilled",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_quantumprefilled.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandart",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandart.json",
     "status": "Flyable",
@@ -3632,6 +3710,12 @@
   {
     "name": "EntityClassDefinition.FuelPod_SHIN_FastAndInsecure",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.FuelPod_SHIN_FastAndInsecure_HydrogenPrefilled",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure_hydrogenprefilled.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -5886,6 +5970,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Mining_Modules_Active_Clearcut",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_clearcut.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Mining_Modules_Active_Forel",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_forel.json",
     "status": "Flyable",
@@ -5928,6 +6018,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Mining_Modules_Passive_Deluge",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_deluge.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Mining_Modules_Passive_FLTR_MK1",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_fltr_mk1.json",
     "status": "Flyable",
@@ -5960,6 +6056,12 @@
   {
     "name": "EntityClassDefinition.Mining_Modules_Passive_Focus_MK3",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_focus_mk3.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Mining_Modules_Passive_Overrun",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_overrun.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -7536,6 +7638,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Paint_Asgard_Silver_Silver_Silver",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_silver_silver_silver.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Paint_Asgard_Template",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_template.json",
     "status": "Flyable",
@@ -7938,6 +8046,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Paint_Basher_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_black_red_pirate.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Paint_Basher_Black_Grey_Grey",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_grey_grey.json",
     "status": "Flyable",
@@ -8192,6 +8306,12 @@
   {
     "name": "EntityClassDefinition.Paint_Clipper_Black_Black_Red_Camo",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_black_red_camo.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Clipper_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_black_red_pirate.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -10016,6 +10136,12 @@
   {
     "name": "EntityClassDefinition.Paint_Ironclad_Beige_Beige_Beige",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_beige_beige_beige.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Ironclad_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_black_black_red_pirate.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -12036,6 +12162,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Paint_Shiv_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_black_black_red_pirate.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Paint_Shiv_Brown_White_Brown",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_brown_white_brown.json",
     "status": "Flyable",
@@ -12674,6 +12806,36 @@
   {
     "name": "EntityClassDefinition.Paint_Stinger_Template",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stinger_template.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Stingray_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_black_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Stingray_Gold_Blue_Black_Stripes",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_gold_blue_black_stripes.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Stingray_Template",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_template.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Stingray_White_Black_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_black_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Stingray_White_Grey_Blue_Camo",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_grey_blue_camo.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -14562,6 +14724,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.QTNK_ANVL_Lightning_F8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_anvl_lightning_f8.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.QTNK_ANVL_Paladin",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_anvl_paladin.json",
     "status": "Flyable",
@@ -16202,6 +16370,18 @@
   {
     "name": "EntityClassDefinition.Vehicle_Screen_Physical_L22_R",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_l22_r.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Vehicle_Screen_Physical_S65_L",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_s65_l.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Vehicle_Screen_Physical_S65_R",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_s65_r.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },

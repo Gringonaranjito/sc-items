@@ -445,6 +445,17 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json"
   },
   {
+    "mission_id": "contractgenerator_foxwellenforcement_defendship",
+    "name": "ContractGenerator.FoxwellEnforcement_DefendShip",
+    "record_type": "ContractGenerator",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 0.0
+    },
+    "source_id": "afe2669e-2162-4c11-a624-ac82f1773b1a",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_defendship.json"
+  },
+  {
     "mission_id": "contractgenerator_foxwellenforcement_destroyitems",
     "name": "ContractGenerator.FoxwellEnforcement_DestroyItems",
     "record_type": "ContractGenerator",
@@ -5558,6 +5569,72 @@
     "reward_counts": {},
     "source_id": "a2c9686d-3d1a-4595-9f35-ec8f441c5c2b",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug.json"
+  },
+  {
+    "mission_id": "contracttemplate_missionproviderdebug_battaglia1",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia1",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "ee24c3c2-168a-45f4-94e1-6ec26234b98b",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia1.json"
+  },
+  {
+    "mission_id": "contracttemplate_missionproviderdebug_battaglia1_nomeet",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia1_NoMeet",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "c4ca7e63-b061-436b-a052-f4bd84f95fab",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia1_nomeet.json"
+  },
+  {
+    "mission_id": "contracttemplate_missionproviderdebug_battaglia2",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia2",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "b67e9d61-4fe0-4ded-a76a-2ffc040b6967",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia2.json"
+  },
+  {
+    "mission_id": "contracttemplate_missionproviderdebug_battaglia2_nomeet",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia2_NoMeet",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "dd1622c4-4b06-4ef8-8096-717ac61e4723",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia2_nomeet.json"
+  },
+  {
+    "mission_id": "contracttemplate_missionproviderdebug_battaglia3",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia3",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "814440ca-775d-47e1-a43b-544238150db0",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia3.json"
+  },
+  {
+    "mission_id": "contracttemplate_missionproviderdebug_battaglia3_nomeet",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia3_NoMeet",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "ccc9160e-4d3a-4361-b531-b89b0de032d6",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia3_nomeet.json"
   },
   {
     "mission_id": "contracttemplate_multieliminateallandboss",

@@ -185992,9 +185992,9 @@
               "DisplayType": "",
               "Localization": {
                 "_Type_": "SCItemLocalization",
-                "Name": "@item_NameFlair_Poster_HT_BIS_1_a",
+                "Name": "@item_Name_Carryable_1H_CY_flair_poster_HT_Gamescom2026_1_a",
                 "ShortName": "@LOC_EMPTY",
-                "Description": "@item_DescFlair_Poster_HT_BIS_1_a",
+                "Description": "@item_Desc_Carryable_1H_CY_flair_poster_HT_Gamescom2026_1_a",
                 "displayFeatures": {
                   "_Type_": "SCExtendedLocalizationLevelParams",
                   "LogoSimplifiedWhite": "",

@@ -108,6 +108,12 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json"
   },
   {
+    "name": "ContractGenerator.FoxwellEnforcement_DefendShip",
+    "record_type": "ContractGenerator",
+    "source_id": "afe2669e-2162-4c11-a624-ac82f1773b1a",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_defendship.json"
+  },
+  {
     "name": "ContractGenerator.FoxwellEnforcement_DestroyItems",
     "record_type": "ContractGenerator",
     "source_id": "1b796f9d-a712-42e2-8787-d97743fa4408",
@@ -764,6 +770,36 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "2198129d-faa4-4ec2-a77a-1c2010d48931",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/weapons/sniper/bp_craft_behr_sniper_ballistic_01_tint01.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Golem",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "19b32f89-8ea6-4338-8410-fd219fc0a8b8",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Golem_BTGL",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "dc671104-f50a-41df-b922-e4d529c6ced7",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem_btgl.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Mole",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "8378085b-f334-4c8e-934f-dde839c8714b",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_mole.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_MoleProspector_BTGL",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "c2d44927-b79d-4d43-b46e-274d16cf6b2d",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_moleprospector_btgl.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Prospector",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "8d811596-73c2-4baf-b5cc-eb0235adee58",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_prospector.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_Carryable_2H_CY_CollectorMaterial_001",
@@ -5174,6 +5210,36 @@
     "record_type": "CraftingBlueprintRecord",
     "source_id": "46c4b9c1-b7a8-423d-af4a-2e32b199bc02",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/mininglaser/bp_craft_mining_laser_thcn_impact_s2.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Active_Clearcut",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "ef5d60fc-37a2-47c2-a958-d788d6cb7fcb",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_clearcut.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Active_Stampede",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "f32efc4e-4ed6-4f26-b774-58cf754bfe27",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_stampede.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Passive_Deluge",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "69b3ab1d-034c-4432-b8fb-099f19a3680d",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_deluge.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Passive_Overrun",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "8c60d61b-9c97-4f85-b41a-aa0d7960dfbf",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_overrun.json"
+  },
+  {
+    "name": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Passive_Torrent_MK3",
+    "record_type": "CraftingBlueprintRecord",
+    "source_id": "38f9d428-75dd-4fcd-834c-c4ff876c9b3f",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_torrent_mk3.json"
   },
   {
     "name": "CraftingBlueprintRecord.BP_CRAFT_mrai_flightsuit_01_01_01",

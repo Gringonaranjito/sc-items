@@ -2356,25 +2356,7 @@
         "amount": 800,
         "location": "Nyx",
         "mission_giver": "Missionproviders",
-        "mission_id": "90a586aa-3a33-4bc6-a3b6-5d034d84909a",
-        "rep_per_hour": 3200.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Story02 Title"
-      },
-      {
-        "amount": 800,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
         "mission_id": "67cf0b4c-c894-4bb1-8409-4a14334abcd4",
-        "rep_per_hour": 2400.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Battaglia Story03 Title"
-      },
-      {
-        "amount": 800,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "2ec4b069-a755-4d43-b1a4-f99f0bb28887",
         "rep_per_hour": 2400.0,
         "time_to_complete_minutes": 20.0,
         "title": "Battaglia Story03 Title"
@@ -3420,713 +3402,6 @@
         "gated": false,
         "min_reputation": 480000,
         "name": "BountyHunter_MasterAgent_BountyHuntersGuild"
-      }
-    ]
-  },
-  {
-    "display_token": "@RepScope_Security_Name",
-    "faction": "Lawful Foxwellenforcement",
-    "initial_reputation": 0,
-    "mission_contributors": [
-      {
-        "amount": 2000,
-        "location": "Regionc",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "ca4f3b9d-d1ab-42d7-9790-2a05d7f22640",
-        "rep_per_hour": 8000.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Combat Support: ~mission(Location)"
-      },
-      {
-        "amount": 250,
-        "location": "Nyx",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "5ad05edc-bdc0-4498-8802-3c3587a9063a",
-        "rep_per_hour": 742.57,
-        "time_to_complete_minutes": 20.2,
-        "title": "Dangerous Ambush"
-      },
-      {
-        "amount": 250,
-        "location": "Nyx",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "9bdbd06e-8aa9-4ee9-a8a1-bc9a29f25b14",
-        "rep_per_hour": 742.57,
-        "time_to_complete_minutes": 20.2,
-        "title": "Dangerous Ambush"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "00913455-4019-4b7e-a5eb-347ad3d49740",
-        "rep_per_hour": 1350.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Deal with ~mission(TargetName) and Support Forces"
-      },
-      {
-        "amount": -50,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "00913455-4019-4b7e-a5eb-347ad3d49740",
-        "rep_per_hour": 1350.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Deal with ~mission(TargetName) and Support Forces"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "920fe294-7e9d-435b-a475-1a5651eac16c",
-        "rep_per_hour": 1800.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Deal with ~mission(TargetName) and Support Forces"
-      },
-      {
-        "amount": -50,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "920fe294-7e9d-435b-a475-1a5651eac16c",
-        "rep_per_hour": 1800.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Deal with ~mission(TargetName) and Support Forces"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "ec99f981-dac4-4f47-8177-855019bc438f",
-        "rep_per_hour": 1928.57,
-        "time_to_complete_minutes": 14.0,
-        "title": "Expel Outlaws"
-      },
-      {
-        "amount": -50,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "ec99f981-dac4-4f47-8177-855019bc438f",
-        "rep_per_hour": 1928.57,
-        "time_to_complete_minutes": 14.0,
-        "title": "Expel Outlaws"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "25440ea0-7b89-4926-aea2-69699bca35b3",
-        "rep_per_hour": 1588.24,
-        "time_to_complete_minutes": 17.0,
-        "title": "Expel Outlaws"
-      },
-      {
-        "amount": -50,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "25440ea0-7b89-4926-aea2-69699bca35b3",
-        "rep_per_hour": 1588.24,
-        "time_to_complete_minutes": 17.0,
-        "title": "Expel Outlaws"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "3e525df0-ea80-4e44-b9f3-2eb476119f8b",
-        "rep_per_hour": 2142.86,
-        "time_to_complete_minutes": 14.0,
-        "title": "Expel Outlaws"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "c61aa912-1e27-4a32-bf5c-c0d479aa6264",
-        "rep_per_hour": 2142.86,
-        "time_to_complete_minutes": 14.0,
-        "title": "Expel Outlaws"
-      },
-      {
-        "amount": 50,
-        "location": ".Stanton1A",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "8d5a35c5-7d3c-4a3a-b88b-98be7f8b207e",
-        "rep_per_hour": 300.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "FIND SERVERS AT ASD SITE AND DESTROY"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "35327fed-283b-4b9b-9df6-031a1efe9423",
-        "rep_per_hour": 2500.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "High-Risk Bounty: ~mission(TargetName)"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "0b4c6e81-838a-4e0a-8ecd-7f2893095a8d",
-        "rep_per_hour": 2142.86,
-        "time_to_complete_minutes": 14.0,
-        "title": "High-Risk Bounty: ~mission(TargetName)"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "63c605db-220f-40f1-b203-ab7852a070a1",
-        "rep_per_hour": 2500.0,
-        "time_to_complete_minutes": 12.0,
-        "title": "High-Risk Bounty: ~mission(TargetName)"
-      },
-      {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "af1a800c-33eb-4f99-a8b0-377148e7795f",
-        "rep_per_hour": 751.57,
-        "time_to_complete_minutes": 23.95,
-        "title": "Highly Dangerous Ambush"
-      },
-      {
-        "amount": 300,
-        "location": "Nyx",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "99c6bfd4-1a17-45ec-9241-3f105c0b0912",
-        "rep_per_hour": 751.57,
-        "time_to_complete_minutes": 23.95,
-        "title": "Highly Dangerous Ambush"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
-        "rep_per_hour": 2250.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Hunt Bounty: ~mission(TargetName)"
-      },
-      {
-        "amount": 0,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
-        "rep_per_hour": 2250.0,
-        "time_to_complete_minutes": 20.0,
-        "title": "Hunt Bounty: ~mission(TargetName)"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
-        "rep_per_hour": 3214.29,
-        "time_to_complete_minutes": 14.0,
-        "title": "Hunt Bounty: ~mission(TargetName)"
-      },
-      {
-        "amount": 0,
-        "location": "Stanton4",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
-        "rep_per_hour": 3214.29,
-        "time_to_complete_minutes": 14.0,
-        "title": "Hunt Bounty: ~mission(TargetName)"
-      },
-      {
-        "amount": 50,
-        "location": ".Stanton1A",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "4cfe6e6b-9528-43eb-ab7a-1c1e14942173",
-        "rep_per_hour": 300.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "INFILITRATE ASD SITE AND DESTROY SERVERS"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "e85277a9-8db7-4bc5-8621-2ae5b11086e6",
-        "rep_per_hour": -4390.24,
-        "time_to_complete_minutes": 20.5,
-        "title": "Protect Location"
-      },
-      {
-        "amount": -2000,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "e85277a9-8db7-4bc5-8621-2ae5b11086e6",
-        "rep_per_hour": -4390.24,
-        "time_to_complete_minutes": 20.5,
-        "title": "Protect Location"
-      },
-      {
-        "amount": 50,
-        "location": ".Stanton1A",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "ffbb40e6-09d7-4047-85a7-440c2c8066d1",
-        "rep_per_hour": 300.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "PURGE ASD SERVERS"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "1014bc9a-d852-42a4-8470-b988a59f1c03",
-        "rep_per_hour": -8713.69,
-        "time_to_complete_minutes": 24.1,
-        "title": "Repel Raiders"
-      },
-      {
-        "amount": -4000,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "1014bc9a-d852-42a4-8470-b988a59f1c03",
-        "rep_per_hour": -8713.69,
-        "time_to_complete_minutes": 24.1,
-        "title": "Repel Raiders"
-      },
-      {
-        "amount": 2000,
-        "location": "Pyro",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "9f45145a-4b5a-4145-b83c-41d78c8248b5",
-        "rep_per_hour": 9230.77,
-        "time_to_complete_minutes": 13.0,
-        "title": "Requesting Help"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "f26214ad-1cd7-44c7-a46a-ef18132abbb8",
-        "rep_per_hour": -1442.31,
-        "time_to_complete_minutes": 20.8,
-        "title": "Secure Site"
-      },
-      {
-        "amount": -1000,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "f26214ad-1cd7-44c7-a46a-ef18132abbb8",
-        "rep_per_hour": -1442.31,
-        "time_to_complete_minutes": 20.8,
-        "title": "Secure Site"
-      },
-      {
-        "amount": 50,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "f2b7dbf6-3ff2-45cf-bf18-6765ef443c5e",
-        "rep_per_hour": 600.0,
-        "time_to_complete_minutes": 5.0,
-        "title": "Security Contractor Evaluation"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "ee57e39f-235b-4ff4-af5c-fe1e096b9545",
-        "rep_per_hour": -1442.31,
-        "time_to_complete_minutes": 20.8,
-        "title": "Security Contractor Reevaluation"
-      },
-      {
-        "amount": -1000,
-        "location": "Stanton1",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "ee57e39f-235b-4ff4-af5c-fe1e096b9545",
-        "rep_per_hour": -1442.31,
-        "time_to_complete_minutes": 20.8,
-        "title": "Security Contractor Reevaluation"
-      },
-      {
-        "amount": 50,
-        "location": ".Stanton1A",
-        "mission_giver": "Eckhartsecurity",
-        "mission_id": "580bbf09-a9ae-401e-b0db-153404c6d90f",
-        "rep_per_hour": 300.0,
-        "time_to_complete_minutes": 10.0,
-        "title": "SEEK AND DESTROY ASD DATA"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "a33c1bf7-2685-4fe8-96d2-aaf33c2fce12",
-        "rep_per_hour": -1630.43,
-        "time_to_complete_minutes": 18.4,
-        "title": "Carefully Clear Site"
-      },
-      {
-        "amount": -1000,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "a33c1bf7-2685-4fe8-96d2-aaf33c2fce12",
-        "rep_per_hour": -1630.43,
-        "time_to_complete_minutes": 18.4,
-        "title": "Carefully Clear Site"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "bfc725de-6d4f-4b00-940e-3b96028aae58",
-        "rep_per_hour": 909.09,
-        "time_to_complete_minutes": 16.5,
-        "title": "Help Protect Site"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "bfc725de-6d4f-4b00-940e-3b96028aae58",
-        "rep_per_hour": 909.09,
-        "time_to_complete_minutes": 16.5,
-        "title": "Help Protect Site"
-      },
-      {
-        "amount": 1000,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "94079b3a-b689-40ce-b8bf-f1371e4f6398",
-        "rep_per_hour": 1694.92,
-        "time_to_complete_minutes": 17.7,
-        "title": "Precision Strike on ~mission(TargetName)"
-      },
-      {
-        "amount": -500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "94079b3a-b689-40ce-b8bf-f1371e4f6398",
-        "rep_per_hour": 1694.92,
-        "time_to_complete_minutes": 17.7,
-        "title": "Precision Strike on ~mission(TargetName)"
-      },
-      {
-        "amount": null,
-        "location": ".Stantonstar",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "50b65c1a-14ad-4e69-bba6-efac087a3735",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 35.0,
-        "title": "Red Level Contract: Clear PAFs, Recover Cargo, and Deliver to OLP"
-      },
-      {
-        "amount": null,
-        "location": ".Stantonstar",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "b0d47978-50bb-404a-b529-4084f6e6ac38",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 25.0,
-        "title": "Red Level Contract: Recoup Stolen Cargo Haul"
-      },
-      {
-        "amount": null,
-        "location": ".Stantonstar",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "f0a6adc6-ef64-4d4f-bf35-5368c870d7ad",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 25.0,
-        "title": "Red Level Contract: Retrieve Cargo Haul"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "c9654159-acbc-4e5d-8a2c-2db20dd499a7",
-        "rep_per_hour": 1636.36,
-        "time_to_complete_minutes": 16.5,
-        "title": "Still Looking for Work?"
-      },
-      {
-        "amount": -50,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "c9654159-acbc-4e5d-8a2c-2db20dd499a7",
-        "rep_per_hour": 1636.36,
-        "time_to_complete_minutes": 16.5,
-        "title": "Still Looking for Work?"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "69fbad01-0ca8-4910-8c03-d0f73895df00",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 11.8,
-        "title": "Sweep and Clear Location"
-      },
-      {
-        "amount": -500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "69fbad01-0ca8-4910-8c03-d0f73895df00",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 11.8,
-        "title": "Sweep and Clear Location"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "5f54c243-3985-4509-85c1-e5e99665a7f6",
-        "rep_per_hour": 847.46,
-        "time_to_complete_minutes": 17.7,
-        "title": "Track Down ~mission(TargetName)"
-      },
-      {
-        "amount": -250,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "5f54c243-3985-4509-85c1-e5e99665a7f6",
-        "rep_per_hour": 847.46,
-        "time_to_complete_minutes": 17.7,
-        "title": "Track Down ~mission(TargetName)"
-      },
-      {
-        "amount": 500,
-        "location": ".Stantonstar",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "2aff8901-0787-4a79-a87b-e6846f7b91c0",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 11.8,
-        "title": "Yellow Level Contract: Clear Out PAF"
-      },
-      {
-        "amount": -500,
-        "location": ".Stantonstar",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "2aff8901-0787-4a79-a87b-e6846f7b91c0",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 11.8,
-        "title": "Yellow Level Contract: Clear Out PAF"
-      },
-      {
-        "amount": 500,
-        "location": ".Stantonstar",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "c4fd412d-06e5-4428-8819-2b1f62d9e9c6",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 11.8,
-        "title": "Yellow Level Contract: Merc Work"
-      },
-      {
-        "amount": -500,
-        "location": ".Stantonstar",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "c4fd412d-06e5-4428-8819-2b1f62d9e9c6",
-        "rep_per_hour": 0.0,
-        "time_to_complete_minutes": 11.8,
-        "title": "Yellow Level Contract: Merc Work"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "9ef512ad-9832-4fa9-bad7-60e99268df74",
-        "rep_per_hour": 3103.45,
-        "time_to_complete_minutes": 8.7,
-        "title": "~mission(Contractor|DestroyProbeTitle)"
-      },
-      {
-        "amount": -50,
-        "location": "Stanton1",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "9ef512ad-9832-4fa9-bad7-60e99268df74",
-        "rep_per_hour": 3103.45,
-        "time_to_complete_minutes": 8.7,
-        "title": "~mission(Contractor|DestroyProbeTitle)"
-      },
-      {
-        "amount": 4000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "4f38a5fe-cd87-716a-eea3-4b5def10b6b3",
-        "rep_per_hour": 130.43,
-        "time_to_complete_minutes": 23.0,
-        "title": "inventory clear out"
-      },
-      {
-        "amount": -4000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "4f38a5fe-cd87-716a-eea3-4b5def10b6b3",
-        "rep_per_hour": 130.43,
-        "time_to_complete_minutes": 23.0,
-        "title": "inventory clear out"
-      },
-      {
-        "amount": 1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "4dc98542-6b8b-6186-35d5-8266ce883c84",
-        "rep_per_hour": 100.0,
-        "time_to_complete_minutes": 30.0,
-        "title": "limited supply"
-      },
-      {
-        "amount": -1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "4dc98542-6b8b-6186-35d5-8266ce883c84",
-        "rep_per_hour": 100.0,
-        "time_to_complete_minutes": 30.0,
-        "title": "limited supply"
-      },
-      {
-        "amount": 2000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "25835538-7a43-48fc-be0d-75c5035e6b0a",
-        "rep_per_hour": 152.28,
-        "time_to_complete_minutes": 19.7,
-        "title": "live and let an independent contractor deal out revenge"
-      },
-      {
-        "amount": -2000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "25835538-7a43-48fc-be0d-75c5035e6b0a",
-        "rep_per_hour": 152.28,
-        "time_to_complete_minutes": 19.7,
-        "title": "live and let an independent contractor deal out revenge"
-      },
-      {
-        "amount": 1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "467ad4ca-e9a3-bcaa-5709-4b85ec6efa82",
-        "rep_per_hour": 185.19,
-        "time_to_complete_minutes": 16.2,
-        "title": "makin’ a mess"
-      },
-      {
-        "amount": -1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "467ad4ca-e9a3-bcaa-5709-4b85ec6efa82",
-        "rep_per_hour": 185.19,
-        "time_to_complete_minutes": 16.2,
-        "title": "makin’ a mess"
-      },
-      {
-        "amount": 2000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "47195082-d808-99ff-13a3-f8ce612707ad",
-        "rep_per_hour": 131.0,
-        "time_to_complete_minutes": 22.9,
-        "title": "out of stock"
-      },
-      {
-        "amount": -2000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "47195082-d808-99ff-13a3-f8ce612707ad",
-        "rep_per_hour": 131.0,
-        "time_to_complete_minutes": 22.9,
-        "title": "out of stock"
-      },
-      {
-        "amount": 1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "417db062-b1e4-7e50-ffbb-ac13f66f148f",
-        "rep_per_hour": 152.28,
-        "time_to_complete_minutes": 19.7,
-        "title": "too many cooks"
-      },
-      {
-        "amount": -1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Missionproviders",
-        "mission_id": "417db062-b1e4-7e50-ffbb-ac13f66f148f",
-        "rep_per_hour": 152.28,
-        "time_to_complete_minutes": 19.7,
-        "title": "too many cooks"
-      },
-      {
-        "amount": 2000,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "dda8c4fb-b0fd-44af-9276-b13f0c781e90",
-        "rep_per_hour": 11764.71,
-        "time_to_complete_minutes": 10.2,
-        "title": "Orange Level Contract: Spring a Trap"
-      },
-      {
-        "amount": 500,
-        "location": "Stanton1",
-        "mission_giver": "Shipbattles",
-        "mission_id": "7afeaf4d-a225-4d03-8c8d-625746cde3b5",
-        "rep_per_hour": 4958.68,
-        "time_to_complete_minutes": 6.05,
-        "title": "Yellow Level Contract: Ambush An Amateur"
-      }
-    ],
-    "reputation_ceiling": 5200000,
-    "scope_name": "Security",
-    "source_path": "libs/foundry/records/reputation/scopes/reputationscope_security.json",
-    "standings": [
-      {
-        "display": "Not Eligible",
-        "display_token": "@RepStanding_NotEligible",
-        "gated": false,
-        "min_reputation": -1000,
-        "name": "Security_NotEligible"
-      },
-      {
-        "display": "Applicant",
-        "display_token": "@RepStanding_Security_Rank0",
-        "gated": true,
-        "min_reputation": 0,
-        "name": "Security_Rank0"
-      },
-      {
-        "display": "Security Trainee",
-        "display_token": "@RepStanding_Security_Rank1",
-        "gated": true,
-        "min_reputation": 1,
-        "name": "Security_Rank1"
-      },
-      {
-        "display": "Jr. Security Contractor",
-        "display_token": "@RepStanding_Security_Rank2",
-        "gated": false,
-        "min_reputation": 5000,
-        "name": "Security_Rank2"
-      },
-      {
-        "display": "Security Contractor",
-        "display_token": "@RepStanding_Security_Rank3",
-        "gated": false,
-        "min_reputation": 30000,
-        "name": "Security_Rank3"
-      },
-      {
-        "display": "Sr. Security Contractor",
-        "display_token": "@RepStanding_Security_Rank4",
-        "gated": false,
-        "min_reputation": 120000,
-        "name": "Security_Rank4"
-      },
-      {
-        "display": "Lead Security Contractor",
-        "display_token": "@RepStanding_Security_Rank5",
-        "gated": false,
-        "min_reputation": 480000,
-        "name": "Security_Rank5"
-      },
-      {
-        "display": "Elite Security Contractor",
-        "display_token": "@RepStanding_Security_Rank6",
-        "gated": false,
-        "min_reputation": 1600000,
-        "name": "Security_Rank6"
       }
     ]
   },
@@ -6008,6 +5283,24 @@
         "location": "Stanton1",
         "mission_giver": "Eckhartsecurity",
         "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 250,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "cd34bad5-1974-4cd0-b019-4508153db5a9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "cd34bad5-1974-4cd0-b019-4508153db5a9",
         "rep_per_hour": 2250.0,
         "time_to_complete_minutes": 20.0,
         "title": "Hunt Bounty: ~mission(TargetName)"
@@ -8868,33 +8161,6 @@
         "title": "DEAD SAINTS -- ~mission(ReputationRank) Rank, ~mission(CargoGradeToken) Scale Cargo Run"
       },
       {
-        "amount": 1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "f56b2ee1-1729-4374-a2d5-f6a5607f3a5d",
-        "rep_per_hour": 2400.0,
-        "time_to_complete_minutes": 25.0,
-        "title": "Cargo Retrieval"
-      },
-      {
-        "amount": 1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "38437a9a-f57f-4771-8f4f-d5b6612b5cb5",
-        "rep_per_hour": 1714.29,
-        "time_to_complete_minutes": 35.0,
-        "title": "Getting Our Goods Back"
-      },
-      {
-        "amount": 1000,
-        "location": ".Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "9bb5529b-54ed-4f46-a37d-634836687ac6",
-        "rep_per_hour": 2400.0,
-        "time_to_complete_minutes": 25.0,
-        "title": "Stock Taking"
-      },
-      {
         "amount": 100,
         "location": "Pyro",
         "mission_giver": "Lingfamilyhauling",
@@ -10902,370 +10168,555 @@
     ]
   },
   {
-    "display_token": "@RepScope_ShipCombat_HeadHunters_Name",
-    "faction": "Unlawful Headhunters",
+    "display_token": "@RepScope_Security_Name",
+    "faction": "Ruto",
     "initial_reputation": 0,
     "mission_contributors": [
       {
         "amount": 2000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "660b30df-b638-451d-8947-7784c63b61dc",
-        "rep_per_hour": 11764.71,
-        "time_to_complete_minutes": 10.2,
-        "title": "Ambush Op"
+        "location": "Regionc",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ca4f3b9d-d1ab-42d7-9790-2a05d7f22640",
+        "rep_per_hour": 8000.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Combat Support: ~mission(Location)"
       },
       {
-        "amount": 2000,
-        "location": "Stanton1, .Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "bccc63cb-aea3-4831-8805-401a3d75c926",
-        "rep_per_hour": 11764.71,
-        "time_to_complete_minutes": 10.2,
-        "title": "Ambush Op"
+        "amount": 250,
+        "location": "Nyx",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "5ad05edc-bdc0-4498-8802-3c3587a9063a",
+        "rep_per_hour": 742.57,
+        "time_to_complete_minutes": 20.2,
+        "title": "Dangerous Ambush"
       },
       {
-        "amount": 500,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "bcf3840e-9b2b-4477-9993-fbb8ed5b7a92",
-        "rep_per_hour": 2727.27,
-        "time_to_complete_minutes": 11.0,
-        "title": "Eliminate Annoyance"
+        "amount": 250,
+        "location": "Nyx",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "9bdbd06e-8aa9-4ee9-a8a1-bc9a29f25b14",
+        "rep_per_hour": 742.57,
+        "time_to_complete_minutes": 20.2,
+        "title": "Dangerous Ambush"
       },
       {
         "amount": 500,
         "location": "Stanton1",
-        "mission_giver": "Headhunters",
-        "mission_id": "afc59f9a-15ba-45b7-a3e8-2b4f9f4ecea7",
-        "rep_per_hour": 2727.27,
-        "time_to_complete_minutes": 11.0,
-        "title": "Eliminate Annoyance"
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "00913455-4019-4b7e-a5eb-347ad3d49740",
+        "rep_per_hour": 1350.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
       },
       {
-        "amount": 16000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "24b492ca-8dc8-43fb-a02b-94b5c7cfc918",
-        "rep_per_hour": 41830.07,
-        "time_to_complete_minutes": 22.95,
-        "title": "Elite Op"
-      },
-      {
-        "amount": 16000,
-        "location": "Stanton1, .Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "e85bd438-b950-4830-96f2-56e643171956",
-        "rep_per_hour": 41830.07,
-        "time_to_complete_minutes": 22.95,
-        "title": "Elite Op"
+        "amount": -50,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "00913455-4019-4b7e-a5eb-347ad3d49740",
+        "rep_per_hour": 1350.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
       },
       {
         "amount": 500,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "f3492e3b-b1e6-48d9-8388-6471608cb94e",
-        "rep_per_hour": 4958.68,
-        "time_to_complete_minutes": 6.05,
-        "title": "Head Hunters Ship Ambush Intro Title 001"
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "920fe294-7e9d-435b-a475-1a5651eac16c",
+        "rep_per_hour": 1800.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
+      },
+      {
+        "amount": -50,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "920fe294-7e9d-435b-a475-1a5651eac16c",
+        "rep_per_hour": 1800.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Deal with ~mission(TargetName) and Support Forces"
       },
       {
         "amount": 500,
-        "location": "Stanton1, .Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "0aae9359-4b9f-4d9b-af72-1b513594ccc8",
-        "rep_per_hour": 4958.68,
-        "time_to_complete_minutes": 6.05,
-        "title": "Head Hunters Ship Ambush Intro Title 001"
-      },
-      {
-        "amount": 2000,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "7d05343c-d629-439b-befb-de86cf38715b",
-        "rep_per_hour": 1666.67,
-        "time_to_complete_minutes": 72.0,
-        "title": "Help Headhunters at ~mission(DefendLocationWrapperLocation)"
-      },
-      {
-        "amount": 2000,
         "location": "Stanton1",
-        "mission_giver": "Headhunters",
-        "mission_id": "8e4a00bf-ea92-4e96-a67d-363cd1c1f867",
-        "rep_per_hour": 1666.67,
-        "time_to_complete_minutes": 72.0,
-        "title": "Help Headhunters at ~mission(DefendLocationWrapperLocation)"
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ec99f981-dac4-4f47-8177-855019bc438f",
+        "rep_per_hour": 1928.57,
+        "time_to_complete_minutes": 14.0,
+        "title": "Expel Outlaws"
       },
       {
-        "amount": 16000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "120185a6-ff2e-45ac-801a-0b26dbf1cb22",
-        "rep_per_hour": 24710.42,
-        "time_to_complete_minutes": 38.85,
-        "title": "Hunt Some Heads"
-      },
-      {
-        "amount": 16000,
-        "location": "",
-        "mission_giver": "Headhunters",
-        "mission_id": "da845673-0334-4949-bb12-5ae363a54356",
-        "rep_per_hour": 24710.42,
-        "time_to_complete_minutes": 38.85,
-        "title": "Hunt Some Heads"
-      },
-      {
-        "amount": 2000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "f5f5ba5c-4205-4362-91b2-cf5296963ed1",
-        "rep_per_hour": 4395.6,
-        "time_to_complete_minutes": 27.3,
-        "title": "Looking For Trouble"
-      },
-      {
-        "amount": 2000,
-        "location": "",
-        "mission_giver": "Headhunters",
-        "mission_id": "4acddde8-0e8f-4ea7-9124-cccc2a2e2f48",
-        "rep_per_hour": 4395.6,
-        "time_to_complete_minutes": 27.3,
-        "title": "Looking For Trouble"
-      },
-      {
-        "amount": 1000,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "5aefc427-5c02-4940-a2f0-c93dab00383b",
-        "rep_per_hour": 2307.69,
-        "time_to_complete_minutes": 26.0,
-        "title": "Protect Our Site"
-      },
-      {
-        "amount": 1000,
+        "amount": -50,
         "location": "Stanton1",
-        "mission_giver": "Headhunters",
-        "mission_id": "eadcd6bc-1c7b-4782-b7f6-4cad4fb39bcc",
-        "rep_per_hour": 2307.69,
-        "time_to_complete_minutes": 26.0,
-        "title": "Protect Our Site"
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ec99f981-dac4-4f47-8177-855019bc438f",
+        "rep_per_hour": 1928.57,
+        "time_to_complete_minutes": 14.0,
+        "title": "Expel Outlaws"
       },
       {
-        "amount": 2000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "303f32e7-40b9-42ec-8b82-a51dedd80182",
-        "rep_per_hour": 7643.31,
-        "time_to_complete_minutes": 15.7,
-        "title": "Reprisal Attack"
-      },
-      {
-        "amount": 2000,
-        "location": "Stanton1, .Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "d9557f24-001d-44b2-a0a6-59eed027db46",
-        "rep_per_hour": 7643.31,
-        "time_to_complete_minutes": 15.7,
-        "title": "Reprisal Attack"
-      },
-      {
-        "amount": 16000,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "63c181b7-462b-45bf-8ca6-0a6eadf0bc25",
-        "rep_per_hour": 7619.05,
-        "time_to_complete_minutes": 126.0,
-        "title": "Restore Order at ~mission(DefendLocationWrapperLocation)"
-      },
-      {
-        "amount": 16000,
+        "amount": 500,
         "location": "Stanton1",
-        "mission_giver": "Headhunters",
-        "mission_id": "5b1b82d9-fa2f-4a7a-8d5d-fa21e4908493",
-        "rep_per_hour": 7619.05,
-        "time_to_complete_minutes": 126.0,
-        "title": "Restore Order at ~mission(DefendLocationWrapperLocation)"
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "25440ea0-7b89-4926-aea2-69699bca35b3",
+        "rep_per_hour": 1588.24,
+        "time_to_complete_minutes": 17.0,
+        "title": "Expel Outlaws"
       },
       {
-        "amount": 1000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "0e6b70f6-ee9d-437c-ae01-7ca28d17d616",
-        "rep_per_hour": 3260.87,
-        "time_to_complete_minutes": 18.4,
-        "title": "Scout and Scan"
+        "amount": -50,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "25440ea0-7b89-4926-aea2-69699bca35b3",
+        "rep_per_hour": 1588.24,
+        "time_to_complete_minutes": 17.0,
+        "title": "Expel Outlaws"
       },
       {
-        "amount": 1000,
-        "location": "",
-        "mission_giver": "Headhunters",
-        "mission_id": "6655fa88-92d6-4224-8c02-68be74906348",
-        "rep_per_hour": 3260.87,
-        "time_to_complete_minutes": 18.4,
-        "title": "Scout and Scan"
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "3e525df0-ea80-4e44-b9f3-2eb476119f8b",
+        "rep_per_hour": 2142.86,
+        "time_to_complete_minutes": 14.0,
+        "title": "Expel Outlaws"
       },
       {
-        "amount": 2000,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "2d54b476-7ed3-462a-b046-8ee4cf0b8249",
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "c61aa912-1e27-4a32-bf5c-c0d479aa6264",
+        "rep_per_hour": 2142.86,
+        "time_to_complete_minutes": 14.0,
+        "title": "Expel Outlaws"
+      },
+      {
+        "amount": 50,
+        "location": ".Stanton1A",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "8d5a35c5-7d3c-4a3a-b88b-98be7f8b207e",
+        "rep_per_hour": 300.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "FIND SERVERS AT ASD SITE AND DESTROY"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "35327fed-283b-4b9b-9df6-031a1efe9423",
         "rep_per_hour": 2500.0,
-        "time_to_complete_minutes": 48.0,
-        "title": "Secure Our Airspace"
+        "time_to_complete_minutes": 12.0,
+        "title": "High-Risk Bounty: ~mission(TargetName)"
       },
       {
-        "amount": 2000,
-        "location": "Stanton1",
-        "mission_giver": "Headhunters",
-        "mission_id": "bc8b5616-d602-439b-ae3a-1025bb809ae2",
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "0b4c6e81-838a-4e0a-8ecd-7f2893095a8d",
+        "rep_per_hour": 2142.86,
+        "time_to_complete_minutes": 14.0,
+        "title": "High-Risk Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "63c605db-220f-40f1-b203-ab7852a070a1",
         "rep_per_hour": 2500.0,
-        "time_to_complete_minutes": 48.0,
-        "title": "Secure Our Airspace"
+        "time_to_complete_minutes": 12.0,
+        "title": "High-Risk Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "af1a800c-33eb-4f99-a8b0-377148e7795f",
+        "rep_per_hour": 751.57,
+        "time_to_complete_minutes": 23.95,
+        "title": "Highly Dangerous Ambush"
+      },
+      {
+        "amount": 300,
+        "location": "Nyx",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "99c6bfd4-1a17-45ec-9241-3f105c0b0912",
+        "rep_per_hour": 751.57,
+        "time_to_complete_minutes": 23.95,
+        "title": "Highly Dangerous Ambush"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1bc6de31-5c31-4e8b-ab76-7c0f5917eee9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "cd34bad5-1974-4cd0-b019-4508153db5a9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "cd34bad5-1974-4cd0-b019-4508153db5a9",
+        "rep_per_hour": 2250.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
+        "rep_per_hour": 3214.29,
+        "time_to_complete_minutes": 14.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 0,
+        "location": "Stanton4",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "d9ae59ed-6d6a-444c-89b2-1ca527f8e7d4",
+        "rep_per_hour": 3214.29,
+        "time_to_complete_minutes": 14.0,
+        "title": "Hunt Bounty: ~mission(TargetName)"
+      },
+      {
+        "amount": 50,
+        "location": ".Stanton1A",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "4cfe6e6b-9528-43eb-ab7a-1c1e14942173",
+        "rep_per_hour": 300.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "INFILITRATE ASD SITE AND DESTROY SERVERS"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "e85277a9-8db7-4bc5-8621-2ae5b11086e6",
+        "rep_per_hour": -4390.24,
+        "time_to_complete_minutes": 20.5,
+        "title": "Protect Location"
+      },
+      {
+        "amount": -2000,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "e85277a9-8db7-4bc5-8621-2ae5b11086e6",
+        "rep_per_hour": -4390.24,
+        "time_to_complete_minutes": 20.5,
+        "title": "Protect Location"
+      },
+      {
+        "amount": 50,
+        "location": ".Stanton1A",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ffbb40e6-09d7-4047-85a7-440c2c8066d1",
+        "rep_per_hour": 300.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "PURGE ASD SERVERS"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1014bc9a-d852-42a4-8470-b988a59f1c03",
+        "rep_per_hour": -8713.69,
+        "time_to_complete_minutes": 24.1,
+        "title": "Repel Raiders"
+      },
+      {
+        "amount": -4000,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "1014bc9a-d852-42a4-8470-b988a59f1c03",
+        "rep_per_hour": -8713.69,
+        "time_to_complete_minutes": 24.1,
+        "title": "Repel Raiders"
       },
       {
         "amount": 2000,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "7d4e6d75-d694-4b55-8728-1a2ee752cae2",
-        "rep_per_hour": 2400.0,
-        "time_to_complete_minutes": 50.0,
-        "title": "Secure ~mission(Location) from Upstarts"
+        "location": "Pyro",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "9f45145a-4b5a-4145-b83c-41d78c8248b5",
+        "rep_per_hour": 9230.77,
+        "time_to_complete_minutes": 13.0,
+        "title": "Requesting Help"
       },
       {
-        "amount": 2000,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "28bee1b6-60ad-48db-a5af-5a8ac50562d5",
-        "rep_per_hour": 4000.0,
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "f26214ad-1cd7-44c7-a46a-ef18132abbb8",
+        "rep_per_hour": -1442.31,
+        "time_to_complete_minutes": 20.8,
+        "title": "Secure Site"
+      },
+      {
+        "amount": -1000,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "f26214ad-1cd7-44c7-a46a-ef18132abbb8",
+        "rep_per_hour": -1442.31,
+        "time_to_complete_minutes": 20.8,
+        "title": "Secure Site"
+      },
+      {
+        "amount": 50,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "f2b7dbf6-3ff2-45cf-bf18-6765ef443c5e",
+        "rep_per_hour": 600.0,
+        "time_to_complete_minutes": 5.0,
+        "title": "Security Contractor Evaluation"
+      },
+      {
+        "amount": 500,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ee57e39f-235b-4ff4-af5c-fe1e096b9545",
+        "rep_per_hour": -1442.31,
+        "time_to_complete_minutes": 20.8,
+        "title": "Security Contractor Reevaluation"
+      },
+      {
+        "amount": -1000,
+        "location": "Stanton1",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "ee57e39f-235b-4ff4-af5c-fe1e096b9545",
+        "rep_per_hour": -1442.31,
+        "time_to_complete_minutes": 20.8,
+        "title": "Security Contractor Reevaluation"
+      },
+      {
+        "amount": 50,
+        "location": ".Stanton1A",
+        "mission_giver": "Eckhartsecurity",
+        "mission_id": "580bbf09-a9ae-401e-b0db-153404c6d90f",
+        "rep_per_hour": 300.0,
+        "time_to_complete_minutes": 10.0,
+        "title": "SEEK AND DESTROY ASD DATA"
+      },
+      {
+        "amount": null,
+        "location": ".Stantonstar",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "50b65c1a-14ad-4e69-bba6-efac087a3735",
+        "rep_per_hour": 0.0,
+        "time_to_complete_minutes": 35.0,
+        "title": "Red Level Contract: Clear PAFs, Recover Cargo, and Deliver to OLP"
+      },
+      {
+        "amount": null,
+        "location": ".Stantonstar",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "b0d47978-50bb-404a-b529-4084f6e6ac38",
+        "rep_per_hour": 0.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Red Level Contract: Recoup Stolen Cargo Haul"
+      },
+      {
+        "amount": null,
+        "location": ".Stantonstar",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "f0a6adc6-ef64-4d4f-bf35-5368c870d7ad",
+        "rep_per_hour": 0.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Red Level Contract: Retrieve Cargo Haul"
+      },
+      {
+        "amount": 4000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "4f38a5fe-cd87-716a-eea3-4b5def10b6b3",
+        "rep_per_hour": 130.43,
+        "time_to_complete_minutes": 23.0,
+        "title": "inventory clear out"
+      },
+      {
+        "amount": -4000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "4f38a5fe-cd87-716a-eea3-4b5def10b6b3",
+        "rep_per_hour": 130.43,
+        "time_to_complete_minutes": 23.0,
+        "title": "inventory clear out"
+      },
+      {
+        "amount": 1000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "4dc98542-6b8b-6186-35d5-8266ce883c84",
+        "rep_per_hour": 100.0,
         "time_to_complete_minutes": 30.0,
-        "title": "Secure ~mission(Objects) From Rivals"
+        "title": "limited supply"
       },
       {
-        "amount": 500,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "4008ba96-3d35-4e44-aa4f-5d647b9bbfd6",
-        "rep_per_hour": 2013.42,
-        "time_to_complete_minutes": 14.9,
-        "title": "See What’s Out There"
-      },
-      {
-        "amount": 500,
-        "location": ".Stanton1",
-        "mission_giver": "Headhunters",
-        "mission_id": "759d9443-f0df-4544-894b-dac903b149b1",
-        "rep_per_hour": 2013.42,
-        "time_to_complete_minutes": 14.9,
-        "title": "See What’s Out There"
-      },
-      {
-        "amount": 1000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "800d0117-2b80-4885-a35b-b9516a48d1f8",
-        "rep_per_hour": 6593.41,
-        "time_to_complete_minutes": 9.1,
-        "title": "Silent Strike"
-      },
-      {
-        "amount": 1000,
-        "location": "Stanton1, .Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "2e37a1cf-2e92-41d1-90de-03832a834d26",
-        "rep_per_hour": 6593.41,
-        "time_to_complete_minutes": 9.1,
-        "title": "Silent Strike"
+        "amount": -1000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "4dc98542-6b8b-6186-35d5-8266ce883c84",
+        "rep_per_hour": 100.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "limited supply"
       },
       {
         "amount": 2000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "78b32751-c7b0-4b35-b822-7db352052f19",
-        "rep_per_hour": 5940.59,
-        "time_to_complete_minutes": 20.2,
-        "title": "Space Patrol"
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "25835538-7a43-48fc-be0d-75c5035e6b0a",
+        "rep_per_hour": 152.28,
+        "time_to_complete_minutes": 19.7,
+        "title": "live and let an independent contractor deal out revenge"
+      },
+      {
+        "amount": -2000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "25835538-7a43-48fc-be0d-75c5035e6b0a",
+        "rep_per_hour": 152.28,
+        "time_to_complete_minutes": 19.7,
+        "title": "live and let an independent contractor deal out revenge"
+      },
+      {
+        "amount": 1000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "467ad4ca-e9a3-bcaa-5709-4b85ec6efa82",
+        "rep_per_hour": 185.19,
+        "time_to_complete_minutes": 16.2,
+        "title": "makin’ a mess"
+      },
+      {
+        "amount": -1000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "467ad4ca-e9a3-bcaa-5709-4b85ec6efa82",
+        "rep_per_hour": 185.19,
+        "time_to_complete_minutes": 16.2,
+        "title": "makin’ a mess"
       },
       {
         "amount": 2000,
-        "location": "",
-        "mission_giver": "Headhunters",
-        "mission_id": "18af71cc-e37e-4275-9d35-dde1bc72d809",
-        "rep_per_hour": 5940.59,
-        "time_to_complete_minutes": 20.2,
-        "title": "Space Patrol"
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "47195082-d808-99ff-13a3-f8ce612707ad",
+        "rep_per_hour": 131.0,
+        "time_to_complete_minutes": 22.9,
+        "title": "out of stock"
       },
       {
-        "amount": 8000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "f93099ce-fe91-4b41-b9c7-0f9ed0cea77f",
-        "rep_per_hour": 16021.36,
-        "time_to_complete_minutes": 29.96,
-        "title": "Stand Our Ground"
+        "amount": -2000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "47195082-d808-99ff-13a3-f8ce612707ad",
+        "rep_per_hour": 131.0,
+        "time_to_complete_minutes": 22.9,
+        "title": "out of stock"
       },
       {
-        "amount": 8000,
-        "location": "",
-        "mission_giver": "Headhunters",
-        "mission_id": "1447c339-dbfe-4c4a-b1ac-5a2ebf726ee5",
-        "rep_per_hour": 16021.36,
-        "time_to_complete_minutes": 29.96,
-        "title": "Stand Our Ground"
+        "amount": 1000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "417db062-b1e4-7e50-ffbb-ac13f66f148f",
+        "rep_per_hour": 152.28,
+        "time_to_complete_minutes": 19.7,
+        "title": "too many cooks"
       },
       {
-        "amount": 8000,
-        "location": "Regiona",
-        "mission_giver": "Headhunters",
-        "mission_id": "0952be21-c29f-4e37-bcd8-6132d2f77646",
-        "rep_per_hour": 5333.33,
-        "time_to_complete_minutes": 90.0,
-        "title": "Stop Attack at ~mission(DefendLocationWrapperLocation)"
+        "amount": -1000,
+        "location": ".Stantonstar",
+        "mission_giver": "Missionproviders",
+        "mission_id": "417db062-b1e4-7e50-ffbb-ac13f66f148f",
+        "rep_per_hour": 152.28,
+        "time_to_complete_minutes": 19.7,
+        "title": "too many cooks"
+      }
+    ],
+    "reputation_ceiling": 5200000,
+    "scope_name": "Security",
+    "source_path": "libs/foundry/records/reputation/scopes/reputationscope_security.json",
+    "standings": [
+      {
+        "display": "Not Eligible",
+        "display_token": "@RepStanding_NotEligible",
+        "gated": false,
+        "min_reputation": -1000,
+        "name": "Security_NotEligible"
       },
       {
-        "amount": 8000,
-        "location": "Stanton1",
-        "mission_giver": "Headhunters",
-        "mission_id": "d0198bf9-bafe-47c9-87ba-a7e625c0a240",
-        "rep_per_hour": 5333.33,
-        "time_to_complete_minutes": 90.0,
-        "title": "Stop Attack at ~mission(DefendLocationWrapperLocation)"
+        "display": "Applicant",
+        "display_token": "@RepStanding_Security_Rank0",
+        "gated": true,
+        "min_reputation": 0,
+        "name": "Security_Rank0"
       },
       {
-        "amount": 500,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "a953c754-e864-4732-903e-a82db5df5271",
-        "rep_per_hour": 4958.68,
-        "time_to_complete_minutes": 6.05,
-        "title": "Surprise Party"
+        "display": "Security Trainee",
+        "display_token": "@RepStanding_Security_Rank1",
+        "gated": true,
+        "min_reputation": 1,
+        "name": "Security_Rank1"
       },
       {
-        "amount": 500,
-        "location": "Stanton1, .Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "8784007b-d2b2-4967-a27a-d3c0895d2b5c",
-        "rep_per_hour": 4958.68,
-        "time_to_complete_minutes": 6.05,
-        "title": "Surprise Party"
+        "display": "Jr. Security Contractor",
+        "display_token": "@RepStanding_Security_Rank2",
+        "gated": false,
+        "min_reputation": 5000,
+        "name": "Security_Rank2"
       },
       {
-        "amount": 8000,
-        "location": "Regiona, Pyrostar",
-        "mission_giver": "Headhunters",
-        "mission_id": "dd1160cf-7081-4f5e-bb65-bdf631b94852",
-        "rep_per_hour": 25000.0,
-        "time_to_complete_minutes": 19.2,
-        "title": "Tactical Strike"
+        "display": "Security Contractor",
+        "display_token": "@RepStanding_Security_Rank3",
+        "gated": false,
+        "min_reputation": 30000,
+        "name": "Security_Rank3"
       },
       {
-        "amount": 8000,
-        "location": "Stanton1, .Stantonstar",
-        "mission_giver": "Headhunters",
-        "mission_id": "a953cc77-dde4-4000-ab2a-fb57f18c879a",
-        "rep_per_hour": 25000.0,
-        "time_to_complete_minutes": 19.2,
-        "title": "Tactical Strike"
+        "display": "Sr. Security Contractor",
+        "display_token": "@RepStanding_Security_Rank4",
+        "gated": false,
+        "min_reputation": 120000,
+        "name": "Security_Rank4"
       },
+      {
+        "display": "Lead Security Contractor",
+        "display_token": "@RepStanding_Security_Rank5",
+        "gated": false,
+        "min_reputation": 480000,
+        "name": "Security_Rank5"
+      },
+      {
+        "display": "Elite Security Contractor",
+        "display_token": "@RepStanding_Security_Rank6",
+        "gated": false,
+        "min_reputation": 1600000,
+        "name": "Security_Rank6"
+      }
+    ]
+  },
+  {
+    "display_token": "@RepScope_ShipCombat_HeadHunters_Name",
+    "faction": "Unlawful Headhunters",
+    "initial_reputation": 0,
+    "mission_contributors": [
       {
         "amount": 500,
         "location": "Stanton1, .Stantonstar",
@@ -11732,9 +11183,135 @@
       },
       {
         "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "6aa230b9-0719-4ca6-8e8f-55358c88ab74",
+        "rep_per_hour": 163.93,
+        "time_to_complete_minutes": 36.6,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "93113c47-1c37-4e7f-bda3-76911dfebd67",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "6198b19b-187d-4342-8883-350387408a03",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 150,
+        "location": "Nyx",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "c2871e21-9f59-448e-97c7-0e7bfe4bf8b6",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "d56b6a21-6ccc-4620-8bcc-aa3538f220dd",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
+        "location": "Regiona",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "6795cdad-8f10-47f0-905b-2383f16dccbb",
+        "rep_per_hour": 163.93,
+        "time_to_complete_minutes": 36.6,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 200,
+        "location": "Regiona",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "22813e94-3e98-4237-8591-337ce65122a9",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
+        "location": "Regiona",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "5dc4e0f0-7f7c-4e16-a3cd-85733313ce5e",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 150,
+        "location": "Regiona",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "4e250414-76b6-4e1a-afe0-3fcb463cde40",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
+        "location": "Regiona",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "b60aee2f-77a9-4b1a-9ef9-0e30f523c5bd",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "41127c2d-7685-fb1d-9f08-57bde4310aa7",
+        "rep_per_hour": 163.93,
+        "time_to_complete_minutes": 36.6,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton1",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "6948c2b9-b8b3-4358-8051-11ef761deebb",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Adagio Holdings",
         "mission_id": "46541e90-fa81-f9d4-7206-a88fdda5789f",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 150,
+        "location": "Stanton1",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "40a00ef8-0b53-9270-bc2c-ef38cda62eb2",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "~mission(Contractor|SalvageContractorTitle)"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Adagio Holdings",
+        "mission_id": "4eebc223-b15f-9cba-d1b9-070816b6caa9",
         "rep_per_hour": 0,
         "time_to_complete_minutes": 0.0,
         "title": "~mission(Contractor|SalvageContractorTitle)"
@@ -15718,11 +15295,20 @@
         "title": "VIP Client Needs Protection"
       },
       {
+        "amount": 200,
+        "location": "Stanton1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "a33c1bf7-2685-4fe8-96d2-aaf33c2fce12",
+        "rep_per_hour": 652.17,
+        "time_to_complete_minutes": 18.4,
+        "title": "Carefully Clear Site"
+      },
+      {
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "7c93c444-7bdf-42af-b4f5-ab8e8c926326",
-        "rep_per_hour": 882.35,
+        "rep_per_hour": 441.18,
         "time_to_complete_minutes": 13.6,
         "title": "Exciting New Opportunities with Foxwell Enforcement"
       },
@@ -15730,10 +15316,10 @@
         "amount": 100,
         "location": "Stanton1",
         "mission_giver": "Foxwellenforcement",
-        "mission_id": "7c93c444-7bdf-42af-b4f5-ab8e8c926326",
-        "rep_per_hour": 882.35,
-        "time_to_complete_minutes": 13.6,
-        "title": "Exciting New Opportunities with Foxwell Enforcement"
+        "mission_id": "bfc725de-6d4f-4b00-940e-3b96028aae58",
+        "rep_per_hour": 363.64,
+        "time_to_complete_minutes": 16.5,
+        "title": "Help Protect Site"
       },
       {
         "amount": 200,
@@ -15772,6 +15358,51 @@
         "title": "Orange Level Contract: Take Out Fuel Supplies"
       },
       {
+        "amount": 150,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "b0bfeb75-4f5c-458b-80e1-814526892916",
+        "rep_per_hour": 450.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Orange Level Contract: ~mission(Ship) Needs Assistance"
+      },
+      {
+        "amount": 150,
+        "location": "Pyro, Pyro1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "0d2baa66-a46a-4d03-8c8f-c242343565c4",
+        "rep_per_hour": 450.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Orange Level Contract: ~mission(Ship) Needs Assistance"
+      },
+      {
+        "amount": 150,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "0542532c-804e-43d5-87ee-592dab1782e0",
+        "rep_per_hour": 450.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Orange Level Contract: ~mission(Ship) Needs Assistance"
+      },
+      {
+        "amount": 150,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "dfd28b43-114a-4e1f-9257-0e6c07f36c53",
+        "rep_per_hour": 450.0,
+        "time_to_complete_minutes": 20.0,
+        "title": "Orange Level Contract: ~mission(Ship) Needs Assistance"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "94079b3a-b689-40ce-b8bf-f1371e4f6398",
+        "rep_per_hour": 338.98,
+        "time_to_complete_minutes": 17.7,
+        "title": "Precision Strike on ~mission(TargetName)"
+      },
+      {
         "amount": 300,
         "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
@@ -15788,6 +15419,78 @@
         "rep_per_hour": 1153.85,
         "time_to_complete_minutes": 13.0,
         "title": "Red Level Contract: Fuel Container Demolition"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "c29d15ed-0f24-4ede-881c-957cc3d239fa",
+        "rep_per_hour": 480.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Red Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Pyro1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "116b5a65-a258-41d9-82a1-7c407eb13699",
+        "rep_per_hour": 480.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Red Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "bd6069eb-b776-4b2f-a0ac-93ad3103088a",
+        "rep_per_hour": 480.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Red Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "00e63746-b222-452f-91aa-48857a7bf066",
+        "rep_per_hour": 480.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Red Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "c9654159-acbc-4e5d-8a2c-2db20dd499a7",
+        "rep_per_hour": 363.64,
+        "time_to_complete_minutes": 16.5,
+        "title": "Still Looking for Work?"
+      },
+      {
+        "amount": 150,
+        "location": "Stanton1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "69fbad01-0ca8-4910-8c03-d0f73895df00",
+        "rep_per_hour": 762.71,
+        "time_to_complete_minutes": 11.8,
+        "title": "Sweep and Clear Location"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "5f54c243-3985-4509-85c1-e5e99665a7f6",
+        "rep_per_hour": 338.98,
+        "time_to_complete_minutes": 17.7,
+        "title": "Track Down ~mission(TargetName)"
+      },
+      {
+        "amount": 100,
+        "location": ".Stantonstar",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "2aff8901-0787-4a79-a87b-e6846f7b91c0",
+        "rep_per_hour": 508.47,
+        "time_to_complete_minutes": 11.8,
+        "title": "Yellow Level Contract: Clear Out PAF"
       },
       {
         "amount": 100,
@@ -15818,12 +15521,66 @@
       },
       {
         "amount": 100,
+        "location": ".Stantonstar",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "c4fd412d-06e5-4428-8819-2b1f62d9e9c6",
+        "rep_per_hour": 508.47,
+        "time_to_complete_minutes": 11.8,
+        "title": "Yellow Level Contract: Merc Work"
+      },
+      {
+        "amount": 100,
         "location": "Stanton, Stanton1",
         "mission_giver": "Foxwellenforcement",
         "mission_id": "e63947e0-f57d-4ca2-8947-4fd2f9d9e80d",
         "rep_per_hour": 428.57,
         "time_to_complete_minutes": 14.0,
         "title": "Yellow Level Contract: Neutralize Shipjacking Gang"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "db71e9be-141b-4df2-b51b-3fbf926e687b",
+        "rep_per_hour": 400.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Yellow Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 100,
+        "location": "Pyro, Pyro1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "6166482f-352d-497a-aacc-417ce1820f03",
+        "rep_per_hour": 400.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Yellow Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx, Stanton1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "0e5f4731-ef9b-4344-bffe-4aecd7ff8184",
+        "rep_per_hour": 400.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Yellow Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 100,
+        "location": "Nyx",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "59244b0c-d105-430e-900c-9528cecafdca",
+        "rep_per_hour": 400.0,
+        "time_to_complete_minutes": 15.0,
+        "title": "Yellow Level Contract: Ship Under Attack"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "9ef512ad-9832-4fa9-bad7-60e99268df74",
+        "rep_per_hour": 689.66,
+        "time_to_complete_minutes": 8.7,
+        "title": "~mission(Contractor|DestroyProbeTitle)"
       },
       {
         "amount": 100,
@@ -16213,6 +15970,24 @@
         "title": "Ambush Op"
       },
       {
+        "amount": 150,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "660b30df-b638-451d-8947-7784c63b61dc",
+        "rep_per_hour": 882.35,
+        "time_to_complete_minutes": 10.2,
+        "title": "Ambush Op"
+      },
+      {
+        "amount": 150,
+        "location": "Stanton1, .Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "bccc63cb-aea3-4831-8805-401a3d75c926",
+        "rep_per_hour": 882.35,
+        "time_to_complete_minutes": 10.2,
+        "title": "Ambush Op"
+      },
+      {
         "amount": 50,
         "location": "Pyro1 Outpost Col M Scrp Otlw 001",
         "mission_giver": "Headhunters",
@@ -16355,6 +16130,15 @@
         "rep_per_hour": 545.45,
         "time_to_complete_minutes": 22.0,
         "title": "Bring Down the Hammer"
+      },
+      {
+        "amount": 200,
+        "location": ".Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "f56b2ee1-1729-4374-a2d5-f6a5607f3a5d",
+        "rep_per_hour": 480.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Cargo Retrieval"
       },
       {
         "amount": 300,
@@ -16591,6 +16375,24 @@
         "title": "Eliminate Annoyance"
       },
       {
+        "amount": 100,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "bcf3840e-9b2b-4477-9993-fbb8ed5b7a92",
+        "rep_per_hour": 545.45,
+        "time_to_complete_minutes": 11.0,
+        "title": "Eliminate Annoyance"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "afc59f9a-15ba-45b7-a3e8-2b4f9f4ecea7",
+        "rep_per_hour": 545.45,
+        "time_to_complete_minutes": 11.0,
+        "title": "Eliminate Annoyance"
+      },
+      {
         "amount": 300,
         "location": "Nyx",
         "mission_giver": "Headhunters",
@@ -16606,6 +16408,24 @@
         "mission_id": "c605f2a6-5412-471d-b1bc-39345cde88db",
         "rep_per_hour": 751.57,
         "time_to_complete_minutes": 23.95,
+        "title": "Elite Op"
+      },
+      {
+        "amount": 300,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "24b492ca-8dc8-43fb-a02b-94b5c7cfc918",
+        "rep_per_hour": 784.31,
+        "time_to_complete_minutes": 22.95,
+        "title": "Elite Op"
+      },
+      {
+        "amount": 300,
+        "location": "Stanton1, .Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "e85bd438-b950-4830-96f2-56e643171956",
+        "rep_per_hour": 784.31,
+        "time_to_complete_minutes": 22.95,
         "title": "Elite Op"
       },
       {
@@ -16805,6 +16625,15 @@
         "rep_per_hour": 2482.76,
         "time_to_complete_minutes": 29.0,
         "title": "Get the Good Stuff"
+      },
+      {
+        "amount": 200,
+        "location": ".Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "38437a9a-f57f-4771-8f4f-d5b6612b5cb5",
+        "rep_per_hour": 342.86,
+        "time_to_complete_minutes": 35.0,
+        "title": "Getting Our Goods Back"
       },
       {
         "amount": 200,
@@ -17096,6 +16925,24 @@
       },
       {
         "amount": 100,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "f3492e3b-b1e6-48d9-8388-6471608cb94e",
+        "rep_per_hour": 991.74,
+        "time_to_complete_minutes": 6.05,
+        "title": "Head Hunters Ship Ambush Intro Title 001"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1, .Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "0aae9359-4b9f-4d9b-af72-1b513594ccc8",
+        "rep_per_hour": 991.74,
+        "time_to_complete_minutes": 6.05,
+        "title": "Head Hunters Ship Ambush Intro Title 001"
+      },
+      {
+        "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "922f2480-2b0f-470d-90c7-63c766633912",
@@ -17266,6 +17113,24 @@
         "title": "Help Headhunters at ~mission(DefendLocationWrapperLocation)"
       },
       {
+        "amount": 200,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "7d05343c-d629-439b-befb-de86cf38715b",
+        "rep_per_hour": 166.67,
+        "time_to_complete_minutes": 72.0,
+        "title": "Help Headhunters at ~mission(DefendLocationWrapperLocation)"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "8e4a00bf-ea92-4e96-a67d-363cd1c1f867",
+        "rep_per_hour": 166.67,
+        "time_to_complete_minutes": 72.0,
+        "title": "Help Headhunters at ~mission(DefendLocationWrapperLocation)"
+      },
+      {
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
@@ -17398,6 +17263,24 @@
         "mission_id": "abbbeee2-38ab-49b9-808f-0836de89a086",
         "rep_per_hour": 451.69,
         "time_to_complete_minutes": 39.85,
+        "title": "Hunt Some Heads"
+      },
+      {
+        "amount": 300,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "120185a6-ff2e-45ac-801a-0b26dbf1cb22",
+        "rep_per_hour": 463.32,
+        "time_to_complete_minutes": 38.85,
+        "title": "Hunt Some Heads"
+      },
+      {
+        "amount": 300,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "da845673-0334-4949-bb12-5ae363a54356",
+        "rep_per_hour": 463.32,
+        "time_to_complete_minutes": 38.85,
         "title": "Hunt Some Heads"
       },
       {
@@ -17689,6 +17572,24 @@
         "title": "Looking For Trouble"
       },
       {
+        "amount": 200,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "f5f5ba5c-4205-4362-91b2-cf5296963ed1",
+        "rep_per_hour": 439.56,
+        "time_to_complete_minutes": 27.3,
+        "title": "Looking For Trouble"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "4acddde8-0e8f-4ea7-9124-cccc2a2e2f48",
+        "rep_per_hour": 439.56,
+        "time_to_complete_minutes": 27.3,
+        "title": "Looking For Trouble"
+      },
+      {
         "amount": 100,
         "location": "Regiona, Pyrostar",
         "mission_giver": "Headhunters",
@@ -17897,6 +17798,24 @@
       },
       {
         "amount": 100,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "5aefc427-5c02-4940-a2f0-c93dab00383b",
+        "rep_per_hour": 230.77,
+        "time_to_complete_minutes": 26.0,
+        "title": "Protect Our Site"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "eadcd6bc-1c7b-4782-b7f6-4cad4fb39bcc",
+        "rep_per_hour": 230.77,
+        "time_to_complete_minutes": 26.0,
+        "title": "Protect Our Site"
+      },
+      {
+        "amount": 100,
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "f89b7163-52b6-4b8b-a941-6c62a8d571ba",
@@ -17986,6 +17905,24 @@
         "title": "Reprisal Attack"
       },
       {
+        "amount": 200,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "303f32e7-40b9-42ec-8b82-a51dedd80182",
+        "rep_per_hour": 764.33,
+        "time_to_complete_minutes": 15.7,
+        "title": "Reprisal Attack"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton1, .Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "d9557f24-001d-44b2-a0a6-59eed027db46",
+        "rep_per_hour": 764.33,
+        "time_to_complete_minutes": 15.7,
+        "title": "Reprisal Attack"
+      },
+      {
         "amount": 25,
         "location": "Regionc, Pyrostar",
         "mission_giver": "Headhunters",
@@ -18017,6 +17954,24 @@
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "e474df93-fce1-488c-aa04-8754e8f7e62e",
+        "rep_per_hour": 142.86,
+        "time_to_complete_minutes": 126.0,
+        "title": "Restore Order at ~mission(DefendLocationWrapperLocation)"
+      },
+      {
+        "amount": 300,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "63c181b7-462b-45bf-8ca6-0a6eadf0bc25",
+        "rep_per_hour": 142.86,
+        "time_to_complete_minutes": 126.0,
+        "title": "Restore Order at ~mission(DefendLocationWrapperLocation)"
+      },
+      {
+        "amount": 300,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "5b1b82d9-fa2f-4a7a-8d5d-fa21e4908493",
         "rep_per_hour": 142.86,
         "time_to_complete_minutes": 126.0,
         "title": "Restore Order at ~mission(DefendLocationWrapperLocation)"
@@ -18073,6 +18028,24 @@
         "mission_id": "eb9a15b4-37d1-452b-8a64-3ec9d4ba13e7",
         "rep_per_hour": 309.28,
         "time_to_complete_minutes": 19.4,
+        "title": "Scout and Scan"
+      },
+      {
+        "amount": 100,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "0e6b70f6-ee9d-437c-ae01-7ca28d17d616",
+        "rep_per_hour": 326.09,
+        "time_to_complete_minutes": 18.4,
+        "title": "Scout and Scan"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "6655fa88-92d6-4224-8c02-68be74906348",
+        "rep_per_hour": 326.09,
+        "time_to_complete_minutes": 18.4,
         "title": "Scout and Scan"
       },
       {
@@ -18248,9 +18221,36 @@
       },
       {
         "amount": 150,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "2d54b476-7ed3-462a-b046-8ee4cf0b8249",
+        "rep_per_hour": 187.5,
+        "time_to_complete_minutes": 48.0,
+        "title": "Secure Our Airspace"
+      },
+      {
+        "amount": 150,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "bc8b5616-d602-439b-ae3a-1025bb809ae2",
+        "rep_per_hour": 187.5,
+        "time_to_complete_minutes": 48.0,
+        "title": "Secure Our Airspace"
+      },
+      {
+        "amount": 150,
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "d2f45155-d6ee-4f2a-9eb6-b69f08c6c154",
+        "rep_per_hour": 180.0,
+        "time_to_complete_minutes": 50.0,
+        "title": "Secure ~mission(Location) from Upstarts"
+      },
+      {
+        "amount": 150,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "7d4e6d75-d694-4b55-8728-1a2ee752cae2",
         "rep_per_hour": 180.0,
         "time_to_complete_minutes": 50.0,
         "title": "Secure ~mission(Location) from Upstarts"
@@ -18269,6 +18269,15 @@
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "f03e9edd-f363-4b31-89d3-9747a6591314",
+        "rep_per_hour": 300.0,
+        "time_to_complete_minutes": 30.0,
+        "title": "Secure ~mission(Objects) From Rivals"
+      },
+      {
+        "amount": 150,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "28bee1b6-60ad-48db-a5af-5a8ac50562d5",
         "rep_per_hour": 300.0,
         "time_to_complete_minutes": 30.0,
         "title": "Secure ~mission(Objects) From Rivals"
@@ -18298,6 +18307,24 @@
         "mission_id": "904f0ea3-d298-49cf-aaea-01301ef17e96",
         "rep_per_hour": 377.36,
         "time_to_complete_minutes": 15.9,
+        "title": "See What’s Out There"
+      },
+      {
+        "amount": 100,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "4008ba96-3d35-4e44-aa4f-5d647b9bbfd6",
+        "rep_per_hour": 402.68,
+        "time_to_complete_minutes": 14.9,
+        "title": "See What’s Out There"
+      },
+      {
+        "amount": 100,
+        "location": ".Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "759d9443-f0df-4544-894b-dac903b149b1",
+        "rep_per_hour": 402.68,
+        "time_to_complete_minutes": 14.9,
         "title": "See What’s Out There"
       },
       {
@@ -18436,6 +18463,24 @@
         "title": "Silent Strike"
       },
       {
+        "amount": 100,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "800d0117-2b80-4885-a35b-b9516a48d1f8",
+        "rep_per_hour": 659.34,
+        "time_to_complete_minutes": 9.1,
+        "title": "Silent Strike"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1, .Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "2e37a1cf-2e92-41d1-90de-03832a834d26",
+        "rep_per_hour": 659.34,
+        "time_to_complete_minutes": 9.1,
+        "title": "Silent Strike"
+      },
+      {
         "amount": 75,
         "location": "Regiona",
         "mission_giver": "Headhunters",
@@ -18490,6 +18535,24 @@
         "title": "Space Patrol"
       },
       {
+        "amount": 150,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "78b32751-c7b0-4b35-b822-7db352052f19",
+        "rep_per_hour": 445.54,
+        "time_to_complete_minutes": 20.2,
+        "title": "Space Patrol"
+      },
+      {
+        "amount": 150,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "18af71cc-e37e-4275-9d35-dde1bc72d809",
+        "rep_per_hour": 445.54,
+        "time_to_complete_minutes": 20.2,
+        "title": "Space Patrol"
+      },
+      {
         "amount": 250,
         "location": "Nyx",
         "mission_giver": "Headhunters",
@@ -18509,9 +18572,54 @@
       },
       {
         "amount": 250,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "f93099ce-fe91-4b41-b9c7-0f9ed0cea77f",
+        "rep_per_hour": 500.67,
+        "time_to_complete_minutes": 29.96,
+        "title": "Stand Our Ground"
+      },
+      {
+        "amount": 250,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "1447c339-dbfe-4c4a-b1ac-5a2ebf726ee5",
+        "rep_per_hour": 500.67,
+        "time_to_complete_minutes": 29.96,
+        "title": "Stand Our Ground"
+      },
+      {
+        "amount": 200,
+        "location": ".Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "9bb5529b-54ed-4f46-a37d-634836687ac6",
+        "rep_per_hour": 480.0,
+        "time_to_complete_minutes": 25.0,
+        "title": "Stock Taking"
+      },
+      {
+        "amount": 250,
         "location": "Nyx",
         "mission_giver": "Headhunters",
         "mission_id": "88e2b07c-a3e2-40d1-b219-13e06aff1784",
+        "rep_per_hour": 166.67,
+        "time_to_complete_minutes": 90.0,
+        "title": "Stop Attack at ~mission(DefendLocationWrapperLocation)"
+      },
+      {
+        "amount": 250,
+        "location": "Regiona",
+        "mission_giver": "Headhunters",
+        "mission_id": "0952be21-c29f-4e37-bcd8-6132d2f77646",
+        "rep_per_hour": 166.67,
+        "time_to_complete_minutes": 90.0,
+        "title": "Stop Attack at ~mission(DefendLocationWrapperLocation)"
+      },
+      {
+        "amount": 250,
+        "location": "Stanton1",
+        "mission_giver": "Headhunters",
+        "mission_id": "d0198bf9-bafe-47c9-87ba-a7e625c0a240",
         "rep_per_hour": 166.67,
         "time_to_complete_minutes": 90.0,
         "title": "Stop Attack at ~mission(DefendLocationWrapperLocation)"
@@ -18598,6 +18706,24 @@
         "title": "Surprise Party"
       },
       {
+        "amount": 100,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "a953c754-e864-4732-903e-a82db5df5271",
+        "rep_per_hour": 991.74,
+        "time_to_complete_minutes": 6.05,
+        "title": "Surprise Party"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1, .Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "8784007b-d2b2-4967-a27a-d3c0895d2b5c",
+        "rep_per_hour": 991.74,
+        "time_to_complete_minutes": 6.05,
+        "title": "Surprise Party"
+      },
+      {
         "amount": 300,
         "location": "Regionb, Pyrostar",
         "mission_giver": "Headhunters",
@@ -18622,6 +18748,24 @@
         "mission_id": "da719df2-ad11-4757-8d01-bde6e6e0470d",
         "rep_per_hour": 742.57,
         "time_to_complete_minutes": 20.2,
+        "title": "Tactical Strike"
+      },
+      {
+        "amount": 250,
+        "location": "Regiona, Pyrostar",
+        "mission_giver": "Headhunters",
+        "mission_id": "dd1160cf-7081-4f5e-bb65-bdf631b94852",
+        "rep_per_hour": 781.25,
+        "time_to_complete_minutes": 19.2,
+        "title": "Tactical Strike"
+      },
+      {
+        "amount": 250,
+        "location": "Stanton1, .Stantonstar",
+        "mission_giver": "Headhunters",
+        "mission_id": "a953cc77-dde4-4000-ab2a-fb57f18c879a",
+        "rep_per_hour": 781.25,
+        "time_to_complete_minutes": 19.2,
         "title": "Tactical Strike"
       },
       {
@@ -20245,15 +20389,6 @@
         "title": "Stuck Ling Shipment Pending Delivery"
       },
       {
-        "amount": 800,
-        "location": "Nyx",
-        "mission_giver": "Missionproviders",
-        "mission_id": "fade3a4e-4d28-4efc-be7c-d5ba38a6dd5c",
-        "rep_per_hour": 3200.0,
-        "time_to_complete_minutes": 15.0,
-        "title": "Battaglia Story01 Title"
-      },
-      {
         "amount": 150,
         "location": "",
         "mission_giver": "Northrock Service Group",
@@ -21002,6 +21137,15 @@
       },
       {
         "amount": 150,
+        "location": "Stanton1",
+        "mission_giver": "Shipbattles",
+        "mission_id": "dda8c4fb-b0fd-44af-9276-b13f0c781e90",
+        "rep_per_hour": 882.35,
+        "time_to_complete_minutes": 10.2,
+        "title": "Orange Level Contract: Spring a Trap"
+      },
+      {
+        "amount": 150,
         "location": "Nyx",
         "mission_giver": "Shipbattles",
         "mission_id": "ffb4a5bd-6e38-47b9-b221-e841c944536d",
@@ -21221,6 +21365,15 @@
         "location": "Regiona",
         "mission_giver": "Shipbattles",
         "mission_id": "3baf0632-0c91-433e-b91a-04f1f73b6b70",
+        "rep_per_hour": 991.74,
+        "time_to_complete_minutes": 6.05,
+        "title": "Yellow Level Contract: Ambush An Amateur"
+      },
+      {
+        "amount": 100,
+        "location": "Stanton1",
+        "mission_giver": "Shipbattles",
+        "mission_id": "7afeaf4d-a225-4d03-8c8d-625746cde3b5",
         "rep_per_hour": 991.74,
         "time_to_complete_minutes": 6.05,
         "title": "Yellow Level Contract: Ambush An Amateur"
@@ -23219,8 +23372,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "b2dd6892-75a0-4252-bafd-3a9de97c0c0e",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 383.39,
+        "time_to_complete_minutes": 31.3,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23228,8 +23381,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "a3b2707c-9e8d-455f-9d10-e6db43e7d234",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 648.65,
+        "time_to_complete_minutes": 18.5,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23237,8 +23390,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "492bfe2d-f080-4892-8ccc-901d43ec2f73",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 332.41,
+        "time_to_complete_minutes": 36.1,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23246,8 +23399,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "328fa205-e376-4e67-abcb-6dbd35c5fa73",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 392.16,
+        "time_to_complete_minutes": 30.6,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23255,8 +23408,8 @@
         "location": "Nyx, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "446c3c74-f920-4520-bbef-180af085fc17",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 454.55,
+        "time_to_complete_minutes": 26.4,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23264,8 +23417,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "2c50bc3a-40d9-447a-baf2-3a9547125ae2",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 320.86,
+        "time_to_complete_minutes": 37.4,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23273,8 +23426,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "bd1e48f4-7d7a-4ec3-934c-2441842dc884",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 585.37,
+        "time_to_complete_minutes": 20.5,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23282,8 +23435,17 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "51df6219-059e-400e-af6c-ee14b36f58e6",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 281.69,
+        "time_to_complete_minutes": 42.6,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "5eec8aad-4aa8-4f4b-b72d-42049a9e19eb",
+        "rep_per_hour": 347.83,
+        "time_to_complete_minutes": 34.5,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23291,8 +23453,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "934a41e0-4a33-415a-823e-0e7f3d713b8b",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 302.27,
+        "time_to_complete_minutes": 39.7,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23300,17 +23462,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "23a6c554-3ed2-48ff-87e3-5c3521ca7ec3",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
-        "title": "CRITICAL FLEET REFUEL"
-      },
-      {
-        "amount": 200,
-        "location": "Pyro",
-        "mission_giver": "United Wayfarers Club",
-        "mission_id": "9f22600f-aae7-4470-8f79-a614bb866b2b",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 412.37,
+        "time_to_complete_minutes": 29.1,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23318,8 +23471,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "1128fd25-1fb1-4406-ad92-c802cfa65588",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 526.32,
+        "time_to_complete_minutes": 22.8,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23327,17 +23480,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "bf7770b6-5d56-49a3-80b1-5e28643b1fec",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
-        "title": "CRITICAL FLEET REFUEL"
-      },
-      {
-        "amount": 200,
-        "location": "Stanton, Stanton1",
-        "mission_giver": "United Wayfarers Club",
-        "mission_id": "ab8e2944-d6cd-425e-a6e4-6a8e1abe61cd",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 845.07,
+        "time_to_complete_minutes": 14.2,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23345,8 +23489,17 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "517f3094-eeaf-4177-8d4f-8eb2c96f9d87",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 398.67,
+        "time_to_complete_minutes": 30.1,
+        "title": "CRITICAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "adebbccc-fff4-46f6-8dac-9cb9be474b52",
+        "rep_per_hour": 648.65,
+        "time_to_complete_minutes": 18.5,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23354,8 +23507,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "6b73fc99-0dc7-478f-89cd-a861ced1e833",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 533.33,
+        "time_to_complete_minutes": 22.5,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23363,8 +23516,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "4a8e0eaf-3426-40ff-a928-23a258a576c5",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 545.45,
+        "time_to_complete_minutes": 22.0,
         "title": "CRITICAL FLEET REFUEL"
       },
       {
@@ -23372,8 +23525,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "1c0a7a17-4748-42a4-9ac6-7797b8ecd6d3",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 431.65,
+        "time_to_complete_minutes": 27.8,
         "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23390,8 +23543,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "3ddfed2f-1c73-43dd-832b-66e683d553db",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 465.12,
+        "time_to_complete_minutes": 25.8,
         "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23399,8 +23552,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "9262cdc6-6033-4364-a0f4-103713494a05",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 344.83,
+        "time_to_complete_minutes": 34.8,
         "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23414,20 +23567,11 @@
       },
       {
         "amount": 200,
-        "location": "Pyro, Regiona",
-        "mission_giver": "United Wayfarers Club",
-        "mission_id": "5eec8aad-4aa8-4f4b-b72d-42049a9e19eb",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
-        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
-      },
-      {
-        "amount": 200,
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "422acb7c-0666-452a-b259-29941012370e",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 652.17,
+        "time_to_complete_minutes": 18.4,
         "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23437,15 +23581,6 @@
         "mission_id": "1f2d664c-2c64-4469-85ee-037febaa382b",
         "rep_per_hour": 491.8,
         "time_to_complete_minutes": 24.4,
-        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
-      },
-      {
-        "amount": 200,
-        "location": "Stanton, Stanton1",
-        "mission_giver": "United Wayfarers Club",
-        "mission_id": "adebbccc-fff4-46f6-8dac-9cb9be474b52",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
         "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23480,8 +23615,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "c6e070d0-ac7b-4f80-a941-772fb0de9981",
-        "rep_per_hour": 895.52,
-        "time_to_complete_minutes": 6.7,
+        "rep_per_hour": 674.16,
+        "time_to_complete_minutes": 8.9,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23494,21 +23629,12 @@
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
-        "amount": 200,
-        "location": "Nyx",
-        "mission_giver": "United Wayfarers Club",
-        "mission_id": "81a82acd-d286-4087-a4d4-187493f2ad3a",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
-        "title": "REFUEL REQUEST: ~mission(Ship)"
-      },
-      {
         "amount": 100,
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "2597de48-f738-45bb-8baf-9cdc327b2328",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1153.85,
+        "time_to_complete_minutes": 5.2,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23516,8 +23642,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "7665885b-55ce-4847-a076-2262ae3f22b4",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1500.0,
+        "time_to_complete_minutes": 4.0,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23525,8 +23651,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "ef17c7be-ed82-48f0-a6bc-62a76fa88d8d",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 2000.0,
+        "time_to_complete_minutes": 6.0,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23539,21 +23665,12 @@
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
-        "amount": 200,
-        "location": "Pyro, Regiona",
-        "mission_giver": "United Wayfarers Club",
-        "mission_id": "9b51e83c-1377-417f-a641-5b2069c1e423",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
-        "title": "REFUEL REQUEST: ~mission(Ship)"
-      },
-      {
         "amount": 100,
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "e333dac6-8d53-46de-b749-6c6dabaf09b5",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 983.61,
+        "time_to_complete_minutes": 6.1,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23561,8 +23678,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "4a7f1bcc-290c-4801-bcee-483cc4c1771c",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1250.0,
+        "time_to_complete_minutes": 4.8,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23570,8 +23687,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "e29a04dc-6e45-49d5-90ef-8fad002da766",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1714.29,
+        "time_to_complete_minutes": 7.0,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23584,21 +23701,12 @@
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
-        "amount": 200,
-        "location": "Stanton, Stanton1",
-        "mission_giver": "United Wayfarers Club",
-        "mission_id": "593b983c-0f26-4674-82e4-81cac04106ec",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
-        "title": "REFUEL REQUEST: ~mission(Ship)"
-      },
-      {
         "amount": 100,
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "a17c4abc-d8e2-4921-8070-e5aa56f665a5",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1395.35,
+        "time_to_complete_minutes": 4.3,
         "title": "REFUEL REQUEST: ~mission(Ship)"
       },
       {
@@ -23615,9 +23723,27 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "d5f675d6-2e55-4931-b3da-9dd2d6e95709",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 2400.0,
+        "time_to_complete_minutes": 5.0,
         "title": "REFUEL REQUEST: ~mission(Ship)"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "9f22600f-aae7-4470-8f79-a614bb866b2b",
+        "rep_per_hour": 242.42,
+        "time_to_complete_minutes": 49.5,
+        "title": "URGENT CAPITAL FLEET REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "ab8e2944-d6cd-425e-a6e4-6a8e1abe61cd",
+        "rep_per_hour": 468.75,
+        "time_to_complete_minutes": 25.6,
+        "title": "URGENT CAPITAL FLEET REFUEL"
       },
       {
         "amount": 50,
@@ -23759,17 +23885,17 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "dfc22b0a-2e02-447b-baaa-b67d97712a53",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 437.96,
+        "time_to_complete_minutes": 27.4,
         "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
-        "mission_id": "2504eda0-4149-4b87-8c16-2f405a0ef4cf",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "mission_id": "81a82acd-d286-4087-a4d4-187493f2ad3a",
+        "rep_per_hour": 750.0,
+        "time_to_complete_minutes": 16.0,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23777,8 +23903,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "689e9ac1-30a6-48ab-9691-bfb649e7e98e",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 560.75,
+        "time_to_complete_minutes": 10.7,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23786,8 +23912,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "2d59b1f3-5802-4921-893f-c0538bbcfd5a",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 895.52,
+        "time_to_complete_minutes": 13.4,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23795,8 +23921,17 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "664407d8-8f62-42a6-bb04-3b6c368f2aa8",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 560.75,
+        "time_to_complete_minutes": 10.7,
+        "title": "URGENT CONVOY REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "5d0179dd-b4b5-4613-8d52-9e522ec5507a",
+        "rep_per_hour": 521.74,
+        "time_to_complete_minutes": 23.0,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23804,8 +23939,8 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "997eddff-754e-4a5f-9a6b-6411707e97b7",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 916.03,
+        "time_to_complete_minutes": 13.1,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23813,8 +23948,17 @@
         "location": "Nyx",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "b137e47d-7c3f-464c-bf45-0d49d46bfcd0",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1121.5,
+        "time_to_complete_minutes": 10.7,
+        "title": "URGENT CONVOY REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Nyx",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "2504eda0-4149-4b87-8c16-2f405a0ef4cf",
+        "rep_per_hour": 521.74,
+        "time_to_complete_minutes": 23.0,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23822,17 +23966,17 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "c88fe59f-39b3-40ad-93a6-db76b505042b",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 470.59,
+        "time_to_complete_minutes": 25.5,
         "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
-        "mission_id": "f5d62781-5f6b-4eb0-8167-1362ebcaa3d8",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "mission_id": "9b51e83c-1377-417f-a641-5b2069c1e423",
+        "rep_per_hour": 674.16,
+        "time_to_complete_minutes": 17.8,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23840,8 +23984,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "29c23153-3ebf-4c34-9128-2174da5d60e0",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 495.87,
+        "time_to_complete_minutes": 12.1,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23849,8 +23993,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "f81c98d1-59ac-420d-8ab3-2a839ae41b6f",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 794.7,
+        "time_to_complete_minutes": 15.1,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23858,8 +24002,17 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "2c5309c8-6fb0-419a-9727-98cd07d3b77b",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 495.87,
+        "time_to_complete_minutes": 12.1,
+        "title": "URGENT CONVOY REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "f58c6360-348f-4744-88f8-46f739fb73a0",
+        "rep_per_hour": 397.35,
+        "time_to_complete_minutes": 30.2,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23867,8 +24020,8 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "5347637c-8313-45c8-850e-120346391b40",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 816.33,
+        "time_to_complete_minutes": 14.7,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23876,8 +24029,17 @@
         "location": "Pyro, Regiona",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "49a2d0fe-8428-4a1f-af74-df332a4ef828",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 991.74,
+        "time_to_complete_minutes": 12.1,
+        "title": "URGENT CONVOY REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Pyro, Regiona",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "f5d62781-5f6b-4eb0-8167-1362ebcaa3d8",
+        "rep_per_hour": 470.59,
+        "time_to_complete_minutes": 25.5,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23885,17 +24047,17 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "4f4ff99e-0440-41e7-9071-8a84e0e61af5",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 555.56,
+        "time_to_complete_minutes": 21.6,
         "title": "URGENT CONVOY REFUEL"
       },
       {
         "amount": 200,
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
-        "mission_id": "51e8d38f-6a18-4b95-afd6-8f82ff5564c2",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "mission_id": "593b983c-0f26-4674-82e4-81cac04106ec",
+        "rep_per_hour": 902.26,
+        "time_to_complete_minutes": 13.3,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23903,8 +24065,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "f4723ecc-5927-4fdc-a238-9318f491ba12",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 674.16,
+        "time_to_complete_minutes": 8.9,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23912,8 +24074,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "0b862c68-8b32-40af-96ed-40a0dbc1c47c",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1071.43,
+        "time_to_complete_minutes": 11.2,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23921,8 +24083,17 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "3b19d365-3ff9-4980-9eac-f04da407499f",
-        "rep_per_hour": 1818.18,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 674.16,
+        "time_to_complete_minutes": 8.9,
+        "title": "URGENT CONVOY REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "debb0e7a-b79a-470b-87e2-6b3c68727899",
+        "rep_per_hour": 666.67,
+        "time_to_complete_minutes": 18.0,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23930,8 +24101,8 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "3ab903b3-3c9b-48a4-aa60-1d6050a53aa8",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1100.92,
+        "time_to_complete_minutes": 10.9,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -23939,8 +24110,17 @@
         "location": "Stanton, Stanton1",
         "mission_giver": "United Wayfarers Club",
         "mission_id": "b4593eb8-3ad0-407c-906b-4a5a0c97ed94",
-        "rep_per_hour": 3636.36,
-        "time_to_complete_minutes": 3.3,
+        "rep_per_hour": 1348.31,
+        "time_to_complete_minutes": 8.9,
+        "title": "URGENT CONVOY REFUEL"
+      },
+      {
+        "amount": 200,
+        "location": "Stanton, Stanton1",
+        "mission_giver": "United Wayfarers Club",
+        "mission_id": "51e8d38f-6a18-4b95-afd6-8f82ff5564c2",
+        "rep_per_hour": 666.67,
+        "time_to_complete_minutes": 18.0,
         "title": "URGENT CONVOY REFUEL"
       },
       {
@@ -25355,6 +25535,15 @@
         "title": "Guardian WiK-X"
       },
       {
+        "amount": 10,
+        "location": "",
+        "mission_giver": "Contractgenerator",
+        "mission_id": "88bb3702-e20a-42e3-8ba3-328f2333e30c",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "Heavy and Bright"
+      },
+      {
         "amount": 25,
         "location": "",
         "mission_giver": "Contractgenerator",
@@ -25623,6 +25812,15 @@
         "rep_per_hour": 0,
         "time_to_complete_minutes": 0.0,
         "title": "The Collector Mod Atls Geo Grad3 Name"
+      },
+      {
+        "amount": 10,
+        "location": "",
+        "mission_giver": "Contractgenerator",
+        "mission_id": "a026b45d-6726-4a86-898c-e0207f2880c4",
+        "rep_per_hour": 0,
+        "time_to_complete_minutes": 0.0,
+        "title": "Too Much Gun"
       },
       {
         "amount": 30,

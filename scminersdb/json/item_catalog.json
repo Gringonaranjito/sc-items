@@ -39808,6 +39808,9 @@
   {
     "item_info": {
       "locations": [
+        "_PointsTo_:ptr:4",
+        "_PointsTo_:ptr:5",
+        "_PointsTo_:ptr:13",
         "_PointsTo_:ptr:6",
         "_PointsTo_:ptr:7",
         "_PointsTo_:ptr:15"
@@ -39850,6 +39853,9 @@
       }
     },
     "locations": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -39898,6 +39904,9 @@
   {
     "item_info": {
       "locations": [
+        "_PointsTo_:ptr:4",
+        "_PointsTo_:ptr:5",
+        "_PointsTo_:ptr:13",
         "_PointsTo_:ptr:6",
         "_PointsTo_:ptr:7",
         "_PointsTo_:ptr:15"
@@ -39940,6 +39949,9 @@
       }
     },
     "locations": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -39988,6 +40000,9 @@
   {
     "item_info": {
       "locations": [
+        "_PointsTo_:ptr:4",
+        "_PointsTo_:ptr:5",
+        "_PointsTo_:ptr:13",
         "_PointsTo_:ptr:6",
         "_PointsTo_:ptr:7",
         "_PointsTo_:ptr:15"
@@ -40030,6 +40045,9 @@
       }
     },
     "locations": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -40438,6 +40456,9 @@
   {
     "item_info": {
       "locations": [
+        "_PointsTo_:ptr:4",
+        "_PointsTo_:ptr:5",
+        "_PointsTo_:ptr:13",
         "_PointsTo_:ptr:6",
         "_PointsTo_:ptr:7",
         "_PointsTo_:ptr:15"
@@ -40480,6 +40501,9 @@
       }
     },
     "locations": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -41428,9 +41452,9 @@
   {
     "item_info": {
       "locations": [
-        "_PointsTo_:ptr:6",
-        "_PointsTo_:ptr:7",
-        "_PointsTo_:ptr:15"
+        "_PointsTo_:ptr:4",
+        "_PointsTo_:ptr:5",
+        "_PointsTo_:ptr:13"
       ],
       "purchasable": true,
       "stats": {
@@ -41470,9 +41494,9 @@
       }
     },
     "locations": [
-      "_PointsTo_:ptr:6",
-      "_PointsTo_:ptr:7",
-      "_PointsTo_:ptr:15"
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13"
     ],
     "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_1",
     "purchasable": true,
@@ -41518,9 +41542,9 @@
   {
     "item_info": {
       "locations": [
-        "_PointsTo_:ptr:6",
-        "_PointsTo_:ptr:7",
-        "_PointsTo_:ptr:15"
+        "_PointsTo_:ptr:4",
+        "_PointsTo_:ptr:5",
+        "_PointsTo_:ptr:13"
       ],
       "purchasable": true,
       "stats": {
@@ -41560,9 +41584,9 @@
       }
     },
     "locations": [
-      "_PointsTo_:ptr:6",
-      "_PointsTo_:ptr:7",
-      "_PointsTo_:ptr:15"
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13"
     ],
     "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_2",
     "purchasable": true,
@@ -41608,9 +41632,9 @@
   {
     "item_info": {
       "locations": [
-        "_PointsTo_:ptr:6",
-        "_PointsTo_:ptr:7",
-        "_PointsTo_:ptr:15"
+        "_PointsTo_:ptr:4",
+        "_PointsTo_:ptr:5",
+        "_PointsTo_:ptr:13"
       ],
       "purchasable": true,
       "stats": {
@@ -41650,9 +41674,9 @@
       }
     },
     "locations": [
-      "_PointsTo_:ptr:6",
-      "_PointsTo_:ptr:7",
-      "_PointsTo_:ptr:15"
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13"
     ],
     "name": "EntityClassDefinition.FPS_Consumable_KeyCard_SOO_IFFI_3",
     "purchasable": true,

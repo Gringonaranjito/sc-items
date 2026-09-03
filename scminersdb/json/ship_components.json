@@ -112,6 +112,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem.json"
   },
   {
+    "component_name": "@item_Cargo_ShipMining_Pod_Golem_BTGL_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Cargo_ShipMining_Pod_Golem_BTGL",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem_btgl.json"
+  },
+  {
     "component_name": "@item_Mining_MiningSack_ARGO_Name",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -126,6 +134,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Cargo_ShipMining_Pod_Mole_Collapsed",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_mole_collapsed.json"
+  },
+  {
+    "component_name": "@item_Cargo_ShipMining_Pod_MoleProspector_BTGL_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Cargo_ShipMining_Pod_MoleProspector_BTGL",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_moleprospector_btgl.json"
   },
   {
     "component_name": "@item_Mining_MiningSack_MISC_Name",
@@ -2336,6 +2352,70 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_wcpr_s03_kragen_scitem.json"
   },
   {
+    "component_name": "@item_fuelnozzle_GRIN_Fast_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleFast",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlefast.json"
+  },
+  {
+    "component_name": "@Nozzle_FuelGiver_GRIN_NozzleSecure_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleSecure",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlesecure.json"
+  },
+  {
+    "component_name": "@Nozzle_FuelGiver_GRIN_NozzleVeryFast_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVeryFast",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleveryfast.json"
+  },
+  {
+    "component_name": "@item_fuelnozzle_GRIN_Safe_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVerySecure",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleverysecure.json"
+  },
+  {
+    "component_name": "@item_fuelnozzle_MISC_Standard_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_MISC_NozzleStandard",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_misc_nozzlestandard.json"
+  },
+  {
+    "component_name": "@Nozzle_FuelGiver_SHIN_NozzleExpensiveFast_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveFast",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivefast.json"
+  },
+  {
+    "component_name": "@Nozzle_FuelGiver_SHIN_NozzleExpensiveSecure_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveSecure",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivesecure.json"
+  },
+  {
+    "component_name": "@Nozzle_FuelGiver_SHIN_NozzleMostExpensive_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleMostExpensive",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzlemostexpensive.json"
+  },
+  {
     "component_name": "@LOC_PLACEHOLDER",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -2444,6 +2524,30 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_HydrogenPrefilled",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_hydrogenprefilled.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_QuantumPrefilled",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_quantumprefilled.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandart",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandart.json"
   },
@@ -2470,6 +2574,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.FuelPod_SHIN_FastAndInsecure",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.FuelPod_SHIN_FastAndInsecure_HydrogenPrefilled",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure_hydrogenprefilled.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
@@ -2712,6 +2824,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_brandt.json"
   },
   {
+    "component_name": "@LOC_EMPTY",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Mining_Modules_Active_Clearcut",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_clearcut.json"
+  },
+  {
     "component_name": "@item_Mining_Consumable_Forel",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -2768,6 +2888,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_torpid.json"
   },
   {
+    "component_name": "@item_Mining_Modules_Passive_THCN_Power_BTGL_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Mining_Modules_Passive_Deluge",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_deluge.json"
+  },
+  {
     "component_name": "@item_Mining_Modules_Passive_FLTR_MK1",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -2814,6 +2942,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Mining_Modules_Passive_Focus_MK3",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_focus_mk3.json"
+  },
+  {
+    "component_name": "@item_Mining_Modules_Passive_THCN_Resistance_BTGL_Name",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Mining_Modules_Passive_Overrun",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_overrun.json"
   },
   {
     "component_name": "@item_Mining_Modules_Passive_Rieger_MK1",
@@ -4840,6 +4976,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_green_black_yellow.json"
   },
   {
+    "component_name": "@item_NameAsgard_Paint_Silver_Silver_Silver",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Asgard_Silver_Silver_Silver",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_silver_silver_silver.json"
+  },
+  {
     "component_name": "@LOC_PLACEHOLDER",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -5376,6 +5520,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ballista_camo_01.json"
   },
   {
+    "component_name": "@item_NameBasher_Paint_Black_Black_Red_Pirate",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Basher_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_black_red_pirate.json"
+  },
+  {
     "component_name": "@item_NameBasher_Paint_Black_Grey_Grey",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -5718,6 +5870,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Clipper_Black_Black_Red_Camo",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_black_red_camo.json"
+  },
+  {
+    "component_name": "@item_NameClipper_Paint_Black_Black_Red_Pirate",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Clipper_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_black_red_pirate.json"
   },
   {
     "component_name": "@item_NameClipper_Paint_Black_Cream_Red",
@@ -8150,6 +8310,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Ironclad_Beige_Beige_Beige",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_beige_beige_beige.json"
+  },
+  {
+    "component_name": "@item_NameIronclad_Paint_Black_Black_Red_Pirate",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Ironclad_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_black_black_red_pirate.json"
   },
   {
     "component_name": "@item_NameIronclad_black_black_silver",
@@ -10840,6 +11008,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_black_black_red_camo.json"
   },
   {
+    "component_name": "@item_NameShiv_Paint_Black_Black_Red_Pirate",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Shiv_Black_Black_Red_Pirate",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_black_black_red_pirate.json"
+  },
+  {
     "component_name": "@item_NameShiv_Paint_Brown_White_Brown",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -11694,6 +11870,46 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Stinger_Template",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stinger_template.json"
+  },
+  {
+    "component_name": "@item_NameStingray_Paint_black_black_orange",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Stingray_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_black_black_orange.json"
+  },
+  {
+    "component_name": "@item_NameStingray_Paint_golden_blue_black_stripes",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Stingray_Gold_Blue_Black_Stripes",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_gold_blue_black_stripes.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Stingray_Template",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_template.json"
+  },
+  {
+    "component_name": "@item_NameStingray_Paint_white_black_red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Stingray_White_Black_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_black_red.json"
+  },
+  {
+    "component_name": "@item_NameStingray_Paint_white_gray_blue_camo",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Stingray_White_Grey_Blue_Camo",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_grey_blue_camo.json"
   },
   {
     "component_name": "@item_NameStorm_Paint_Dark_Camo",

@@ -2238,8 +2238,15 @@
     "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_backpack_01_03_01.json",
     "name": "@LOC_PLACEHOLDER",
     "record_type": "CraftingBlueprintRecord",
-    "result_item": {},
-    "result_item_source_path": null,
+    "result_item": {
+      "item_class_id": "8f17c496-c12b-4f2e-93e2-c7b5c4ce9524",
+      "item_id": "8f17c496-c12b-4f2e-93e2-c7b5c4ce9524",
+      "item_name": "Cds Combat Superheavy Backpack 01 03 01",
+      "item_record_name": "EntityClassDefinition.cds_combat_superheavy_backpack_01_03_01",
+      "source_path": "libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/cds_combat_superheavy_backpack_01_03_01.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/cds_combat_superheavy_backpack_01_03_01.json",
     "source_id": "82cec6d6-7716-4318-bd49-39002e5dfa96",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_backpack_01_03_01.json",
     "tiers": [
@@ -2397,8 +2404,15 @@
     "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_helmet_01_03_01.json",
     "name": "@LOC_PLACEHOLDER",
     "record_type": "CraftingBlueprintRecord",
-    "result_item": {},
-    "result_item_source_path": null,
+    "result_item": {
+      "item_class_id": "a15e8a38-f90c-47e8-b68c-c81a700c47a5",
+      "item_id": "a15e8a38-f90c-47e8-b68c-c81a700c47a5",
+      "item_name": "Cds Combat Superheavy Helmet 01 03 01",
+      "item_record_name": "EntityClassDefinition.cds_combat_superheavy_helmet_01_03_01",
+      "source_path": "libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/cds_combat_superheavy_helmet_01_03_01.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/cds_combat_superheavy_helmet_01_03_01.json",
     "source_id": "c2bc06a3-5e08-47a2-b27b-dc8b9da187c0",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_helmet_01_03_01.json",
     "tiers": [
@@ -2570,8 +2584,15 @@
     "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_suit_01_03_01.json",
     "name": "@LOC_PLACEHOLDER",
     "record_type": "CraftingBlueprintRecord",
-    "result_item": {},
-    "result_item_source_path": null,
+    "result_item": {
+      "item_class_id": "f2a15cd0-ada8-4b8a-ae25-18b7a6986fd1",
+      "item_id": "f2a15cd0-ada8-4b8a-ae25-18b7a6986fd1",
+      "item_name": "Cds Combat Superheavy Suit 01 03 01",
+      "item_record_name": "EntityClassDefinition.cds_combat_superheavy_suit_01_03_01",
+      "source_path": "libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/cds_combat_superheavy_suit_01_03_01.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/cds_combat_superheavy_suit_01_03_01.json",
     "source_id": "eaa1307a-211a-4927-9af2-41296a1e8c4e",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/combat/bp_craft_cds_combat_superheavy_suit_01_03_01.json",
     "tiers": [
@@ -3530,8 +3551,15 @@
     "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/heavy/bp_craft_cds_combat_heavy_helmet_01_02_02.json",
     "name": "@LOC_PLACEHOLDER",
     "record_type": "CraftingBlueprintRecord",
-    "result_item": {},
-    "result_item_source_path": null,
+    "result_item": {
+      "item_class_id": "97849417-fbb7-40b6-9599-e691761b7f77",
+      "item_id": "97849417-fbb7-40b6-9599-e691761b7f77",
+      "item_name": "Cds Combat Heavy Helmet 01 02 02",
+      "item_record_name": "EntityClassDefinition.cds_combat_heavy_helmet_01_02_02",
+      "source_path": "libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/cds_combat_heavy_helmet_01_02_02.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/cds_combat_heavy_helmet_01_02_02.json",
     "source_id": "b7c1c3e2-7c74-4219-830c-7a75c4d13f80",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/combat/heavy/bp_craft_cds_combat_heavy_helmet_01_02_02.json",
     "tiers": [
@@ -76638,8 +76666,15 @@
     "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/undersuit/bp_craft_cds_undersuit_01_02_02.json",
     "name": "@LOC_PLACEHOLDER",
     "record_type": "CraftingBlueprintRecord",
-    "result_item": {},
-    "result_item_source_path": null,
+    "result_item": {
+      "item_class_id": "ae8958f2-b753-4891-bacb-8810950e5f07",
+      "item_id": "ae8958f2-b753-4891-bacb-8810950e5f07",
+      "item_name": "Cds Undersuit 01 02 02",
+      "item_record_name": "EntityClassDefinition.cds_undersuit_01_02_02",
+      "source_path": "libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/undersuit/cds_undersuit_01_02_02.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/undersuit/cds_undersuit_01_02_02.json",
     "source_id": "3ac19a05-1b4c-4c10-bfd4-78b8a44a59be",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/undersuit/bp_craft_cds_undersuit_01_02_02.json",
     "tiers": [
@@ -89281,6 +89316,536 @@
             "item_record_name": "ResourceType.Ouratite",
             "min_quality": 800,
             "quantity_required": 0.3,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "19b32f89-8ea6-4338-8410-fd219fc0a8b8",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 0,
+        "quantity_required": 0.3,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "4c2d5e75-598a-4854-a301-7bbffeb9794e",
+      "item_id": "4c2d5e75-598a-4854-a301-7bbffeb9794e",
+      "item_name": "Cargo Ship Mining Pod Golem",
+      "item_record_name": "EntityClassDefinition.Cargo_ShipMining_Pod_Golem",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem.json",
+    "source_id": "19b32f89-8ea6-4338-8410-fd219fc0a8b8",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 0,
+            "quantity_required": 0.3,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "dc671104-f50a-41df-b922-e4d529c6ced7",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem_btgl.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 800,
+        "quantity_required": 0.3,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem_btgl.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "b0e33855-c5ae-4267-9aea-c64eee0897b6",
+      "item_id": "b0e33855-c5ae-4267-9aea-c64eee0897b6",
+      "item_name": "Cargo Ship Mining Pod Golem Btgl",
+      "item_record_name": "EntityClassDefinition.Cargo_ShipMining_Pod_Golem_BTGL",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem_btgl.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem_btgl.json",
+    "source_id": "dc671104-f50a-41df-b922-e4d529c6ced7",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem_btgl.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 800,
+            "quantity_required": 0.3,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "8378085b-f334-4c8e-934f-dde839c8714b",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_mole.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 0,
+        "quantity_required": 0.7,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_mole.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "f4aebc6d-ab66-4b7a-93ce-69bdd928ca99",
+      "item_id": "f4aebc6d-ab66-4b7a-93ce-69bdd928ca99",
+      "item_name": "Cargo Ship Mining Pod Mole",
+      "item_record_name": "EntityClassDefinition.Cargo_ShipMining_Pod_Mole",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_mole.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_mole.json",
+    "source_id": "8378085b-f334-4c8e-934f-dde839c8714b",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_mole.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 0,
+            "quantity_required": 0.7,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "c2d44927-b79d-4d43-b46e-274d16cf6b2d",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_moleprospector_btgl.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 800,
+        "quantity_required": 0.75,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_moleprospector_btgl.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "6c5fc288-5f84-4803-aff3-d9d2b410d01e",
+      "item_id": "6c5fc288-5f84-4803-aff3-d9d2b410d01e",
+      "item_name": "Cargo Ship Mining Pod Mole Prospector Btgl",
+      "item_record_name": "EntityClassDefinition.Cargo_ShipMining_Pod_MoleProspector_BTGL",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_moleprospector_btgl.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_moleprospector_btgl.json",
+    "source_id": "c2d44927-b79d-4d43-b46e-274d16cf6b2d",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_moleprospector_btgl.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 800,
+            "quantity_required": 0.75,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "8d811596-73c2-4baf-b5cc-eb0235adee58",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_prospector.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 0,
+        "quantity_required": 0.5,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_prospector.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "ca23670c-f690-4027-af9a-a5d6dda74c79",
+      "item_id": "ca23670c-f690-4027-af9a-a5d6dda74c79",
+      "item_name": "Cargo Ship Mining Pod Prospector",
+      "item_record_name": "EntityClassDefinition.Cargo_ShipMining_Pod_Prospector",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_prospector.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_prospector.json",
+    "source_id": "8d811596-73c2-4baf-b5cc-eb0235adee58",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_prospector.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 0,
+            "quantity_required": 0.5,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "ef5d60fc-37a2-47c2-a958-d788d6cb7fcb",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_clearcut.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 800,
+        "quantity_required": 0.2,
+        "slot_name": "ASPECTS"
+      },
+      {
+        "item_name": "Copper",
+        "item_record_name": "ResourceType.Copper",
+        "min_quality": 800,
+        "quantity_required": 0.1,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_clearcut.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "a6e3aeb0-95df-4f63-9ca1-e8ad5df1a783",
+      "item_id": "a6e3aeb0-95df-4f63-9ca1-e8ad5df1a783",
+      "item_name": "Mining Modules Active Clearcut",
+      "item_record_name": "EntityClassDefinition.Mining_Modules_Active_Clearcut",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_clearcut.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_clearcut.json",
+    "source_id": "ef5d60fc-37a2-47c2-a958-d788d6cb7fcb",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_clearcut.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 800,
+            "quantity_required": 0.2,
+            "slot_name": "ASPECTS"
+          },
+          {
+            "item_name": "Copper",
+            "item_record_name": "ResourceType.Copper",
+            "min_quality": 800,
+            "quantity_required": 0.1,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "f32efc4e-4ed6-4f26-b774-58cf754bfe27",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_stampede.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 0,
+        "quantity_required": 0.2,
+        "slot_name": "ASPECTS"
+      },
+      {
+        "item_name": "Copper",
+        "item_record_name": "ResourceType.Copper",
+        "min_quality": 0,
+        "quantity_required": 0.1,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_stampede.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "1bb6ee6d-3930-4c03-b6c6-38aad3a4703b",
+      "item_id": "1bb6ee6d-3930-4c03-b6c6-38aad3a4703b",
+      "item_name": "Mining Modules Active Stampede",
+      "item_record_name": "EntityClassDefinition.Mining_Modules_Active_Stampede",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_stampede.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_stampede.json",
+    "source_id": "f32efc4e-4ed6-4f26-b774-58cf754bfe27",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_stampede.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 0,
+            "quantity_required": 0.2,
+            "slot_name": "ASPECTS"
+          },
+          {
+            "item_name": "Copper",
+            "item_record_name": "ResourceType.Copper",
+            "min_quality": 0,
+            "quantity_required": 0.1,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "69b3ab1d-034c-4432-b8fb-099f19a3680d",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_deluge.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 800,
+        "quantity_required": 0.2,
+        "slot_name": "ASPECTS"
+      },
+      {
+        "item_name": "Copper",
+        "item_record_name": "ResourceType.Copper",
+        "min_quality": 800,
+        "quantity_required": 0.1,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_deluge.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "1f8f946d-7f09-453c-8b2b-f1fbeb8d11bf",
+      "item_id": "1f8f946d-7f09-453c-8b2b-f1fbeb8d11bf",
+      "item_name": "Mining Modules Passive Deluge",
+      "item_record_name": "EntityClassDefinition.Mining_Modules_Passive_Deluge",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_deluge.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_deluge.json",
+    "source_id": "69b3ab1d-034c-4432-b8fb-099f19a3680d",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_deluge.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 800,
+            "quantity_required": 0.2,
+            "slot_name": "ASPECTS"
+          },
+          {
+            "item_name": "Copper",
+            "item_record_name": "ResourceType.Copper",
+            "min_quality": 800,
+            "quantity_required": 0.1,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "8c60d61b-9c97-4f85-b41a-aa0d7960dfbf",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_overrun.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 800,
+        "quantity_required": 0.2,
+        "slot_name": "ASPECTS"
+      },
+      {
+        "item_name": "Copper",
+        "item_record_name": "ResourceType.Copper",
+        "min_quality": 800,
+        "quantity_required": 0.1,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_overrun.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "a69721a2-06e7-4fb3-93b4-c94e4faa6820",
+      "item_id": "a69721a2-06e7-4fb3-93b4-c94e4faa6820",
+      "item_name": "Mining Modules Passive Overrun",
+      "item_record_name": "EntityClassDefinition.Mining_Modules_Passive_Overrun",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_overrun.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_overrun.json",
+    "source_id": "8c60d61b-9c97-4f85-b41a-aa0d7960dfbf",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_overrun.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 800,
+            "quantity_required": 0.2,
+            "slot_name": "ASPECTS"
+          },
+          {
+            "item_name": "Copper",
+            "item_record_name": "ResourceType.Copper",
+            "min_quality": 800,
+            "quantity_required": 0.1,
+            "slot_name": "ASPECTS"
+          }
+        ],
+        "tier_index": 0,
+        "unlock_info": null
+      }
+    ],
+    "unlock_info": null
+  },
+  {
+    "blueprint_id": "38f9d428-75dd-4fcd-834c-c4ff876c9b3f",
+    "blueprint_name": "@LOC_PLACEHOLDER",
+    "blueprint_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_torrent_mk3.json",
+    "crafting_station": "blueprints/crafting/vehiclegear",
+    "ingredients": [
+      {
+        "item_name": "Iron",
+        "item_record_name": "ResourceType.Iron",
+        "min_quality": 0,
+        "quantity_required": 0.2,
+        "slot_name": "ASPECTS"
+      },
+      {
+        "item_name": "Copper",
+        "item_record_name": "ResourceType.Copper",
+        "min_quality": 0,
+        "quantity_required": 0.1,
+        "slot_name": "ASPECTS"
+      }
+    ],
+    "internal_record_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_torrent_mk3.json",
+    "name": "@LOC_PLACEHOLDER",
+    "record_type": "CraftingBlueprintRecord",
+    "result_item": {
+      "item_class_id": "54f4471f-592d-49c1-a12f-fb24c4771ab2",
+      "item_id": "54f4471f-592d-49c1-a12f-fb24c4771ab2",
+      "item_name": "Mining Modules Passive Torrent Mk3",
+      "item_record_name": "EntityClassDefinition.Mining_Modules_Passive_Torrent_MK3",
+      "source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_torrent_mk3.json"
+    },
+    "result_item_class": "EntityClassDefinition",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_torrent_mk3.json",
+    "source_id": "38f9d428-75dd-4fcd-834c-c4ff876c9b3f",
+    "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_torrent_mk3.json",
+    "tiers": [
+      {
+        "craft_time_seconds": 95.0,
+        "ingredients": [
+          {
+            "item_name": "Iron",
+            "item_record_name": "ResourceType.Iron",
+            "min_quality": 0,
+            "quantity_required": 0.2,
+            "slot_name": "ASPECTS"
+          },
+          {
+            "item_name": "Copper",
+            "item_record_name": "ResourceType.Copper",
+            "min_quality": 0,
+            "quantity_required": 0.1,
             "slot_name": "ASPECTS"
           }
         ],
@@ -110090,10 +110655,10 @@
       "item_id": "d5456c35-a30b-4e13-bae2-b5609a43909a",
       "item_name": "Fuel Nozzle Grin Nozzle Fast",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleFast",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzlefast.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlefast.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzlefast.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlefast.json",
     "source_id": "6f0487ce-1696-4b62-abb4-587d30d0e6da",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_grin_nozzlefast.json",
     "tiers": [
@@ -110150,10 +110715,10 @@
       "item_id": "14dd63f4-538e-413f-aea9-a4c06b7db5ac",
       "item_name": "Fuel Nozzle Grin Nozzle Secure",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleSecure",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzlesecure.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlesecure.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzlesecure.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlesecure.json",
     "source_id": "990aa98f-0674-466f-9875-113d414d690b",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_grin_nozzlesecure.json",
     "tiers": [
@@ -110210,10 +110775,10 @@
       "item_id": "78d86759-340e-4a05-bcbe-4f42dd78573c",
       "item_name": "Fuel Nozzle Grin Nozzle Very Fast",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVeryFast",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzleveryfast.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleveryfast.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzleveryfast.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleveryfast.json",
     "source_id": "dbe5c153-2149-4843-9b03-297f3e66d092",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_grin_nozzleveryfast.json",
     "tiers": [
@@ -110270,10 +110835,10 @@
       "item_id": "60a89f06-91da-4941-b77e-2c9b3f5f57e4",
       "item_name": "Fuel Nozzle Grin Nozzle Very Secure",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVerySecure",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzleverysecure.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleverysecure.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_grin_nozzleverysecure.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleverysecure.json",
     "source_id": "96566b51-4fed-4711-ae6e-9565f54a1ffa",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_grin_nozzleverysecure.json",
     "tiers": [
@@ -110330,10 +110895,10 @@
       "item_id": "d6d41d8f-f2b7-45f7-8167-13f366c55e3e",
       "item_name": "Fuel Nozzle Misc Nozzle Standard",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_MISC_NozzleStandard",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_misc_nozzlestandard.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_misc_nozzlestandard.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_misc_nozzlestandard.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_misc_nozzlestandard.json",
     "source_id": "6d1117b4-6bc0-4279-acfc-a675da2dad3d",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_misc_nozzlestandard.json",
     "tiers": [
@@ -110390,10 +110955,10 @@
       "item_id": "26dc23e6-cc07-4389-8e54-dd1c256182a7",
       "item_name": "Fuel Nozzle Shin Nozzle Expensive Fast",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveFast",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_shin_nozzleexpensivefast.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivefast.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_shin_nozzleexpensivefast.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivefast.json",
     "source_id": "40e0d74b-2449-4102-a856-514c4c62400b",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_shin_nozzleexpensivefast.json",
     "tiers": [
@@ -110450,10 +111015,10 @@
       "item_id": "76e7315c-44b8-4113-8837-d01cd839f15b",
       "item_name": "Fuel Nozzle Shin Nozzle Expensive Secure",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveSecure",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_shin_nozzleexpensivesecure.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivesecure.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_shin_nozzleexpensivesecure.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivesecure.json",
     "source_id": "52d84acb-6817-4fed-8741-e85ddba302cc",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_shin_nozzleexpensivesecure.json",
     "tiers": [
@@ -110510,10 +111075,10 @@
       "item_id": "b564d9f5-e9fb-414c-abbf-48a3552044e8",
       "item_name": "Fuel Nozzle Shin Nozzle Most Expensive",
       "item_record_name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleMostExpensive",
-      "source_path": "libs/foundry/records/entities/fuel_nozzle_shin_nozzlemostexpensive.json"
+      "source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzlemostexpensive.json"
     },
     "result_item_class": "EntityClassDefinition",
-    "result_item_source_path": "libs/foundry/records/entities/fuel_nozzle_shin_nozzlemostexpensive.json",
+    "result_item_source_path": "libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzlemostexpensive.json",
     "source_id": "ff1d331e-dfb1-4864-8755-cbf187be5ae3",
     "source_path": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/refuelling/nozzle/bp_craft_nozzle_fuelgiver_shin_nozzlemostexpensive.json",
     "tiers": [

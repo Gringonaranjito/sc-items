@@ -287,6 +287,13 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_defendship.json",
+    "name": "ContractGenerator.FoxwellEnforcement_DefendShip",
+    "record_type": "ContractGenerator",
+    "source_id": "afe2669e-2162-4c11-a624-ac82f1773b1a",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_defendship.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_destroyitems.json",
     "name": "ContractGenerator.FoxwellEnforcement_DestroyItems",
     "record_type": "ContractGenerator",
@@ -3246,6 +3253,48 @@
     "record_type": "ContractTemplate",
     "source_id": "a2c9686d-3d1a-4595-9f35-ec8f441c5c2b",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia1.json",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia1",
+    "record_type": "ContractTemplate",
+    "source_id": "ee24c3c2-168a-45f4-94e1-6ec26234b98b",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia1.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia1_nomeet.json",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia1_NoMeet",
+    "record_type": "ContractTemplate",
+    "source_id": "c4ca7e63-b061-436b-a052-f4bd84f95fab",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia1_nomeet.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia2.json",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia2",
+    "record_type": "ContractTemplate",
+    "source_id": "b67e9d61-4fe0-4ded-a76a-2ffc040b6967",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia2.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia2_nomeet.json",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia2_NoMeet",
+    "record_type": "ContractTemplate",
+    "source_id": "dd1622c4-4b06-4ef8-8096-717ac61e4723",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia2_nomeet.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia3.json",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia3",
+    "record_type": "ContractTemplate",
+    "source_id": "814440ca-775d-47e1-a43b-544238150db0",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia3.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia3_nomeet.json",
+    "name": "ContractTemplate.MissionProviderDebug_Battaglia3_NoMeet",
+    "record_type": "ContractTemplate",
+    "source_id": "ccc9160e-4d3a-4361-b531-b89b0de032d6",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/missionproviderdebug_battaglia3_nomeet.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/multieliminateallandboss.json",
@@ -19292,6 +19341,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem_btgl.json",
+    "name": "EntityClassDefinition.Cargo_ShipMining_Pod_Golem_BTGL",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b0e33855-c5ae-4267-9aea-c64eee0897b6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_golem_btgl.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_mole.json",
     "name": "EntityClassDefinition.Cargo_ShipMining_Pod_Mole",
     "record_type": "EntityClassDefinition",
@@ -19304,6 +19360,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "be59463e-669b-41f2-99fb-ed13f8b70b5d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_mole_collapsed.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_moleprospector_btgl.json",
+    "name": "EntityClassDefinition.Cargo_ShipMining_Pod_MoleProspector_BTGL",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6c5fc288-5f84-4803-aff3-d9d2b410d01e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_moleprospector_btgl.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningpods/cargo_shipmining_pod_prospector.json",
@@ -32564,11 +32627,67 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/throwable/fps_throwable_template.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlefast.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleFast",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d5456c35-a30b-4e13-bae2-b5609a43909a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlefast.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlesecure.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleSecure",
+    "record_type": "EntityClassDefinition",
+    "source_id": "14dd63f4-538e-413f-aea9-a4c06b7db5ac",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzlesecure.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleveryfast.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVeryFast",
+    "record_type": "EntityClassDefinition",
+    "source_id": "78d86759-340e-4a05-bcbe-4f42dd78573c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleveryfast.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleverysecure.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_GRIN_NozzleVerySecure",
+    "record_type": "EntityClassDefinition",
+    "source_id": "60a89f06-91da-4941-b77e-2c9b3f5f57e4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_grin_nozzleverysecure.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_misc_nozzlestandard.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_MISC_NozzleStandard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d6d41d8f-f2b7-45f7-8167-13f366c55e3e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_misc_nozzlestandard.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/misc/fuel_nozzle_misc_starlite.json",
     "name": "EntityClassDefinition.Fuel_Nozzle_MISC_Starlite",
     "record_type": "EntityClassDefinition",
     "source_id": "cb8b11c8-b300-4ddd-9280-6f9b7e2dff10",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/misc/fuel_nozzle_misc_starlite.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivefast.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveFast",
+    "record_type": "EntityClassDefinition",
+    "source_id": "26dc23e6-cc07-4389-8e54-dd1c256182a7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivefast.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivesecure.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleExpensiveSecure",
+    "record_type": "EntityClassDefinition",
+    "source_id": "76e7315c-44b8-4113-8837-d01cd839f15b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzleexpensivesecure.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzlemostexpensive.json",
+    "name": "EntityClassDefinition.Fuel_Nozzle_SHIN_NozzleMostExpensive",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b564d9f5-e9fb-414c-abbf-48a3552044e8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuelnozzle/fuel_nozzle_shin_nozzlemostexpensive.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/fuel_port_placeholder_mule.json",
@@ -32669,6 +32788,27 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_misc_standard_quantumprefilled.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard.json",
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "da7b5a4d-582a-44d4-8afb-bf22d586780d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_hydrogenprefilled.json",
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_HydrogenPrefilled",
+    "record_type": "EntityClassDefinition",
+    "source_id": "44dc9e3e-b4ce-4e5e-b8e7-f10237eec241",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_hydrogenprefilled.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_quantumprefilled.json",
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_QuantumPrefilled",
+    "record_type": "EntityClassDefinition",
+    "source_id": "46be6628-266a-4dee-bfb3-7f15a46e83d6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_quantumprefilled.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandart.json",
     "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandart",
     "record_type": "EntityClassDefinition",
@@ -32695,6 +32835,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "c9ecaf89-360a-42a9-b023-acc6f61d02d3",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure_hydrogenprefilled.json",
+    "name": "EntityClassDefinition.FuelPod_SHIN_FastAndInsecure_HydrogenPrefilled",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a3109077-5b5c-4927-91bf-3580990619b4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure_hydrogenprefilled.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure_hyrodgenprefilled.json",
@@ -36456,6 +36603,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/hangers/hanger_mannequin_armor_template.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/hdgw_optics_tsco_x4_s2.json",
+    "name": "EntityClassDefinition.hdgw_optics_tsco_x4_s2",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9a1d74cd-6a70-4fcf-a215-eb1180f2953d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/hdgw_optics_tsco_x4_s2.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_pistol_ballistic_01.json",
     "name": "EntityClassDefinition.hdgw_pistol_ballistic_01",
     "record_type": "EntityClassDefinition",
@@ -36482,6 +36636,41 @@
     "record_type": "EntityClassDefinition",
     "source_id": "aa9edf82-8a45-4088-b5de-14c646252f79",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/hdgw_pistol_ballistic_01_mag.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01.json",
+    "name": "EntityClassDefinition.hdgw_rifle_ballistic_01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "cc95ae76-505d-4481-8639-77ae6a41b99c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/hdgw_rifle_ballistic_01_mag.json",
+    "name": "EntityClassDefinition.hdgw_rifle_ballistic_01_mag",
+    "record_type": "EntityClassDefinition",
+    "source_id": "94b9bfce-d88c-4433-b45e-28feef36a266",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/hdgw_rifle_ballistic_01_mag.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01_tint01.json",
+    "name": "EntityClassDefinition.hdgw_rifle_ballistic_01_tint01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "47403176-45ef-4424-b3ee-07555e019ad4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01_tint01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01_tint02.json",
+    "name": "EntityClassDefinition.hdgw_rifle_ballistic_01_tint02",
+    "record_type": "EntityClassDefinition",
+    "source_id": "54885d55-afbb-4aff-b206-b64d7681f89e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01_tint02.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01_tint03.json",
+    "name": "EntityClassDefinition.hdgw_rifle_ballistic_01_tint03",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7a90fcaf-9b96-4ef8-b65d-9201e3f44ca2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/hdgw_rifle_ballistic_01_tint03.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/hangers/body/head_armorhanger_nodraw.json",
@@ -40607,6 +40796,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/krig_lasercannon_s3.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/krig_laserrepeater_bespoke_s2.json",
+    "name": "EntityClassDefinition.KRIG_LaserRepeater_Bespoke_S2",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fdac3503-07a6-48cb-9656-3a00c617cfb2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/krig_laserrepeater_bespoke_s2.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/krig_laserrepeater_bespoke_s4.json",
     "name": "EntityClassDefinition.Krig_LaserRepeater_Bespoke_S4",
     "record_type": "EntityClassDefinition",
@@ -42609,6 +42805,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_brandt.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_clearcut.json",
+    "name": "EntityClassDefinition.Mining_Modules_Active_Clearcut",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a6e3aeb0-95df-4f63-9ca1-e8ad5df1a783",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_clearcut.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_forel.json",
     "name": "EntityClassDefinition.Mining_Modules_Active_Forel",
     "record_type": "EntityClassDefinition",
@@ -42658,6 +42861,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_active_torpid.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_deluge.json",
+    "name": "EntityClassDefinition.Mining_Modules_Passive_Deluge",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1f8f946d-7f09-453c-8b2b-f1fbeb8d11bf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_deluge.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_fltr_mk1.json",
     "name": "EntityClassDefinition.Mining_Modules_Passive_FLTR_MK1",
     "record_type": "EntityClassDefinition",
@@ -42698,6 +42908,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "91417d7d-a6ad-4ce2-9d57-1ae15a7486f9",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_focus_mk3.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_overrun.json",
+    "name": "EntityClassDefinition.Mining_Modules_Passive_Overrun",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a69721a2-06e7-4fb3-93b4-c94e4faa6820",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_overrun.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/mining/miningarm/mining_modules_passive_rieger_mk1.json",
@@ -46135,6 +46352,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "24122aa8-495b-4b2f-9d81-9b7a87e51c8d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_mining.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_mining_golem.json",
+    "name": "EntityClassDefinition.Mount_Gimbal_Mining_Golem",
+    "record_type": "EntityClassDefinition",
+    "source_id": "2c7b13dc-5539-4b0f-9437-419bf98bce90",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_mining_golem.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_mining_mpuv.json",
@@ -51380,6 +51604,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_green_black_yellow.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_silver_silver_silver.json",
+    "name": "EntityClassDefinition.Paint_Asgard_Silver_Silver_Silver",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f7bb38be-d5eb-427d-9e29-70f910c6a5e6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_silver_silver_silver.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_asgard_template.json",
     "name": "EntityClassDefinition.Paint_Asgard_Template",
     "record_type": "EntityClassDefinition",
@@ -51849,6 +52080,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ballista_camo_01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_black_red_pirate.json",
+    "name": "EntityClassDefinition.Paint_Basher_Black_Black_Red_Pirate",
+    "record_type": "EntityClassDefinition",
+    "source_id": "17649438-340f-45f0-a749-864ce682bf74",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_black_red_pirate.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_basher_black_grey_grey.json",
     "name": "EntityClassDefinition.Paint_Basher_Black_Grey_Grey",
     "record_type": "EntityClassDefinition",
@@ -52148,6 +52386,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "f2b3c1b0-2877-48c2-be6d-3fda89f597bf",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_black_red_camo.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_black_red_pirate.json",
+    "name": "EntityClassDefinition.Paint_Clipper_Black_Black_Red_Pirate",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0c8bbe91-9389-4b14-b275-fef067550118",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_black_red_pirate.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_clipper_black_cream_red.json",
@@ -54276,6 +54521,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "fcca6262-26ab-499e-9f68-308278d0413d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_beige_beige_beige.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_black_black_red_pirate.json",
+    "name": "EntityClassDefinition.Paint_Ironclad_Black_Black_Red_Pirate",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d012cfcd-e89c-42e4-aa82-1a32158ca9be",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_black_black_red_pirate.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ironclad_black_black_silver.json",
@@ -56630,6 +56882,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_black_black_red_camo.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_black_black_red_pirate.json",
+    "name": "EntityClassDefinition.Paint_Shiv_Black_Black_Red_Pirate",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0248d3c1-cc50-495b-871f-bf55a5f6021b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_black_black_red_pirate.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_brown_white_brown.json",
     "name": "EntityClassDefinition.Paint_Shiv_Brown_White_Brown",
     "record_type": "EntityClassDefinition",
@@ -57377,6 +57636,41 @@
     "record_type": "EntityClassDefinition",
     "source_id": "c5b47ff9-1c9e-4e54-ba6d-244d9b0520e8",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stinger_template.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_black_black_orange.json",
+    "name": "EntityClassDefinition.Paint_Stingray_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4ad97a25-df39-41b3-b31e-405c2b6ba601",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_black_black_orange.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_gold_blue_black_stripes.json",
+    "name": "EntityClassDefinition.Paint_Stingray_Gold_Blue_Black_Stripes",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3a513286-3524-439c-adca-0b15f4b7c575",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_gold_blue_black_stripes.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_template.json",
+    "name": "EntityClassDefinition.Paint_Stingray_Template",
+    "record_type": "EntityClassDefinition",
+    "source_id": "45ff14d7-11d9-4a7b-b562-d233d37260cf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_template.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_black_red.json",
+    "name": "EntityClassDefinition.Paint_Stingray_White_Black_Red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "337689dd-6227-41e9-b826-81e25cd19fdd",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_black_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_grey_blue_camo.json",
+    "name": "EntityClassDefinition.Paint_Stingray_White_Grey_Blue_Camo",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d48da057-c82c-468a-83c2-837579f4b43d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_stingray_white_grey_blue_camo.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_storm_dark_camo.json",
@@ -60242,6 +60536,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_anvl_hurricane.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_anvl_lightning_f8.json",
+    "name": "EntityClassDefinition.QTNK_ANVL_Lightning_F8",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0d72db6f-09f8-4455-8930-68316798be22",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_anvl_lightning_f8.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_anvl_paladin.json",
     "name": "EntityClassDefinition.QTNK_ANVL_Paladin",
     "record_type": "EntityClassDefinition",
@@ -61290,6 +61591,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "5fabbde1-a3e1-44bc-9869-63678b2295c0",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_krig_p52.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_krig_stingray.json",
+    "name": "EntityClassDefinition.Radar_Display_KRIG_Stingray",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3fe67ac3-1e57-448f-ae81-02056a46a4d2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_krig_stingray.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_krig_wolf.json",
@@ -66631,6 +66939,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "4498fd05-9fbe-458d-9d72-c13807577894",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_polaris_cargo_addon_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/polaris/rsi_polaris_cargogrid_cargoelevator.json",
+    "name": "EntityClassDefinition.RSI_Polaris_CargoGrid_CargoElevator",
+    "record_type": "EntityClassDefinition",
+    "source_id": "40130158-0c32-4f6a-8e4f-7c578f5fbc3c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/polaris/rsi_polaris_cargogrid_cargoelevator.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/polaris/rsi_polaris_cargogrid_main.json",
@@ -74655,6 +74970,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_l22_r.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_s65_l.json",
+    "name": "EntityClassDefinition.Vehicle_Screen_Physical_S65_L",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4750d371-e529-43f6-a981-04c77b526fad",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_s65_l.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_s65_r.json",
+    "name": "EntityClassDefinition.Vehicle_Screen_Physical_S65_R",
+    "record_type": "EntityClassDefinition",
+    "source_id": "2337a486-a37d-4ac0-beb1-cb3fd8e5236b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_physical_s65_r.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/vehicle_screen_template.json",
     "name": "EntityClassDefinition.Vehicle_Screen_Template",
     "record_type": "EntityClassDefinition",
@@ -76410,6 +76739,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "01ad699f-cf07-4775-b363-75b915094740",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/volt_ubarrel_flsh_s1.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/volt_ubarrel_flsh_s1_sniperglint.json",
+    "name": "EntityClassDefinition.volt_ubarrel_flsh_s1_Sniperglint",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f9eefee3-9687-4f89-a54b-5e5cbe0bf0e4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/volt_ubarrel_flsh_s1_sniperglint.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/wallpanel_maintenance_corridor_aegs.json",
@@ -78386,6 +78722,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/weapon_underbarrel_light_narrow_red_01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/weapon_underbarrel_light_narrow_sniperglint.json",
+    "name": "EntityClassDefinition.weapon_underbarrel_light_narrow_sniperglint",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3a9b7751-12f4-4a60-b0ff-f96f79b52a74",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/weapon_underbarrel_light_narrow_sniperglint.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/weapon_underbarrel_light_wide.json",
     "name": "EntityClassDefinition.weapon_underbarrel_light_wide",
     "record_type": "EntityClassDefinition",
@@ -78426,6 +78769,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "8b848848-07b5-44dc-8709-5f292d028625",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/weapon_underbarrel_light_wide_red_01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/weapon_underbarrel_light_wide_sniperglint.json",
+    "name": "EntityClassDefinition.weapon_underbarrel_light_wide_sniperglint",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5af240bb-54d1-4765-845b-24e25f44ece9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/weapon_modifier/weapon_underbarrel_light_wide_sniperglint.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weaponcrate_doubleshelf_template.json",

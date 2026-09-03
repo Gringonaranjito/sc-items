@@ -123,6 +123,9 @@
       "None"
     ],
     "shop_names": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -137,6 +140,9 @@
       "None"
     ],
     "shop_names": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -151,6 +157,9 @@
       "None"
     ],
     "shop_names": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -207,6 +216,9 @@
       "None"
     ],
     "shop_names": [
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13",
       "_PointsTo_:ptr:6",
       "_PointsTo_:ptr:7",
       "_PointsTo_:ptr:15"
@@ -473,9 +485,9 @@
       "None"
     ],
     "shop_names": [
-      "_PointsTo_:ptr:6",
-      "_PointsTo_:ptr:7",
-      "_PointsTo_:ptr:15"
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13"
     ],
     "source_id": "8e5a3d02-909a-4bd6-870f-edad5e6abe1f",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_1.json"
@@ -487,9 +499,9 @@
       "None"
     ],
     "shop_names": [
-      "_PointsTo_:ptr:6",
-      "_PointsTo_:ptr:7",
-      "_PointsTo_:ptr:15"
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13"
     ],
     "source_id": "92e123fa-4a69-4e6b-9f44-d7dcad72a52b",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_2.json"
@@ -501,9 +513,9 @@
       "None"
     ],
     "shop_names": [
-      "_PointsTo_:ptr:6",
-      "_PointsTo_:ptr:7",
-      "_PointsTo_:ptr:15"
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13"
     ],
     "source_id": "2b84b3d5-3de1-48a1-81f9-be2fd93763ad",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_iffi_3.json"
@@ -515,9 +527,9 @@
       "None"
     ],
     "shop_names": [
-      "_PointsTo_:ptr:6",
-      "_PointsTo_:ptr:7",
-      "_PointsTo_:ptr:15"
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
+      "_PointsTo_:ptr:13"
     ],
     "source_id": "ab8fcfd0-5571-42a5-8408-9fe7f3bc56fa",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/consumables/fps_consumable_keycard_soo_weaponcache.json"
@@ -6289,6 +6301,33 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_misc_standard_quantumprefilled.json"
   },
   {
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "da7b5a4d-582a-44d4-8afb-bf22d586780d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard.json"
+  },
+  {
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_HydrogenPrefilled",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "44dc9e3e-b4ce-4e5e-b8e7-f10237eec241",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_hydrogenprefilled.json"
+  },
+  {
+    "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandard_QuantumPrefilled",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "46be6628-266a-4dee-bfb3-7f15a46e83d6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_abitquickerthanstandard_quantumprefilled.json"
+  },
+  {
     "name": "EntityClassDefinition.FuelPod_SHIN_ABitQuickerThanStandart",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -6323,6 +6362,15 @@
     ],
     "source_id": "c9ecaf89-360a-42a9-b023-acc6f61d02d3",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure.json"
+  },
+  {
+    "name": "EntityClassDefinition.FuelPod_SHIN_FastAndInsecure_HydrogenPrefilled",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "a3109077-5b5c-4927-91bf-3580990619b4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/refueling/fuelpod/fuelpod_shin_fastandinsecure_hydrogenprefilled.json"
   },
   {
     "name": "EntityClassDefinition.FuelPod_SHIN_FastAndInsecure_HyrodgenPrefilled",

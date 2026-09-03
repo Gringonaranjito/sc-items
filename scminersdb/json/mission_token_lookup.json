@@ -1863,25 +1863,6 @@
     ]
   },
   {
-    "token": "@TheCollector_Recipes_Desc_CombatSuit",
-    "kinds": [
-      "description"
-    ],
-    "best_text": "",
-    "resolution_source": "unresolved",
-    "confidence": "low",
-    "guess_texts": [],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
     "token": "@UWC_Refueling_multiple_med_desc_001",
     "kinds": [
       "description"
@@ -4763,6 +4744,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@foxwell_DefendShip_H_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "An emergency contract just came in about a fight near ~mission(Location|Address). Apparently a group of ships were ambushed by outlaws led by ~mission(TargetName), who's been wanted on multiple planets for murder and ship theft. Foxwell's looking for top tier combat pilots to go and protect the clients against them.\\n\\nThis one's been flagged as a red level contract so it's really dangerous. If you have people you could bring, you probably should. If you do, you should also let them know about Foxwell's hiring policies. \\n\\nMarcus Clenn\\nFoxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Foxwellenforcement"
+    ],
+    "mission_ids": [
+      "ContractGenerator.FoxwellEnforcement DefendShip"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement defendship.json"
     ]
   },
   {
@@ -8208,6 +8208,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/eckhartsecurity/eckhartsecurity shipambush.json"
+    ]
+  },
+  {
+    "token": "@UWC_Refuelling_BespokeCapital_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "DD here - I've got something special for you,\\n\\nI just received a ping from <EM4>~mission(Location|Address)</EM4>. A strike force led by a ~mission(Ship) just dropped into the system and are looking for a fast refuel before heading back out. \\n\\nThey  need ~mission(FuelType) asap and will pay ~mission(RefuelRequest) for it. As a United Wayfarers Club contractor, you will also qualify for the UWC service fee listed above upon completion.\\n\\nI won't lie - I'm more than a little jealous. Getting up close and personal to a ship that big? Should be one to tell the grandkids about.\\n\\nDina Deloit\\nDispatch Hub\\nUnited Wayfarers Club\\n\"We\u2019ve got your back\"\\n",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "United Wayfarers Club"
+    ],
+    "mission_ids": [
+      "ContractGenerator.UnitedWayfarersClub"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
     ]
   },
   {
@@ -11758,6 +11777,25 @@
     ]
   },
   {
+    "token": "@foxwell_DefendShip_E_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Foxwell is looking for an available combat pilot to provide immediate assistance to a ~mission(Ship) under attack over by ~mission(Location|Address). We have not identified the perpetrators in the attack, but have been assured it is a small force.\\n\\nPlease dispatch quickly and clear out all hostiles. We need the client to make it through this as they haven't paid us yet.\\n\\nGood luck,\\n\\nMarcus Clenn\\nFoxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Foxwellenforcement"
+    ],
+    "mission_ids": [
+      "ContractGenerator.FoxwellEnforcement DefendShip"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement defendship.json"
+    ]
+  },
+  {
     "token": "@Battaglia_RPT_Scan_04_title",
     "kinds": [
       "title"
@@ -12622,6 +12660,25 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/deadsaints/deadsaints hauling.json"
+    ]
+  },
+  {
+    "token": "@foxwell_DefendShip_M_desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "Got an orange level contract for any available combat pilots. A ~mission(Ship) is under attack around ~mission(Location|Address) and is in desperate need for assistance. We're not sure how many perpetrators there are, but they seem motivated and dangerous so exercise caution.\\n\\nOnce on site, engage and destroy any hostiles you encounter and protect the client. Once they've transferred the credits, we'll route you your payment.\\n\\nMarcus Clenn\\nFoxwell Enforcement\\n'Security, Your Way'\\n\\nFoxwell Enforcement is a bonded security specialist licensed to operate throughout the UEE. We are always looking for new operators to join our family. If you or anyone you know is interested, please reach out to one of our contract representatives.",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [],
+    "company_hints": [
+      "Foxwellenforcement"
+    ],
+    "mission_ids": [
+      "ContractGenerator.FoxwellEnforcement DefendShip"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement defendship.json"
     ]
   },
   {
@@ -24150,6 +24207,29 @@
     ]
   },
   {
+    "token": "@foxwell_DefendShip_M_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Orange Level Contract: ~mission(Ship) Needs Assistance",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "foxwell Defend Ship M 001",
+      "foxwell Defend Ship E 001",
+      "Foxwell Enforcement Defend Ship"
+    ],
+    "company_hints": [
+      "Foxwellenforcement"
+    ],
+    "mission_ids": [
+      "ContractGenerator.FoxwellEnforcement DefendShip"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement defendship.json"
+    ]
+  },
+  {
     "token": "@Foxwell_DefendDestructibleEntites_M_Title_001",
     "kinds": [
       "title"
@@ -27724,6 +27804,29 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/shipbattles/foxwellenforcement patrol.json"
+    ]
+  },
+  {
+    "token": "@foxwell_DefendShip_H_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Red Level Contract: Ship Under Attack",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "foxwell Defend Ship H 001",
+      "foxwell Defend Ship E 001",
+      "Foxwell Enforcement Defend Ship"
+    ],
+    "company_hints": [
+      "Foxwellenforcement"
+    ],
+    "mission_ids": [
+      "ContractGenerator.FoxwellEnforcement DefendShip"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement defendship.json"
     ]
   },
   {
@@ -33649,29 +33752,6 @@
     ]
   },
   {
-    "token": "@TheCollector_Recipes_Title_CombatSuit",
-    "kinds": [
-      "title"
-    ],
-    "best_text": "The Collector Recipes Combat Suit",
-    "resolution_source": "token_guess",
-    "confidence": "medium",
-    "guess_texts": [
-      "The Collector Recipes Combat Suit",
-      "The Collector Recipes Sand Armour",
-      "The Collector"
-    ],
-    "company_hints": [
-      "Json"
-    ],
-    "mission_ids": [
-      "ContractGenerator.TheCollector"
-    ],
-    "source_paths": [
-      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
-    ]
-  },
-  {
     "token": "@cfp_missingperson_sabotage_servers_H_XT_desc_001",
     "kinds": [
       "description"
@@ -35284,6 +35364,29 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/thebackpocket/thebackpocket.json"
+    ]
+  },
+  {
+    "token": "@UWC_Refuelling_BespokeCapital_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "URGENT CAPITAL FLEET REFUEL",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "UWC Refuelling Bespoke Capital",
+      "UWC Refueling 001",
+      "United Wayfarers Club"
+    ],
+    "company_hints": [
+      "United Wayfarers Club"
+    ],
+    "mission_ids": [
+      "ContractGenerator.UnitedWayfarersClub"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/unitedresourceworkers guild/united wayfarers club/unitedwayfarersclub.json"
     ]
   },
   {
@@ -38616,6 +38719,28 @@
     ],
     "source_paths": [
       "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/shipbattles/foxwellenforcement patrol.json"
+    ]
+  },
+  {
+    "token": "@foxwell_DefendShip_E_title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "Yellow Level Contract: Ship Under Attack",
+    "resolution_source": "localization",
+    "confidence": "high",
+    "guess_texts": [
+      "foxwell Defend Ship E 001",
+      "Foxwell Enforcement Defend Ship"
+    ],
+    "company_hints": [
+      "Foxwellenforcement"
+    ],
+    "mission_ids": [
+      "ContractGenerator.FoxwellEnforcement DefendShip"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/foxwellenforcement defendship.json"
     ]
   },
   {

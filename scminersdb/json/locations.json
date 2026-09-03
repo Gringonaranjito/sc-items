@@ -6728,6 +6728,18 @@
   {
     "hierarchy_level": 0,
     "location_kind": "Star Map Object",
+    "name": "StarMapObject.ContestedZone_RR_P2_L4_RewardRoom",
+    "path_chain": [
+      "StarMapObject.ContestedZone_RR_P2_L4_RewardRoom"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "451aa5c9-4ab0-4b3d-ac93-4579cbac88c2",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/contestedzone_rr_p2_l4_rewardroom.json",
+    "system": "StarMapObject.ContestedZone_RR_P2_L4_RewardRoom"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
     "name": "StarMapObject.ContestedZone_RR_P3_LEO",
     "path_chain": [
       "StarMapObject.ContestedZone_RR_P3_LEO"
@@ -6736,6 +6748,18 @@
     "source_id": "a4d5be82-f7c6-4ca8-875e-1b719eddc180",
     "source_path": "starbreaker/libs/foundry/records/starmap/pu/contestedzone_rr_p3_leo.json",
     "system": "StarMapObject.ContestedZone_RR_P3_LEO"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.ContestedZone_RR_P3_LEO_RewardRoom",
+    "path_chain": [
+      "StarMapObject.ContestedZone_RR_P3_LEO_RewardRoom"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "77a6240a-ed72-4024-8026-e2ebb8a11c38",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/contestedzone_rr_p3_leo_rewardroom.json",
+    "system": "StarMapObject.ContestedZone_RR_P3_LEO_RewardRoom"
   },
   {
     "hierarchy_level": 0,
