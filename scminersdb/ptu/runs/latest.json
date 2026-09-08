@@ -1,6 +1,6 @@
 ﻿{
-    "started_at":  "2026-09-03T10:00:16.410618-04:00",
-    "finished_at":  "2026-09-03T10:00:19.487667-04:00",
+    "started_at":  "2026-09-08T10:25:43.689121-04:00",
+    "finished_at":  "2026-09-08T10:25:49.856899-04:00",
     "status":  "ok",
     "source_root":  "",
     "output_root":  "",
@@ -43,8 +43,8 @@
                                              "folder":  "LIVE",
                                              "exists":  true,
                                              "data_p4k_exists":  true,
-                                             "data_p4k_size":  161591087104,
-                                             "data_p4k_last_write_time":  "2026-08-31T10:18:34.994744-04:00",
+                                             "data_p4k_size":  161592922112,
+                                             "data_p4k_last_write_time":  "2026-09-03T20:55:48.768263-04:00",
                                              "is_stale":  false,
                                              "stale_reason":  ""
                                          },
