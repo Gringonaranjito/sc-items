@@ -183377,5 +183377,566 @@
       }
     ],
     "version": "4.9"
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Bellator Jacket",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 30.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_jacket_01_01_01.json",
+    "internalName": "hdtc_jacket_01_01_01",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_hdtc_jacket_01_01_01",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Silicon",
+            "standardCargoUnits": 0.04,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "SUIT UNDERLAY",
+        "slotDisplayName": "@crafting_ui_slotname_suitunderlay"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Ouratite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "LATTICE",
+        "slotDisplayName": "@crafting_ui_slotname_lattice"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Bellator Trousers",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 30.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_pants_01_01_01.json",
+    "internalName": "hdtc_pants_01_01_01",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_hdtc_pants_01_01_01",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Silicon",
+            "standardCargoUnits": 0.03,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "SUIT UNDERLAY",
+        "slotDisplayName": "@crafting_ui_slotname_suitunderlay"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Ouratite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "LATTICE",
+        "slotDisplayName": "@crafting_ui_slotname_lattice"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Bellator Shirt and Waistcoat",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 30.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_shirt_02_01_01.json",
+    "internalName": "hdtc_shirt_02_01_01",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_hdtc_shirt_02_01_01",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Silicon",
+            "standardCargoUnits": 0.03,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "SUIT UNDERLAY",
+        "slotDisplayName": "@crafting_ui_slotname_suitunderlay"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Ouratite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "LATTICE",
+        "slotDisplayName": "@crafting_ui_slotname_supportstructure"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Spettro Shoes",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 30.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/$templates/undersuit/bp_craft_hdtc_shoes_01_01_01.json",
+    "internalName": "hdtc_shoes_01_01_01",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_hdtc_shoes_01_01_01",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Silicon",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "SUIT UNDERLAY",
+        "slotDisplayName": "@crafting_ui_slotname_suitunderlay"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Ouratite",
+            "standardCargoUnits": 0.01,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "LATTICE",
+        "slotDisplayName": "@crafting_ui_slotname_lattice"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Drake Ore Pod",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem.json",
+    "internalName": "Cargo_ShipMining_Pod_Golem",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Golem",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.3,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_frame"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Argo Ore Pod",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_mole.json",
+    "internalName": "Cargo_ShipMining_Pod_Mole",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Mole",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.7,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_frame"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "MISC Ore Pod",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_prospector.json",
+    "internalName": "Cargo_ShipMining_Pod_Prospector",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Prospector",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.5,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_frame"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Stampede Module",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_stampede.json",
+    "internalName": "Mining_Modules_Active_Stampede",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Active_Stampede",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.2,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "CASE",
+        "slotDisplayName": "@crafting_ui_slotname_case"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Copper",
+            "standardCargoUnits": 0.1,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "WIRING",
+        "slotDisplayName": "@crafting_ui_slotname_wiring"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Torrent III Module",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_torrent_mk3.json",
+    "internalName": "Mining_Modules_Passive_Torrent_MK3",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Passive_Torrent_MK3",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.2,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "CASE",
+        "slotDisplayName": "@crafting_ui_slotname_case"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Copper",
+            "standardCargoUnits": 0.1,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "WIRING",
+        "slotDisplayName": "@crafting_ui_slotname_wiring"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "CF-117 Bulldog \"Hazard-Zone\" Repeater",
+    "build": "LIVE",
+    "categoryName": "VehicleWeaponsS1",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 9,
+      "seconds": 0.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s1_mr01.json",
+    "internalName": "KLWE_LaserRepeater_S1_mr01",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S1_mr01",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 1,
+            "resourceName": "Agricium",
+            "standardCargoUnits": 0.36,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "REINFORCED FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_reinforcedframe"
+      },
+      {
+        "options": [
+          {
+            "entityName": "Hadanite",
+            "quantity": 7,
+            "type": "item"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "EMITTER",
+        "slotDisplayName": "@crafting_ui_slotname_emitter"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 1,
+            "resourceName": "Pressurized Ice",
+            "standardCargoUnits": 0.14,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "THERMAL SINK",
+        "slotDisplayName": "@crafting_ui_slotname_thermalsink"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "CF-227 Badger \"Hazard-Zone\" Repeater",
+    "build": "LIVE",
+    "categoryName": "VehicleWeaponsS2",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 16,
+      "seconds": 0.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s2_mr01.json",
+    "internalName": "KLWE_LaserRepeater_S2_mr01",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S2_mr01",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 1,
+            "resourceName": "Agricium",
+            "standardCargoUnits": 0.64,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "REINFORCED FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_reinforcedframe"
+      },
+      {
+        "options": [
+          {
+            "entityName": "Hadanite",
+            "quantity": 13,
+            "type": "item"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "EMITTER",
+        "slotDisplayName": "@crafting_ui_slotname_emitter"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 1,
+            "resourceName": "Pressurized Ice",
+            "standardCargoUnits": 0.26,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "THERMAL SINK",
+        "slotDisplayName": "@crafting_ui_slotname_thermalsink"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "CF-337 Panther \"Hazard-Zone\" Repeater",
+    "build": "LIVE",
+    "categoryName": "VehicleWeaponsS3",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 28,
+      "seconds": 0.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/weapons/laser/repeater/bp_craft_klwe_laserrepeater_s3_mr01.json",
+    "internalName": "KLWE_LaserRepeater_S3_mr01",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_KLWE_LaserRepeater_S3_mr01",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 1,
+            "resourceName": "Agricium",
+            "standardCargoUnits": 1.16,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "REINFORCED FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_reinforcedframe"
+      },
+      {
+        "options": [
+          {
+            "entityName": "Hadanite",
+            "quantity": 23,
+            "type": "item"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "EMITTER",
+        "slotDisplayName": "@crafting_ui_slotname_emitter"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 1,
+            "resourceName": "Pressurized Ice",
+            "standardCargoUnits": 0.46,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "THERMAL SINK",
+        "slotDisplayName": "@crafting_ui_slotname_thermalsink"
+      }
+    ],
+    "version": null
   }
 ]
