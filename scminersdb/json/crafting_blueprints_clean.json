@@ -183602,6 +183602,40 @@
   },
   {
     "_source": "game-files/LIVE",
+    "blueprintName": "GOLEM MC-4 Ore Pod",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_golem_btgl.json",
+    "internalName": "Cargo_ShipMining_Pod_Golem_BTGL",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_Golem_BTGL",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 800,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.3,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_frame"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
     "blueprintName": "Argo Ore Pod",
     "build": "LIVE",
     "categoryName": "VehicleComponentS0",
@@ -183624,6 +183658,40 @@
             "minQuality": 0,
             "resourceName": "Iron",
             "standardCargoUnits": 0.7,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "FRAME",
+        "slotDisplayName": "@crafting_ui_slotname_frame"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "MISC Enhanced Ore Pod",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_cargo_shipmining_pod_moleprospector_btgl.json",
+    "internalName": "Cargo_ShipMining_Pod_MoleProspector_BTGL",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Cargo_ShipMining_Pod_MoleProspector_BTGL",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 800,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.75,
             "type": "resource"
           }
         ],
@@ -183670,6 +183738,53 @@
   },
   {
     "_source": "game-files/LIVE",
+    "blueprintName": "Clearcut Module",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_active_clearcut.json",
+    "internalName": "Mining_Modules_Active_Clearcut",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Active_Clearcut",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 800,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.2,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "CASE",
+        "slotDisplayName": "@crafting_ui_slotname_case"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 800,
+            "resourceName": "Copper",
+            "standardCargoUnits": 0.1,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "WIRING",
+        "slotDisplayName": "@crafting_ui_slotname_wiring"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
     "blueprintName": "Stampede Module",
     "build": "LIVE",
     "categoryName": "VehicleComponentS0",
@@ -183703,6 +183818,100 @@
         "options": [
           {
             "minQuality": 0,
+            "resourceName": "Copper",
+            "standardCargoUnits": 0.1,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "WIRING",
+        "slotDisplayName": "@crafting_ui_slotname_wiring"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Deluge Module",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_deluge.json",
+    "internalName": "Mining_Modules_Passive_Deluge",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Passive_Deluge",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 800,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.2,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "CASE",
+        "slotDisplayName": "@crafting_ui_slotname_case"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 800,
+            "resourceName": "Copper",
+            "standardCargoUnits": 0.1,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "WIRING",
+        "slotDisplayName": "@crafting_ui_slotname_wiring"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Overrun Module",
+    "build": "LIVE",
+    "categoryName": "VehicleComponentS0",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 35.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/vehiclegear/bp_craft_mining_modules_passive_overrun.json",
+    "internalName": "Mining_Modules_Passive_Overrun",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_Mining_Modules_Passive_Overrun",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 800,
+            "resourceName": "Iron",
+            "standardCargoUnits": 0.2,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "CASE",
+        "slotDisplayName": "@crafting_ui_slotname_case"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 800,
             "resourceName": "Copper",
             "standardCargoUnits": 0.1,
             "type": "resource"

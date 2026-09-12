@@ -3,7 +3,7 @@
     "audit_export": 5,
     "blueprint_catalog": 1707,
     "concept_status": 2771,
-    "crafting_blueprints_clean": 1609,
+    "crafting_blueprints_clean": 1614,
     "crafting_quality_adjustments": 7314,
     "crafting_recipes": 1615,
     "crafting_resources": 26,
@@ -308,7 +308,7 @@
       "file": "crafting_blueprints_clean.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\crafting_blueprints_clean.json",
       "path": "../json/crafting_blueprints_clean.json",
-      "record_count": 1609,
+      "record_count": 1614,
       "title": "Crafting blueprints clean",
       "url": "../json/crafting_blueprints_clean.json"
     },
@@ -337,8 +337,8 @@
   "manifest_url": "../runs/latest.json",
   "output_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json",
   "raw_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\raw",
-  "record_count": 52340,
+  "record_count": 52345,
   "source_root": null,
   "status": "ok",
-  "updated_at": "2026-09-12T13:00:22.533225-04:00"
+  "updated_at": "2026-09-12T13:27:13.565235-04:00"
 }
