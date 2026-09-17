@@ -8134,6 +8134,76 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radr_display/aegs_sabre_radr_display.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex__mav_thruster.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX__Mav_Thruster",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6316d608-d618-4f42-811f-9bae89571d6d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex__mav_thruster.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dashboard/aegs_sabre_raven_ex_dashboard_pilot.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Dashboard_Pilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a0a1d0f2-a294-4d19-acb2-eb89fd171326",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dashboard/aegs_sabre_raven_ex_dashboard_pilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/aegs_sabre_raven_ex_seat_pilot.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Seat_Pilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "354f346c-3c70-4bda-ad3b-dd1d32883fdb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/aegs_sabre_raven_ex_seat_pilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_main.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Thruster_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1d9c5a4f-da34-4cf9-a9c8-a29e5102e720",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_mav_joint_01.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Thruster_Mav_Joint_01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "21d4f2a3-a29a-4ab5-a1b1-6fcd560b2886",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_mav_joint_01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_mav_joint_02.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Thruster_Mav_Joint_02",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e3595aca-6d29-4cb8-ac6e-40e2fe00cdcd",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_mav_joint_02.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_mav_joint_03.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Thruster_Mav_Joint_03",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fe63148e-044f-4f86-a4c5-c5d5c159b219",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_mav_joint_03.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_retro.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Thruster_Retro",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6f41c07e-62d0-47f6-aa90-319d582f3f19",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_retro.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_retro_left.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Thruster_Retro_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "233f968c-160d-4dcf-a924-773b400dc5cf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_retro_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_retro_right.json",
+    "name": "EntityClassDefinition.AEGS_Sabre_Raven_EX_Thruster_Retro_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "386332f0-5934-432d-898b-d13472b324c5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_ex_thruster_retro_right.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/aegs_sabre_raven_mav_thruster.json",
     "name": "EntityClassDefinition.AEGS_Sabre_Raven_Mav_Thruster",
     "record_type": "EntityClassDefinition",
@@ -12047,6 +12117,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/argo_atls_ikti_backpack.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/argo_atls_ikti_ntls_backpack.json",
+    "name": "EntityClassDefinition.ARGO_ATLS_IKTI_NTLS_Backpack",
+    "record_type": "EntityClassDefinition",
+    "source_id": "14ece41c-3fcf-4109-a8f1-984d7452191a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/argo_atls_ikti_ntls_backpack.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/vehicles/seat/argo_atls_ikti_scitem_seat_driver.json",
     "name": "EntityClassDefinition.ARGO_ATLS_IKTI_SCItem_Seat_Driver",
     "record_type": "EntityClassDefinition",
@@ -13760,6 +13837,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "f7b85e3a-86b0-485d-a35c-b41668fc88da",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_sabreraven.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_sabreraven_ex.json",
+    "name": "EntityClassDefinition.ARMR_AEGS_SabreRaven_EX",
+    "record_type": "EntityClassDefinition",
+    "source_id": "93d14e5b-99e8-4e20-95ba-a8fbfe6ca019",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_sabreraven_ex.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_template.json",
@@ -18424,6 +18508,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_02_civilian_store01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_02_civilian_store02.json",
+    "name": "EntityClassDefinition.behr_rifle_ballistic_02_civilian_store02",
+    "record_type": "EntityClassDefinition",
+    "source_id": "27d7dcaa-6f8c-40b3-9da2-333b10f66c04",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_02_civilian_store02.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/behr_rifle_ballistic_02_mag.json",
     "name": "EntityClassDefinition.behr_rifle_ballistic_02_mag",
     "record_type": "EntityClassDefinition",
@@ -18457,6 +18548,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "09ca39f1-ebc5-49d2-9683-14cafc2724a5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_mr01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_sf01.json",
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_sf01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3f375c15-0d9b-4821-adc3-57b70362cabb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_sf01.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_store01.json",
@@ -21364,6 +21462,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven_ex.json",
+    "name": "EntityClassDefinition.Controller_Flight_AEGS_Sabre_Raven_EX",
+    "record_type": "EntityClassDefinition",
+    "source_id": "51ce7cda-8151-4325-ac66-56cd636aaa42",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven_ex.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_tiburon.json",
     "name": "EntityClassDefinition.Controller_Flight_AEGS_Tiburon",
     "record_type": "EntityClassDefinition",
@@ -24071,6 +24176,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "9316c060-265a-44c1-acd0-bdeca41f3548",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti_ntls.json",
+    "name": "EntityClassDefinition.Controller_Weapon_ATLS_IKTI_NTLS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7e62a899-140e-4057-a226-ba49386e89f8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti_ntls.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_cnou_hoverquad.json",
@@ -34769,6 +34881,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_pistol_ballistic_01_red_black01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_pistol_ballistic_01_store01.json",
+    "name": "EntityClassDefinition.gmni_pistol_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "2d69f438-1cd0-4dff-afbe-d184b7a0fd64",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_pistol_ballistic_01_store01.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_pistol_ballistic_01_tan01.json",
     "name": "EntityClassDefinition.gmni_pistol_ballistic_01_tan01",
     "record_type": "EntityClassDefinition",
@@ -35021,6 +35140,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_sniper_ballistic_01_store01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_sniper_ballistic_01_store02.json",
+    "name": "EntityClassDefinition.gmni_sniper_ballistic_01_store02",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4577c7a3-76ab-4e37-91de-68862dacb964",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_sniper_ballistic_01_store02.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_sniper_ballistic_01_urban01.json",
     "name": "EntityClassDefinition.gmni_sniper_ballistic_01_urban01",
     "record_type": "EntityClassDefinition",
@@ -35208,6 +35334,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "992f3584-e14e-436c-9c08-235427f846f9",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_cutter_01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/grin/grin_floor_module_mtc.json",
+    "name": "EntityClassDefinition.Grin_floor_Module_MTC",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e2af8af7-1098-4396-8f4b-16aa471f5e1c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/grin/grin_floor_module_mtc.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/vehicles/seat/grin_greycat_scitem_seat_driver.json",
@@ -39956,6 +40089,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/klwe_laserrepeater_s1_atls.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/klwe_laserrepeater_s1_atls_ntls.json",
+    "name": "EntityClassDefinition.KLWE_LaserRepeater_S1_ATLS_NTLS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "284910cd-f08f-4bc7-905a-f0485df9f91b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/klwe_laserrepeater_s1_atls_ntls.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/klwe_laserrepeater_s1_mr01.json",
     "name": "EntityClassDefinition.KLWE_LaserRepeater_S1_mr01",
     "record_type": "EntityClassDefinition",
@@ -40080,6 +40220,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "e2ed4699-48d7-46f8-9970-1bb95d86d1e1",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/klwe_lmg_energy_01_purple_blue01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/klwe_lmg_energy_01_store01.json",
+    "name": "EntityClassDefinition.klwe_lmg_energy_01_store01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f7c40926-6896-407a-be4f-8dbb28279a1f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/klwe_lmg_energy_01_store01.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapons/parts/klwe_massdriver_barrel_s1.json",
@@ -46508,6 +46655,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_s3_polaris.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_s3_sabre_raven_ex.json",
+    "name": "EntityClassDefinition.Mount_Gimbal_S3_Sabre_Raven_EX",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1b9fdffb-35d4-4c33-9d66-e2af571117b5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_s3_sabre_raven_ex.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/mount_gimbal_s3_vncl_blade.json",
     "name": "EntityClassDefinition.Mount_Gimbal_S3_VNCL_Blade",
     "record_type": "EntityClassDefinition",
@@ -51947,6 +52101,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white_torch.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_white_red.json",
+    "name": "EntityClassDefinition.Paint_Aurora_Mk2_Silver_White_Red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c03f3056-abc7-48db-b977-c0bb9b055b5c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_white_red.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_template.json",
     "name": "EntityClassDefinition.Paint_Aurora_Mk2_Template",
     "record_type": "EntityClassDefinition",
@@ -52743,6 +52904,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "d75eae08-f688-4b42-9c7b-ee510c0f66c6",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_talklikeapirate_black_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_white_white_pink.json",
+    "name": "EntityClassDefinition.Paint_Cutlass_White_White_Pink",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d0d2f32b-e428-42d7-8a1a-6861e882fbc6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_white_white_pink.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutter_2955redfestival_red_gold_pig.json",
@@ -56560,6 +56728,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_beige_black_black.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_black.json",
+    "name": "EntityClassDefinition.Paint_Sabre_Black_Black_Black",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fd69501e-19b2-4261-9b93-d9341221d75f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_black.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_gold_carbon.json",
     "name": "EntityClassDefinition.Paint_Sabre_Black_Black_Gold_Carbon",
     "record_type": "EntityClassDefinition",
@@ -56588,11 +56763,25 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_silver_silver_polish.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_blue_blue_yellow.json",
+    "name": "EntityClassDefinition.Paint_Sabre_Blue_Blue_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "15aa772a-f172-440f-8484-befb1c7f103b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_blue_blue_yellow.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_black_orange.json",
     "name": "EntityClassDefinition.Paint_Sabre_Green_Black_Orange",
     "record_type": "EntityClassDefinition",
     "source_id": "11440f75-f2ed-46c9-9485-6118999509fa",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_black_orange.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_green_yellow.json",
+    "name": "EntityClassDefinition.Paint_Sabre_Green_Green_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "444ee997-9953-4035-b9af-c8c4dec53e5e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_green_yellow.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_halloween25_orange_black.json",
@@ -56621,6 +56810,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "963d7a97-a4a3-4ab1-8e49-cde15f90728c",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_lunarnewyear2952_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_metal_metal_metal.json",
+    "name": "EntityClassDefinition.Paint_Sabre_Metal_Metal_Metal",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4bd11d40-f5e8-4cee-9e6e-1932f507cc00",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_metal_metal_metal.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_procyon.json",
@@ -59806,6 +60002,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "1f74e62c-6093-4d2f-a560-e33df359a7e4",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s01_burke.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s02_raven_x.json",
+    "name": "EntityClassDefinition.QDMP_WETK_S02_Raven_X",
+    "record_type": "EntityClassDefinition",
+    "source_id": "668af260-593e-426a-a918-280abadd42e2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s02_raven_x.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumdrive/qdrv_acas_s01_foxfire_scitem.json",
@@ -68290,6 +68493,34 @@
     "record_type": "EntityClassDefinition",
     "source_id": "9455eaee-b3a8-41f5-8a7b-c3723bce6c70",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_firebird_wingcap_right_collector.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_tail_left.json",
+    "name": "EntityClassDefinition.Sabre_Raven_EX_tail_left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "39abf749-7c1a-46bd-8aab-18b49bf60f33",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_tail_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_tail_right.json",
+    "name": "EntityClassDefinition.Sabre_Raven_EX_tail_right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fad3d3aa-130b-4895-9c20-256cc0f269a8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_tail_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_winglet_left.json",
+    "name": "EntityClassDefinition.Sabre_Raven_EX_Winglet_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c8906092-d38a-49a1-bd8e-6141d20915b5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_winglet_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_winglet_right.json",
+    "name": "EntityClassDefinition.Sabre_Raven_EX_Winglet_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c67c854a-786d-4539-a1fb-9495142b3873",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/aegs/sabre_raven_ex_winglet_right.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/salvage/salvagemodifiers/salvage_buff_modifier_fortune.json",
@@ -77740,6 +77971,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "1a2ebef1-c060-4b9c-9381-c487bf585e6b",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_aegs_sabre_raven.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_aegs_sabre_raven_ex.json",
+    "name": "EntityClassDefinition.Weapon_Rack_AEGS_Sabre_Raven_EX",
+    "record_type": "EntityClassDefinition",
+    "source_id": "63a4259a-6e46-4f1e-be8a-5367cb7dd1ff",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_aegs_sabre_raven_ex.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_aegs_vanguard.json",

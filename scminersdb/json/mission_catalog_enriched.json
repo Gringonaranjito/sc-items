@@ -53244,7 +53244,7 @@
         "ContractPrerequisite_Locality",
         "ContractPrerequisite_Reputation"
       ],
-      "required_active_scenarios_count": 3,
+      "required_active_scenarios_count": 0,
       "has_intro": false,
       "has_rehire": false,
       "generator_debug_names": [
@@ -53595,7 +53595,7 @@
         "ContractPrerequisite_Locality",
         "ContractPrerequisite_Reputation"
       ],
-      "required_active_scenarios_count": 3,
+      "required_active_scenarios_count": 0,
       "has_intro": false,
       "has_rehire": false,
       "generator_debug_names": [
@@ -73781,7 +73781,7 @@
         "ContractPrerequisite_Locality",
         "ContractPrerequisite_Reputation"
       ],
-      "required_active_scenarios_count": 3,
+      "required_active_scenarios_count": 0,
       "has_intro": false,
       "has_rehire": false,
       "generator_debug_names": [
@@ -74326,7 +74326,7 @@
         "ContractPrerequisite_Locality",
         "ContractPrerequisite_Reputation"
       ],
-      "required_active_scenarios_count": 3,
+      "required_active_scenarios_count": 0,
       "has_intro": false,
       "has_rehire": false,
       "generator_debug_names": [

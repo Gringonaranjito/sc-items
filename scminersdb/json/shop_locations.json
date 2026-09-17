@@ -3053,6 +3053,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_02_civilian_store01.json"
   },
   {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_02_civilian_store02",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "27d7dcaa-6f8c-40b3-9da2-333b10f66c04",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_02_civilian_store02.json"
+  },
+  {
     "name": "EntityClassDefinition.behr_rifle_ballistic_03",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -3071,6 +3081,16 @@
     ],
     "source_id": "09ca39f1-ebc5-49d2-9683-14cafc2724a5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_mr01.json"
+  },
+  {
+    "name": "EntityClassDefinition.behr_rifle_ballistic_03_sf01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "3f375c15-0d9b-4821-adc3-57b70362cabb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_rifle_ballistic_03_sf01.json"
   },
   {
     "name": "EntityClassDefinition.behr_rifle_ballistic_03_store01",
@@ -3694,6 +3714,17 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_pistol_ballistic_01_red_black01.json"
   },
   {
+    "name": "EntityClassDefinition.gmni_pistol_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7",
+      "_PointsTo_:ptr:17"
+    ],
+    "source_id": "2d69f438-1cd0-4dff-afbe-d184b7a0fd64",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_pistol_ballistic_01_store01.json"
+  },
+  {
     "name": "EntityClassDefinition.gmni_pistol_ballistic_01_tan01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -4015,6 +4046,16 @@
     ],
     "source_id": "db7a707e-e6fb-4d8a-9766-ca0d125d2e4f",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_sniper_ballistic_01_store01.json"
+  },
+  {
+    "name": "EntityClassDefinition.gmni_sniper_ballistic_01_store02",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "4577c7a3-76ab-4e37-91de-68862dacb964",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_sniper_ballistic_01_store02.json"
   },
   {
     "name": "EntityClassDefinition.gmni_sniper_ballistic_01_urban01",
@@ -4481,6 +4522,16 @@
     ],
     "source_id": "e2ed4699-48d7-46f8-9970-1bb95d86d1e1",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/klwe_lmg_energy_01_purple_blue01.json"
+  },
+  {
+    "name": "EntityClassDefinition.klwe_lmg_energy_01_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "f7c40926-6896-407a-be4f-8dbb28279a1f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/klwe_lmg_energy_01_store01.json"
   },
   {
     "name": "EntityClassDefinition.klwe_pistol_energy_01",

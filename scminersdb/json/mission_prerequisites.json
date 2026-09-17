@@ -270216,6 +270216,11 @@
                             "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                             "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                             "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          },
+                          {
+                            "_RecordId_": "19847b20-5a77-4768-82e9-82f8aca07257",
+                            "_RecordName_": "Tag.19847b20-5a77-4768-82e9-82f8aca07257",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
                           }
                         ]
                       },
@@ -270460,6 +270465,11 @@
                             "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                             "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                             "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          },
+                          {
+                            "_RecordId_": "19847b20-5a77-4768-82e9-82f8aca07257",
+                            "_RecordName_": "Tag.19847b20-5a77-4768-82e9-82f8aca07257",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
                           }
                         ]
                       },
@@ -270661,6 +270671,146 @@
             "_Type_": "TagList",
             "tags": []
           }
+        }
+      },
+      {
+        "_Pointer_": "ptr:44",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "",
+        "missionVariableName": "SearchAndDestroy_FriendlyObject_BP",
+        "value": {
+          "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+          "allowedForMissionRestrictedDeliveries": false,
+          "spawnDescriptions": [
+            {
+              "Name": "FriendlyProbe",
+              "_Type_": "SpawnDescription_ShipGroup",
+              "embeddedName": null,
+              "ships": [
+                {
+                  "_Type_": "SpawnDescription_ShipOptions",
+                  "options": [
+                    {
+                      "_Type_": "SpawnDescription_Ship",
+                      "concurrentAmount": 1,
+                      "entityTags": {
+                        "_Type_": "TagList",
+                        "tags": []
+                      },
+                      "includeLocationAISpawnTags": false,
+                      "initialDamageSettings": null,
+                      "markupTags": {
+                        "_Type_": "TagList",
+                        "tags": []
+                      },
+                      "nameProperty": null,
+                      "negativeTags": {
+                        "_Type_": "TagList",
+                        "tags": [
+                          {
+                            "_RecordId_": "ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                            "_RecordName_": "Tag.ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          }
+                        ]
+                      },
+                      "tags": {
+                        "_Type_": "TagList",
+                        "tags": [
+                          {
+                            "_RecordId_": "4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                            "_RecordName_": "Tag.4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          },
+                          {
+                            "_RecordId_": "37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                            "_RecordName_": "Tag.37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          },
+                          {
+                            "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                            "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          }
+                        ]
+                      },
+                      "weight": 1.0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "_Pointer_": "ptr:55",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "",
+        "missionVariableName": "SearchAndDestroy_HostileObject_BP",
+        "value": {
+          "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+          "allowedForMissionRestrictedDeliveries": false,
+          "spawnDescriptions": [
+            {
+              "Name": "HostileProbe",
+              "_Type_": "SpawnDescription_ShipGroup",
+              "embeddedName": null,
+              "ships": [
+                {
+                  "_Type_": "SpawnDescription_ShipOptions",
+                  "options": [
+                    {
+                      "_Type_": "SpawnDescription_Ship",
+                      "concurrentAmount": 1,
+                      "entityTags": {
+                        "_Type_": "TagList",
+                        "tags": []
+                      },
+                      "includeLocationAISpawnTags": false,
+                      "initialDamageSettings": null,
+                      "markupTags": {
+                        "_Type_": "TagList",
+                        "tags": []
+                      },
+                      "nameProperty": null,
+                      "negativeTags": {
+                        "_Type_": "TagList",
+                        "tags": [
+                          {
+                            "_RecordId_": "37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                            "_RecordName_": "Tag.37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          }
+                        ]
+                      },
+                      "tags": {
+                        "_Type_": "TagList",
+                        "tags": [
+                          {
+                            "_RecordId_": "4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                            "_RecordName_": "Tag.4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          },
+                          {
+                            "_RecordId_": "ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                            "_RecordName_": "Tag.ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          },
+                          {
+                            "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                            "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                            "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                          }
+                        ]
+                      },
+                      "weight": 1.0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       }
     ],
@@ -271600,6 +271750,11 @@
                               "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                               "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                               "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            },
+                            {
+                              "_RecordId_": "19847b20-5a77-4768-82e9-82f8aca07257",
+                              "_RecordName_": "Tag.19847b20-5a77-4768-82e9-82f8aca07257",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
                             }
                           ]
                         },
@@ -271877,6 +272032,11 @@
                               "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                               "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
                               "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            },
+                            {
+                              "_RecordId_": "19847b20-5a77-4768-82e9-82f8aca07257",
+                              "_RecordName_": "Tag.19847b20-5a77-4768-82e9-82f8aca07257",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
                             }
                           ]
                         },
@@ -272111,6 +272271,152 @@
               "_Type_": "TagList",
               "tags": []
             }
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:44",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "",
+          "missionVariableName": "SearchAndDestroy_FriendlyObject_BP",
+          "value": {
+            "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+            "allowedForMissionRestrictedDeliveries": false,
+            "spawnDescriptions": [
+              {
+                "Name": "FriendlyProbe",
+                "_Type_": "SpawnDescription_ShipGroup",
+                "embeddedName": null,
+                "ships": [
+                  {
+                    "_Type_": "SpawnDescription_ShipOptions",
+                    "options": [
+                      {
+                        "_Type_": "SpawnDescription_Ship",
+                        "concurrentAmount": 1,
+                        "entityTags": {
+                          "_Type_": "TagList",
+                          "tags": []
+                        },
+                        "includeLocationAISpawnTags": false,
+                        "initialDamageSettings": null,
+                        "markupTags": {
+                          "_Type_": "TagList",
+                          "tags": []
+                        },
+                        "nameProperty": null,
+                        "negativeTags": {
+                          "_Type_": "TagList",
+                          "tags": [
+                            {
+                              "_RecordId_": "ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                              "_RecordName_": "Tag.ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            }
+                          ]
+                        },
+                        "tags": {
+                          "_Type_": "TagList",
+                          "tags": [
+                            {
+                              "_RecordId_": "4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                              "_RecordName_": "Tag.4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            },
+                            {
+                              "_RecordId_": "37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                              "_RecordName_": "Tag.37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            },
+                            {
+                              "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                              "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            }
+                          ]
+                        },
+                        "weight": 1.0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:55",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "",
+          "missionVariableName": "SearchAndDestroy_HostileObject_BP",
+          "value": {
+            "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+            "allowedForMissionRestrictedDeliveries": false,
+            "spawnDescriptions": [
+              {
+                "Name": "HostileProbe",
+                "_Type_": "SpawnDescription_ShipGroup",
+                "embeddedName": null,
+                "ships": [
+                  {
+                    "_Type_": "SpawnDescription_ShipOptions",
+                    "options": [
+                      {
+                        "_Type_": "SpawnDescription_Ship",
+                        "concurrentAmount": 1,
+                        "entityTags": {
+                          "_Type_": "TagList",
+                          "tags": []
+                        },
+                        "includeLocationAISpawnTags": false,
+                        "initialDamageSettings": null,
+                        "markupTags": {
+                          "_Type_": "TagList",
+                          "tags": []
+                        },
+                        "nameProperty": null,
+                        "negativeTags": {
+                          "_Type_": "TagList",
+                          "tags": [
+                            {
+                              "_RecordId_": "37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                              "_RecordName_": "Tag.37e51a3d-afb0-4f2a-9528-01d9e2db5a76",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            }
+                          ]
+                        },
+                        "tags": {
+                          "_Type_": "TagList",
+                          "tags": [
+                            {
+                              "_RecordId_": "4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                              "_RecordName_": "Tag.4c6e6cac-762d-477e-8c41-8d70dc6561f7",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            },
+                            {
+                              "_RecordId_": "ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                              "_RecordName_": "Tag.ecfb92fe-5d2d-4fef-aa8f-2f09fcf42b6f",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            },
+                            {
+                              "_RecordId_": "6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                              "_RecordName_": "Tag.6a7d46fa-68cc-4c1e-9e4d-73af17c3f3ea",
+                              "_RecordPath_": "file://./../../../../../libs/foundry/records/tagdatabase/tagdatabase.tagdatabase.json"
+                            }
+                          ]
+                        },
+                        "weight": 1.0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         }
       }
@@ -328269,6 +328575,18 @@
         "_Pointer_": "ptr:2",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
+        "missionVariableName": "LocationInterior_BP",
+        "value": {
+          "_Type_": "MissionPropertyValue_Location",
+          "logErrorOnSearchFail": true,
+          "matchConditions": [],
+          "resourceTags": []
+        }
+      },
+      {
+        "_Pointer_": "ptr:3",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "",
         "missionVariableName": "Phase1_AttackedShipSpawnDescription_BP",
         "value": {
           "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
@@ -328277,7 +328595,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:3",
+        "_Pointer_": "ptr:4",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase1_HostileShipSpawnDescriptions_BP",
@@ -328288,7 +328606,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:4",
+        "_Pointer_": "ptr:5",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase1_WaveDelay_BP",
@@ -328308,7 +328626,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:5",
+        "_Pointer_": "ptr:6",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase2_TimeBeforeWaves_BP",
@@ -328328,7 +328646,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:6",
+        "_Pointer_": "ptr:7",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase2_ShipWaves_BP",
@@ -328339,7 +328657,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:7",
+        "_Pointer_": "ptr:8",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase2_TimeBetweenWaves_BP",
@@ -328359,7 +328677,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:8",
+        "_Pointer_": "ptr:9",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "SecurityTerminalProximityTrackerDistance_BP",
@@ -328379,7 +328697,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:9",
+        "_Pointer_": "ptr:10",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase3_HostileShipSpawnDescriptions_BP",
@@ -328390,7 +328708,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:10",
+        "_Pointer_": "ptr:11",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase3_WaveDelay_BP",
@@ -328410,7 +328728,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:11",
+        "_Pointer_": "ptr:12",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_EscortShip_BP",
@@ -328421,7 +328739,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:12",
+        "_Pointer_": "ptr:13",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_EscortReinforcementChance_BP",
@@ -328441,7 +328759,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:13",
+        "_Pointer_": "ptr:14",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_EscortReinforcementsWave01_BP",
@@ -328452,7 +328770,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:14",
+        "_Pointer_": "ptr:15",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_EscortReinforcementsWave02_BP",
@@ -328463,7 +328781,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:15",
+        "_Pointer_": "ptr:16",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_EscortReinforcementsWave03_BP",
@@ -328474,7 +328792,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:16",
+        "_Pointer_": "ptr:17",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_ERWave01MinDistance_BP",
@@ -328494,7 +328812,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:17",
+        "_Pointer_": "ptr:18",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_ERWave01MaxDistance_BP",
@@ -328514,7 +328832,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:18",
+        "_Pointer_": "ptr:19",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_ERWave02MinDistance_BP",
@@ -328534,7 +328852,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:19",
+        "_Pointer_": "ptr:20",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_ERWave02MaxDistance_BP",
@@ -328554,7 +328872,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:20",
+        "_Pointer_": "ptr:21",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_ERWave03MinDistance_BP",
@@ -328574,7 +328892,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:21",
+        "_Pointer_": "ptr:22",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase4_ERWave03MaxDistance_BP",
@@ -328594,7 +328912,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:27",
+        "_Pointer_": "ptr:28",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase5_VanduulWaves_BP",
@@ -328605,7 +328923,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:26",
+        "_Pointer_": "ptr:27",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase5_TimeUntilVanduulArrive_BP",
@@ -328615,7 +328933,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:28",
+        "_Pointer_": "ptr:29",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "Phase5_VanduulWaveDelay_BP",
@@ -328625,7 +328943,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:29",
+        "_Pointer_": "ptr:30",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "WavePercentRemainingBeforeProceeding_BP",
@@ -328635,7 +328953,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:30",
+        "_Pointer_": "ptr:31",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CargoBayAccessCard_BP",
@@ -328645,7 +328963,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:22",
+        "_Pointer_": "ptr:23",
         "_Type_": "MissionProperty",
         "extendedTextToken": "ItemsToDestroy",
         "missionVariableName": "",
@@ -328664,7 +328982,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:23",
+        "_Pointer_": "ptr:24",
         "_Type_": "MissionProperty",
         "extendedTextToken": "ItemsToDestroy1",
         "missionVariableName": "",
@@ -328683,7 +329001,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:24",
+        "_Pointer_": "ptr:25",
         "_Type_": "MissionProperty",
         "extendedTextToken": "ItemsToDestroy2",
         "missionVariableName": "",
@@ -328702,7 +329020,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:25",
+        "_Pointer_": "ptr:26",
         "_Type_": "MissionProperty",
         "extendedTextToken": "ItemsToDestroy3",
         "missionVariableName": "",
@@ -328721,7 +329039,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:31",
+        "_Pointer_": "ptr:32",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Tobin_Start_BP",
@@ -328765,7 +329083,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:32",
+        "_Pointer_": "ptr:33",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Tobin_Abandon_BP",
@@ -328804,7 +329122,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:33",
+        "_Pointer_": "ptr:34",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Tobin_Fail_BP",
@@ -328843,7 +329161,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:34",
+        "_Pointer_": "ptr:35",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Success_BP",
@@ -328887,7 +329205,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:35",
+        "_Pointer_": "ptr:36",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_IdrisDeath_ObjectiveFail_BP",
@@ -328926,7 +329244,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:36",
+        "_Pointer_": "ptr:37",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Abandon_BP",
@@ -328965,7 +329283,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:37",
+        "_Pointer_": "ptr:38",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase1_HostileKilled_BP",
@@ -329004,7 +329322,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:38",
+        "_Pointer_": "ptr:39",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase1_ObjectiveStart_BP",
@@ -329048,7 +329366,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:39",
+        "_Pointer_": "ptr:40",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase1_LowDamage_BP",
@@ -329092,7 +329410,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:40",
+        "_Pointer_": "ptr:41",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase1_HighDamage_BP",
@@ -329136,7 +329454,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:41",
+        "_Pointer_": "ptr:42",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase1_ObjectiveReminder_BP",
@@ -329180,7 +329498,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:42",
+        "_Pointer_": "ptr:43",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase1_ObjectiveCompleted_BP",
@@ -329224,7 +329542,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:43",
+        "_Pointer_": "ptr:44",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase1_OfferAssistance_BP",
@@ -329268,7 +329586,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:44",
+        "_Pointer_": "ptr:45",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase2_PowerRelays_SubObjectiveStart_BP",
@@ -329312,7 +329630,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:45",
+        "_Pointer_": "ptr:46",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase2_PowerRelays_SubObjectiveStart_WeaponType_BP",
@@ -329361,7 +329679,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:46",
+        "_Pointer_": "ptr:47",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase2_PowerRelays_DestroyEncouragement_BP",
@@ -329405,7 +329723,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:47",
+        "_Pointer_": "ptr:48",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase2_PowerRelay_LastOneDestroyed_BP",
@@ -329454,7 +329772,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:48",
+        "_Pointer_": "ptr:49",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase2_CoolingUnits_LastOneDestroyed_BP",
@@ -329504,7 +329822,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:50",
+        "_Pointer_": "ptr:51",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase2_Core_SubObjectiveStart_BP",
@@ -329548,7 +329866,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:51",
+        "_Pointer_": "ptr:52",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase2_Core_SubObjectiveCompleted_BP",
@@ -329592,7 +329910,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:52",
+        "_Pointer_": "ptr:53",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase5_TauntResponse_BP",
@@ -329641,7 +329959,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:49",
+        "_Pointer_": "ptr:50",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase3_ObjectiveStart_BP",
@@ -329685,7 +330003,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:53",
+        "_Pointer_": "ptr:54",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase4_FreePilot_ObjectiveStart_BP",
@@ -329729,7 +330047,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:54",
+        "_Pointer_": "ptr:55",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase4_FreePilot_Reminder_BP",
@@ -329773,7 +330091,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:55",
+        "_Pointer_": "ptr:56",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase4_EscortPilot_ObjectiveCompleted_BP",
@@ -329817,7 +330135,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:56",
+        "_Pointer_": "ptr:57",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase4_EscortPilot_ObjectiveFailed_BP",
@@ -329861,7 +330179,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:57",
+        "_Pointer_": "ptr:58",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase5_VanduulWarning_BP",
@@ -329910,7 +330228,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:58",
+        "_Pointer_": "ptr:59",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase5_ObjectiveComplete_Reply_BP",
@@ -329954,7 +330272,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:59",
+        "_Pointer_": "ptr:60",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase6_MaulerArrives_BP",
@@ -329998,7 +330316,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:60",
+        "_Pointer_": "ptr:61",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase6_EscortDead_BP",
@@ -330042,7 +330360,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:61",
+        "_Pointer_": "ptr:62",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Martel_Phase6_MaulerDestroyed_BP",
@@ -330086,7 +330404,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:62",
+        "_Pointer_": "ptr:63",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Forge_Phase2_Taunt_BP",
@@ -330130,7 +330448,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:63",
+        "_Pointer_": "ptr:64",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Forge_Phase2_Taunt_Known_BP",
@@ -330174,7 +330492,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:64",
+        "_Pointer_": "ptr:65",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Forge_Phase3_Taunt_BP",
@@ -330218,7 +330536,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:65",
+        "_Pointer_": "ptr:66",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Forge_Phase5_Taunt_BP",
@@ -330262,7 +330580,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:66",
+        "_Pointer_": "ptr:67",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase4_FreePilot_DistressCall_BP",
@@ -330306,7 +330624,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:67",
+        "_Pointer_": "ptr:68",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase4_FreePilot_SecurityTerminal_BP",
@@ -330350,7 +330668,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:68",
+        "_Pointer_": "ptr:69",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase4_FreePilot_ObjectiveCompleted_BP",
@@ -330394,7 +330712,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:69",
+        "_Pointer_": "ptr:70",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase6_EscortPilot_Reminder_BP",
@@ -330438,7 +330756,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:70",
+        "_Pointer_": "ptr:71",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase4_EscortPilot_KillEncouragement_BP",
@@ -330482,7 +330800,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:71",
+        "_Pointer_": "ptr:72",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase4_EscortPilot_Death_BP",
@@ -330526,7 +330844,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:72",
+        "_Pointer_": "ptr:73",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase6_Spooling_BP",
@@ -330570,7 +330888,7 @@
         }
       },
       {
-        "_Pointer_": "ptr:73",
+        "_Pointer_": "ptr:74",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
         "missionVariableName": "CN_Windell_Phase6_QTSuccess_BP",
@@ -330614,6 +330932,28 @@
         }
       },
       {
+        "_Pointer_": "ptr:2",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "",
+        "missionVariableName": "Phase1_AttackedShipSpawnDescription_BP",
+        "value": {
+          "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+          "allowedForMissionRestrictedDeliveries": false,
+          "spawnDescriptions": []
+        }
+      },
+      {
+        "_Pointer_": "ptr:3",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "",
+        "missionVariableName": "Phase1_HostileShipSpawnDescriptions_BP",
+        "value": {
+          "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+          "allowedForMissionRestrictedDeliveries": false,
+          "spawnDescriptions": []
+        }
+      },
+      {
         "_Pointer_": "ptr:4",
         "_Type_": "MissionProperty",
         "extendedTextToken": "",
@@ -330628,26 +330968,6 @@
               "textId": "@LOC_UNINITIALIZED",
               "value": 0,
               "variation": 0,
-              "weighting": 1.0
-            }
-          ]
-        }
-      },
-      {
-        "_Pointer_": "ptr:5",
-        "_Type_": "MissionProperty",
-        "extendedTextToken": "",
-        "missionVariableName": "Phase1_WaveDelay_BP",
-        "value": {
-          "_Type_": "MissionPropertyValue_Float",
-          "options": [
-            {
-              "DEBUG_forceChooseThisOption": false,
-              "_Type_": "MissionPropertyValueOption_Float",
-              "dependentProperties": [],
-              "textId": "@LOC_UNINITIALIZED",
-              "value": 0.0,
-              "variation": 0.0,
               "weighting": 1.0
             }
           ]
@@ -333111,6 +333431,21 @@
           "_Pointer_": "ptr:2",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
+          "missionVariableName": "LocationInterior_BP",
+          "value": {
+            "_Type_": "MissionPropertyValue_Location",
+            "logErrorOnSearchFail": true,
+            "matchConditions": [],
+            "resourceTags": []
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:3",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "",
           "missionVariableName": "Phase1_AttackedShipSpawnDescription_BP",
           "value": {
             "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
@@ -333122,7 +333457,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:3",
+          "_Pointer_": "ptr:4",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase1_HostileShipSpawnDescriptions_BP",
@@ -333136,7 +333471,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:4",
+          "_Pointer_": "ptr:5",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase1_WaveDelay_BP",
@@ -333159,7 +333494,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:5",
+          "_Pointer_": "ptr:6",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase2_TimeBeforeWaves_BP",
@@ -333182,7 +333517,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:6",
+          "_Pointer_": "ptr:7",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase2_ShipWaves_BP",
@@ -333196,7 +333531,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:7",
+          "_Pointer_": "ptr:8",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase2_TimeBetweenWaves_BP",
@@ -333219,7 +333554,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:8",
+          "_Pointer_": "ptr:9",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "SecurityTerminalProximityTrackerDistance_BP",
@@ -333242,7 +333577,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:9",
+          "_Pointer_": "ptr:10",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase3_HostileShipSpawnDescriptions_BP",
@@ -333256,7 +333591,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:10",
+          "_Pointer_": "ptr:11",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase3_WaveDelay_BP",
@@ -333279,7 +333614,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:11",
+          "_Pointer_": "ptr:12",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_EscortShip_BP",
@@ -333293,7 +333628,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:12",
+          "_Pointer_": "ptr:13",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_EscortReinforcementChance_BP",
@@ -333316,7 +333651,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:13",
+          "_Pointer_": "ptr:14",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_EscortReinforcementsWave01_BP",
@@ -333330,7 +333665,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:14",
+          "_Pointer_": "ptr:15",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_EscortReinforcementsWave02_BP",
@@ -333344,7 +333679,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:15",
+          "_Pointer_": "ptr:16",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_EscortReinforcementsWave03_BP",
@@ -333358,7 +333693,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:16",
+          "_Pointer_": "ptr:17",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_ERWave01MinDistance_BP",
@@ -333381,7 +333716,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:17",
+          "_Pointer_": "ptr:18",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_ERWave01MaxDistance_BP",
@@ -333404,7 +333739,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:18",
+          "_Pointer_": "ptr:19",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_ERWave02MinDistance_BP",
@@ -333427,7 +333762,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:19",
+          "_Pointer_": "ptr:20",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_ERWave02MaxDistance_BP",
@@ -333450,7 +333785,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:20",
+          "_Pointer_": "ptr:21",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_ERWave03MinDistance_BP",
@@ -333473,7 +333808,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:21",
+          "_Pointer_": "ptr:22",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase4_ERWave03MaxDistance_BP",
@@ -333496,7 +333831,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:27",
+          "_Pointer_": "ptr:28",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase5_VanduulWaves_BP",
@@ -333510,7 +333845,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:26",
+          "_Pointer_": "ptr:27",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase5_TimeUntilVanduulArrive_BP",
@@ -333523,7 +333858,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:28",
+          "_Pointer_": "ptr:29",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "Phase5_VanduulWaveDelay_BP",
@@ -333536,7 +333871,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:29",
+          "_Pointer_": "ptr:30",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "WavePercentRemainingBeforeProceeding_BP",
@@ -333549,7 +333884,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:30",
+          "_Pointer_": "ptr:31",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CargoBayAccessCard_BP",
@@ -333562,7 +333897,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:22",
+          "_Pointer_": "ptr:23",
           "_Type_": "MissionProperty",
           "extendedTextToken": "ItemsToDestroy",
           "missionVariableName": "",
@@ -333584,7 +333919,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:23",
+          "_Pointer_": "ptr:24",
           "_Type_": "MissionProperty",
           "extendedTextToken": "ItemsToDestroy1",
           "missionVariableName": "",
@@ -333606,7 +333941,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:24",
+          "_Pointer_": "ptr:25",
           "_Type_": "MissionProperty",
           "extendedTextToken": "ItemsToDestroy2",
           "missionVariableName": "",
@@ -333628,7 +333963,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:25",
+          "_Pointer_": "ptr:26",
           "_Type_": "MissionProperty",
           "extendedTextToken": "ItemsToDestroy3",
           "missionVariableName": "",
@@ -333650,7 +333985,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:31",
+          "_Pointer_": "ptr:32",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Tobin_Start_BP",
@@ -333697,7 +334032,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:32",
+          "_Pointer_": "ptr:33",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Tobin_Abandon_BP",
@@ -333739,7 +334074,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:33",
+          "_Pointer_": "ptr:34",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Tobin_Fail_BP",
@@ -333781,7 +334116,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:34",
+          "_Pointer_": "ptr:35",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Success_BP",
@@ -333828,7 +334163,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:35",
+          "_Pointer_": "ptr:36",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_IdrisDeath_ObjectiveFail_BP",
@@ -333870,7 +334205,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:36",
+          "_Pointer_": "ptr:37",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Abandon_BP",
@@ -333912,7 +334247,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:37",
+          "_Pointer_": "ptr:38",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase1_HostileKilled_BP",
@@ -333954,7 +334289,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:38",
+          "_Pointer_": "ptr:39",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase1_ObjectiveStart_BP",
@@ -334001,7 +334336,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:39",
+          "_Pointer_": "ptr:40",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase1_LowDamage_BP",
@@ -334048,7 +334383,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:40",
+          "_Pointer_": "ptr:41",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase1_HighDamage_BP",
@@ -334095,7 +334430,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:41",
+          "_Pointer_": "ptr:42",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase1_ObjectiveReminder_BP",
@@ -334142,7 +334477,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:42",
+          "_Pointer_": "ptr:43",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase1_ObjectiveCompleted_BP",
@@ -334189,7 +334524,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:43",
+          "_Pointer_": "ptr:44",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase1_OfferAssistance_BP",
@@ -334236,7 +334571,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:44",
+          "_Pointer_": "ptr:45",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase2_PowerRelays_SubObjectiveStart_BP",
@@ -334283,7 +334618,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:45",
+          "_Pointer_": "ptr:46",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase2_PowerRelays_SubObjectiveStart_WeaponType_BP",
@@ -334335,7 +334670,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:46",
+          "_Pointer_": "ptr:47",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase2_PowerRelays_DestroyEncouragement_BP",
@@ -334382,7 +334717,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:47",
+          "_Pointer_": "ptr:48",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase2_PowerRelay_LastOneDestroyed_BP",
@@ -334434,7 +334769,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:48",
+          "_Pointer_": "ptr:49",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase2_CoolingUnits_LastOneDestroyed_BP",
@@ -334487,7 +334822,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:50",
+          "_Pointer_": "ptr:51",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase2_Core_SubObjectiveStart_BP",
@@ -334534,7 +334869,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:51",
+          "_Pointer_": "ptr:52",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase2_Core_SubObjectiveCompleted_BP",
@@ -334581,7 +334916,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:52",
+          "_Pointer_": "ptr:53",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase5_TauntResponse_BP",
@@ -334633,7 +334968,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:49",
+          "_Pointer_": "ptr:50",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase3_ObjectiveStart_BP",
@@ -334680,7 +335015,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:53",
+          "_Pointer_": "ptr:54",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase4_FreePilot_ObjectiveStart_BP",
@@ -334727,7 +335062,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:54",
+          "_Pointer_": "ptr:55",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase4_FreePilot_Reminder_BP",
@@ -334774,7 +335109,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:55",
+          "_Pointer_": "ptr:56",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase4_EscortPilot_ObjectiveCompleted_BP",
@@ -334821,7 +335156,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:56",
+          "_Pointer_": "ptr:57",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase4_EscortPilot_ObjectiveFailed_BP",
@@ -334868,7 +335203,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:57",
+          "_Pointer_": "ptr:58",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase5_VanduulWarning_BP",
@@ -334920,7 +335255,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:58",
+          "_Pointer_": "ptr:59",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase5_ObjectiveComplete_Reply_BP",
@@ -334967,7 +335302,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:59",
+          "_Pointer_": "ptr:60",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase6_MaulerArrives_BP",
@@ -335014,7 +335349,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:60",
+          "_Pointer_": "ptr:61",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase6_EscortDead_BP",
@@ -335061,7 +335396,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:61",
+          "_Pointer_": "ptr:62",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Martel_Phase6_MaulerDestroyed_BP",
@@ -335108,7 +335443,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:62",
+          "_Pointer_": "ptr:63",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Forge_Phase2_Taunt_BP",
@@ -335155,7 +335490,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:63",
+          "_Pointer_": "ptr:64",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Forge_Phase2_Taunt_Known_BP",
@@ -335202,7 +335537,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:64",
+          "_Pointer_": "ptr:65",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Forge_Phase3_Taunt_BP",
@@ -335249,7 +335584,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:65",
+          "_Pointer_": "ptr:66",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Forge_Phase5_Taunt_BP",
@@ -335296,7 +335631,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:66",
+          "_Pointer_": "ptr:67",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase4_FreePilot_DistressCall_BP",
@@ -335343,7 +335678,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:67",
+          "_Pointer_": "ptr:68",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase4_FreePilot_SecurityTerminal_BP",
@@ -335390,7 +335725,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:68",
+          "_Pointer_": "ptr:69",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase4_FreePilot_ObjectiveCompleted_BP",
@@ -335437,7 +335772,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:69",
+          "_Pointer_": "ptr:70",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase6_EscortPilot_Reminder_BP",
@@ -335484,7 +335819,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:70",
+          "_Pointer_": "ptr:71",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase4_EscortPilot_KillEncouragement_BP",
@@ -335531,7 +335866,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:71",
+          "_Pointer_": "ptr:72",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase4_EscortPilot_Death_BP",
@@ -335578,7 +335913,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:72",
+          "_Pointer_": "ptr:73",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase6_Spooling_BP",
@@ -335625,7 +335960,7 @@
       {
         "kind": "MissionProperty",
         "source_block": {
-          "_Pointer_": "ptr:73",
+          "_Pointer_": "ptr:74",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
           "missionVariableName": "CN_Windell_Phase6_QTSuccess_BP",
@@ -335672,6 +336007,34 @@
       {
         "kind": "MissionProperty",
         "source_block": {
+          "_Pointer_": "ptr:2",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "",
+          "missionVariableName": "Phase1_AttackedShipSpawnDescription_BP",
+          "value": {
+            "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+            "allowedForMissionRestrictedDeliveries": false,
+            "spawnDescriptions": []
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:3",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "",
+          "missionVariableName": "Phase1_HostileShipSpawnDescriptions_BP",
+          "value": {
+            "_Type_": "MissionPropertyValue_ShipSpawnDescriptions",
+            "allowedForMissionRestrictedDeliveries": false,
+            "spawnDescriptions": []
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
           "_Pointer_": "ptr:4",
           "_Type_": "MissionProperty",
           "extendedTextToken": "",
@@ -335686,29 +336049,6 @@
                 "textId": "@LOC_UNINITIALIZED",
                 "value": 0,
                 "variation": 0,
-                "weighting": 1.0
-              }
-            ]
-          }
-        }
-      },
-      {
-        "kind": "MissionProperty",
-        "source_block": {
-          "_Pointer_": "ptr:5",
-          "_Type_": "MissionProperty",
-          "extendedTextToken": "",
-          "missionVariableName": "Phase1_WaveDelay_BP",
-          "value": {
-            "_Type_": "MissionPropertyValue_Float",
-            "options": [
-              {
-                "DEBUG_forceChooseThisOption": false,
-                "_Type_": "MissionPropertyValueOption_Float",
-                "dependentProperties": [],
-                "textId": "@LOC_UNINITIALIZED",
-                "value": 0.0,
-                "variation": 0.0,
                 "weighting": 1.0
               }
             ]

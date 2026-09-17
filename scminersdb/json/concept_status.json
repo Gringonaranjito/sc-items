@@ -156,6 +156,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.ARMR_AEGS_SabreRaven_EX",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_sabreraven_ex.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.ARMR_AEGS_Template",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_template.json",
     "status": "Flyable",
@@ -1662,6 +1668,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_AEGS_Sabre_Raven_EX",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven_ex.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_AEGS_Tiburon",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_tiburon.json",
     "status": "Flyable",
@@ -2918,6 +2930,12 @@
   {
     "name": "EntityClassDefinition.Controller_Weapon_ATLS_IKTI",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Weapon_ATLS_IKTI_NTLS",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti_ntls.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -7932,6 +7950,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Paint_Aurora_Mk2_Silver_White_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_white_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Paint_Aurora_Mk2_Template",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_template.json",
     "status": "Flyable",
@@ -8612,6 +8636,12 @@
   {
     "name": "EntityClassDefinition.Paint_Cutlass_TalkLikeAPirate_Black_Red",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_talklikeapirate_black_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Cutlass_White_White_Pink",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_white_white_pink.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -11886,6 +11916,12 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Paint_Sabre_Black_Black_Black",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_black.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Paint_Sabre_Black_Black_Gold_Carbon",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_gold_carbon.json",
     "status": "Flyable",
@@ -11910,8 +11946,20 @@
     "status_display": "Flyable"
   },
   {
+    "name": "EntityClassDefinition.Paint_Sabre_Blue_Blue_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_blue_blue_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
     "name": "EntityClassDefinition.Paint_Sabre_Green_Black_Orange",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Sabre_Green_Green_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_green_yellow.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -11936,6 +11984,12 @@
   {
     "name": "EntityClassDefinition.Paint_Sabre_LunarNewYear2952_Red",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_lunarnewyear2952_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.Paint_Sabre_Metal_Metal_Metal",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_metal_metal_metal.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },
@@ -14102,6 +14156,12 @@
   {
     "name": "EntityClassDefinition.QDMP_WETK_S01_Burke",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s01_burke.json",
+    "status": "Flyable",
+    "status_display": "Flyable"
+  },
+  {
+    "name": "EntityClassDefinition.QDMP_WETK_S02_Raven_X",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s02_raven_x.json",
     "status": "Flyable",
     "status_display": "Flyable"
   },

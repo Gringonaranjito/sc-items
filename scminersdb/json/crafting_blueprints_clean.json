@@ -183568,6 +183568,293 @@
   },
   {
     "_source": "game-files/LIVE",
+    "blueprintName": "Strata Helmet Levski Edition",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 3,
+      "seconds": 20.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_fta_medium_helmet_01_15_16.json",
+    "internalName": "fta_medium_helmet_01_15_16",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_fta_medium_helmet_01_15_16",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Corundum",
+            "standardCargoUnits": 0.03,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING",
+        "slotDisplayName": "@crafting_ui_slotname_plating"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Aslarite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "INSULATIVE LINER",
+        "slotDisplayName": "@crafting_ui_slotname_insulativeliner"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Riccite",
+            "standardCargoUnits": 0.03,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING BARRIER",
+        "slotDisplayName": "@crafting_ui_slotname_platingbarrier"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Strata Arms Levski Edition",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 3,
+      "seconds": 20.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_arms_03_05_16.json",
+    "internalName": "grin_utility_medium_arms_03_05_16",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_arms_03_05_16",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Corundum",
+            "standardCargoUnits": 0.04,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING",
+        "slotDisplayName": "@crafting_ui_slotname_plating"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Aslarite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "INSULATIVE LINER",
+        "slotDisplayName": "@crafting_ui_slotname_insulativeliner"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Riccite",
+            "standardCargoUnits": 0.04,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING BARRIER",
+        "slotDisplayName": "@crafting_ui_slotname_platingbarrier"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Strata Backpack Levski Edition",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 1,
+      "seconds": 30.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_backpack_03_05_16.json",
+    "internalName": "grin_utility_medium_backpack_03_05_16",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_backpack_03_05_16",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Corundum",
+            "standardCargoUnits": 0.04,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING",
+        "slotDisplayName": "@crafting_ui_slotname_plating"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Aslarite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "INSULATIVE LINER",
+        "slotDisplayName": "@crafting_ui_slotname_insulativeliner"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Strata Core Levski Edition",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 3,
+      "seconds": 20.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_core_03_05_16.json",
+    "internalName": "grin_utility_medium_core_03_05_16",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_core_03_05_16",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Corundum",
+            "standardCargoUnits": 0.05,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING",
+        "slotDisplayName": "@crafting_ui_slotname_plating"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Aslarite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "INSULATIVE LINER",
+        "slotDisplayName": "@crafting_ui_slotname_insulativeliner"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Riccite",
+            "standardCargoUnits": 0.05,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING BARRIER",
+        "slotDisplayName": "@crafting_ui_slotname_platingbarrier"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
+    "blueprintName": "Strata Legs Levski Edition",
+    "build": "LIVE",
+    "categoryName": "FPSArmours",
+    "craftTime": {
+      "_Type_": "TimeValue_Partitioned",
+      "days": 0,
+      "hours": 0,
+      "minutes": 3,
+      "seconds": 20.0
+    },
+    "file": "starbreaker/libs/foundry/records/crafting/blueprints/crafting/fpsgear/armour/miner/medium/bp_craft_grin_utility_medium_legs_03_05_16.json",
+    "internalName": "grin_utility_medium_legs_03_05_16",
+    "isReward": null,
+    "recordName": "CraftingBlueprintRecord.BP_CRAFT_grin_utility_medium_legs_03_05_16",
+    "rewardMissions": [],
+    "slots": [
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Corundum",
+            "standardCargoUnits": 0.04,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING",
+        "slotDisplayName": "@crafting_ui_slotname_plating"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Aslarite",
+            "standardCargoUnits": 0.02,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "INSULATIVE LINER",
+        "slotDisplayName": "@crafting_ui_slotname_insulativeliner"
+      },
+      {
+        "options": [
+          {
+            "minQuality": 0,
+            "resourceName": "Riccite",
+            "standardCargoUnits": 0.04,
+            "type": "resource"
+          }
+        ],
+        "requiredCount": 1,
+        "slotDebugName": "PLATING BARRIER",
+        "slotDisplayName": "@crafting_ui_slotname_platingbarrier"
+      }
+    ],
+    "version": null
+  },
+  {
+    "_source": "game-files/LIVE",
     "blueprintName": "Drake Ore Pod",
     "build": "LIVE",
     "categoryName": "VehicleComponentS0",

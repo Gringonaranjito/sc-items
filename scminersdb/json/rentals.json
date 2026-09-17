@@ -1092,6 +1092,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven.json"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_AEGS_Sabre_Raven_EX",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left_rl_geom",
+      "wing_right_rl_geom"
+    ],
+    "source_id": "51ce7cda-8151-4325-ac66-56cd636aaa42",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven_ex.json"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_AEGS_Tiburon",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -3853,6 +3863,15 @@
     ],
     "source_id": "1f74e62c-6093-4d2f-a560-e33df359a7e4",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s01_burke.json"
+  },
+  {
+    "name": "EntityClassDefinition.QDMP_WETK_S02_Raven_X",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "668af260-593e-426a-a918-280abadd42e2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s02_raven_x.json"
   },
   {
     "name": "EntityClassDefinition.QED_RSI_S03_Scorpius",
@@ -7166,6 +7185,15 @@
     ],
     "source_id": "f996eda3-731d-4d00-a333-5b9913e4de9b",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/argo_atls_ikti_backpack.json"
+  },
+  {
+    "name": "EntityClassDefinition.ARGO_ATLS_IKTI_NTLS_Backpack",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "14ece41c-3fcf-4109-a8f1-984d7452191a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/argo_atls_ikti_ntls_backpack.json"
   },
   {
     "name": "EntityClassDefinition.Fuel_Port_PLACEHOLDER_Mule",

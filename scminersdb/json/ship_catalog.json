@@ -361,6 +361,18 @@
   {
     "manufacturer": "Aegs",
     "mass": false,
+    "name": "EntityClassDefinition.ARMR_AEGS_SabreRaven_EX",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "93d14e5b-99e8-4e20-95ba-a8fbfe6ca019",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_sabreraven_ex.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Aegs",
+    "mass": false,
     "name": "EntityClassDefinition.ARMR_AEGS_Template",
     "record_type": "EntityClassDefinition",
     "size": 1,
@@ -4067,6 +4079,35 @@
     "size": 1,
     "source_id": "173de5fb-efe7-4993-89d2-dccfb9911bfa",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_AEGS_Sabre_Raven_EX",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "wing_left_rl_geom",
+      "wing_right_rl_geom"
+    ],
+    "size": 1,
+    "source_id": "51ce7cda-8151-4325-ac66-56cd636aaa42",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven_ex.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -9632,6 +9673,29 @@
       "_PointsTo_:ptr:2",
       "_PointsTo_:ptr:3",
       "_PointsTo_:ptr:4",
+      "UNDEFINED"
+    ]
+  },
+  {
+    "dimensions": {
+      "height": -1.0
+    },
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Weapon_ATLS_IKTI_NTLS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "7e62a899-140e-4057-a226-ba49386e89f8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti_ntls.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 6,
+    "weapons": [
+      "_PointsTo_:ptr:1",
+      "_PointsTo_:ptr:2",
+      "_PointsTo_:ptr:3",
+      "_PointsTo_:ptr:4",
+      "_PointsTo_:ptr:5",
       "UNDEFINED"
     ]
   },
@@ -26346,6 +26410,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameAurora_Mk2_Paint_Silver_White_Red",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Aurora Mk2 Silver White Red Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Aurora_Mk2_Silver_White_Red",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "c03f3056-abc7-48db-b977-c0bb9b055b5c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_white_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -28841,6 +28927,28 @@
     "size": 1,
     "source_id": "d75eae08-f688-4b42-9c7b-ee510c0f66c6",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_talklikeapirate_black_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameCutlass_Paint_White_White_Pink",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Cutlass White White Pink Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Cutlass_White_White_Pink",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "d0d2f32b-e428-42d7-8a1a-6861e882fbc6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_white_white_pink.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -40821,6 +40929,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameSabre_Paint_Black_Black_Black",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Sabre Black Black Black Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Sabre_Black_Black_Black",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "fd69501e-19b2-4261-9b93-d9341221d75f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_black.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameSabre_Paint_Black_Black_Gold_Carbon",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -40909,6 +41039,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameSabre_Paint_Blue_Blue_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Sabre Blue Blue Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Sabre_Blue_Blue_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "15aa772a-f172-440f-8484-befb1c7f103b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_blue_blue_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameSabre_Paint_Green_Black_Orange",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -40922,6 +41074,28 @@
     "size": 1,
     "source_id": "11440f75-f2ed-46c9-9485-6118999509fa",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSabre_Paint_Green_Green_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Sabre Green Green Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Sabre_Green_Green_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "444ee997-9953-4035-b9af-c8c4dec53e5e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_green_yellow.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -41010,6 +41184,28 @@
     "size": 1,
     "source_id": "963d7a97-a4a3-4ab1-8e49-cde15f90728c",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_lunarnewyear2952_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSabre_Paint_Metal_Metal_Metal",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Sabre Metal Metal Metal Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Sabre_Metal_Metal_Metal",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "4bd11d40-f5e8-4cee-9e6e-1932f507cc00",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_metal_metal_metal.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -48340,6 +48536,31 @@
     "size": 1,
     "source_id": "1f74e62c-6093-4d2f-a560-e33df359a7e4",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s01_burke.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Wetk",
+    "mass": false,
+    "name": "EntityClassDefinition.QDMP_WETK_S02_Raven_X",
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "None"
+    ],
+    "size": 2,
+    "source_id": "668af260-593e-426a-a918-280abadd42e2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s02_raven_x.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"

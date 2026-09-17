@@ -2,7 +2,7 @@
   "counts": {
     "item_issues": 1872,
     "mission_issues": 1366,
-    "ship_issues": 2739,
+    "ship_issues": 2749,
     "unclassified_sources": 168
   },
   "duplicates": {
@@ -11,7 +11,7 @@
     "missions": [],
     "ships": []
   },
-  "generated_at": "2026-09-12T13:26:50.106032-04:00",
+  "generated_at": "2026-09-16T20:29:37.684625-04:00",
   "missing_data": {
     "item_issues": [
       {
@@ -23833,6 +23833,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.ARMR_AEGS_SabreRaven_EX",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_sabreraven_ex.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.ARMR_AEGS_Template",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_template.json"
       },
@@ -25522,6 +25529,14 @@
       },
       {
         "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_AEGS_Sabre_Raven_EX",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven_ex.json"
+      },
+      {
+        "missing_fields": [
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_AEGS_Tiburon",
@@ -27153,6 +27168,14 @@
         ],
         "name": "EntityClassDefinition.Controller_Weapon_ATLS_IKTI",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Weapon_ATLS_IKTI_NTLS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_weapon_atls_ikti_ntls.json"
       },
       {
         "missing_fields": [
@@ -34970,6 +34993,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Aurora_Mk2_Silver_White_Red",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_white_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Aurora_Mk2_Template",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_template.json"
       },
@@ -35767,6 +35797,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Cutlass_TalkLikeAPirate_Black_Red",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_talklikeapirate_black_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Cutlass_White_White_Pink",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_white_white_pink.json"
       },
       {
         "missing_fields": [
@@ -39606,6 +39643,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Sabre_Black_Black_Black",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_black.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Sabre_Black_Black_Gold_Carbon",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_gold_carbon.json"
       },
@@ -39634,8 +39678,22 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Sabre_Blue_Blue_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_blue_blue_yellow.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Sabre_Green_Black_Orange",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_black_orange.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Sabre_Green_Green_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_green_yellow.json"
       },
       {
         "missing_fields": [
@@ -39664,6 +39722,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Sabre_LunarNewYear2952_Red",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_lunarnewyear2952_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Sabre_Metal_Metal_Metal",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_metal_metal_metal.json"
       },
       {
         "missing_fields": [
@@ -42637,6 +42702,13 @@
         ],
         "name": "EntityClassDefinition.QDMP_WETK_S01_Burke",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s01_burke.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.QDMP_WETK_S02_Raven_X",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s02_raven_x.json"
       },
       {
         "missing_fields": [

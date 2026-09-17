@@ -332,6 +332,14 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_AEGS_Sabre_Raven_EX",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_sabre_raven_ex.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_AEGS_Tiburon",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_aegs_tiburon.json"
   },
@@ -5368,6 +5376,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_teal_white_torch.json"
   },
   {
+    "component_name": "@item_NameAurora_Mk2_Paint_Silver_White_Red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Aurora_Mk2_Silver_White_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_silver_white_red.json"
+  },
+  {
     "component_name": "@LOC_PLACEHOLDER",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -6278,6 +6294,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Cutlass_TalkLikeAPirate_Black_Red",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_talklikeapirate_black_red.json"
+  },
+  {
+    "component_name": "@item_NameCutlass_Paint_White_White_Pink",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Cutlass_White_White_Pink",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_cutlass_white_white_pink.json"
   },
   {
     "component_name": "@item_NameCutter_Paint_2955RedFestival_Red_Gold_Pig",
@@ -10640,6 +10664,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_beige_black_black.json"
   },
   {
+    "component_name": "@item_NameSabre_Paint_Black_Black_Black",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Sabre_Black_Black_Black",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_black_black.json"
+  },
+  {
     "component_name": "@item_NameSabre_Paint_Black_Black_Gold_Carbon",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -10672,12 +10704,28 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_black_silver_silver_polish.json"
   },
   {
+    "component_name": "@item_NameSabre_Paint_Blue_Blue_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Sabre_Blue_Blue_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_blue_blue_yellow.json"
+  },
+  {
     "component_name": "@item_NameSabre_Paint_Green_Black_Orange",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Sabre_Green_Black_Orange",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_black_orange.json"
+  },
+  {
+    "component_name": "@item_NameSabre_Paint_Green_Green_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Sabre_Green_Green_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_green_green_yellow.json"
   },
   {
     "component_name": "@item_NameSabre_Paint_Halloween25_Orange_Black",
@@ -10710,6 +10758,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Sabre_LunarNewYear2952_Red",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_lunarnewyear2952_red.json"
+  },
+  {
+    "component_name": "@item_NameSabre_Paint_Metal_Metal_Metal",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Sabre_Metal_Metal_Metal",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_sabre_metal_metal_metal.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
@@ -12950,6 +13006,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.QDMP_WETK_S01_Burke",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s01_burke.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.QDMP_WETK_S02_Raven_X",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/quantumenforcementdevice/qdmp_wetk_s02_raven_x.json"
   },
   {
     "component_name": "@item_Name_QRDV_ACAS_S01_Foxfire",

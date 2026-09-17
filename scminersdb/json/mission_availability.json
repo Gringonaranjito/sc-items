@@ -21357,7 +21357,7 @@
     "abandoned_cooldown_time": 0,
     "once_only": null,
     "notify_on_available": null,
-    "required_active_scenarios_count": 3,
+    "required_active_scenarios_count": 0,
     "source_contract_kinds": [
       "contracts"
     ],
@@ -21390,7 +21390,7 @@
     "same_session_required_known": false,
     "same_session_required": null,
     "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": true,
+    "runtime_only_possible": false,
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defendentitiesandescort.json"
@@ -21420,7 +21420,7 @@
     "abandoned_cooldown_time": 0,
     "once_only": null,
     "notify_on_available": null,
-    "required_active_scenarios_count": 3,
+    "required_active_scenarios_count": 0,
     "source_contract_kinds": [
       "contracts"
     ],
@@ -21454,7 +21454,7 @@
     "same_session_required_known": false,
     "same_session_required": null,
     "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": true,
+    "runtime_only_possible": false,
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters defenddestructibleentities.json"
@@ -26530,7 +26530,7 @@
     "abandoned_cooldown_time": 0,
     "once_only": null,
     "notify_on_available": null,
-    "required_active_scenarios_count": 3,
+    "required_active_scenarios_count": 0,
     "source_contract_kinds": [
       "contracts"
     ],
@@ -26565,7 +26565,7 @@
     "same_session_required_known": false,
     "same_session_required": null,
     "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": true,
+    "runtime_only_possible": false,
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/shipbattles/foxwell defendentitiesandescort.json"
@@ -26776,7 +26776,7 @@
     "abandoned_cooldown_time": 0,
     "once_only": null,
     "notify_on_available": null,
-    "required_active_scenarios_count": 3,
+    "required_active_scenarios_count": 0,
     "source_contract_kinds": [
       "contracts"
     ],
@@ -26811,7 +26811,7 @@
     "same_session_required_known": false,
     "same_session_required": null,
     "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": true,
+    "runtime_only_possible": false,
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/foxwellenforcement/shipbattles/foxwellenforcement defenddestructibleentities.json"

@@ -2,14 +2,14 @@
   "category_counts": {
     "audit_export": 5,
     "blueprint_catalog": 1707,
-    "concept_status": 2771,
-    "crafting_blueprints_clean": 1614,
+    "concept_status": 2781,
+    "crafting_blueprints_clean": 1619,
     "crafting_quality_adjustments": 7314,
     "crafting_recipes": 1615,
     "crafting_resources": 26,
     "dismantle_returns": 31,
     "faction_reputation_scopes": 46,
-    "factions_companies": 11405,
+    "factions_companies": 11439,
     "fps_weapons": 28,
     "item_catalog": 1874,
     "locations": 2419,
@@ -21,15 +21,15 @@
     "mission_rewards": 683,
     "missions": 683,
     "missions_app_ready": 2232,
-    "rentals": 1075,
-    "ship_catalog": 2771,
-    "ship_components": 1705,
+    "rentals": 1078,
+    "ship_catalog": 2781,
+    "ship_components": 1713,
     "ship_components_clean": 124,
     "ship_items": 0,
     "ship_parts": 0,
     "ship_weapons": 92,
     "ships": 303,
-    "shop_locations": 2211
+    "shop_locations": 2216
   },
   "exports": [
     {
@@ -158,7 +158,7 @@
       "file": "factions_companies.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\factions_companies.json",
       "path": "../json/factions_companies.json",
-      "record_count": 11405,
+      "record_count": 11439,
       "title": "Factions and companies",
       "url": "../json/factions_companies.json"
     },
@@ -168,7 +168,7 @@
       "file": "ship_catalog.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\ship_catalog.json",
       "path": "../json/ship_catalog.json",
-      "record_count": 2771,
+      "record_count": 2781,
       "title": "Ships and vehicles",
       "url": "../json/ship_catalog.json"
     },
@@ -188,7 +188,7 @@
       "file": "ship_components.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\ship_components.json",
       "path": "../json/ship_components.json",
-      "record_count": 1705,
+      "record_count": 1713,
       "title": "Ship components",
       "url": "../json/ship_components.json"
     },
@@ -218,7 +218,7 @@
       "file": "shop_locations.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\shop_locations.json",
       "path": "../json/shop_locations.json",
-      "record_count": 2211,
+      "record_count": 2216,
       "title": "Shop locations",
       "url": "../json/shop_locations.json"
     },
@@ -228,7 +228,7 @@
       "file": "rentals.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\rentals.json",
       "path": "../json/rentals.json",
-      "record_count": 1075,
+      "record_count": 1078,
       "title": "Rental locations",
       "url": "../json/rentals.json"
     },
@@ -238,7 +238,7 @@
       "file": "concept_status.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\concept_status.json",
       "path": "../json/concept_status.json",
-      "record_count": 2771,
+      "record_count": 2781,
       "title": "Concept status",
       "url": "../json/concept_status.json"
     },
@@ -308,7 +308,7 @@
       "file": "crafting_blueprints_clean.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\crafting_blueprints_clean.json",
       "path": "../json/crafting_blueprints_clean.json",
-      "record_count": 1614,
+      "record_count": 1619,
       "title": "Crafting blueprints clean",
       "url": "../json/crafting_blueprints_clean.json"
     },
@@ -337,8 +337,8 @@
   "manifest_url": "../runs/latest.json",
   "output_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json",
   "raw_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\raw",
-  "record_count": 52345,
+  "record_count": 52420,
   "source_root": null,
   "status": "ok",
-  "updated_at": "2026-09-12T13:27:13.565235-04:00"
+  "updated_at": "2026-09-16T20:29:56.801289-04:00"
 }
