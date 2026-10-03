@@ -20236,7 +20236,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "PAB-1 Arms",
+    "blueprintName": "PAB-1 Arms Woodland",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -22035,7 +22035,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "PAB-1 Core",
+    "blueprintName": "PAB-1 Core Woodland",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -25548,7 +25548,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "PAB-1 Legs",
+    "blueprintName": "PAB-1 Legs Woodland",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -32966,7 +32966,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ORC-mkV Arms",
+    "blueprintName": "ORC-mkV Arms Woodland",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -34792,7 +34792,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ORC-mkV Core",
+    "blueprintName": "ORC-mkV Core Woodland",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -38515,7 +38515,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ORC-mkV Legs",
+    "blueprintName": "ORC-mkV Legs Woodland",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -44918,7 +44918,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "MacFlex Arms",
+    "blueprintName": "MacFlex Arms Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -44989,7 +44989,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "MacFlex Core",
+    "blueprintName": "MacFlex Core Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -45060,7 +45060,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Horizon Helmet",
+    "blueprintName": "Horizon Helmet Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -45366,7 +45366,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "MacFlex Legs",
+    "blueprintName": "MacFlex Legs Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -45437,7 +45437,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Venture Arms",
+    "blueprintName": "Venture Arms Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -45743,7 +45743,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Venture Core",
+    "blueprintName": "Venture Core Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -46049,7 +46049,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Venture Helmet White",
+    "blueprintName": "Venture Helmet Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -46120,7 +46120,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Venture Legs",
+    "blueprintName": "Venture Legs Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -46426,7 +46426,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "MacFlex Rucksack Backpack",
+    "blueprintName": "MacFlex \"Rucksack\" Backpack",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -50613,7 +50613,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Lynx Core",
+    "blueprintName": "Lynx Core Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -50761,7 +50761,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Oracle Helmet",
+    "blueprintName": "Oracle Helmet",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -50909,7 +50909,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Lynx Legs",
+    "blueprintName": "Lynx Legs Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -51057,7 +51057,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "TrueDef-Pro Arms",
+    "blueprintName": "TrueDef-Pro Arms Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -54024,7 +54024,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Argus Helmet",
+    "blueprintName": "Argus Helmet Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -55614,7 +55614,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "TrueDef-Pro Legs",
+    "blueprintName": "TrueDef-Pro Legs Base",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -60622,7 +60622,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Antium Arms Maroon",
+    "blueprintName": "Antium Helmet Jet",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -63222,7 +63222,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Antium Helmet Jet",
+    "blueprintName": "Antium Core Jet",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -72444,7 +72444,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Inquisitor Core Olive",
+    "blueprintName": "Inquisitor Core Scorched",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -87348,7 +87348,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Beacon Undersuit",
+    "blueprintName": "Beacon Undersuit Grey Multi",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -87446,7 +87446,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Odyssey II Undersuit Alpha",
+    "blueprintName": "Odyssey II Undersuit Woodland",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -88282,7 +88282,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FS-9 Blacklist LMG",
+    "blueprintName": "FS-9 \"Blacklist\" LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -88403,7 +88403,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FS-9 Stoneface LMG",
+    "blueprintName": "FS-9 \"Stoneface\" LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -88524,7 +88524,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FS-9 Finish Line LMG",
+    "blueprintName": "FS-9 \"Finish Line\" LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -88893,7 +88893,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "F55 Mark I LMG",
+    "blueprintName": "F55 \"Mark I\" LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -89014,7 +89014,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "F55 Scorched LMG",
+    "blueprintName": "F55 \"Scorched\" LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -89235,7 +89235,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Demeco Purgatory Camo LMG",
+    "blueprintName": "Demeco \"Purgatory Camo\" LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -89584,7 +89584,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Fresnel Molten Energy LMG",
+    "blueprintName": "Fresnel \"Molten\" Energy LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -89695,7 +89695,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Fresnel Icebox Energy LMG",
+    "blueprintName": "Fresnel \"Icebox\" Energy LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -89806,7 +89806,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Fresnel Rockfall Energy LMG",
+    "blueprintName": "Fresnel \"Rockfall\" Energy LMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -90038,7 +90038,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "S-38 Scorched Pistol",
+    "blueprintName": "S-38 \"Scorched\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -90286,7 +90286,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Nightstalker Pistol",
+    "blueprintName": "LH86 \"Nightstalker\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -90407,7 +90407,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Permafrost Pistol",
+    "blueprintName": "LH86 \"Permafrost\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -90528,7 +90528,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Scorched Pistol",
+    "blueprintName": "LH86 \"Scorched\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -90649,7 +90649,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Warhawk Pistol",
+    "blueprintName": "LH86 \"Warhawk\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -90770,7 +90770,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Luckbringer Pistol",
+    "blueprintName": "LH86 \"Luckbringer\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -90891,7 +90891,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Pathfinder Pistol",
+    "blueprintName": "LH86 \"Pathfinder\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -91012,7 +91012,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Desert Shadow Pistol",
+    "blueprintName": "LH86 \"Desert Shadow\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -91133,7 +91133,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Stormfall Pistol",
+    "blueprintName": "LH86 \"Stormfall\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -91254,7 +91254,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "LH86 Boneyard Pistol",
+    "blueprintName": "LH86 \"Boneyard\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -91952,7 +91952,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arclight Midnight Pistol",
+    "blueprintName": "Arclight \"Midnight\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -92120,7 +92120,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arclight Nightstalker Pistol",
+    "blueprintName": "Arclight \"Nightstalker\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -92420,7 +92420,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arclight Herrero Pistol",
+    "blueprintName": "Arclight \"Herrero\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -92576,7 +92576,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arclight Executive Edition Pistol",
+    "blueprintName": "Arclight \"Executive Edition\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -92676,7 +92676,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arclight Warhawk Pistol",
+    "blueprintName": "Arclight \"Warhawk\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -92976,7 +92976,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arclight Desert Shadow Pistol",
+    "blueprintName": "Arclight \"Desert Shadow\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -93132,7 +93132,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arclight Stormfall Pistol",
+    "blueprintName": "Arclight \"Stormfall\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -93686,7 +93686,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Coda Nighthawk Pistol",
+    "blueprintName": "Coda \"Nighthawk\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -93905,7 +93905,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Coda Ultraviolet Pistol",
+    "blueprintName": "Coda \"Ultraviolet\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -94147,7 +94147,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Coda Big Boss Pistol",
+    "blueprintName": "Coda \"Big Boss\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -94600,7 +94600,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Yubarev Venom Pistol",
+    "blueprintName": "Yubarev \"Venom\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -94700,7 +94700,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Yubarev Mirage Pistol",
+    "blueprintName": "Yubarev \"Mirage\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -94934,7 +94934,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Yubarev Igniter Pistol",
+    "blueprintName": "Yubarev \"Igniter\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -95421,7 +95421,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Pulse Blacklist Pistol",
+    "blueprintName": "Pulse \"Blacklist\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -95537,7 +95537,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Pulse Rouge Pistol",
+    "blueprintName": "Pulse \"Rouge\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -95794,7 +95794,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P4-AR Nightstalker Rifle",
+    "blueprintName": "P4-AR \"Nightstalker\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -95915,7 +95915,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P4-AR Warhawk Rifle",
+    "blueprintName": "P4-AR \"Warhawk\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -96036,7 +96036,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P4-AR Desert Shadow Rifle",
+    "blueprintName": "P4-AR \"Desert Shadow\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -96157,7 +96157,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P4-AR Blacklist Rifle",
+    "blueprintName": "P4-AR \"Blacklist\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -96582,7 +96582,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "S71 Bullseye Rifle",
+    "blueprintName": "S71 \"Bullseye\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -96703,7 +96703,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "S71 Justified Rifle",
+    "blueprintName": "S71 \"Justified\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -96824,7 +96824,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "S71 Purgatory Camo Rifle",
+    "blueprintName": "S71 \"Purgatory Camo\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -97185,7 +97185,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Gallant Midnight Rifle",
+    "blueprintName": "Gallant \"Midnight\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -97285,7 +97285,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Gallant Nightstalker Rifle",
+    "blueprintName": "Gallant \"Nightstalker\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -97385,7 +97385,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Gallant Executive Edition Rifle",
+    "blueprintName": "Gallant \"Executive Edition\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -97485,7 +97485,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Gallant Warhawk Rifle",
+    "blueprintName": "Gallant \"Warhawk\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -97585,7 +97585,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Gallant Desert Shadow Rifle",
+    "blueprintName": "Gallant \"Desert Shadow\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -97685,7 +97685,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Gallant Stormfall Rifle",
+    "blueprintName": "Gallant \"Stormfall\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -97785,7 +97785,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Gallant Boneyard Rifle",
+    "blueprintName": "Gallant \"Boneyard\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -98196,7 +98196,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Karna Rager Rifle",
+    "blueprintName": "Karna \"Rager\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -98311,7 +98311,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Karna Fate Rifle",
+    "blueprintName": "Karna \"Fate\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -98454,7 +98454,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Karna Brimstone Rifle",
+    "blueprintName": "Karna \"Brimstone\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -98597,7 +98597,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Karna Alpine Sunset Rifle",
+    "blueprintName": "Karna \"Alpine Sunset\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -98829,7 +98829,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Killshot Dominion Camo Rifle",
+    "blueprintName": "Killshot \"Dominion Camo\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -99157,7 +99157,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Parallax Shock Trooper Energy Assault Rifle",
+    "blueprintName": "Parallax \"Shock Trooper\" Energy Assault Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -99378,7 +99378,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Parallax Sunstone Energy Assault Rifle",
+    "blueprintName": "Parallax \"Sunstone\" Energy Assault Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -99599,7 +99599,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Parallax Sanguine Energy Assault Rifle",
+    "blueprintName": "Parallax \"Sanguine\" Energy Assault Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -100045,7 +100045,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "BR-2 Permafrost Shotgun",
+    "blueprintName": "BR-2 \"Permafrost\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -100166,7 +100166,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "BR-2 Purgatory Camo Shotgun",
+    "blueprintName": "BR-2 \"Purgatory Camo\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -100569,7 +100569,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "R97 Scorched Shotgun",
+    "blueprintName": "R97 \"Scorched\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -100703,7 +100703,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "R97 Kismet Shotgun",
+    "blueprintName": "R97 \"Kismet\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -100845,7 +100845,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "R97 Righteous Shotgun",
+    "blueprintName": "R97 \"Righteous\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -101137,7 +101137,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Ravager-212 Outcast Twin Shotgun",
+    "blueprintName": "Ravager-212 \"Outcast\" Twin Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -101436,7 +101436,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Midnight Shotgun",
+    "blueprintName": "Devastator \"Midnight\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -101614,7 +101614,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Nightstalker Shotgun",
+    "blueprintName": "Devastator \"Nightstalker\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -101714,7 +101714,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Rager Shotgun",
+    "blueprintName": "Devastator \"Rager\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -101814,7 +101814,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Voyager Shotgun",
+    "blueprintName": "Devastator \"Voyager\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -101914,7 +101914,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Executive Edition Shotgun",
+    "blueprintName": "Devastator \"Executive Edition\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -102014,7 +102014,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Warhawk Shotgun",
+    "blueprintName": "Devastator \"Warhawk\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -102192,7 +102192,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Pathfinder Shotgun",
+    "blueprintName": "Devastator \"Pathfinder\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -102292,7 +102292,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Brimstone Shotgun",
+    "blueprintName": "Devastator \"Brimstone\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -102392,7 +102392,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Devastator Desert Shadow Shotgun",
+    "blueprintName": "Devastator \"Desert Shadow\" Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -102730,7 +102730,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Prism Bonedust Laser Shotgun",
+    "blueprintName": "Prism \"Bonedust\" Laser Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -102836,7 +102836,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Prism Deep Sea Laser Shotgun",
+    "blueprintName": "Prism \"Deep Sea\" Laser Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -102942,7 +102942,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Prism Firesteel Laser Shotgun",
+    "blueprintName": "Prism \"Firesteel\" Laser Shotgun",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -103220,7 +103220,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P8-SC Midnight SMG",
+    "blueprintName": "P8-SC \"Midnight\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -103341,7 +103341,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P8-SC Nightstalker SMG",
+    "blueprintName": "P8-SC \"Nightstalker\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -103462,7 +103462,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P8-SC Executive Edition SMG",
+    "blueprintName": "P8-SC \"Executive Edition\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -103583,7 +103583,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P8-SC Warhawk SMG",
+    "blueprintName": "P8-SC \"Warhawk\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -103704,7 +103704,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P8-SC Desert Shadow SMG",
+    "blueprintName": "P8-SC \"Desert Shadow\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -103825,7 +103825,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P8-SC Stormfall SMG",
+    "blueprintName": "P8-SC \"Stormfall\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -103946,7 +103946,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P8-SC Boneyard SMG",
+    "blueprintName": "P8-SC \"Boneyard\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -104239,7 +104239,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "C54 Scorched SMG",
+    "blueprintName": "C54 \"Scorched\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -104360,7 +104360,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "C54 Luckbringer SMG",
+    "blueprintName": "C54 \"Luckbringer\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -104481,7 +104481,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "C54 Justified SMG",
+    "blueprintName": "C54 \"Justified\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105024,7 +105024,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Midnight SMG",
+    "blueprintName": "Custodian \"Midnight\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105130,7 +105130,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Nightstalker SMG",
+    "blueprintName": "Custodian \"Nightstalker\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105230,7 +105230,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Big Boss SMG",
+    "blueprintName": "Custodian \"Big Boss\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105330,7 +105330,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Scorched SMG",
+    "blueprintName": "Custodian \"Scorched\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105436,7 +105436,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Executive Edition SMG",
+    "blueprintName": "Custodian \"Executive Edition\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105536,7 +105536,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Warhawk SMG",
+    "blueprintName": "Custodian \"Warhawk\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105636,7 +105636,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Brimstone SMG",
+    "blueprintName": "Custodian \"Brimstone\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105736,7 +105736,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Desert Shadow SMG",
+    "blueprintName": "Custodian \"Desert Shadow\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105836,7 +105836,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Custodian Boneyard SMG",
+    "blueprintName": "Custodian \"Boneyard\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -105936,7 +105936,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Ripper Sunblock SMG",
+    "blueprintName": "Ripper \"Sunblock\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -106181,7 +106181,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Quartz Deadfall Energy SMG",
+    "blueprintName": "Quartz \"Deadfall\" Energy SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -106307,7 +106307,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Quartz Black Op Energy SMG",
+    "blueprintName": "Quartz \"Black Op\" Energy SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -106423,7 +106423,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Quartz Lumen Energy SMG",
+    "blueprintName": "Quartz \"Lumen\" Energy SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -106784,7 +106784,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P6-LR Rime Sniper Rifle",
+    "blueprintName": "P6-LR \"Rime\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -106920,7 +106920,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P6-LR Archangel Sniper Rifle",
+    "blueprintName": "P6-LR \"Archangel\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -107056,7 +107056,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P6-LR Blacklist Sniper Rifle",
+    "blueprintName": "P6-LR \"Blacklist\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -107427,7 +107427,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "A03 Canuto Sniper Rifle",
+    "blueprintName": "A03 \"Canuto\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -107563,7 +107563,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "A03 Scorched Sniper Rifle",
+    "blueprintName": "A03 \"Scorched\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -107699,7 +107699,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "A03 Luckbringer Sniper Rifle",
+    "blueprintName": "A03 \"Luckbringer\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -107835,7 +107835,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "A03 Lodestone Sniper Rifle",
+    "blueprintName": "A03 \"Lodestone\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -108199,7 +108199,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Midnight Sniper Rifle",
+    "blueprintName": "Arrowhead \"Midnight\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -108321,7 +108321,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Nightstalker Sniper Rifle",
+    "blueprintName": "Arrowhead \"Nightstalker\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -108443,7 +108443,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Voyager Sniper Rifle",
+    "blueprintName": "Arrowhead \"Voyager\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -108565,7 +108565,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Executive Sniper Rifle",
+    "blueprintName": "Arrowhead \"Executive\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -108687,7 +108687,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Warhawk Sniper Rifle",
+    "blueprintName": "Arrowhead \"Warhawk\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -108809,7 +108809,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Pathfinder Sniper Rifle",
+    "blueprintName": "Arrowhead \"Pathfinder\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -108931,7 +108931,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Desert Shadow Sniper Rifle",
+    "blueprintName": "Arrowhead \"Desert Shadow\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -109053,7 +109053,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Stormfall Sniper Rifle",
+    "blueprintName": "Arrowhead \"Stormfall\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -109175,7 +109175,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Arrowhead Boneyard Sniper Rifle",
+    "blueprintName": "Arrowhead \"Boneyard\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -110010,7 +110010,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Atzkav Venom Sniper Rifle",
+    "blueprintName": "Atzkav \"Venom\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -110132,7 +110132,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Atzkav Mirage Sniper Rifle",
+    "blueprintName": "Atzkav \"Mirage\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -110475,7 +110475,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Atzkav Igniter Sniper Rifle",
+    "blueprintName": "Atzkav \"Igniter\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -110818,7 +110818,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Atzkav Deadeye Sniper Rifle",
+    "blueprintName": "Atzkav \"Deadeye\" Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -111073,7 +111073,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Zenith Snow Camo Laser Sniper Rifle",
+    "blueprintName": "Zenith \"Snow Camo\" Laser Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -111195,7 +111195,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Zenith Darkwave Laser Sniper Rifle",
+    "blueprintName": "Zenith \"Darkwave\" Laser Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -111328,7 +111328,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Zenith Landslide Laser Sniper Rifle",
+    "blueprintName": "Zenith \"Landslide\" Laser Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -111461,7 +111461,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Zenith Thunderstrike Laser Sniper Rifle",
+    "blueprintName": "Zenith \"Thunderstrike\" Laser Sniper Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -138095,7 +138095,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FullForce",
+    "blueprintName": "DayBreak",
     "build": "PTU",
     "categoryName": "Veh. Comp. S2",
     "craftTime": {
@@ -168422,7 +168422,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "SureGrip S1 Tractor Beam",
+    "blueprintName": "SureGrip TH1 Tractor Beam",
     "build": "PTU",
     "categoryName": "Veh. Comp. S1",
     "craftTime": {
@@ -168536,7 +168536,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "SureGrip S2 Tractor Beam",
+    "blueprintName": "SureGrip TH2 Tractor Beam",
     "build": "PTU",
     "categoryName": "Veh. Comp. S2",
     "craftTime": {
@@ -168650,7 +168650,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "SureGrip S3 Tractor Beam",
+    "blueprintName": "SureGrip TH3 Tractor Beam",
     "build": "PTU",
     "categoryName": "Veh. Comp. S3",
     "craftTime": {
@@ -180674,7 +180674,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "BUL-H4 Ammo Carrier",
+    "blueprintName": "H4-PBF Ammo Carrier",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -180764,7 +180764,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "PH - cds_combat_superheavy_backpack_01_03_01",
+    "blueprintName": "H4-PBF Ammo Carrier Snow Camo",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -180988,7 +180988,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "PH - cds_combat_superheavy_helmet_01_03_01",
+    "blueprintName": "BUL-H4 Helmet Snow Camo",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181255,7 +181255,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "PH - cds_combat_superheavy_suit_01_03_01",
+    "blueprintName": "BUL-H4 Armor Snow Camo",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181346,7 +181346,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ADP-mk4 Arms Big Boss",
+    "blueprintName": "ADP-mk4 Arms SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181423,7 +181423,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ADP-mk4 Core Big Boss",
+    "blueprintName": "ADP-mk4 Core SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181500,7 +181500,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ADP-mk4 Helmet Big Boss",
+    "blueprintName": "ADP-mk4 Helmet SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181577,7 +181577,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ADP-mk4 Legs Big Boss",
+    "blueprintName": "ADP-mk4 Legs SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181654,7 +181654,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FBL-8a Arms (Modified)",
+    "blueprintName": "FBL-8a Arms SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181731,7 +181731,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FBL-8a Core (Modified)",
+    "blueprintName": "FBL-8a Core SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181808,7 +181808,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FBL-8a Helmet (Modified)",
+    "blueprintName": "FBL-8a Helmet SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -181885,7 +181885,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "FBL-8a Legs (Modified)",
+    "blueprintName": "FBL-8a Legs SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -182047,7 +182047,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ORC-mkX Arms (XenoThreat)",
+    "blueprintName": "ORC-mkX Arms SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -182138,7 +182138,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ORC-mkX Core (XenoThreat)",
+    "blueprintName": "ORC-mkX Core SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -182320,7 +182320,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "ORC-mkX Legs (XenoThreat)",
+    "blueprintName": "ORC-mkX Legs SecondWind",
     "build": "PTU",
     "categoryName": "FPSArmours",
     "craftTime": {
@@ -182544,7 +182544,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Vendetta Snow Camo HMG",
+    "blueprintName": "Vendetta \"Snow Camo\" HMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -182628,7 +182628,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "S-38 SecondWind Pistol",
+    "blueprintName": "S-38 \"SecondWind\" Pistol",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -182755,7 +182755,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "P4-AR SecondWind Rifle",
+    "blueprintName": "P4-AR \"SecondWind\" Rifle",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {
@@ -183003,7 +183003,7 @@
   },
   {
     "_source": "sccrafter/https_www.sccrafter.com_PTUBlueprints.json",
-    "blueprintName": "Lumin V SecondWind SMG",
+    "blueprintName": "Lumin V \"SecondWind\" SMG",
     "build": "PTU",
     "categoryName": "FPSWeapons",
     "craftTime": {

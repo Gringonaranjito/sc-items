@@ -1,11 +1,11 @@
 ﻿{
-    "started_at":  "2026-09-16T20:30:29.144664-04:00",
-    "finished_at":  "2026-09-16T20:30:30.885570-04:00",
+    "started_at":  "2026-10-02T21:43:27.728608-04:00",
+    "finished_at":  "2026-10-02T21:43:32.355004-04:00",
     "status":  "ok",
     "source_root":  "",
     "output_root":  "",
-    "json_count":  35,
-    "record_count":  51035,
+    "json_count":  38,
+    "record_count":  54186,
     "category_counts":  {
                             "audit_export":  5,
                             "crafting_recipes":  1560,
@@ -19,6 +19,7 @@
                             "mission_catalog_player_ready":  2107,
                             "mission_catalog_ready":  2107,
                             "mission_catalog_enriched":  2107,
+                            "blueprint_reward_pools":  116,
                             "factions_companies":  11210,
                             "ship_catalog":  2713,
                             "item_catalog":  1858,
@@ -31,12 +32,14 @@
                             "ships":  303,
                             "ship_weapons":  92,
                             "fps_weapons":  28,
+                            "player_items":  2971,
                             "ship_components_clean":  124,
                             "ship_parts":  0,
                             "ship_items":  0,
                             "crafting_blueprints_clean":  1597,
                             "crafting_resources":  26,
-                            "crafting_quality_adjustments":  7314
+                            "crafting_quality_adjustments":  7314,
+                            "wikelo_items":  64
                         },
     "source_environments":  {
                                 "live":  {

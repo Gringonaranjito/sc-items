@@ -1,0 +1,4506 @@
+[
+  {
+    "available": true,
+    "debug_name": "TheCollector_OrbArm",
+    "description": "Hello, know many humans want saldynium for regen problem. Credits good, yes, but Wikelo can use that, kopion horn, and other things to make special armor. \\n\\nOnce done, you be very tough. Very scary.\\n\\nYou see items needed. Bring to <EM4>~mission(destination|ListAll)</EM4> and I make for you.\\n\\nBye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_specialist_heavy_core_01_01_01.json",
+        "name": "Antium Core",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_specialist_heavy_helmet_01_01_01.json",
+        "name": "Antium Helmet",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_specialist_heavy_legs_01_01_01.json",
+        "name": "Antium Legs",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_specialist_heavy_arms_01_01_01.json",
+        "name": "Antium Arms",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_combat_heavy_arms_02_02_01.json",
+            "name": "Ana Arms Endro",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_combat_heavy_legs_02_02_01.json",
+            "name": "Ana Legs Endro",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_combat_heavy_core_02_02_01.json",
+            "name": "Ana Core Endro",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_combat_heavy_helmet_02_02_01.json",
+            "name": "Ana Helmet Endro",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_combat_heavy_arms_02_02_01.json",
+        "name": "Ana Arms Endro",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_combat_heavy_legs_02_02_01.json",
+        "name": "Ana Legs Endro",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_combat_heavy_core_02_02_01.json",
+        "name": "Ana Core Endro",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_combat_heavy_helmet_02_02_01.json",
+        "name": "Ana Helmet Endro",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_orb_sandarmour.json",
+    "title": "Armor with horn and string",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "eda899b9-c58b-48df-88d9-6b34368af2f2"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_SpikeyArmor",
+    "description": "Vanduul have strange ways. I never talk to them, old souli used to, but not Wikelo. Anyway, though not friendly, they make interesting thing. If you like, Wikelo can make you look more like.\\n\\nBring things. Will do.\\n\\nBye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_a.json",
+        "name": "Vanduul Plating",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_b.json",
+        "name": "Vanduul Metal",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/legs/qrt_combat_medium_legs_01_01_16.json",
+        "name": "Testudo Legs Turfwar",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/medium/qrt_combat_medium_helmet_01_01_16.json",
+        "name": "Testudo Helmet Turfwar",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/core/qrt_combat_medium_core_01_01_16.json",
+        "name": "Testudo Core Turfwar",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/arms/qrt_combat_medium_arms_01_01_16.json",
+        "name": "Testudo Arms Turfwar",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/backpack/qrt_combat_medium_backpack_01_01_16.json",
+        "name": "Testudo Backpack Turfwar",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/medium/qrt_combat_medium_helmet_02_01_01.json",
+            "name": "Testudo Helmet Clanguard",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/arms/qrt_combat_medium_arms_02_01_01.json",
+            "name": "Testudo Arms Clanguard",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/core/qrt_combat_medium_core_02_01_01.json",
+            "name": "Testudo Core Clanguard",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/legs/qrt_combat_medium_legs_02_01_01.json",
+            "name": "Testudo Legs Clanguard",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/backpack/qrt_combat_medium_backpack_02_01_01.json",
+            "name": "Testudo Backpack Clanguard",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/medium/qrt_combat_medium_helmet_02_01_01.json",
+        "name": "Testudo Helmet Clanguard",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/arms/qrt_combat_medium_arms_02_01_01.json",
+        "name": "Testudo Arms Clanguard",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/core/qrt_combat_medium_core_02_01_01.json",
+        "name": "Testudo Core Clanguard",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/legs/qrt_combat_medium_legs_02_01_01.json",
+        "name": "Testudo Legs Clanguard",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/backpack/qrt_combat_medium_backpack_02_01_01.json",
+        "name": "Testudo Backpack Clanguard",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Armor with Vanduul",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "372b0eff-0e55-4654-a3ca-542058cb84cf"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Nov_Molten",
+    "description": "If you have armor, Wikelo can make it look warm. Good look for useful armor. Bring me things and will do.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 30,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl1.json",
+        "name": "RCMBNT-PWL-1",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl2.json",
+        "name": "RCMBNT-PWL-2",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl3.json",
+        "name": "RCMBNT-PWL-3",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/arms/grin_utility_medium_arms_02_01_01.json",
+        "name": "Strata Arms",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/legs/grin_utility_medium_legs_02_01_01.json",
+        "name": "Strata Legs",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/medium/fta_medium_helmet_01_01_05.json",
+        "name": "Strata Helmet",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/backpack/grin_utility_medium_backpack_02_01_01.json",
+        "name": "Strata Backpack",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/core/grin_utility_medium_core_02_01_01.json",
+        "name": "Strata Core",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/core/grin_utility_medium_core_03_04_01.json",
+            "name": "Strata Core Heatwave",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/arms/grin_utility_medium_arms_03_04_01.json",
+            "name": "Strata Arms Heatwave",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/legs/grin_utility_medium_legs_03_04_01.json",
+            "name": "Strata Legs Heatwave",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/medium/fta_medium_helmet_02_01_01.json",
+            "name": "Strata Helmet Heatwave",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/backpack/grin_utility_medium_backpack_03_04_01.json",
+            "name": "Strata Backpack Heatwave",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/core/grin_utility_medium_core_03_04_01.json",
+        "name": "Strata Core Heatwave",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/arms/grin_utility_medium_arms_03_04_01.json",
+        "name": "Strata Arms Heatwave",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/legs/grin_utility_medium_legs_03_04_01.json",
+        "name": "Strata Legs Heatwave",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/medium/fta_medium_helmet_02_01_01.json",
+        "name": "Strata Helmet Heatwave",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/medium/backpack/grin_utility_medium_backpack_03_04_01.json",
+        "name": "Strata Backpack Heatwave",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_ad2_molten.json",
+    "title": "Do Lava Suit",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "9d32ff6d-6b62-43d4-8b71-85d50e4154f5"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_AD_Hush",
+    "description": "You want be hidden. Wikelo understand. Not ask questions why. But what do when you in snow? Wikelo have suit for that.\\n\\nWelcome.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 4,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/arms/kap_combat_light_arms_02_01_01.json",
+        "name": "Geist Armor Arms ASD Edition",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/core/kap_combat_light_core_02_01_01.json",
+        "name": "Geist Armor Core ASD Edition",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/kap_combat_light_helmet_02_01_01.json",
+        "name": "Geist Armor Helmet ASD Edition",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/legs/kap_combat_light_legs_02_01_01.json",
+        "name": "Geist Armor Legs ASD Edition",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/backpack/cds_combat_light_backpack_01_03_01.json",
+        "name": "Geist Backpack ASD Edition",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/arms/kap_combat_light_arms_02_02_01.json",
+            "name": "Geist Armor Arms Snow Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/core/kap_combat_light_core_02_02_01.json",
+            "name": "Geist Armor Core Snow Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/kap_combat_light_helmet_02_02_01.json",
+            "name": "Geist Armor Helmet Snow Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/legs/kap_combat_light_legs_02_02_01.json",
+            "name": "Geist Armor Legs Snow Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/backpack/cds_combat_light_backpack_01_04_01.json",
+            "name": "Geist Backpack Snow Camo",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/arms/kap_combat_light_arms_02_02_01.json",
+        "name": "Geist Armor Arms Snow Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/core/kap_combat_light_core_02_02_01.json",
+        "name": "Geist Armor Core Snow Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/kap_combat_light_helmet_02_02_01.json",
+        "name": "Geist Armor Helmet Snow Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/legs/kap_combat_light_legs_02_02_01.json",
+        "name": "Geist Armor Legs Snow Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/light/backpack/cds_combat_light_backpack_01_04_01.json",
+        "name": "Geist Backpack Snow Camo",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_ad_hushnow.json",
+    "title": "Hide Snow Suit",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "9d32ff6d-6b62-43d4-8b71-85d50e413743"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_AO_IrrArm",
+    "description": "Wikelo had exciting idea during brief work rest. Was thinking about the little glow worms in Pyro and saw armor get changed to look like.\\n\\nIf you get me parts, bring to <EM4>~mission(destination|ListAll)</EM4> and will make for you then you can glow too.\\n\\nBye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_specialist_heavy_core_01_01_01.json",
+        "name": "Antium Core",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_specialist_heavy_helmet_01_01_01.json",
+        "name": "Antium Helmet",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_specialist_heavy_arms_01_01_01.json",
+        "name": "Antium Arms",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_specialist_heavy_legs_01_01_01.json",
+        "name": "Antium Legs",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_combat_heavy_core_02_01_01.json",
+            "name": "Bokto Core",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_combat_heavy_arms_02_01_01.json",
+            "name": "Bokto Arms",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_combat_heavy_legs_02_01_01.json",
+            "name": "Bokto Legs",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_combat_heavy_helmet_02_01_01.json",
+            "name": "Bokto Helmet",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 0.15
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_combat_heavy_core_02_01_01.json",
+        "name": "Bokto Core",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_combat_heavy_arms_02_01_01.json",
+        "name": "Bokto Arms",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_combat_heavy_legs_02_01_01.json",
+        "name": "Bokto Legs",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_combat_heavy_helmet_02_01_01.json",
+        "name": "Bokto Helmet",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_ao_irrarm.json",
+    "title": "Make glowy armor",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "b4a0ba2d-a5f6-496b-bc04-5f0bce49067a"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_RedHunterArmour",
+    "description": "Wikelo hear that Humans think red is the color of passion and anger. This armor good for both. You give me items on list and this red armor is yours.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 3,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_sadaryx.json",
+        "name": "Sadaryx",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/kap_combat_heavy_helmet_02_01_01.json",
+        "name": "Monde Helmet",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/kap_combat_heavy_core_02_01_01.json",
+        "name": "Monde Core",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/kap_combat_heavy_arms_02_01_01.json",
+        "name": "Monde Arms",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/kap_combat_heavy_legs_02_01_01.json",
+        "name": "Monde Legs",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/backpack/vgl_combat_heavy_backpack_01_06_01.json",
+        "name": "Warden Backpack Monde",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/kap_combat_heavy_helmet_02_06_01.json",
+            "name": "Monde Helmet Crimson Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/kap_combat_heavy_core_02_06_01.json",
+            "name": "Monde Core Crimson Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/kap_combat_heavy_arms_02_06_01.json",
+            "name": "Monde Arms Crimson Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/kap_combat_heavy_legs_02_06_01.json",
+            "name": "Monde Legs Crimson Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/backpack/vgl_combat_heavy_backpack_01_08_01.json",
+            "name": "Warden Backpack Crimson Camo",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/kap_combat_heavy_helmet_02_06_01.json",
+        "name": "Monde Helmet Crimson Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/kap_combat_heavy_core_02_06_01.json",
+        "name": "Monde Core Crimson Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/kap_combat_heavy_arms_02_06_01.json",
+        "name": "Monde Arms Crimson Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/kap_combat_heavy_legs_02_06_01.json",
+        "name": "Monde Legs Crimson Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/backpack/vgl_combat_heavy_backpack_01_08_01.json",
+        "name": "Warden Backpack Crimson Camo",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Red Fight Armor",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "05bb00fc-bb90-40a5-bcff-214ff876662b"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Nov_HeavyUtil",
+    "description": "You need utility suit. Good for work. If you like, Wikelo can make shinier. Look real good. See what Wikelo need and bring.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/omc_utility_heavy_core_01_01_16.json",
+        "name": "Corbel Core Mire",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/omc_utility_heavy_arms_01_01_16.json",
+        "name": "Corbel Arms Mire",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/omc_utility_heavy_legs_01_01_16.json",
+        "name": "Corbel Legs Mire",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/clda_env_heavy_backpack_01_02_16.json",
+        "name": "Novikov Backpack Mire",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 10,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl1.json",
+        "name": "RCMBNT-RGL-1",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl2.json",
+        "name": "RCMBNT-RGL-2",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl3.json",
+        "name": "RCMBNT-RGL-3",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/omc_utility_heavy_helmet_01_01_16.json",
+        "name": "Corbel Helmet Mire",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/omc_utility_heavy_helmet_01_02_01.json",
+            "name": "Corbel Helmet Crush",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/omc_utility_heavy_core_01_02_01.json",
+            "name": "Corbel Core Crush",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/omc_utility_heavy_arms_01_02_01.json",
+            "name": "Corbel Arms Crush",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/omc_utility_heavy_legs_01_02_01.json",
+            "name": "Corbel Legs Crush",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/clda_env_heavy_backpack_01_03_01.json",
+            "name": "Novikov Backpack Crush",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/omc_utility_heavy_helmet_01_02_01.json",
+        "name": "Corbel Helmet Crush",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/omc_utility_heavy_core_01_02_01.json",
+        "name": "Corbel Core Crush",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/omc_utility_heavy_arms_01_02_01.json",
+        "name": "Corbel Arms Crush",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/omc_utility_heavy_legs_01_02_01.json",
+        "name": "Corbel Legs Crush",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/clda_env_heavy_backpack_01_03_01.json",
+        "name": "Novikov Backpack Crush",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_ad2_heavyutil.json",
+    "title": "Shiny Builder Suit",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "9d32ff6d-6b62-43d4-8b71-85d50e413745"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_vglFlightsuit",
+    "description": "Ships have big windows. Everyone can see you flying. You should look the best. Wikelo has very good flight suit for you. Do trade, bring me what I need and Wikelo give suit. Give blueprint as well if you do not have.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/undersuit/vgl_flightsuit_01_01_01.json",
+        "name": "Tailwind Flight Suit",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/undersuit/vgl_flightsuit_helmet_01_01_01.json",
+        "name": "Tailwind Flight Helmet",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/carryable_tbo_missionitem_tsg_fueltank.json",
+        "name": "Expired Quantanium Fuel Canister",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/undersuit/vgl_flightsuit_01_02_01.json",
+            "name": "Tailwind Flight Suit Dominion Camo",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/undersuit/vgl_flightsuit_helmet_01_02_01.json",
+            "name": "Tailwind Flight Helmet Dominion Camo",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/undersuit/vgl_flightsuit_01_02_01.json",
+        "name": "Tailwind Flight Suit Dominion Camo",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/undersuit/vgl_flightsuit_helmet_01_02_01.json",
+        "name": "Tailwind Flight Helmet Dominion Camo",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Suit Up Take Off",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "eae3334f-310a-4213-88e5-b84d248cc083"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Battle",
+    "description": "Bring me armor and other things and I give you special test armor. First version. Very special. Bring and I give. Bye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_yormandi_eye.json",
+        "name": "Yormandi Eye",
+        "quantity": 14,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_cy_yormandi_tongue.json",
+        "name": "Yormandi Tongue",
+        "quantity": 7,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_utility_heavy_helmet_01_01_01.json",
+        "name": "Palatino Helmet",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_utility_heavy_arms_01_01_01.json",
+        "name": "Palatino Arms",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_utility_heavy_legs_01_01_01.json",
+        "name": "Palatino Legs",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_utility_heavy_core_01_01_01.json",
+        "name": "Palatino Core",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/qrt_utility_heavy_backpack_01_01_01.json",
+        "name": "Palatino Backpack",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_utility_heavy_helmet_02_01_01.json",
+            "name": "Palatino Helmet Mark I",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_utility_heavy_arms_02_01_01.json",
+            "name": "Palatino Arms Mark I",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_utility_heavy_legs_02_01_01.json",
+            "name": "Palatino Legs Mark I",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_utility_heavy_core_02_01_01.json",
+            "name": "Palatino Core Mark I",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/qrt_utility_heavy_backpack_02_01_01.json",
+            "name": "Palatino Backpack Mark I",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_utility_heavy_helmet_02_01_01.json",
+        "name": "Palatino Helmet Mark I",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_utility_heavy_arms_02_01_01.json",
+        "name": "Palatino Arms Mark I",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_utility_heavy_legs_02_01_01.json",
+        "name": "Palatino Legs Mark I",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_utility_heavy_core_02_01_01.json",
+        "name": "Palatino Core Mark I",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/backpack/qrt_utility_heavy_backpack_02_01_01.json",
+        "name": "Palatino Backpack Mark I",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Test Armor",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "318bc17e-1b97-4ba5-a527-0c81076ef811"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_Kruger_Wolf_Unique",
+    "description": "You have been good trade partner for Wikelo. Offer you this very special Wolf mod. Make trade even better - Bring me what I want and I give you the special Wolf AND Antium Armor AND a VOLT LMG. Very good deal for my very good customer.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Bundle",
+    "reputation_required": 340,
+    "reputation_requirements": [
+      {
+        "faction_reputation": "file://./../../../../../libs/foundry/records/factions/factionreputation/factionreputation_wikelo.json",
+        "max_reputation": 999,
+        "max_standing": "file://./../../../../../libs/foundry/records/reputation/standings/affinity/reputationstanding_wikelo_002.json",
+        "min_reputation": 340,
+        "min_standing": "file://./../../../../../libs/foundry/records/reputation/standings/affinity/reputationstanding_wikelo_001.json",
+        "scope": "file://./../../../../../libs/foundry/records/reputation/scopes/reputationscope_wikelo.json"
+      }
+    ],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 5,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/krig_l21_wolf_collector_military.json",
+            "name": "Kruger L-21 Wolf Wikelo War Special",
+            "quantity": 1,
+            "type": "Ship"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_specialist_heavy_helmet_01_03_01.json",
+            "name": "Antium Helmet Midnight Sun",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_specialist_heavy_core_01_03_01.json",
+            "name": "Antium Core Midnight Sun",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_specialist_heavy_arms_01_03_01.json",
+            "name": "Antium Arms Midnight Sun",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_specialist_heavy_legs_01_03_01.json",
+            "name": "Antium Legs Midnight Sun",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_lmg_energy_01_collector01.json",
+            "name": "Fresnel \"Deepwater\" Energy LMG",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/krig_l21_wolf_collector_military.json",
+        "name": "Kruger L-21 Wolf Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/qrt_specialist_heavy_helmet_01_03_01.json",
+        "name": "Antium Helmet Midnight Sun",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/qrt_specialist_heavy_core_01_03_01.json",
+        "name": "Antium Core Midnight Sun",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/qrt_specialist_heavy_arms_01_03_01.json",
+        "name": "Antium Arms Midnight Sun",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/qrt_specialist_heavy_legs_01_03_01.json",
+        "name": "Antium Legs Midnight Sun",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_lmg_energy_01_collector01.json",
+        "name": "Fresnel \"Deepwater\" Energy LMG",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Most Special Wolf",
+    "types": [
+      "Armor",
+      "FPS Weapon",
+      "Ship"
+    ],
+    "wikelo_id": "3c839c32-d313-4c13-ade0-eb45b5bdea4b"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Favours_CouncilScrip",
+    "description": "If you want other way to get <EM4>favors</EM4> from Wikelo, have thing for you. Wikelo have need for <EM4>scrip</EM4> given out by Council group. Wikelo not part of thief souli, but has business from time to time.\\n\\nIf you bring scrips to <EM4>~mission(destination|ListAll)</EM4>, will trade for favor.\\n\\nBye.",
+    "generator": "TheCollector_Standard",
+    "item_type": "Favor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_physical_currency_scrip_council_1.json",
+        "name": "Council Scrip",
+        "quantity": 50,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "type": "Favor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_forfavours_scripcouncil.json",
+    "title": "Trade Council Scrip for Favors?",
+    "types": [
+      "Favor"
+    ],
+    "wikelo_id": "7dfd619c-9977-4788-80bb-5671d221c342"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Favours_MercScrip",
+    "description": "Wikelo has another way to get <EM4>favors</EM4> if you interested. \\n\\nYour Mercenary souli has <EM4>scrip</EM4> metal, used like favors, but made of very interesting metal that Wikelo need for new project.\\n\\nIf you bring scrips to <EM4>~mission(destination|ListAll)</EM4>, will trade for favor.\\n\\nBye.",
+    "generator": "TheCollector_Standard",
+    "item_type": "Favor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_physical_currency_scrip_merc_1.json",
+        "name": "MG Scrip",
+        "quantity": 50,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "type": "Favor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_forfavours_scripmerc.json",
+    "title": "Trade Merc Scrip for Favors?",
+    "types": [
+      "Favor"
+    ],
+    "wikelo_id": "f6717a7c-115e-4e27-8efe-ec8e01b56487"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Favours_IrradiatedPearls",
+    "description": "Have new way to get <EM4>favors</EM4> from Wikelo. Hear much about worm things in radiation storms. Made up of many interesting parts that Wikelo find use for. \\n\\nIf you bring parts to <EM4>~mission(destination|ListAll)</EM4>, will trade for favor.\\n\\nBye.",
+    "generator": "TheCollector_Standard",
+    "item_type": "Favor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_high_02.json",
+        "name": "Irradiated Valakkar Pearl (Grade AA)",
+        "quantity": 12,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "type": "Favor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Trade Worm Parts for Favors?",
+    "types": [
+      "Favor"
+    ],
+    "wikelo_id": "8743632c-fac2-4b7c-ae11-a48e683f11fa"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Favours_Caranite",
+    "description": "Maybe Wikelo not have something you want made (that strange, but okay). Old souli would give out <EM4>favors</EM4>, very good way to prove that you do work for me. Collect enough and trade when I have something you want.\\n\\nBring things to <EM4>~mission(destination|ListAll)</EM4> and will trade for favor.\\n\\nBye.",
+    "generator": "TheCollector_Standard",
+    "item_type": "Favor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 50,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "type": "Favor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_forfavours_caranite.json",
+    "title": "Turn Things to Favor",
+    "types": [
+      "Favor"
+    ],
+    "wikelo_id": "1141c381-b38d-47af-b8eb-9b8a35985a8e"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Favours_PolarisParts",
+    "description": "Wikelo need large amounts of <EM4>quantainium</EM4> and is willing to give you nice Polaris in exchange but also know many humans not have much space, so you trade as you go. Wikelo will you <EM4>Polaris bits</EM4> if you want trade quantainium. Work like favors. Help Wikelo remember how much you give. \\n\\nBring quantainium to <EM4>~mission(destination|ListAll)</EM4> and will trade for bits.\\n\\nBye.",
+    "generator": "TheCollector_Standard",
+    "item_type": "Favor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/resourcetypedatabase/resourcetypedatabase.json",
+        "name": "Quantanium",
+        "quantity": 24.0,
+        "requirement_type": "Resource",
+        "resource_record": "ResourceType.Quantanium",
+        "unit_type": "SCU"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo_special.json",
+        "name": "Polaris Bit",
+        "quantity": 1,
+        "type": "Favor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_forfavours_polarisparts.json",
+    "title": "Want Polaris? Need something special.",
+    "types": [
+      "Favor"
+    ],
+    "wikelo_id": "82a0d506-def3-4ab5-b0e0-8833c7102f34"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_BigBooma",
+    "description": "Wikelo find very strange but functional weapon while wandering through your systems. It very simple but very effective. If you bring me things, I show you what I do to it.\\n\\nVery fun.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_a.json",
+        "name": "Vanduul Plating",
+        "quantity": 2,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_b.json",
+        "name": "Vanduul Metal",
+        "quantity": 2,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_special_ballistic_01.json",
+        "name": "Boomtube Rocket Launcher",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_special_ballistic_01_collector01.json",
+            "name": "Boomtube \"Clanguard\" Rocket Launcher",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/none_special_ballistic_01_rocket.json",
+            "name": "Boomtube Rocket",
+            "quantity": 1,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_special_ballistic_01_collector01.json",
+        "name": "Boomtube \"Clanguard\" Rocket Launcher",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/none_special_ballistic_01_rocket.json",
+        "name": "Boomtube Rocket",
+        "quantity": 1,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Curious Weapon",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "9c4459ac-2527-4024-b8f1-a08081df252a"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_OrbVolt_KopSkull",
+    "description": "Hello. Can make fun change to gun if you want. Use kopion skin for pattern and little skull dangle. Very effective. Shoot much better.\\n\\nAll you need is bring me parts to <EM4>~mission(destination|ListAll)</EM4> and will make. \\n\\nBye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_saldyniumore.json",
+        "name": "Saldynium (Ore)",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_rifle_energy_01.json",
+        "name": "Parallax Energy Assault Rifle",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_kopionhorn_tundra.json",
+        "name": "Tundra Kopion Horn",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_jacliumore.json",
+        "name": "Jaclium (Ore)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_rifle_energy_01_collector02.json",
+        "name": "Parallax \"Fun Kopion Skull\" Energy Assault Rifle",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/volt_rifle_energy_01_mag.json",
+        "name": "Parallax Rifle Battery (80 Cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_recipe_thecollector_lightnin_kopskull.json",
+    "title": "Fun Kopion Skull Gun",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "31f004c2-9b77-4a0f-a500-89f89b606a96"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_OrbVolt_MiltSkull",
+    "description": "Hello. Can do version of gun if you kopion soldier. Make material like soldier camouflage but with dead skull on front. Gun shoot better too.\\n\\nIf want, bring part to <EM4>~mission(destination|ListAll)</EM4> and will make.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_saldyniumore.json",
+        "name": "Saldynium (Ore)",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_rifle_energy_01.json",
+        "name": "Parallax Energy Assault Rifle",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_vlkjuvenilefang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Juvenile)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_jacliumore.json",
+        "name": "Jaclium (Ore)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_rifle_energy_01_collector03.json",
+            "name": "Parallax \"Fun Military Skull\" Energy Assault Rifle",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/volt_rifle_energy_01_mag.json",
+            "name": "Parallax Rifle Battery (80 Cap)",
+            "quantity": 20,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_rifle_energy_01_collector03.json",
+        "name": "Parallax \"Fun Military Skull\" Energy Assault Rifle",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/volt_rifle_energy_01_mag.json",
+        "name": "Parallax Rifle Battery (80 Cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_recipe_thecollector_lightnin_miltskull.json",
+    "title": "Fun Military Skull Gun",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "4341c2d8-85b4-4623-8271-eff4480ec674"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_NonePistol",
+    "description": "You need a good weapon, yes? Have one for you. Small but powerful. Like an extra spicy balalu pepper. Wikelo make this pistol look extra spicy too. You bring things I need and I do a trade.\\n\\nBye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_armillaria.json",
+        "name": "Bluemoon Fungus",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_pistol_ballistic_01.json",
+        "name": "Tripledown Pistol",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_pistol_ballistic_01_collector01.json",
+            "name": "Tripledown \"Heatwave\" Pistol",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/none_pistol_ballistic_01_mag.json",
+            "name": "Tripledown Pistol Magazine (12 Cap)",
+            "quantity": 20,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_pistol_ballistic_01_collector01.json",
+        "name": "Tripledown \"Heatwave\" Pistol",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/none_pistol_ballistic_01_mag.json",
+        "name": "Tripledown Pistol Magazine (12 Cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Hot Shot",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "ba4e3db4-0f7d-4692-8b9d-8efe3085e84d"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_AO_VoltThwack",
+    "description": "You feel like gun not angry enough? VOLT shotgun very powerful, very dangerous, but not scary? Bring to me. Can make very scary and angry.\\n\\nThey respect you then. Bring to <EM4>~mission(destination|ListAll)</EM4> and we make.\\n\\nBye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_vlkadultfang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Adult)",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_vlkjuvenilefang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Juvenile)",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_shotgun_energy_01.json",
+        "name": "Prism Laser Shotgun",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_shotgun_energy_01_collector01.json",
+            "name": "Prism \"Irradiated\" Laser Shotgun",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/volt_shotgun_energy_01_mag.json",
+            "name": "Prism Laser Shotgun Battery (20 cap)",
+            "quantity": 20,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_shotgun_energy_01_collector01.json",
+        "name": "Prism \"Irradiated\" Laser Shotgun",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/volt_shotgun_energy_01_mag.json",
+        "name": "Prism Laser Shotgun Battery (20 cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_ao_voltthwack.json",
+    "title": "Make VOLT shotgun angrier",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "e404f6c6-997d-4195-8e48-1a8f859398c9"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_GeminiShotgun",
+    "description": "Shooting can be messy. Red Human Blood everywhere. Not a problem with this shotgun. Splashes blends right in! I give it to you if you give me everything I want on list. Good trade.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 3,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_sadaryx.json",
+        "name": "Sadaryx",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01.json",
+        "name": "R97 Shotgun",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01_reward01.json",
+            "name": "R97 \"Crimson Camo\" Shotgun",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/gmni_shotgun_ballistic_01_mag.json",
+            "name": "R97 Shotgun Magazine (18 cap)",
+            "quantity": 20,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01_reward01.json",
+        "name": "R97 \"Crimson Camo\" Shotgun",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/gmni_shotgun_ballistic_01_mag.json",
+        "name": "R97 Shotgun Magazine (18 cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Red Fight Shotgun",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "cc80cd24-2ed0-4e9c-aa10-766e6bbdf3d1"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_AD_ZapZip",
+    "description": "Want to shoot long away and stay hiding. But it snowing? Wikelo have gun for you.\\n\\nBring things. I give.\\n\\nBye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 7,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_sniper_energy_01.json",
+        "name": "Zenith Laser Sniper Rifle",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_sniper_energy_01_collector01.json",
+            "name": "Zenith \"Snow Camo\" Laser Sniper Rifle",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/volt_sniper_energy_01_mag.json",
+            "name": "Zenith Laser Sniper Rifle Battery (22 Cap)",
+            "quantity": 20,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_sniper_energy_01_collector01.json",
+        "name": "Zenith \"Snow Camo\" Laser Sniper Rifle",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/volt_sniper_energy_01_mag.json",
+        "name": "Zenith Laser Sniper Rifle Battery (22 Cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_ad_zipzap.json",
+    "title": "Snow Snipe",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "ab52c274-a29e-4730-a311-917a271917a8"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_SlimyLMG",
+    "description": "This gun has picture of amazing creature on side. Use it and it make you big and strong like Yormandi. Spit lightning. Bring my items and then you get it. Bye.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_yormandi_eye.json",
+        "name": "Yormandi Eye",
+        "quantity": 6,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_cy_yormandi_tongue.json",
+        "name": "Yormandi Tongue",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_lmg_energy_01.json",
+        "name": "Fresnel Energy LMG",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/volt_lmg_energy_01_collector02.json",
+        "name": "Fresnel \"Yormandi\" Energy LMG",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Yormandi Gun",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "8df7d9a9-c887-4302-b93c-863788bdca01"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_NoneAssultRifle",
+    "description": "This rifle is very good at shooting, but could have nicer design. Wikelo fix. Looks very nice now. Give to you for trade. Bring me things, I give you rifle. Even give you blueprint if you need.",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_rifle_multi_01.json",
+        "name": "Killshot Rifle",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/carryable_tbo_missionitem_tsg_fueltank.json",
+        "name": "Expired Quantanium Fuel Canister",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_rifle_multi_01_collector01.json",
+            "name": "Killshot \"Dominion Camo\" Rifle",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/none_rifle_multi_01_mag.json",
+            "name": "Killshot Rifle Magazine (45 Cap)",
+            "quantity": 20,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/none_rifle_multi_01_collector01.json",
+        "name": "Killshot \"Dominion Camo\" Rifle",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/none_rifle_multi_01_mag.json",
+        "name": "Killshot Rifle Magazine (45 Cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Your Best Shot",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "dcc744eb-e9c5-4364-a1d2-9b39864baecf"
+  },
+  {
+    "available": true,
+    "debug_name": "TheColllector_Vehicle_Ground_ATLS_RedNBlue",
+    "description": "@TheCollector_Mod_ATLS_Geo_Grad3_Desc",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls.json",
+        "name": "Argo ATLS",
+        "quantity": 1,
+        "requirement_type": "Ground Vehicle",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls_geo_collector_grad03.json",
+        "name": "ATLS Cool Metal Color",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_atls_rednblue.json",
+    "title": "ATLS Cool Metal Color",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "2fba83a9-7652-40a7-b761-1cf8651bbc34"
+  },
+  {
+    "available": true,
+    "debug_name": "TheColllector_Vehicle_Ground_ATLS_OrangeNGrey",
+    "description": "@TheCollector_Mod_ATLS_Geo_Grad2_Desc",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/resourcetypedatabase/resourcetypedatabase.json",
+        "name": "Quantanium",
+        "quantity": 36.0,
+        "requirement_type": "Resource",
+        "resource_record": "ResourceType.Quantanium",
+        "unit_type": "SCU"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls.json",
+        "name": "Argo ATLS",
+        "quantity": 1,
+        "requirement_type": "Ground Vehicle",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/resourcetypedatabase/resourcetypedatabase.json",
+        "name": "Copper",
+        "quantity": 8.0,
+        "requirement_type": "Resource",
+        "resource_record": "ResourceType.Copper",
+        "unit_type": "SCU"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/resourcetypedatabase/resourcetypedatabase.json",
+        "name": "Tungsten",
+        "quantity": 8.0,
+        "requirement_type": "Resource",
+        "resource_record": "ResourceType.Tungsten",
+        "unit_type": "SCU"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/resourcetypedatabase/resourcetypedatabase.json",
+        "name": "Corundum",
+        "quantity": 8.0,
+        "requirement_type": "Resource",
+        "resource_record": "ResourceType.Corundum",
+        "unit_type": "SCU"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls_geo_collector_grad02.json",
+        "name": "ATLS Orange Line",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_atls_orangengrey.json",
+    "title": "ATLS Orange Line",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "1a9c813d-f143-49e6-addf-5d068a456cc5"
+  },
+  {
+    "available": true,
+    "debug_name": "TheColllector_Vehicle_Ground_ATLS_WhiteNGreen",
+    "description": "@TheCollector_Mod_ATLS_Geo_Grad1_Desc",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls.json",
+        "name": "Argo ATLS",
+        "quantity": 1,
+        "requirement_type": "Ground Vehicle",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls_geo_collector_grad01.json",
+        "name": "ATLS Snowland Color",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_atls_whitengreen.json",
+    "title": "ATLS Snowland Color",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "7649f7a6-e0e0-44b5-87bc-803d6052c9f8"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Ground_Ursa_Medical",
+    "description": "Wikelo branching into ships too. Took a look at Ursa and improved. Bring parts for me and I will make for you. Explore planet better. Go do.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 4,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_saldyniumore.json",
+        "name": "Saldynium (Ore)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_jacliumore.json",
+        "name": "Jaclium (Ore)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/groundvehicles/rsi_ursa_medivac_stealth.json",
+        "name": "RSI Ursa Medivac Wikelo Special",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_ursa_medical.json",
+    "title": "Make a Ursa Mod",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "5dec704a-de79-4311-88d1-53f9d05db952"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Ground_ATLS_IKTI",
+    "description": "Hello. Know you human like strange metal suit. How about metal suit with ikti? Sorry, ikti is Banu word, you call it 'gun.' \\n\\nIf want, bring things I say and I will make for you. Gun will shoot. Cause many damage.\\n\\nBye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 2,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/carryable_tbo_creature_trophy_vlkapexfang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Apex)",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls.json",
+        "name": "Argo ATLS",
+        "quantity": 1,
+        "requirement_type": "Ground Vehicle",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/ships/weapons/mxox_neutroncannon_s1.json",
+        "name": "NN-13 Cannon",
+        "quantity": 2,
+        "requirement_type": "Other",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls_ikti.json",
+        "name": "Argo ATLS IKTI",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicle_atls_ikti.json",
+    "title": "Make ATLS shoot",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "12926a62-afde-4984-8887-dbe564527192"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Ground_ATLS_IKTI_GEO",
+    "description": "Find very fun piece to add to big human suit that let you jump very high. Now you shoot and jump. Exciting.\\n\\nIf you want, bring me these to <EM4>~mission(destination|ListAll)</EM4>. Will make.\\n\\nWikelo",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 1,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls_geo.json",
+        "name": "Argo ATLS GEO",
+        "quantity": 1,
+        "requirement_type": "Ground Vehicle",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/ships/weapons/mxox_neutroncannon_s1.json",
+        "name": "NN-13 Cannon",
+        "quantity": 2,
+        "requirement_type": "Other",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls_ikti.json",
+        "name": "Argo ATLS IKTI",
+        "quantity": 1,
+        "requirement_type": "Ground Vehicle",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/actor/actors/argo_atls_geo_ikti.json",
+        "name": "Argo ATLS GEO IKTI",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicle_atls_ikti_geo.json",
+    "title": "Make jumpy ATLS shoot",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "7b7cd8d9-d3e4-4f48-b995-487933fd332e"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Ground_Nox",
+    "description": "Wikelo know many Xi'an. Talk slow but very interesting if you have patience. This is very fast little thing to get you across planet. Wikelo made a few tweaks to make it zippier. If you want, Wikelo will make for you. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 4,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/xian_nox_collector_mod.json",
+        "name": "Aopoa Nox Wikelo Special",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_nox.json",
+    "title": "Noxy Mod",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "a033aab9-262e-44da-9213-35e225fc828a"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Ground_Pulse",
+    "description": "Wikelo really like this little Human ship. Pulse feel very fast. Can have many configuration to make Pulse go faster. If you want, can give you configurated Pulse that I like. Have list of what I want for job. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ground Vehicle",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 4,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/mrai_pulse_collector_civ.json",
+        "name": "Mirai Pulse Wikelo Special",
+        "quantity": 1,
+        "type": "Ground Vehicle"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_pulse.json",
+    "title": "Pulse Plus",
+    "types": [
+      "Ground Vehicle"
+    ],
+    "wikelo_id": "7304cb29-5e2a-4d01-80bb-2795b6e789d4"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_Anvil_Asgard",
+    "description": "Wikelo mod Asgard and so that it fights more. You in a fight, this mod is what you want. Plus, good deal on the trade. Just bring items here and I give you the ship.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 50,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl1.json",
+        "name": "RCMBNT-PWL-1",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl2.json",
+        "name": "RCMBNT-PWL-2",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl3.json",
+        "name": "RCMBNT-PWL-3",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl1.json",
+        "name": "RCMBNT-RGL-1",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl2.json",
+        "name": "RCMBNT-RGL-2",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl3.json",
+        "name": "RCMBNT-RGL-3",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl1.json",
+        "name": "RCMBNT-XTL-1",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl2.json",
+        "name": "RCMBNT-XTL-2",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl3.json",
+        "name": "RCMBNT-XTL-3",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 3,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/anvl_asgard_collector_military.json",
+        "name": "Anvil Asgard Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Asgard Fight Mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "5bf19672-f057-4ccf-bdd4-d309edfeea15"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Scorpius",
+    "description": "Don't know what the name mean, but ship is very fast, very good in fight. With tweak, can better. You see list of what Wikelo need, go get and I make. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 15,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_scorpius_stealth.json",
+        "name": "RSI Scorpius Wikelo Sneak Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_scorpius.json",
+    "title": "Build a Mod Scorpius",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "0424e501-e57e-47cb-bada-79f849560b4e"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_L22_Wolf",
+    "description": "Wikelo very excited. Have idea for new material. But making it is most tricky. Very complicated. Need help fabricating a test sample. I give you blueprint, you make, bring to me, and I will trade. Give you extra special L-22 Wolf. Very powerful, very wolf.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_cy_collectormaterial_001.json",
+        "name": "Metamaterial Test #146",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/krig_l22_alphawolf_collector_military.json",
+        "name": "Kruger L-22 Alpha Wolf Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Extra Special Wolf",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "d4d26850-d4f4-4549-a0af-a478ee0be480"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_F8C_Milt",
+    "description": "Can make you custom of F8 that take good fighting ship and make a better fighting ship. Bring things and I will make. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 40,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/anvl_lightning_f8c_collector_military.json",
+        "name": "Anvil F8C Lightning Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_f8c_milt.json",
+    "title": "F8 War Mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "eba10cd5-37dc-440a-8eff-18dbcc5e5d8c"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Firebird",
+    "description": "Been digging into Aegis Sabre ship. Firebird is very bomb-y. Good build but could make some fun change to it. If you want, I can do. Have a look and tell me. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 15,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 4,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 3,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_d.json",
+        "name": "Government Cartography Agency Medal (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/aegs_sabre_firebird_collector_milt.json",
+        "name": "Aegis Sabre Firebird Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_firebird.json",
+    "title": "Firebird Mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "1ef81be1-714c-4fea-9185-e7a4c2604256"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_Fortune",
+    "description": "Hello, practicing on making ship fly better. Xi'an help human make ship. Fly good. Salvage good. But Wikelo can make better if you want. Bring things and will do. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 3,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/misc_fortune_collector_industrial.json",
+        "name": "MISC Fortune Wikelo Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_fortune.json",
+    "title": "Fortune ship for you",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "7c5bdaa6-ad6a-44b3-a374-796b13ddd5e4"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_Drake_Golem",
+    "description": "Universe need resources so Wikelo always respect people who dig. Good profession. If you starting and want boost to Golem ship. I can do. \\n\\nBring. \\n\\nI make.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 2,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 15,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/drak_golem_collector_indust.json",
+        "name": "Drake Golem Wikelo Work Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_drake_golem.json",
+    "title": "Golem Rocks",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "5712cdfc-84da-456f-97ed-697c9d04c026"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Guardian",
+    "description": "This ship look like insect in the Protectorate. Fun look. Painful sting. Wikelo can make custom version for you if you want. Make enemies sting. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_high_02.json",
+        "name": "Irradiated Valakkar Pearl (Grade AA)",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 10,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 20,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/mrai_guardian_military.json",
+        "name": "Mirai Guardian Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_guardian.json",
+    "title": "Guardian Fight Mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "684c9209-3dec-4519-a86c-7f49df47d14c"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_GuardianQI",
+    "description": "Insect ship again. This one help take down other ship but if you want it to take down better. Can make. See list and tell Wikelo. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 25,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_high_02.json",
+        "name": "Irradiated Valakkar Pearl (Grade AA)",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_b.json",
+        "name": "UEE 6th Platoon Medal (Pristine)",
+        "quantity": 2,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/mrai_guardian_qi_collector_indust.json",
+        "name": "Mirai Guardian QI Wikelo Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_guardianqi.json",
+    "title": "Guardian take down ship",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "1af113f6-5650-4da9-abf3-9676dcaf8a91"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_GuardianMX",
+    "description": "You Humans enjoy strange letter combinations. It very funny. Guardian ship very useful but if you want even more useful, bring me things. I give you better ship. Look better. Act better.\\n\\nThank you. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 25,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_a.json",
+        "name": "Vanduul Plating",
+        "quantity": 30,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_b.json",
+        "name": "Vanduul Metal",
+        "quantity": 30,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 15,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_hadesian_fragment_1_large_pristine_a.json",
+        "name": "Large Artifact Fragment (Pristine)",
+        "quantity": 2,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/mrai_guardian_mx_collector_military.json",
+        "name": "Mirai Guardian MX Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Guardian WiK-X",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "ad595a7c-d314-442b-acce-ea140a56cffd"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_Starlancer_max",
+    "description": "If you want to move many things. Hercules ship, very good for that. Wikelo even know souli back in Protectorate that started to use. Very big. Wikelo can give you similar version if you get what Wikelo need. Look at list and tell me.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 30,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 10,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/misc_starlancer_max_collector_indust.json",
+        "name": "MISC Starlancer MAX Wikelo Work Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_starlancer_max.json",
+    "title": "More than a Max",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "99b90562-4e98-46d2-aa7e-0926bed3bdf8"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_Starlancer_TAC",
+    "description": "If you like big space to move things, Wikelo can do useful and wonder things to MISC ship for you. Bring me pieces and I will give you version even better than what Xi'an can do.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 50,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 15,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 30,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/misc_starlancer_tac_collector_military.json",
+        "name": "MISC Starlancer TAC Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_starlancer_tac.json",
+    "title": "New Move Big Starlancer Ship",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "5c494816-ebc0-46a6-a23c-d463d4b0330d"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Polaris",
+    "description": "Wikelo recently get many blueprints in trade with human who not very smart. Now can make very big ship. \\n\\nNot cheap and need many pieces but will make. If you want, go quick, this cost much to Wikelo so won't be able to do for long but I like new Human system so I want to thank you all for welcome.\\n\\nBring to <EM4>~mission(destination|ListAll)</EM4> if want.\\n\\nBye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 50,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo_special.json",
+        "name": "Polaris Bit",
+        "quantity": 15,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/carryable_tbo_creature_trophy_vlkapexfang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Apex)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_physical_currency_scrip_merc_1.json",
+        "name": "MG Scrip",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 15,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_b.json",
+        "name": "UEE 6th Platoon Medal (Pristine)",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 15,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl1.json",
+        "name": "RCMBNT-PWL-1",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl2.json",
+        "name": "RCMBNT-PWL-2",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl3.json",
+        "name": "RCMBNT-PWL-3",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl1.json",
+        "name": "RCMBNT-RGL-1",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl2.json",
+        "name": "RCMBNT-RGL-2",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl3.json",
+        "name": "RCMBNT-RGL-3",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl1.json",
+        "name": "RCMBNT-XTL-1",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl2.json",
+        "name": "RCMBNT-XTL-2",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl3.json",
+        "name": "RCMBNT-XTL-3",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_polaris_collector_military.json",
+        "name": "RSI Polaris Wikelo Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_polaris.json",
+    "title": "Now make Polaris. Short Time Deal.",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "e05b8ffb-7455-4f24-bbcf-43e9dffc0cca"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Peregrine",
+    "description": "Wikelo not want to race but can still make fast ship faster. If you want, bring me things, and go faster.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 4,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/aegs_sabre_peregrine_collector_competition.json",
+        "name": "Aegis Sabre Peregrine Wikelo Speedy Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_peregrine.json",
+    "title": "Peregrine Wikelo Mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "ade95587-2c0d-433e-87c4-865e7dc80b0c"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_MISC_Prospector",
+    "description": "Wikelo loves rocks. Wants to help you get more better rocks. Made this Prospector more better for that tough job. Trade items and you can have.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 6,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_saldyniumore.json",
+        "name": "Saldynium (Ore)",
+        "quantity": 30,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_jacliumore.json",
+        "name": "Jaclium (Ore)",
+        "quantity": 40,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/misc_prospector_collector_indust.json",
+        "name": "MISC Prospector Wikelo Work Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Prospects Look Good",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "200def0f-c70b-4f05-918f-b3efa7f8590f"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_Prowler_Utility",
+    "description": "Wikelo work hard. You work hard. Prowler Utility work hard. But you bring me right items, I make it work more hard, then you work less hard. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 40,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_cy_yormandi_tongue.json",
+        "name": "Yormandi Tongue",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_yormandi_eye.json",
+        "name": "Yormandi Eye",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/espr_prowler_utility_collector_indust.json",
+        "name": "Esperia Prowler Utility Wikelo Work Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Prowler More Utility",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "fec1ba32-a1bb-4cfb-adc9-8a2f792544e6"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_ARGO_Raft",
+    "description": "RAFT is very useful. Wikelo take it and make it very very useful. Do work and make you happy. You want? Bring items to Wikelo for trade.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 8,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_vlkadultfang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Adult)",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_vlkjuvenilefang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Juvenile)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_kopionhorn_irradiated.json",
+        "name": "Irradiated Kopion Horn",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/argo_raft_collector_indust.json",
+        "name": "Argo RAFT Wikelo Work Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Ready for RAFT?",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "fec4c8e6-df2f-4775-b8c3-c0e3fb7c35e7"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Apollo_Triage",
+    "description": "Apollo very good ship. Would be much better if ship was red. Wikelo make all things possible. You trade for what I want and we have a deal.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 30,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/resourcetypedatabase/resourcetypedatabase.json",
+        "name": "Savrilium",
+        "quantity": 48.0,
+        "requirement_type": "Resource",
+        "resource_record": "ResourceType.Savrilium",
+        "unit_type": "SCU"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_apollo_triage_collector_stealth.json",
+        "name": "RSI Apollo Triage Wikelo Sneak Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Red Fight Apollo",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "af13a863-6d63-4935-bec6-d55d73e44f83"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_RSI_Meteor",
+    "description": "Meteor big. It heavy. Have many guns. But Wikelo figure out way to make even better. You have things I will take to do.\\n\\nThat is all.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 10,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_a.json",
+        "name": "Vanduul Plating",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_b.json",
+        "name": "Vanduul Metal",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 5,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_hadesian_fragment_1_large_pristine_a.json",
+        "name": "Large Artifact Fragment (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_meteor_collector_stealth.json",
+        "name": "RSI Meteor Wikelo Sneak Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "RSI Meteor Mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "71b27232-bb75-417e-8009-a8b5d9787e5a"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_F8C_Stealth",
+    "description": "Have the pieces to build useful ship for people who like to sneak then fight. Take F8C ship and make even better. Have put what Wikelo will need to build for you. Now you decide. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 40,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/anvl_lightning_f8c_collector_stealth.json",
+        "name": "Anvil F8C Lightning Wikelo Sneak Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_f8c_stealth.json",
+    "title": "Sneaky Stabber",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "6357945d-2e51-426f-b183-9c6f84c6a88b"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Starfighter_Ion",
+    "description": "Starfighter Ion good ship, but it could be more sneak, yes? Surprise your not friends when you shoot them. I help with this for you. I need the right items and then I can give to you. Bring to me. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 10,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_trophy_1h_yormandi_eye.json",
+        "name": "Yormandi Eye",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 5,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/crus_starfighter_ion_collector_stealth.json",
+        "name": "Crusader Ares Star Fighter Ion Wikelo Sneak Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Sneaky Starfighter Ion",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "da19d1a7-be72-4fea-803e-880d97ffdbe3"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Super_Idris",
+    "description": "Since Wikelo has done good business with you, make you this very special trade. Idris is a powerful ship perfect for big important person like you. Wikelo has even done mod to make it more dangerous! Bring me a few items and the ship is yours.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": 999,
+    "reputation_requirements": [
+      {
+        "faction_reputation": "file://./../../../../../libs/foundry/records/factions/factionreputation/factionreputation_wikelo.json",
+        "max_reputation": 999,
+        "max_standing": "file://./../../../../../libs/foundry/records/reputation/standings/affinity/reputationstanding_wikelo_002.json",
+        "min_reputation": 999,
+        "min_standing": "file://./../../../../../libs/foundry/records/reputation/standings/affinity/reputationstanding_wikelo_002.json",
+        "scope": "file://./../../../../../libs/foundry/records/reputation/scopes/reputationscope_wikelo.json"
+      }
+    ],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 50,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo_special.json",
+        "name": "Polaris Bit",
+        "quantity": 50,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 50,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 50,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/carryable_tbo_creature_trophy_vlkapexfang_irradiated.json",
+        "name": "Irradiated Valakkar Fang (Apex)",
+        "quantity": 50,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_physical_currency_scrip_merc_1.json",
+        "name": "MG Scrip",
+        "quantity": 50,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 50,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 30,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_b.json",
+        "name": "UEE 6th Platoon Medal (Pristine)",
+        "quantity": 30,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 30,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 30,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl1.json",
+        "name": "RCMBNT-PWL-1",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl2.json",
+        "name": "RCMBNT-PWL-2",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_pwl3.json",
+        "name": "RCMBNT-PWL-3",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl1.json",
+        "name": "RCMBNT-RGL-1",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl2.json",
+        "name": "RCMBNT-RGL-2",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_rgl3.json",
+        "name": "RCMBNT-RGL-3",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl1.json",
+        "name": "RCMBNT-XTL-1",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl2.json",
+        "name": "RCMBNT-XTL-2",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/tractorbeamonly/delving/carryable_tbo_asdreward_xtl3.json",
+        "name": "RCMBNT-XTL-3",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/aegs_idris_p_collector_military.json",
+        "name": "Aegis Idris-P Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Special Idris For Killing",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "77fa8882-e82f-4c97-9cab-a7151758cb99"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Spirit_C1",
+    "description": "Wikelo love useful cargo ship. Spirit is very useful. If you want one, can make for you. Just bring me things and I will do. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 8,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/crus_spirit_c1_civilian.json",
+        "name": "Crusader C1 Spirit Wikelo Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_sprirt_c1.json",
+    "title": "Spirit Cargo mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "64f01a7a-62c6-42fa-8a62-6b537dfa3668"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Starfighter_Inferno",
+    "description": "Starfighter Inferno good ship, but what if you want it to be better ship at fighting? Wikelo knows just what to do. You bring me the items and I make it for you. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 10,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_cy_yormandi_tongue.json",
+        "name": "Yormandi Tongue",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 5,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_b.json",
+        "name": "UEE 6th Platoon Medal (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/crus_starfighter_inferno_collector_military.json",
+        "name": "Crusader Ares Star Fighter Inferno Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Starfighter Inferno Special",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "f7e6a331-3f4c-4400-a4cf-dbd75bffa102"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_Crusader_A2",
+    "description": "Bring Wikelo the things and I make you A2 Starlifter that fights better. Does war so good make you call it A1! Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 50,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo_special.json",
+        "name": "Polaris Bit",
+        "quantity": 20,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_physical_currency_scrip_merc_1.json",
+        "name": "MG Scrip",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 6,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 6,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 6,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 6,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 6,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/crus_starlifter_a2_collector_military.json",
+        "name": "Crusader A2 Hercules Starlifter Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Starlifter A2 War Mod",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "3b698db0-7623-4210-9653-2025d491ab10"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_Intrepid",
+    "description": "If you are looking for Intrepid ship that more intrepid. Wikelo can help. Bring things and you will get special touches on ship by Wikelo and pretty new coat to it. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 3,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_d.json",
+        "name": "Government Cartography Agency Medal (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/crus_intrepid_collector_indust.json",
+        "name": "Crusader Intrepid Wikelo Work Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_intrepid.json",
+    "title": "Upgrade Intrepid",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "c55c9f61-84d9-4180-8715-eab2fe524deb"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Large_Connie_Tau",
+    "description": "Wikelo came across plans to build Constellation Taurus ship. Nice ship, but Wikelo make a little better. Prettier too. If you want, bring stuff.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 30,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/carryable_2h_fl_vlk_pearl_irradiated_super_01.json",
+        "name": "Irradiated Valakkar Pearl (Grade AAA)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_d.json",
+        "name": "Government Cartography Agency Medal (Pristine)",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_constellation_taurus_military.json",
+        "name": "RSI Constellation Taurus Wikelo War Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_connie_tau.json",
+    "title": "Want Taurus ship",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "8d7849fe-85c5-4c63-9754-a71bae57792f"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_Terrapin_Medic",
+    "description": "Wikelo not know this Human word but ship is very useful when things go danger. If you want, can give new version of it. Maybe more useful?\\n\\nYou fly and tell. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 15,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/consumables/delving/fps_consumable_harddrive_delving_hardened_asd_red.json",
+        "name": "ASD Secure Drive",
+        "quantity": 10,
+        "requirement_type": "Consumable",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_c.json",
+        "name": "Tevarin War Service Marker (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/anvl_terrapin_medic_collector_medic.json",
+        "name": "Anvil Terrapin Medic Wikelo Savior Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_terrapin_med.json",
+    "title": "What is Terrapin?",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "94bdfda2-a4d9-4d1a-877b-68518eedf320"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Small_Kruger_Wolf",
+    "description": "If you want to be quiet and surprise people, this is the Wolf you want. Wikelo mod it to be extra stealth. Trade you for it when you bring me the items I want.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 10,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_a.json",
+        "name": "Vanduul Plating",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_b.json",
+        "name": "Vanduul Metal",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_hadesian_fragment_1_large_pristine_a.json",
+        "name": "Large Artifact Fragment (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/krig_l21_wolf_collector_stealth.json",
+        "name": "Kruger L-21 Wolf Wikelo Sneak Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "Where Wolf? Here Wolf",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "758e6b6a-f89e-4721-ae9e-1ec27d7b2f97"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_F7_MK2",
+    "description": "Know how much you Humans like Navy so Wikelo have one now. If you want Wikelo version of F7 mk2, bring me things and you are in. Very funny. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 16,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_sq_pyro_serverblade_5.json",
+        "name": "DCHS-05 Orbital Positioning Comp-Board",
+        "quantity": 3,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 5,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_d.json",
+        "name": "Government Cartography Agency Medal (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/anvl_hornet_f7_mk2_collector_mod.json",
+        "name": "Anvil F7 Hornet Mk Wikelo",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_f7_mk2.json",
+    "title": "Wikelo Navy F7",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "c63d9c5a-5e25-49da-8254-b78706abea86"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_ZeusCL",
+    "description": "Wikelo can make new version of cargo Zeus ship. If you want, bring what needed, then you can have ship. Fair. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 20,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinite.json",
+        "name": "Carinite",
+        "quantity": 15,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/light/basl_combat_light_helmet_02_01_01.json",
+        "name": "Ace Interceptor Helmet",
+        "quantity": 10,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_mineral_1h_carinitepure.json",
+        "name": "Carinite (Pure)",
+        "quantity": 2,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_zeus_cl_collector_indust.json",
+        "name": "RSI Zeus Mk II CL",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_zeuscl.json",
+    "title": "Zeus Cargo Special",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "c3722ee0-4f40-4232-acab-6f254a1d0e25"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_Vehicle_Medium_ZeusES",
+    "description": "Wikelo can make new version of Zeus ship. I know it important ship to Human. Not sure why, but yes, very useful ship. Anyway, can upgrade and make a little prettier. What I need listed, if you want, bring. Bye.",
+    "generator": "TheCollector_Vehicles",
+    "item_type": "Ship",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_banu_favour_wikelo.json",
+        "name": "Wikelo Favor",
+        "quantity": 10,
+        "requirement_type": "Favor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_medal_1_pristine_b.json",
+        "name": "UEE 6th Platoon Medal (Pristine)",
+        "quantity": 1,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_zeus_es_collector_indust.json",
+        "name": "RSI Zeus Mk II ES Wikelo Work Special",
+        "quantity": 1,
+        "type": "Ship"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/thecollector_vehicles_zeuses.json",
+    "title": "Zeus Special",
+    "types": [
+      "Ship"
+    ],
+    "wikelo_id": "69db67eb-05b6-49cd-bf41-83831f993142"
+  }
+]

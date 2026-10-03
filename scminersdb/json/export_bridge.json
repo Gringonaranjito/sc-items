@@ -2,6 +2,7 @@
   "category_counts": {
     "audit_export": 5,
     "blueprint_catalog": 1707,
+    "blueprint_reward_pools": 154,
     "concept_status": 2781,
     "crafting_blueprints_clean": 1619,
     "crafting_quality_adjustments": 7314,
@@ -21,6 +22,7 @@
     "mission_rewards": 683,
     "missions": 683,
     "missions_app_ready": 2232,
+    "player_items": 3033,
     "rentals": 1078,
     "ship_catalog": 2781,
     "ship_components": 1713,
@@ -29,7 +31,8 @@
     "ship_parts": 0,
     "ship_weapons": 92,
     "ships": 303,
-    "shop_locations": 2216
+    "shop_locations": 2216,
+    "wikelo_items": 67
   },
   "exports": [
     {
@@ -153,6 +156,16 @@
       "url": "../json/mission_catalog_enriched.json"
     },
     {
+      "category": "blueprint_reward_pools",
+      "description": "LIVE game reward pools, blueprints, and missions",
+      "file": "blueprint_reward_pools.json",
+      "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\blueprint_reward_pools.json",
+      "path": "../json/blueprint_reward_pools.json",
+      "record_count": 154,
+      "title": "Blueprint reward pools",
+      "url": "../json/blueprint_reward_pools.json"
+    },
+    {
       "category": "factions_companies",
       "description": "Faction and employer index",
       "file": "factions_companies.json",
@@ -273,6 +286,16 @@
       "url": "../json/fps_weapons.json"
     },
     {
+      "category": "player_items",
+      "description": "Player-facing personal inventory items including armor, helmets, undersuits, backpacks, weapons, ammunition, medical devices, tools, and gadgets",
+      "file": "player_items.json",
+      "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\player_items.json",
+      "path": "../json/player_items.json",
+      "record_count": 3033,
+      "title": "Player items",
+      "url": "../json/player_items.json"
+    },
+    {
       "category": "ship_components_clean",
       "description": "Coolers, power plants, shields, quantum drives, and jump drives",
       "file": "ship_components_clean.json",
@@ -331,14 +354,24 @@
       "record_count": 7314,
       "title": "Crafting quality adjustments",
       "url": "../json/crafting_quality_adjustments.json"
+    },
+    {
+      "category": "wikelo_items",
+      "description": "Active Wikelo trades, rewards, and requirements",
+      "file": "wikelo_items.json",
+      "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\wikelo_items.json",
+      "path": "../json/wikelo_items.json",
+      "record_count": 67,
+      "title": "Wikelo items",
+      "url": "../json/wikelo_items.json"
     }
   ],
-  "json_count": 30,
+  "json_count": 33,
   "manifest_url": "../runs/latest.json",
   "output_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json",
   "raw_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\raw",
-  "record_count": 52420,
+  "record_count": 55674,
   "source_root": null,
   "status": "ok",
-  "updated_at": "2026-09-16T20:29:56.801289-04:00"
+  "updated_at": "2026-10-02T21:42:29.428005-04:00"
 }
