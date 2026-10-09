@@ -1,6 +1,143 @@
 [
   {
     "available": true,
+    "debug_name": "TheCollector_GreyHeavyCombatArmour",
+    "description": "@TheCollector_Recipes_Desc_GreyHeavyCombat",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "Armor",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/kap_combat_heavy_legs_01_01_01.json",
+        "name": "Kap Combat Heavy Legs 01 01 01",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/kap_combat_heavy_arms_01_01_01.json",
+        "name": "Kap Combat Heavy Arms 01 01 01",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/kap_combat_heavy_core_01_01_01.json",
+        "name": "Kap Combat Heavy Core 01 01 01",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/kap_combat_heavy_helmet_01_01_01.json",
+        "name": "Kap Combat Heavy Helmet 01 01 01",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/backpack/kap_combat_heavy_backpack_01_01_01.json",
+        "name": "Kap Combat Heavy Backpack 01 01 01",
+        "quantity": 1,
+        "requirement_type": "Armor",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_b.json",
+        "name": "Vanduul Metal",
+        "quantity": 10,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_saldyniumore.json",
+        "name": "Saldynium (Ore)",
+        "quantity": 25,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/kap_combat_heavy_legs_01_04_01.json",
+            "name": "Kap Combat Heavy Legs 01 04 01",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/kap_combat_heavy_core_01_04_01.json",
+            "name": "Kap Combat Heavy Core 01 04 01",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/backpack/kap_combat_heavy_backpack_01_04_01.json",
+            "name": "Kap Combat Heavy Backpack 01 04 01",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/kap_combat_heavy_arms_01_04_01.json",
+            "name": "Kap Combat Heavy Arms 01 04 01",
+            "quantity": 1,
+            "type": "Armor"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/kap_combat_heavy_helmet_01_04_01.json",
+            "name": "Kap Combat Heavy Helmet 01 04 01",
+            "quantity": 1,
+            "type": "Armor"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/legs/kap_combat_heavy_legs_01_04_01.json",
+        "name": "Kap Combat Heavy Legs 01 04 01",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/core/kap_combat_heavy_core_01_04_01.json",
+        "name": "Kap Combat Heavy Core 01 04 01",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/backpack/kap_combat_heavy_backpack_01_04_01.json",
+        "name": "Kap Combat Heavy Backpack 01 04 01",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/armor/pu_armor/heavy/arms/kap_combat_heavy_arms_01_04_01.json",
+        "name": "Kap Combat Heavy Arms 01 04 01",
+        "quantity": 1,
+        "type": "Armor"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/characters/human/starwear/helmet/heavy/kap_combat_heavy_helmet_01_04_01.json",
+        "name": "Kap Combat Heavy Helmet 01 04 01",
+        "quantity": 1,
+        "type": "Armor"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "@TheCollector_Recipes_Title_GreyHeavyCombat",
+    "types": [
+      "Armor"
+    ],
+    "wikelo_id": "c99e22e9-643c-4822-9f06-8c119722caee"
+  },
+  {
+    "available": true,
     "debug_name": "TheCollector_OrbArm",
     "description": "Hello, know many humans want saldynium for regen problem. Credits good, yes, but Wikelo can use that, kopion horn, and other things to make special armor. \\n\\nOnce done, you be very tough. Very scary.\\n\\nYou see items needed. Bring to <EM4>~mission(destination|ListAll)</EM4> and I make for you.\\n\\nBye.",
     "generator": "TheCollector_Small_Items",
@@ -1529,6 +1666,79 @@
       "Favor"
     ],
     "wikelo_id": "82a0d506-def3-4ab5-b0e0-8833c7102f34"
+  },
+  {
+    "available": true,
+    "debug_name": "TheCollector_GMNI_LMG",
+    "description": "@TheCollector_Recipes_Desc_GMNI_LMG",
+    "generator": "TheCollector_Small_Items",
+    "item_type": "FPS Weapon",
+    "reputation_required": null,
+    "reputation_requirements": [],
+    "requirements": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01.json",
+        "name": "F55 LMG",
+        "quantity": 1,
+        "requirement_type": "FPS Weapon",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/carryable_1h_cy_armor_vanduul_1_b.json",
+        "name": "Vanduul Metal",
+        "quantity": 5,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/1h/harvestable_ore_1h_jacliumore.json",
+        "name": "Jaclium (Ore)",
+        "quantity": 20,
+        "requirement_type": "Utility",
+        "unit_type": "pcs"
+      }
+    ],
+    "reward_groups": [
+      {
+        "rewards": [
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_collector02.json",
+            "name": "Gmni Lmg Ballistic 01 Collector02",
+            "quantity": 1,
+            "type": "FPS Weapon"
+          },
+          {
+            "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/gmni_lmg_ballistic_01_mag.json",
+            "name": "F55 LMG Magazine (150 cap)",
+            "quantity": 20,
+            "type": "Ammo"
+          }
+        ],
+        "weighting": 1.0
+      }
+    ],
+    "rewards": [
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_collector02.json",
+        "name": "Gmni Lmg Ballistic 01 Collector02",
+        "quantity": 1,
+        "type": "FPS Weapon"
+      },
+      {
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/scitem/weapons/magazines/gmni_lmg_ballistic_01_mag.json",
+        "name": "F55 LMG Magazine (150 cap)",
+        "quantity": 20,
+        "type": "Ammo"
+      }
+    ],
+    "source": "Wikelo",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json",
+    "template": "file://./../../../../../libs/foundry/records/contracts/contracttemplates/itemresourcegathering_thecollector.json",
+    "title": "@TheCollector_Recipes_Title_GMNI_LMG",
+    "types": [
+      "FPS Weapon"
+    ],
+    "wikelo_id": "b46612e0-4eae-4827-8038-e460e00f8967"
   },
   {
     "available": true,
@@ -4430,7 +4640,7 @@
     "reward_groups": [],
     "rewards": [
       {
-        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_constellation_taurus_military.json",
+        "entity_ref": "file://./../../../../../libs/foundry/records/entities/spaceships/rsi_constellation_taurus_gs_military.json",
         "name": "RSI Constellation Taurus Wikelo War Special",
         "quantity": 1,
         "type": "Ship"

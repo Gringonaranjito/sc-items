@@ -145,6 +145,18 @@
   {
     "manufacturer": "Aegs",
     "mass": false,
+    "name": "EntityClassDefinition.ARMR_AEGS_Avenger_Stalker_Display",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "d89a6ba6-fe84-4a64-ba18-07d1d29c5a5c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_avenger_stalker_display.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Aegs",
+    "mass": false,
     "name": "EntityClassDefinition.ARMR_AEGS_Avenger_Titan",
     "record_type": "EntityClassDefinition",
     "size": 1,
@@ -2230,6 +2242,66 @@
   {
     "manufacturer": "Rsi",
     "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "30e1a1a9-77a9-4392-a927-e6455081a0f2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Andromeda_GS_Display",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "6e5faf6a-8660-425d-9bbc-62af6ee1937e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs_display.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "c117b130-a872-4fb1-9d3a-6dd5fbf72749",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_aquila_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "060d4533-3f09-4006-b385-7ceeb022696b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Mk5_Centaurus_Display",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "678f1d95-1f06-45cc-923e-7c6e2dc013a0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus_display.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
     "name": "EntityClassDefinition.ARMR_RSI_Constellation_Phoenix",
     "record_type": "EntityClassDefinition",
     "size": 1,
@@ -2242,11 +2314,35 @@
   {
     "manufacturer": "Rsi",
     "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "4ddfb2fd-81ef-4e58-a3a7-2b438cf83fe8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_phoenix_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
     "name": "EntityClassDefinition.ARMR_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "size": 1,
     "source_id": "1abd192b-0c87-4ea5-99d2-5dadee7bf275",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "893f282f-9133-45ea-ac5e-6f844531823a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus_gs.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -2343,6 +2439,30 @@
     "size": 1,
     "source_id": "c5d28d34-43e5-4075-a83d-8ec8def61a8d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_scorpius.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "6f31d441-e74d-4516-941d-f2cb38de1d9c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.ARMR_RSI_Skylark_Display",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "4c07e6ec-91c3-4149-908d-df27649aff5f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark_display.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -8388,6 +8508,12 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Aurora_Mk2_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8478,6 +8604,12 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Andromeda_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8487,6 +8619,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda",
     "purchase_price": 1.0,
@@ -8507,6 +8640,42 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Andromeda_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "wing_left",
+      "wing_right"
+    ],
+    "size": 1,
+    "source_id": "b888a7cb-2163-4dac-abd2-229a13391251",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Andromeda_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8516,6 +8685,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_MM_322",
     "purchase_price": 1.0,
@@ -8536,6 +8706,12 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Aquila_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8545,6 +8721,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila",
     "purchase_price": 1.0,
@@ -8565,6 +8742,36 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Aquila_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "wing_left",
+      "wing_right"
+    ],
+    "size": 1,
+    "source_id": "db545c69-1241-4310-849c-b9b055800fdf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8574,6 +8781,45 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Mk5",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "Wing_Left_Geo",
+      "Wing_Right_Geo",
+      "Tail_Fin_Left_Lower",
+      "Tail_Fin_Right_Lower"
+    ],
+    "size": 1,
+    "source_id": "43b7da35-5b99-4c80-81f3-1ad7602dcf43",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_mk5.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Phoenix_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix",
     "purchase_price": 1.0,
@@ -8594,6 +8840,42 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Phoenix_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "wing_left",
+      "wing_right"
+    ],
+    "size": 1,
+    "source_id": "5c2ae312-5db8-45ce-b2ba-b1d2ad506456",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Taurus_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8603,6 +8885,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus",
     "purchase_price": 1.0,
@@ -8614,6 +8897,36 @@
     "size": 1,
     "source_id": "4e0a3638-d7e5-4609-8488-f72dc050d9f7",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_name_FLBL_RSI_Constellation_Taurus_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "wing_left",
+      "wing_right"
+    ],
+    "size": 1,
+    "source_id": "fe85d341-0909-496d-883c-f20afb9665a7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -8653,6 +8966,12 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Mantis_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8662,6 +8981,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Mantis",
     "purchase_price": 1.0,
@@ -8685,6 +9005,12 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Meteor_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8694,6 +9020,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor",
     "purchase_price": 1.0,
@@ -8880,6 +9207,37 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Skylark",
+    "purchase_price": 1.0,
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "WingLeft",
+      "WingRight"
+    ],
+    "size": 1,
+    "source_id": "68c23911-103a-47f4-9aa7-e749538ba92f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_skylark.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": 30.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus",
     "purchase_price": 1.0,
@@ -8896,6 +9254,12 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Zeus_CL_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8905,6 +9269,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_CL",
     "purchase_price": 1.0,
@@ -8921,6 +9286,12 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_name_FLBL_RSI_Zeus_ES_Standard",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      },
+      {
+        "count": 1,
         "name": "@LOC_PLACEHOLDER",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -8930,6 +9301,7 @@
       "height": 30.0
     },
     "has_components": true,
+    "manufacturer": "Rsi",
     "mass": false,
     "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_ES",
     "purchase_price": 1.0,
@@ -9395,6 +9767,17 @@
     "size": 1,
     "source_id": "158a8461-a8b2-4778-ac64-63ae56a1f5a0",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_rsi_aurora_mk2.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
+    "name": "EntityClassDefinition.Controller_Missile_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "fd1e5dad-f356-4291-a733-2fd65a26a9f5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_rsi_skylark.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -10501,6 +10884,84 @@
     "size": 4,
     "source_id": "115aaff9-c8c5-4b93-bc14-9f22524fe8a8",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_aegs_s04_reclaimer.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "beam": false,
+      "length": 120.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.COOL_IASI_S01_Name",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "ce9384b7-b7b8-4ac3-9a9f-47d47aaa3de3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s01_name.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "beam": false,
+      "length": 120.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.COOL_IASI_S02_Name",
+    "record_type": "EntityClassDefinition",
+    "size": 2,
+    "source_id": "be8b5a16-51ed-4d1a-abc2-53aeb137c6cb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s02_name.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "beam": false,
+      "length": 120.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.COOL_IASI_S03_Name",
+    "record_type": "EntityClassDefinition",
+    "size": 3,
+    "source_id": "f927a3d6-1c15-4d6f-ae34-5dfcf04a6bd2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s03_name.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -15405,6 +15866,18 @@
     "status_label": "Flyable"
   },
   {
+    "cargo": 19.0,
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "8431845c-2e09-49fb-8be0-2daf3aed4b16",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_andromeda_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "cargo": 11.3,
     "mass": false,
     "name": "EntityClassDefinition.HTNK_RSI_Constellation_Aquila",
@@ -15417,6 +15890,42 @@
     "status_label": "Flyable"
   },
   {
+    "cargo": 22.6,
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "b827fab4-6838-4efa-aaac-789582742923",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_aquila_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 46.8,
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "2bbf315a-2cca-4698-bb5a-e6a1f5c537dc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_mk5_centaurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 19.0,
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "447fa0be-9465-42e8-8c70-a3b7a202e284",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_phoenix_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "cargo": 9.5,
     "mass": false,
     "name": "EntityClassDefinition.HTNK_RSI_Constellation_Taurus",
@@ -15424,6 +15933,18 @@
     "size": 1,
     "source_id": "c36f6a0e-4f4a-4335-b788-f76fd9e998a6",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 33.0,
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "2c50ea75-5048-4b9d-b495-fe21326719c4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus_gs.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -15509,6 +16030,19 @@
     "size": 1,
     "source_id": "3e72b06a-d819-4d7d-91eb-fa5946674326",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_scorpius.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 0.8,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.HTNK_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "052aef31-e406-40fc-bdab-929a80cd121b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_skylark.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -17117,6 +17651,17 @@
   },
   {
     "mass": false,
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "2f0bf12b-7785-4c9a-abc4-ad7eaaf6c72d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_andromeda_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
     "name": "EntityClassDefinition.INTK_RSI_Constellation_Aquila",
     "record_type": "EntityClassDefinition",
     "size": 1,
@@ -17128,11 +17673,44 @@
   },
   {
     "mass": false,
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "18947ce2-b7b6-4986-a01d-08a60037e5c2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_aquila_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "0dded715-0359-4353-b18f-3165e6638d3a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_mk5_centaurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
     "name": "EntityClassDefinition.INTK_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "size": 1,
     "source_id": "f81b3137-06fd-434f-96c0-1f720bf30fa5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "70ef3468-764d-4a29-a11a-72321eac8a81",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus_gs.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -17200,6 +17778,17 @@
     "size": 1,
     "source_id": "b7260a81-e1e0-44db-a446-26c0b89b74e1",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_scorpius.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
+    "name": "EntityClassDefinition.INTK_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "f04355c0-de34-40ec-9656-1f51daa5d0e1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_skylark.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -19691,6 +20280,44 @@
     ]
   },
   {
+    "dimensions": {
+      "height": -1.0
+    },
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S02_RSI_Constellation_Mk5_Missile_Holder",
+    "record_type": "EntityClassDefinition",
+    "size": 2,
+    "source_id": "e0234920-a549-442f-9ea8-8e1b758cc77a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "dimensions": {
+      "height": -1.0
+    },
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S02_RSI_Constellation_Mk5_Missile_Holder_Right",
+    "record_type": "EntityClassDefinition",
+    "size": 2,
+    "source_id": "64fec53b-26e2-4ac1-9bcb-3c9bed9ec6d7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder_right.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
     "component_count": 1,
     "components": [
       {
@@ -19972,6 +20599,35 @@
     "size": 3,
     "source_id": "901e4ecb-0649-4c78-8e46-0247d84fb084",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/misc/mrck_s03_misc_fury_dual.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S03_RSI_Skylark",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S03_RSI_Skylark_Five_S01",
+    "record_type": "EntityClassDefinition",
+    "size": 3,
+    "source_id": "27a2e3a4-70e0-434f-b600-388f0971cf14",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s03_rsi_skylark_five_s01.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable",
@@ -20887,6 +21543,64 @@
     "size": 4,
     "source_id": "67d955e2-38b2-497d-8c88-72ffe4ebdd19",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S04_RSI_Constellation",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Long",
+    "record_type": "EntityClassDefinition",
+    "size": 4,
+    "source_id": "787eaab4-4d8c-4c48-b528-3b8130175a46",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_long.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S04_RSI_Constellation",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Short",
+    "record_type": "EntityClassDefinition",
+    "size": 4,
+    "source_id": "b48e2979-fdb9-4af9-8a55-a8d948e78a76",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_short.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable",
@@ -21882,6 +22596,64 @@
     ]
   },
   {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S05_RSI_Constellation",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Left",
+    "record_type": "EntityClassDefinition",
+    "size": 5,
+    "source_id": "df646ab8-8525-42a2-be1e-97c2000bd145",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_left.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S05_RSI_Constellation",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Right",
+    "record_type": "EntityClassDefinition",
+    "size": 5,
+    "source_id": "f5fa6fad-3821-4c2c-9d9d-cca46bfc51df",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_right.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
     "dimensions": {
       "height": -1.0
     },
@@ -22249,6 +23021,64 @@
     "size": 6,
     "source_id": "bd6ebb6f-c2e8-4caa-acd3-1a86fa1e11cb",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s06_misc_hull_b.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S05_RSI_Constellation",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Left",
+    "record_type": "EntityClassDefinition",
+    "size": 6,
+    "source_id": "f31a8fd5-a8b9-4546-85d4-e593e6320ff0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_left.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable",
+    "weapon_count": 1,
+    "weapons": [
+      "UNDEFINED"
+    ]
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMRCK_S05_RSI_Constellation",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "dimensions": {
+      "height": -1.0
+    },
+    "has_components": true,
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Right",
+    "record_type": "EntityClassDefinition",
+    "size": 6,
+    "source_id": "7a3b0d64-78e0-410e-8df8-f088b6a5e712",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_right.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable",
@@ -26300,6 +27130,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameAurora_mk2_Paint_Black_Black_Orange",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Aurora Mk2 Black Black Orange Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Aurora_Mk2_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "a98d1ea2-e39d-492e-ae1f-09446d1d871c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_black_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameAurora_Mk2_Paint_Blue_Blue_Yellow",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -28012,6 +28864,182 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameConstellation_Paint_Black_Black_Orange",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Black Black Orange Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "0e029cd1-3d5a-42c1-a838-1dda6cf32317",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NamePaint_Constellation_Black_Black_Red",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Black Black Red Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Black_Red",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "ac16f033-df64-41c6-a572-e60729657d2f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NamePaint_Constellation_Black_Green_Gold",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Black Green Gold Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Green_Gold",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "30dd33d7-c262-46ed-aaf8-a5a9a707ef53",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_green_gold.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NamePaint_Constellation_Black_Grey_White",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Black Grey White Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Grey_White",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "fe69f622-146b-46fc-adde-f2c349e32078",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_grey_white.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NamePaint_Constellation_Blue_Black_Red",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Blue Black Red Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Blue_Black_Red",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "e51ad00c-0e20-438a-aad7-fa7711bf338e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_black_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NamePaint_Constellation_Blue_Blue_Grey",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Blue Blue Grey Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Blue_Blue_Grey",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "e411eb02-f619-4bab-822d-23217a8702c9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_blue_grey.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NamePaint_Constellation_Blue_Cyan_Grey",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Blue Cyan Grey Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Blue_Cyan_Grey",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "be087d60-b72a-4b3c-82f5-143befc00153",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_cyan_grey.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellation_Paint_Emerald_Green_White_Black",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Emerald Green White Black Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Emerald_Green_White_Black",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "be09076d-cb95-4e4d-8976-98d20edcff3a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_emerald_green_white_black.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@Item_NameConstellation_Paint_FW2955_Grey_Black_Red_Camo",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -28113,6 +29141,28 @@
     "size": 1,
     "source_id": "7f49c9d8-9aa7-4a12-8209-ae80ce755094",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_gobling_m_white_blue.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NamePaint_Constellation_Green_Grey_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Green Grey Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Green_Grey_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "91bd5706-6470-43b1-ba01-a4201b391fcc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_green_grey_yellow.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -28289,6 +29339,181 @@
     "size": 1,
     "source_id": "e10dac45-b393-438a-87a4-5bd90563b7f1",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_lunarnewyear2952_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellationmk5_Paint_Black_Black_Orange",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Mk5 Black Black Orange Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "6ce8df9e-4129-4414-8458-9c9818e9768c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellationmk5_Paint_Black_Gray_Purple",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellationmk5 Black Gray Purple Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Gray_Purple",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "6e405df8-7692-4e14-bb26-ffc795d8b970",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_gray_purple.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellationmk5_Paint_Black_Red_Red",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellation Mk5 Black Red Red Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Red_Red",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "d1477f0f-1008-43e2-bf38-d8cb79851c3b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_red_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellationmk5_Paint_Blue_Black_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellationmk5 Blue Black Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Black_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "9516eedf-d4b7-4419-b980-14098f97d839",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_black_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellationmk5_Paint_Blue_Orange_Blue",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellationmk5 Blue Orange Blue Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Orange_Blue",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "81913b57-4c9c-4afc-9158-1b8017f9317f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_orange_blue.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellationmk5_Paint_Red_Gray_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellationmk5 Red Gray Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Red_Gray_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "e144c99d-3a12-49ca-a68c-ca3ca1351038",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_red_gray_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Template",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "bfb67e92-2af8-4477-9b4e-72a45ea73cd7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_template.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameConstellationmk5_Paint_White_Orange_Gray",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Constellationmk5 White Orange Gray Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_White_Orange_Gray",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "e426da2b-45ed-44aa-bfe4-71cff581e862",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_white_orange_gray.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -30245,6 +31470,28 @@
     "size": 1,
     "source_id": "fbbf5ded-3068-419b-ad25-adc5bf94910a",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_pirateweek_black_clear.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameEclipse_Paint_Red_Red_Red",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Eclipse Red Red Red Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Eclipse_Red_Red_Red",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "183eebbd-066f-4d88-b392-1407e9c5d8a1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_red_red_red.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -32596,6 +33843,28 @@
     "size": 1,
     "source_id": "c665ffbe-8dac-4eda-8be2-c0ebcb8e151d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hercules_sylvan_green.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameHermes_Paint_Black_Black_Orange",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Hermes Black Black Orange Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Hermes_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "4eed06e2-eeef-49ed-80e3-1cb926686c9d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hermes_black_black_orange.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -35151,6 +36420,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameM80_Paint_black_gold_gold",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint M80 Black Gold Gold Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_M80_black_gold_gold",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "9a84c265-26d6-415b-baaf-2551a2ecbcca",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_black_gold_gold.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameM80_Paint_red_black_blue",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -36269,6 +37560,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameMTC_Paint_blue_grey_red",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Mtc Blue Grey Red Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_MTC_blue_grey_red",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "398b1a1d-bea9-4313-a4d9-e51bce357c38",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_blue_grey_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameMTC_Paint_Brown_Brown_Red_Camo_a",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -36291,6 +37604,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameMTC_Paint_gold_grey_grey",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Mtc Gold Grey Grey Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_MTC_gold_grey_grey",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "a4604612-374b-4ade-b015-54421ae41aa4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_gold_grey_grey.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameMTC_Paint_Green_Black_Grey_cfp",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -36304,6 +37639,50 @@
     "size": 1,
     "source_id": "d722a359-db28-48d7-9ed7-baf4e1ef5bbd",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_black_grey_cfp.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMTC_Paint_green_brown_green",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Mtc Green Brown Green Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_MTC_green_brown_green",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "fb98d81f-b43b-4003-befa-bc23138bd42d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_brown_green.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameMTC_Paint_green_green_yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Mtc Green Green Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_MTC_green_green_yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "2900fffe-9bca-4812-aa19-c35538cd365e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_green_yellow.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -41413,6 +42792,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameSalvation_Paint_White_Blue_White",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Salvation White Blue White Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Salvation_White_Blue_White",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "c413ee62-e4de-4d0b-bd93-3ab2493f56c1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_white_blue_white.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameSanTokYai_Paint_AlienWeek_Teal_Pink",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -41601,6 +43002,28 @@
     "size": 1,
     "source_id": "c4313780-46e6-4e3d-92f3-2ff30ccf6658",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blight_green.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameScorpius_Paint_Blue_Purple_Purple",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Scorpius Blue Purple Purple Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Scorpius_Blue_Purple_Purple",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "36144ec1-4a2a-4b5b-9a80-0c47a694b6c5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blue_purple_purple.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -42128,6 +43551,180 @@
     "size": 1,
     "source_id": "f8514eb7-1258-4c77-91ab-ae389e3b5752",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_white_blue_black.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSkylark_Paint_Black_Black_Orange",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Skylark Black Black Orange Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "93d33af8-16cf-4800-a19a-69a82ad15761",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSkylark_Paint_Black_Gray_Purple",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Skylark Black Gray Purple Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_Black_Gray_Purple",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "e17008fd-73cf-489c-a7a1-7fc96be0daf5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_gray_purple.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSkylark_Paint_Black_Red_Red",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_Black_Red_Red",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "79ac4e97-2661-4de5-a734-af457858e380",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_red_red.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSkylark_Paint_Blue_Black_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Skylark Blue Black Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_Blue_Black_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "c1ad7b40-80e3-4486-b9ad-cb9a837df58c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_black_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSkylark_Paint_Blue_Orange_Blue",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Skylark Blue Orange Blue Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_Blue_Orange_Blue",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "ea8b9eca-56a6-43c8-a14a-5eebfcc0adf2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_orange_blue.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSkylark_Paint_Red_Gray_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Skylark Red Gray Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_Red_Gray_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "6cc11750-719f-4108-a94e-54cea0ac77f3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_red_gray_yellow.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@LOC_PLACEHOLDER",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_Template",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "f82e68a6-038a-4696-84ac-412fac5e6ef4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_template.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameSkylark_Paint_White_Orange_Gray",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Skylark White Orange Gray Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Skylark_White_Orange_Gray",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "aa20606c-8c73-4e96-8d76-bd54fe85d5de",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_white_orange_gray.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -45516,6 +47113,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameUrsa_Paint_Black_Black_Orange",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Ursa Black Black Orange Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Ursa_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "6b1ecb0a-5142-49b1-8eb5-2ae9257d09bc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ursa_black_black_orange.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameUrsa_Paint_Black_Grey_Red_Pirate_Skull",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -46394,6 +48013,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameVulture_Paint_Green_Blue_Green",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Vulture Green Blue Green Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Vulture_Green_Blue_Green",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "95c672b4-b598-40b3-a009-c7db703ae332",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_green_blue_green.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameVulture_Paint_Unity",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -46679,6 +48320,28 @@
     "components": [
       {
         "count": 1,
+        "name": "@item_NameWolf_Paint_Grey_Black_Grey",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Wolf Grey Black Grey Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Wolf_Grey_Black_Grey",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "481b8386-80b5-4cde-b081-8e236c59f461",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_grey_black_grey.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
         "name": "@item_NameWolf_Paint_Lightgrey_Grey_Red_Camo",
         "port": null,
         "type": "SCItemPurchasableParams"
@@ -46934,6 +48597,28 @@
     "size": 1,
     "source_id": "a134062c-f767-4872-bef5-56d171db3665",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_black_white.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "component_count": 1,
+    "components": [
+      {
+        "count": 1,
+        "name": "@item_NameZeus_Paint_Blue_Blue_Yellow",
+        "port": null,
+        "type": "SCItemPurchasableParams"
+      }
+    ],
+    "has_components": true,
+    "manufacturer": "Paint Zeus Blue Blue Yellow Logo",
+    "mass": false,
+    "name": "EntityClassDefinition.Paint_Zeus_Blue_Blue_Yellow",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "1da1d8a0-c37c-47b2-b826-b60f2fdfa410",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_blue_yellow.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -48027,6 +49712,21 @@
     "status_label": "Flyable"
   },
   {
+    "manufacturer": "Rsi",
+    "mass": false,
+    "name": "EntityClassDefinition.PersonalStorage_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "None"
+    ],
+    "size": 1,
+    "source_id": "a2c14324-8a9d-4330-90a6-ceafb3d882fc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_constellation_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "mass": false,
     "name": "EntityClassDefinition.PersonalStorage_RSI_Lynx_Left",
     "record_type": "EntityClassDefinition",
@@ -48106,6 +49806,20 @@
     "size": 1,
     "source_id": "f6205e74-b3d9-4933-bc9f-4ede10222de5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_polaris_medical.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "mass": false,
+    "name": "EntityClassDefinition.PersonalStorage_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "rental_locations": [
+      "None"
+    ],
+    "size": 1,
+    "source_id": "4815f39b-fb25-4024-aa86-94b095ee7230",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_skylark.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"
@@ -52170,6 +53884,18 @@
     "status_label": "Flyable"
   },
   {
+    "cargo": 7.0,
+    "mass": false,
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "4ffb9251-82a1-4884-bcfb-407fb4c69245",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_andromeda_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "cargo": 8.1,
     "mass": false,
     "name": "EntityClassDefinition.QTNK_RSI_Constellation_Aquila",
@@ -52182,6 +53908,42 @@
     "status_label": "Flyable"
   },
   {
+    "cargo": 8.1,
+    "mass": false,
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "8f955131-2fe1-4d8b-ba03-422f70fddda1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_aquila_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 8.6,
+    "mass": false,
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "01120bfb-9ba1-4afc-b83d-572d3aa096ca",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_mk5_centaurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 7.0,
+    "mass": false,
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "77d7e61a-1b9d-44df-8696-04fa7e4b3a80",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_phoenix_gs.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
     "cargo": 7.7,
     "mass": false,
     "name": "EntityClassDefinition.QTNK_RSI_Constellation_Taurus",
@@ -52189,6 +53951,18 @@
     "size": 1,
     "source_id": "779ef01c-de46-490b-b4cf-2dddab0156ee",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus.json",
+    "status": "Flyable",
+    "status_display": "Flyable",
+    "status_label": "Flyable"
+  },
+  {
+    "cargo": 7.7,
+    "mass": false,
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "size": 1,
+    "source_id": "167147fe-216b-4bb7-81a2-3e9117d37d97",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus_gs.json",
     "status": "Flyable",
     "status_display": "Flyable",
     "status_label": "Flyable"

@@ -744,7 +744,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "0b400963-0b00-456a-bbc9-c036063cb6d8",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -757,7 +757,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "416b5ed7-5e08-47e4-afa7-da00eef0a5fe",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -770,7 +770,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "4292f5a2-bc07-4df4-b3f7-cf3a43acbdd5",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -783,7 +783,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "4b91c6f3-360f-4fe6-b704-6c664a950d75",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -796,7 +796,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "5d268648-079b-4673-8c25-fa9286f5493f",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -809,7 +809,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "61967331-20e5-409b-9a75-f7aa0253c4fe",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -822,7 +822,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "64609b77-29e3-44d0-99df-c78a093851e1",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -835,7 +835,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "69a17b80-b5cd-4644-8598-f6bdea857fe3",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -848,7 +848,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "7f658b85-c9dc-4877-b81b-b1341c7de428",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -861,7 +861,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "b398f60a-f591-4462-a2c2-5f22df911639",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -874,7 +874,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "c10d9de6-bb8e-4cce-9fa0-ad0ed691a94e",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -887,7 +887,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "c3d7f66e-ca09-45f7-97de-0e9121f58639",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -900,7 +900,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "c4de1ea8-9853-4caf-9e49-a6f35e0a6c72",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -913,7 +913,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "d437b432-f18b-4cd8-b932-c9e3e72b1d34",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Direct Bulk Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -926,7 +926,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "0461cdb8-aa0a-4354-a903-9f57668d6add",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Large Cargo Haul"
       },
       {
         "association": "explicit_pool_reference",
@@ -939,7 +939,7 @@
         "mission_giver": "Covalex Industries",
         "mission_id": "2701ce42-2812-4ee2-b170-250a73d3c82a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/covalex industries/covalex_hauling.json",
-        "title": "~mission(ReputationRank) Rank - ~mission(CargoGradeToken) Cargo Haul"
+        "title": "Master Rank - Large Cargo Haul"
       }
     ],
     "pool_filename": "bp_rewards_covalexsuper.json",
@@ -1316,7 +1316,7 @@
         "mission_giver": "Eckhartsecurity",
         "mission_id": "0b4c6e81-838a-4e0a-8ecd-7f2893095a8d",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/eckhartsecurity/eckhartsecurity_killnpc.json",
-        "title": "High-Risk Bounty: ~mission(TargetName)"
+        "title": "High-Risk Bounty: [TARGET NAME]"
       }
     ],
     "pool_filename": "bp_rewards_eckhartsecuritykillnpcboss.json",
@@ -2263,7 +2263,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "1080d9fc-d511-4bda-a567-161797dac491",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+        "title": "CRITICAL REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2276,7 +2276,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "1f2d664c-2c64-4469-85ee-037febaa382b",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+        "title": "CRITICAL REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2289,7 +2289,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "5a3fb744-787c-460c-aecb-3ae0422d744d",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "CRITICAL REFUEL REQUEST: ~mission(Ship)"
+        "title": "CRITICAL REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2302,7 +2302,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "02f841ac-ebed-47b6-89e6-8973b37398be",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "REFUEL REQUEST: ~mission(Ship)"
+        "title": "REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2315,7 +2315,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "4b0ba86c-4796-4d32-8bab-7e39d0dd83cd",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "REFUEL REQUEST: ~mission(Ship)"
+        "title": "REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2328,7 +2328,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "6d1b2fe3-ed6b-4b94-9b6f-18fd3dccf2a0",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "REFUEL REQUEST: ~mission(Ship)"
+        "title": "REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2341,7 +2341,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "90da5507-58fa-45a6-8388-f2bb84d4b814",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "REFUEL REQUEST: ~mission(Ship)"
+        "title": "REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2354,7 +2354,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "9bbba062-857d-4d81-bc71-773eb8d2db41",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "REFUEL REQUEST: ~mission(Ship)"
+        "title": "REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2367,7 +2367,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "b8e75d60-5b51-43cb-b1ac-07cbe383031a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "REFUEL REQUEST: ~mission(Ship)"
+        "title": "REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2495,7 +2495,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "145a74cc-fda4-4bb9-b274-c6938b32fa71",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "URGENT REFUEL REQUEST: ~mission(Ship)"
+        "title": "URGENT REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2508,7 +2508,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "16cb5fd9-18c9-4ff7-a4b1-e4433c13e7ad",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "URGENT REFUEL REQUEST: ~mission(Ship)"
+        "title": "URGENT REFUEL REQUEST: [SHIP]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2521,7 +2521,7 @@
         "mission_giver": "United Wayfarers Club",
         "mission_id": "40c66c12-9f62-4fdd-a2fc-afff1ca9e406",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/united wayfarers club/unitedwayfarersclub.json",
-        "title": "URGENT REFUEL REQUEST: ~mission(Ship)"
+        "title": "URGENT REFUEL REQUEST: [SHIP]"
       }
     ],
     "pool_filename": "bp_rewards_fuelnozzle.json",
@@ -2771,6 +2771,19 @@
           "Regiona"
         ],
         "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Headhunters",
+        "mission_id": "7462c715-9517-451b-a32d-8e6b3ec0122d",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
+        "title": "[TARGET NAME] needs stomping"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Regiona",
+        "location_options": [
+          "Regiona"
+        ],
+        "max_standing": "Elite Contractor",
         "min_standing": "Veteran Contractor",
         "mission_giver": "Headhunters",
         "mission_id": "16b275fb-710e-45b6-8a35-61943afb34c2",
@@ -2853,7 +2866,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "2f9663f3-ed47-446a-ab0e-ec60526059d3",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Target at ~mission(Location)"
+        "title": "Target at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -2905,20 +2918,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "f2b6ac4d-2cc7-44b8-a798-8d6feda8d174",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Wanted: ~mission(TargetName)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Regiona",
-        "location_options": [
-          "Regiona"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Headhunters",
-        "mission_id": "7462c715-9517-451b-a32d-8e6b3ec0122d",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "~mission(TargetName) needs stomping"
+        "title": "Wanted: [TARGET NAME]"
       }
     ],
     "pool_filename": "bp_rewards_headhuntersmercenaryshipregiona.json",
@@ -2965,6 +2965,19 @@
     ],
     "mission_link_status": "explicit_mission_reference",
     "missions": [
+      {
+        "association": "explicit_pool_reference",
+        "location": "Regionb",
+        "location_options": [
+          "Regionb"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Headhunters",
+        "mission_id": "088a00d5-8068-4061-8248-aff38b8b199c",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
+        "title": "[TARGET NAME] needs stomping"
+      },
       {
         "association": "explicit_pool_reference",
         "location": "Regionb",
@@ -3054,7 +3067,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "8af7e67c-72a6-4bc3-aa35-835ea4923d85",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Target at ~mission(Location)"
+        "title": "Target at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -3106,20 +3119,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "ead7c561-656b-415f-bacd-d16795d2fe82",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Wanted: ~mission(TargetName)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Regionb",
-        "location_options": [
-          "Regionb"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Headhunters",
-        "mission_id": "088a00d5-8068-4061-8248-aff38b8b199c",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "~mission(TargetName) needs stomping"
+        "title": "Wanted: [TARGET NAME]"
       }
     ],
     "pool_filename": "bp_rewards_headhuntersmercenaryshipregionb.json",
@@ -3166,6 +3166,19 @@
     ],
     "mission_link_status": "explicit_mission_reference",
     "missions": [
+      {
+        "association": "explicit_pool_reference",
+        "location": "Regionc",
+        "location_options": [
+          "Regionc"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Headhunters",
+        "mission_id": "43a7a749-c185-4d71-a4d5-297f0b2072ea",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
+        "title": "[TARGET NAME] needs stomping"
+      },
       {
         "association": "explicit_pool_reference",
         "location": "Regionc",
@@ -3255,7 +3268,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "d20220e2-8d2e-482a-b037-1e7674892908",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Target at ~mission(Location)"
+        "title": "Target at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -3307,20 +3320,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "0f7184eb-c4c8-4a67-8d31-6cd2d8755ff1",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Wanted: ~mission(TargetName)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Regionc",
-        "location_options": [
-          "Regionc"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Headhunters",
-        "mission_id": "43a7a749-c185-4d71-a4d5-297f0b2072ea",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "~mission(TargetName) needs stomping"
+        "title": "Wanted: [TARGET NAME]"
       }
     ],
     "pool_filename": "bp_rewards_headhuntersmercenaryshipregionc.json",
@@ -3382,6 +3382,19 @@
     ],
     "mission_link_status": "explicit_mission_reference",
     "missions": [
+      {
+        "association": "explicit_pool_reference",
+        "location": "Regiond",
+        "location_options": [
+          "Regiond"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Headhunters",
+        "mission_id": "8d28f35c-ce26-4952-996b-b66afe6a74f2",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
+        "title": "[TARGET NAME] needs stomping"
+      },
       {
         "association": "explicit_pool_reference",
         "location": "Regiond",
@@ -3471,7 +3484,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "283ea69b-0b76-48aa-9d24-2efee50002dc",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Target at ~mission(Location)"
+        "title": "Target at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -3523,20 +3536,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "e1bdc963-67b3-413a-b4aa-0992494428b2",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "Wanted: ~mission(TargetName)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Regiond",
-        "location_options": [
-          "Regiond"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Headhunters",
-        "mission_id": "8d28f35c-ce26-4952-996b-b66afe6a74f2",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_ship.json",
-        "title": "~mission(TargetName) needs stomping"
+        "title": "Wanted: [TARGET NAME]"
       }
     ],
     "pool_filename": "bp_rewards_headhuntersmercenaryshipregiond.json",
@@ -3691,7 +3691,7 @@
         "mission_giver": "Lingfamilyhauling",
         "mission_id": "34ba1fc9-c6fd-4505-8dfe-bc7d67509776",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_hauling.json",
-        "title": "Ling Family ~mission(ReputationRank) Cargo Haul - ~mission(CargoGradeToken) Scale"
+        "title": "Ling Family [REPUTATION RANK] Cargo Haul - [CARGO GRADE] Scale"
       },
       {
         "association": "explicit_pool_reference",
@@ -3704,7 +3704,7 @@
         "mission_giver": "Lingfamilyhauling",
         "mission_id": "44e71db6-73d6-4ca6-83b3-b83496306b63",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_hauling.json",
-        "title": "Ling Family ~mission(ReputationRank) Cargo Haul - ~mission(CargoGradeToken) Scale"
+        "title": "Ling Family [REPUTATION RANK] Cargo Haul - [CARGO GRADE] Scale"
       },
       {
         "association": "explicit_pool_reference",
@@ -3717,7 +3717,7 @@
         "mission_giver": "Lingfamilyhauling",
         "mission_id": "45df5785-3b88-409f-80d8-e029c23b35d4",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_hauling.json",
-        "title": "Ling Family ~mission(ReputationRank) Cargo Haul - ~mission(CargoGradeToken) Scale"
+        "title": "Ling Family [REPUTATION RANK] Cargo Haul - [CARGO GRADE] Scale"
       },
       {
         "association": "explicit_pool_reference",
@@ -3730,7 +3730,7 @@
         "mission_giver": "Lingfamilyhauling",
         "mission_id": "8f29a2e2-4f34-4a9e-8335-e0b7e4d32f4c",
         "source_path": "libs/foundry/records/contracts/contractgenerator/interstellartransport_guild/lingfamilyhauling/lingfamilyhauling_hauling.json",
-        "title": "Ling Family ~mission(ReputationRank) Cargo Haul - ~mission(CargoGradeToken) Scale"
+        "title": "Ling Family [REPUTATION RANK] Cargo Haul - [CARGO GRADE] Scale"
       }
     ],
     "pool_filename": "bp_rewards_linghard.json",
@@ -4133,7 +4133,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "44f3deee-d85d-4b80-a715-755fe2cf022a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Defend ~mission(Location) From Mercs"
+        "title": "Defend [LOCATION] From Mercs"
       },
       {
         "association": "explicit_pool_reference",
@@ -4146,7 +4146,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "a43e965f-7feb-4380-b74e-00d88a726b17",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Guard ~mission(Location) From Rivals"
+        "title": "Guard [LOCATION] From Rivals"
       },
       {
         "association": "explicit_pool_reference",
@@ -4159,7 +4159,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "254df4aa-c281-4712-bd0d-ce2aeb3e7775",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Keep ~mission(Location) Safe"
+        "title": "Keep [LOCATION] Safe"
       },
       {
         "association": "explicit_pool_reference",
@@ -4172,7 +4172,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "80c3155a-f57c-4d22-8bad-de66ce2b0a60",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Keep ~mission(Location) Safe"
+        "title": "Keep [LOCATION] Safe"
       },
       {
         "association": "explicit_pool_reference",
@@ -4185,7 +4185,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "de72f185-824b-4c66-84b9-b5731e168a53",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Provide Protection at ~mission(Location)"
+        "title": "Provide Protection at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -4198,7 +4198,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "affa71b7-2192-4ef6-b16a-b1b19b4f4a69",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Secure ~mission(Location) from Upstarts"
+        "title": "Secure [LOCATION] from Upstarts"
       },
       {
         "association": "explicit_pool_reference",
@@ -4211,7 +4211,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "4683f665-83d3-4d4a-a26b-5e66a7e0658a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Stop Rival Attack at ~mission(Location)"
+        "title": "Stop Rival Attack at [LOCATION]"
       }
     ],
     "pool_filename": "bp_rewards_nyxheadhunterseasy.json",
@@ -4279,7 +4279,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "44f3deee-d85d-4b80-a715-755fe2cf022a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Defend ~mission(Location) From Mercs"
+        "title": "Defend [LOCATION] From Mercs"
       },
       {
         "association": "explicit_pool_reference",
@@ -4292,7 +4292,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "a43e965f-7feb-4380-b74e-00d88a726b17",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Guard ~mission(Location) From Rivals"
+        "title": "Guard [LOCATION] From Rivals"
       },
       {
         "association": "explicit_pool_reference",
@@ -4305,7 +4305,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "4683f665-83d3-4d4a-a26b-5e66a7e0658a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Stop Rival Attack at ~mission(Location)"
+        "title": "Stop Rival Attack at [LOCATION]"
       }
     ],
     "pool_filename": "bp_rewards_nyxheadhuntershard.json",
@@ -4643,7 +4643,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "b7963b4b-902c-4bdf-9803-7531c5204790",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Defend ~mission(Location) From Mercs"
+        "title": "Defend [LOCATION] From Mercs"
       },
       {
         "association": "explicit_pool_reference",
@@ -4656,7 +4656,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "e10ab8fe-a4b4-486c-8666-8712b8f0f789",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Guard ~mission(Location) From Rivals"
+        "title": "Guard [LOCATION] From Rivals"
       },
       {
         "association": "explicit_pool_reference",
@@ -4669,7 +4669,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "0f923f79-aec0-455f-bd7e-fa3b4b94a451",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Keep ~mission(Location) Safe"
+        "title": "Keep [LOCATION] Safe"
       },
       {
         "association": "explicit_pool_reference",
@@ -4682,7 +4682,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "48e5f9e7-a3de-405b-9c0e-a82247398514",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Keep ~mission(Location) Safe"
+        "title": "Keep [LOCATION] Safe"
       },
       {
         "association": "explicit_pool_reference",
@@ -4695,7 +4695,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "3bf00ca0-410d-41b1-8d84-e678b3ffbf38",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Provide Protection at ~mission(Location)"
+        "title": "Provide Protection at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -4708,7 +4708,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "c1ed0682-7e6e-4278-a7ed-d9ec0e666dd4",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Secure ~mission(Location) from Upstarts"
+        "title": "Secure [LOCATION] from Upstarts"
       },
       {
         "association": "explicit_pool_reference",
@@ -4721,7 +4721,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "e7eb0b01-8149-4f7f-8ca3-0710d1fd8579",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Stop Rival Attack at ~mission(Location)"
+        "title": "Stop Rival Attack at [LOCATION]"
       }
     ],
     "pool_filename": "bp_rewards_pyroheadhunterseasy.json",
@@ -4779,7 +4779,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "b7963b4b-902c-4bdf-9803-7531c5204790",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Defend ~mission(Location) From Mercs"
+        "title": "Defend [LOCATION] From Mercs"
       },
       {
         "association": "explicit_pool_reference",
@@ -4792,7 +4792,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "e10ab8fe-a4b4-486c-8666-8712b8f0f789",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Guard ~mission(Location) From Rivals"
+        "title": "Guard [LOCATION] From Rivals"
       },
       {
         "association": "explicit_pool_reference",
@@ -4805,7 +4805,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "e7eb0b01-8149-4f7f-8ca3-0710d1fd8579",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Stop Rival Attack at ~mission(Location)"
+        "title": "Stop Rival Attack at [LOCATION]"
       }
     ],
     "pool_filename": "bp_rewards_pyroheadhuntershard.json",
@@ -7808,7 +7808,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "43170126-137c-44d5-9992-caa76b6c1d38",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Defend ~mission(Location) From Mercs"
+        "title": "Defend [LOCATION] From Mercs"
       },
       {
         "association": "explicit_pool_reference",
@@ -7821,7 +7821,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "7d1322fd-86bf-498e-b420-23a2a99dc7d9",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Guard ~mission(Location) From Rivals"
+        "title": "Guard [LOCATION] From Rivals"
       },
       {
         "association": "explicit_pool_reference",
@@ -7834,7 +7834,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "8d2c0e5b-4474-48a1-aa2e-70718de73309",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Keep ~mission(Location) Safe"
+        "title": "Keep [LOCATION] Safe"
       },
       {
         "association": "explicit_pool_reference",
@@ -7847,7 +7847,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "cf99a0e6-d134-49ac-a578-09ec02315f7c",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Keep ~mission(Location) Safe"
+        "title": "Keep [LOCATION] Safe"
       },
       {
         "association": "explicit_pool_reference",
@@ -7860,7 +7860,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "22f4983f-3637-441f-ac3f-2ff1e0a5d272",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Provide Protection at ~mission(Location)"
+        "title": "Provide Protection at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -7873,7 +7873,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "db2be15b-a264-454c-b43e-0e4c1aaf3db6",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Secure ~mission(Location) from Upstarts"
+        "title": "Secure [LOCATION] from Upstarts"
       },
       {
         "association": "explicit_pool_reference",
@@ -7886,7 +7886,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "41b44c63-80e8-4d1b-8cba-358770d7af4e",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Stop Rival Attack at ~mission(Location)"
+        "title": "Stop Rival Attack at [LOCATION]"
       }
     ],
     "pool_filename": "bp_rewards_stantonheadhunterseasy.json",
@@ -7949,7 +7949,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "43170126-137c-44d5-9992-caa76b6c1d38",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Defend ~mission(Location) From Mercs"
+        "title": "Defend [LOCATION] From Mercs"
       },
       {
         "association": "explicit_pool_reference",
@@ -7962,7 +7962,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "7d1322fd-86bf-498e-b420-23a2a99dc7d9",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Guard ~mission(Location) From Rivals"
+        "title": "Guard [LOCATION] From Rivals"
       },
       {
         "association": "explicit_pool_reference",
@@ -7975,7 +7975,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "41b44c63-80e8-4d1b-8cba-358770d7af4e",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_defendentitiesandescort.json",
-        "title": "Stop Rival Attack at ~mission(Location)"
+        "title": "Stop Rival Attack at [LOCATION]"
       }
     ],
     "pool_filename": "bp_rewards_stantonheadhuntershard.json",
@@ -8505,7 +8505,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "ccdb8a76-4772-4292-ab9f-ac5696d3d483",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_fps.json",
-        "title": "Verified Bounty: ~mission(TargetName) at ~mission(Location)"
+        "title": "Verified Bounty: [TARGET NAME] at [LOCATION]"
       }
     ],
     "pool_filename": "bp_missionreward_bhg_asdfacilitydelving_engineeringwing_eliminatespecific.json",
@@ -8579,7 +8579,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "811dbf1b-f021-4809-96ff-77fe8002b8e5",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_fps.json",
-        "title": "Verified Bounty: ~mission(TargetName) at ~mission(Location)"
+        "title": "Verified Bounty: [TARGET NAME] at [LOCATION]"
       }
     ],
     "pool_filename": "bp_missionreward_bhg_asdfacilitydelving_researchwing_eliminatespecific.json",
@@ -8921,7 +8921,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "02349039-42c0-42b9-a8a0-c2b07b8d78e3",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       },
       {
         "association": "explicit_pool_reference",
@@ -8934,7 +8934,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "03f26bb1-2604-4e1b-b0ec-8ceba202b3aa",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       },
       {
         "association": "explicit_pool_reference",
@@ -8947,7 +8947,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "e931d5bc-88eb-44f4-aebb-c72038ff1efc",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       },
       {
         "association": "explicit_pool_reference",
@@ -8960,7 +8960,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "f912aaa1-24d5-4f6c-b89f-00dc201e5c98",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       }
     ],
     "pool_filename": "bp_missionreward_bitzeros_recoveritem_pyronyx.json",
@@ -9039,7 +9039,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "3a5746d9-8691-4c79-8143-40686750c2d7",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9053,7 +9053,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "bbdedd21-2261-4199-8ec0-1086084ce2f5",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9067,7 +9067,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "ca6aa0d5-78b4-4e52-a98a-c2d4f28b3313",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9081,7 +9081,7 @@
         "mission_giver": "Bitzeros",
         "mission_id": "cfa37461-4792-48bc-b6ee-10076ba347c7",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
+        "title": "[RECOVER ITEM]"
       }
     ],
     "pool_filename": "bp_missionreward_bitzeros_recoveritem_stanton.json",
@@ -9248,7 +9248,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "d300992a-88ab-479c-b1d9-f135b2092b5b",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Alert: ~mission(Location) under attack"
+        "title": "Alert: [LOCATION] under attack"
       },
       {
         "association": "explicit_pool_reference",
@@ -9261,7 +9261,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "7a5ecb39-de87-474b-8941-cc61cc005132",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Call for Help: ~mission(Location)"
+        "title": "Call for Help: [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9274,7 +9274,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "ddc816b2-f3ee-4a0e-903a-385bb8eb3f0c",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Outlaw attack at ~mission(Location)"
+        "title": "Outlaw attack at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9379,7 +9379,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "7d230313-8856-484a-b219-3a983488833d",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Defend ~mission(Location) from Outlaws"
+        "title": "Defend [LOCATION] from Outlaws"
       },
       {
         "association": "explicit_pool_reference",
@@ -9392,7 +9392,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "023240d7-1f35-41dd-ae2b-9ee5097a6798",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Help defend ~mission(Location) from Headhunters"
+        "title": "Help defend [LOCATION] from Headhunters"
       },
       {
         "association": "explicit_pool_reference",
@@ -9418,7 +9418,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "efaadba5-667f-4ca5-a2ff-84b743704a1f",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Protect ~mission(Location) from XenoThreat Attack"
+        "title": "Protect [LOCATION] from XenoThreat Attack"
       },
       {
         "association": "explicit_pool_reference",
@@ -9485,6 +9485,19 @@
     "missions": [
       {
         "association": "explicit_pool_reference",
+        "location": "Regionb",
+        "location_options": [
+          "Regionb"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Citizensforprosperity",
+        "mission_id": "2faacd74-10f4-4b31-8e24-cca9c78841b8",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
+        "title": "[LOCATION] needs assistance"
+      },
+      {
+        "association": "explicit_pool_reference",
         "location": "Regiona",
         "location_options": [
           "Regiona"
@@ -9494,7 +9507,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "9e21b3ba-2cd0-43c1-bcb7-3c9a6c20f0e1",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Assistance needed at ~mission(Location)"
+        "title": "Assistance needed at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9507,7 +9520,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "234e8d71-7ae0-4987-94fc-cb7d4ff113d4",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Call for Help: ~mission(Location)"
+        "title": "Call for Help: [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9520,7 +9533,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "94be848a-e2a8-4a3e-99f9-f88e1b2a4a7a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Call for Help: ~mission(Location)"
+        "title": "Call for Help: [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9531,7 +9544,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "54c44da2-b1b3-4067-a3b9-cfd73fad73c9",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Defend ~mission(Location) from Outlaws"
+        "title": "Defend [LOCATION] from Outlaws"
       },
       {
         "association": "explicit_pool_reference",
@@ -9544,7 +9557,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "038c0dab-5ca0-4363-a08e-c825a081d880",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Headhunter attack on ~mission(Location)"
+        "title": "Headhunter attack on [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9557,7 +9570,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "f5519744-fb8c-45ea-bfb5-6e31d2afe8c4",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Protect ~mission(Location) from XenoThreat Incursion"
+        "title": "Protect [LOCATION] from XenoThreat Incursion"
       },
       {
         "association": "explicit_pool_reference",
@@ -9570,7 +9583,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "f09b6204-cab2-4081-b14f-48e2a5631501",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Protect ~mission(Location) from XenoThreat Raid"
+        "title": "Protect [LOCATION] from XenoThreat Raid"
       },
       {
         "association": "explicit_pool_reference",
@@ -9584,19 +9597,6 @@
         "mission_id": "0fed970e-9222-490a-b1d8-993c9d896b58",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
         "title": "Reclaim Headhunter Outpost"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Regionb",
-        "location_options": [
-          "Regionb"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Citizensforprosperity",
-        "mission_id": "2faacd74-10f4-4b31-8e24-cca9c78841b8",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "~mission(Location) needs assistance"
       }
     ],
     "pool_filename": "bp_missionreward_cfp_outpost_regionab.json",
@@ -9650,6 +9650,19 @@
     "missions": [
       {
         "association": "explicit_pool_reference",
+        "location": "Regiona",
+        "location_options": [
+          "Regiona"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Veteran Contractor",
+        "mission_giver": "Citizensforprosperity",
+        "mission_id": "3c33b776-e65f-46fc-930e-52e326df8ddc",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
+        "title": "[LOCATION] needs help"
+      },
+      {
+        "association": "explicit_pool_reference",
         "location": "Regionc",
         "location_options": [
           "Regionc"
@@ -9672,7 +9685,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "e63fa30b-1e93-4d1a-bee8-28f359640bdb",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "Call for Help: ~mission(Location)"
+        "title": "Call for Help: [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9712,19 +9725,6 @@
         "mission_id": "4cd24c49-870e-48af-9a37-3f55dad7316a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
         "title": "Reclaim XenoThreat Outpost"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Regiona",
-        "location_options": [
-          "Regiona"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Veteran Contractor",
-        "mission_giver": "Citizensforprosperity",
-        "mission_id": "3c33b776-e65f-46fc-930e-52e326df8ddc",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_mercenary_fps.json",
-        "title": "~mission(Location|Address) needs help"
       }
     ],
     "pool_filename": "bp_missionreward_cfp_outpost_regionc.json",
@@ -9955,7 +9955,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "0df79063-e778-4fa2-982d-6fdc003c7d2d",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9968,7 +9968,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "6dd3942c-b1c7-4466-8bd4-709261178add",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9981,7 +9981,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "8b18d982-1e25-41a5-b159-e7e4ea5c9620",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -9994,7 +9994,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "8bcab8a3-6237-4ad6-bd25-004a34b540ed",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10059,7 +10059,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "ada151a3-41e3-4050-8bd4-3a2741cd87c2",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Take Outlaws at ~mission(Location) Offline"
+        "title": "Take Outlaws at [LOCATION] Offline"
       }
     ],
     "pool_filename": "bp_missionreward_citizensforprosperitydestroyitems_ab.json",
@@ -10191,7 +10191,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "5bff9fb5-f386-4e93-924c-9a99b4eb20a7",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10204,7 +10204,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "bc4031f7-3f93-4d18-b4f9-a9b6771812da",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10217,7 +10217,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "c26e0ab8-515d-4caa-8f16-6cddeebbaa79",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10230,7 +10230,7 @@
         "mission_giver": "Citizensforprosperity",
         "mission_id": "fb339a08-14cb-4de5-b8c0-3a9a731105a1",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/citizensforprosperity/citizensforprosperity_destroyitems.json",
-        "title": "Disable Outlaw Stronghold at ~mission(Location)"
+        "title": "Disable Outlaw Stronghold at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10561,7 +10561,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "7bf79c80-7d57-471f-a1af-77c08ec7f9b6",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Orange Lvl. Contract: Defend ~mission(Objects)"
+        "title": "Orange Lvl. Contract: Defend [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10574,7 +10574,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "eda80f06-4a44-471c-8b4f-a195a6a988c9",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Orange Lvl. Contract: Defend ~mission(Objects)"
+        "title": "Orange Lvl. Contract: Defend [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10587,7 +10587,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "31d2d60e-aa5f-4c43-b39b-caf3195b67a7",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Orange Lvl. Contract: Protect ~mission(Objects)"
+        "title": "Orange Lvl. Contract: Protect [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10600,7 +10600,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "378bfd37-57d5-4a7e-a0e8-efce6d1d278b",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Orange Lvl. Contract: Protect ~mission(Objects)"
+        "title": "Orange Lvl. Contract: Protect [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10613,7 +10613,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "802b6f6f-8b6c-47b7-80e5-06663b7a06c4",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Red Lvl. Contract: Defend ~mission(Objects)"
+        "title": "Red Lvl. Contract: Defend [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10626,7 +10626,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "9588e6f4-f0db-4c81-a959-901c3ef3509c",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Red Lvl. Contract: Defend ~mission(Objects)"
+        "title": "Red Lvl. Contract: Defend [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10639,7 +10639,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "7c6dd9c4-b73b-4b61-9117-c11b4c074dac",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Red Lvl. Contract: Protect ~mission(Objects)"
+        "title": "Red Lvl. Contract: Protect [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10652,7 +10652,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "c1c16bc6-a55a-4af0-adbb-7fc63f1dfdb5",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Red Lvl. Contract: Protect ~mission(Objects)"
+        "title": "Red Lvl. Contract: Protect [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10693,7 +10693,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "1e67d50d-ce82-4e46-b0f9-140b6df64fb7",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Yellow Lvl. Contract: Defend ~mission(Objects)"
+        "title": "Yellow Lvl. Contract: Defend [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10706,7 +10706,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "8744d536-ee31-493b-a2b1-c819ba2f8955",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Yellow Lvl. Contract: Defend ~mission(Objects)"
+        "title": "Yellow Lvl. Contract: Defend [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10719,7 +10719,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "659c9aa2-7bef-4498-97d8-9eb643bc02f6",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Yellow Lvl. Contract: Protect ~mission(Objects)"
+        "title": "Yellow Lvl. Contract: Protect [OBJECTS]"
       },
       {
         "association": "explicit_pool_reference",
@@ -10732,7 +10732,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "f4d690b6-f20e-4ab9-a098-906e308909a4",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_defenddestructibleentities.json",
-        "title": "Yellow Lvl. Contract: Protect ~mission(Objects)"
+        "title": "Yellow Lvl. Contract: Protect [OBJECTS]"
       }
     ],
     "pool_filename": "bp_missionreward_foxwell_defendentitiesandescort.json",
@@ -11053,7 +11053,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "8445139c-9b30-4789-8003-39f32fc5ebd5",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_escortships.json",
-        "title": "Red Level Contract: Save Ships at ~mission(DefendLocationWrapperLocation)"
+        "title": "Red Level Contract: Save Ships at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -11066,7 +11066,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "d9529d19-9752-4893-a812-e266cf5ef9c9",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_escortships.json",
-        "title": "Red Level Contract: Save Ships at ~mission(DefendLocationWrapperLocation)"
+        "title": "Red Level Contract: Save Ships at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -11105,7 +11105,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "868d5596-1b23-499e-8afb-88800d6e3f5e",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_escortships.json",
-        "title": "Yellow Level Contract: Defend ~mission(DefendLocationWrapperLocation)"
+        "title": "Yellow Level Contract: Defend [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -11118,7 +11118,7 @@
         "mission_giver": "Shipbattles",
         "mission_id": "adb32bca-f7d2-4182-a697-d36cc5467183",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/shipbattles/foxwellenforcement_escortships.json",
-        "title": "Yellow Level Contract: Defend ~mission(DefendLocationWrapperLocation)"
+        "title": "Yellow Level Contract: Defend [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -11209,6 +11209,19 @@
     "missions": [
       {
         "association": "explicit_pool_reference",
+        "location": "Stanton",
+        "location_options": [
+          "Stanton"
+        ],
+        "max_standing": "Elite Security Contractor",
+        "min_standing": "Applicant",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "9ef512ad-9832-4fa9-bad7-60e99268df74",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
+        "title": "[DESTROY PROBE]"
+      },
+      {
+        "association": "explicit_pool_reference",
         "location": "Stanton1",
         "location_options": [
           "Stanton1"
@@ -11274,6 +11287,28 @@
       },
       {
         "association": "explicit_pool_reference",
+        "location": "",
+        "location_options": [],
+        "max_standing": "",
+        "min_standing": "",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "3306bc07-9ead-4323-b590-376a980ef81a",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
+        "title": "Orange Level Contract: [SHIP] Needs Assistance"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "",
+        "location_options": [],
+        "max_standing": "",
+        "min_standing": "",
+        "mission_giver": "Foxwellenforcement",
+        "mission_id": "dba10330-cde8-4e2b-8d2e-7614bbdc5bc6",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
+        "title": "Orange Level Contract: [SHIP] Needs Assistance"
+      },
+      {
+        "association": "explicit_pool_reference",
         "location": "Stanton",
         "location_options": [
           "Stanton"
@@ -11300,28 +11335,6 @@
       },
       {
         "association": "explicit_pool_reference",
-        "location": "",
-        "location_options": [],
-        "max_standing": "",
-        "min_standing": "",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "3306bc07-9ead-4323-b590-376a980ef81a",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
-        "title": "Orange Level Contract: ~mission(Ship) Needs Assistance"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "",
-        "location_options": [],
-        "max_standing": "",
-        "min_standing": "",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "dba10330-cde8-4e2b-8d2e-7614bbdc5bc6",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
-        "title": "Orange Level Contract: ~mission(Ship) Needs Assistance"
-      },
-      {
-        "association": "explicit_pool_reference",
         "location": "Stanton1",
         "location_options": [
           "Stanton1"
@@ -11331,7 +11344,7 @@
         "mission_giver": "Foxwellenforcement",
         "mission_id": "94079b3a-b689-40ce-b8bf-f1371e4f6398",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
-        "title": "Precision Strike on ~mission(TargetName)"
+        "title": "Precision Strike on [TARGET NAME]"
       },
       {
         "association": "explicit_pool_reference",
@@ -11457,7 +11470,7 @@
         "mission_giver": "Foxwellenforcement",
         "mission_id": "5f54c243-3985-4509-85c1-e5e99665a7f6",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
-        "title": "Track Down ~mission(TargetName)"
+        "title": "Track Down [TARGET NAME]"
       },
       {
         "association": "explicit_pool_reference",
@@ -11532,19 +11545,6 @@
         "mission_id": "48cacfd7-920a-44bc-977d-8ea52ed6d324",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
         "title": "Yellow Level Contract: Ship Under Attack"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Stanton",
-        "location_options": [
-          "Stanton"
-        ],
-        "max_standing": "Elite Security Contractor",
-        "min_standing": "Applicant",
-        "mission_giver": "Foxwellenforcement",
-        "mission_id": "9ef512ad-9832-4fa9-bad7-60e99268df74",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/foxwellenforcement/foxwellenforcement_generator.json",
-        "title": "~mission(Contractor|DestroyProbeTitle)"
       }
     ],
     "pool_filename": "bp_missionreward_foxwellenforcement_generator.json",
@@ -11814,6 +11814,20 @@
           "Pyrostar"
         ],
         "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Headhunters",
+        "mission_id": "80933e8d-c9bf-492b-b69f-c5abd24962e9",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
+        "title": "[LOCATION] has been greenlit"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Regionb, Pyrostar",
+        "location_options": [
+          "Regionb",
+          "Pyrostar"
+        ],
+        "max_standing": "Elite Contractor",
         "min_standing": "Sr. Contractor",
         "mission_giver": "Headhunters",
         "mission_id": "12e92b29-e5a8-4ba7-95a4-122d6c992684",
@@ -11944,7 +11958,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "cdea5768-6bb8-43a5-b613-84dc9be80bbc",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Hit XenoThreat at ~mission(Location)"
+        "title": "Hit XenoThreat at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -12057,20 +12071,6 @@
         "mission_id": "3b4eefca-9480-4fd6-9afa-ac5898e39414",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
         "title": "Turf War"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Regionb, Pyrostar",
-        "location_options": [
-          "Regionb",
-          "Pyrostar"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Headhunters",
-        "mission_id": "80933e8d-c9bf-492b-b69f-c5abd24962e9",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "~mission(Location) has been greenlit"
       }
     ],
     "pool_filename": "bp_missionreward_headhunters_mercenaryfps_eliminateall_regionab.json",
@@ -12214,7 +12214,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "7cc2b1b0-3fce-49c2-bb55-876f96a99950",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Green light on ~mission(Location)"
+        "title": "Green light on [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -12414,7 +12414,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "53e2f939-831c-405c-bf2c-b60a5a7d660b",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Need a death at ~mission(Location)"
+        "title": "Need a death at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -12428,7 +12428,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "95509f4d-a087-4c48-ad58-90d53c76f000",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Need a death at ~mission(Location)"
+        "title": "Need a death at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -12442,7 +12442,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "cd54ceb7-9f64-4a66-b920-615dc91d3257",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Need a death at ~mission(Location)"
+        "title": "Need a death at [LOCATION]"
       },
       {
         "association": "explicit_pool_reference",
@@ -12456,7 +12456,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "e4b5cdf8-6ee0-429e-9cfe-64354a379cce",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Need a death at ~mission(Location)"
+        "title": "Need a death at [LOCATION]"
       }
     ],
     "pool_filename": "bp_missionreward_headhunters_mercenaryfps_eliminateboss.json",
@@ -12596,7 +12596,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "4bd43a77-1ac6-4fa4-8f51-a92ef1f4f607",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Green light on ~mission(TargetName|Last)"
+        "title": "Green light on [TARGET NAME]"
       },
       {
         "association": "explicit_pool_reference",
@@ -12680,7 +12680,7 @@
         "mission_giver": "Headhunters",
         "mission_id": "bb8df7e6-c453-4320-8f48-0e7bd6eb5a07",
         "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/headhunters/headhunters_mercenary_fps.json",
-        "title": "Wanted: ~mission(TargetName)"
+        "title": "Wanted: [TARGET NAME]"
       },
       {
         "association": "explicit_pool_reference",
@@ -13428,7 +13428,7 @@
         "mission_giver": "Northrock Service Group",
         "mission_id": "4d51db6a-ec13-dad7-6f58-0cd8fe90bf89",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_fpskill.json",
-        "title": "Bounty Assignment: ~mission(TargetName) (HRT)"
+        "title": "Bounty Assignment: [TARGET NAME] (HRT)"
       },
       {
         "association": "explicit_pool_reference",
@@ -13439,7 +13439,7 @@
         "mission_giver": "Northrock Service Group",
         "mission_id": "57333cdf-fae8-439b-9701-cc4dd1978412",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/northrock service group/northrock_fpskill.json",
-        "title": "Bounty Assignment: ~mission(TargetName) (HRT)"
+        "title": "Bounty Assignment: [TARGET NAME] (HRT)"
       }
     ],
     "pool_filename": "bp_missionreward_northrockfpskill_eliminateboss.json",
@@ -13515,7 +13515,7 @@
         "mission_giver": "Rayari Inc",
         "mission_id": "0137aa6a-c647-4e30-92d5-5bd91acbd270",
         "source_path": "libs/foundry/records/contracts/contractgenerator/academyofsciences_guild/rayari inc/rayari_recoveritem.json",
-        "title": "Need Resource for Research\\n"
+        "title": "Need Resource for Research"
       },
       {
         "association": "explicit_pool_reference",
@@ -13526,7 +13526,7 @@
         "mission_giver": "Rayari Inc",
         "mission_id": "5e4608e6-cf31-4f36-a82a-9e8540934e0b",
         "source_path": "libs/foundry/records/contracts/contractgenerator/academyofsciences_guild/rayari inc/rayari_recoveritem.json",
-        "title": "Need Resource for Research\\n"
+        "title": "Need Resource for Research"
       },
       {
         "association": "explicit_pool_reference",
@@ -13537,7 +13537,7 @@
         "mission_giver": "Rayari Inc",
         "mission_id": "cb582593-5230-4146-9e15-6e04e8cdcdac",
         "source_path": "libs/foundry/records/contracts/contractgenerator/academyofsciences_guild/rayari inc/rayari_recoveritem.json",
-        "title": "Need Resource for Research\\n"
+        "title": "Need Resource for Research"
       },
       {
         "association": "explicit_pool_reference",
@@ -13770,6 +13770,123 @@
     "missions": [
       {
         "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Deadsaints",
+        "mission_id": "00d65b75-6d4d-4443-8b0d-499817943b09",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Bitzeros",
+        "mission_id": "02349039-42c0-42b9-a8a0-c2b07b8d78e3",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Bitzeros",
+        "mission_id": "03f26bb1-2604-4e1b-b0ec-8ceba202b3aa",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Deadsaints",
+        "mission_id": "6992076b-a400-4444-a0f5-5752eb459dd5",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Deadsaints",
+        "mission_id": "6a3bd493-0237-4937-9b02-e2b28fd8b04d",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Deadsaints",
+        "mission_id": "aeea7abc-8f44-4986-9524-fbb922142260",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Deadsaints",
+        "mission_id": "d23d7e30-28d4-481a-b0f4-8a4478a5baa6",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Bitzeros",
+        "mission_id": "e931d5bc-88eb-44f4-aebb-c72038ff1efc",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
+        "location": "Nyx",
+        "location_options": [
+          "Nyx"
+        ],
+        "max_standing": "Elite Contractor",
+        "min_standing": "Jr. Contractor",
+        "mission_giver": "Bitzeros",
+        "mission_id": "f912aaa1-24d5-4f6c-b89f-00dc201e5c98",
+        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
+        "title": "[RECOVER ITEM]"
+      },
+      {
+        "association": "explicit_pool_reference",
         "location": "Nyxsolarsystem",
         "location_options": [
           "Nyxsolarsystem"
@@ -13794,123 +13911,6 @@
         "mission_id": "8f89a2d4-8994-462a-a711-7eca01a3edeb",
         "source_path": "libs/foundry/records/contracts/contractgenerator/unitedresourceworkers_guild/shubin interstellar/shubininterstellar.json",
         "title": "QV Breaker Station Mining Rights (Shared)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Deadsaints",
-        "mission_id": "00d65b75-6d4d-4443-8b0d-499817943b09",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Bitzeros",
-        "mission_id": "02349039-42c0-42b9-a8a0-c2b07b8d78e3",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Bitzeros",
-        "mission_id": "03f26bb1-2604-4e1b-b0ec-8ceba202b3aa",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Deadsaints",
-        "mission_id": "6992076b-a400-4444-a0f5-5752eb459dd5",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Deadsaints",
-        "mission_id": "6a3bd493-0237-4937-9b02-e2b28fd8b04d",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Deadsaints",
-        "mission_id": "aeea7abc-8f44-4986-9524-fbb922142260",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Deadsaints",
-        "mission_id": "d23d7e30-28d4-481a-b0f4-8a4478a5baa6",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/deadsaints/deadsaints_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Bitzeros",
-        "mission_id": "e931d5bc-88eb-44f4-aebb-c72038ff1efc",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
-      },
-      {
-        "association": "explicit_pool_reference",
-        "location": "Nyx",
-        "location_options": [
-          "Nyx"
-        ],
-        "max_standing": "Elite Contractor",
-        "min_standing": "Jr. Contractor",
-        "mission_giver": "Bitzeros",
-        "mission_id": "f912aaa1-24d5-4f6c-b89f-00dc201e5c98",
-        "source_path": "libs/foundry/records/contracts/contractgenerator/thecouncil_guild/bitzeros/bitzeros_recoveritem.json",
-        "title": "~mission(Contractor|RecoverItemTitle)"
       }
     ],
     "pool_filename": "bp_missionreward_rdc_exclusive.json",
@@ -14103,7 +14103,7 @@
         "mission_giver": "Intersecdefensesolutions",
         "mission_id": "d7e8b51c-fff5-4ef1-b262-149a9ec2892b",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/intersecdefensesolutions/intersec_killship.json",
-        "title": "Neutralize UEE Threat: ~mission(TargetName)"
+        "title": "Neutralize UEE Threat: [TARGET NAME]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14129,7 +14129,7 @@
         "mission_giver": "Intersecdefensesolutions",
         "mission_id": "1850226f-16e3-4160-9172-698e5397ed18",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/intersecdefensesolutions/intersec_killship.json",
-        "title": "New Defense Contract: ~mission(TargetName) Elimination"
+        "title": "New Defense Contract: [TARGET NAME] Elimination"
       },
       {
         "association": "explicit_pool_reference",
@@ -14168,7 +14168,7 @@
         "mission_giver": "Intersecdefensesolutions",
         "mission_id": "36431200-e22d-4161-a018-a544565f9e1a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/intersecdefensesolutions/intersec_killship.json",
-        "title": "Preemptive Strike On ~mission(TargetName)"
+        "title": "Preemptive Strike On [TARGET NAME]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14272,7 +14272,7 @@
         "mission_giver": "Intersecdefensesolutions",
         "mission_id": "aabd440e-cbf5-4136-adcf-6b9ca783ac80",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/intersecdefensesolutions/intersec_killship.json",
-        "title": "Terrorist ~mission(TargetName) to be Neutralized"
+        "title": "Terrorist [TARGET NAME] to be Neutralized"
       },
       {
         "association": "explicit_pool_reference",
@@ -14285,7 +14285,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "128d40e5-6bcb-4503-bb60-45ac58c634fb",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_fps.json",
-        "title": "Verified Bounty: ~mission(TargetName) at QV Breaker Station"
+        "title": "Verified Bounty: [TARGET NAME] at QV Breaker Station"
       },
       {
         "association": "explicit_pool_reference",
@@ -14298,7 +14298,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "ccd48707-050e-4f79-ac7f-e6008e1e91ed",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_fps.json",
-        "title": "Verified Bounty: ~mission(TargetName) at QV Breaker Station"
+        "title": "Verified Bounty: [TARGET NAME] at QV Breaker Station"
       },
       {
         "association": "explicit_pool_reference",
@@ -14311,7 +14311,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "f0ff85a8-ee91-4ffb-8f9c-bcaf9d97acdb",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_fps.json",
-        "title": "Verified Bounty: ~mission(TargetName) at QV Breaker Station"
+        "title": "Verified Bounty: [TARGET NAME] at QV Breaker Station"
       },
       {
         "association": "explicit_pool_reference",
@@ -14324,7 +14324,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "27804bcd-eadd-4b75-ad00-ce4fd5450ec8",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_killship.json",
-        "title": "Verified Bounty: ~mission(TargetName) | ~mission(Danger)"
+        "title": "Verified Bounty: [TARGET NAME] | [DANGER]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14337,7 +14337,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "44616d84-c549-4c9f-b967-573b035c3c3e",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_killship.json",
-        "title": "Verified Bounty: ~mission(TargetName) | ~mission(Danger)"
+        "title": "Verified Bounty: [TARGET NAME] | [DANGER]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14350,7 +14350,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "44d85e9e-b93a-4488-9273-61c3445ab4aa",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_killship.json",
-        "title": "Verified Bounty: ~mission(TargetName) | ~mission(Danger)"
+        "title": "Verified Bounty: [TARGET NAME] | [DANGER]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14363,7 +14363,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "539de750-ba46-4986-b4f4-9780c45f6f07",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_killship.json",
-        "title": "Verified Bounty: ~mission(TargetName) | ~mission(Danger)"
+        "title": "Verified Bounty: [TARGET NAME] | [DANGER]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14376,7 +14376,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "8794972a-d90e-4549-8dfb-aaf80592231a",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_killship.json",
-        "title": "Verified Bounty: ~mission(TargetName) | ~mission(Danger)"
+        "title": "Verified Bounty: [TARGET NAME] | [DANGER]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14389,7 +14389,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "b7e2fdb1-cb2b-4608-ac51-f396d7b62814",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_killship.json",
-        "title": "Verified Bounty: ~mission(TargetName) | ~mission(Danger)"
+        "title": "Verified Bounty: [TARGET NAME] | [DANGER]"
       },
       {
         "association": "explicit_pool_reference",
@@ -14402,7 +14402,7 @@
         "mission_giver": "Bountyhunterguild",
         "mission_id": "d925834f-cacf-4445-bf91-cc5fc08cf6f8",
         "source_path": "libs/foundry/records/contracts/contractgenerator/mercenary_guild/bountyhunterguild/bountyhuntersguild_killship.json",
-        "title": "Verified Bounty: ~mission(TargetName) | ~mission(Danger)"
+        "title": "Verified Bounty: [TARGET NAME] | [DANGER]"
       }
     ],
     "pool_filename": "bp_missionreward_rdc_generic.json",

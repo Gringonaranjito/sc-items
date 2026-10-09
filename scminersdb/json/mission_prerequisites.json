@@ -991,6 +991,15 @@
   },
   {
     "faction_company": "Json",
+    "mission_id": "contractgenerator_visitingiasi",
+    "mission_type": "Yearspecificcontent",
+    "name": "ContractGenerator.VisitingIasi",
+    "record_type": "ContractGenerator",
+    "source_id": "6859e14e-065d-40d2-8606-c8d342b7747a",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+  },
+  {
+    "faction_company": "Json",
     "mission_id": "contractgenerator_wallaceklim_generator",
     "mission_type": "Missionproviders",
     "name": "ContractGenerator.WallaceKlim_Generator",
@@ -221799,6 +221808,528 @@
   },
   {
     "faction_company": "Points To :Ptr:4",
+    "mission_id": "contracttemplate_itemresourcegathering_iasi",
+    "mission_type": "File://./../../../../../Libs/Foundry/Records/Missiontype/Pu/Collection.Json",
+    "name": "ContractTemplate.ItemResourceGathering_Iasi",
+    "prerequisite_source_blocks": [
+      {
+        "_Pointer_": "ptr:2",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "Contractor",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_Organization",
+          "debugForceChosenOrganization": null,
+          "matchConditions": [
+            {
+              "_Type_": "DataSetMatchCondition_SpecificOrganizationsDef",
+              "organizations": []
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "CargoRouteToken",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "CargoGradeToken",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "MissionMaxSCUSize",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "ReputationRank",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Pointer_": "ptr:1",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "Destination",
+        "missionVariableName": "DropoffLocation_BP",
+        "value": {
+          "_Type_": "MissionPropertyValue_Location",
+          "logErrorOnSearchFail": true,
+          "matchConditions": [],
+          "resourceTags": []
+        }
+      },
+      {
+        "_Pointer_": "ptr:3",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "",
+        "missionVariableName": "HaulingOverride",
+        "value": {
+          "_Type_": "MissionPropertyValue_HaulingOrders",
+          "haulingOrderContent": []
+        }
+      }
+    ],
+    "prerequisites": [
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:2",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "Contractor",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_Organization",
+            "debugForceChosenOrganization": null,
+            "matchConditions": [
+              {
+                "_Type_": "DataSetMatchCondition_SpecificOrganizationsDef",
+                "organizations": []
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "CargoRouteToken",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "CargoGradeToken",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "MissionMaxSCUSize",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "ReputationRank",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:1",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "Destination",
+          "missionVariableName": "DropoffLocation_BP",
+          "value": {
+            "_Type_": "MissionPropertyValue_Location",
+            "logErrorOnSearchFail": true,
+            "matchConditions": [],
+            "resourceTags": []
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:3",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "",
+          "missionVariableName": "HaulingOverride",
+          "value": {
+            "_Type_": "MissionPropertyValue_HaulingOrders",
+            "haulingOrderContent": []
+          }
+        }
+      }
+    ],
+    "record_type": "ContractTemplate",
+    "source_id": "7a4c399c-b9b6-4d4c-ab17-c624ea42aac7",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi.json"
+  },
+  {
+    "faction_company": "Points To :Ptr:4",
+    "mission_id": "contracttemplate_itemresourcegathering_iasi_basicbox",
+    "mission_type": "File://./../../../../../Libs/Foundry/Records/Missiontype/Pu/Collection.Json",
+    "name": "ContractTemplate.ItemResourceGathering_Iasi_BasicBox",
+    "prerequisite_source_blocks": [
+      {
+        "_Pointer_": "ptr:2",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "Contractor",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_Organization",
+          "debugForceChosenOrganization": null,
+          "matchConditions": [
+            {
+              "_Type_": "DataSetMatchCondition_SpecificOrganizationsDef",
+              "organizations": []
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "CargoRouteToken",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "CargoGradeToken",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "MissionMaxSCUSize",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "ReputationRank",
+        "missionVariableName": "",
+        "value": {
+          "_Type_": "MissionPropertyValue_StringHash",
+          "options": [
+            {
+              "DEBUG_forceChooseThisOption": false,
+              "_Type_": "MissionPropertyValueOption_StringHash",
+              "dependentProperties": [],
+              "textId": "@LOC_UNINITIALIZED",
+              "value": "",
+              "weighting": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "_Pointer_": "ptr:1",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "Destination",
+        "missionVariableName": "DropoffLocation_BP",
+        "value": {
+          "_Type_": "MissionPropertyValue_Location",
+          "logErrorOnSearchFail": true,
+          "matchConditions": [],
+          "resourceTags": []
+        }
+      },
+      {
+        "_Pointer_": "ptr:3",
+        "_Type_": "MissionProperty",
+        "extendedTextToken": "",
+        "missionVariableName": "HaulingOverride",
+        "value": {
+          "_Type_": "MissionPropertyValue_HaulingOrders",
+          "haulingOrderContent": [
+            {
+              "_Type_": "HaulingOrderContent_EntityClass",
+              "entityClass": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/harvestable_special_iasi_event.json",
+              "maxAmount": 1,
+              "minAmount": 1
+            }
+          ]
+        }
+      }
+    ],
+    "prerequisites": [
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:2",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "Contractor",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_Organization",
+            "debugForceChosenOrganization": null,
+            "matchConditions": [
+              {
+                "_Type_": "DataSetMatchCondition_SpecificOrganizationsDef",
+                "organizations": []
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "CargoRouteToken",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "CargoGradeToken",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "MissionMaxSCUSize",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "ReputationRank",
+          "missionVariableName": "",
+          "value": {
+            "_Type_": "MissionPropertyValue_StringHash",
+            "options": [
+              {
+                "DEBUG_forceChooseThisOption": false,
+                "_Type_": "MissionPropertyValueOption_StringHash",
+                "dependentProperties": [],
+                "textId": "@LOC_UNINITIALIZED",
+                "value": "",
+                "weighting": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:1",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "Destination",
+          "missionVariableName": "DropoffLocation_BP",
+          "value": {
+            "_Type_": "MissionPropertyValue_Location",
+            "logErrorOnSearchFail": true,
+            "matchConditions": [],
+            "resourceTags": []
+          }
+        }
+      },
+      {
+        "kind": "MissionProperty",
+        "source_block": {
+          "_Pointer_": "ptr:3",
+          "_Type_": "MissionProperty",
+          "extendedTextToken": "",
+          "missionVariableName": "HaulingOverride",
+          "value": {
+            "_Type_": "MissionPropertyValue_HaulingOrders",
+            "haulingOrderContent": [
+              {
+                "_Type_": "HaulingOrderContent_EntityClass",
+                "entityClass": "file://./../../../../../libs/foundry/records/entities/scitem/carryables/2h/harvestable_special_iasi_event.json",
+                "maxAmount": 1,
+                "minAmount": 1
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "record_type": "ContractTemplate",
+    "source_id": "ad13d421-3bd5-4e82-81b3-2a13f8563750",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi_basicbox.json"
+  },
+  {
+    "faction_company": "Points To :Ptr:4",
     "mission_id": "contracttemplate_itemresourcegathering_rayari_moldtreatmentresearch",
     "mission_type": "File://./../../../../../Libs/Foundry/Records/Missiontype/Pu/Collection.Json",
     "name": "ContractTemplate.ItemResourceGathering_Rayari_MoldTreatmentResearch",
@@ -341306,6 +341837,14 @@
     "record_type": "MissionType",
     "source_id": "67d6f865-1e95-4652-91ba-6cbdc720c7fe",
     "source_path": "starbreaker/libs/foundry/records/missiontype/pu/hauling_solar.json"
+  },
+  {
+    "mission_id": "missiontype_iasi",
+    "mission_type": "Pu",
+    "name": "MissionType.IASI",
+    "record_type": "MissionType",
+    "source_id": "43e9d858-82ce-495a-8f1f-8daaba9f4022",
+    "source_path": "starbreaker/libs/foundry/records/missiontype/pu/iasi.json"
   },
   {
     "mission_id": "missiontype_investigation",

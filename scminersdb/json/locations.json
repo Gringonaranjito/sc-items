@@ -7903,6 +7903,762 @@
   {
     "hierarchy_level": 0,
     "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatform",
+    "path_chain": [
+      "StarMapObject.IasiPlatform"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "d6af9afe-6ab2-4cd7-92ca-c6fae1ae713f",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatform.json",
+    "system": "StarMapObject.IasiPlatform"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "78c6d5fe-899d-4da1-8d9f-8793d8e65766",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1.json",
+    "system": "StarMapObject.IasiPlatformStanton1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "3a32ad75-197f-4ef0-a555-0330f4a5175a",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1_1.json",
+    "system": "StarMapObject.IasiPlatformStanton1_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "6e1132cc-8abd-429a-8008-2bd1278d4656",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1_2.json",
+    "system": "StarMapObject.IasiPlatformStanton1_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "2e6bd23f-2c90-4398-aba9-2827ad62b6f2",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1_3.json",
+    "system": "StarMapObject.IasiPlatformStanton1_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "74dbf4cb-5e47-4348-b431-cbff17a364b0",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1_4.json",
+    "system": "StarMapObject.IasiPlatformStanton1_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1_5",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1_5"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "dfa1d3c8-005c-4c14-b149-a34e3277c95c",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1_5.json",
+    "system": "StarMapObject.IasiPlatformStanton1_5"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1a_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1a_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "ad9d5e93-0bef-4905-b8bd-97283f0ba110",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1a_1.json",
+    "system": "StarMapObject.IasiPlatformStanton1a_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1a_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1a_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "fe3950f6-0244-4c83-a50f-9a329877ffe1",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1a_2.json",
+    "system": "StarMapObject.IasiPlatformStanton1a_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1a_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1a_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "ea2e87f5-8c81-4975-9d37-60538a04e973",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1a_3.json",
+    "system": "StarMapObject.IasiPlatformStanton1a_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1a_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1a_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "f81954c0-8d17-40b5-8c41-d3c38b1e1894",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1a_4.json",
+    "system": "StarMapObject.IasiPlatformStanton1a_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1a_5",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1a_5"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "2d3044be-6670-4d2f-bd60-3302ef4b2da3",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1a_5.json",
+    "system": "StarMapObject.IasiPlatformStanton1a_5"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1b",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1b"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "2c80f568-7408-4a68-bb42-acf286eac204",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1b.json",
+    "system": "StarMapObject.IasiPlatformStanton1b"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1b_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1b_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "85ef0977-d65e-4481-85a4-b4bfae906865",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1b_1.json",
+    "system": "StarMapObject.IasiPlatformStanton1b_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1b_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1b_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "02a373c1-566a-475f-9534-113d3d742d6a",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1b_2.json",
+    "system": "StarMapObject.IasiPlatformStanton1b_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1b_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1b_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "b374f34d-60f5-4e72-9068-dd4951489056",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1b_3.json",
+    "system": "StarMapObject.IasiPlatformStanton1b_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1b_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1b_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "3dff9502-c1f7-4612-b4c9-d161fdb7642f",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1b_4.json",
+    "system": "StarMapObject.IasiPlatformStanton1b_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1c",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1c"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "45f2ab03-e9a8-492e-994a-24373dd166c3",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1c.json",
+    "system": "StarMapObject.IasiPlatformStanton1c"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1c_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1c_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "8308ecc9-76ae-4ec5-9c47-55ea1c5a9b22",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1c_1.json",
+    "system": "StarMapObject.IasiPlatformStanton1c_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1c_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1c_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "5d966ec0-49b6-4bd0-9634-62883757fa8e",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1c_2.json",
+    "system": "StarMapObject.IasiPlatformStanton1c_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1c_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1c_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "51207d0f-a361-4f84-ba59-faacd6c8618c",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1c_3.json",
+    "system": "StarMapObject.IasiPlatformStanton1c_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1c_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1c_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "bb3751f4-c194-4597-8294-95db19ffd771",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1c_4.json",
+    "system": "StarMapObject.IasiPlatformStanton1c_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1d",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1d"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "90ebaa2b-a8da-47b5-9a2f-ae2d9373f650",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1d.json",
+    "system": "StarMapObject.IasiPlatformStanton1d"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1d_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1d_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "bdbc57f9-0aa8-445e-81fc-a4dd54f96396",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1d_1.json",
+    "system": "StarMapObject.IasiPlatformStanton1d_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1d_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1d_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "7fbdf13c-307f-4917-9053-6e2ed10c975a",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1d_2.json",
+    "system": "StarMapObject.IasiPlatformStanton1d_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1d_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1d_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "8308cafb-3018-466c-9566-2130dc002ffa",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1d_3.json",
+    "system": "StarMapObject.IasiPlatformStanton1d_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1d_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1d_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "a818883e-1d83-4ee0-9032-67fe2b35692c",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1d_4.json",
+    "system": "StarMapObject.IasiPlatformStanton1d_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton1e",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton1e"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "14e90a7a-78b5-438a-b71a-0d6f1a7dc5b1",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton1e.json",
+    "system": "StarMapObject.IasiPlatformStanton1e"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "6eebbc56-f730-40e3-96a2-af7ee448dcbb",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3.json",
+    "system": "StarMapObject.IasiPlatformStanton3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3a",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3a"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "a5b0dae4-a50a-4f5a-b28f-e9977545cbc3",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3a.json",
+    "system": "StarMapObject.IasiPlatformStanton3a"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3a_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3a_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "639d7adf-860b-4c0c-b0bf-10e16d5dad88",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3a_1.json",
+    "system": "StarMapObject.IasiPlatformStanton3a_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3a_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3a_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "2f1c0110-6340-4332-b804-f7848cfeb022",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3a_2.json",
+    "system": "StarMapObject.IasiPlatformStanton3a_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3a_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3a_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "380db38a-adbd-42b8-8234-b95a6864d313",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3a_3.json",
+    "system": "StarMapObject.IasiPlatformStanton3a_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3a_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3a_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "647d4ee7-f5a0-4a56-bc62-922b1b9031ee",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3a_4.json",
+    "system": "StarMapObject.IasiPlatformStanton3a_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3a_5",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3a_5"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "b25b53ea-a3a1-43c3-aa4d-2777a01eb667",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3a_5.json",
+    "system": "StarMapObject.IasiPlatformStanton3a_5"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3b",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3b"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "a881b282-66a6-4bbc-81d8-3983628b0853",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3b.json",
+    "system": "StarMapObject.IasiPlatformStanton3b"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3b_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3b_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "a5204b4c-34e1-42ae-a043-297ae70126fb",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3b_1.json",
+    "system": "StarMapObject.IasiPlatformStanton3b_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3b_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3b_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "04ed3779-3103-44e7-9cd2-e546b86980f3",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3b_2.json",
+    "system": "StarMapObject.IasiPlatformStanton3b_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3b_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3b_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "87355510-d265-4438-8f8e-f24e94ddb872",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3b_3.json",
+    "system": "StarMapObject.IasiPlatformStanton3b_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3b_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3b_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "7ce20eb9-9720-41ae-a7de-1b6d167108e4",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3b_4.json",
+    "system": "StarMapObject.IasiPlatformStanton3b_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton3b_5",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton3b_5"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "90952bc0-39db-4a1c-a63e-5622fe796cb4",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton3b_5.json",
+    "system": "StarMapObject.IasiPlatformStanton3b_5"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "5ae1fe7e-6f0b-4097-9c20-c2619451d2f9",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4.json",
+    "system": "StarMapObject.IasiPlatformStanton4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "e1fc6660-cf55-4db0-b477-d7c8c05fbe82",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4_1.json",
+    "system": "StarMapObject.IasiPlatformStanton4_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "3f7f974e-cbf4-422c-a856-e6efde9e7512",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4_2.json",
+    "system": "StarMapObject.IasiPlatformStanton4_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "876c8a56-fdb0-4fcf-9e84-0387e0655611",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4_3.json",
+    "system": "StarMapObject.IasiPlatformStanton4_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "2c3a5644-3f2e-465d-8f13-3de08b776e60",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4_4.json",
+    "system": "StarMapObject.IasiPlatformStanton4_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4_5",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4_5"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "4f42ced7-7ecc-4acc-b8c5-fbdd337ea052",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4_5.json",
+    "system": "StarMapObject.IasiPlatformStanton4_5"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4a",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4a"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "fc3653e6-fa9a-4dc5-8021-f8c927330f12",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4a.json",
+    "system": "StarMapObject.IasiPlatformStanton4a"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4a_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4a_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "f4e3c68e-d5bd-44c3-b94a-34e4964e1d59",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4a_1.json",
+    "system": "StarMapObject.IasiPlatformStanton4a_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4a_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4a_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "e3006016-96b4-4739-a2a4-531556dd23bc",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4a_2.json",
+    "system": "StarMapObject.IasiPlatformStanton4a_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4a_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4a_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "d68e500c-386b-4d06-9d88-57f90460220f",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4a_3.json",
+    "system": "StarMapObject.IasiPlatformStanton4a_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4a_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4a_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "23acf075-46f1-4bc3-810f-2b18fe53e3cd",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4a_4.json",
+    "system": "StarMapObject.IasiPlatformStanton4a_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4b",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4b"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "ba7fc12c-60ad-4149-990f-2d31d61bdfdb",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4b.json",
+    "system": "StarMapObject.IasiPlatformStanton4b"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4b_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4b_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "2e22f64a-3f01-41b7-bc21-04b25e91090d",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4b_1.json",
+    "system": "StarMapObject.IasiPlatformStanton4b_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4b_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4b_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "9e5dea5c-f389-48e1-a8bd-f416176bd606",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4b_2.json",
+    "system": "StarMapObject.IasiPlatformStanton4b_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4b_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4b_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "f063a522-876f-4f21-bd72-7cba335d84e7",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4b_3.json",
+    "system": "StarMapObject.IasiPlatformStanton4b_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4b_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4b_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "c77c3bfb-2bc3-4cd0-b5b1-571f7927fb7e",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4b_4.json",
+    "system": "StarMapObject.IasiPlatformStanton4b_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4c",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4c"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "ecd038ff-139f-4862-a103-3ef7c427c0ab",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4c.json",
+    "system": "StarMapObject.IasiPlatformStanton4c"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4c_1",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4c_1"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "94af4aae-6c8d-483f-9142-1f3a7ef15e2d",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4c_1.json",
+    "system": "StarMapObject.IasiPlatformStanton4c_1"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4c_2",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4c_2"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "18f212c9-6c79-4b8a-a6ac-ea501bade318",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4c_2.json",
+    "system": "StarMapObject.IasiPlatformStanton4c_2"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4c_3",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4c_3"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "adfed0c9-2184-4f11-ab92-0f0cc96b6fa3",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4c_3.json",
+    "system": "StarMapObject.IasiPlatformStanton4c_3"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4c_4",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4c_4"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "5c4d4202-00e1-4909-9482-685eca657687",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4c_4.json",
+    "system": "StarMapObject.IasiPlatformStanton4c_4"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
+    "name": "StarMapObject.IasiPlatformStanton4d",
+    "path_chain": [
+      "StarMapObject.IasiPlatformStanton4d"
+    ],
+    "record_type": "StarMapObject",
+    "source_id": "4a0e8de6-a067-4275-956c-05866d1b38db",
+    "source_path": "starbreaker/libs/foundry/records/starmap/pu/system/stanton/stanton4/events/iasiplatformstanton4d.json",
+    "system": "StarMapObject.IasiPlatformStanton4d"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Star Map Object",
     "name": "StarMapObject.ICCScanHubStation",
     "path_chain": [
       "StarMapObject.ICCScanHubStation"
@@ -36914,6 +37670,18 @@
   {
     "hierarchy_level": 0,
     "location_kind": "Vehicle Landing Gear System",
+    "name": "VehicleLandingGearSystem.RSI_Constellation_GS_LandingSystem",
+    "path_chain": [
+      "VehicleLandingGearSystem.RSI_Constellation_GS_LandingSystem"
+    ],
+    "record_type": "VehicleLandingGearSystem",
+    "source_id": "e49791e7-fb7a-4d6f-82be-2b02e44e5eb5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/landingsystem/rsi_constellation_gs_landingsystem.json",
+    "system": "VehicleLandingGearSystem.RSI_Constellation_GS_LandingSystem"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Vehicle Landing Gear System",
     "name": "VehicleLandingGearSystem.RSI_Constellation_LandingSystem",
     "path_chain": [
       "VehicleLandingGearSystem.RSI_Constellation_LandingSystem"
@@ -36926,6 +37694,30 @@
   {
     "hierarchy_level": 0,
     "location_kind": "Vehicle Landing Gear System",
+    "name": "VehicleLandingGearSystem.RSI_Constellation_Mk5_LandingSystem",
+    "path_chain": [
+      "VehicleLandingGearSystem.RSI_Constellation_Mk5_LandingSystem"
+    ],
+    "record_type": "VehicleLandingGearSystem",
+    "source_id": "b0bf1656-87a9-4957-b4dc-3a40631a971f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/landingsystem/rsi_constellation_mk5_landingsystem.json",
+    "system": "VehicleLandingGearSystem.RSI_Constellation_Mk5_LandingSystem"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Vehicle Landing Gear System",
+    "name": "VehicleLandingGearSystem.RSI_Constellation_Phoenix_GS_LandingSystem",
+    "path_chain": [
+      "VehicleLandingGearSystem.RSI_Constellation_Phoenix_GS_LandingSystem"
+    ],
+    "record_type": "VehicleLandingGearSystem",
+    "source_id": "2427c449-c9e9-4b24-9843-bbd0dbe1835e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/landingsystem/rsi_constellation_phoenix_gs_landingsystem.json",
+    "system": "VehicleLandingGearSystem.RSI_Constellation_Phoenix_GS_LandingSystem"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Vehicle Landing Gear System",
     "name": "VehicleLandingGearSystem.RSI_Constellation_Phoenix_LandingSystem",
     "path_chain": [
       "VehicleLandingGearSystem.RSI_Constellation_Phoenix_LandingSystem"
@@ -36934,6 +37726,18 @@
     "source_id": "24297f05-06b4-4773-8c95-7fc52b9a58c6",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/landingsystem/rsi_constellation_phoenix_landingsystem.json",
     "system": "VehicleLandingGearSystem.RSI_Constellation_Phoenix_LandingSystem"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Vehicle Landing Gear System",
+    "name": "VehicleLandingGearSystem.RSI_Constellation_Taurus_GS_LandingSystem",
+    "path_chain": [
+      "VehicleLandingGearSystem.RSI_Constellation_Taurus_GS_LandingSystem"
+    ],
+    "record_type": "VehicleLandingGearSystem",
+    "source_id": "6bb130a2-6375-4e2e-bf5e-0e30b20ee90c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/landingsystem/rsi_constellation_taurus_gs_landingsystem.json",
+    "system": "VehicleLandingGearSystem.RSI_Constellation_Taurus_GS_LandingSystem"
   },
   {
     "hierarchy_level": 0,
@@ -37018,6 +37822,18 @@
     "source_id": "9ca7b1e6-7bfc-43f2-95e2-61cd3b011130",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/landingsystem/rsi_scorpius_landingsystem.json",
     "system": "VehicleLandingGearSystem.RSI_Scorpius_LandingSystem"
+  },
+  {
+    "hierarchy_level": 0,
+    "location_kind": "Vehicle Landing Gear System",
+    "name": "VehicleLandingGearSystem.RSI_Skylark_LandingSystem",
+    "path_chain": [
+      "VehicleLandingGearSystem.RSI_Skylark_LandingSystem"
+    ],
+    "record_type": "VehicleLandingGearSystem",
+    "source_id": "13d7a99d-b506-4667-9ee7-9141adbfe8f2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/landingsystem/rsi_skylark_landingsystem.json",
+    "system": "VehicleLandingGearSystem.RSI_Skylark_LandingSystem"
   },
   {
     "hierarchy_level": 0,

@@ -1480,12 +1480,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_lx.json"
   },
   {
-    "component_name": "@LOC_PLACEHOLDER",
+    "component_name": "@item_name_FLBL_RSI_Aurora_Mk2_Standard",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_Mk2",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_Mk2",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
@@ -1504,7 +1512,7 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_bengal.json"
   },
   {
-    "component_name": "@LOC_PLACEHOLDER",
+    "component_name": "@item_name_FLBL_RSI_Constellation_Andromeda_Standard",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
@@ -1516,11 +1524,35 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Andromeda_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Andromeda_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_MM_322",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_mm_322.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_MM_322",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_mm_322.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Aquila_Standard",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
@@ -1532,11 +1564,51 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Aquila_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Mk5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_mk5.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Phoenix_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Phoenix_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Taurus_Standard",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
@@ -1548,11 +1620,27 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Constellation_Taurus_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Hermes",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_hermes.json"
   },
   {
-    "component_name": "@LOC_PLACEHOLDER",
+    "component_name": "@item_name_FLBL_RSI_Mantis_Standard",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
@@ -1564,8 +1652,24 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Mantis",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Meteor_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Meteor",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Meteor",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
@@ -1612,11 +1716,19 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Skylark",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_skylark.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Zeus",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus.json"
   },
   {
-    "component_name": "@LOC_PLACEHOLDER",
+    "component_name": "@item_name_FLBL_RSI_Zeus_CL_Standard",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
@@ -1628,8 +1740,24 @@
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_CL",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_cl.json"
+  },
+  {
+    "component_name": "@item_name_FLBL_RSI_Zeus_ES_Standard",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
     "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_ES",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_ES",
+    "source_path": "starbreaker_test/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es.json"
   },
   {
     "component_name": "@LOC_PLACEHOLDER",
@@ -1878,6 +2006,30 @@
     "port": null,
     "ship_name": "EntityClassDefinition.COOL_AEGS_S04_Reclaimer",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_aegs_s04_reclaimer.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.COOL_IASI_S01_Name",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s01_name.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.COOL_IASI_S02_Name",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s02_name.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.COOL_IASI_S03_Name",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s03_name.json"
   },
   {
     "component_name": "@item_Name_COOL_JSPN_S00_CryoStarSL",
@@ -3320,6 +3472,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/misc/mrck_s03_misc_fury_dual.json"
   },
   {
+    "component_name": "@item_NameMRCK_S03_RSI_Skylark",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S03_RSI_Skylark_Five_S01",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s03_rsi_skylark_five_s01.json"
+  },
+  {
     "component_name": "@item_NameMRCK_S03_BEHR_Single_S03",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -3574,6 +3734,22 @@
     "port": null,
     "ship_name": "EntityClassDefinition.MRCK_S04_RSI_Constellation",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation.json"
+  },
+  {
+    "component_name": "@item_NameMRCK_S04_RSI_Constellation",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Long",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_long.json"
+  },
+  {
+    "component_name": "@item_NameMRCK_S04_RSI_Constellation",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Short",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_short.json"
   },
   {
     "component_name": "@item_NameMRCK_S04_RSI_Constellation",
@@ -3848,6 +4024,22 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation.json"
   },
   {
+    "component_name": "@item_NameMRCK_S05_RSI_Constellation",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Left",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_left.json"
+  },
+  {
+    "component_name": "@item_NameMRCK_S05_RSI_Constellation",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Right",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_right.json"
+  },
+  {
     "component_name": "@LOC_EMPTY",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -3934,6 +4126,22 @@
     "port": null,
     "ship_name": "EntityClassDefinition.MRCK_S06_MISC_Hull_B",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s06_misc_hull_b.json"
+  },
+  {
+    "component_name": "@item_NameMRCK_S05_RSI_Constellation",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Left",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_left.json"
+  },
+  {
+    "component_name": "@item_NameMRCK_S05_RSI_Constellation",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Right",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_right.json"
   },
   {
     "component_name": "@item_NameMRCK_S05_MISC_Reliant",
@@ -5336,6 +5544,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_black_black_black.json"
   },
   {
+    "component_name": "@item_NameAurora_mk2_Paint_Black_Black_Orange",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Aurora_Mk2_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_black_black_orange.json"
+  },
+  {
     "component_name": "@item_NameAurora_Mk2_Paint_Blue_Blue_Yellow",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -5960,6 +6176,70 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_command_module_template.json"
   },
   {
+    "component_name": "@item_NameConstellation_Paint_Black_Black_Orange",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_orange.json"
+  },
+  {
+    "component_name": "@item_NamePaint_Constellation_Black_Black_Red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Black_Black_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_red.json"
+  },
+  {
+    "component_name": "@item_NamePaint_Constellation_Black_Green_Gold",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Black_Green_Gold",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_green_gold.json"
+  },
+  {
+    "component_name": "@item_NamePaint_Constellation_Black_Grey_White",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Black_Grey_White",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_grey_white.json"
+  },
+  {
+    "component_name": "@item_NamePaint_Constellation_Blue_Black_Red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Blue_Black_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_black_red.json"
+  },
+  {
+    "component_name": "@item_NamePaint_Constellation_Blue_Blue_Grey",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Blue_Blue_Grey",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_blue_grey.json"
+  },
+  {
+    "component_name": "@item_NamePaint_Constellation_Blue_Cyan_Grey",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Blue_Cyan_Grey",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_cyan_grey.json"
+  },
+  {
+    "component_name": "@item_NameConstellation_Paint_Emerald_Green_White_Black",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Emerald_Green_White_Black",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_emerald_green_white_black.json"
+  },
+  {
     "component_name": "@Item_NameConstellation_Paint_FW2955_Grey_Black_Red_Camo",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -5998,6 +6278,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Constellation_GoblinG_M_White_Blue",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_gobling_m_white_blue.json"
+  },
+  {
+    "component_name": "@item_NamePaint_Constellation_Green_Grey_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Green_Grey_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_green_grey_yellow.json"
   },
   {
     "component_name": "@item_NameConstellation_Paint_BlackHeron",
@@ -6062,6 +6350,70 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Constellation_LunarNewYear2952_Red",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_lunarnewyear2952_red.json"
+  },
+  {
+    "component_name": "@item_NameConstellationmk5_Paint_Black_Black_Orange",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_black_orange.json"
+  },
+  {
+    "component_name": "@item_NameConstellationmk5_Paint_Black_Gray_Purple",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Gray_Purple",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_gray_purple.json"
+  },
+  {
+    "component_name": "@item_NameConstellationmk5_Paint_Black_Red_Red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Red_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_red_red.json"
+  },
+  {
+    "component_name": "@item_NameConstellationmk5_Paint_Blue_Black_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Black_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_black_yellow.json"
+  },
+  {
+    "component_name": "@item_NameConstellationmk5_Paint_Blue_Orange_Blue",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Orange_Blue",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_orange_blue.json"
+  },
+  {
+    "component_name": "@item_NameConstellationmk5_Paint_Red_Gray_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_Red_Gray_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_red_gray_yellow.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_Template",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_template.json"
+  },
+  {
+    "component_name": "@item_NameConstellationmk5_Paint_White_Orange_Gray",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Constellation_Mk5_White_Orange_Gray",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_white_orange_gray.json"
   },
   {
     "component_name": "@item_NameCorsair_Paint_Beige_Tan_Beige_Pyro_Graffiti",
@@ -6774,6 +7126,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Eclipse_PirateWeek_Black_Clear",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_pirateweek_black_clear.json"
+  },
+  {
+    "component_name": "@item_NameEclipse_Paint_Red_Red_Red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Eclipse_Red_Red_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_red_red_red.json"
   },
   {
     "component_name": "@item_NameFortune_Paint_2955RedFestival_Red_Gold_Pig",
@@ -7630,6 +7990,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Hercules_Sylvan_Green",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hercules_sylvan_green.json"
+  },
+  {
+    "component_name": "@item_NameHermes_Paint_Black_Black_Orange",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Hermes_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hermes_black_black_orange.json"
   },
   {
     "component_name": "@item_NameHermes_Paint_Black_Black_Red_Camo",
@@ -8560,6 +8928,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_black_darkgrey_lightgrey_camo.json"
   },
   {
+    "component_name": "@item_NameM80_Paint_black_gold_gold",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_M80_black_gold_gold",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_black_gold_gold.json"
+  },
+  {
     "component_name": "@item_NameM80_Paint_red_black_blue",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -8968,6 +9344,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_black_grey_red_camo.json"
   },
   {
+    "component_name": "@item_NameMTC_Paint_blue_grey_red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_MTC_blue_grey_red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_blue_grey_red.json"
+  },
+  {
     "component_name": "@item_NameMTC_Paint_Brown_Brown_Red_Camo_a",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -8976,12 +9360,36 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_brown_brown_red_camo_a.json"
   },
   {
+    "component_name": "@item_NameMTC_Paint_gold_grey_grey",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_MTC_gold_grey_grey",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_gold_grey_grey.json"
+  },
+  {
     "component_name": "@item_NameMTC_Paint_Green_Black_Grey_cfp",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_MTC_Green_Black_Grey_cfp",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_black_grey_cfp.json"
+  },
+  {
+    "component_name": "@item_NameMTC_Paint_green_brown_green",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_MTC_green_brown_green",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_brown_green.json"
+  },
+  {
+    "component_name": "@item_NameMTC_Paint_green_green_yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_MTC_green_green_yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_green_yellow.json"
   },
   {
     "component_name": "@item_NameMTC_Paint_Grey_Black_Red_Solid",
@@ -10840,6 +11248,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_silver_teal_white.json"
   },
   {
+    "component_name": "@item_NameSalvation_Paint_White_Blue_White",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Salvation_White_Blue_White",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_white_blue_white.json"
+  },
+  {
     "component_name": "@item_NameSanTokYai_Paint_AlienWeek_Teal_Pink",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -10910,6 +11326,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Scorpius_Blight_Green",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blight_green.json"
+  },
+  {
+    "component_name": "@item_NameScorpius_Paint_Blue_Purple_Purple",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Scorpius_Blue_Purple_Purple",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blue_purple_purple.json"
   },
   {
     "component_name": "@item_NameScorpius_Paint_FW2955_Grey_Black_Red_Camo",
@@ -11102,6 +11526,70 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Shiv_White_Blue_Black",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_white_blue_black.json"
+  },
+  {
+    "component_name": "@item_NameSkylark_Paint_Black_Black_Orange",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_black_orange.json"
+  },
+  {
+    "component_name": "@item_NameSkylark_Paint_Black_Gray_Purple",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_Black_Gray_Purple",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_gray_purple.json"
+  },
+  {
+    "component_name": "@item_NameSkylark_Paint_Black_Red_Red",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_Black_Red_Red",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_red_red.json"
+  },
+  {
+    "component_name": "@item_NameSkylark_Paint_Blue_Black_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_Blue_Black_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_black_yellow.json"
+  },
+  {
+    "component_name": "@item_NameSkylark_Paint_Blue_Orange_Blue",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_Blue_Orange_Blue",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_orange_blue.json"
+  },
+  {
+    "component_name": "@item_NameSkylark_Paint_Red_Gray_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_Red_Gray_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_red_gray_yellow.json"
+  },
+  {
+    "component_name": "@LOC_PLACEHOLDER",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_Template",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_template.json"
+  },
+  {
+    "component_name": "@item_NameSkylark_Paint_White_Orange_Gray",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Skylark_White_Orange_Gray",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_white_orange_gray.json"
   },
   {
     "component_name": "@item_NameSpartan_Paint_IAE2951_Grey_White_Camo",
@@ -12336,6 +12824,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_tyilui_white_grey_gold.json"
   },
   {
+    "component_name": "@item_NameUrsa_Paint_Black_Black_Orange",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Ursa_Black_Black_Orange",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ursa_black_black_orange.json"
+  },
+  {
     "component_name": "@item_NameUrsa_Paint_Black_Grey_Red_Pirate_Skull",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -12656,6 +13152,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_ghoulish_green.json"
   },
   {
+    "component_name": "@item_NameVulture_Paint_Green_Blue_Green",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Vulture_Green_Blue_Green",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_green_blue_green.json"
+  },
+  {
     "component_name": "@item_NameVulture_Paint_Unity",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -12760,6 +13264,14 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_green_red_yellow_camo.json"
   },
   {
+    "component_name": "@item_NameWolf_Paint_Grey_Black_Grey",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Wolf_Grey_Black_Grey",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_grey_black_grey.json"
+  },
+  {
     "component_name": "@item_NameWolf_Paint_Lightgrey_Grey_Red_Camo",
     "component_type": "SCItemPurchasableParams",
     "count": 1,
@@ -12854,6 +13366,14 @@
     "port": null,
     "ship_name": "EntityClassDefinition.Paint_Zeus_Blue_Black_White",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_black_white.json"
+  },
+  {
+    "component_name": "@item_NameZeus_Paint_Blue_Blue_Yellow",
+    "component_type": "SCItemPurchasableParams",
+    "count": 1,
+    "port": null,
+    "ship_name": "EntityClassDefinition.Paint_Zeus_Blue_Blue_Yellow",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_blue_yellow.json"
   },
   {
     "component_name": "@item_NameZeus_Paint_Lovestruck_Pink_Black",

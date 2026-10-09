@@ -770,6 +770,13 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil_guild/vaughn/vaughn_missingperson.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json",
+    "name": "ContractGenerator.VisitingIasi",
+    "record_type": "ContractGenerator",
+    "source_id": "6859e14e-065d-40d2-8606-c8d342b7747a",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/wallaceklim_generator.json",
     "name": "ContractGenerator.WallaceKlim_Generator",
     "record_type": "ContractGenerator",
@@ -3064,6 +3071,20 @@
     "record_type": "ContractTemplate",
     "source_id": "826ac5e3-950d-4a43-99e5-16e2eb311405",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_gotoandscan_generic.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi.json",
+    "name": "ContractTemplate.ItemResourceGathering_Iasi",
+    "record_type": "ContractTemplate",
+    "source_id": "7a4c399c-b9b6-4d4c-ab17-c624ea42aac7",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi_basicbox.json",
+    "name": "ContractTemplate.ItemResourceGathering_Iasi_BasicBox",
+    "record_type": "ContractTemplate",
+    "source_id": "ad13d421-3bd5-4e82-81b3-2a13f8563750",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi_basicbox.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_rayari_moldtreatmentresearch.json",
@@ -13713,6 +13734,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_avenger_stalker.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_avenger_stalker_display.json",
+    "name": "EntityClassDefinition.ARMR_AEGS_Avenger_Stalker_Display",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d89a6ba6-fe84-4a64-ba18-07d1d29c5a5c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_avenger_stalker_display.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_avenger_titan.json",
     "name": "EntityClassDefinition.ARMR_AEGS_Avenger_Titan",
     "record_type": "EntityClassDefinition",
@@ -14938,6 +14966,41 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "30e1a1a9-77a9-4392-a927-e6455081a0f2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs_display.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Andromeda_GS_Display",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6e5faf6a-8660-425d-9bbc-62af6ee1937e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs_display.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_aquila_gs.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c117b130-a872-4fb1-9d3a-6dd5fbf72749",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_aquila_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "source_id": "060d4533-3f09-4006-b385-7ceeb022696b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus_display.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Mk5_Centaurus_Display",
+    "record_type": "EntityClassDefinition",
+    "source_id": "678f1d95-1f06-45cc-923e-7c6e2dc013a0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus_display.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_phoenix.json",
     "name": "EntityClassDefinition.ARMR_RSI_Constellation_Phoenix",
     "record_type": "EntityClassDefinition",
@@ -14945,11 +15008,25 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_phoenix.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_phoenix_gs.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4ddfb2fd-81ef-4e58-a3a7-2b438cf83fe8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_phoenix_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus.json",
     "name": "EntityClassDefinition.ARMR_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "source_id": "1abd192b-0c87-4ea5-99d2-5dadee7bf275",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus_gs.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "893f282f-9133-45ea-ac5e-6f844531823a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_hermes.json",
@@ -15006,6 +15083,20 @@
     "record_type": "EntityClassDefinition",
     "source_id": "c5d28d34-43e5-4075-a83d-8ec8def61a8d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_scorpius.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6f31d441-e74d-4516-941d-f2cb38de1d9c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark_display.json",
+    "name": "EntityClassDefinition.ARMR_RSI_Skylark_Display",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4c07e6ec-91c3-4149-908d-df27649aff5f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark_display.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_template.json",
@@ -15561,6 +15652,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bar_table_mmhc.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bar_table_rsi_constellation_phoenix_gs.json",
+    "name": "EntityClassDefinition.Bar_Table_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fa920559-131c-435f-aef6-86851f4c6df7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bar_table_rsi_constellation_phoenix_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bar_table_scrap_01.json",
     "name": "EntityClassDefinition.Bar_Table_Scrap_01",
     "record_type": "EntityClassDefinition",
@@ -15762,6 +15860,20 @@
     "record_type": "EntityClassDefinition",
     "source_id": "a66793a3-c532-43a2-a01e-fd44b0c8f989",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_col_1_slant_b.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_left.json",
+    "name": "EntityClassDefinition.Bed_Bunk_Constellation_GS_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7e350727-dc9d-4979-b36b-8494f605aefb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_right.json",
+    "name": "EntityClassDefinition.Bed_Bunk_Constellation_GS_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c8386dd1-5674-4a07-a5e8-7b381c9b9671",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_right.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_crus_starlifter.json",
@@ -16058,6 +16170,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_double_pod_touring_600i_orig_right.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_double_rsi_constellation_gs_phoenix_master.json",
+    "name": "EntityClassDefinition.Bed_Double_RSI_Constellation_GS_Phoenix_Master",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e3e84d03-b587-44cd-969b-12147682ff57",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_double_rsi_constellation_gs_phoenix_master.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_double_rsi_constellation_phoenix_master.json",
     "name": "EntityClassDefinition.Bed_Double_RSI_Constellation_Phoenix_Master",
     "record_type": "EntityClassDefinition",
@@ -16198,11 +16317,25 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_nomad_cnou.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_crew.json",
+    "name": "EntityClassDefinition.Bed_Mattress_RSI_Crew",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e82cf8c9-eaac-4127-b46c-33e2c7479ec3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_crew.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_polaris_cell.json",
     "name": "EntityClassDefinition.Bed_Mattress_RSI_Polaris_Cell",
     "record_type": "EntityClassDefinition",
     "source_id": "43e94985-f059-4d26-9b9d-b5010091f720",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_polaris_cell.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_vip_single.json",
+    "name": "EntityClassDefinition.Bed_Mattress_RSI_VIP_Single",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1680af33-fcdb-463e-bf6b-23c4b143e8fe",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_vip_single.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_template.json",
@@ -16310,6 +16443,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_idris_aegs.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_crew.json",
+    "name": "EntityClassDefinition.Bed_Pillow_RSI_Crew",
+    "record_type": "EntityClassDefinition",
+    "source_id": "87ab81fb-db1e-41a5-a869-64b327ae277d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_crew.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_vip.json",
+    "name": "EntityClassDefinition.Bed_Pillow_RSI_VIP",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a06c996c-4099-42ea-a9cb-ea690eea2454",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_vip.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_template.json",
     "name": "EntityClassDefinition.Bed_Pillow_Template",
     "record_type": "EntityClassDefinition",
@@ -16364,6 +16511,27 @@
     "record_type": "EntityClassDefinition",
     "source_id": "ead5bc58-c3ca-4b15-9e5b-67b15a43ecd2",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_no_mattress.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_left_overhang.json",
+    "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Guest_Left_Overhang",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3e973963-4b4a-4941-a884-50a965bb46a6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_left_overhang.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_right_overhang.json",
+    "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Guest_Right_Overhang",
+    "record_type": "EntityClassDefinition",
+    "source_id": "970e4448-df3b-410e-84c4-c9357a6e9f3a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_right_overhang.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_master.json",
+    "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Master",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a5686b96-09b8-4020-92c0-957274ff7231",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_master.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_template.json",
@@ -17001,6 +17169,20 @@
     "record_type": "EntityClassDefinition",
     "source_id": "7f6297f8-e5b3-467a-b8b1-9f005b0b1fa7",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_redeemer_aegs_top.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_left.json",
+    "name": "EntityClassDefinition.Bed_Single_RSI_Constellation_GS_Phoenix_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "624675bc-7865-478f-a817-1e807eabf01a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_right.json",
+    "name": "EntityClassDefinition.Bed_Single_RSI_Constellation_GS_Phoenix_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6b41bd48-038a-429c-86af-03c1680772c6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_right.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_phoenix_left.json",
@@ -18667,6 +18849,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "1b9a7f76-907b-4c1a-8073-d353ebbb46fd",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_smg_ballistic_01_iae2501.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_smg_ballistic_01_iasi.json",
+    "name": "EntityClassDefinition.behr_smg_ballistic_01_iasi",
+    "record_type": "EntityClassDefinition",
+    "source_id": "478af1eb-51a8-4a11-9c2c-6f795e36bc2d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_smg_ballistic_01_iasi.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/behr_smg_ballistic_01_mag.json",
@@ -22687,6 +22876,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_Mk2_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4c8005d2-36e1-4186-ac90-023267cd21c1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_Mk2_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "78a576ee-dd67-4f81-956f-c253d398eef7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2_blade_spd.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mr.json",
     "name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_MR",
     "record_type": "EntityClassDefinition",
@@ -22708,6 +22911,41 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "38bd5546-9712-40a1-9b69-134fb7f31b99",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fcf00ef7-932e-46c2-83ec-28455350a429",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_blade_spd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b888a7cb-2163-4dac-abd2-229a13391251",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e3feed1b-f5e7-46bf-ad18-ade15c3232f5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "97c84e7b-76dc-4045-b41f-cdbbdec2bdf3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs_blade_spd.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_mm_322.json",
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_MM_322",
     "record_type": "EntityClassDefinition",
@@ -22722,6 +22960,48 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e8c7c040-63a6-4832-a4d7-ed087c6ad050",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c7365995-5b3f-4179-bff4-50aa4f2a97d6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_blade_spd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "db545c69-1241-4310-849c-b9b055800fdf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "88182a8b-a8da-42f3-a19e-35a2a8574328",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "80343b92-87be-460a-957e-6cb716be12ff",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs_blade_spd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_mk5.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Mk5",
+    "record_type": "EntityClassDefinition",
+    "source_id": "43b7da35-5b99-4c80-81f3-1ad7602dcf43",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_mk5.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix.json",
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix",
     "record_type": "EntityClassDefinition",
@@ -22729,11 +23009,81 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d6eafda1-9487-404a-8a51-1300795f997e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8ef2b7fd-5d10-4f99-ad32-6e38dc649fd6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_blade_spd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5c2ae312-5db8-45ce-b2ba-b1d2ad506456",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "582d39cd-5ff9-4280-8b83-b2e2d7583e81",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b326aad9-70bd-4b38-ae18-c26140bdbb68",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs_blade_spd.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus.json",
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "source_id": "4e0a3638-d7e5-4609-8488-f72dc050d9f7",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "514945c4-309c-4f34-b7b3-ce3f94607d16",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "bd19e90c-1989-4c56-bb69-aeb557854361",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_blade_spd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fe85d341-0909-496d-883c-f20afb9665a7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "27bd3e82-8d50-4435-86c6-1aee031a6928",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "19ff245a-dd6b-4e4e-992a-8a6176a9d8b2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs_blade_spd.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_hermes.json",
@@ -22750,11 +23100,39 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Mantis_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "732106ac-827c-443c-b762-e720790acb54",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Mantis_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f7687158-06e5-4973-a051-d906a8cfbc8a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis_blade_spd.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor.json",
     "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor",
     "record_type": "EntityClassDefinition",
     "source_id": "8313f0ea-1285-4fe2-86e4-f0ad32788ebb",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1dfde792-2f34-47df-913a-7c829a19888f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "bb0573b4-14b6-4649-8c64-0ba862231fbe",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor_blade_spd.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_perseus.json",
@@ -22820,6 +23198,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_scorpius_flight_blade_spd.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_skylark.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "68c23911-103a-47f4-9aa7-e749538ba92f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_skylark.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus.json",
     "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus",
     "record_type": "EntityClassDefinition",
@@ -22834,11 +23219,39 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_cl.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_cl_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_CL_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "ab1361e0-6d23-46e0-af58-22e899e14be4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_cl_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_cl_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_CL_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1d81b82c-7916-4ab4-9580-abc86c21551b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_cl_blade_spd.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es.json",
     "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_ES",
     "record_type": "EntityClassDefinition",
     "source_id": "91dd0aa2-fe69-4721-a55c-bdc54367a50e",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es_blade_hnd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_ES_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "source_id": "78846075-d7cd-41a6-a552-870e44bb3848",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es_blade_hnd.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es_blade_spd.json",
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_ES_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5f5d35be-3d86-49b6-bcf8-e877921d2d61",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_zeus_es_blade_spd.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_vncl_blade.json",
@@ -23035,6 +23448,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "158a8461-a8b2-4778-ac64-63ae56a1f5a0",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_rsi_aurora_mk2.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_rsi_skylark.json",
+    "name": "EntityClassDefinition.Controller_Missile_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fd1e5dad-f356-4291-a733-2fd65a26a9f5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_sabre_firebird.json",
@@ -24003,6 +24423,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_constellation.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_constellation_gs.json",
+    "name": "EntityClassDefinition.Controller_Shield_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7d5ca0e4-424f-44aa-9dbf-18839cba4b18",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_constellation_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_constellation_mk5.json",
+    "name": "EntityClassDefinition.Controller_Shield_RSI_Constellation_Mk5",
+    "record_type": "EntityClassDefinition",
+    "source_id": "06591fc5-f475-48e8-82c8-79e1e09880b7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_constellation_mk5.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_constellation_mm.json",
     "name": "EntityClassDefinition.Controller_Shield_RSI_Constellation_MM",
     "record_type": "EntityClassDefinition",
@@ -24064,6 +24498,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "6ef70cc0-ad68-4d96-bad0-3d5ee87e12be",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_scorpius.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_skylark.json",
+    "name": "EntityClassDefinition.Controller_Shield_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "561e88a4-b0c5-427b-ac76-04ebfb2b9b2e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_shield_rsi_ursa.json",
@@ -24477,6 +24918,27 @@
     "record_type": "EntityClassDefinition",
     "source_id": "115aaff9-c8c5-4b93-bc14-9f22524fe8a8",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_aegs_s04_reclaimer.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s01_name.json",
+    "name": "EntityClassDefinition.COOL_IASI_S01_Name",
+    "record_type": "EntityClassDefinition",
+    "source_id": "ce9384b7-b7b8-4ac3-9a9f-47d47aaa3de3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s01_name.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s02_name.json",
+    "name": "EntityClassDefinition.COOL_IASI_S02_Name",
+    "record_type": "EntityClassDefinition",
+    "source_id": "be8b5a16-51ed-4d1a-abc2-53aeb137c6cb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s02_name.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s03_name.json",
+    "name": "EntityClassDefinition.COOL_IASI_S03_Name",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f927a3d6-1c15-4d6f-ae34-5dfcf04a6bd2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s03_name.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_jspn_s00_cryostarsl_scitem.json",
@@ -27398,6 +27860,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_constellation_aquila.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_constellation_gs.json",
+    "name": "EntityClassDefinition.DockingTube_Fuel_Ports_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "be365c0a-801f-4885-b913-a67383b6fa6f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_constellation_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_constellation_mk5.json",
+    "name": "EntityClassDefinition.DockingTube_Fuel_Ports_RSI_Constellation_Mk5",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fd27100d-1310-472f-8f87-4e8af6fcc459",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_constellation_mk5.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_constellation_phoenix.json",
     "name": "EntityClassDefinition.DockingTube_Fuel_Ports_RSI_Constellation_Phoenix",
     "record_type": "EntityClassDefinition",
@@ -27459,6 +27935,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "3176b21f-0d42-4bb4-9074-6b91ec5a6c30",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_scorpius.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_skylark.json",
+    "name": "EntityClassDefinition.DockingTube_Fuel_Ports_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8d95d375-fa12-48f4-ac17-1d9787df86e2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/dockingtube_fuel_ports_rsi_zeus.json",
@@ -31367,6 +31850,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/engineering/engineering_buff_modifier_rsi_constellation.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/engineering/engineering_buff_modifier_rsi_constellation_mk5.json",
+    "name": "EntityClassDefinition.Engineering_Buff_Modifier_RSI_Constellation_Mk5",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e567c640-aca0-45d9-8942-38ed309f739d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/engineering/engineering_buff_modifier_rsi_constellation_mk5.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/utility/engineering/engineering_buff_modifier_rsi_perseus.json",
     "name": "EntityClassDefinition.Engineering_Buff_Modifier_RSI_Perseus",
     "record_type": "EntityClassDefinition",
@@ -34727,6 +35217,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_collector01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_collector02.json",
+    "name": "EntityClassDefinition.gmni_lmg_ballistic_01_collector02",
+    "record_type": "EntityClassDefinition",
+    "source_id": "ddb8eb6e-a55d-4846-90f3-5adda9ea8e9d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_collector02.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_firerats01.json",
     "name": "EntityClassDefinition.gmni_lmg_ballistic_01_firerats01",
     "record_type": "EntityClassDefinition",
@@ -34965,6 +35462,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_rifle_ballistic_01_mr01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_rifle_ballistic_01_store01.json",
+    "name": "EntityClassDefinition.gmni_rifle_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8677381f-2be6-479e-8662-7aaea409fa07",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_rifle_ballistic_01_store01.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_rifle_ballistic_01_yellow_blue01.json",
     "name": "EntityClassDefinition.gmni_rifle_ballistic_01_yellow_blue01",
     "record_type": "EntityClassDefinition",
@@ -35012,6 +35516,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "cf0864b2-687c-4f1a-b722-974dcb5d29df",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01_reward01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01_store01.json",
+    "name": "EntityClassDefinition.gmni_shotgun_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e1e90ddc-f3eb-47c1-b21e-b07ceb38f13b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01_store01.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_smg_ballistic_01.json",
@@ -35763,6 +36274,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_salvage_repair_01_store01.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_salvage_repair_iasi.json",
+    "name": "EntityClassDefinition.grin_salvage_repair_IASI",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0e259726-3ea6-4b0d-98da-afad3eeccff6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_salvage_repair_iasi.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/vehicles/dashboard/grin_stv_dashboard_driver.json",
     "name": "EntityClassDefinition.GRIN_STV_Dashboard_Driver",
     "record_type": "EntityClassDefinition",
@@ -35838,6 +36356,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "27adea05-f94d-4439-872d-b043a631c34f",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_tractor_01.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_tractor_01_iasi.json",
+    "name": "EntityClassDefinition.grin_tractor_01_IASI",
+    "record_type": "EntityClassDefinition",
+    "source_id": "604fc3ff-4237-433d-b053-5bf365a16141",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_tractor_01_iasi.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/grin_tractor_01_mag.json",
@@ -36526,6 +37051,41 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_gs.json",
+    "name": "EntityClassDefinition.H_Dashboard_Projector_HUD_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "69021cc7-6d35-46eb-8c9d-76ac3390c3c3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_gs_copilot.json",
+    "name": "EntityClassDefinition.H_Dashboard_Projector_HUD_RSI_Constellation_GS_CoPilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "cd414f18-1129-4abf-af17-6c5856614c20",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_gs_copilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_mk5_centaurus.json",
+    "name": "EntityClassDefinition.H_Dashboard_Projector_HUD_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c8ffda58-6db8-45ab-a199-70b844ca7a47",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_mk5_centaurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_mk5_centaurus_gunner_l.json",
+    "name": "EntityClassDefinition.H_Dashboard_Projector_HUD_RSI_Constellation_Mk5_Centaurus_Gunner_L",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5aab928d-f27e-40a7-b054-4fe957e97895",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_mk5_centaurus_gunner_l.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_mk5_centaurus_gunner_r.json",
+    "name": "EntityClassDefinition.H_Dashboard_Projector_HUD_RSI_Constellation_Mk5_Centaurus_Gunner_R",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f2fee43c-b1b2-408f-bc50-d2fcd65b62ad",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_constellation_mk5_centaurus_gunner_r.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_mantis.json",
     "name": "EntityClassDefinition.H_Dashboard_Projector_HUD_RSI_Mantis",
     "record_type": "EntityClassDefinition",
@@ -36601,6 +37161,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "e3eb68d4-3d3c-4233-9b4b-5d829140ebc6",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_scorpius.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_skylark.json",
+    "name": "EntityClassDefinition.H_Dashboard_Projector_HUD_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1370fb98-fe35-4d58-b921-708e703cbc46",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/h_dashboard_projector_hud_rsi_zeus.json",
@@ -38556,6 +39123,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_andromeda.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_andromeda_gs.json",
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8431845c-2e09-49fb-8be0-2daf3aed4b16",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_andromeda_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_aquila.json",
     "name": "EntityClassDefinition.HTNK_RSI_Constellation_Aquila",
     "record_type": "EntityClassDefinition",
@@ -38563,11 +39137,39 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_aquila.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_aquila_gs.json",
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b827fab4-6838-4efa-aaac-789582742923",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_aquila_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_mk5_centaurus.json",
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "source_id": "2bbf315a-2cca-4698-bb5a-e6a1f5c537dc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_mk5_centaurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_phoenix_gs.json",
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "447fa0be-9465-42e8-8c70-a3b7a202e284",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_phoenix_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus.json",
     "name": "EntityClassDefinition.HTNK_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "source_id": "c36f6a0e-4f4a-4335-b788-f76fd9e998a6",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus_gs.json",
+    "name": "EntityClassDefinition.HTNK_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "2c50ea75-5048-4b9d-b495-fe21326719c4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_hermes.json",
@@ -38617,6 +39219,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "3e72b06a-d819-4d7d-91eb-fa5946674326",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_scorpius.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_skylark.json",
+    "name": "EntityClassDefinition.HTNK_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "052aef31-e406-40fc-bdab-929a80cd121b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_zeus.json",
@@ -39676,6 +40285,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_andromeda.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_andromeda_gs.json",
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "2f0bf12b-7785-4c9a-abc4-ad7eaaf6c72d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_andromeda_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_aquila.json",
     "name": "EntityClassDefinition.INTK_RSI_Constellation_Aquila",
     "record_type": "EntityClassDefinition",
@@ -39683,11 +40299,32 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_aquila.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_aquila_gs.json",
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "18947ce2-b7b6-4986-a01d-08a60037e5c2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_aquila_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_mk5_centaurus.json",
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0dded715-0359-4353-b18f-3165e6638d3a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_mk5_centaurus.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus.json",
     "name": "EntityClassDefinition.INTK_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "source_id": "f81b3137-06fd-434f-96c0-1f720bf30fa5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus_gs.json",
+    "name": "EntityClassDefinition.INTK_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "70ef3468-764d-4a29-a11a-72321eac8a81",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_mantis.json",
@@ -39730,6 +40367,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "b7260a81-e1e0-44db-a446-26c0b89b74e1",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_scorpius.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_skylark.json",
+    "name": "EntityClassDefinition.INTK_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f04355c0-de34-40ec-9656-1f51daa5d0e1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_zeus.json",
@@ -41615,6 +42259,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/ksar_shotgun_ballistic_01_mag.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/ksar_shotgun_ballistic_01_store01.json",
+    "name": "EntityClassDefinition.ksar_shotgun_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c8f76bea-0375-487c-bc1f-7f7d338733de",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/ksar_shotgun_ballistic_01_store01.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/ksar_shotgun_energy_01.json",
     "name": "EntityClassDefinition.ksar_shotgun_energy_01",
     "record_type": "EntityClassDefinition",
@@ -41977,6 +42628,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "8177489f-ed83-44ac-afd4-2b32a80fa0a6",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/magazines/lbco_sniper_energy_01_mag.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/lbco_sniper_energy_01_store01.json",
+    "name": "EntityClassDefinition.lbco_sniper_energy_01_store01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d11e7a9f-3ce3-410f-81f8-7147e59b57be",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/lbco_sniper_energy_01_store01.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/lbco_sniper_energy_01_sunset01.json",
@@ -47292,6 +47950,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_apollo_triage.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder.json",
+    "name": "EntityClassDefinition.MRCK_S02_RSI_Constellation_Mk5_Missile_Holder",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e0234920-a549-442f-9ea8-8e1b758cc77a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder_right.json",
+    "name": "EntityClassDefinition.MRCK_S02_RSI_Constellation_Mk5_Missile_Holder_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "64fec53b-26e2-4ac1-9bcb-3c9bed9ec6d7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder_right.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_hermes.json",
     "name": "EntityClassDefinition.MRCK_S02_RSI_Hermes",
     "record_type": "EntityClassDefinition",
@@ -47360,6 +48032,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "901e4ecb-0649-4c78-8e46-0247d84fb084",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/misc/mrck_s03_misc_fury_dual.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s03_rsi_skylark_five_s01.json",
+    "name": "EntityClassDefinition.MRCK_S03_RSI_Skylark_Five_S01",
+    "record_type": "EntityClassDefinition",
+    "source_id": "27a2e3a4-70e0-434f-b600-388f0971cf14",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s03_rsi_skylark_five_s01.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s03_temp_bomb.json",
@@ -47607,6 +48286,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_long.json",
+    "name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Long",
+    "record_type": "EntityClassDefinition",
+    "source_id": "787eaab4-4d8c-4c48-b528-3b8130175a46",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_long.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_short.json",
+    "name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Short",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b48e2979-fdb9-4af9-8a55-a8d948e78a76",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_short.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_scorpius.json",
     "name": "EntityClassDefinition.MRCK_S04_RSI_Scorpius",
     "record_type": "EntityClassDefinition",
@@ -47845,6 +48538,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_left.json",
+    "name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "df646ab8-8525-42a2-be1e-97c2000bd145",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_right.json",
+    "name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f5fa6fad-3821-4c2c-9d9d-cca46bfc51df",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_right.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_perseus_torpedo_holder.json",
     "name": "EntityClassDefinition.MRCK_S05_RSI_Perseus_Torpedo_Holder",
     "record_type": "EntityClassDefinition",
@@ -47955,6 +48662,20 @@
     "record_type": "EntityClassDefinition",
     "source_id": "bd6ebb6f-c2e8-4caa-acd3-1a86fa1e11cb",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s06_misc_hull_b.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_left.json",
+    "name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f31a8fd5-a8b9-4546-85d4-e593e6320ff0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_right.json",
+    "name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7a3b0d64-78e0-410e-8df8-f088b6a5e712",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_right.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/tmbl/mrck_s06_tmbl_nova_custom.json",
@@ -52066,6 +52787,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_black_black_black.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_black_black_orange.json",
+    "name": "EntityClassDefinition.Paint_Aurora_Mk2_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a98d1ea2-e39d-492e-ae1f-09446d1d871c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_black_black_orange.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_blue_blue_yellow.json",
     "name": "EntityClassDefinition.Paint_Aurora_Mk2_Blue_Blue_Yellow",
     "record_type": "EntityClassDefinition",
@@ -52612,6 +53340,62 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_command_module_template.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_orange.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0e029cd1-3d5a-42c1-a838-1dda6cf32317",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_orange.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_red.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Black_Red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "ac16f033-df64-41c6-a572-e60729657d2f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_green_gold.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Green_Gold",
+    "record_type": "EntityClassDefinition",
+    "source_id": "30dd33d7-c262-46ed-aaf8-a5a9a707ef53",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_green_gold.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_grey_white.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Black_Grey_White",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fe69f622-146b-46fc-adde-f2c349e32078",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_grey_white.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_black_red.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Blue_Black_Red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e51ad00c-0e20-438a-aad7-fa7711bf338e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_black_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_blue_grey.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Blue_Blue_Grey",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e411eb02-f619-4bab-822d-23217a8702c9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_blue_grey.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_cyan_grey.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Blue_Cyan_Grey",
+    "record_type": "EntityClassDefinition",
+    "source_id": "be087d60-b72a-4b3c-82f5-143befc00153",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_cyan_grey.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_emerald_green_white_black.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Emerald_Green_White_Black",
+    "record_type": "EntityClassDefinition",
+    "source_id": "be09076d-cb95-4e4d-8976-98d20edcff3a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_emerald_green_white_black.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_fw2955_grey_black_red_camo.json",
     "name": "EntityClassDefinition.Paint_Constellation_FW2955_Grey_Black_Red_Camo",
     "record_type": "EntityClassDefinition",
@@ -52645,6 +53429,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "7f49c9d8-9aa7-4a12-8209-ae80ce755094",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_gobling_m_white_blue.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_green_grey_yellow.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Green_Grey_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "91bd5706-6470-43b1-ba01-a4201b391fcc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_green_grey_yellow.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_heron_black.json",
@@ -52701,6 +53492,62 @@
     "record_type": "EntityClassDefinition",
     "source_id": "e10dac45-b393-438a-87a4-5bd90563b7f1",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_lunarnewyear2952_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_black_orange.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6ce8df9e-4129-4414-8458-9c9818e9768c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_black_orange.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_gray_purple.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Gray_Purple",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6e405df8-7692-4e14-bb26-ffc795d8b970",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_gray_purple.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_red_red.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Red_Red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d1477f0f-1008-43e2-bf38-d8cb79851c3b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_red_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_black_yellow.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Black_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9516eedf-d4b7-4419-b980-14098f97d839",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_black_yellow.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_orange_blue.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Orange_Blue",
+    "record_type": "EntityClassDefinition",
+    "source_id": "81913b57-4c9c-4afc-9158-1b8017f9317f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_orange_blue.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_red_gray_yellow.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Red_Gray_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e144c99d-3a12-49ca-a68c-ca3ca1351038",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_red_gray_yellow.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_template.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_Template",
+    "record_type": "EntityClassDefinition",
+    "source_id": "bfb67e92-2af8-4477-9b4e-72a45ea73cd7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_template.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_white_orange_gray.json",
+    "name": "EntityClassDefinition.Paint_Constellation_Mk5_White_Orange_Gray",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e426da2b-45ed-44aa-bfe4-71cff581e862",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_white_orange_gray.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_corsair_beige_tan_beige_pyro_graffiti.json",
@@ -53324,6 +54171,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "fbbf5ded-3068-419b-ad25-adc5bf94910a",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_pirateweek_black_clear.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_red_red_red.json",
+    "name": "EntityClassDefinition.Paint_Eclipse_Red_Red_Red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "183eebbd-066f-4d88-b392-1407e9c5d8a1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_red_red_red.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_fortune_2955redfestival_red_gold_pig.json",
@@ -54073,6 +54927,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "c665ffbe-8dac-4eda-8be2-c0ebcb8e151d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hercules_sylvan_green.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hermes_black_black_orange.json",
+    "name": "EntityClassDefinition.Paint_Hermes_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4eed06e2-eeef-49ed-80e3-1cb926686c9d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hermes_black_black_orange.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hermes_black_black_red_camo.json",
@@ -54887,6 +55748,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_black_darkgrey_lightgrey_camo.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_black_gold_gold.json",
+    "name": "EntityClassDefinition.Paint_M80_black_gold_gold",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9a84c265-26d6-415b-baaf-2551a2ecbcca",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_black_gold_gold.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_red_black_blue.json",
     "name": "EntityClassDefinition.Paint_M80_red_black_blue",
     "record_type": "EntityClassDefinition",
@@ -55244,6 +56112,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_black_grey_red_camo.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_blue_grey_red.json",
+    "name": "EntityClassDefinition.Paint_MTC_blue_grey_red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "398b1a1d-bea9-4313-a4d9-e51bce357c38",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_blue_grey_red.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_brown_brown_red_camo_a.json",
     "name": "EntityClassDefinition.Paint_MTC_brown_brown_red_camo_a",
     "record_type": "EntityClassDefinition",
@@ -55251,11 +56126,32 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_brown_brown_red_camo_a.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_gold_grey_grey.json",
+    "name": "EntityClassDefinition.Paint_MTC_gold_grey_grey",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a4604612-374b-4ade-b015-54421ae41aa4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_gold_grey_grey.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_black_grey_cfp.json",
     "name": "EntityClassDefinition.Paint_MTC_Green_Black_Grey_cfp",
     "record_type": "EntityClassDefinition",
     "source_id": "d722a359-db28-48d7-9ed7-baf4e1ef5bbd",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_black_grey_cfp.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_brown_green.json",
+    "name": "EntityClassDefinition.Paint_MTC_green_brown_green",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fb98d81f-b43b-4003-befa-bc23138bd42d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_brown_green.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_green_yellow.json",
+    "name": "EntityClassDefinition.Paint_MTC_green_green_yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "2900fffe-9bca-4812-aa19-c35538cd365e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_green_yellow.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_grey_black_red_solid.json",
@@ -56882,6 +57778,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_silver_teal_white.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_white_blue_white.json",
+    "name": "EntityClassDefinition.Paint_Salvation_White_Blue_White",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c413ee62-e4de-4d0b-bd93-3ab2493f56c1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_white_blue_white.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_santokyai_alienweek_teal_pink.json",
     "name": "EntityClassDefinition.Paint_SanTokYai_AlienWeek_Teal_Pink",
     "record_type": "EntityClassDefinition",
@@ -56943,6 +57846,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "c4313780-46e6-4e3d-92f3-2ff30ccf6658",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blight_green.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blue_purple_purple.json",
+    "name": "EntityClassDefinition.Paint_Scorpius_Blue_Purple_Purple",
+    "record_type": "EntityClassDefinition",
+    "source_id": "36144ec1-4a2a-4b5b-9a80-0c47a694b6c5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blue_purple_purple.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_fw2955_grey_black_red_camo.json",
@@ -57111,6 +58021,62 @@
     "record_type": "EntityClassDefinition",
     "source_id": "f8514eb7-1258-4c77-91ab-ae389e3b5752",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_white_blue_black.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_black_orange.json",
+    "name": "EntityClassDefinition.Paint_Skylark_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "source_id": "93d33af8-16cf-4800-a19a-69a82ad15761",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_black_orange.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_gray_purple.json",
+    "name": "EntityClassDefinition.Paint_Skylark_Black_Gray_Purple",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e17008fd-73cf-489c-a7a1-7fc96be0daf5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_gray_purple.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_red_red.json",
+    "name": "EntityClassDefinition.Paint_Skylark_Black_Red_Red",
+    "record_type": "EntityClassDefinition",
+    "source_id": "79ac4e97-2661-4de5-a734-af457858e380",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_red_red.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_black_yellow.json",
+    "name": "EntityClassDefinition.Paint_Skylark_Blue_Black_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c1ad7b40-80e3-4486-b9ad-cb9a837df58c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_black_yellow.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_orange_blue.json",
+    "name": "EntityClassDefinition.Paint_Skylark_Blue_Orange_Blue",
+    "record_type": "EntityClassDefinition",
+    "source_id": "ea8b9eca-56a6-43c8-a14a-5eebfcc0adf2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_orange_blue.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_red_gray_yellow.json",
+    "name": "EntityClassDefinition.Paint_Skylark_Red_Gray_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6cc11750-719f-4108-a94e-54cea0ac77f3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_red_gray_yellow.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_template.json",
+    "name": "EntityClassDefinition.Paint_Skylark_Template",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f82e68a6-038a-4696-84ac-412fac5e6ef4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_template.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_white_orange_gray.json",
+    "name": "EntityClassDefinition.Paint_Skylark_White_Orange_Gray",
+    "record_type": "EntityClassDefinition",
+    "source_id": "aa20606c-8c73-4e96-8d76-bd54fe85d5de",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_white_orange_gray.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_spartan_iae2951_grey_white_camo.json",
@@ -58191,6 +59157,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_tyilui_white_grey_gold.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ursa_black_black_orange.json",
+    "name": "EntityClassDefinition.Paint_Ursa_Black_Black_Orange",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6b1ecb0a-5142-49b1-8eb5-2ae9257d09bc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ursa_black_black_orange.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ursa_black_grey_red_pirate_skull.json",
     "name": "EntityClassDefinition.Paint_Ursa_Black_Grey_Red_Pirate_Skull",
     "record_type": "EntityClassDefinition",
@@ -58471,6 +59444,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_ghoulish_green.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_green_blue_green.json",
+    "name": "EntityClassDefinition.Paint_Vulture_Green_Blue_Green",
+    "record_type": "EntityClassDefinition",
+    "source_id": "95c672b4-b598-40b3-a009-c7db703ae332",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_green_blue_green.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_invictus_unity_metal_teal.json",
     "name": "EntityClassDefinition.Paint_Vulture_Invictus_Unity_Metal_Teal",
     "record_type": "EntityClassDefinition",
@@ -58562,6 +59542,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_green_red_yellow_camo.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_grey_black_grey.json",
+    "name": "EntityClassDefinition.Paint_Wolf_Grey_Black_Grey",
+    "record_type": "EntityClassDefinition",
+    "source_id": "481b8386-80b5-4cde-b081-8e236c59f461",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_grey_black_grey.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_lightgrey_grey_red_camo.json",
     "name": "EntityClassDefinition.Paint_Wolf_Lightgrey_Grey_Red_Camo",
     "record_type": "EntityClassDefinition",
@@ -58644,6 +59631,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "a134062c-f767-4872-bef5-56d171db3665",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_black_white.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_blue_yellow.json",
+    "name": "EntityClassDefinition.Paint_Zeus_Blue_Blue_Yellow",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1da1d8a0-c37c-47b2-b826-b60f2fdfa410",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_blue_yellow.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_coramor_pink_black.json",
@@ -59108,6 +60102,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_common_personal_locker.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_constellation_gs.json",
+    "name": "EntityClassDefinition.PersonalStorage_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a2c14324-8a9d-4330-90a6-ceafb3d882fc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_constellation_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_lynx_left.json",
     "name": "EntityClassDefinition.PersonalStorage_RSI_Lynx_Left",
     "record_type": "EntityClassDefinition",
@@ -59148,6 +60149,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "f6205e74-b3d9-4933-bc9f-4ede10222de5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_polaris_medical.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_skylark.json",
+    "name": "EntityClassDefinition.PersonalStorage_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4815f39b-fb25-4024-aa86-94b095ee7230",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_ursa_medivac.json",
@@ -59724,6 +60732,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_rsi_s04_polaris_scitem.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s01_iasi_name_scitem.json",
+    "name": "EntityClassDefinition.POWR_S01_IASI_Name_SCItem",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3493c2d7-9b7f-43ca-aebb-8019fbcc9ef4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s01_iasi_name_scitem.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s01_iasi_namea_scitem.json",
+    "name": "EntityClassDefinition.POWR_S01_IASI_NameA_SCItem",
+    "record_type": "EntityClassDefinition",
+    "source_id": "297e9974-65ff-45e9-8801-2e710e0eede5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s01_iasi_namea_scitem.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s01_template.json",
     "name": "EntityClassDefinition.POWR_S01_Template",
     "record_type": "EntityClassDefinition",
@@ -59731,11 +60753,39 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s01_template.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s02_iasi_name_scitem.json",
+    "name": "EntityClassDefinition.POWR_S02_IASI_Name_SCItem",
+    "record_type": "EntityClassDefinition",
+    "source_id": "fb8629ce-b1ce-47cf-bfdd-94aaa9bf9aa0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s02_iasi_name_scitem.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s02_iasi_namea_scitem.json",
+    "name": "EntityClassDefinition.POWR_S02_IASI_NameA_SCItem",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c764fc13-638e-45ec-a906-8a9503049c72",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s02_iasi_namea_scitem.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s02_template.json",
     "name": "EntityClassDefinition.POWR_S02_Template",
     "record_type": "EntityClassDefinition",
     "source_id": "a32c1b11-1911-48da-90af-3717c18d74c7",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s02_template.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s03_iasi_name_scitem.json",
+    "name": "EntityClassDefinition.POWR_S03_IASI_Name_SCItem",
+    "record_type": "EntityClassDefinition",
+    "source_id": "86e578cf-3b09-4b7c-b60f-fb9c33bb4597",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s03_iasi_name_scitem.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s03_iasi_namea_scitem.json",
+    "name": "EntityClassDefinition.POWR_S03_IASI_NameA_SCItem",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f86e3f6c-2c38-47dc-bbcf-93d6201289d1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s03_iasi_namea_scitem.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/powerplant/powr_s03_template.json",
@@ -61404,6 +62454,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_andromeda.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_andromeda_gs.json",
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4ffb9251-82a1-4884-bcfb-407fb4c69245",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_andromeda_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_aquila.json",
     "name": "EntityClassDefinition.QTNK_RSI_Constellation_Aquila",
     "record_type": "EntityClassDefinition",
@@ -61411,11 +62468,39 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_aquila.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_aquila_gs.json",
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8f955131-2fe1-4d8b-ba03-422f70fddda1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_aquila_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_mk5_centaurus.json",
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Mk5_Centaurus",
+    "record_type": "EntityClassDefinition",
+    "source_id": "01120bfb-9ba1-4afc-b83d-572d3aa096ca",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_mk5_centaurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_phoenix_gs.json",
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "77d7e61a-1b9d-44df-8696-04fa7e4b3a80",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_phoenix_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus.json",
     "name": "EntityClassDefinition.QTNK_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "source_id": "779ef01c-de46-490b-b4cf-2dddab0156ee",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus_gs.json",
+    "name": "EntityClassDefinition.QTNK_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "167147fe-216b-4bb7-81a2-3e9117d37d97",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_hermes.json",
@@ -61999,6 +63084,34 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_retaliator.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation.json",
+    "name": "EntityClassDefinition.Radar_Display_RSI_Constellation",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b11dafe1-d0d0-469b-a778-4305a431c7d4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation_gs.json",
+    "name": "EntityClassDefinition.Radar_Display_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "143ff8d8-51e9-40db-aca7-f4e1da00b153",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation_gs_copilot.json",
+    "name": "EntityClassDefinition.Radar_Display_RSI_Constellation_GS_Copilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7a5a51a2-8741-4ac4-bed9-00478d5edd82",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation_gs_copilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation_mk5.json",
+    "name": "EntityClassDefinition.Radar_Display_RSI_Constellation_Mk5",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d4c940e5-ce6c-403d-855e-b0a51c5ea7e9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_constellation_mk5.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_perseus.json",
     "name": "EntityClassDefinition.Radar_Display_RSI_Perseus",
     "record_type": "EntityClassDefinition",
@@ -62025,6 +63138,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "c806daa0-04e6-488e-af98-9a25d6270451",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_polaris_c.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_skylark.json",
+    "name": "EntityClassDefinition.Radar_Display_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f0aca30c-1453-4589-8fca-cc9271f18fbd",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_rsi_skylark.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_sabre.json",
@@ -62081,6 +63201,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "ba184544-d9e8-44e5-98f7-2f86d91ea56a",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_screen_groundvehicle.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_screen_rsi.json",
+    "name": "EntityClassDefinition.Radar_Display_Screen_RSI",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f35b4ca5-94be-46ae-b378-3c21cecf7ae6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_screen_rsi.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/displays/radar_display_screen_template.json",
@@ -62480,6 +63607,27 @@
     "record_type": "EntityClassDefinition",
     "source_id": "5fd1c4a5-853e-4643-ae44-606d03a8edd8",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_grnp_s03_v880.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_iasi_s01_name.json",
+    "name": "EntityClassDefinition.RADR_IASI_S01_Name",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5160f481-ea0d-495a-95b5-5501a03c6112",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_iasi_s01_name.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_iasi_s02_name.json",
+    "name": "EntityClassDefinition.RADR_IASI_S02_Name",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a5934275-ace9-4d23-b4a4-b890b9f1806f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_iasi_s02_name.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_iasi_s03_name.json",
+    "name": "EntityClassDefinition.RADR_IASI_S03_Name",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f86b7845-81c2-49e3-b562-6b551497a1cf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_iasi_s03_name.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/radar/radr_nave_s01_snsr5.json",
@@ -66094,6 +67242,69 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_andromeda_thruster_turbine_rear.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_aquila_gs_scitem_turret_radar.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_SCItem_Turret_Radar",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9bb30915-6a50-4afa-9608-626f3b03cdb4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_aquila_gs_scitem_turret_radar.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_main.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "10e0dc1f-99c7-4487-ba16-f1685936cb19",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_mav.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Mav",
+    "record_type": "EntityClassDefinition",
+    "source_id": "15bcf728-9b28-4b20-94f0-c38491d3519e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_mav.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_bottom_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Retro_Bottom_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4a8ff371-489f-4c38-948a-19b47d274724",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_bottom_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_bottom_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Retro_Bottom_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "239a05d0-79f8-4ac5-a4bb-c757fadb5ee0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_bottom_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_top_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Retro_Top_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "735d92d4-d24a-41f0-a987-4e64efcd6609",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_top_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_top_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Retro_Top_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "493ac05f-96cb-4c01-8650-fd61603d5b62",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_retro_top_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_turbine_front.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Turbine_Front",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0086da47-c274-4ae5-8566-d58212aecafc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_turbine_front.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_turbine_rear.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_Thruster_Turbine_Rear",
+    "record_type": "EntityClassDefinition",
+    "source_id": "86f9e8c1-8813-4a95-9bc7-7aba946e30e0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_aquila_gs_thruster_turbine_rear.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_aquila_scitem_turret_radar.json",
     "name": "EntityClassDefinition.RSI_Constellation_Aquila_SCItem_Turret_Radar",
     "record_type": "EntityClassDefinition",
@@ -66185,6 +67396,433 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_fake_merlin.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_aquila_glass.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Aquila_Glass",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4b0720fc-1ada-41c2-a8e2-323de670606d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_aquila_glass.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_aquila_turret_addons.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Aquila_Turret_Addons",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7b58b055-95ad-4f9a-be62-2f7b31c9545d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_aquila_turret_addons.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_cargo_lift_exterior.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Cargo_Lift_Exterior",
+    "record_type": "EntityClassDefinition",
+    "source_id": "87e4eb2d-6dfe-49f8-b9da-7b9947484fb0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_cargo_lift_exterior.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_gs_cml_decoy.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_CML_Decoy",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5ae148be-0a13-4d8e-aff9-e16f3396dc8e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_gs_cml_decoy.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_gs_cml_noise.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_CML_Noise",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5af4b4d2-6216-4b83-b145-652a4cb3d3e6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_gs_cml_noise.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_copilot_left_scitem_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Copilot_Left_SCItem_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3cc461f5-331d-4164-8591-3a1427033589",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_copilot_left_scitem_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_copilot_right_scitem_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Copilot_Right_SCItem_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c6ae70e4-3c01-4574-a6ab-bc6cf91ebd12",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_copilot_right_scitem_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_glass.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Glass",
+    "record_type": "EntityClassDefinition",
+    "source_id": "bb2ca6e5-1ad0-4f04-9b70-d7f597c26113",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_glass.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_phoenix_cargo_lift_exterior.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Phoenix_Cargo_Lift_Exterior",
+    "record_type": "EntityClassDefinition",
+    "source_id": "466d7598-296b-4940-b529-bb372f9e09db",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_phoenix_cargo_lift_exterior.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_phoenix_copilot_left_scitem_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Phoenix_Copilot_Left_SCItem_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3c2cdef4-e5f1-4541-8592-e0280574d5a6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_phoenix_copilot_left_scitem_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_phoenix_copilot_right_scitem_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Phoenix_Copilot_Right_SCItem_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "acc5771d-d0a0-4002-acc9-fb19be91b937",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_phoenix_copilot_right_scitem_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_phoenix_pilot_scitem_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Phoenix_Pilot_SCItem_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "16708402-4e09-4ed4-abbf-1da391445a2c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_phoenix_pilot_scitem_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_pilot_scitem_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Pilot_SCItem_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0f224244-8b84-47d4-943e-73c2c2ffdf74",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_gs_pilot_scitem_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/rsi_constellation_gs_rear_dockingtubemerlin.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Rear_DockingTubeMerlin",
+    "record_type": "EntityClassDefinition",
+    "source_id": "079e40d1-0642-4156-a28d-8c2d46445215",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/rsi_constellation_gs_rear_dockingtubemerlin.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_gs_scitem_seat_access_copilot_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_SCItem_Seat_Access_Copilot_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c4e8ec05-6479-4bee-be05-ae8b419a5995",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_gs_scitem_seat_access_copilot_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_gs_scitem_seat_access_copilot_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_SCItem_Seat_Access_Copilot_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "202cdadb-22df-4e8a-83b9-06e5bb286f31",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_gs_scitem_seat_access_copilot_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_gs_scitem_seat_access_pilot.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_SCItem_Seat_Access_Pilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5f0f969a-4a86-4f62-a94c-08ff3b3fa117",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_gs_scitem_seat_access_pilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_gs_scitem_turret_lower.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_SCItem_Turret_Lower",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b48556e3-a02c-4c02-b059-d4b955e73b0d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_gs_scitem_turret_lower.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_gs_scitem_turret_upper.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_SCItem_Turret_Upper",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9df26beb-55d8-467f-afb1-e9e8950a8baa",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_gs_scitem_turret_upper.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_taurus_cargo_lift_exterior.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Taurus_Cargo_Lift_Exterior",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d7ec8812-b66f-4e76-acdb-b51c26018a06",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_gs_taurus_cargo_lift_exterior.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster",
+    "record_type": "EntityClassDefinition",
+    "source_id": "af291469-241d-4a56-9c8e-f2623a5e02cf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_main.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "55f7c952-5034-4cf1-96c3-c3c6b3b66bed",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_mav.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Mav",
+    "record_type": "EntityClassDefinition",
+    "source_id": "32e4b6e6-3e04-48dc-bcab-6b7249fcaf48",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_mav.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_bottom_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Retro_Bottom_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "94543967-754f-45b8-aab3-2d2bc856c81c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_bottom_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_bottom_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Retro_Bottom_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3631989d-5661-48af-8e00-8b4420e1a19f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_bottom_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_top_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Retro_Top_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b904f6f1-0962-40b3-9662-4494ce6d6a0c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_top_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_top_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Retro_Top_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c57f01f4-d696-4f4a-8ab0-852401d86788",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_retro_top_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_turbine_front.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Turbine_Front",
+    "record_type": "EntityClassDefinition",
+    "source_id": "00f59f8e-4572-4ff9-bb64-2975d70ffba1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_turbine_front.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_turbine_rear.json",
+    "name": "EntityClassDefinition.RSI_Constellation_GS_Thruster_Turbine_Rear",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c9598158-6693-4da7-8ac1-accac6ef3d67",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_gs_thruster_turbine_rear.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/constellation_mk5/rsi_constellation_mk5_cargogrid_main.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_CargoGrid_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8abca9e8-b3f1-4791-9b3a-f3d5be3eb0d3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/constellation_mk5/rsi_constellation_mk5_cargogrid_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_mk5_cml_decoy.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_CML_Decoy",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0d0e2f36-dfc9-4053-aaed-13348ba02a4e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_mk5_cml_decoy.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_mk5_cml_noise.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_CML_Noise",
+    "record_type": "EntityClassDefinition",
+    "source_id": "87ea54de-4aca-4779-b4b4-c1526b8e9fba",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_constellation_mk5_cml_noise.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_copilot_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_CoPilot_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "57701fcc-ffcd-4edb-b582-f04a868f9170",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_copilot_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/usableitems/rsi_constellation_mk5_ground_refueling_port.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Ground_Refueling_Port",
+    "record_type": "EntityClassDefinition",
+    "source_id": "47bcf262-ccd0-4952-beac-cf816a2e9ec0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/usableitems/rsi_constellation_mk5_ground_refueling_port.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_gunner_right_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Gunner_Right_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e9e4431f-8754-437e-a7e9-88b081293b4f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_gunner_right_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_gunner_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Gunner_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5e1f5243-413b-4c4e-b185-d268a86e30a6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_gunner_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_pilot_seatdashboard.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Pilot_SeatDashboard",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f4d66503-345c-4e1b-a42d-43a5902e7995",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_mk5_pilot_seatdashboard.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/rsi_constellation_mk5_rear_dockingtube.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Rear_DockingTube",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f69e8517-61a6-41b7-87d9-5184d88af4ce",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/rsi_constellation_mk5_rear_dockingtube.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/rsi_constellation_mk5_remote_turret_bottom_s3.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Remote_Turret_Bottom_S3",
+    "record_type": "EntityClassDefinition",
+    "source_id": "42e361af-89f2-4ff4-96e3-ae0fede4b7c8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/rsi_constellation_mk5_remote_turret_bottom_s3.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/rsi_constellation_mk5_remote_turret_top_s3.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Remote_Turret_Top_S3",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1c509508-fa56-47ee-91b7-b449b7fe7143",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/weapon_mounts/gimbal/rsi_constellation_mk5_remote_turret_top_s3.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_copilot.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Seat_Access_CoPilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "a1a617fa-85c1-4923-b4e4-1a91832ab69b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_copilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_gunner.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Seat_Access_Gunner",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b141ba1b-7dd4-4598-9639-07dc42b39d17",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_gunner.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_gunner_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Seat_Access_Gunner_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "79e23a7f-6557-4565-8f0f-c7dd3a828651",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_gunner_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_pilot.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Seat_Access_Pilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "84d5d0ad-7d57-4e08-8e72-17099b5b5557",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_mk5_seat_access_pilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_mk5_spine.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Spine",
+    "record_type": "EntityClassDefinition",
+    "source_id": "eedfc3da-469b-4e0f-8bc3-2c74a3f0167e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_mk5_spine.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_mk5_tail.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Tail",
+    "record_type": "EntityClassDefinition",
+    "source_id": "bf37181a-c3fa-4d5f-9c08-4078f9304101",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_mk5_tail.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5f7726e0-35a9-43c6-acd6-b78fd8a24f3f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "56ac23c6-5349-4191-8f39-d345e5d962ca",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_bottom_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Main_Bottom_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1648af00-27fd-4667-9448-9354df706a19",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_bottom_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_bottom_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Main_Bottom_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "d5f122fd-be7b-40c3-bd28-f608a67d6f0c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_bottom_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_top_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Main_Top_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "df883f42-97d5-4c93-89e1-8eb5f613a4f1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_top_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_top_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Main_Top_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7ad3fbad-fffe-40e0-90e5-a769003b1ecc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_main_top_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_mav.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Mav",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e2f293b8-e23b-4263-b799-a4aea1ee688d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_mav.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_mav_bottom.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Mav_Bottom",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7be9d7a0-5e60-4b3e-bd07-7741c2d1475f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_mav_bottom.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_mav_top.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Mav_Top",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4e8f4a67-0862-475c-979d-58fa1437aced",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_mav_top.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Retro",
+    "record_type": "EntityClassDefinition",
+    "source_id": "ea97a0f9-fb36-4a9d-bc92-411a0b1ab629",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_bottom_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Retro_Bottom_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9586e201-e0d4-43de-ae8a-6ef02703cd04",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_bottom_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_bottom_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Retro_Bottom_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8c669e71-ed13-48be-8d8b-32139a4ca3da",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_bottom_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_top_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Retro_Top_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "08ed5528-c605-4eb9-b232-3134bd51409d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_top_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_top_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Retro_Top_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f012f6db-444f-43bd-b1e9-98d8174582b6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_retro_top_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_vtol.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Mk5_Thruster_Vtol",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e51ca52a-029d-4835-93ca-af4fc2051650",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_mk5_thruster_vtol.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/module/rsi/rsi_constellation_ph_baywall_left.json",
     "name": "EntityClassDefinition.RSI_Constellation_PH_BayWall_Left",
     "record_type": "EntityClassDefinition",
@@ -66206,6 +67844,76 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/constellation/rsi_constellation_phoenix_cargogrid_main.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_main.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3ac00795-6639-4c31-82b4-a866a86f0ff6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_mav.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Mav",
+    "record_type": "EntityClassDefinition",
+    "source_id": "41d6a9fe-4aae-4cf8-ad13-689cb27e7bc4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_mav.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_bottom_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Retro_Bottom_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0cc1d6e2-5777-4108-bd20-4e12025cac6b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_bottom_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_bottom_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Retro_Bottom_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0945fe0d-1840-4897-bc9e-d9a95c050fcd",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_bottom_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_top_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Retro_Top_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "36cf83a3-f232-4650-80c0-b50f94902b3b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_top_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_top_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Retro_Top_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0ed49e9a-d32e-42cd-894b-4f55d87f5912",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_retro_top_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_turbine_front.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Turbine_Front",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c6dbfca2-a2f7-4028-be63-b8f30102506f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_turbine_front.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_turbine_rear.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Thruster_Turbine_Rear",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e5af3a22-5ce7-4158-9601-289f452bc86d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_phoenix_gs_thruster_turbine_rear.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_phoenix_gs_turret_lower.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Turret_Lower",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7c9d5e99-261e-4b84-86d7-9badfb12a4f2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_phoenix_gs_turret_lower.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_phoenix_gs_turret_upper.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Turret_Upper",
+    "record_type": "EntityClassDefinition",
+    "source_id": "32577e83-3e7a-4135-931e-9940406d19e7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_phoenix_gs_turret_upper.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_left.json",
     "name": "EntityClassDefinition.RSI_Constellation_Phoenix_SCItem_Seat_CoPilot_Left",
     "record_type": "EntityClassDefinition",
@@ -66213,11 +67921,25 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_left.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_left_gs.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_SCItem_Seat_Copilot_Left_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "84653224-3d35-4716-987d-a30b13ba87ff",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_left_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_right.json",
     "name": "EntityClassDefinition.RSI_Constellation_Phoenix_SCItem_Seat_CoPilot_Right",
     "record_type": "EntityClassDefinition",
     "source_id": "85874e43-db2b-4110-8cbc-449d40c5be2d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_right_gs.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_SCItem_Seat_Copilot_Right_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "73b62ca8-1538-4a86-9e01-b4d1070b98d9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_copilot_right_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_phoenix_scitem_seat_pilot.json",
@@ -66339,6 +68061,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_scitem_seat_access_turret.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_scitem_seat_access_turret_gs.json",
+    "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_Access_Turret_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "dd2b7b41-eece-478f-949c-6ca8763490d8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_constellation_scitem_seat_access_turret_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_archimedes.json",
     "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_Archimedes",
     "record_type": "EntityClassDefinition",
@@ -66353,6 +68082,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_left.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_left_gs.json",
+    "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_Copilot_Left_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "f60d1c8d-a8be-45eb-bf6e-58f23deab56a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_left_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_left_mfd.json",
     "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_CoPilot_Left_MFD",
     "record_type": "EntityClassDefinition",
@@ -66365,6 +68101,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "f3ff4f67-f968-4f35-9e07-eb9ed574c6cf",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_right_gs.json",
+    "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_Copilot_Right_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "11dcd765-e710-433f-b6ec-2bd5df34a452",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_right_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_copilot_right_mfd.json",
@@ -66416,6 +68159,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_pilot.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_pilot_gs.json",
+    "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_Pilot_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "bceea119-650f-43b5-8a00-63a36456977b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_pilot_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_pilot_gs_phoenix.json",
+    "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_Pilot_GS_Phoenix",
+    "record_type": "EntityClassDefinition",
+    "source_id": "486dcb73-0611-44db-b0e5-c7a8cab82bb7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_pilot_gs_phoenix.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_constellation_scitem_seat_pilot_mfd.json",
     "name": "EntityClassDefinition.RSI_Constellation_SCItem_Seat_Pilot_MFD",
     "record_type": "EntityClassDefinition",
@@ -66463,6 +68220,76 @@
     "record_type": "EntityClassDefinition",
     "source_id": "4612e7cc-4837-4f84-8da1-4104d10523f9",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/constellation/rsi_constellation_taurus_cargogrid_tail.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/constellation/rsi_constellation_taurus_gs_cargogrid_tail.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_CargoGrid_Tail",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9ee9ef1b-d35d-4584-ba49-9c5033cf34a5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cargogrid/rsi/constellation/rsi_constellation_taurus_gs_cargogrid_tail.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_main.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b26b29e4-4876-48a2-80ea-742a09b79522",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_mav.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Mav",
+    "record_type": "EntityClassDefinition",
+    "source_id": "16d596bf-972b-405d-b743-e1bf354afa8d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_mav.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_bottom_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Retro_Bottom_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "c8be8213-f23e-451f-8358-68180f36f488",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_bottom_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_bottom_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Retro_Bottom_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "951800c5-9f2a-4ab9-8870-9d345f548f13",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_bottom_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_top_left.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Retro_Top_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7b069593-72cb-467a-8e08-996d45ab48be",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_top_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_top_right.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Retro_Top_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4d9e8aec-ee85-46bb-8623-8bfd397b69d7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_retro_top_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_turbine_front.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Turbine_Front",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5eab8e5f-4c8e-49e1-a2ba-077d6e593cfc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_turbine_front.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_turbine_rear.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Thruster_Turbine_Rear",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6bfaf05c-3527-4f98-9bb8-890029ef6b3c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_gs_thruster_turbine_rear.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_taurus_gs_turret_lower.json",
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Turret_Lower",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1ab37d6f-7157-4fe1-bc08-65a62a5de528",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_taurus_gs_turret_lower.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_constellation_taurus_thruster_main.json",
@@ -67963,6 +69790,132 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_scorpius_thruster_retro_right.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_skylark_chaff.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Chaff",
+    "record_type": "EntityClassDefinition",
+    "source_id": "350413c7-e859-4f54-a4ce-31ee82ba36c5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_skylark_chaff.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/rsi_skylark_dockingtube.json",
+    "name": "EntityClassDefinition.RSI_Skylark_DockingTube",
+    "record_type": "EntityClassDefinition",
+    "source_id": "44c0d4ab-1c3b-4a36-8413-8ed4f5167fd7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/dockingport/rsi_skylark_dockingtube.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_skylark_flare.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Flare",
+    "record_type": "EntityClassDefinition",
+    "source_id": "ec152086-4765-4ff7-978e-b742ec393e49",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/countermeasures/rsi_skylark_flare.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/usableitems/rsi_skylark_ground_refueling.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Ground_Refueling",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b75fc4c2-cc43-43df-84d1-12d1008749d6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/usableitems/rsi_skylark_ground_refueling.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_skylark_seataccess_pilot.json",
+    "name": "EntityClassDefinition.RSI_Skylark_SeatAccess_Pilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "75103192-2141-4202-afd3-5f3d9df7f39b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seataccess/rsi_skylark_seataccess_pilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_skylark_seatdashboard_pilot.json",
+    "name": "EntityClassDefinition.RSI_Skylark_SeatDashboard_Pilot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0466d6f4-7d42-49e5-b0b7-1fbe020b133c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_skylark_seatdashboard_pilot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7df4da90-32b2-4cf6-9930-07790d941eca",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_main.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Main",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1af070dc-565d-468a-9ca8-ac197bb6785f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_main.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_main_left.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Main_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "830abb04-1c9b-43d9-b19b-b813c313941e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_main_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_main_right.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Main_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e6f64129-930b-4bcf-8a65-709f8ca06009",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_main_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Mav",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e1033ab6-d202-46cb-b9da-50e31cbf745c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav_bottom.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Mav_Bottom",
+    "record_type": "EntityClassDefinition",
+    "source_id": "b307cc79-e2b9-41d3-8f82-77a8bde6dd4b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav_bottom.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav_side.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Mav_Side",
+    "record_type": "EntityClassDefinition",
+    "source_id": "1e506d27-0c77-4431-9799-8e822db02fae",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav_side.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav_top.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Mav_Top",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e05287fc-181c-4cc7-9ca5-3f7044019448",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_mav_top.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_retro.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Retro",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8451a30c-bfc4-45e4-a79c-97c52c0a0c09",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_retro.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_retro_left.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Retro_Left",
+    "record_type": "EntityClassDefinition",
+    "source_id": "e040f6e0-7c93-4f2c-8830-c569bb41a7f0",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_retro_left.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_retro_right.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_Retro_Right",
+    "record_type": "EntityClassDefinition",
+    "source_id": "5035ca5e-59ff-4dea-a36a-fbae02dce651",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_retro_right.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_vtol.json",
+    "name": "EntityClassDefinition.RSI_Skylark_Thruster_VTOL",
+    "record_type": "EntityClassDefinition",
+    "source_id": "722d63ec-f7c0-43d1-8095-7f7727288e34",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/thrusters/rsi_skylark_thruster_vtol.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/vehicles/cargogrid/rsi_ursa_cargogrid_rear.json",
     "name": "EntityClassDefinition.RSI_Ursa_CargoGrid_Rear",
     "record_type": "EntityClassDefinition",
@@ -69172,6 +71125,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "dd68d2ee-f9f1-4b80-9816-66227651a613",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_armchair_col_1_a.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_armchair_conference_constellation_gs_phoenix_rsi.json",
+    "name": "EntityClassDefinition.Seat_Armchair_Conference_Constellation_GS_Phoenix_RSI",
+    "record_type": "EntityClassDefinition",
+    "source_id": "4ecc9e91-3de5-4688-973d-42ad1255df4a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_armchair_conference_constellation_gs_phoenix_rsi.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_armchair_conference_constellationphoenix_rsi.json",
@@ -70406,6 +72366,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_left_rsi_com_padded.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_left_rsi_constellation_gs.json",
+    "name": "EntityClassDefinition.Seat_Bench_NoBack_Left_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "dc3d6d02-27d6-404b-a55d-51f32336fbe8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_left_rsi_constellation_gs.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_left_rsi_perseus_messhall.json",
     "name": "EntityClassDefinition.Seat_Bench_NoBack_Left_RSI_Perseus_Messhall",
     "record_type": "EntityClassDefinition",
@@ -70474,6 +72441,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "28cc8173-b29e-4f0c-a95d-3d3168bf1b14",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_com_padded.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_constellation_gs.json",
+    "name": "EntityClassDefinition.Seat_Bench_NoBack_Right_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "641630c4-6870-4ad3-9350-3f454a08f435",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_constellation_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_perseus_messhall.json",
@@ -70712,6 +72686,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "36736e03-9094-4596-9f43-68fc1c8453aa",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_2.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_2_buttons_template.json",
+    "name": "EntityClassDefinition.Seat_Chair_2_Buttons_Template",
+    "record_type": "EntityClassDefinition",
+    "source_id": "37b7fa06-0f23-452f-9654-2b2203a30f14",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_2_buttons_template.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_890jump_crew.json",
@@ -70980,6 +72961,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constantinehurston.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_inner.json",
+    "name": "EntityClassDefinition.Seat_Chair_Constellation_GS_Inner",
+    "record_type": "EntityClassDefinition",
+    "source_id": "04ac8e35-913d-4c1a-a621-a8e2558ac151",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_inner.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_outer.json",
+    "name": "EntityClassDefinition.Seat_Chair_Constellation_GS_Outer",
+    "record_type": "EntityClassDefinition",
+    "source_id": "49749ad4-18fc-4e81-a188-7768844a2eb8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_outer.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_crus_star_runner_crew_chair_single.json",
     "name": "EntityClassDefinition.Seat_Chair_CRUS_Star_Runner_Crew_Chair_Single",
     "record_type": "EntityClassDefinition",
@@ -71090,6 +73085,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "7534cc6a-1581-40ec-be70-95aaf084b261",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_rdy_rm_prop_chair_a.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_rsi_constellation_mk5_mess_hall.json",
+    "name": "EntityClassDefinition.Seat_Chair_RSI_Constellation_Mk5_Mess_Hall",
+    "record_type": "EntityClassDefinition",
+    "source_id": "6d635425-303b-48d6-9f3d-60095d337ec6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_rsi_constellation_mk5_mess_hall.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_rsi_polaris_habs_l.json",
@@ -71426,6 +73428,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "4dd2315e-59c3-46c4-8971-91b0cf122ed0",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_piano_phoenix.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_piano_phoenix_gs.json",
+    "name": "EntityClassDefinition.Seat_Piano_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "41c24314-43b3-47a1-899d-c011de7433cb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_piano_phoenix_gs.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_rsi_apollo_toilet.json",
@@ -73260,6 +75269,20 @@
     "record_type": "EntityClassDefinition",
     "source_id": "f62d1f0d-f175-459e-a2ea-37502035d02a",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_conference_8_1_distribution_a.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_conference_constellation_gs.json",
+    "name": "EntityClassDefinition.Table_Conference_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7ae99572-7b4a-4281-9296-f29d64723786",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_conference_constellation_gs.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_constellation_4_seat_deployable.json",
+    "name": "EntityClassDefinition.Table_Constellation_4_Seat_deployable",
+    "record_type": "EntityClassDefinition",
+    "source_id": "9ae901c8-ce0c-4cdd-8f91-a7a604bdd5ed",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_constellation_4_seat_deployable.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_desk_1_seat_cnou_nomad.json",
@@ -77497,6 +79520,20 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_1_slot_drak_ironclad_smuggling.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_1_slot_rsi_gadgetlarge.json",
+    "name": "EntityClassDefinition.Weapon_Rack_1_Slot_RSI_GadgetLarge",
+    "record_type": "EntityClassDefinition",
+    "source_id": "065ea423-4294-4be5-8fa9-ce40d503a08f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_1_slot_rsi_gadgetlarge.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_1_slot_rsi_skylark_gadgetsmall.json",
+    "name": "EntityClassDefinition.Weapon_Rack_1_Slot_RSI_Skylark_GadgetSmall",
+    "record_type": "EntityClassDefinition",
+    "source_id": "3d99c68b-52a4-4f8d-9d69-e5a569b95081",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_1_slot_rsi_skylark_gadgetsmall.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_1_slots_drak.json",
     "name": "EntityClassDefinition.Weapon_Rack_1_Slots_DRAK",
     "record_type": "EntityClassDefinition",
@@ -78687,6 +80724,34 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_rsi_constellation_2_slots.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_rsi_constellation_mk5_2_slot.json",
+    "name": "EntityClassDefinition.Weapon_Rack_RSI_Constellation_Mk5_2_Slot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "7c6a9078-8c80-4ec7-9c4c-254af824d316",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_rsi_constellation_mk5_2_slot.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_generic_2slots_a.json",
+    "name": "EntityClassDefinition.Weapon_Rack_RSI_Generic_2Slots_A",
+    "record_type": "EntityClassDefinition",
+    "source_id": "40f5e93e-6566-40fd-93cf-143f15e3e91a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_generic_2slots_a.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_generic_3slots_a.json",
+    "name": "EntityClassDefinition.Weapon_Rack_RSI_Generic_3Slots_A",
+    "record_type": "EntityClassDefinition",
+    "source_id": "81a5c567-b0e9-4a82-8928-c6fbb617eaf8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_generic_3slots_a.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_generic_3slots_b.json",
+    "name": "EntityClassDefinition.Weapon_Rack_RSI_Generic_3Slots_B",
+    "record_type": "EntityClassDefinition",
+    "source_id": "228b8c95-4c8d-4955-a84a-4844383466d9",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_generic_3slots_b.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_lynx.json",
     "name": "EntityClassDefinition.Weapon_Rack_RSI_Lynx",
     "record_type": "EntityClassDefinition",
@@ -78736,6 +80801,13 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_scorpius.json"
   },
   {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_skylark.json",
+    "name": "EntityClassDefinition.Weapon_Rack_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "source_id": "0c0c2f7e-57f6-42cb-b6ca-f87f7bdd4c34",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_skylark.json"
+  },
+  {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_rsi_ursa_medivac.json",
     "name": "EntityClassDefinition.Weapon_Rack_RSI_Ursa_Medivac",
     "record_type": "EntityClassDefinition",
@@ -78769,6 +80841,13 @@
     "record_type": "EntityClassDefinition",
     "source_id": "60cc83e7-6b34-4047-ad72-d9f6bfa8eb6a",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_rsi_zeus_9_slot_b.json"
+  },
+  {
+    "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_single_2slot.json",
+    "name": "EntityClassDefinition.Weapon_Rack_single_2Slot",
+    "record_type": "EntityClassDefinition",
+    "source_id": "8029defb-4fb7-4111-ab09-14ac254bf4db",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/weapon_rack_single_2slot.json"
   },
   {
     "internal_record_path": "starbreaker/libs/foundry/records/entities/scitem/storage/weaponpersonal/weapon_rack_single_aegs_tec_wall.json",

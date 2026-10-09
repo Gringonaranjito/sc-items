@@ -3243,6 +3243,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_smg_ballistic_01_iae2501.json"
   },
   {
+    "name": "EntityClassDefinition.behr_smg_ballistic_01_iasi",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "478af1eb-51a8-4a11-9c2c-6f795e36bc2d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/behr_smg_ballistic_01_iasi.json"
+  },
+  {
     "name": "EntityClassDefinition.behr_smg_ballistic_01_tan01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -3553,6 +3563,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_collector01.json"
   },
   {
+    "name": "EntityClassDefinition.gmni_lmg_ballistic_01_collector02",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "ddb8eb6e-a55d-4846-90f3-5adda9ea8e9d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_lmg_ballistic_01_collector02.json"
+  },
+  {
     "name": "EntityClassDefinition.gmni_lmg_ballistic_01_firerats01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -3828,6 +3848,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_rifle_ballistic_01_mr01.json"
   },
   {
+    "name": "EntityClassDefinition.gmni_rifle_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "8677381f-2be6-479e-8662-7aaea409fa07",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_rifle_ballistic_01_store01.json"
+  },
+  {
     "name": "EntityClassDefinition.gmni_rifle_ballistic_01_yellow_blue01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -3886,6 +3916,16 @@
     ],
     "source_id": "cf0864b2-687c-4f1a-b722-974dcb5d29df",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01_reward01.json"
+  },
+  {
+    "name": "EntityClassDefinition.gmni_shotgun_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "e1e90ddc-f3eb-47c1-b21e-b07ceb38f13b",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/gmni_shotgun_ballistic_01_store01.json"
   },
   {
     "name": "EntityClassDefinition.gmni_smg_ballistic_01",
@@ -4351,6 +4391,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_salvage_repair_01_store01.json"
   },
   {
+    "name": "EntityClassDefinition.grin_salvage_repair_IASI",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "0e259726-3ea6-4b0d-98da-afad3eeccff6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_salvage_repair_iasi.json"
+  },
+  {
     "name": "EntityClassDefinition.grin_tractor_01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -4359,6 +4409,16 @@
     ],
     "source_id": "27adea05-f94d-4439-872d-b043a631c34f",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_tractor_01.json"
+  },
+  {
+    "name": "EntityClassDefinition.grin_tractor_01_IASI",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "604fc3ff-4237-433d-b053-5bf365a16141",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/grin_tractor_01_iasi.json"
   },
   {
     "name": "EntityClassDefinition.grin_tractor_01_msn_rwd01",
@@ -5130,6 +5190,16 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/ksar_shotgun_ballistic_01_luminalia_blue01.json"
   },
   {
+    "name": "EntityClassDefinition.ksar_shotgun_ballistic_01_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "c8f76bea-0375-487c-bc1f-7f7d338733de",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/ksar_shotgun_ballistic_01_store01.json"
+  },
+  {
     "name": "EntityClassDefinition.ksar_shotgun_energy_01",
     "record_type": "EntityClassDefinition",
     "shop_names": [
@@ -5523,6 +5593,16 @@
     ],
     "source_id": "e5d03198-b83c-4da2-b51e-f7d5337be50e",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/lbco_sniper_energy_01_chromic01.json"
+  },
+  {
+    "name": "EntityClassDefinition.lbco_sniper_energy_01_store01",
+    "record_type": "EntityClassDefinition",
+    "shop_names": [
+      "_PointsTo_:ptr:6",
+      "_PointsTo_:ptr:7"
+    ],
+    "source_id": "d11e7a9f-3ce3-410f-81f8-7147e59b57be",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/weapons/fps_weapons/lbco_sniper_energy_01_store01.json"
   },
   {
     "name": "EntityClassDefinition.lbco_sniper_energy_01_sunset01",

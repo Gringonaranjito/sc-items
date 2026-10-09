@@ -1204,6 +1204,17 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil_guild/vaughn/vaughn_missingperson.json"
   },
   {
+    "mission_id": "contractgenerator_visitingiasi",
+    "name": "ContractGenerator.VisitingIasi",
+    "record_type": "ContractGenerator",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "6859e14e-065d-40d2-8606-c8d342b7747a",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+  },
+  {
     "mission_id": "contractgenerator_wallaceklim_generator",
     "name": "ContractGenerator.WallaceKlim_Generator",
     "record_type": "ContractGenerator",
@@ -5292,6 +5303,28 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_gotoandscan_generic.json"
   },
   {
+    "mission_id": "contracttemplate_itemresourcegathering_iasi",
+    "name": "ContractTemplate.ItemResourceGathering_Iasi",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "7a4c399c-b9b6-4d4c-ab17-c624ea42aac7",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi.json"
+  },
+  {
+    "mission_id": "contracttemplate_itemresourcegathering_iasi_basicbox",
+    "name": "ContractTemplate.ItemResourceGathering_Iasi_BasicBox",
+    "record_type": "ContractTemplate",
+    "reward_counts": {},
+    "rewards": {
+      "reward_chance": 1.0
+    },
+    "source_id": "ad13d421-3bd5-4e82-81b3-2a13f8563750",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi_basicbox.json"
+  },
+  {
     "mission_id": "contracttemplate_itemresourcegathering_rayari_moldtreatmentresearch",
     "name": "ContractTemplate.ItemResourceGathering_Rayari_MoldTreatmentResearch",
     "record_type": "ContractTemplate",
@@ -7497,6 +7530,14 @@
     "reward_counts": {},
     "source_id": "67d6f865-1e95-4652-91ba-6cbdc720c7fe",
     "source_path": "starbreaker/libs/foundry/records/missiontype/pu/hauling_solar.json"
+  },
+  {
+    "mission_id": "missiontype_iasi",
+    "name": "MissionType.IASI",
+    "record_type": "MissionType",
+    "reward_counts": {},
+    "source_id": "43e9d858-82ce-495a-8f1f-8daaba9f4022",
+    "source_path": "starbreaker/libs/foundry/records/missiontype/pu/iasi.json"
   },
   {
     "mission_id": "missiontype_investigation",

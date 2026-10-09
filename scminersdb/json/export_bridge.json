@@ -1,38 +1,38 @@
 {
   "category_counts": {
     "audit_export": 5,
-    "blueprint_catalog": 1707,
-    "blueprint_reward_pools": 154,
-    "concept_status": 2781,
-    "crafting_blueprints_clean": 1619,
-    "crafting_quality_adjustments": 7314,
-    "crafting_recipes": 1615,
-    "crafting_resources": 26,
+    "blueprint_catalog": 1718,
+    "blueprint_reward_pools": 160,
+    "concept_status": 2867,
+    "crafting_blueprints_clean": 1624,
+    "crafting_quality_adjustments": 3723,
+    "crafting_recipes": 1626,
+    "crafting_resources": 27,
     "dismantle_returns": 31,
     "faction_reputation_scopes": 46,
-    "factions_companies": 11439,
+    "factions_companies": 11736,
     "fps_weapons": 28,
-    "item_catalog": 1874,
-    "locations": 2419,
-    "mission_availability": 2232,
-    "mission_catalog_enriched": 2232,
-    "mission_catalog_player_ready": 2232,
-    "mission_catalog_ready": 2232,
-    "mission_prerequisites": 683,
-    "mission_rewards": 683,
-    "missions": 683,
-    "missions_app_ready": 2232,
+    "item_catalog": 1897,
+    "locations": 2487,
+    "mission_availability": 2264,
+    "mission_catalog_enriched": 2264,
+    "mission_catalog_player_ready": 2264,
+    "mission_catalog_ready": 2264,
+    "mission_prerequisites": 687,
+    "mission_rewards": 687,
+    "missions": 687,
+    "missions_app_ready": 2264,
     "player_items": 3033,
-    "rentals": 1078,
-    "ship_catalog": 2781,
-    "ship_components": 1713,
+    "rentals": 1116,
+    "ship_catalog": 2867,
+    "ship_components": 1778,
     "ship_components_clean": 124,
     "ship_items": 0,
     "ship_parts": 0,
     "ship_weapons": 92,
     "ships": 303,
-    "shop_locations": 2216,
-    "wikelo_items": 67
+    "shop_locations": 2224,
+    "wikelo_items": 69
   },
   "exports": [
     {
@@ -51,7 +51,7 @@
       "file": "crafting_recipes.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\crafting_recipes.json",
       "path": "../json/crafting_recipes.json",
-      "record_count": 1615,
+      "record_count": 1626,
       "title": "Crafting recipes",
       "url": "../json/crafting_recipes.json"
     },
@@ -71,7 +71,7 @@
       "file": "missions.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\missions.json",
       "path": "../json/missions.json",
-      "record_count": 683,
+      "record_count": 687,
       "title": "Mission definitions",
       "url": "../json/missions.json"
     },
@@ -81,7 +81,7 @@
       "file": "mission_rewards.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\mission_rewards.json",
       "path": "../json/mission_rewards.json",
-      "record_count": 683,
+      "record_count": 687,
       "title": "Mission rewards",
       "url": "../json/mission_rewards.json"
     },
@@ -91,7 +91,7 @@
       "file": "mission_prerequisites.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\mission_prerequisites.json",
       "path": "../json/mission_prerequisites.json",
-      "record_count": 683,
+      "record_count": 687,
       "title": "Mission prerequisites",
       "url": "../json/mission_prerequisites.json"
     },
@@ -111,7 +111,7 @@
       "file": "missions_app_ready.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\missions_app_ready.json",
       "path": "../json/missions_app_ready.json",
-      "record_count": 2232,
+      "record_count": 2264,
       "title": "Missions app ready",
       "url": "../json/missions_app_ready.json"
     },
@@ -121,7 +121,7 @@
       "file": "mission_availability.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\mission_availability.json",
       "path": "../json/mission_availability.json",
-      "record_count": 2232,
+      "record_count": 2264,
       "title": "Mission availability",
       "url": "../json/mission_availability.json"
     },
@@ -131,7 +131,7 @@
       "file": "mission_catalog_player_ready.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\mission_catalog_player_ready.json",
       "path": "../json/mission_catalog_player_ready.json",
-      "record_count": 2232,
+      "record_count": 2264,
       "title": "Mission catalog player ready",
       "url": "../json/mission_catalog_player_ready.json"
     },
@@ -141,7 +141,7 @@
       "file": "mission_catalog_ready.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\mission_catalog_ready.json",
       "path": "../json/mission_catalog_ready.json",
-      "record_count": 2232,
+      "record_count": 2264,
       "title": "Mission catalog ready",
       "url": "../json/mission_catalog_ready.json"
     },
@@ -151,7 +151,7 @@
       "file": "mission_catalog_enriched.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\mission_catalog_enriched.json",
       "path": "../json/mission_catalog_enriched.json",
-      "record_count": 2232,
+      "record_count": 2264,
       "title": "Mission catalog enriched",
       "url": "../json/mission_catalog_enriched.json"
     },
@@ -161,7 +161,7 @@
       "file": "blueprint_reward_pools.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\blueprint_reward_pools.json",
       "path": "../json/blueprint_reward_pools.json",
-      "record_count": 154,
+      "record_count": 160,
       "title": "Blueprint reward pools",
       "url": "../json/blueprint_reward_pools.json"
     },
@@ -171,7 +171,7 @@
       "file": "factions_companies.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\factions_companies.json",
       "path": "../json/factions_companies.json",
-      "record_count": 11439,
+      "record_count": 11736,
       "title": "Factions and companies",
       "url": "../json/factions_companies.json"
     },
@@ -181,7 +181,7 @@
       "file": "ship_catalog.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\ship_catalog.json",
       "path": "../json/ship_catalog.json",
-      "record_count": 2781,
+      "record_count": 2867,
       "title": "Ships and vehicles",
       "url": "../json/ship_catalog.json"
     },
@@ -191,7 +191,7 @@
       "file": "item_catalog.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\item_catalog.json",
       "path": "../json/item_catalog.json",
-      "record_count": 1874,
+      "record_count": 1897,
       "title": "Items",
       "url": "../json/item_catalog.json"
     },
@@ -201,7 +201,7 @@
       "file": "ship_components.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\ship_components.json",
       "path": "../json/ship_components.json",
-      "record_count": 1713,
+      "record_count": 1778,
       "title": "Ship components",
       "url": "../json/ship_components.json"
     },
@@ -211,7 +211,7 @@
       "file": "blueprint_catalog.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\blueprint_catalog.json",
       "path": "../json/blueprint_catalog.json",
-      "record_count": 1707,
+      "record_count": 1718,
       "title": "Blueprints",
       "url": "../json/blueprint_catalog.json"
     },
@@ -221,7 +221,7 @@
       "file": "locations.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\locations.json",
       "path": "../json/locations.json",
-      "record_count": 2419,
+      "record_count": 2487,
       "title": "Locations",
       "url": "../json/locations.json"
     },
@@ -231,7 +231,7 @@
       "file": "shop_locations.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\shop_locations.json",
       "path": "../json/shop_locations.json",
-      "record_count": 2216,
+      "record_count": 2224,
       "title": "Shop locations",
       "url": "../json/shop_locations.json"
     },
@@ -241,7 +241,7 @@
       "file": "rentals.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\rentals.json",
       "path": "../json/rentals.json",
-      "record_count": 1078,
+      "record_count": 1116,
       "title": "Rental locations",
       "url": "../json/rentals.json"
     },
@@ -251,7 +251,7 @@
       "file": "concept_status.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\concept_status.json",
       "path": "../json/concept_status.json",
-      "record_count": 2781,
+      "record_count": 2867,
       "title": "Concept status",
       "url": "../json/concept_status.json"
     },
@@ -331,7 +331,7 @@
       "file": "crafting_blueprints_clean.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\crafting_blueprints_clean.json",
       "path": "../json/crafting_blueprints_clean.json",
-      "record_count": 1619,
+      "record_count": 1624,
       "title": "Crafting blueprints clean",
       "url": "../json/crafting_blueprints_clean.json"
     },
@@ -341,7 +341,7 @@
       "file": "crafting_resources.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\crafting_resources.json",
       "path": "../json/crafting_resources.json",
-      "record_count": 26,
+      "record_count": 27,
       "title": "Crafting resources",
       "url": "../json/crafting_resources.json"
     },
@@ -351,7 +351,7 @@
       "file": "crafting_quality_adjustments.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\crafting_quality_adjustments.json",
       "path": "../json/crafting_quality_adjustments.json",
-      "record_count": 7314,
+      "record_count": 3723,
       "title": "Crafting quality adjustments",
       "url": "../json/crafting_quality_adjustments.json"
     },
@@ -361,7 +361,7 @@
       "file": "wikelo_items.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json\\wikelo_items.json",
       "path": "../json/wikelo_items.json",
-      "record_count": 67,
+      "record_count": 69,
       "title": "Wikelo items",
       "url": "../json/wikelo_items.json"
     }
@@ -370,8 +370,8 @@
   "manifest_url": "../runs/latest.json",
   "output_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\json",
   "raw_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\raw",
-  "record_count": 55674,
+  "record_count": 52962,
   "source_root": null,
   "status": "ok",
-  "updated_at": "2026-10-05T08:36:23.465848-04:00"
+  "updated_at": "2026-10-09T10:40:11.631328-04:00"
 }

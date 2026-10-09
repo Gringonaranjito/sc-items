@@ -2888,6 +2888,26 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2.json"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_Mk2_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "Wing_Left",
+      "Wing_Right"
+    ],
+    "source_id": "4c8005d2-36e1-4186-ac90-023267cd21c1",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_Mk2_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "Wing_Left",
+      "Wing_Right"
+    ],
+    "source_id": "78a576ee-dd67-4f81-956f-c253d398eef7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_aurora_mk2_blade_spd.json"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_RSI_Aurora_MR",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -2920,6 +2940,56 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda.json"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "38bd5546-9712-40a1-9b69-134fb7f31b99",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "fcf00ef7-932e-46c2-83ec-28455350a429",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_blade_spd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "b888a7cb-2163-4dac-abd2-229a13391251",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "e3feed1b-f5e7-46bf-ad18-ade15c3232f5",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "97c84e7b-76dc-4045-b41f-cdbbdec2bdf3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs_blade_spd.json"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_MM_322",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -2940,6 +3010,68 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila.json"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "e8c7c040-63a6-4832-a4d7-ed087c6ad050",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "c7365995-5b3f-4179-bff4-50aa4f2a97d6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_blade_spd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "db545c69-1241-4310-849c-b9b055800fdf",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "88182a8b-a8da-42f3-a19e-35a2a8574328",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "80343b92-87be-460a-957e-6cb716be12ff",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs_blade_spd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Mk5",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "Wing_Left_Geo",
+      "Wing_Right_Geo",
+      "Tail_Fin_Left_Lower",
+      "Tail_Fin_Right_Lower"
+    ],
+    "source_id": "43b7da35-5b99-4c80-81f3-1ad7602dcf43",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_mk5.json"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -2950,6 +3082,56 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix.json"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "d6eafda1-9487-404a-8a51-1300795f997e",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "8ef2b7fd-5d10-4f99-ad32-6e38dc649fd6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_blade_spd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "5c2ae312-5db8-45ce-b2ba-b1d2ad506456",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "582d39cd-5ff9-4280-8b83-b2e2d7583e81",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "b326aad9-70bd-4b38-ae18-c26140bdbb68",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs_blade_spd.json"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -2958,6 +3140,56 @@
     ],
     "source_id": "4e0a3638-d7e5-4609-8488-f72dc050d9f7",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "514945c4-309c-4f34-b7b3-ce3f94607d16",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "bd19e90c-1989-4c56-bb69-aeb557854361",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_blade_spd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "fe85d341-0909-496d-883c-f20afb9665a7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "27bd3e82-8d50-4435-86c6-1aee031a6928",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right"
+    ],
+    "source_id": "19ff245a-dd6b-4e4e-992a-8a6176a9d8b2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs_blade_spd.json"
   },
   {
     "name": "EntityClassDefinition.Controller_Flight_RSI_Hermes",
@@ -2984,6 +3216,32 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis.json"
   },
   {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Mantis_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right",
+      "tail",
+      "stabilizer_left",
+      "stabilizer_right"
+    ],
+    "source_id": "732106ac-827c-443c-b762-e720790acb54",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Mantis_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right",
+      "tail",
+      "stabilizer_left",
+      "stabilizer_right"
+    ],
+    "source_id": "f7687158-06e5-4973-a051-d906a8cfbc8a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_mantis_blade_spd.json"
+  },
+  {
     "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -2995,6 +3253,32 @@
     ],
     "source_id": "8313f0ea-1285-4fe2-86e4-f0ad32788ebb",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor_Blade_HND",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right",
+      "tail",
+      "stabilizer_left",
+      "stabilizer_right"
+    ],
+    "source_id": "1dfde792-2f34-47df-913a-7c829a19888f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor_blade_hnd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor_Blade_SPD",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "wing_left",
+      "wing_right",
+      "tail",
+      "stabilizer_left",
+      "stabilizer_right"
+    ],
+    "source_id": "bb0573b4-14b6-4649-8c64-0ba862231fbe",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_meteor_blade_spd.json"
   },
   {
     "name": "EntityClassDefinition.Controller_Flight_RSI_Perseus",
@@ -3088,6 +3372,16 @@
     ],
     "source_id": "761c25cf-fac6-4ad3-aab3-7e000e977040",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_scorpius_flight_blade_spd.json"
+  },
+  {
+    "name": "EntityClassDefinition.Controller_Flight_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "WingLeft",
+      "WingRight"
+    ],
+    "source_id": "68c23911-103a-47f4-9aa7-e749538ba92f",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_skylark.json"
   },
   {
     "name": "EntityClassDefinition.Controller_Flight_VNCL_Blade",
@@ -3658,6 +3952,15 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_common_personal_locker.json"
   },
   {
+    "name": "EntityClassDefinition.PersonalStorage_RSI_Constellation_GS",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "a2c14324-8a9d-4330-90a6-ceafb3d882fc",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_constellation_gs.json"
+  },
+  {
     "name": "EntityClassDefinition.PersonalStorage_RSI_Lynx_Left",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -3710,6 +4013,15 @@
     ],
     "source_id": "f6205e74-b3d9-4933-bc9f-4ede10222de5",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_polaris_medical.json"
+  },
+  {
+    "name": "EntityClassDefinition.PersonalStorage_RSI_Skylark",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "4815f39b-fb25-4024-aa86-94b095ee7230",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_skylark.json"
   },
   {
     "name": "EntityClassDefinition.PersonalStorage_RSI_Ursa_Medivac",
@@ -4520,6 +4832,15 @@
     ],
     "source_id": "5d92d2eb-a580-433b-9b98-9e905737f087",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/misc_prospector_scitem_seat.json"
+  },
+  {
+    "name": "EntityClassDefinition.RSI_Skylark_SeatDashboard_Pilot",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "Default"
+    ],
+    "source_id": "0466d6f4-7d42-49e5-b0b7-1fbe020b133c",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/seat/rsi_skylark_seatdashboard_pilot.json"
   },
   {
     "name": "EntityClassDefinition.Fuse_subItem_standard",
@@ -5580,6 +5901,15 @@
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/orig_890j_scitem_turret_upper.json"
   },
   {
+    "name": "EntityClassDefinition.RSI_Constellation_Aquila_GS_SCItem_Turret_Radar",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "9bb30915-6a50-4afa-9608-626f3b03cdb4",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_aquila_gs_scitem_turret_radar.json"
+  },
+  {
     "name": "EntityClassDefinition.RSI_Constellation_Aquila_SCItem_Turret_Radar",
     "record_type": "EntityClassDefinition",
     "rental_names": [
@@ -5587,6 +5917,42 @@
     ],
     "source_id": "1b4aed53-1098-407e-b152-72236b374906",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_aquila_scitem_turret_radar.json"
+  },
+  {
+    "name": "EntityClassDefinition.RSI_Constellation_GS_SCItem_Turret_Lower",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "b48556e3-a02c-4c02-b059-d4b955e73b0d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_gs_scitem_turret_lower.json"
+  },
+  {
+    "name": "EntityClassDefinition.RSI_Constellation_GS_SCItem_Turret_Upper",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "9df26beb-55d8-467f-afb1-e9e8950a8baa",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_gs_scitem_turret_upper.json"
+  },
+  {
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Turret_Lower",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "7c9d5e99-261e-4b84-86d7-9badfb12a4f2",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_phoenix_gs_turret_lower.json"
+  },
+  {
+    "name": "EntityClassDefinition.RSI_Constellation_Phoenix_GS_Turret_Upper",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "32577e83-3e7a-4135-931e-9940406d19e7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_phoenix_gs_turret_upper.json"
   },
   {
     "name": "EntityClassDefinition.RSI_Constellation_Phoenix_Turret_Lower",
@@ -5623,6 +5989,15 @@
     ],
     "source_id": "63b53762-0561-4abc-9462-eeb0340a5c30",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_scitem_turret_upper.json"
+  },
+  {
+    "name": "EntityClassDefinition.RSI_Constellation_Taurus_GS_Turret_Lower",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "1ab37d6f-7157-4fe1-bc08-65a62a5de528",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/turret/rsi_constellation_taurus_gs_turret_lower.json"
   },
   {
     "name": "EntityClassDefinition.RSI_Constellation_Taurus_Turret_Lower",
@@ -5956,6 +6331,15 @@
     ],
     "source_id": "46dd1447-9287-24bd-f996-19aa8490f58d",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/usableitems/mrai_guardian_mx_ground_refueling_port.json"
+  },
+  {
+    "name": "EntityClassDefinition.RSI_Skylark_Ground_Refueling",
+    "record_type": "EntityClassDefinition",
+    "rental_names": [
+      "None"
+    ],
+    "source_id": "b75fc4c2-cc43-43df-84d1-12d1008749d6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/usableitems/rsi_skylark_ground_refueling.json"
   },
   {
     "name": "EntityClassDefinition.TMBL_Storm_Ground_Refueling_Port",

@@ -1654,6 +1654,595 @@
     ]
   },
   {
+    "token": "@iasi_BasicBox_ResourceGathering_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Delivery_2H_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_EliminateAll_M_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_EliminateBoss_H_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_EliminateSpecific_E_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_GoldBox_Delivery_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_GoldBox_Delivery_Desc_0",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Hauling_Small_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Hauling_Supply_2_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Hauling_Supply_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Patrol_E_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Patrol_H_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Patrol_M_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_E_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_FPS_E_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_FPS_H_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_FPS_M_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_H_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_M_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Refueling_E_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Refueling_H_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Refueling_M_Desc_001",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_ResourceGathering_Mining_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_ResourceGathering_Mining_E_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_ResourceGathering_Mining_H_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Salvage_ResourceGathering_L_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Salvage_ResourceGathering_M_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Salvage_ResourceGathering_S_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_SupportAttackedShip_E_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_SupportAttackedShip_H_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_SupportAttackedShip_M_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
     "token": "@RedWind_RecoverCargo_Easy_Description",
     "kinds": [
       "description"
@@ -1845,6 +2434,44 @@
   },
   {
     "token": "@TheCollector_Mod_ATLS_Geo_Grad3_Desc",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Desc_GMNI_LMG",
+    "kinds": [
+      "description"
+    ],
+    "best_text": "",
+    "resolution_source": "unresolved",
+    "confidence": "low",
+    "guess_texts": [],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Desc_GreyHeavyCombat",
     "kinds": [
       "description"
     ],
@@ -17891,6 +18518,718 @@
     ]
   },
   {
+    "token": "@iasi_BasicBox_ResourceGathering_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Basic Box Resource Gathering",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Basic Box Resource Gathering",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Delivery_2H_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Delivery 2 H",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Delivery 2 H",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_EliminateAll_M_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Eliminate All M",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Eliminate All M",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_EliminateBoss_H_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Eliminate Boss H",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Eliminate Boss H",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_EliminateSpecific_E_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Eliminate Specific E",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Eliminate Specific E",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_GoldBox_Delivery_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Gold Box Delivery",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Gold Box Delivery",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_GoldBox_Delivery_Title_0",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Gold Box Delivery 0",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Gold Box Delivery 0",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Hauling_Small_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Hauling Small",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Hauling Small",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Hauling_Supply_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Hauling Supply",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Hauling Supply",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Hauling_Supply_2_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Hauling Supply 2",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Hauling Supply 2",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Patrol_E_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Patrol E",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Patrol E",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Patrol_H_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Patrol H",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Patrol H",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Patrol_M_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Patrol M",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Patrol M",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_E_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Recover Item E 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Recover Item E 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_FPS_E_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Recover Item FPS E 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Recover Item FPS E 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_FPS_H_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Recover Item FPS H 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Recover Item FPS H 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_FPS_M_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Recover Item FPS M 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Recover Item FPS M 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_H_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Recover Item H 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Recover Item H 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_RecoverItem_M_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Recover Item M 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Recover Item M 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Refueling_E_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Refueling E 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Refueling E 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Refueling_H_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Refueling H 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Refueling H 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Refueling_M_Title_001",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Refueling M 001",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Refueling M 001",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_ResourceGathering_Mining_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Resource Gathering Mining",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Resource Gathering Mining",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_ResourceGathering_Mining_E_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Resource Gathering Mining E",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Resource Gathering Mining E",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_ResourceGathering_Mining_H_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Resource Gathering Mining H",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Resource Gathering Mining H",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Salvage_ResourceGathering_L_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Salvage Resource Gathering L",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Salvage Resource Gathering L",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Salvage_ResourceGathering_M_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Salvage Resource Gathering M",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Salvage Resource Gathering M",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_Salvage_ResourceGathering_S_Title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Salvage Resource Gathering S",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Salvage Resource Gathering S",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_SupportAttackedShip_E_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Support Attacked Ship E",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_SupportAttackedShip_H_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Support Attacked Ship H",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Support Attacked Ship H",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
+    "token": "@iasi_SupportAttackedShip_M_title",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "iasi Support Attacked Ship M",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "iasi Support Attacked Ship M",
+      "iasi Support Attacked Ship E",
+      "Visiting Iasi"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.VisitingIasi"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+    ]
+  },
+  {
     "token": "@LingFamily_delivery_name_ICC_Special_Cryo",
     "kinds": [
       "title"
@@ -33738,6 +35077,52 @@
     "confidence": "medium",
     "guess_texts": [
       "The Collector Mod ATLS Geo Grad3 Name",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_GMNI_LMG",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "The Collector Recipes GMNI LMG",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "The Collector Recipes GMNI LMG",
+      "The Collector Recipes Sand Armour",
+      "The Collector"
+    ],
+    "company_hints": [
+      "Json"
+    ],
+    "mission_ids": [
+      "ContractGenerator.TheCollector"
+    ],
+    "source_paths": [
+      "starbreaker/libs/foundry/records/contracts/contractgenerator/thecollector.json"
+    ]
+  },
+  {
+    "token": "@TheCollector_Recipes_Title_GreyHeavyCombat",
+    "kinds": [
+      "title"
+    ],
+    "best_text": "The Collector Recipes Grey Heavy Combat",
+    "resolution_source": "token_guess",
+    "confidence": "medium",
+    "guess_texts": [
+      "The Collector Recipes Grey Heavy Combat",
       "The Collector Recipes Sand Armour",
       "The Collector"
     ],

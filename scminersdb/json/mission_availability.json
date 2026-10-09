@@ -191,7 +191,7 @@
   },
   {
     "mission_id": "ContractGenerator.BitZeros RecoverItem",
-    "title": "blackbox recover 001",
+    "title": "Bit Zeros Recover Item",
     "title_token": "@blackbox_recover_title_intro_001",
     "mission_giver": "Bitzeros",
     "mission_giver_token": "",
@@ -259,7 +259,7 @@
   },
   {
     "mission_id": "ContractGenerator.BountyHuntersGuild FPS",
-    "title": "Preliminary Bounty: ~mission(TargetName)",
+    "title": "Preliminary Bounty: [Target Name]",
     "title_token": "@bhg_bounty_title_FPS_intro",
     "mission_giver": "Bountyhunterguild",
     "mission_giver_token": "",
@@ -314,7 +314,7 @@
   },
   {
     "mission_id": "ContractGenerator.BountyHuntersGuild ShipWaveAttack",
-    "title": "Reclusive Bounty: ~mission(TargetName) | High Risk",
+    "title": "Reclusive Bounty: [Target Name] | High Risk",
     "title_token": "@BHG_ShipWaveAttack_DrawOutBoss_H_Title_001",
     "mission_giver": "Bountyhunterguild",
     "mission_giver_token": "",
@@ -731,7 +731,7 @@
   },
   {
     "mission_id": "ContractGenerator.CitizensForProsperity Investigation",
-    "title": "Minor Repairs Needed: ~mission(Location)",
+    "title": "Minor Repairs Needed: [Location]",
     "title_token": "@cfp_maintenance_E_title_001",
     "mission_giver": "Citizensforprosperity",
     "mission_giver_token": "",
@@ -794,7 +794,7 @@
   },
   {
     "mission_id": "ContractGenerator.CitizensForProsperity MissingPersons",
-    "title": "Missing: ~mission(TargetName)",
+    "title": "Missing: [Target Name]",
     "title_token": "@cfp_missingperson_inv_e_regionlink_title_01",
     "mission_giver": "Citizensforprosperity",
     "mission_giver_token": "",
@@ -917,7 +917,7 @@
   },
   {
     "mission_id": "ContractGenerator.CitizensForProsperity Mercenary FPS",
-    "title": "Protection against ~mission(TargetName|Last)",
+    "title": "Protection against [Target Name]",
     "title_token": "@cfp_EliminateSpecific_Generic_E_title_001",
     "mission_giver": "Citizensforprosperity",
     "mission_giver_token": "",
@@ -1111,6 +1111,55 @@
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/citizensforprosperity/citizensforprosperity defendship.json"
+  },
+  {
+    "mission_id": "ContractGenerator.CDF Generator",
+    "title": "A Call to Arms",
+    "title_token": "@openbounty_title",
+    "mission_giver": "Json",
+    "mission_giver_token": "",
+    "mission_type": "Contractgenerator",
+    "faction_company": "Json",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [
+      "file://./../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
+    ],
+    "location_availability_labels": [
+      "Stanton"
+    ],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "contracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_CrimeStat",
+      "ContractPrerequisite_Location"
+    ],
+    "source_generator_debug_names": [
+      "CDF SandboxCriminalKills List",
+      "CDF StantonStar SandboxCriminalKills"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "medium",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/cdf generator.json"
   },
   {
     "mission_id": "ContractGenerator.TheCollector",
@@ -1444,6 +1493,55 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/klescher generator.json"
   },
   {
+    "mission_id": "ContractGenerator.ConstantineHurston Generator",
+    "title": "Outsourcing Opportunity",
+    "title_token": "@mg_constantine_invite_title",
+    "mission_giver": "Json",
+    "mission_giver_token": "",
+    "mission_type": "Contractgenerator",
+    "faction_company": "Json",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [
+      "file://./../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
+    ],
+    "location_availability_labels": [
+      "Stanton"
+    ],
+    "variant_kinds": [
+      "intro"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "introContracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_CrimeStat",
+      "ContractPrerequisite_Location"
+    ],
+    "source_generator_debug_names": [
+      "ConstantineHurston InitialInvite Career",
+      "ConstantineHurston InitialInvite"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "medium",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/constantinehurston generator.json"
+  },
+  {
     "mission_id": "ContractGenerator.GoblinG Generator",
     "title": "RESOURCE DRIVE: HAULER REQUIRED",
     "title_token": "@GoblinG_Hurston_ResourceGathering_Title_Intro",
@@ -1507,63 +1605,8 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/gobling generator.json"
   },
   {
-    "mission_id": "ContractGenerator.RR Salvage",
-    "title": "Wrecked Ships for Sale",
-    "title_token": "@roughready_salvage_E_title_001",
-    "mission_giver": "Json",
-    "mission_giver_token": "",
-    "mission_type": "Contractgenerator",
-    "faction_company": "Json",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [],
-    "location_availability_labels": [],
-    "variant_kinds": [
-      "standard"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "contracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_Location"
-    ],
-    "source_generator_debug_names": [
-      "RR Salvage List",
-      "RR Pyro Checkmate VE Civilians Salvage",
-      "RR Pyro Checkmate M Civilians Salvage",
-      "RR Pyro Orbituary VE Civilians Salvage",
-      "RR Pyro Orbituary M Civilians Salvage",
-      "RR Pyro Starlight VE Civilians Salvage",
-      "RR Pyro PatchCity VE Civilians Salvage",
-      "RR Pyro Gaslight VE Civilians Salvage",
-      "RR Pyro RodsFuel VE Civilians Salvage",
-      "RR Pyro RatsNest VE Civilians Salvage",
-      "RR Pyro Endgame VE Civilians Salvage",
-      "RR Pyro DudleyDaughters VE Civilians Salvage",
-      "RR Pyro MegumiRefueling VE Civilians Salvage"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "low",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/rr salvage.json"
-  },
-  {
     "mission_id": "ContractGenerator.RoughAndReady Generator",
-    "title": "~mission(Contractor|AssassinationTitle)",
+    "title": "Rough And Ready Generator",
     "title_token": "@assassination_title",
     "mission_giver": "Json",
     "mission_giver_token": "",
@@ -1624,9 +1667,9 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/roughandready generator.json"
   },
   {
-    "mission_id": "ContractGenerator.CDF Generator",
-    "title": "~mission(Contractor|OpenBountyTitle)",
-    "title_token": "@openbounty_title",
+    "mission_id": "ContractGenerator.RR Salvage",
+    "title": "Wrecked Ships for Sale",
+    "title_token": "@roughready_salvage_E_title_001",
     "mission_giver": "Json",
     "mission_giver_token": "",
     "mission_type": "Contractgenerator",
@@ -1636,12 +1679,8 @@
     "required_missions": [],
     "system_guess": "",
     "location_guess": "",
-    "location_availability_paths": [
-      "file://./../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
-    ],
-    "location_availability_labels": [
-      "Stanton"
-    ],
+    "location_availability_paths": [],
+    "location_availability_labels": [],
     "variant_kinds": [
       "standard"
     ],
@@ -1657,69 +1696,30 @@
       "contracts"
     ],
     "source_prerequisite_types": [
-      "ContractPrerequisite_CrimeStat",
       "ContractPrerequisite_Location"
     ],
     "source_generator_debug_names": [
-      "CDF SandboxCriminalKills List",
-      "CDF StantonStar SandboxCriminalKills"
+      "RR Salvage List",
+      "RR Pyro Checkmate VE Civilians Salvage",
+      "RR Pyro Checkmate M Civilians Salvage",
+      "RR Pyro Orbituary VE Civilians Salvage",
+      "RR Pyro Orbituary M Civilians Salvage",
+      "RR Pyro Starlight VE Civilians Salvage",
+      "RR Pyro PatchCity VE Civilians Salvage",
+      "RR Pyro Gaslight VE Civilians Salvage",
+      "RR Pyro RodsFuel VE Civilians Salvage",
+      "RR Pyro RatsNest VE Civilians Salvage",
+      "RR Pyro Endgame VE Civilians Salvage",
+      "RR Pyro DudleyDaughters VE Civilians Salvage",
+      "RR Pyro MegumiRefueling VE Civilians Salvage"
     ],
     "same_session_required_known": false,
     "same_session_required": null,
     "same_session_rule_confidence": "unknown",
     "runtime_only_possible": false,
-    "availability_confidence": "medium",
+    "availability_confidence": "low",
     "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/cdf generator.json"
-  },
-  {
-    "mission_id": "ContractGenerator.ConstantineHurston Generator",
-    "title": "~mission(title)",
-    "title_token": "@mg_constantine_invite_title",
-    "mission_giver": "Json",
-    "mission_giver_token": "",
-    "mission_type": "Contractgenerator",
-    "faction_company": "Json",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [
-      "file://./../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
-    ],
-    "location_availability_labels": [
-      "Stanton"
-    ],
-    "variant_kinds": [
-      "intro"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "introContracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_CrimeStat",
-      "ContractPrerequisite_Location"
-    ],
-    "source_generator_debug_names": [
-      "ConstantineHurston InitialInvite Career",
-      "ConstantineHurston InitialInvite"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "medium",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/constantinehurston generator.json"
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/rr salvage.json"
   },
   {
     "mission_id": "GlobalMissionSettings.GlobalMissionSettings",
@@ -1872,7 +1872,7 @@
       "Covalex DeliveryPilot StantonDC MedgelMedicalFood Rank0",
       "Covalex DeliveryPilot Rank1",
       "Covalex DeliveryPilot Stanton AsatineFlourineOganiSample Rank1",
-      "Covalex DeliveryPilot Stanton MazeMedGelMilitary Rank1",
+      "Covalex DeliveryPilot Stanton MedicalSuppliesMedGelMilitary Rank1",
       "Covalex DeliveryPilot Stanton IronCopperQuartz Rank1",
       "Covalex DeliveryPilot Stanton MedgelMedicalElectronicsOrgans Rank1",
       "Covalex DeliveryPilot Stanton FoodConstructionMedical Rank1"
@@ -2028,65 +2028,8 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/deadsaints/deadsaints hauling.json"
   },
   {
-    "mission_id": "ContractGenerator.DeadSaints RecoverCargo",
-    "title": "Finishing The Job",
-    "title_token": "@DeadSaints_RecoverCargo_VeryEasy_Title",
-    "mission_giver": "Deadsaints",
-    "mission_giver_token": "",
-    "mission_type": "Deadsaints",
-    "faction_company": "Deadsaints",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [],
-    "location_availability_labels": [],
-    "variant_kinds": [
-      "standard"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "contracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_Locality",
-      "ContractPrerequisite_CompletedContractTags"
-    ],
-    "source_generator_debug_names": [
-      "DeadSaints RecoverCargo Nyx",
-      "DeadSaints Nyx VeryEasy RecoverCargo",
-      "DeadSaints Nyx Easy RecoverCargo",
-      "DeadSaints Nyx Medium RecoverCargo",
-      "DeadSaints Nyx Hard RecoverCargo",
-      "DeadSaints Nyx VeryHard RecoverCargo",
-      "DeadSaints Nyx Super RecoverCargo",
-      "DeadSaints RecoverCargo Stanton",
-      "DeadSaints Stanton VeryEasy RecoverCargo",
-      "DeadSaints Stanton Easy RecoverCargo",
-      "DeadSaints Stanton Medium RecoverCargo",
-      "DeadSaints Stanton Hard RecoverCargo",
-      "DeadSaints Stanton VeryHard RecoverCargo",
-      "DeadSaints Stanton Super RecoverCargo"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "low",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/deadsaints/deadsaints recovercargo.json"
-  },
-  {
     "mission_id": "ContractGenerator.DeadSaints RecoverItem",
-    "title": "~mission(Contractor|RecoverSpaceTitleIntro)",
+    "title": "Dead Saints Recover Item",
     "title_token": "@spacecollect_cargo_title_intro_01",
     "mission_giver": "Deadsaints",
     "mission_giver_token": "",
@@ -2151,6 +2094,63 @@
     "availability_confidence": "medium",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/deadsaints/deadsaints recoveritem.json"
+  },
+  {
+    "mission_id": "ContractGenerator.DeadSaints RecoverCargo",
+    "title": "Finishing The Job",
+    "title_token": "@DeadSaints_RecoverCargo_VeryEasy_Title",
+    "mission_giver": "Deadsaints",
+    "mission_giver_token": "",
+    "mission_type": "Deadsaints",
+    "faction_company": "Deadsaints",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [],
+    "location_availability_labels": [],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "contracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_Locality",
+      "ContractPrerequisite_CompletedContractTags"
+    ],
+    "source_generator_debug_names": [
+      "DeadSaints RecoverCargo Nyx",
+      "DeadSaints Nyx VeryEasy RecoverCargo",
+      "DeadSaints Nyx Easy RecoverCargo",
+      "DeadSaints Nyx Medium RecoverCargo",
+      "DeadSaints Nyx Hard RecoverCargo",
+      "DeadSaints Nyx VeryHard RecoverCargo",
+      "DeadSaints Nyx Super RecoverCargo",
+      "DeadSaints RecoverCargo Stanton",
+      "DeadSaints Stanton VeryEasy RecoverCargo",
+      "DeadSaints Stanton Easy RecoverCargo",
+      "DeadSaints Stanton Medium RecoverCargo",
+      "DeadSaints Stanton Hard RecoverCargo",
+      "DeadSaints Stanton VeryHard RecoverCargo",
+      "DeadSaints Stanton Super RecoverCargo"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "low",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/deadsaints/deadsaints recovercargo.json"
   },
   {
     "mission_id": "ContractGenerator.EckhartSecurity KillShip",
@@ -3512,6 +3512,80 @@
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering gotoandscan generic.json"
+  },
+  {
+    "mission_id": "ContractTemplate.ItemResourceGathering Iasi",
+    "title": "Item Resource Gathering Iasi",
+    "title_token": "",
+    "mission_giver": "Points To :Ptr:4",
+    "mission_giver_token": "",
+    "mission_type": "File://./../../../../../Libs/Foundry/Records/Missiontype/Pu/Collection.Json",
+    "faction_company": "Points To :Ptr:4",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [],
+    "location_availability_labels": [],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [],
+    "source_prerequisite_types": [],
+    "source_generator_debug_names": [],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "low",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering iasi.json"
+  },
+  {
+    "mission_id": "ContractTemplate.ItemResourceGathering Iasi BasicBox",
+    "title": "Item Resource Gathering Iasi Basic Box",
+    "title_token": "",
+    "mission_giver": "Points To :Ptr:4",
+    "mission_giver_token": "",
+    "mission_type": "File://./../../../../../Libs/Foundry/Records/Missiontype/Pu/Collection.Json",
+    "faction_company": "Points To :Ptr:4",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [],
+    "location_availability_labels": [],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [],
+    "source_prerequisite_types": [],
+    "source_generator_debug_names": [],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "low",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering iasi basicbox.json"
   },
   {
     "mission_id": "ContractTemplate.ItemResourceGathering Rayari MoldTreatmentResearch",
@@ -20863,7 +20937,7 @@
   },
   {
     "mission_id": "ContractGenerator.FTL RecoverItem",
-    "title": "~mission(Contractor|RecoverSpaceTitleIntro)",
+    "title": "FTL Recover Item",
     "title_token": "@spacecollect_cargo_title_intro_01",
     "mission_giver": "Ftl",
     "mission_giver_token": "",
@@ -20925,6 +20999,69 @@
     "availability_confidence": "medium",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/ftl/ftl recoveritem.json"
+  },
+  {
+    "mission_id": "ContractGenerator.HeadHunters Investigation",
+    "title": "[Location] needs some repairs",
+    "title_token": "@headhunters_maintenance_E_title_001",
+    "mission_giver": "Headhunters",
+    "mission_giver_token": "",
+    "mission_type": "Headhunters",
+    "faction_company": "Headhunters",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [],
+    "location_availability_labels": [],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "contracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_Locality",
+      "ContractPrerequisite_Location"
+    ],
+    "source_generator_debug_names": [
+      "HH Handyman",
+      "HH Pyro RegionA Rank1 Regional Handyman",
+      "HH Pyro RegionA Rank3 Regional Handyman",
+      "HH Pyro RegionA Rank5 Regional Handyman",
+      "HH Pyro RegionB Rank0 Regional Handyman",
+      "HH Pyro RegionB Rank1 Regional Handyman",
+      "HH Pyro RegionB Rank3 Regional Handyman",
+      "HH Pyro RegionB Rank5 Regional Handyman",
+      "HH Pyro RegionC Rank0 Regional Handyman",
+      "HH Pyro RegionC Rank1 Regional Handyman",
+      "HH Pyro RegionC Rank3 Regional Handyman",
+      "HH Pyro RegionC Rank5 Regional Handyman",
+      "HH Pyro RegionD Rank0 Regional Handyman",
+      "HH Pyro RegionD Rank0 LastLanding Local Handyman",
+      "HH Pyro RegionD Rank1 Regional Handyman",
+      "HH Pyro RegionD Rank1 LastLanding Local Handyman",
+      "HH Pyro RegionD Rank3 Regional Handyman",
+      "HH Pyro RegionD Rank3 LastLanding Local Handyman",
+      "HH Pyro RegionD Rank5 Regional Handyman",
+      "HH Pyro RegionD Rank5 LastLanding Local Handyman"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "low",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters investigation.json"
   },
   {
     "mission_id": "ContractGenerator.HeadHunters EscortShips",
@@ -21194,8 +21331,57 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters generator.json"
   },
   {
+    "mission_id": "ContractGenerator.HeadHunters HijackedShip Caterpillar",
+    "title": "Head Hunters Hijacked Ship Caterpillar",
+    "title_token": "@prisonerbreak_title",
+    "mission_giver": "Headhunters",
+    "mission_giver_token": "",
+    "mission_type": "Headhunters",
+    "faction_company": "Headhunters",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [
+      "file://./../../../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
+    ],
+    "location_availability_labels": [
+      "Stanton"
+    ],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "contracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_Location",
+      "ContractPrerequisite_Locality",
+      "ContractPrerequisite_Reputation"
+    ],
+    "source_generator_debug_names": [
+      "HeadHunters HijackedShip Caterpillar Stanton"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "medium",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters hijackedship caterpillar.json"
+  },
+  {
     "mission_id": "ContractGenerator.HeadHunters ShipAmbush",
-    "title": "Head Hunters Ship Ambush 001",
+    "title": "Head Hunters Ship Ambush",
     "title_token": "@HeadHunters_ShipAmbush_Intro_title_001",
     "mission_giver": "Headhunters",
     "mission_giver_token": "",
@@ -21334,7 +21520,7 @@
   },
   {
     "mission_id": "ContractGenerator.HeadHunters DefendEntitiesAndEscort",
-    "title": "Keep ~mission(Location) Safe",
+    "title": "Keep [Location] Safe",
     "title_token": "@HeadHunters_DefendEntitesAndEscort_VE_Title",
     "mission_giver": "Headhunters",
     "mission_giver_token": "",
@@ -21397,7 +21583,7 @@
   },
   {
     "mission_id": "ContractGenerator.HeadHunters DefendDestructibleEntities",
-    "title": "Keep ~mission(Objects) Safe From Upstarts",
+    "title": "Keep [Objects] Safe From Upstarts",
     "title_token": "@Headhunters_DefendDestructibleEntites_VE_Title_001",
     "mission_giver": "Headhunters",
     "mission_giver_token": "",
@@ -21531,7 +21717,7 @@
   },
   {
     "mission_id": "ContractGenerator.HeadHunters Mercenary FPS",
-    "title": "Steal Some ~mission(Item)",
+    "title": "Steal Some [Item]",
     "title_token": "@Headhunters_Theft_PAF_title_001",
     "mission_giver": "Headhunters",
     "mission_giver_token": "",
@@ -21729,118 +21915,6 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters mercenary ship.json"
   },
   {
-    "mission_id": "ContractGenerator.HeadHunters HijackedShip Caterpillar",
-    "title": "~mission(Contractor|PrisonerBreakTitle)",
-    "title_token": "@prisonerbreak_title",
-    "mission_giver": "Headhunters",
-    "mission_giver_token": "",
-    "mission_type": "Headhunters",
-    "faction_company": "Headhunters",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [
-      "file://./../../../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
-    ],
-    "location_availability_labels": [
-      "Stanton"
-    ],
-    "variant_kinds": [
-      "standard"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "contracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_Location",
-      "ContractPrerequisite_Locality",
-      "ContractPrerequisite_Reputation"
-    ],
-    "source_generator_debug_names": [
-      "HeadHunters HijackedShip Caterpillar Stanton"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "medium",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters hijackedship caterpillar.json"
-  },
-  {
-    "mission_id": "ContractGenerator.HeadHunters Investigation",
-    "title": "~mission(Location) needs some repairs",
-    "title_token": "@headhunters_maintenance_E_title_001",
-    "mission_giver": "Headhunters",
-    "mission_giver_token": "",
-    "mission_type": "Headhunters",
-    "faction_company": "Headhunters",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [],
-    "location_availability_labels": [],
-    "variant_kinds": [
-      "standard"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "contracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_Locality",
-      "ContractPrerequisite_Location"
-    ],
-    "source_generator_debug_names": [
-      "HH Handyman",
-      "HH Pyro RegionA Rank1 Regional Handyman",
-      "HH Pyro RegionA Rank3 Regional Handyman",
-      "HH Pyro RegionA Rank5 Regional Handyman",
-      "HH Pyro RegionB Rank0 Regional Handyman",
-      "HH Pyro RegionB Rank1 Regional Handyman",
-      "HH Pyro RegionB Rank3 Regional Handyman",
-      "HH Pyro RegionB Rank5 Regional Handyman",
-      "HH Pyro RegionC Rank0 Regional Handyman",
-      "HH Pyro RegionC Rank1 Regional Handyman",
-      "HH Pyro RegionC Rank3 Regional Handyman",
-      "HH Pyro RegionC Rank5 Regional Handyman",
-      "HH Pyro RegionD Rank0 Regional Handyman",
-      "HH Pyro RegionD Rank0 LastLanding Local Handyman",
-      "HH Pyro RegionD Rank1 Regional Handyman",
-      "HH Pyro RegionD Rank1 LastLanding Local Handyman",
-      "HH Pyro RegionD Rank3 Regional Handyman",
-      "HH Pyro RegionD Rank3 LastLanding Local Handyman",
-      "HH Pyro RegionD Rank5 Regional Handyman",
-      "HH Pyro RegionD Rank5 LastLanding Local Handyman"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "low",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/thecouncil guild/headhunters/headhunters investigation.json"
-  },
-  {
     "mission_id": "ContractGenerator.HighpointWildernessSpecialists KillAnimals",
     "title": "Kopion Culling Request",
     "title_token": "@Highpoint_KillAnimals_PAF_Kopion_name",
@@ -21911,8 +21985,76 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/academyofsciences guild/highpoint wilderness specialists/highpointwildernessspecialists killanimals.json"
   },
   {
+    "mission_id": "ContractGenerator.HockrowAgency MissingPerson",
+    "title": "Hockrow Agency Missing Person",
+    "title_token": "@searchbodyspace_title_intro",
+    "mission_giver": "Hockrowagency",
+    "mission_giver_token": "",
+    "mission_type": "Hockrowagency",
+    "faction_company": "Hockrowagency",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [
+      "file://./../../../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
+    ],
+    "location_availability_labels": [
+      "Stanton"
+    ],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "contracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_Location",
+      "ContractPrerequisite_CompletedContractTags",
+      "ContractPrerequisite_Locality"
+    ],
+    "source_generator_debug_names": [
+      "Hockrow MissingPerson Space Stanton Career",
+      "Hockrow Stanton MissingPersonSpace Intro",
+      "Hockrow Stanton MissingPersonSpace VeryEasy",
+      "Hockrow Stanton MissingPersonSpace Easy",
+      "Hockrow Stanton MissingPersonSpace Medium",
+      "Hockrow Stanton MissingPersonSpace Hard",
+      "Hockrow Stanton MissingPersonSpace VeryHard",
+      "Hockrow Stanton MissingPersonSpace Super",
+      "Hockrow MissingPerson Space Nyx Career",
+      "Hockrow Nyx MissingPersonSpace Intro",
+      "Hockrow Nyx MissingPersonSpace VeryEasy",
+      "Hockrow Nyx MissingPersonSpace Easy",
+      "Hockrow Nyx MissingPersonSpace Medium",
+      "Hockrow Nyx MissingPersonSpace Hard",
+      "Hockrow Nyx MissingPersonSpace VeryHard",
+      "Hockrow Nyx MissingPersonSpace Super",
+      "Hockrow MissingPersons Nyx",
+      "Hockrow Nyx VeryEasy MissingPersons",
+      "Hockrow Nyx Easy MissingPersons",
+      "Hockrow Nyx Medium MissingPersons"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "medium",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/hockrowagency/hockrowagency missingperson.json"
+  },
+  {
     "mission_id": "ContractGenerator.HockrowAgency RecoverItem",
-    "title": "blackbox recover VE 001",
+    "title": "Hockrow Agency Recover Item",
     "title_token": "@blackbox_recover_title_VE_001",
     "mission_giver": "Hockrowagency",
     "mission_giver_token": "",
@@ -22077,76 +22219,8 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/hockrowagency/hockrowagency facilitydelve.json"
   },
   {
-    "mission_id": "ContractGenerator.HockrowAgency MissingPerson",
-    "title": "~mission(Contractor|SearchBodySpaceTitleIntro)",
-    "title_token": "@searchbodyspace_title_intro",
-    "mission_giver": "Hockrowagency",
-    "mission_giver_token": "",
-    "mission_type": "Hockrowagency",
-    "faction_company": "Hockrowagency",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [
-      "file://./../../../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
-    ],
-    "location_availability_labels": [
-      "Stanton"
-    ],
-    "variant_kinds": [
-      "standard"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "contracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_Location",
-      "ContractPrerequisite_CompletedContractTags",
-      "ContractPrerequisite_Locality"
-    ],
-    "source_generator_debug_names": [
-      "Hockrow MissingPerson Space Stanton Career",
-      "Hockrow Stanton MissingPersonSpace Intro",
-      "Hockrow Stanton MissingPersonSpace VeryEasy",
-      "Hockrow Stanton MissingPersonSpace Easy",
-      "Hockrow Stanton MissingPersonSpace Medium",
-      "Hockrow Stanton MissingPersonSpace Hard",
-      "Hockrow Stanton MissingPersonSpace VeryHard",
-      "Hockrow Stanton MissingPersonSpace Super",
-      "Hockrow MissingPerson Space Nyx Career",
-      "Hockrow Nyx MissingPersonSpace Intro",
-      "Hockrow Nyx MissingPersonSpace VeryEasy",
-      "Hockrow Nyx MissingPersonSpace Easy",
-      "Hockrow Nyx MissingPersonSpace Medium",
-      "Hockrow Nyx MissingPersonSpace Hard",
-      "Hockrow Nyx MissingPersonSpace VeryHard",
-      "Hockrow Nyx MissingPersonSpace Super",
-      "Hockrow MissingPersons Nyx",
-      "Hockrow Nyx VeryEasy MissingPersons",
-      "Hockrow Nyx Easy MissingPersons",
-      "Hockrow Nyx Medium MissingPersons"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "medium",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/mercenary guild/hockrowagency/hockrowagency missingperson.json"
-  },
-  {
     "mission_id": "ContractGenerator.WildstarRacing Generator",
-    "title": "~mission(RaceType) Time Trial: ~mission(location)",
+    "title": "[Race Type] Time Trial: [Location]",
     "title_token": "@WSTR_TimeTrial_repeat_title_01",
     "mission_giver": "Json",
     "mission_giver_token": "",
@@ -22259,7 +22333,7 @@
   },
   {
     "mission_id": "ContractGenerator.InterSec KillShip",
-    "title": "New Defense Contract: ~mission(TargetName) Elimination",
+    "title": "New Defense Contract: [Target Name] Elimination",
     "title_token": "@Intersec_KillShip_Title_Intro_001",
     "mission_giver": "Intersecdefensesolutions",
     "mission_giver_token": "",
@@ -22457,7 +22531,7 @@
   },
   {
     "mission_id": "ContractGenerator.Intersec ShipWaveAttack",
-    "title": "Terminate UEE Threat: ~mission(TargetName)",
+    "title": "Terminate UEE Threat: [Target Name]",
     "title_token": "@Intersec_ShipWaveAttack_DrawOutBoss_VH_Title_001",
     "mission_giver": "Intersecdefensesolutions",
     "mission_giver_token": "",
@@ -22887,60 +22961,8 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/ruto generator.json"
   },
   {
-    "mission_id": "ContractGenerator.WallaceKlim Generator",
-    "title": "Production Oversight",
-    "title_token": "@mg_klim_localdelivery_drugprod_title_001",
-    "mission_giver": "Json",
-    "mission_giver_token": "",
-    "mission_type": "Missionproviders",
-    "faction_company": "Json",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [
-      "file://./../../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
-    ],
-    "location_availability_labels": [
-      "Stanton"
-    ],
-    "variant_kinds": [
-      "intro"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "introContracts",
-      "contracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_CrimeStat",
-      "ContractPrerequisite_Location",
-      "ContractPrerequisite_Locality"
-    ],
-    "source_generator_debug_names": [
-      "WallaceKlim InitialInvite Career",
-      "WallaceKlim InitialInvite",
-      "Luminalia 1"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "medium",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/wallaceklim generator.json"
-  },
-  {
     "mission_id": "ContractGenerator.Pacheco Generator",
-    "title": "~mission(Contractor|BaseSweepTitle)",
+    "title": "Pacheco Generator",
     "title_token": "@basesweep_title",
     "mission_giver": "Json",
     "mission_giver_token": "",
@@ -22995,6 +23017,58 @@
     "availability_confidence": "medium",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/pacheco generator.json"
+  },
+  {
+    "mission_id": "ContractGenerator.WallaceKlim Generator",
+    "title": "Production Oversight",
+    "title_token": "@mg_klim_localdelivery_drugprod_title_001",
+    "mission_giver": "Json",
+    "mission_giver_token": "",
+    "mission_type": "Missionproviders",
+    "faction_company": "Json",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [
+      "file://./../../../../../../libs/foundry/records/starmap/pu/system/stanton/stantonstar/starmapobject.stantonstar.json"
+    ],
+    "location_availability_labels": [
+      "Stanton"
+    ],
+    "variant_kinds": [
+      "intro"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "introContracts",
+      "contracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_CrimeStat",
+      "ContractPrerequisite_Location",
+      "ContractPrerequisite_Locality"
+    ],
+    "source_generator_debug_names": [
+      "WallaceKlim InitialInvite Career",
+      "WallaceKlim InitialInvite",
+      "Luminalia 1"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "medium",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/missionproviders/wallaceklim generator.json"
   },
   {
     "mission_id": "MissionType.Escort",
@@ -24885,7 +24959,7 @@
   },
   {
     "mission_id": "ContractGenerator.NorthRock FPSKill",
-    "title": "Bounty Assignment: ~mission(TargetName) (HRT)",
+    "title": "Bounty Assignment: [Target Name] (HRT)",
     "title_token": "@northrock_bounty_fps_title_001",
     "mission_giver": "Northrock Service Group",
     "mission_giver_token": "",
@@ -25582,6 +25656,43 @@
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/missiontype/pu/hauling solar.json"
+  },
+  {
+    "mission_id": "MissionType.IASI",
+    "title": "IASI",
+    "title_token": "",
+    "mission_giver": "",
+    "mission_giver_token": "",
+    "mission_type": "Pu",
+    "faction_company": "",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [],
+    "location_availability_labels": [],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [],
+    "source_prerequisite_types": [],
+    "source_generator_debug_names": [],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "low",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/missiontype/pu/iasi.json"
   },
   {
     "mission_id": "MissionType.Investigation",
@@ -26313,6 +26424,73 @@
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/academyofsciences guild/rayari inc/rayari recoveritem.json"
   },
   {
+    "mission_id": "ContractGenerator.RedWind Hauling",
+    "title": "[Reputation Rank] Hauler Needed for [Cargo Grade] Shipment",
+    "title_token": "@RedWind_HaulCargo_SingleToMulti_title_01",
+    "mission_giver": "Redwind",
+    "mission_giver_token": "",
+    "mission_type": "Redwind",
+    "faction_company": "Redwind",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [],
+    "location_availability_labels": [],
+    "variant_kinds": [
+      "intro"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "contracts",
+      "introContracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_CrimeStat",
+      "ContractPrerequisite_Locality",
+      "ContractPrerequisite_Location",
+      "ContractPrerequisite_Reputation",
+      "ContractPrerequisite_CompletedContractTags"
+    ],
+    "source_generator_debug_names": [
+      "Redwind Hauling Intersteller",
+      "HaulCargo SingleToMulti Interstellar Bulk AltUnpro Trit",
+      "HaulCargo SingleToMulti Interstellar Bulk ShipAmm Hydro Med",
+      "HaulCargo AToB Interstellar Bulk Agri MedSup Iod",
+      "HaulCargo AToB Interstellar Bulk Plas Scr Cob",
+      "HaulCargo AToB Interstellar Bulk Ammon PlasFu Arg PreIce CM",
+      "HaulCargo MultiToSingle Interstellar Medium Nitro OrganiMass Shit",
+      "HaulCargo AToB Interstellar Bulk DistSp Dia FresFoo Gol Aphor",
+      "RedWind Hauling Pyro Solar",
+      "RedWind Pyro BulkGrade RegionA CFP StationToRuin Carbon CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionB CFP StationToRuin Carbon CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionC CFP StationToRuin Carbon CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionA CFP StationToStation Carbon CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionB CFP StationToStation Carbon CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionA CFP StationToRuin Potassium CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionB CFP StationToRuin Potassium CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionC CFP StationToRuin Potassium CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionA CFP StationToStation Potassium CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionB CFP StationToStation Potassium CargoHauling AtoB",
+      "RedWind Pyro BulkGrade RegionD CFP RuinToStation RegionA Waste CargoHauling AtoB"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "low",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/redwind/redwind hauling.json"
+  },
+  {
     "mission_id": "ContractGenerator.RedWind RecoverCargo",
     "title": "Red Wind Easy Cargo Recovery",
     "title_token": "@RedWind_RecoverCargo_Easy_Title",
@@ -26377,7 +26555,7 @@
   },
   {
     "mission_id": "ContractGenerator.RedWind RecoverItem",
-    "title": "~mission(Contractor|RecoverSpaceTitleIntro)",
+    "title": "Red Wind Recover Item",
     "title_token": "@spacecollect_cargo_title_intro_01",
     "mission_giver": "Redwind",
     "mission_giver_token": "",
@@ -26437,73 +26615,6 @@
     "availability_confidence": "medium",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/redwind/redwind recoveritem.json"
-  },
-  {
-    "mission_id": "ContractGenerator.RedWind Hauling",
-    "title": "~mission(ReputationRank) Hauler Needed for ~mission(CargoGradeToken) Shipment",
-    "title_token": "@RedWind_HaulCargo_SingleToMulti_title_01",
-    "mission_giver": "Redwind",
-    "mission_giver_token": "",
-    "mission_type": "Redwind",
-    "faction_company": "Redwind",
-    "required_rank": "",
-    "required_mission_count": 0,
-    "required_missions": [],
-    "system_guess": "",
-    "location_guess": "",
-    "location_availability_paths": [],
-    "location_availability_labels": [],
-    "variant_kinds": [
-      "intro"
-    ],
-    "can_reaccept_after_abandoning": null,
-    "can_reaccept_after_failing": null,
-    "has_personal_cooldown": null,
-    "personal_cooldown_time": 0,
-    "abandoned_cooldown_time": 0,
-    "once_only": null,
-    "notify_on_available": null,
-    "required_active_scenarios_count": 0,
-    "source_contract_kinds": [
-      "contracts",
-      "introContracts"
-    ],
-    "source_prerequisite_types": [
-      "ContractPrerequisite_CrimeStat",
-      "ContractPrerequisite_Locality",
-      "ContractPrerequisite_Location",
-      "ContractPrerequisite_Reputation",
-      "ContractPrerequisite_CompletedContractTags"
-    ],
-    "source_generator_debug_names": [
-      "Redwind Hauling Intersteller",
-      "HaulCargo SingleToMulti Interstellar Bulk AltUnpro Trit",
-      "HaulCargo SingleToMulti Interstellar Bulk ShipAmm Hydro Med",
-      "HaulCargo AToB Interstellar Bulk Agri MedSup Iod",
-      "HaulCargo AToB Interstellar Bulk Plas Scr Cob",
-      "HaulCargo AToB Interstellar Bulk Ammon PlasFu Arg PreIce CM",
-      "HaulCargo MultiToSingle Interstellar Medium Nitro OrganiMass Shit",
-      "HaulCargo AToB Interstellar Bulk DistSp Dia FresFoo Gol Aphor",
-      "RedWind Hauling Pyro Solar",
-      "RedWind Pyro BulkGrade RegionA CFP StationToRuin Carbon CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionB CFP StationToRuin Carbon CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionC CFP StationToRuin Carbon CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionA CFP StationToStation Carbon CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionB CFP StationToStation Carbon CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionA CFP StationToRuin Potassium CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionB CFP StationToRuin Potassium CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionC CFP StationToRuin Potassium CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionA CFP StationToStation Potassium CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionB CFP StationToStation Potassium CargoHauling AtoB",
-      "RedWind Pyro BulkGrade RegionD CFP RuinToStation RegionA Waste CargoHauling AtoB"
-    ],
-    "same_session_required_known": false,
-    "same_session_required": null,
-    "same_session_rule_confidence": "unknown",
-    "runtime_only_possible": false,
-    "availability_confidence": "low",
-    "source": "scminersdb",
-    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/interstellartransport guild/redwind/redwind hauling.json"
   },
   {
     "mission_id": "ContractGenerator.Foxwell DefendEntitiesAndEscort",
@@ -26753,7 +26864,7 @@
   },
   {
     "mission_id": "ContractGenerator.FoxwellEnforcement DefendDestructibleEntities",
-    "title": "Yellow Lvl. Contract: Defend ~mission(Objects)",
+    "title": "Yellow Lvl. Contract: Defend [Objects]",
     "title_token": "@Foxwell_DefendDestructibleEntites_VE_Title_001",
     "mission_giver": "Foxwellenforcement",
     "mission_giver_token": "",
@@ -27542,7 +27653,7 @@
   },
   {
     "mission_id": "ContractGenerator.Vaughn MissingPerson",
-    "title": "~mission(Contractor|SearchBodySpaceTitleVeryEasy)",
+    "title": "Vaughn Missing Person",
     "title_token": "@searchbodyspace_title_VE",
     "mission_giver": "Vaughn",
     "mission_giver_token": "",
@@ -27666,6 +27777,70 @@
     "availability_confidence": "low",
     "source": "scminersdb",
     "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/cleanair.json"
+  },
+  {
+    "mission_id": "ContractGenerator.VisitingIasi",
+    "title": "iasi Support Attacked Ship E",
+    "title_token": "@iasi_SupportAttackedShip_E_title",
+    "mission_giver": "Json",
+    "mission_giver_token": "",
+    "mission_type": "Yearspecificcontent",
+    "faction_company": "Json",
+    "required_rank": "",
+    "required_mission_count": 0,
+    "required_missions": [],
+    "system_guess": "",
+    "location_guess": "",
+    "location_availability_paths": [],
+    "location_availability_labels": [],
+    "variant_kinds": [
+      "standard"
+    ],
+    "can_reaccept_after_abandoning": null,
+    "can_reaccept_after_failing": null,
+    "has_personal_cooldown": null,
+    "personal_cooldown_time": 0,
+    "abandoned_cooldown_time": 0,
+    "once_only": null,
+    "notify_on_available": null,
+    "required_active_scenarios_count": 0,
+    "source_contract_kinds": [
+      "contracts"
+    ],
+    "source_prerequisite_types": [
+      "ContractPrerequisite_Locality",
+      "ContractPrerequisite_CompletedContractTags",
+      "ContractPrerequisite_Location"
+    ],
+    "source_generator_debug_names": [
+      "Iasi Foxwell",
+      "Iasi DefendShip Easy",
+      "Iasi DefendShip Medium",
+      "Iasi DefendShip Hard",
+      "Iasi Patrol Easy",
+      "Iasi Patrol Medium",
+      "Iasi Patrol Hard",
+      "Iasi Northrock",
+      "Iasi EliminateSpecific Easy",
+      "Iasi EliminateAll Medium",
+      "Iasi EliminateBoss Hard",
+      "Iasi RecoverItem Easy",
+      "Iasi RecoverItem Medium",
+      "Iasi RecoverItem Hard",
+      "Iasi Covalex",
+      "Iasi HaulCargo AtoB Supply SecuritySupplies",
+      "Iasi Ling",
+      "Iasi HaulCargo AtoB Small PartySupplies",
+      "Iasi HaulCargo AtoB Supply PartySupplies",
+      "Iasi FTL"
+    ],
+    "same_session_required_known": false,
+    "same_session_required": null,
+    "same_session_rule_confidence": "unknown",
+    "runtime_only_possible": false,
+    "availability_confidence": "low",
+    "source": "scminersdb",
+    "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
   },
   {
     "mission_id": "ContractGenerator.2025Content",

@@ -5,9 +5,9 @@
     "blueprint_reward_pools": 116,
     "concept_status": 2713,
     "crafting_blueprints_clean": 1597,
-    "crafting_quality_adjustments": 7314,
+    "crafting_quality_adjustments": 3684,
     "crafting_recipes": 1560,
-    "crafting_resources": 26,
+    "crafting_resources": 27,
     "dismantle_returns": 31,
     "faction_reputation_scopes": 45,
     "factions_companies": 11210,
@@ -341,7 +341,7 @@
       "file": "crafting_resources.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\ptu\\data\\json\\crafting_resources.json",
       "path": "../json/crafting_resources.json",
-      "record_count": 26,
+      "record_count": 27,
       "title": "Crafting resources",
       "url": "../json/crafting_resources.json"
     },
@@ -351,7 +351,7 @@
       "file": "crafting_quality_adjustments.json",
       "filesystem_path": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\ptu\\data\\json\\crafting_quality_adjustments.json",
       "path": "../json/crafting_quality_adjustments.json",
-      "record_count": 7314,
+      "record_count": 3684,
       "title": "Crafting quality adjustments",
       "url": "../json/crafting_quality_adjustments.json"
     },
@@ -370,8 +370,8 @@
   "manifest_url": "../runs/latest.json",
   "output_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\ptu\\data\\json",
   "raw_root": "F:\\Users\\juanc\\documents\\Codex\\2026-06-20\\scminersdb\\data\\raw\\starbreaker_test",
-  "record_count": 54186,
+  "record_count": 50557,
   "source_root": "D:\\Program Files\\Roberts Space Industries\\StarCitizen\\PTU",
   "status": "ok",
-  "updated_at": "2026-10-05T08:38:27.875739-04:00"
+  "updated_at": "2026-10-09T10:43:16.501954-04:00"
 }

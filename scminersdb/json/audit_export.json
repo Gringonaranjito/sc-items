@@ -1,8 +1,8 @@
 {
   "counts": {
-    "item_issues": 1872,
-    "mission_issues": 1366,
-    "ship_issues": 2749,
+    "item_issues": 1895,
+    "mission_issues": 1374,
+    "ship_issues": 2835,
     "unclassified_sources": 168
   },
   "duplicates": {
@@ -11,7 +11,7 @@
     "missions": [],
     "ships": []
   },
-  "generated_at": "2026-10-05T08:35:42.632154-04:00",
+  "generated_at": "2026-10-09T10:38:54.572827-04:00",
   "missing_data": {
     "item_issues": [
       {
@@ -3368,8 +3368,26 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.Bed_Mattress_RSI_Crew",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_crew.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.Bed_Mattress_RSI_Polaris_Cell",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_polaris_cell.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Mattress_RSI_VIP_Single",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_vip_single.json"
       },
       {
         "missing_fields": [
@@ -3397,6 +3415,24 @@
         ],
         "name": "EntityClassDefinition.Bed_Pillow_Idris_AEGS",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_idris_aegs.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Pillow_RSI_Crew",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_crew.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Pillow_RSI_VIP",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_vip.json"
       },
       {
         "missing_fields": [
@@ -3433,6 +3469,33 @@
         ],
         "name": "EntityClassDefinition.Bed_Sheets_No_Mattress",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_no_mattress.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Guest_Left_Overhang",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_left_overhang.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Guest_Right_Overhang",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_right_overhang.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Master",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_master.json"
       },
       {
         "missing_fields": [
@@ -3827,6 +3890,15 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.Bar_Table_RSI_Constellation_Phoenix_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bar_table_rsi_constellation_phoenix_gs.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.Bar_Table_Scrap_01",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bar_table_scrap_01.json"
       },
@@ -3955,6 +4027,24 @@
         ],
         "name": "EntityClassDefinition.Bed_Bunk_col_1_slant_b",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_col_1_slant_b.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Bunk_Constellation_GS_Left",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_left.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Bunk_Constellation_GS_Right",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_right.json"
       },
       {
         "missing_fields": [
@@ -4297,6 +4387,15 @@
         ],
         "name": "EntityClassDefinition.Bed_Double_Pod_Touring_600i_ORIG_Right",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_double_pod_touring_600i_orig_right.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Double_RSI_Constellation_GS_Phoenix_Master",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_double_rsi_constellation_gs_phoenix_master.json"
       },
       {
         "missing_fields": [
@@ -5161,6 +5260,24 @@
         ],
         "name": "EntityClassDefinition.Bed_Single_Redeemer_AEGS_Top",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_redeemer_aegs_top.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Single_RSI_Constellation_GS_Phoenix_Left",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_left.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Bed_Single_RSI_Constellation_GS_Phoenix_Right",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_right.json"
       },
       {
         "missing_fields": [
@@ -11765,6 +11882,15 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.Seat_Armchair_Conference_Constellation_GS_Phoenix_RSI",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_armchair_conference_constellation_gs_phoenix_rsi.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.Seat_Armchair_Conference_ConstellationPhoenix_RSI",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_armchair_conference_constellationphoenix_rsi.json"
       },
@@ -13340,6 +13466,15 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.Seat_Bench_NoBack_Left_RSI_Constellation_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_left_rsi_constellation_gs.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.Seat_Bench_NoBack_Left_RSI_Perseus_Messhall",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_left_rsi_perseus_messhall.json"
       },
@@ -13423,6 +13558,15 @@
         ],
         "name": "EntityClassDefinition.Seat_Bench_NoBack_Right_RSI_Com_Padded",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_com_padded.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Seat_Bench_NoBack_Right_RSI_Constellation_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_constellation_gs.json"
       },
       {
         "missing_fields": [
@@ -13720,6 +13864,15 @@
         ],
         "name": "EntityClassDefinition.Seat_Chair_2",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_2.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Seat_Chair_2_Buttons_Template",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_2_buttons_template.json"
       },
       {
         "missing_fields": [
@@ -14069,6 +14222,24 @@
           "class",
           "subtype"
         ],
+        "name": "EntityClassDefinition.Seat_Chair_Constellation_GS_Inner",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_inner.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Seat_Chair_Constellation_GS_Outer",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_outer.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
         "name": "EntityClassDefinition.Seat_Chair_CRUS_Star_Runner_Crew_Chair_Single",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_crus_star_runner_crew_chair_single.json"
       },
@@ -14206,6 +14377,15 @@
         ],
         "name": "EntityClassDefinition.Seat_Chair_rdy_rm_prop_chair_a",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_rdy_rm_prop_chair_a.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Seat_Chair_RSI_Constellation_Mk5_Mess_Hall",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_rsi_constellation_mk5_mess_hall.json"
       },
       {
         "missing_fields": [
@@ -14656,6 +14836,15 @@
         ],
         "name": "EntityClassDefinition.Seat_Piano_Phoenix",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_piano_phoenix.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Seat_Piano_Phoenix_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_piano_phoenix_gs.json"
       },
       {
         "missing_fields": [
@@ -16033,6 +16222,24 @@
         ],
         "name": "EntityClassDefinition.Table_Conference_8_1_Distribution_a",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_conference_8_1_distribution_a.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Table_Conference_Constellation_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_conference_constellation_gs.json"
+      },
+      {
+        "missing_fields": [
+          "type",
+          "class",
+          "subtype"
+        ],
+        "name": "EntityClassDefinition.Table_Constellation_4_Seat_deployable",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_constellation_4_seat_deployable.json"
       },
       {
         "missing_fields": [
@@ -17986,6 +18193,16 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractGenerator.VisitingIasi",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractGenerator.VisitingIasi",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contractgenerator/yearspecificcontent/visitingiasi.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.AcePilot",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/acepilot.json"
       },
@@ -21306,6 +21523,26 @@
       },
       {
         "issue": "Missing rewards",
+        "name": "ContractTemplate.ItemResourceGathering_Iasi",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.ItemResourceGathering_Iasi",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "ContractTemplate.ItemResourceGathering_Iasi_BasicBox",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi_basicbox.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "ContractTemplate.ItemResourceGathering_Iasi_BasicBox",
+        "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_iasi_basicbox.json"
+      },
+      {
+        "issue": "Missing rewards",
         "name": "ContractTemplate.ItemResourceGathering_Rayari_MoldTreatmentResearch",
         "source_path": "starbreaker/libs/foundry/records/contracts/contracttemplates/itemresourcegathering_rayari_moldtreatmentresearch.json"
       },
@@ -23483,6 +23720,16 @@
         "issue": "Missing prerequisites",
         "name": "MissionType.Hauling_Solar",
         "source_path": "starbreaker/libs/foundry/records/missiontype/pu/hauling_solar.json"
+      },
+      {
+        "issue": "Missing rewards",
+        "name": "MissionType.IASI",
+        "source_path": "starbreaker/libs/foundry/records/missiontype/pu/iasi.json"
+      },
+      {
+        "issue": "Missing prerequisites",
+        "name": "MissionType.IASI",
+        "source_path": "starbreaker/libs/foundry/records/missiontype/pu/iasi.json"
       },
       {
         "issue": "Missing rewards",
@@ -23702,6 +23949,13 @@
         ],
         "name": "EntityClassDefinition.ARMR_AEGS_Avenger_Stalker",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_avenger_stalker.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_AEGS_Avenger_Stalker_Display",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_aegs_avenger_stalker_display.json"
       },
       {
         "missing_fields": [
@@ -24949,6 +25203,41 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.ARMR_RSI_Constellation_Andromeda_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_RSI_Constellation_Andromeda_GS_Display",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_andromeda_gs_display.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_RSI_Constellation_Aquila_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_aquila_gs.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_RSI_Constellation_Mk5_Centaurus",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_RSI_Constellation_Mk5_Centaurus_Display",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_mk5_centaurus_display.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.ARMR_RSI_Constellation_Phoenix",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_phoenix.json"
       },
@@ -24956,8 +25245,22 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.ARMR_RSI_Constellation_Phoenix_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_phoenix_gs.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.ARMR_RSI_Constellation_Taurus",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_RSI_Constellation_Taurus_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_constellation_taurus_gs.json"
       },
       {
         "missing_fields": [
@@ -25014,6 +25317,20 @@
         ],
         "name": "EntityClassDefinition.ARMR_RSI_Scorpius",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_scorpius.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_RSI_Skylark",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.ARMR_RSI_Skylark_Display",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/armor/armr_rsi_skylark_display.json"
       },
       {
         "missing_fields": [
@@ -26666,7 +26983,6 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda",
@@ -26674,7 +26990,13 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_andromeda_gs.json"
+      },
+      {
+        "missing_fields": [
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Andromeda_MM_322",
@@ -26682,7 +27004,6 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila",
@@ -26690,7 +27011,20 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Aquila_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_aquila_gs.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Mk5",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_mk5.json"
+      },
+      {
+        "missing_fields": [
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix",
@@ -26698,11 +27032,24 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Phoenix_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_phoenix_gs.json"
+      },
+      {
+        "missing_fields": [
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_RSI_Constellation_Taurus_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_constellation_taurus_gs.json"
       },
       {
         "missing_fields": [
@@ -26714,7 +27061,6 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Mantis",
@@ -26722,7 +27068,6 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Meteor",
@@ -26766,7 +27111,13 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Flight_RSI_Skylark",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_flight_rsi_skylark.json"
+      },
+      {
+        "missing_fields": [
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus",
@@ -26774,7 +27125,6 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_CL",
@@ -26782,7 +27132,6 @@
       },
       {
         "missing_fields": [
-          "manufacturer",
           "roles"
         ],
         "name": "EntityClassDefinition.Controller_Flight_RSI_Zeus_ES",
@@ -26992,6 +27341,14 @@
         ],
         "name": "EntityClassDefinition.Controller_Missile_RSI_Aurora_Mk2",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_rsi_aurora_mk2.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Controller_Missile_RSI_Skylark",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/controller/controller_missile_rsi_skylark.json"
       },
       {
         "missing_fields": [
@@ -27485,6 +27842,27 @@
         ],
         "name": "EntityClassDefinition.COOL_AEGS_S04_Reclaimer",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_aegs_s04_reclaimer.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.COOL_IASI_S01_Name",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s01_name.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.COOL_IASI_S02_Name",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s02_name.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.COOL_IASI_S03_Name",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/cooler/cool_iasi_s03_name.json"
       },
       {
         "missing_fields": [
@@ -29828,6 +30206,14 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.INTK_RSI_Constellation_Andromeda_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_andromeda_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.INTK_RSI_Constellation_Aquila",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_aquila.json"
       },
@@ -29836,8 +30222,32 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.INTK_RSI_Constellation_Aquila_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_aquila_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.INTK_RSI_Constellation_Mk5_Centaurus",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_mk5_centaurus.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.INTK_RSI_Constellation_Taurus",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.INTK_RSI_Constellation_Taurus_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_constellation_taurus_gs.json"
       },
       {
         "missing_fields": [
@@ -29885,6 +30295,14 @@
         ],
         "name": "EntityClassDefinition.INTK_RSI_Scorpius",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_scorpius.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.INTK_RSI_Skylark",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fuel_intakes/intk_rsi_skylark.json"
       },
       {
         "missing_fields": [
@@ -31229,6 +31647,14 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.HTNK_RSI_Constellation_Andromeda_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_andromeda_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.HTNK_RSI_Constellation_Aquila",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_aquila.json"
       },
@@ -31237,8 +31663,40 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.HTNK_RSI_Constellation_Aquila_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_aquila_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.HTNK_RSI_Constellation_Mk5_Centaurus",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_mk5_centaurus.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.HTNK_RSI_Constellation_Phoenix_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_phoenix_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.HTNK_RSI_Constellation_Taurus",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.HTNK_RSI_Constellation_Taurus_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_constellation_taurus_gs.json"
       },
       {
         "missing_fields": [
@@ -31294,6 +31752,13 @@
         ],
         "name": "EntityClassDefinition.HTNK_RSI_Scorpius",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_scorpius.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.HTNK_RSI_Skylark",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/htnk_rsi_skylark.json"
       },
       {
         "missing_fields": [
@@ -32448,6 +32913,14 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.QTNK_RSI_Constellation_Andromeda_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_andromeda_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.QTNK_RSI_Constellation_Aquila",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_aquila.json"
       },
@@ -32456,8 +32929,40 @@
           "manufacturer",
           "roles"
         ],
+        "name": "EntityClassDefinition.QTNK_RSI_Constellation_Aquila_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_aquila_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.QTNK_RSI_Constellation_Mk5_Centaurus",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_mk5_centaurus.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.QTNK_RSI_Constellation_Phoenix_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_phoenix_gs.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
         "name": "EntityClassDefinition.QTNK_RSI_Constellation_Taurus",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.QTNK_RSI_Constellation_Taurus_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/fueltanks/qtnk_rsi_constellation_taurus_gs.json"
       },
       {
         "missing_fields": [
@@ -33089,6 +33594,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.MRCK_S03_RSI_Skylark_Five_S01",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s03_rsi_skylark_five_s01.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.MRCK_S03_TEMP_BOMB",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/behr/mrck_s03_temp_bomb.json"
       },
@@ -33642,6 +34154,20 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.MRCK_S02_RSI_Constellation_Mk5_Missile_Holder",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S02_RSI_Constellation_Mk5_Missile_Holder_Right",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_constellation_mk5_missile_holder_right.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.MRCK_S02_RSI_Hermes",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s02_rsi_hermes.json"
       },
@@ -33651,6 +34177,20 @@
         ],
         "name": "EntityClassDefinition.MRCK_S04_RSI_Constellation",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Long",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_long.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S04_RSI_Constellation_GS_Short",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s04_rsi_constellation_gs_short.json"
       },
       {
         "missing_fields": [
@@ -33719,6 +34259,20 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Left",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_left.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S05_RSI_Constellation_GS_Right",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_constellation_gs_right.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.MRCK_S05_RSI_Perseus_Torpedo_Holder",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_perseus_torpedo_holder.json"
       },
@@ -33735,6 +34289,20 @@
         ],
         "name": "EntityClassDefinition.MRCK_S05_RSI_Perseus_Torpedo_R",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s05_rsi_perseus_torpedo_r.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Left",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_left.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.MRCK_S06_RSI_Constellation_Mk5_Right",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/missile_racks/rsi/mrck_s06_rsi_constellation_mk5_right.json"
       },
       {
         "missing_fields": [
@@ -34958,6 +35526,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Aurora_Mk2_Black_Black_Orange",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_black_black_orange.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Aurora_Mk2_Blue_Blue_Yellow",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_aurora_mk2_blue_blue_yellow.json"
       },
@@ -35508,6 +36083,62 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Constellation_Black_Black_Orange",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_orange.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Black_Black_Red",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_black_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Black_Green_Gold",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_green_gold.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Black_Grey_White",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_black_grey_white.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Blue_Black_Red",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_black_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Blue_Blue_Grey",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_blue_grey.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Blue_Cyan_Grey",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_blue_cyan_grey.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Emerald_Green_White_Black",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_emerald_green_white_black.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Constellation_FW2955_Grey_Black_Red_Camo",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_fw2955_grey_black_red_camo.json"
       },
@@ -35538,6 +36169,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Constellation_GoblinG_M_White_Blue",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_gobling_m_white_blue.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Green_Grey_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_green_grey_yellow.json"
       },
       {
         "missing_fields": [
@@ -35594,6 +36232,63 @@
         ],
         "name": "EntityClassDefinition.Paint_Constellation_LunarNewYear2952_Red",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_lunarnewyear2952_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Black_Orange",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_black_orange.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Gray_Purple",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_gray_purple.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_Black_Red_Red",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_black_red_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Black_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_black_yellow.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_Blue_Orange_Blue",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_blue_orange_blue.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_Red_Gray_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_red_gray_yellow.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_Template",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_template.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Constellation_Mk5_White_Orange_Gray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_constellation_mk5_white_orange_gray.json"
       },
       {
         "missing_fields": [
@@ -36219,6 +36914,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Eclipse_PirateWeek_Black_Clear",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_pirateweek_black_clear.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Eclipse_Red_Red_Red",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_eclipse_red_red_red.json"
       },
       {
         "missing_fields": [
@@ -36971,6 +37673,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Hercules_Sylvan_Green",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hercules_sylvan_green.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Hermes_Black_Black_Orange",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_hermes_black_black_orange.json"
       },
       {
         "missing_fields": [
@@ -37794,6 +38503,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_M80_black_gold_gold",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_black_gold_gold.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_M80_red_black_blue",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_m80_red_black_blue.json"
       },
@@ -38155,6 +38871,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_MTC_blue_grey_red",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_blue_grey_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_MTC_brown_brown_red_camo_a",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_brown_brown_red_camo_a.json"
       },
@@ -38162,8 +38885,29 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_MTC_gold_grey_grey",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_gold_grey_grey.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_MTC_Green_Black_Grey_cfp",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_black_grey_cfp.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_MTC_green_brown_green",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_brown_green.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_MTC_green_green_yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_mtc_green_green_yellow.json"
       },
       {
         "missing_fields": [
@@ -39797,6 +40541,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Salvation_White_Blue_White",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_salvation_white_blue_white.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_SanTokYai_AlienWeek_Teal_Pink",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_santokyai_alienweek_teal_pink.json"
       },
@@ -39856,6 +40607,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Scorpius_Blight_Green",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blight_green.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Scorpius_Blue_Purple_Purple",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_scorpius_blue_purple_purple.json"
       },
       {
         "missing_fields": [
@@ -40025,6 +40783,64 @@
         ],
         "name": "EntityClassDefinition.Paint_Shiv_White_Blue_Black",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_shiv_white_blue_black.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_Black_Black_Orange",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_black_orange.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_Black_Gray_Purple",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_gray_purple.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_Black_Red_Red",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_black_red_red.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_Blue_Black_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_black_yellow.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_Blue_Orange_Blue",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_blue_orange_blue.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_Red_Gray_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_red_gray_yellow.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_Template",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_template.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Skylark_White_Orange_Gray",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_skylark_white_orange_gray.json"
       },
       {
         "missing_fields": [
@@ -41117,6 +41933,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Ursa_Black_Black_Orange",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ursa_black_black_orange.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Ursa_Black_Grey_Red_Pirate_Skull",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_ursa_black_grey_red_pirate_skull.json"
       },
@@ -41399,6 +42222,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Vulture_Green_Blue_Green",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_green_blue_green.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Vulture_Invictus_Unity_Metal_Teal",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_vulture_invictus_unity_metal_teal.json"
       },
@@ -41491,6 +42321,13 @@
         "missing_fields": [
           "roles"
         ],
+        "name": "EntityClassDefinition.Paint_Wolf_Grey_Black_Grey",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_grey_black_grey.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
         "name": "EntityClassDefinition.Paint_Wolf_Lightgrey_Grey_Red_Camo",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_wolf_lightgrey_grey_red_camo.json"
       },
@@ -41570,6 +42407,13 @@
         ],
         "name": "EntityClassDefinition.Paint_Zeus_Blue_Black_White",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_black_white.json"
+      },
+      {
+        "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.Paint_Zeus_Blue_Blue_Yellow",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/paints/paint_zeus_blue_blue_yellow.json"
       },
       {
         "missing_fields": [
@@ -42075,6 +42919,13 @@
       },
       {
         "missing_fields": [
+          "roles"
+        ],
+        "name": "EntityClassDefinition.PersonalStorage_RSI_Constellation_GS",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_constellation_gs.json"
+      },
+      {
+        "missing_fields": [
           "manufacturer",
           "roles"
         ],
@@ -42120,6 +42971,14 @@
         ],
         "name": "EntityClassDefinition.PersonalStorage_RSI_Polaris_Medical",
         "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_polaris_medical.json"
+      },
+      {
+        "missing_fields": [
+          "manufacturer",
+          "roles"
+        ],
+        "name": "EntityClassDefinition.PersonalStorage_RSI_Skylark",
+        "source_path": "starbreaker/libs/foundry/records/entities/scitem/ships/personalstorage/personalstorage_rsi_skylark.json"
       },
       {
         "missing_fields": [

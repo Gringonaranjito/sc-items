@@ -2506,6 +2506,58 @@
         "smartrefillgrenadesandammo": false
       }
     },
+    "name": "EntityClassDefinition.Bar_Table_RSI_Constellation_Phoenix_GS",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "fa920559-131c-435f-aef6-86851f4c6df7",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bar_table_rsi_constellation_phoenix_gs.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "mass": 0.0,
+      "maxsize": 1,
+      "minsize": 0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1,
+      "smartrefillammo": false,
+      "smartrefillgrenadesandammo": false
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "mass": 0.0,
+        "maxsize": 1,
+        "minsize": 0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1,
+        "smartrefillammo": false,
+        "smartrefillgrenadesandammo": false
+      }
+    },
     "name": "EntityClassDefinition.Bar_Table_Scrap_01",
     "purchasable": false,
     "record_type": "EntityClassDefinition",
@@ -3285,6 +3337,110 @@
     "record_type": "EntityClassDefinition",
     "source_id": "a66793a3-c532-43a2-a01e-fd44b0c8f989",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_col_1_slant_b.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "longrangeip": false,
+      "mass": 0.0,
+      "maxsize": 2,
+      "minsize": 1,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "longrangeip": false,
+        "mass": 0.0,
+        "maxsize": 2,
+        "minsize": 1,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Bunk_Constellation_GS_Left",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "7e350727-dc9d-4979-b36b-8494f605aefb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_left.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "longrangeip": false,
+      "mass": 0.0,
+      "maxsize": 2,
+      "minsize": 1,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "longrangeip": false,
+        "mass": 0.0,
+        "maxsize": 2,
+        "minsize": 1,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Bunk_Constellation_GS_Right",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "c8386dd1-5674-4a07-a5e8-7b381c9b9671",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_bunk_constellation_gs_right.json",
     "stats": {
       "anglerange": 181.0,
       "attachcheckcenterofmass": false,
@@ -5368,6 +5524,58 @@
         "size": 1
       }
     },
+    "name": "EntityClassDefinition.Bed_Double_RSI_Constellation_GS_Phoenix_Master",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "e3e84d03-b587-44cd-969b-12147682ff57",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_double_rsi_constellation_gs_phoenix_master.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "longrangeip": false,
+      "mass": 0.0,
+      "maxsize": 2,
+      "minsize": 1,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "longrangeip": false,
+        "mass": 0.0,
+        "maxsize": 2,
+        "minsize": 1,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
     "name": "EntityClassDefinition.Bed_Double_RSI_Constellation_Phoenix_Master",
     "purchasable": false,
     "record_type": "EntityClassDefinition",
@@ -6196,11 +6404,83 @@
         "size": 1
       }
     },
+    "name": "EntityClassDefinition.Bed_Mattress_RSI_Crew",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "e82cf8c9-eaac-4127-b46c-33e2c7479ec3",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_crew.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
     "name": "EntityClassDefinition.Bed_Mattress_RSI_Polaris_Cell",
     "purchasable": false,
     "record_type": "EntityClassDefinition",
     "source_id": "43e94985-f059-4d26-9b9d-b5010091f720",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_polaris_cell.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Mattress_RSI_VIP_Single",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "1680af33-fcdb-463e-bf6b-23c4b143e8fe",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_mattress_rsi_vip_single.json",
     "stats": {
       "attachcheckcenterofmass": false,
       "cheatresourcenetworkupdate": false,
@@ -6340,6 +6620,78 @@
         "size": 1
       }
     },
+    "name": "EntityClassDefinition.Bed_Pillow_RSI_Crew",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "87ab81fb-db1e-41a5-a869-64b327ae277d",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_crew.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Pillow_RSI_VIP",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "a06c996c-4099-42ea-a9cb-ea690eea2454",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_pillow_rsi_vip.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
     "name": "EntityClassDefinition.Bed_Pillow_Template",
     "purchasable": false,
     "record_type": "EntityClassDefinition",
@@ -6447,6 +6799,102 @@
     "record_type": "EntityClassDefinition",
     "source_id": "ead5bc58-c3ca-4b15-9e5b-67b15a43ecd2",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_no_mattress.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Guest_Left_Overhang",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "3e973963-4b4a-4941-a884-50a965bb46a6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_left_overhang.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Guest_Right_Overhang",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "970e4448-df3b-410e-84c4-c9357a6e9f3a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_guest_right_overhang.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Sheets_RSI_VIP_Master",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "a5686b96-09b8-4020-92c0-957274ff7231",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/attachments/bed_sheets_rsi_vip_master.json",
     "stats": {
       "attachcheckcenterofmass": false,
       "damage": 0.0,
@@ -11725,6 +12173,110 @@
     "record_type": "EntityClassDefinition",
     "source_id": "7f6297f8-e5b3-467a-b8b1-9f005b0b1fa7",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_redeemer_aegs_top.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "longrangeip": false,
+      "mass": 0.0,
+      "maxsize": 2,
+      "minsize": 1,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "longrangeip": false,
+        "mass": 0.0,
+        "maxsize": 2,
+        "minsize": 1,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Single_RSI_Constellation_GS_Phoenix_Left",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "624675bc-7865-478f-a817-1e807eabf01a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_left.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "longrangeip": false,
+      "mass": 0.0,
+      "maxsize": 2,
+      "minsize": 1,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "longrangeip": false,
+        "mass": 0.0,
+        "maxsize": 2,
+        "minsize": 1,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Bed_Single_RSI_Constellation_GS_Phoenix_Right",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "6b41bd48-038a-429c-86af-03c1680772c6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/bed_single_rsi_constellation_gs_phoenix_right.json",
     "stats": {
       "anglerange": 181.0,
       "attachcheckcenterofmass": false,
@@ -61923,6 +62475,44 @@
         "size": 1
       }
     },
+    "name": "EntityClassDefinition.Seat_Armchair_Conference_Constellation_GS_Phoenix_RSI",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "4ecc9e91-3de5-4688-973d-42ad1255df4a",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_armchair_conference_constellation_gs_phoenix_rsi.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
     "name": "EntityClassDefinition.Seat_Armchair_Conference_ConstellationPhoenix_RSI",
     "purchasable": false,
     "record_type": "EntityClassDefinition",
@@ -68563,6 +69153,44 @@
         "size": 1
       }
     },
+    "name": "EntityClassDefinition.Seat_Bench_NoBack_Left_RSI_Constellation_GS",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "dc3d6d02-27d6-404b-a55d-51f32336fbe8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_left_rsi_constellation_gs.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
     "name": "EntityClassDefinition.Seat_Bench_NoBack_Left_RSI_Perseus_Messhall",
     "purchasable": false,
     "record_type": "EntityClassDefinition",
@@ -68910,6 +69538,44 @@
     "record_type": "EntityClassDefinition",
     "source_id": "28cc8173-b29e-4f0c-a95d-3d3168bf1b14",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_com_padded.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Seat_Bench_NoBack_Right_RSI_Constellation_GS",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "641630c4-6870-4ad3-9350-3f454a08f435",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_bench_noback_right_rsi_constellation_gs.json",
     "stats": {
       "anglerange": 181.0,
       "attachcheckcenterofmass": false,
@@ -70164,6 +70830,44 @@
     "record_type": "EntityClassDefinition",
     "source_id": "36736e03-9094-4596-9f43-68fc1c8453aa",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_2.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Seat_Chair_2_Buttons_Template",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "37b7fa06-0f23-452f-9654-2b2203a30f14",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_2_buttons_template.json",
     "stats": {
       "anglerange": 181.0,
       "attachcheckcenterofmass": false,
@@ -71651,6 +72355,82 @@
         "size": 1
       }
     },
+    "name": "EntityClassDefinition.Seat_Chair_Constellation_GS_Inner",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "04ac8e35-913d-4c1a-a621-a8e2558ac151",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_inner.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Seat_Chair_Constellation_GS_Outer",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "49749ad4-18fc-4e81-a188-7768844a2eb8",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_constellation_gs_outer.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
     "name": "EntityClassDefinition.Seat_Chair_CRUS_Star_Runner_Crew_Chair_Single",
     "purchasable": false,
     "record_type": "EntityClassDefinition",
@@ -72234,6 +73014,44 @@
       "exitondamagetaken": false,
       "longrangeip": false,
       "mass": 25.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Seat_Chair_RSI_Constellation_Mk5_Mess_Hall",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "6d635425-303b-48d6-9f3d-60095d337ec6",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_chair_rsi_constellation_mk5_mess_hall.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
       "overheatrecoverytemperature": 350.0,
       "overheattemperature": 450.0,
       "overheatwarningtemperature": 370.0,
@@ -74194,6 +75012,44 @@
     "record_type": "EntityClassDefinition",
     "source_id": "4dd2315e-59c3-46c4-8971-91b0cf122ed0",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_piano_phoenix.json",
+    "stats": {
+      "anglerange": 181.0,
+      "attachcheckcenterofmass": false,
+      "damage": 0.0,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "longrangeip": false,
+      "mass": 0.0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "anglerange": 181.0,
+        "attachcheckcenterofmass": false,
+        "damage": 0.0,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "longrangeip": false,
+        "mass": 0.0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1
+      }
+    },
+    "name": "EntityClassDefinition.Seat_Piano_Phoenix_GS",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "41c24314-43b3-47a1-899d-c011de7433cb",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/seat_piano_phoenix_gs.json",
     "stats": {
       "anglerange": 181.0,
       "attachcheckcenterofmass": false,
@@ -82515,6 +83371,110 @@
     "record_type": "EntityClassDefinition",
     "source_id": "f62d1f0d-f175-459e-a2ea-37502035d02a",
     "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_conference_8_1_distribution_a.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "mass": 0.0,
+      "maxsize": 1,
+      "minsize": 0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 1,
+      "smartrefillammo": false,
+      "smartrefillgrenadesandammo": false
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "mass": 0.0,
+        "maxsize": 1,
+        "minsize": 0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 5,
+        "smartrefillammo": false,
+        "smartrefillgrenadesandammo": false
+      }
+    },
+    "name": "EntityClassDefinition.Table_Conference_Constellation_GS",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "7ae99572-7b4a-4281-9296-f29d64723786",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_conference_constellation_gs.json",
+    "stats": {
+      "attachcheckcenterofmass": false,
+      "cheatresourcenetworkupdate": false,
+      "damage": 0.0,
+      "doorsignorepower": false,
+      "enableoverheat": false,
+      "exitondamagetaken": false,
+      "interactionbasesize": 2.0,
+      "interactionpointsize": -1.0,
+      "mass": 0.0,
+      "maxsize": 1,
+      "minsize": 0,
+      "overheatrecoverytemperature": 350.0,
+      "overheattemperature": 450.0,
+      "overheatwarningtemperature": 370.0,
+      "overrideattachedinteractionpointssize": false,
+      "poweredambientcoolingmultiplier": 1.0,
+      "size": 5,
+      "smartrefillammo": false,
+      "smartrefillgrenadesandammo": false
+    }
+  },
+  {
+    "item_info": {
+      "purchasable": false,
+      "stats": {
+        "attachcheckcenterofmass": false,
+        "cheatresourcenetworkupdate": false,
+        "damage": 0.0,
+        "doorsignorepower": false,
+        "enableoverheat": false,
+        "exitondamagetaken": false,
+        "interactionbasesize": 2.0,
+        "interactionpointsize": -1.0,
+        "mass": 0.0,
+        "maxsize": 1,
+        "minsize": 0,
+        "overheatrecoverytemperature": 350.0,
+        "overheattemperature": 450.0,
+        "overheatwarningtemperature": 370.0,
+        "overrideattachedinteractionpointssize": false,
+        "poweredambientcoolingmultiplier": 1.0,
+        "size": 1,
+        "smartrefillammo": false,
+        "smartrefillgrenadesandammo": false
+      }
+    },
+    "name": "EntityClassDefinition.Table_Constellation_4_Seat_deployable",
+    "purchasable": false,
+    "record_type": "EntityClassDefinition",
+    "source_id": "9ae901c8-ce0c-4cdd-8f91-a7a604bdd5ed",
+    "source_path": "starbreaker/libs/foundry/records/entities/scitem/usables/table_constellation_4_seat_deployable.json",
     "stats": {
       "attachcheckcenterofmass": false,
       "cheatresourcenetworkupdate": false,
